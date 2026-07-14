@@ -582,7 +582,7 @@ PAGE = """<!DOCTYPE html>
   body {{
     margin: 0;
     font-family: var(--sans);
-    font-size: 1rem;
+    font-size: 1.0625rem;          /* 17px base for prose (bio, research, etc.) */
     line-height: 1.6;
     color: var(--text);
     background: var(--bg);
@@ -686,6 +686,18 @@ PAGE = """<!DOCTYPE html>
     margin: .9rem 0 0; font-size: .8125rem; color: var(--muted);
   }}
   .stat-src {{ color: var(--faint); margin-left: .4rem; }}
+  .scholar-line {{ margin: .5rem 0 0; }}
+  .scholar-btn {{
+    display: inline-flex; align-items: center; gap: .4rem;
+    padding: .35rem .7rem; border: 1px solid var(--rule-2);
+    border-radius: 8px; background: var(--surface);
+    font-size: .8125rem; color: var(--text); text-decoration: none;
+  }}
+  .scholar-btn:hover {{
+    border-color: var(--link); color: var(--link); text-decoration: none;
+  }}
+  .scholar-btn svg {{ color: #4285f4; flex: none; }}
+  .gs-count {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
   .plink {{ margin: 0 0 .2rem; font-size: .9375rem; line-height: 1.55; }}
   .plink a {{ text-decoration: underline; text-underline-offset: 2px;
               text-decoration-color: var(--rule-2); }}
@@ -747,7 +759,7 @@ PAGE = """<!DOCTYPE html>
     grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
     align-items: start; column-gap: 0;
     margin: 0; padding: .6rem 0; border-radius: 8px;
-    font-size: .9375rem; line-height: 1.55;
+    font-size: 1rem; line-height: 1.55;   /* publications stay at 16px */
     color: var(--text);           /* authors + journal read as body text */
   }}
 
@@ -989,6 +1001,20 @@ PAGE = """<!DOCTYPE html>
         </span>
       </p>
 
+      <!-- Google Scholar citation button. The count is read from the committed
+           scholar-stats.json, which a scheduled GitHub Action refreshes. The
+           button always links to the profile; the number appears once present. -->
+      <p class="scholar-line">
+        <a class="scholar-btn" href="{scholar}" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"
+               aria-hidden="true" focusable="false">
+            <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3 7 3s7-1.4
+                     7-3v-3.3l-7 3.8-7-3.8z"/>
+          </svg>
+          <span>Google Scholar</span><span class="gs-count" id="gs-count"></span>
+        </a>
+      </p>
+
       <div class="plinks">{links}</div>
     </div>
   </div>
@@ -1145,6 +1171,27 @@ PAGE = """<!DOCTYPE html>
       remember(s);   // a still-empty result is stored as a failure, not as zeros
     }})
     .catch(function () {{ remember(null); }});   // stamp the failure, back off
+}})();
+
+/* ------------------------------------------------ Google Scholar citations
+   Google Scholar has no API, so - exactly as the al-folio Jekyll theme does -
+   the number is produced out of band by a scheduled GitHub Action that scrapes
+   the profile and commits scholar-stats.json. This page just reads that file
+   (same-origin, no rate limit) and drops the count into the button. If the file
+   is missing or the count is zero, the button still links to the profile.
+---------------------------------------------------------------------------- */
+(function () {{
+  var el = document.getElementById("gs-count");
+  if (!el || !window.fetch) return;
+  fetch("scholar-stats.json", {{ cache: "no-cache" }})
+    .then(function (r) {{ if (!r.ok) throw 0; return r.json(); }})
+    .then(function (d) {{
+      var n = d && d.citations;
+      if (typeof n === "number" && n > 0) {{
+        el.textContent = " \\u00b7 " + n.toLocaleString() + " citations";
+      }}
+    }})
+    .catch(function () {{}});
 }})();
 
 /* ------------------------------------------------------- download citation
@@ -1804,6 +1851,16 @@ def main():
     src_img = ROOT / "images"
     if src_img.exists():
         shutil.copytree(src_img, OUT / "images", dirs_exist_ok=True)
+
+    # Google Scholar stats: seed the file once, but never overwrite it on a
+    # rebuild - the GitHub Action keeps it current, and clobbering it here would
+    # wipe the latest count on every build.
+    stats = OUT / "scholar-stats.json"
+    if not stats.exists():
+        stats.write_text(
+            '{"citations": 0, "hindex": 0, "i10index": 0, "updated": ""}\n',
+            encoding="utf-8",
+        )
 
     n = sum(len(e) for _, e in years)
     with_pmid = sum(

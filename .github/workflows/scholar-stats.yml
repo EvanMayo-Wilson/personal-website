@@ -1,0 +1,60 @@
+name: Update Google Scholar stats
+
+# Refreshes docs/scholar-stats.json from your Google Scholar profile, the same
+# way the al-folio theme does it. Runs weekly and can be triggered by hand.
+#
+# NOTE: this scrapes Google Scholar, which has no official API. It works for
+# most people most of the time, but Scholar can rate-limit or block the runner,
+# in which case the job simply fails and the last good number stays on the site.
+# Enabling this is your call; the button also works with a number set by hand.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # every Monday, 06:00 UTC
+  workflow_dispatch: {}       # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write             # allows the job to commit the updated JSON
+
+jobs:
+  scholar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scraper
+        run: pip install scholarly
+
+      - name: Fetch citation stats
+        run: |
+          python - <<'PY'
+          import json, pathlib, datetime
+          from scholarly import scholarly
+
+          AUTHOR_ID = "gwrtLekAAAAJ"   # Evan Mayo-Wilson's Scholar user id
+
+          author = scholarly.search_author_id(AUTHOR_ID)
+          author = scholarly.fill(author, sections=["indices", "counts"])
+
+          data = {
+              "citations": int(author.get("citedby", 0)),
+              "hindex":    int(author.get("hindex", 0)),
+              "i10index":  int(author.get("i10index", 0)),
+              "updated":   datetime.date.today().isoformat(),
+          }
+          out = pathlib.Path("docs/scholar-stats.json")
+          out.write_text(json.dumps(data) + "\n", encoding="utf-8")
+          print("wrote", data)
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "scholar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/scholar-stats.json
+          git diff --cached --quiet || git commit -m "Update Google Scholar stats"
+          git push
