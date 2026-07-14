@@ -226,7 +226,8 @@ CITE_FORMATS = [
 def cite_menu(bulk: bool = False) -> str:
     label = "Download all citations" if bulk else "Download citation"
     return (
-        '<summary title="{0}" aria-label="{0}">{1}</summary>'
+        '<summary title="{0}" aria-label="{0}">{1}'
+        '<span class="btn-label">Cite</span></summary>'
         '<div class="cite-menu" role="group" aria-label="Citation format">'
         "{2}</div>"
     ).format(
@@ -280,9 +281,9 @@ def oa_button(key: str) -> str:
     if not key or "data-csl" in key:
         return '<span class="oa-empty"></span>'
     return (
-        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer" '
-        f'title="Free full text" aria-label="Free full text (open access)" hidden>'
-        f"{ICON_PDF}</a>"
+        f'<a class="oa-pdf" {key} href="#" '
+        f'title="Download free full text" aria-label="Download free full text (open access)" '
+        f'hidden>{ICON_PDF}<span class="btn-label">PDF</span></a>'
     )
 
 
@@ -740,10 +741,10 @@ PAGE = """<!DOCTYPE html>
 
   /* Grid, not flex: the metrics column is a fixed track, so every citation
      block is exactly the same width and the icons line up down the page. */
-  /* download button | citation | badges */
+  /* Cite/PDF buttons | citation | badges */
   li.pub {{
     display: grid;
-    grid-template-columns: 1.75rem minmax(0, 1fr) 8rem;
+    grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
     align-items: start; column-gap: 0;
     margin: 0; padding: .6rem 0; border-radius: 8px;
     font-size: .9375rem; line-height: 1.55;
@@ -752,7 +753,7 @@ PAGE = """<!DOCTYPE html>
 
   .pub-text {{
     min-width: 0;
-    padding-left: .75rem;
+    padding-left: .9rem;
     padding-right: 2.25rem;       /* breathing room after the citation */
   }}
   .pub-text p {{ margin: 0; }}
@@ -767,8 +768,12 @@ PAGE = """<!DOCTYPE html>
   /* Every hyperlink in a citation - title, PMID, protocol - is blue. */
   .pub-text a {{ color: var(--link); text-decoration: none; }}
   .pub-text a:hover {{ color: var(--link-hover); text-decoration: underline; }}
-  /* Title is a block, so the author list always begins on the next line. */
-  .pub-text > p:first-child > a:first-child {{
+  /* Parent-article title is a block, so the authors always begin on the next
+     line - whether the title is a link or (for a few book chapters) plain bold.
+     Scoped to li.pub > so it never applies to the sub-entries inside a
+     "published simultaneously in" list, which must stay on one line. */
+  li.pub > .pub-text > p:first-child > a:first-child,
+  li.pub > .pub-text > p:first-child > strong:first-child {{
     display: block; margin-bottom: .1rem;
   }}
 
@@ -806,21 +811,23 @@ PAGE = """<!DOCTYPE html>
   .pub-text ul {{
     list-style: none;
     padding-left: 0;
-    margin-left: -2.5rem;                             /* 1.75rem col + .75rem pad */
+    margin-left: -4.3rem;                             /* 3.4rem col + .9rem pad */
     margin-right: calc(-1 * (8rem + 2.25rem));        /* metrics col + gap */
   }}
   li.subpub {{
     display: grid;
-    grid-template-columns: 1.75rem minmax(0, 1fr) 8rem;
+    grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
     align-items: start; column-gap: 0;
     margin-bottom: .3rem;
   }}
   li.subpub > .metrics {{ min-height: 2rem; }}
   li.subpub > .pub-text {{
-    padding-left: 2.25rem;      /* .75rem base + 1.5rem indent */
+    padding-left: 2.4rem;       /* .9rem base + 1.5rem indent */
     padding-right: 2.25rem;
   }}
-  li.subpub > .pub-text p {{ margin: 0; }}
+  /* Journal, volume, PMID all on one line for a sub-entry. */
+  li.subpub > .pub-text p {{ margin: 0; display: block; }}
+  li.subpub > .pub-text a {{ display: inline; }}
 
   @media (max-width: 47.99rem) {{
     .pub-text ul {{
@@ -831,39 +838,37 @@ PAGE = """<!DOCTYPE html>
     li.subpub > .pub-text {{ padding: 0; }}
   }}
 
-  /* ---- download citation ------------------------------------------------- */
-  /* Left column: citation download on top, open-access full text beneath. */
+  /* ---- citation / PDF buttons -------------------------------------------- */
+  /* Left column: "Cite" on top, "PDF" (open-access full text) beneath. */
   .cite-col {{
-    display: flex; flex-direction: column; align-items: center;
-    gap: .15rem;
+    display: flex; flex-direction: column; align-items: stretch;
+    gap: .25rem;
   }}
-  .oa-pdf {{
-    display: flex; align-items: center; justify-content: center;
-    width: 1.75rem; height: 1.75rem;
-    border-radius: 6px; color: var(--faint);
+  /* Shared pill styling for both buttons. */
+  .cite-dl summary, .oa-pdf {{
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: .25rem; padding: .22rem .3rem; min-height: 1.55rem;
+    border: 1px solid var(--rule-2); border-radius: 6px;
+    background: var(--bg); color: var(--muted);
+    font-size: .72rem; font-weight: 600; line-height: 1;
+    cursor: pointer; white-space: nowrap;
   }}
-  .oa-pdf svg {{ width: .95rem; height: .95rem; }}
-  .oa-pdf:hover {{
-    color: #1d7a4c; background: var(--surface); text-decoration: none;
-  }}
-  :root[data-theme="dark"] .oa-pdf:hover {{ color: #5fce9a; }}
+  .cite-dl summary svg, .oa-pdf svg {{ width: .8rem; height: .8rem; flex: none; }}
+  .btn-label {{ letter-spacing: .01em; }}
+
+  .oa-pdf:hover {{ color: #1a7a48; border-color: #1a7a48; text-decoration: none; }}
+  :root[data-theme="dark"] .oa-pdf:hover {{ color: #5fce9a; border-color: #3a7a5c; }}
   @media (prefers-color-scheme: dark) {{
-    :root:not([data-theme="light"]) .oa-pdf:hover {{ color: #5fce9a; }}
+    :root:not([data-theme="light"]) .oa-pdf:hover {{ color: #5fce9a; border-color: #3a7a5c; }}
   }}
   .oa-pdf[hidden], .oa-empty {{ display: none; }}
 
   .cite-dl {{ position: relative; }}
-  .cite-dl summary {{
-    display: flex; align-items: center; justify-content: center;
-    width: 1.75rem; height: 1.75rem; margin-top: -.1rem;
-    border-radius: 6px; cursor: pointer;
-    color: var(--faint); list-style: none;
-  }}
+  .cite-dl summary {{ list-style: none; }}
   .cite-dl summary::-webkit-details-marker {{ display: none; }}
   .cite-dl summary::marker {{ content: ""; }}
-  .cite-dl summary svg {{ width: .95rem; height: .95rem; }}
-  .cite-dl summary:hover {{ color: var(--link); background: var(--surface); }}
-  .cite-dl[open] summary {{ color: var(--link); background: var(--surface); }}
+  .cite-dl summary:hover {{ color: var(--link); border-color: var(--link); }}
+  .cite-dl[open] summary {{ color: var(--link); border-color: var(--link); }}
 
   .cite-menu {{
     position: absolute; top: 2rem; left: 0; z-index: 15;
@@ -1533,6 +1538,7 @@ PAGE = """<!DOCTYPE html>
   function show(el, url) {{
     if (!url) return;
     el.href = url;
+    el.dataset.pdf = url;
     el.hidden = false;
   }}
 
@@ -1541,6 +1547,34 @@ PAGE = """<!DOCTYPE html>
       ? "doi:" + el.dataset.doi.toLowerCase()
       : "pmid:" + el.dataset.pmid;
   }}
+
+  // Clicking should DOWNLOAD the PDF, not navigate to it. We try to fetch it as
+  // a blob and save it; many OA hosts (PMC, Europe PMC, most repositories) allow
+  // this. If the host blocks cross-origin reads, we fall back to opening it in a
+  // new tab so the click is never dead.
+  document.addEventListener("click", function (ev) {{
+    var a = ev.target.closest && ev.target.closest(".oa-pdf");
+    if (!a || !a.dataset.pdf) return;
+    ev.preventDefault();
+    var url = a.dataset.pdf,
+        name = (a.dataset.doi || a.dataset.pmid || "article")
+                 .replace(/[^\\w.-]+/g, "_") + ".pdf",
+        lbl = a.querySelector(".btn-label"),
+        was = lbl ? lbl.textContent : "";
+    if (lbl) lbl.textContent = "\\u2026";
+    fetch(url).then(function (r) {{
+      if (!r.ok) throw 0; return r.blob();
+    }}).then(function (blob) {{
+      var u = URL.createObjectURL(blob), t = document.createElement("a");
+      t.href = u; t.download = name;
+      document.body.appendChild(t); t.click(); document.body.removeChild(t);
+      setTimeout(function () {{ URL.revokeObjectURL(u); }}, 2000);
+      if (lbl) lbl.textContent = was;
+    }}).catch(function () {{
+      window.open(url, "_blank", "noopener");   // CORS-blocked: open instead
+      if (lbl) lbl.textContent = was;
+    }});
+  }});
 
   // Paint anything already known.
   var pending = [];
