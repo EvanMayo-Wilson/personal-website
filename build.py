@@ -681,23 +681,21 @@ PAGE = """<!DOCTYPE html>
   .bio p {{ margin: 0 0 .7rem; }}
   .plinks {{ margin-top: auto; padding-top: 1rem; }}
 
-  /* ---- author-level metrics (OpenAlex) ----------------------------------- */
-  .author-stats {{
-    margin: .9rem 0 0; font-size: .8125rem; color: var(--muted);
+  /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
+  .author-metrics {{ margin: .9rem 0 0; display: flex; flex-direction: column; gap: .3rem; }}
+  .metric-row {{
+    margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: .5rem;
+    font-size: .8125rem;
   }}
-  .stat-src {{ color: var(--faint); margin-left: .4rem; }}
-  .scholar-line {{ margin: .5rem 0 0; }}
-  .scholar-btn {{
-    display: inline-flex; align-items: center; gap: .4rem;
-    padding: .35rem .7rem; border: 1px solid var(--rule-2);
-    border-radius: 8px; background: var(--surface);
-    font-size: .8125rem; color: var(--text); text-decoration: none;
+  .src-badge {{
+    display: inline-flex; align-items: center; gap: .35rem;
+    padding: .25rem .55rem; border: 1px solid var(--rule-2);
+    border-radius: 999px; background: var(--surface);
+    color: var(--text); text-decoration: none; white-space: nowrap;
   }}
-  .scholar-btn:hover {{
-    border-color: var(--link); color: var(--link); text-decoration: none;
-  }}
-  .scholar-btn svg {{ color: #4285f4; flex: none; }}
-  .gs-count {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
+  .src-badge:hover {{ border-color: var(--link); color: var(--link); text-decoration: none; }}
+  .src-badge svg {{ color: #4285f4; flex: none; }}
+  .metric-nums {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
   .plink {{ margin: 0 0 .2rem; font-size: .9375rem; line-height: 1.55; }}
   .plink a {{ text-decoration: underline; text-underline-offset: 2px;
               text-decoration-color: var(--rule-2); }}
@@ -994,26 +992,26 @@ PAGE = """<!DOCTYPE html>
 
       <!-- Author-level metrics. Populated from OpenAlex once per day; if the
            request fails the whole block simply never appears. -->
-      <p id="author-stats" class="author-stats" hidden>
-        <span id="stat-line"></span>
-        <span class="stat-src">Source:
-          <a href="https://openalex.org/{openalex_author}">OpenAlex</a>
-        </span>
-      </p>
-
-      <!-- Google Scholar citation button. The count is read from the committed
-           scholar-stats.json, which a scheduled GitHub Action refreshes. The
-           button always links to the profile; the number appears once present. -->
-      <p class="scholar-line">
-        <a class="scholar-btn" href="{scholar}" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"
-               aria-hidden="true" focusable="false">
-            <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3 7 3s7-1.4
-                     7-3v-3.3l-7 3.8-7-3.8z"/>
-          </svg>
-          <span>Google Scholar</span><span class="gs-count" id="gs-count"></span>
-        </a>
-      </p>
+      <!-- Two citation summaries. Google Scholar comes from the committed
+           scholar-stats.json (refreshed by a scheduled GitHub Action, al-folio
+           style); OpenAlex is fetched live. Each row hides until its data is
+           available, so a failure of either never leaves an empty label. -->
+      <div class="author-metrics">
+        <p class="metric-row" id="gs-row" hidden>
+          <a class="src-badge" href="{scholar}" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"
+                 aria-hidden="true" focusable="false">
+              <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3 7 3s7-1.4
+                       7-3v-3.3l-7 3.8-7-3.8z"/>
+            </svg>Google Scholar</a>
+          <span class="metric-nums" id="gs-line"></span>
+        </p>
+        <p class="metric-row" id="oa-row" hidden>
+          <a class="src-badge" href="https://openalex.org/{openalex_author}"
+             target="_blank" rel="noopener noreferrer">OpenAlex</a>
+          <span class="metric-nums" id="stat-line"></span>
+        </p>
+      </div>
 
       <div class="plinks">{links}</div>
     </div>
@@ -1093,7 +1091,7 @@ PAGE = """<!DOCTYPE html>
       TTL      = 24 * 60 * 60 * 1000,   // success: refresh at most once a day
       BACKOFF  = 6 * 60 * 60 * 1000,    // failure: don't try again for 6 hours
       ORCID    = "{orcid}",
-      box      = document.getElementById("author-stats"),
+      box      = document.getElementById("oa-row"),
       lineEl   = document.getElementById("stat-line");
 
   if (!box || !window.fetch) return;
@@ -1181,15 +1179,18 @@ PAGE = """<!DOCTYPE html>
    is missing or the count is zero, the button still links to the profile.
 ---------------------------------------------------------------------------- */
 (function () {{
-  var el = document.getElementById("gs-count");
-  if (!el || !window.fetch) return;
+  var row = document.getElementById("gs-row"),
+      el  = document.getElementById("gs-line");
+  if (!row || !el || !window.fetch) return;
   fetch("scholar-stats.json", {{ cache: "no-cache" }})
     .then(function (r) {{ if (!r.ok) throw 0; return r.json(); }})
     .then(function (d) {{
-      var n = d && d.citations;
-      if (typeof n === "number" && n > 0) {{
-        el.textContent = " \\u00b7 " + n.toLocaleString() + " citations";
-      }}
+      if (!d || !(d.citations > 0)) return;
+      var parts = [d.citations.toLocaleString() + " citations"];
+      if (d.hindex)   parts.push("h-index " + d.hindex);
+      if (d.i10index) parts.push("i10-index " + d.i10index);
+      el.textContent = parts.join(" \\u00b7 ");
+      row.hidden = false;
     }})
     .catch(function () {{}});
 }})();
