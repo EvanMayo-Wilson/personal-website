@@ -315,6 +315,12 @@ def nested_badges(frag: str) -> str:
 
     def one(m):
         open_tag, inner, close_tag = m.groups()
+        # Sub-entries are full citations too, in the same "title, hard break,
+        # authors" markdown as a parent article; strip that break the same way.
+        # A loose list wraps each <li>'s content in its own <p> preceded by a
+        # newline, so the leading whitespace has to go before the ^<p> anchor
+        # in title_on_own_line can match.
+        inner = title_on_own_line(inner.lstrip())
         pmid, doi, extra, _t = entry_meta(inner)
         if not (pmid or doi or extra):
             return m.group(0)
@@ -841,12 +847,19 @@ PAGE = """<!DOCTYPE html>
   /* Every hyperlink in a citation - title, PMID, protocol - is blue. */
   .pub-text a {{ color: var(--link); text-decoration: none; }}
   .pub-text a:hover {{ color: var(--link-hover); text-decoration: underline; }}
-  /* Parent-article title is a block, so the authors always begin on the next
-     line - whether the title is a link or (for a few book chapters) plain bold.
-     Scoped to li.pub > so it never applies to the sub-entries inside a
-     "published simultaneously in" list, which must stay on one line. */
+  /* Article title is a block, so the authors always begin on the next line -
+     whether the title is a link or (for a few book chapters) plain bold. This
+     applies to parent articles and to the full sub-entry citations inside a
+     "published simultaneously in" list, which are formatted the same way.
+     A sub-entry list with only one item renders "tight" (no wrapping <p>),
+     so both the p:first-child and the bare > a:first-child shapes are
+     covered here. */
   li.pub > .pub-text > p:first-child > a:first-child,
-  li.pub > .pub-text > p:first-child > strong:first-child {{
+  li.pub > .pub-text > p:first-child > strong:first-child,
+  li.subpub > .pub-text > p:first-child > a:first-child,
+  li.subpub > .pub-text > p:first-child > strong:first-child,
+  li.subpub > .pub-text > a:first-child,
+  li.subpub > .pub-text > strong:first-child {{
     display: block; margin-bottom: .1rem;
   }}
 
@@ -899,7 +912,9 @@ PAGE = """<!DOCTYPE html>
     padding-left: 2.4rem;       /* .9rem base + 1.5rem indent */
     padding-right: 2.25rem;
   }}
-  /* Journal, volume, PMID all on one line for a sub-entry. */
+  /* Sub-entries are full citations: the title (a:first-child, handled above)
+     is a block, and every other link - authors' none, journal none, the PMID -
+     stays inline on the citation line that follows. */
   li.subpub > .pub-text p {{ margin: 0; display: block; }}
   li.subpub > .pub-text a {{ display: inline; }}
 
@@ -1927,9 +1942,7 @@ def main():
         citemenu_all=cite_menu(bulk=True),
         cslextra=json.dumps(CSL_EXTRA, ensure_ascii=False).replace("</", "<\\/"),
         yearnav='<span class="sep" aria-hidden="true">·</span>'.join(
-            f'<a href="#y{y}">{y}</a>'
-            for y, _ in years
-            if int(y) != datetime.date.today().year   # skip the current year
+            f'<a href="#y{y}">{y}</a>' for y, _ in years
         ),
         updated=datetime.date.today().strftime("%-d %B %Y")
                 if os.name != "nt" else datetime.date.today().strftime("%d %B %Y"),

@@ -76,11 +76,14 @@ Elsman EBM, Mokkink LB, Terwee CB, Beaton D, Gagnier JJ, Tricco AC, Baba A, Butc
 
   This article was published simultaneously in:
 
-  - [*Health Qual Life Outcomes*](https://doi.org/10.1186/s12955-024-02256-9), 22(1):48. PMID: [38978063](https://pubmed.ncbi.nlm.nih.gov/38978063/)
+  - [**Guideline for reporting systematic reviews of outcome measurement instruments (OMIs): PRISMA-COSMIN for OMIs**](https://doi.org/10.1186/s12955-024-02256-9)  
+Elsman EBM, Mokkink LB, Terwee CB, Beaton D, Gagnier JJ, Tricco AC, Baba A, Butcher NJ, Smith M, Hofstetter C, Lee Aiyegbusi O, Berardi A, Farmer J, Haywood KL, Krause KR, Markham S, **Mayo-Wilson E**, Mehdipour A, Ricketts J, Szatmari P, Touma Z, Moher D, Offringa M. *Health Qual Life Outcomes* 22(1):48. PMID: [38978063](https://pubmed.ncbi.nlm.nih.gov/38978063/).
 
-  - [*J Patient Rep Outcomes*](https://doi.org/10.1186/s41687-024-00727-7), 8(1):64. PMID: [38977535](https://pubmed.ncbi.nlm.nih.gov/38977535/)
+  - [**Guideline for reporting systematic reviews of outcome measurement instruments (OMIs): PRISMA-COSMIN for OMIs**](https://doi.org/10.1186/s41687-024-00727-7)  
+Elsman EBM, Mokkink LB, Terwee CB, Beaton D, Gagnier JJ, Tricco AC, Baba A, Butcher NJ, Smith M, Hofstetter C, Lee Aiyegbusi O, Berardi A, Farmer J, Haywood KL, Krause KR, Markham S, **Mayo-Wilson E**, Mehdipour A, Ricketts J, Szatmari P, Touma Z, Moher D, Offringa M. *J Patient Rep Outcomes* 8(1):64. PMID: [38977535](https://pubmed.ncbi.nlm.nih.gov/38977535/).
 
-  - [*Qual Life Res*](https://doi.org/10.1007/s11136-024-03634-y), 33: 2029–2046. PMID: [38980635](https://pubmed.ncbi.nlm.nih.gov/38980635/)
+  - [**Guideline for reporting systematic reviews of outcome measurement instruments (OMIs): PRISMA-COSMIN for OMIs**](https://doi.org/10.1007/s11136-024-03634-y)  
+Elsman EBM, Mokkink LB, Terwee CB, Beaton D, Gagnier JJ, Tricco AC, Baba A, Butcher NJ, Smith M, Hofstetter C, Lee Aiyegbusi O, Berardi A, Farmer J, Haywood KL, Krause KR, Markham S, **Mayo-Wilson E**, Mehdipour A, Ricketts J, Szatmari P, Touma Z, Moher D, Offringa M. *Qual Life Res* 33:2029–2046. PMID: [38980635](https://pubmed.ncbi.nlm.nih.gov/38980635/).
 
 - [**A guide for social science journal editors on easing into open science**](https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-023-00141-5)  
 Silverstein P, Elman C, Montoya A, McGillivray B, Pennington CR, Harrison CH, Steltenpohl CN, Röer JP, Corker KS, Charron LM, Elsherif M, Malicki M, Hayes-Harb R, Grinschgl S, Neal T, Evans TR, Karhulahti V-M, Krenzer WLD, Belaus A, Moreau D, Burin DI, Chin E, Plomp E, **Mayo-Wilson E**, Lyle J, Adler JM, Bottesini JM, Lawson KA, Schmidt K, Reneau K, Vilhuber L, Waltman L, Gernsbacher MA, Plonski PE, Ghai S, Grant S, Christian TM, Ngiam W, Syed M. *Res Integ Peer Rev* 9(2):2. PMID: [38360805](https://pubmed.ncbi.nlm.nih.gov/38360805/). [[Preprint on OSF Preprints](https://osf.io/5dar8/)]
@@ -106,7 +109,8 @@ National Academies of Sciences, Engineering, and Medicine. 2024. Washington, DC:
 
   This article was published simultaneously in:
 
-  - [*J Clin Epidemiol*](https://www.jclinepi.com/article/S0895-4356(23)00090-2/fulltext#articleInformation). PMID: [37100738](https://pubmed.ncbi.nlm.nih.gov/37100738/).
+  - [**CONSORT Harms 2022 statement, explanation, and elaboration: updated guidelines for the reporting of harms in randomized trials**](https://www.jclinepi.com/article/S0895-4356(23)00090-2/fulltext#articleInformation)  
+Junqueira DR, Zorzela L, Golder S, Loke Y, Gagnier JJ, Julious SA, Li T, **Mayo-Wilson E**, Pham B, Phillips R, Santaguida R, Scherer RW, Gøtzsche P, Moher D, Ioannidis JPA, Vohra S on behalf of the CONSORT Harms Group. *J Clin Epidemiol* 158:149-165. PMID: [37100738](https://pubmed.ncbi.nlm.nih.gov/37100738/).
 
 - [**ROB-ME: A tool for assessing risk of bias due to missing evidence in systematic reviews with meta-analysis**](https://www.bmj.com/content/383/bmj-2023-076754)Page M J, Sterne J A C, Boutron I, Hróbjartsson A, Kirkham J J, Li T, Lundh A, **Mayo-Wilson E**, McKenzie JE, Stewart LA, Sutton AJ, Bero L, Dunn AG, Dwan K, Elbers RG, Kanukula R, Meerpohl JJ, Turner EH, Higgins JPT. *BMJ* 383:e076754. PMID: [37984978](https://pubmed.ncbi.nlm.nih.gov/37984978/)*.*
 
@@ -170,13 +174,17 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
   This article was published simultaneously in:
 
-  - [*Int J Surg*](https://www.sciencedirect.com/science/article/pii/S1743919121000406)105906. PMID: [33789826](https://pubmed.ncbi.nlm.nih.gov/33789826/).
+  - [**The PRISMA 2020 statement: an updated guideline for reporting systematic reviews**](https://www.sciencedirect.com/science/article/pii/S1743919121000406)  
+Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, Moher D. *Int J Surg* 88:105906. PMID: [33789826](https://pubmed.ncbi.nlm.nih.gov/33789826/).
 
-  - [*J Clin Epidemiol*](https://www.jclinepi.com/article/S0895-4356(21)00073-1/fulltext) 134:178-189. PMID: [33789819](https://pubmed.ncbi.nlm.nih.gov/33789819/).
+  - [**The PRISMA 2020 statement: an updated guideline for reporting systematic reviews**](https://www.jclinepi.com/article/S0895-4356(21)00073-1/fulltext)  
+Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, Moher D. *J Clin Epidemiol* 134:178-189. PMID: [33789819](https://pubmed.ncbi.nlm.nih.gov/33789819/).
 
-  - [*PLOS Med*](https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003583) 18(3):e1003583. PMID: [33780438](https://pubmed.ncbi.nlm.nih.gov/33780438/).
+  - [**The PRISMA 2020 statement: an updated guideline for reporting systematic reviews**](https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003583)  
+Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, Moher D. *PLOS Med* 18(3):e1003583. PMID: [33780438](https://pubmed.ncbi.nlm.nih.gov/33780438/).
 
-  - [*Syst Rev*](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-021-01626-4)10(1):89. PMID: [33781348](https://pubmed.ncbi.nlm.nih.gov/33781348/).
+  - [**The PRISMA 2020 statement: an updated guideline for reporting systematic reviews**](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-021-01626-4)  
+Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, Moher D. *Syst Rev* 10(1):89. PMID: [33781348](https://pubmed.ncbi.nlm.nih.gov/33781348/).
 
 - [**PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews**](https://www.bmj.com/content/372/bmj.n160)Page MJ, Moher D, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, McKenzie JE. *BMJ* 372:n160. PMID: [33781993](https://pubmed.ncbi.nlm.nih.gov/33781993/). [[Preprint on MetaArxiv](https://osf.io/preprints/metaarxiv/gwdhk/)]
 
@@ -186,7 +194,8 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
   This article was also published in:
 
-  - [*Arthroscopy*](https://www.arthroscopyjournal.org/article/S0749-8063(21)00821-5/fulltext). 37(11):3223-3225. PMID: [34740399](https://pubmed.ncbi.nlm.nih.gov/34740399/).
+  - [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://www.arthroscopyjournal.org/article/S0749-8063(21)00821-5/fulltext)  
+Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Arthroscopy* 37(11):3223-3225. PMID: [34740399](https://pubmed.ncbi.nlm.nih.gov/34740399/).
 
 ## 2020
 
@@ -328,15 +337,20 @@ Morriss R, Kendall T, Braidwood R, Byng R, Cipriani A, James A, John C, Jones S,
 
   This article was published simultaneously in:
 
-  - [*Trials*](https://trialsjournal.biomedcentral.com/articles/10.1186/1745-6215-14-242) 14:242. PMID: [23915044](https://pubmed.ncbi.nlm.nih.gov/23915044/).
+  - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://trialsjournal.biomedcentral.com/articles/10.1186/1745-6215-14-242)  
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Trials* 14:242. PMID: [23915044](https://pubmed.ncbi.nlm.nih.gov/23915044/).
 
-  - [*Am J Public Health*](https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2013.301447)103(10):1741-1746. PMID: [23947317](https://pubmed.ncbi.nlm.nih.gov/23947317/).
+  - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2013.301447)  
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Am J Public Health* 103(10):1741-1746. PMID: [23947317](https://pubmed.ncbi.nlm.nih.gov/23947317/).
 
-  - [*J Exp Criminol*](https://link.springer.com/article/10.1007/s11292-013-9180-5) 9:355-367. DOI: 10.1007/s11292-013-9180-5
+  - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://link.springer.com/article/10.1007/s11292-013-9180-5)  
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *J Exp Criminol* 9:355-367. DOI: [10.1007/s11292-013-9180-5](https://doi.org/10.1007/s11292-013-9180-5).
 
-  - [Res Soc Work Pract](https://journals.sagepub.com/doi/10.1177/1049731513498118) 23:595-602. PMID: [25076832](https://pubmed.ncbi.nlm.nih.gov/25076832/).
+  - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://journals.sagepub.com/doi/10.1177/1049731513498118)  
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Res Soc Work Pract* 23:595-602. PMID: [25076832](https://pubmed.ncbi.nlm.nih.gov/25076832/).
 
-  - [*Brit J Soc Work*](https://academic.oup.com/bjsw/article/43/5/1024/1636845), 43(5):1024-1039. DOI: [10.1093/bjsw/bct129](https://doi.org/10.1093/bjsw/bct129)
+  - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://academic.oup.com/bjsw/article/43/5/1024/1636845)  
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Brit J Soc Work* 43(5):1024-1039. DOI: [10.1093/bjsw/bct129](https://doi.org/10.1093/bjsw/bct129).
 
 - [**Vitamin A supplementation in Indian children**](https://pubmed.ncbi.nlm.nih.gov/23953382/)  
 **Mayo-Wilson E**, Imdad A, Herzer K, Bhutta ZA. *The Lancet* 382(9892):594. PMID: [23953382](https://pubmed.ncbi.nlm.nih.gov/23953382/).
