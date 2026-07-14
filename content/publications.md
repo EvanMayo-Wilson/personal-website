@@ -240,7 +240,8 @@ Appelbaum M, Cooper H, Kline RB, **Mayo-Wilson E**, Nezu AM, Rao SM. *Am Psychol
 
 - [**The quality of systematic reviews about interventions for refractive error can be improved: A review of systematic reviews**](https://bmcophthalmol.biomedcentral.com/articles/10.1186/s12886-017-0561-9)**Mayo-Wilson E,** Ng SM, Chuck RS, Li T. *BMC Ophthalmology* 17:164. PMID: [28870179](https://pubmed.ncbi.nlm.nih.gov/28870179/). [Data included in [Additional file 1](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM1_ESM.docx), [Additional file 2](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM2_ESM.pdf), [Additional file 3](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM3_ESM.xlsx)]
 
-- [**Integrating multiple data sources for meta-analysis to improve patient-centered outcomes research**](https://www.pcori.org/research-results/2013/benefits-and-challenges-using-multiple-sources-information-about-clinical)Dickersin K, **Mayo-Wilson E**, Li T for the MUDS Investigators. *Patient Centered Outcomes Research Institute* (peer reviewed final research report). [[Study registration](https://wwwcf.nlm.nih.gov/hsr_project/view_hsrproj_record.cfm?NLMUNIQUE_ID=20143578); [Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z)]
+- [**The Benefits and Challenges of Using Multiple Sources of Information about Clinical Trials**](https://doi.org/10.25302/3.2018.ME.13035785)  
+Dickersin K, **Mayo-Wilson E**, Li T. *Patient-Centered Outcomes Research Institute* (peer reviewed final research report). PMID: [37043591](https://pubmed.ncbi.nlm.nih.gov/37043591/). [[Study registration](https://wwwcf.nlm.nih.gov/hsr_project/view_hsrproj_record.cfm?NLMUNIQUE_ID=20143578); [Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z)]
 
 - [**Vitamin A supplementation for preventing disease and death in children aged six months to five years**](http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD008524.pub3/abstract)Imdad A, **Mayo-Wilson E,** Herzer K, Bhutta ZA. *Cochrane Database of Syst Rev* 3:CD008524. PMID: [28282701](https://pubmed.ncbi.nlm.nih.gov/28282701/). [[Published protocol](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008524/full)]
 
@@ -252,6 +253,9 @@ Appelbaum M, Cooper H, Kline RB, **Mayo-Wilson E**, Nezu AM, Rao SM. *Am Psychol
 
 - [**NICE guidance: why not clozapine for treatment-refractory bipolar disorder? - Authors' reply**](https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(16)30098-0/fulltext)  
 Morriss R, **Mayo-Wilson E**, Kendall T. *Lancet Psychiatry* 3(6):503. PMID: [27262048](https://pubmed.ncbi.nlm.nih.gov/27262048/).
+
+- [**Implementing Quality Improvement for Psychosocial Interventions**](https://pubmed.ncbi.nlm.nih.gov/26934268/)  
+Grant SP, **Mayo-Wilson E**, Montgomery P. *JAMA* 315(9):943. PMID: [26934268](https://pubmed.ncbi.nlm.nih.gov/26934268/).
 
 - [**Scientific reporting, Raising the standards**](http://journals.sagepub.com/doi/abs/10.1177/1090198116668522?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed)McLeroy K, Garney W, **Mayo-Wilson E,** Grant S. *Health Educ Behav* 43(5):501-508. PMID: [27624441](https://pubmed.ncbi.nlm.nih.gov/27624441/).
 
@@ -329,9 +333,21 @@ Morriss R, Kendall T, Braidwood R, Byng R, Cipriani A, James A, John C, Jones S,
 
   - [*Brit J Soc Work*](https://academic.oup.com/bjsw/article/43/5/1024/1636845), 43(5):1024-1039. DOI: [10.1093/bjsw/bct129](https://doi.org/10.1093/bjsw/bct129)
 
+- [**Vitamin A supplementation in Indian children**](https://pubmed.ncbi.nlm.nih.gov/23953382/)  
+**Mayo-Wilson E**, Imdad A, Herzer K, Bhutta ZA. *The Lancet* 382(9892):594. PMID: [23953382](https://pubmed.ncbi.nlm.nih.gov/23953382/).
+
+- [**Apparent Discrepancy Between Published Study of Gabapentin Treatment and Internal Company Report**](https://pubmed.ncbi.nlm.nih.gov/24021509/)  
+**Mayo-Wilson E**. *J Clin Psychiatry* 74(8):853-854. PMID: [24021509](https://pubmed.ncbi.nlm.nih.gov/24021509/).
+
 - [**Recognition, assessment and treatment of social anxiety disorder: Summary of NICE Guidance**](https://www.bmj.com/content/346/bmj.f2541/related)Pilling S, **Mayo-Wilson E**, Mavranezouli I, Kew K, Taylor C, Clark DM. *BMJ* 346:f2541. PMID: [23697669](https://pubmed.ncbi.nlm.nih.gov/23697669/).
 
 - [**Reporting quality of randomised trials in behavioural and psychological journals**](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0065442)Grant SP, **Mayo-Wilson E**, Melendez-Torres G, Montgomery P. *PLoS ONE* 8(5):e65442. PMID: [23734256](https://pubmed.ncbi.nlm.nih.gov/23734256/).
+
+- [**New guidelines are needed to improve the reporting of trials in addiction sciences**](https://pubmed.ncbi.nlm.nih.gov/23796394/)  
+Grant SP, **Mayo-Wilson E**, Hopewell S, McDonald G, Moher D, Montgomery P. *Addiction* 108:1686-1688. PMID: [23796394](https://pubmed.ncbi.nlm.nih.gov/23796394/).
+
+- [**The need for new guidelines to improve the reporting of trials in child and adolescent mental health**](https://pubmed.ncbi.nlm.nih.gov/23789914/)  
+Gardner F, **Mayo-Wilson E**, Montgomery P, Hopewell S, Macdonald G, Moher D, Grant SP. *J Child Psychol Psychiatry* 54(7):810-812. PMID: [23789914](https://pubmed.ncbi.nlm.nih.gov/23789914/).
 
 - [**Restorative Justice Conferencing (RJC) Using Face-To-Face Meetings of Offenders and Victims: Effects on Offender Recidivism and Victim Satisfaction**](https://onlinelibrary.wiley.com/doi/10.4073/csr.2013.12)  
 Strang H, Sherman LW, **Mayo-Wilson E**, Woods DJ, Ariel B. *Campbell Systematic Reviews*. [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.5)]
@@ -353,6 +369,9 @@ Clark DM, Pilling S, **Mayo-Wilson E**, Mavranezouli I, Afghan S, Anigbogu B, Ar
 - [**School-based mentoring: A systematic review and meta-analysis**](http://journals.sagepub.com/doi/abs/10.1177/1049731511430836)Wood S, **Mayo-Wilson E**. *Res Soc Work Pract* 22(3):257-269.
 
 - [**Police strategies to reduce illegal possession and carrying of firearms: Effects on gun crime**](https://onlinelibrary.wiley.com/doi/pdf/10.4073/csr.2012.11)Koper C, **Mayo-Wilson E**. *Campbell Systematic Reviews*. [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.16)]
+
+- [**Development of a CONSORT extension for interventions in public health and related disciplines**](https://doi.org/10.1016/S0140-6736(13)60370-0)  
+Grant SP, Montgomery P, **Mayo-Wilson E**. *The Lancet* 380:S14. DOI: [10.1016/S0140-6736(13)60370-0](https://doi.org/10.1016/S0140-6736(13)60370-0).
 
 ## 2011
 

@@ -35,7 +35,7 @@ ORCID = "0000-0001-6126-2459"
 OPENALEX_AUTHOR = "orcid:" + ORCID          # OpenAlex resolves ORCIDs directly
 
 # Set to your Cloudflare Web Analytics token to enable analytics; "" disables it.
-CLOUDFLARE_ANALYTICS_TOKEN = ""
+CLOUDFLARE_ANALYTICS_TOKEN = "bbbbe37fa9a84afa972a08c98b1d942c"
 
 MD = markdown.Markdown(extensions=["extra", "sane_lists"])
 
