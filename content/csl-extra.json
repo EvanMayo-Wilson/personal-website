@@ -1,0 +1,143 @@
+{
+  "_comment": [
+    "Hand-written CSL-JSON for publications that have no PMID and no DOI, so",
+    "there is nothing for PubMed or Crossref to look up. Without these records",
+    "the download-citation button has no data source and cannot be shown.",
+    "",
+    "Key = the article's URL exactly as it appears in publications.md, or the",
+    "exact title if the entry has no link at all.",
+    "",
+    "These records feed the RIS / BibTeX / EndNote / CSL-JSON downloads directly;",
+    "they are embedded in the page, so no network request is made for them."
+  ],
+
+  "https://www.nice.org.uk/guidance/cg185/evidence/full-guideline-pdf-4840895629": {
+    "type": "book",
+    "title": "Bipolar disorder: the assessment and management of bipolar disorder in adults, children and young people in primary and secondary care",
+    "collection-title": "NICE Clinical Guideline CG185",
+    "publisher": "Royal College of Psychiatrists",
+    "publisher-place": "London",
+    "issued": { "date-parts": [[2014]] },
+    "URL": "https://www.nice.org.uk/guidance/cg185",
+    "author": [
+      { "family": "Morriss", "given": "R" }, { "family": "Kendall", "given": "T" },
+      { "family": "Braidwood", "given": "R" }, { "family": "Byng", "given": "R" },
+      { "family": "Cipriani", "given": "A" }, { "family": "James", "given": "A" },
+      { "family": "John", "given": "C" }, { "family": "Jones", "given": "S" },
+      { "family": "Legett", "given": "K" }, { "family": "Marcus", "given": "E" },
+      { "family": "Mavranezouli", "given": "I" }, { "family": "Mayo-Wilson", "given": "E" },
+      { "family": "McDougall", "given": "T" }, { "family": "Meyer", "given": "T" },
+      { "family": "Paton", "given": "C" }, { "family": "Stockton", "given": "S" },
+      { "family": "Schwannauer", "given": "M" }, { "family": "Swinden", "given": "D" },
+      { "family": "Taylor", "given": "C" }, { "family": "Westhead", "given": "R" },
+      { "family": "Whittington", "given": "C" }, { "family": "Wilson", "given": "F" }
+    ]
+  },
+
+  "https://www.nice.org.uk/guidance/cg178/evidence/full-guideline-pdf-490503565": {
+    "type": "book",
+    "title": "Psychosis and schizophrenia in adults: the NICE guideline on the treatment and management of psychosis and schizophrenia in adults",
+    "collection-title": "NICE Clinical Guideline CG178",
+    "publisher": "Royal College of Psychiatrists",
+    "publisher-place": "London",
+    "issued": { "date-parts": [[2013]] },
+    "URL": "https://www.nice.org.uk/guidance/cg178",
+    "author": [
+      { "family": "Kuipers", "given": "E" }, { "family": "Kendall", "given": "T" },
+      { "family": "Yesufu-Udechuku", "given": "A" }, { "family": "Slade", "given": "E" },
+      { "family": "Birchwood", "given": "M" }, { "family": "Brabban", "given": "A" },
+      { "family": "Cheema", "given": "N" }, { "family": "Green", "given": "D" },
+      { "family": "Harrison", "given": "B" }, { "family": "Iqbal", "given": "Z" },
+      { "family": "Johnson", "given": "S" }, { "family": "Marshall", "given": "M" },
+      { "family": "Mayo-Wilson", "given": "E" }, { "family": "Mitchell", "given": "J" },
+      { "family": "Morrison", "given": "T" }, { "family": "Moulin", "given": "M" },
+      { "family": "Shiers", "given": "D" }, { "family": "Stockton", "given": "S" },
+      { "family": "Taylor", "given": "C" }, { "family": "Travis", "given": "C" },
+      { "family": "Waddingham", "given": "R" }, { "family": "Woodhams", "given": "P" },
+      { "family": "Young", "given": "N" }
+    ]
+  },
+
+  "https://www.nice.org.uk/guidance/cg159/evidence/full-guideline-pdf-189895069": {
+    "type": "book",
+    "title": "Social anxiety disorder: the NICE guideline on the recognition, assessment and treatment of social anxiety disorder",
+    "collection-title": "NICE Clinical Guideline CG159",
+    "publisher": "Royal College of Psychiatrists",
+    "publisher-place": "London",
+    "issued": { "date-parts": [[2013]] },
+    "URL": "https://www.nice.org.uk/guidance/cg159",
+    "author": [
+      { "family": "Clark", "given": "D. M." }, { "family": "Pilling", "given": "S" },
+      { "family": "Mayo-Wilson", "given": "E" }, { "family": "Mavranezouli", "given": "I" },
+      { "family": "Afghan", "given": "S" }, { "family": "Anigbogu", "given": "B" },
+      { "family": "Armstrong", "given": "P" }, { "family": "Bennett", "given": "M" },
+      { "family": "Cartwright-Hatton", "given": "S" }, { "family": "Creswell", "given": "C" },
+      { "family": "Dix", "given": "M" }, { "family": "Hanlon", "given": "N" },
+      { "family": "Kew", "given": "K" }, { "family": "Leggett", "given": "K" },
+      { "family": "Malizia", "given": "A" }, { "family": "Roberts", "given": "J" },
+      { "family": "Satrettin", "given": "K" }, { "family": "Smith", "given": "M" },
+      { "family": "Stephens", "given": "G" }, { "family": "Stopa", "given": "L" },
+      { "family": "Stockton", "given": "S" }, { "family": "Taylor", "given": "C" },
+      { "family": "Whittington", "given": "C" }
+    ]
+  },
+
+  "https://global.oup.com/academic/product/social-workers-desk-reference-9780199329649?cc=us&lang=en&q=Social%20Workers%E2%80%99%20Desk%20Reference%20third%20edition": {
+    "type": "chapter",
+    "title": "Randomized controlled trials and evidence-based practice",
+    "container-title": "Social Workers' Desk Reference",
+    "edition": "3rd",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "page": "1221-1229",
+    "ISBN": "9780199329649",
+    "issued": { "date-parts": [[2015]] },
+    "author": [
+      { "family": "Montgomery", "given": "P" },
+      { "family": "Mayo-Wilson", "given": "E" }
+    ],
+    "editor": [
+      { "family": "Corcoran", "given": "Kevin" },
+      { "family": "Roberts", "given": "Albert R." }
+    ]
+  },
+
+  "Randomized controlled trials and evidence-based practice": {
+    "type": "chapter",
+    "title": "Randomized controlled trials and evidence-based practice",
+    "container-title": "Social Workers' Desk Reference",
+    "edition": "2nd",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "page": "1142-1148",
+    "ISBN": "9780195369373",
+    "issued": { "date-parts": [[2008]] },
+    "author": [
+      { "family": "Montgomery", "given": "P" },
+      { "family": "Mayo-Wilson", "given": "E" }
+    ],
+    "editor": [{ "family": "Roberts", "given": "Albert R." }]
+  },
+
+  "https://www.apa.org/pubs/books/apa-handbook-health-psychology": {
+    "type": "chapter",
+    "title": "Systems of evidence in health psychology",
+    "container-title": "APA Handbook of Health Psychology",
+    "chapter-number": "12",
+    "publisher": "American Psychological Association",
+    "publisher-place": "Washington, DC",
+    "issued": { "date-parts": [[2024]] },
+    "author": [{ "family": "Mayo-Wilson", "given": "E" }],
+    "URL": "https://www.apa.org/pubs/books/apa-handbook-health-psychology"
+  },
+
+  "https://www.pcori.org/research-results/2013/benefits-and-challenges-using-multiple-sources-information-about-clinical": {
+    "type": "report",
+    "title": "Integrating multiple data sources for meta-analysis to improve patient-centered outcomes research",
+    "publisher": "Patient-Centered Outcomes Research Institute (PCORI)",
+    "publisher-place": "Washington, DC",
+    "issued": { "date-parts": [[2017]] },
+    "author": [{ "family": "Mayo-Wilson", "given": "E" }],
+    "URL": "https://www.pcori.org/research-results/2013/benefits-and-challenges-using-multiple-sources-information-about-clinical"
+  }
+}

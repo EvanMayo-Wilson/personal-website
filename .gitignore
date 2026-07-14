@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# superseded by site/
+site-classic/
+site-refresh/
+
+# personal, not part of the website
+ICANN Lookup.pdf
