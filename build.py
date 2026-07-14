@@ -430,10 +430,15 @@ def profile_links_html(p):
     rest = p["links"][1:]
     lines = [f'<a href="{first[1]}">{first[0]}</a>']
     if rest:
+        def anchor(t, u):
+            # Tag the OpenAlex link so its href can be upgraded at runtime to the
+            # canonical author page (openalex.org/A...) once the API responds.
+            extra = ' id="oa-profile"' if "openalex.org" in u else ""
+            return f'<a{extra} href="{u}">{t}</a>'
         lines.append(
             '<span class="sep-list">'
             + '<span class="sep" aria-hidden="true">|</span>'.join(
-                f'<a href="{u}">{t}</a>' for t, u in rest
+                anchor(t, u) for t, u in rest
             )
             + "</span>"
         )
@@ -689,14 +694,10 @@ PAGE = """<!DOCTYPE html>
     margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: .5rem;
     font-size: .8125rem;
   }}
-  .src-badge {{
-    display: inline-flex; align-items: center; gap: .35rem;
-    padding: .25rem .55rem; border: 1px solid var(--rule-2);
-    border-radius: 999px; background: var(--surface);
-    color: var(--text); text-decoration: none; white-space: nowrap;
+  .metric-src {{
+    font-weight: 650; color: var(--heading); white-space: nowrap;
   }}
-  .src-badge:hover {{ border-color: var(--link); color: var(--link); text-decoration: none; }}
-  .src-badge svg {{ color: #4285f4; flex: none; }}
+  .metric-src::after {{ content: ":"; color: var(--muted); font-weight: 400; }}
   .metric-nums {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
   .plink {{ margin: 0 0 .2rem; font-size: .9375rem; line-height: 1.55; }}
   .plink a {{ text-decoration: underline; text-underline-offset: 2px;
@@ -1000,20 +1001,15 @@ PAGE = """<!DOCTYPE html>
            scholar-stats.json (refreshed by a scheduled GitHub Action, al-folio
            style); OpenAlex is fetched live. Each row hides until its data is
            available, so a failure of either never leaves an empty label. -->
+      <!-- Numbers only; the clickable Google Scholar and OpenAlex links live in
+           the profile row above, so they are not repeated here. -->
       <div class="author-metrics">
         <p class="metric-row" id="gs-row">
-          <a class="src-badge" href="{scholar}" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"
-                 aria-hidden="true" focusable="false">
-              <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3 7 3s7-1.4
-                       7-3v-3.3l-7 3.8-7-3.8z"/>
-            </svg>Google Scholar</a>
+          <span class="metric-src">Google Scholar</span>
           <span class="metric-nums" id="gs-line"></span>
         </p>
         <p class="metric-row" id="oa-row" hidden>
-          <a class="src-badge" id="oa-link"
-             href="https://openalex.org/works?filter=authorships.author.orcid:{orcid}"
-             target="_blank" rel="noopener noreferrer">OpenAlex</a>
+          <span class="metric-src">OpenAlex</span>
           <span class="metric-nums" id="stat-line"></span>
         </p>
       </div>
@@ -1114,11 +1110,11 @@ PAGE = """<!DOCTYPE html>
     lineEl.textContent =
       s.cites.toLocaleString() + " citations \\u00b7 h-index " + s.h +
       " \\u00b7 i10-index " + s.i10;
-    // Point the badge at the canonical OpenAlex author page (e.g.
-    // https://openalex.org/A5012345678), which is a real page - the earlier
-    // "orcid:" path was an API route and 404'd on the website.
+    // Upgrade the OpenAlex profile link to the canonical author page (e.g.
+    // https://openalex.org/A5012345678) once we know the id; the static
+    // fallback is a works search by ORCID.
     if (s.id) {{
-      var link = document.getElementById("oa-link");
+      var link = document.getElementById("oa-profile");
       if (link) link.href = s.id;
     }}
     box.hidden = false;
