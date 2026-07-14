@@ -430,15 +430,10 @@ def profile_links_html(p):
     rest = p["links"][1:]
     lines = [f'<a href="{first[1]}">{first[0]}</a>']
     if rest:
-        def anchor(t, u):
-            # Tag the OpenAlex link so its href can be upgraded at runtime to the
-            # canonical author page (openalex.org/A...) once the API responds.
-            extra = ' id="oa-profile"' if "openalex.org" in u else ""
-            return f'<a{extra} href="{u}">{t}</a>'
         lines.append(
             '<span class="sep-list">'
             + '<span class="sep" aria-hidden="true">|</span>'.join(
-                anchor(t, u) for t, u in rest
+                f'<a href="{u}">{t}</a>' for t, u in rest
             )
             + "</span>"
         )
@@ -691,14 +686,17 @@ PAGE = """<!DOCTYPE html>
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
   .author-metrics {{ margin: .9rem 0 0; display: flex; flex-direction: column; gap: .3rem; }}
   .metric-row {{
-    margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: .5rem;
-    font-size: .8125rem;
+    margin: 0 0 .2rem; line-height: 1.55;
+    font-size: .9375rem;         /* matches the profile links */
   }}
+  /* Source name is a link styled exactly like the profile links (e.g. UNC). */
   .metric-src {{
-    font-weight: 650; color: var(--heading); white-space: nowrap;
+    color: var(--link); text-decoration: underline; text-underline-offset: 2px;
+    text-decoration-color: var(--rule-2); white-space: nowrap;
   }}
-  .metric-src::after {{ content: ":"; color: var(--muted); font-weight: 400; }}
+  .metric-src:hover {{ text-decoration-color: currentColor; }}
   .metric-nums {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
+  .metric-nums:not(:empty)::before {{ content: ": "; }}
   .plink {{ margin: 0 0 .2rem; font-size: .9375rem; line-height: 1.55; }}
   .plink a {{ text-decoration: underline; text-underline-offset: 2px;
               text-decoration-color: var(--rule-2); }}
@@ -1001,15 +999,18 @@ PAGE = """<!DOCTYPE html>
            scholar-stats.json (refreshed by a scheduled GitHub Action, al-folio
            style); OpenAlex is fetched live. Each row hides until its data is
            available, so a failure of either never leaves an empty label. -->
-      <!-- Numbers only; the clickable Google Scholar and OpenAlex links live in
-           the profile row above, so they are not repeated here. -->
+      <!-- The source name is the link (styled like the profile links above);
+           the citation figures follow. -->
       <div class="author-metrics">
         <p class="metric-row" id="gs-row">
-          <span class="metric-src">Google Scholar</span>
+          <a class="metric-src" href="{scholar}" target="_blank"
+             rel="noopener noreferrer">Google Scholar</a>
           <span class="metric-nums" id="gs-line"></span>
         </p>
         <p class="metric-row" id="oa-row" hidden>
-          <span class="metric-src">OpenAlex</span>
+          <a class="metric-src" id="oa-profile"
+             href="https://openalex.org/works?filter=authorships.author.orcid:{orcid}"
+             target="_blank" rel="noopener noreferrer">OpenAlex</a>
           <span class="metric-nums" id="stat-line"></span>
         </p>
       </div>
