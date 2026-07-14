@@ -5,7 +5,7 @@ Build evanmayo-wilson.org from the markdown files in content/.
     pip3 install markdown
     python3 build.py
 
-Output: site/index.html  (+ CNAME, .nojekyll, images/)
+Output: docs/index.html  (+ CNAME, .nojekyll, images/)
 
 To update the site, edit the files in content/ and re-run this script.
 """
@@ -26,7 +26,7 @@ except ImportError:
 
 ROOT = Path(__file__).parent
 CONTENT = ROOT / "content"
-OUT = ROOT / "site"
+OUT = ROOT / "docs"   # GitHub Pages branch-deploys only allow / or /docs
 
 DOMAIN = "www.evanmayo-wilson.org"
 CONTACT_EMAIL = "evan.mayo-wilson@unc.edu"   # sent to OpenAlex "polite pool"
