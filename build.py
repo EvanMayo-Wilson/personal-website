@@ -1020,16 +1020,17 @@ PAGE = """<!DOCTYPE html>
 
   /* ---- responsive --------------------------------------------------------- */
   @media (max-width: 46rem) {{
-    .navlink {{ display: none; }}
-    .topbar .shell {{ justify-content: flex-end; }}
-    /* Name sits beside the photo instead of below it; bio + links span the
-       full width underneath both. */
+    /* Nav links and the theme toggle are both gone at this width (see below),
+       leaving nothing in the bar - so the bar itself goes too. Mobile always
+       just follows the system's light/dark setting. */
+    .topbar {{ display: none; }}
+    /* No photo on mobile - name and bio run full width. */
+    .hero-photo {{ display: none; }}
     .hero {{
-      grid-template-areas: "photo name" "body body";
-      align-items: center;
-      row-gap: 1rem; column-gap: 1.1rem;
+      grid-template-columns: 1fr;
+      grid-template-areas: "name" "body";
+      row-gap: 1rem;
     }}
-    .hero-photo {{ width: 96px; height: 96px; }}
     h1 {{ margin: 0; }}
     li.pub {{ grid-template-columns: minmax(0, 1fr); row-gap: .5rem; }}
     .pub-text {{ padding-left: 0; padding-right: 0; }}
