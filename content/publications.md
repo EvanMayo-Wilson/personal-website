@@ -45,11 +45,11 @@ Xiangji Y, Freedland K, Powell L, Ehrhardt S, Stuart E, **Mayo-Wilson E**. *BMJ*
 
 - [**Musculoskeletal injury (MSKI) outcome definitions as reported in military population research from 2015-2025: A scoping review protocol**](https://doi.org/10.31219/osf.io/nw7fy_v1)Naylor JA, **Mayo-Wilson E**, Martin CL, Baldwin-SoRelle C, Ranapurwala S, Canham Chervak M, Jonsson-Funk M, Marshall SW. *OSFPreprints*.
 
-- [**SPIRIT-CONSORT-TM: a corpus for assessing transparency of clinical trial protocol and results publications**](https://www.nature.com/articles/s41597-025-04629-1)  
-Jiang L, Vorland CJ, Ying X, Brown AW, Menke JD, Hong G, Lan M, **Mayo-Wilson E**, Kilicoglu H. *Sci Data* 12, 355. PMID: [40021657](https://pubmed.ncbi.nlm.nih.gov/40021657/)**.** [[Preprint on medRxiv](https://www.medrxiv.org/content/10.1101/2025.01.14.25320543v1)]
-
 - [**TOP 2025: An update to the Transparency and Openness Promotion Guidelines**](https://osf.io/preprints/metaarxiv/nmfs6)  
 Grant SP, Corker KS, Mellor D, Stewart SK, Cashin AG, Lagisz M, **Mayo-Wilson E**, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA. *MetaArXiv.*
+
+- [**SPIRIT-CONSORT-TM: a corpus for assessing transparency of clinical trial protocol and results publications**](https://www.nature.com/articles/s41597-025-04629-1)  
+Jiang L, Vorland CJ, Ying X, Brown AW, Menke JD, Hong G, Lan M, **Mayo-Wilson E**, Kilicoglu H. *Sci Data* 12, 355. PMID: [40021657](https://pubmed.ncbi.nlm.nih.gov/40021657/)**.** [[Preprint on medRxiv](https://www.medrxiv.org/content/10.1101/2025.01.14.25320543v1)]
 
 ## 2024
 

@@ -662,7 +662,7 @@ PAGE = """<!DOCTYPE html>
     display: flex; align-items: stretch; gap: clamp(1.5rem, 4vw, 2.75rem);
     padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(1rem, 2vw, 1.5rem);
   }}
-  .hero-photo {{ flex: 0 0 auto; width: clamp(150px, 17vw, 200px); }}
+  .hero-photo {{ flex: 0 0 auto; width: clamp(150px, 20vw, 260px); }}
   /* Photo spans exactly the height of the text column: top of image aligns
      with top of the name, bottom aligns with the bottom of the last line. */
   .hero-photo img {{
@@ -729,14 +729,14 @@ PAGE = """<!DOCTYPE html>
   .yearnav .sep {{ margin: 0 .3rem; color: var(--rule-2); }}
 
   h3.year {{
-    font-size: .8125rem; margin: .9rem 0 .35rem;
+    font-size: .8125rem; margin: .45rem 0 .35rem;
     padding-bottom: .35rem; border-bottom: 1px solid var(--rule);
     /* Clears the sticky nav bar, so jumping to a year lands ON the heading
        rather than scrolling it up under the bar. */
     scroll-margin-top: 5rem;
   }}
   /* The year nav already sits directly above 2026 - no extra gap needed. */
-  .year-block:first-child h3.year {{ margin-top: .25rem; }}
+  .year-block:first-child h3.year {{ margin-top: .2rem; }}
   ul.pubs {{ list-style: none; margin: 0; padding: 0; }}
 
   /* Grid, not flex: the metrics column is a fixed track, so every citation
@@ -818,8 +818,9 @@ PAGE = """<!DOCTYPE html>
     display: grid;
     grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
     align-items: start; column-gap: 0;
-    margin-bottom: .3rem;
+    padding: .6rem 0;           /* same rhythm as the gap between articles */
   }}
+  li.subpub:last-child {{ padding-bottom: 0; }}
   li.subpub > .metrics {{ min-height: 2rem; }}
   li.subpub > .pub-text {{
     padding-left: 2.4rem;       /* .9rem base + 1.5rem indent */
