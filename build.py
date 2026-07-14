@@ -33,6 +33,7 @@ CONTACT_EMAIL = "evan.mayo-wilson@unc.edu"   # sent to OpenAlex "polite pool"
 SCHOLAR_PROFILE = "https://scholar.google.com/citations?user=gwrtLekAAAAJ&hl=en"
 ORCID = "0000-0001-6126-2459"
 OPENALEX_AUTHOR = "orcid:" + ORCID          # OpenAlex resolves ORCIDs directly
+OPENALEX_WORKS = "https://openalex.org/works?filter=authorships.author.orcid:" + ORCID
 
 # Set to your Cloudflare Web Analytics token to enable analytics; "" disables it.
 CLOUDFLARE_ANALYTICS_TOKEN = "bbbbe37fa9a84afa972a08c98b1d942c"
@@ -675,11 +676,18 @@ PAGE = """<!DOCTYPE html>
   :root[data-theme="light"] .i-sun  {{ display: none; }}
 
   /* ---- hero -------------------------------------------------------------- */
+  /* Grid with named areas, so the photo can span the name+body rows on
+     desktop but sit only beside the name on mobile (see the media query
+     below) without touching the markup. */
   .hero {{
-    display: flex; align-items: stretch; gap: clamp(1.5rem, 4vw, 2.75rem);
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "photo name" "photo body";
+    align-items: stretch;
+    column-gap: clamp(1.5rem, 4vw, 2.75rem);
     padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(1rem, 2vw, 1.5rem);
   }}
-  .hero-photo {{ flex: 0 0 auto; width: clamp(150px, 20vw, 260px); }}
+  .hero-photo {{ grid-area: photo; width: clamp(150px, 20vw, 260px); }}
   /* Photo spans exactly the height of the text column: top of image aligns
      with top of the name, bottom aligns with the bottom of the last line. */
   .hero-photo img {{
@@ -687,13 +695,14 @@ PAGE = """<!DOCTYPE html>
     border-radius: 10px; display: block;
     background: var(--surface);
   }}
-  .hero-body {{ min-width: 0; display: flex; flex-direction: column; }}
   h1 {{
+    grid-area: name;
     font-family: var(--serif); font-weight: 600;
     font-size: clamp(1.9rem, 4.2vw, 2.6rem); line-height: 1.12;
     letter-spacing: -.01em; color: var(--heading);
     margin: 0 0 .85rem;
   }}
+  .hero-body {{ grid-area: body; min-width: 0; display: flex; flex-direction: column; }}
   .bio {{ font-size: 1.0625rem; color: var(--text); }}
   .bio p {{ margin: 0 0 .7rem; }}
   .plinks {{ margin-top: auto; padding-top: 1rem; }}
@@ -704,8 +713,14 @@ PAGE = """<!DOCTYPE html>
     margin: 0 0 .2rem; line-height: 1.55;
     font-size: .9375rem;         /* matches the profile links */
   }}
-  /* Source name is a plain label; the clickable links live in the header. */
-  .metric-src {{ font-weight: 650; color: var(--heading); white-space: nowrap; }}
+  /* Source name is a hotlink, styled like an article title (bold + blue,
+     see .pub-text a) rather than the plain heading-colored label it used
+     to be. */
+  .metric-src {{
+    font-weight: 650; white-space: nowrap;
+    color: var(--link); text-decoration: none;
+  }}
+  .metric-src:hover {{ color: var(--link-hover); text-decoration: underline; }}
   .metric-nums {{ color: var(--muted); font-variant-numeric: tabular-nums; }}
   .metric-nums:not(:empty)::before {{ content: ": "; }}
   .plink {{ margin: 0 0 .2rem; font-size: .9375rem; line-height: 1.55; }}
@@ -758,12 +773,9 @@ PAGE = """<!DOCTYPE html>
     padding: 0 1.1rem 1rem;
   }}
 
-  /* Plain text links, not buttons. Scrolls sideways on its own if the year
-     list is ever wider than the box (more years added over time), instead
-     of wrapping or clipping. */
+  /* Plain text links, not buttons. Wraps onto as many rows as it needs. */
   .yearnav {{
     position: sticky; top: 0; z-index: 5;
-    display: block; overflow-x: auto; white-space: nowrap;
     font-size: .875rem; font-variant-numeric: tabular-nums;
     color: var(--faint); line-height: 1.9;
     margin: 0 -1.1rem; padding: .85rem 1.1rem .5rem;
@@ -785,6 +797,19 @@ PAGE = """<!DOCTYPE html>
      heading. */
   .year-block:first-child h3.year {{ margin-top: .9rem; }}
   ul.pubs {{ list-style: none; margin: 0; padding: 0; }}
+
+  /* Mobile: one long flowing list instead of a bounded scroll box. There's
+     no room for a year-jump strip at this width, and a nested scroller on
+     top of the page's own scroll is an awkward combination on a touch
+     screen, so both are switched off here. */
+  @media (max-width: 47.99rem) {{
+    .pub-scroll {{
+      max-height: none; overflow: visible;
+      border: 0; border-radius: 0; padding: 0;
+    }}
+    .yearnav {{ display: none; }}
+    h3.year {{ scroll-margin-top: 4.5rem; }}  /* clears the page's own sticky topbar */
+  }}
 
   /* Grid, not flex: the metrics column is a fixed track, so every citation
      block is exactly the same width and the icons line up down the page. */
@@ -879,11 +904,14 @@ PAGE = """<!DOCTYPE html>
   li.subpub > .pub-text a {{ display: inline; }}
 
   @media (max-width: 47.99rem) {{
+    /* No bullets - indent matches the "published simultaneously in" intro
+       line just above the list (li.pub > .pub-text > p + p, margin-left
+       1.5rem), so sub-entries line up with it rather than the article text. */
     .pub-text ul {{
-      list-style: disc; padding-left: 1.1rem;
-      margin-left: 0; margin-right: 0;
+      list-style: none; padding-left: 0;
+      margin-left: 1.5rem; margin-right: 0;
     }}
-    li.subpub {{ display: list-item; }}
+    li.subpub {{ display: block; }}
     li.subpub > .pub-text {{ padding: 0; }}
   }}
 
@@ -979,8 +1007,15 @@ PAGE = """<!DOCTYPE html>
   @media (max-width: 46rem) {{
     .navlink {{ display: none; }}
     .topbar .shell {{ justify-content: flex-end; }}
-    .hero {{ flex-direction: column; align-items: flex-start; }}
-    .hero-photo {{ width: 132px; height: 132px; }}
+    /* Name sits beside the photo instead of below it; bio + links span the
+       full width underneath both. */
+    .hero {{
+      grid-template-areas: "photo name" "body body";
+      align-items: center;
+      row-gap: 1rem; column-gap: 1.1rem;
+    }}
+    .hero-photo {{ width: 96px; height: 96px; }}
+    h1 {{ margin: 0; }}
     li.pub {{ grid-template-columns: minmax(0, 1fr); row-gap: .5rem; }}
     .pub-text {{ padding-left: 0; padding-right: 0; }}
   }}
@@ -1029,8 +1064,8 @@ PAGE = """<!DOCTYPE html>
     <div class="hero-photo">
       <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
     </div>
+    <h1>{name}</h1>
     <div class="hero-body">
-      <h1>{name}</h1>
       <div class="bio">{bio}</div>
       <div class="plinks">{links}</div>
     </div>
@@ -1062,15 +1097,15 @@ PAGE = """<!DOCTYPE html>
     <!-- Citation summaries. Google Scholar comes from the committed
          scholar-stats.json (refreshed by the scheduled GitHub Action);
          OpenAlex is fetched live. Each row hides until its data is available.
-         The clickable profile links live in the header; here the source name
-         is a plain label. -->
+         The source name is a hotlink to the profile, styled like an article
+         title (see .metric-src). -->
     <div class="author-metrics">
       <p class="metric-row" id="gs-row">
-        <span class="metric-src">Google Scholar</span>
+        <a class="metric-src" href="{scholar}">Google Scholar</a>
         <span class="metric-nums" id="gs-line"></span>
       </p>
       <p class="metric-row" id="oa-row" hidden>
-        <span class="metric-src">OpenAlex</span>
+        <a class="metric-src" id="oa-profile-pub" href="{openalex_works}">OpenAlex</a>
         <span class="metric-nums" id="stat-line"></span>
       </p>
     </div>
@@ -1147,12 +1182,14 @@ PAGE = """<!DOCTYPE html>
     lineEl.textContent =
       s.cites.toLocaleString() + " citations \\u00b7 h-index " + s.h +
       " \\u00b7 i10-index " + s.i10;
-    // Upgrade the OpenAlex profile link to the canonical author page (e.g.
-    // https://openalex.org/A5012345678) once we know the id; the static
-    // fallback is a works search by ORCID.
+    // Upgrade the OpenAlex profile link(s) to the canonical author page
+    // (e.g. https://openalex.org/A5012345678) once we know the id; the
+    // static fallback is a works search by ORCID.
     if (s.id) {{
-      var link = document.getElementById("oa-profile");
-      if (link) link.href = s.id;
+      ["oa-profile", "oa-profile-pub"].forEach(function (id) {{
+        var link = document.getElementById(id);
+        if (link) link.href = s.id;
+      }});
     }}
     box.hidden = false;
   }}
@@ -1875,6 +1912,7 @@ def main():
         scholar=html.escape(SCHOLAR_PROFILE, quote=True),
         orcid=ORCID,
         openalex_author=OPENALEX_AUTHOR,
+        openalex_works=html.escape(OPENALEX_WORKS, quote=True),
         desc=("Evan Mayo-Wilson, Associate Professor of Epidemiology at the UNC "
               "Gillings School of Global Public Health. Research on the benefits "
               "and harms of health interventions, clinical trial and systematic "
