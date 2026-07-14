@@ -116,6 +116,10 @@ def parse_publications():
 PMID_RE = re.compile(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)")
 TITLE_RE = re.compile(r"<strong>(.*?)</strong>", re.S)
 HREF_RE = re.compile(r'href="([^"]+)"')
+# A "citation" link: an <a> whose immediate child is the bold title (<strong>)
+# or, in a sub-entry, the italic journal name (<em>). Bracket links to protocols
+# and preprints are plain <a> tags and are intentionally not matched.
+CITE_LINK_RE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>\s*<(?:strong|em)\b', re.I)
 # A DOI sitting inside an article URL, e.g. .../doi/10.1177/1049731513512374
 DOI_IN_URL_RE = re.compile(r"(10\.\d{4,9}/[^\s\"'<>)&#]+)")
 
@@ -172,17 +176,23 @@ def entry_meta(entry_html: str):
     pmid_m = PMID_RE.search(entry_html)
     pmid = pmid_m.group(1) if pmid_m else ""
 
-    urls = [html.unescape(u) for u in HREF_RE.findall(entry_html)]
+    # Only the article's own links count as identifiers - the title link (which
+    # wraps <strong>) and, for sub-entries, the journal link (which wraps <em>).
+    # Supplementary bracket links like "[Published protocol]" or "[Preprint]"
+    # are plain <a> tags and are deliberately excluded, so a citation download
+    # never points at a protocol instead of the paper. A title with no link
+    # (e.g. an in-press paper) yields no citation link, hence no download.
+    cite_urls = [html.unescape(u) for u in CITE_LINK_RE.findall(entry_html)]
     text = html.unescape(re.sub(r"<[^>]+>", " ", entry_html))
 
     doi = ""
     if not pmid:
-        for u in urls:
+        for u in cite_urls:
             if u in DOI_OVERRIDES:
                 doi = DOI_OVERRIDES[u]
                 break
         if not doi:
-            for u in urls:
+            for u in cite_urls:
                 m = DOI_IN_URL_RE.search(u)
                 if m:
                     doi = m.group(1).rstrip(".,;/")
@@ -197,7 +207,7 @@ def entry_meta(entry_html: str):
 
     extra = ""
     if not pmid and not doi:
-        for u in urls:
+        for u in cite_urls:
             if u in CSL_EXTRA:
                 extra = u
                 break
@@ -347,7 +357,7 @@ def title_on_own_line(frag: str) -> str:
     title as a block, so the author list always starts on the next line.
     """
     return re.sub(
-        r"(^<p>\s*(?:<strong>)?<a\b[^>]*>.*?</a>(?:</strong>)?)\s*<br\s*/?>\s*",
+        r"(^<p>\s*(?:<a\b[^>]*>.*?</a>|<strong>.*?</strong>)[^<]*?)\s*<br\s*/?>\s*",
         r"\1",
         frag,
         count=1,
@@ -704,7 +714,11 @@ PAGE = """<!DOCTYPE html>
   .sep {{ margin: 0 .5rem; color: var(--faint); }}
 
   /* ---- sections ---------------------------------------------------------- */
-  main section {{ padding-top: clamp(2.5rem, 5vw, 3.75rem); scroll-margin-top: 4.5rem; }}
+  /* Direct children only (Research / Teaching / Service / Publications). The
+     per-year <section class="year-block"> elements are grandchildren and must
+     NOT inherit this large top padding - that was the real reason the space
+     before each year heading stayed big despite the h3.year margin. */
+  main > section {{ padding-top: clamp(2.5rem, 5vw, 3.75rem); scroll-margin-top: 4.5rem; }}
   h2 {{
     font-family: var(--serif); font-weight: 600; color: var(--heading);
     font-size: clamp(1.45rem, 2.6vw, 1.75rem); letter-spacing: -.01em;

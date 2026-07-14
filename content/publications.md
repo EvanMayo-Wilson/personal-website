@@ -5,7 +5,7 @@
 - [**Guidance is needed to improve outcome definitions and reduce reporting bias in cohort studies of interventions**](http://bmj.com/cgi/content/full/bmj.s922?ijkey=3z82Kucac3R6W0Y&keytype=ref)  
 Ying X, **Mayo-Wilson E** (2026). *BMJ*, 393:s922. PMID: [42203256.](https://pubmed.ncbi.nlm.nih.gov/42203256/)
 
-- [**An automated approach to improve clinical trial registration and identify outcome changes on ClinicalTrials.gov**](https://osf.io/preprints/metaarxiv/npvwr)  
+- **An automated approach to improve clinical trial registration and identify outcome changes on ClinicalTrials.gov**
 Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *npj Digital Medicine*. In press. [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr)]
 
 - [**Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: study protocol**](https://f1000research.com/articles/15-665)  
@@ -104,7 +104,9 @@ National Academies of Sciences, Engineering, and Medicine. 2024. Washington, DC:
 
 - [**CONSORT Harms 2022 statement, explanation, and elaboration: updated guidelines for the reporting of harms in randomized trials**](https://www.bmj.com/content/381/bmj-2022-073725.long)Junqueira DR, Zorzela L, Golder S, Loke Y, Gagnier JJ, Julious SA, Li T, **Mayo-Wilson E,** Pham B, Phillips R, Santaguida R, Scherer RW, Gøtzsche P, Moher D, Ioannidis JPA, Vohra S on behalf of the CONSORT Harms Group.*BMJ* 381: e073725. PMID: [37094878](https://pubmed.ncbi.nlm.nih.gov/37094878/).
 
-  This article was published simultaneously in [*J Clin Epidemiol*](https://www.jclinepi.com/article/S0895-4356(23)00090-2/fulltext#articleInformation)*.* PMID: [37100738](https://pubmed.ncbi.nlm.nih.gov/37100738/).
+  This article was published simultaneously in:
+
+  - [*J Clin Epidemiol*](https://www.jclinepi.com/article/S0895-4356(23)00090-2/fulltext#articleInformation). PMID: [37100738](https://pubmed.ncbi.nlm.nih.gov/37100738/).
 
 - [**ROB-ME: A tool for assessing risk of bias due to missing evidence in systematic reviews with meta-analysis**](https://www.bmj.com/content/383/bmj-2023-076754)Page M J, Sterne J A C, Boutron I, Hróbjartsson A, Kirkham J J, Li T, Lundh A, **Mayo-Wilson E**, McKenzie JE, Stewart LA, Sutton AJ, Bero L, Dunn AG, Dwan K, Elbers RG, Kanukula R, Meerpohl JJ, Turner EH, Higgins JPT. *BMJ* 383:e076754. PMID: [37984978](https://pubmed.ncbi.nlm.nih.gov/37984978/)*.*
 
@@ -153,7 +155,7 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
 - [**Should e-cigarette regulation be based on randomized trials or observational studies?**](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2020.306077)**Mayo-Wilson E**. *Am J Public Health* 11(2):219-220. PMID: [33439718](https://pubmed.ncbi.nlm.nih.gov/33439718/).
 
-- [**Restoring invisible and abandoned trials of gabapentin for neuropathic pain: a clinical and methodological investigation (protocol)**](https://bmjopen.bmj.com/content/11/6/e047785.long).  
+- [**Restoring invisible and abandoned trials of gabapentin for neuropathic pain: a clinical and methodological investigation (protocol)**](https://bmjopen.bmj.com/content/11/6/e047785.long)
 **Mayo-Wilson E**, Chen X, Qureshi R, Dickinson SL, Golzarri-Arroyo L, Hong H, Görg C, Li T. *BMJ Open* 0:e047785. PMID: [34193496.](https://pubmed.ncbi.nlm.nih.gov/34193496/)
 
 - [**Evaluating implementation of the Transparency and Openness Promotion Guidelines: The TRUST Process for rating journal policies, procedures, and practices**](https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-021-00112-8)**Mayo-Wilson E**, Grant S, Supplee L, Kianersi S,Amin A, DeHaven AC, Mellor DT. *Res Integ Peer Rev* 6(1):9. PMID: [34078479](https://pubmed.ncbi.nlm.nih.gov/34078479/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/b3wju/); [OSF archive includes research materials](https://osf.io/txyr3/)]
