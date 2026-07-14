@@ -5,6 +5,9 @@
 - [**Guidance is needed to improve outcome definitions and reduce reporting bias in cohort studies of interventions**](http://bmj.com/cgi/content/full/bmj.s922?ijkey=3z82Kucac3R6W0Y&keytype=ref)  
 Ying X, **Mayo-Wilson E** (2026). *BMJ*, 393:s922. PMID: [42203256.](https://pubmed.ncbi.nlm.nih.gov/42203256/)
 
+- [**An automated approach to improve clinical trial registration and identify outcome changes on ClinicalTrials.gov**](https://osf.io/preprints/metaarxiv/npvwr)  
+Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *npj Digital Medicine*. In press. [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr)]
+
 - [**Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: study protocol**](https://f1000research.com/articles/15-665)  
 Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaumer-Streit B, Ying X, Kilicoglu H, McKenzie JE. *F1000Research***15**:665.
 
@@ -339,6 +342,10 @@ Morriss R, Kendall T, Braidwood R, Byng R, Cipriani A, James A, John C, Jones S,
 - [**Apparent Discrepancy Between Published Study of Gabapentin Treatment and Internal Company Report**](https://pubmed.ncbi.nlm.nih.gov/24021509/)  
 **Mayo-Wilson E**. *J Clin Psychiatry* 74(8):853-854. PMID: [24021509](https://pubmed.ncbi.nlm.nih.gov/24021509/).
 
+- [**The Oxford Implementation Index: A new tool for incorporating implementation data into systematic reviews and meta-analyses**](https://www.sciencedirect.com/science/article/pii/S0895435613001078?via%3Dihub)Montgomery P, Underhill K, Operario D, Gardner F, **Mayo-Wilson E**. *J Clin Epidemiol* 66(8):874-882. PMID: [23810026](https://pubmed.ncbi.nlm.nih.gov/23810026/).
+
+- [**Protocol for CONSORT-SPI: An Extension for social and psychological interventions**](https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-8-99)Montgomery P, Grant SP, Hopewell S, Macdonald G, Moher D, Michie S, **Mayo-Wilson E**. *Implement Sci* 8:99. PMID: [24004579](https://pubmed.ncbi.nlm.nih.gov/24004579/).
+
 - [**Recognition, assessment and treatment of social anxiety disorder: Summary of NICE Guidance**](https://www.bmj.com/content/346/bmj.f2541/related)Pilling S, **Mayo-Wilson E**, Mavranezouli I, Kew K, Taylor C, Clark DM. *BMJ* 346:f2541. PMID: [23697669](https://pubmed.ncbi.nlm.nih.gov/23697669/).
 
 - [**Reporting quality of randomised trials in behavioural and psychological journals**](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0065442)Grant SP, **Mayo-Wilson E**, Melendez-Torres G, Montgomery P. *PLoS ONE* 8(5):e65442. PMID: [23734256](https://pubmed.ncbi.nlm.nih.gov/23734256/).
@@ -354,15 +361,11 @@ Strang H, Sherman LW, **Mayo-Wilson E**, Woods DJ, Ariel B. *Campbell Systematic
 
 - [**Early interventions to prevent psychosis: A systematic review and meta-analysis**](https://www.bmj.com/content/346/bmj.f185)Stafford MR, Jackson H, **Mayo-Wilson E**, Morrison T, Kendall T. *BMJ* 346:f185. PMID: [23335473](https://pubmed.ncbi.nlm.nih.gov/23335473/).
 
-- [**The Oxford Implementation Index: A new tool for incorporating implementation data into systematic reviews and meta-analyses**](https://www.sciencedirect.com/science/article/pii/S0895435613001078?via%3Dihub)Montgomery P, Underhill K, Operario D, Gardner F, **Mayo-Wilson E**. *J Clin Epidemiol* 66(8):874-882. PMID: [23810026](https://pubmed.ncbi.nlm.nih.gov/23810026/).
-
-- [**Protocol for CONSORT-SPI: An Extension for social and psychological interventions**](https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-8-99)Montgomery P, Grant SP, Hopewell S, Macdonald G, Moher D, Michie S, **Mayo-Wilson E**. *Implement Sci* 8:99. PMID: [24004579](https://pubmed.ncbi.nlm.nih.gov/24004579/).
+- [**Social anxiety disorder: the NICE guideline on the recognition, assessment and treatment of social anxiety disorder**](https://www.nice.org.uk/guidance/cg159/evidence/full-guideline-pdf-189895069)  
+Clark DM, Pilling S, **Mayo-Wilson E**, Mavranezouli I, Afghan S, Anigbogu B, Armstrong P, Bennett M, Cartwright-Hatton S, Creswell C, Dix M, Hanlon N, Kew K, Leggett K, Malizia A, Roberts J, Satrettin K, Smith M, Stephens G, Stopa L, Stockton S, Taylor C, Whittington C (2013). *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London.
 
 - [**Psychosis and schizophrenia in adults: the NICE guideline on the treatment and management of psychosis and schizophrenia in adults**](https://www.nice.org.uk/guidance/cg178/evidence/full-guideline-pdf-490503565)  
 Kuipers E, Kendall T, Yesufu-Udechuku A, Slade E, Birchwood M, Brabban A, Cheema N, Green D, Harrison B, Iqbal Z, Johnson S, Marshall M, **Mayo-Wilson E**, Mitchell J, Morrison T, Moulin M, Shiers D, Stockton S, Taylor C, Travis C, Waddingham R, Woodhams P, Young N (2013). *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London.
-
-- [**Social anxiety disorder: the NICE guideline on the recognition, assessment and treatment of social anxiety disorder**](https://www.nice.org.uk/guidance/cg159/evidence/full-guideline-pdf-189895069)  
-Clark DM, Pilling S, **Mayo-Wilson E**, Mavranezouli I, Afghan S, Anigbogu B, Armstrong P, Bennett M, Cartwright-Hatton S, Creswell C, Dix M, Hanlon N, Kew K, Leggett K, Malizia A, Roberts J, Satrettin K, Smith M, Stephens G, Stopa L, Stockton S, Taylor C, Whittington C (2013). *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London.
 
 ## 2012
 
