@@ -225,9 +225,10 @@ CITE_FORMATS = [
 
 def cite_menu(bulk: bool = False) -> str:
     label = "Download all citations" if bulk else "Download citation"
+    visible = "Download citations" if bulk else "Cite"
     return (
         '<summary title="{0}" aria-label="{0}">{1}'
-        '<span class="btn-label">Cite</span></summary>'
+        '<span class="btn-label">{3}</span></summary>'
         '<div class="cite-menu" role="group" aria-label="Citation format">'
         "{2}</div>"
     ).format(
@@ -237,6 +238,7 @@ def cite_menu(bulk: bool = False) -> str:
             f'<button type="button" data-fmt="{f}">{t}</button>'
             for f, t in CITE_FORMATS
         ),
+        visible,
     )
 
 
@@ -769,8 +771,9 @@ PAGE = """<!DOCTYPE html>
   .pub-text p {{ margin: 0; }}
   .pub-text ul {{ margin-top: .4rem; }}
   /* "This article was published simultaneously in:" gets the same air as the
-     gap between two articles. */
-  .pub-text p + p {{ margin-top: 1.2rem; }}
+     gap between articles, and is indented to line up with the sub-citations
+     below it (the sub-entry text sits 1.5rem further in than the parent text). */
+  li.pub > .pub-text > p + p {{ margin-top: 1.2rem; margin-left: 1.5rem; }}
   .pub-text ul {{ padding-left: 1.1rem; }}
   .pub-text ul li {{ margin-bottom: .2rem; }}
   .pub-text strong {{ font-weight: 650; }}
@@ -896,16 +899,17 @@ PAGE = """<!DOCTYPE html>
   .cite-menu button:hover {{ background: var(--surface); color: var(--link); }}
   .cite-menu button[disabled] {{ opacity: .55; cursor: default; }}
 
-  /* Bulk download, to the left of the Publications heading. */
+  /* "Download citations" bulk button, right-justified on the heading line. */
   .pubhead {{
     display: flex; align-items: center; gap: .5rem;
     margin-bottom: 1.25rem;
     padding-bottom: .5rem; border-bottom: 2px solid var(--accent);
   }}
   .pubhead h2 {{ margin: 0; padding: 0; border: 0; }}
-  .cite-all summary {{ width: 2rem; height: 2rem; margin-top: 0; }}
-  .cite-all summary svg {{ width: 1.15rem; height: 1.15rem; }}
-  .cite-all .cite-menu {{ top: 2.25rem; }}
+  .cite-all {{ margin-left: auto; }}          /* push to the right end */
+  .cite-all summary {{ min-height: 1.9rem; padding: .3rem .6rem; }}
+  .cite-all summary svg {{ width: .95rem; height: .95rem; }}
+  .cite-all .cite-menu {{ top: 2.4rem; left: auto; right: 0; }}  /* open leftwards */
   .cite-all .cite-menu button {{ min-width: 8.5rem; }}
 
   /* Desktop only, like the badges. */
@@ -997,7 +1001,7 @@ PAGE = """<!DOCTYPE html>
            style); OpenAlex is fetched live. Each row hides until its data is
            available, so a failure of either never leaves an empty label. -->
       <div class="author-metrics">
-        <p class="metric-row" id="gs-row" hidden>
+        <p class="metric-row" id="gs-row">
           <a class="src-badge" href="{scholar}" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"
                  aria-hidden="true" focusable="false">
@@ -1007,7 +1011,8 @@ PAGE = """<!DOCTYPE html>
           <span class="metric-nums" id="gs-line"></span>
         </p>
         <p class="metric-row" id="oa-row" hidden>
-          <a class="src-badge" href="https://openalex.org/{openalex_author}"
+          <a class="src-badge" id="oa-link"
+             href="https://openalex.org/works?filter=authorships.author.orcid:{orcid}"
              target="_blank" rel="noopener noreferrer">OpenAlex</a>
           <span class="metric-nums" id="stat-line"></span>
         </p>
@@ -1036,8 +1041,8 @@ PAGE = """<!DOCTYPE html>
 
   <section id="publications" aria-labelledby="h-publications">
     <div class="pubhead">
-      <details class="cite-dl cite-all">{citemenu_all}</details>
       <h2 id="h-publications">Publications</h2>
+      <details class="cite-dl cite-all">{citemenu_all}</details>
     </div>
     <nav class="yearnav" aria-label="Jump to a publication year">
       {yearnav}
@@ -1087,7 +1092,7 @@ PAGE = """<!DOCTYPE html>
    backoff), so a rejected request is not retried on the very next reload.
 ---------------------------------------------------------------------------- */
 (function () {{
-  var KEY      = "oa-author-v4",
+  var KEY      = "oa-author-v5",
       TTL      = 24 * 60 * 60 * 1000,   // success: refresh at most once a day
       BACKOFF  = 6 * 60 * 60 * 1000,    // failure: don't try again for 6 hours
       ORCID    = "{orcid}",
@@ -1109,6 +1114,13 @@ PAGE = """<!DOCTYPE html>
     lineEl.textContent =
       s.cites.toLocaleString() + " citations \\u00b7 h-index " + s.h +
       " \\u00b7 i10-index " + s.i10;
+    // Point the badge at the canonical OpenAlex author page (e.g.
+    // https://openalex.org/A5012345678), which is a real page - the earlier
+    // "orcid:" path was an API route and 404'd on the website.
+    if (s.id) {{
+      var link = document.getElementById("oa-link");
+      if (link) link.href = s.id;
+    }}
     box.hidden = false;
   }}
 
@@ -1133,6 +1145,7 @@ PAGE = """<!DOCTYPE html>
   function stats(a) {{
     var st = (a && a.summary_stats) || {{}};
     return {{
+      id:    a && a.id,
       cites: a && a.cited_by_count,
       h:     st.h_index,
       i10:   st.i10_index
