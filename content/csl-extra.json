@@ -129,15 +129,5 @@
     "issued": { "date-parts": [[2024]] },
     "author": [{ "family": "Mayo-Wilson", "given": "E" }],
     "URL": "https://www.apa.org/pubs/books/apa-handbook-health-psychology"
-  },
-
-  "https://www.pcori.org/research-results/2013/benefits-and-challenges-using-multiple-sources-information-about-clinical": {
-    "type": "report",
-    "title": "Integrating multiple data sources for meta-analysis to improve patient-centered outcomes research",
-    "publisher": "Patient-Centered Outcomes Research Institute (PCORI)",
-    "publisher-place": "Washington, DC",
-    "issued": { "date-parts": [[2017]] },
-    "author": [{ "family": "Mayo-Wilson", "given": "E" }],
-    "URL": "https://www.pcori.org/research-results/2013/benefits-and-challenges-using-multiple-sources-information-about-clinical"
   }
 }
