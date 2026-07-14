@@ -744,11 +744,31 @@ PAGE = """<!DOCTYPE html>
   /* Every section runs the full content width, same as the publication list. */
 
   /* ---- publications ------------------------------------------------------ */
-  /* Plain text links, not buttons. */
+  /* The whole list lives in its own bounded, internally-scrolling box, so
+     browsing decades of publications doesn't mean endlessly scrolling the
+     whole page. The year-jump nav is pinned (sticky) to the top of that box,
+     so it stays visible no matter how far down the list you've scrolled. */
+  .pub-scroll {{
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;      /* only .yearnav itself scrolls sideways */
+    overscroll-behavior: contain;
+    border: 1px solid var(--rule-2);
+    border-radius: 10px;
+    padding: 0 1.1rem 1rem;
+  }}
+
+  /* Plain text links, not buttons. Scrolls sideways on its own if the year
+     list is ever wider than the box (more years added over time), instead
+     of wrapping or clipping. */
   .yearnav {{
+    position: sticky; top: 0; z-index: 5;
+    display: block; overflow-x: auto; white-space: nowrap;
     font-size: .875rem; font-variant-numeric: tabular-nums;
     color: var(--faint); line-height: 1.9;
-    margin: 0 0 .35rem;
+    margin: 0 -1.1rem; padding: .85rem 1.1rem .5rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
   }}
   .yearnav a {{ color: var(--link); }}
   .yearnav a:hover {{ color: var(--link-hover); text-decoration: underline; }}
@@ -757,11 +777,12 @@ PAGE = """<!DOCTYPE html>
   h3.year {{
     font-size: .8125rem; margin: .45rem 0 .35rem;
     padding-bottom: .35rem; border-bottom: 1px solid var(--rule);
-    /* Clears the sticky nav bar, so jumping to a year lands ON the heading
-       rather than scrolling it up under the bar. */
-    scroll-margin-top: 5rem;
+    /* Clears the sticky year-jump bar at the top of .pub-scroll, so jumping
+       to a year lands ON the heading rather than scrolling it up under it. */
+    scroll-margin-top: 3.2rem;
   }}
-  /* A little breathing room between the year-jump nav and the first heading. */
+  /* A little breathing room between the sticky year-jump nav and the first
+     heading. */
   .year-block:first-child h3.year {{ margin-top: .9rem; }}
   ul.pubs {{ list-style: none; margin: 0; padding: 0; }}
 
@@ -905,6 +926,9 @@ PAGE = """<!DOCTYPE html>
     border-radius: 8px; padding: .25rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, .12);
   }}
+  /* Flipped up by JS when the list lives inside .pub-scroll and opening
+     downward would run the menu past the bottom of that bounded box. */
+  .cite-dl.open-up .cite-menu {{ top: auto; bottom: 100%; margin-bottom: .35rem; }}
   .cite-menu button {{
     font: inherit; font-size: .8125rem; text-align: left;
     background: none; border: 0; border-radius: 5px; cursor: pointer;
@@ -925,6 +949,7 @@ PAGE = """<!DOCTYPE html>
   .cite-all summary svg {{ width: .95rem; height: .95rem; }}
   .cite-all .cite-menu {{ top: 2.4rem; left: auto; right: 0; }}  /* open leftwards */
   .cite-all .cite-menu button {{ min-width: 8.5rem; }}
+  .cite-all.open-up .cite-menu {{ top: auto; bottom: 100%; margin-bottom: .35rem; }}
 
   /* Desktop only, like the badges. Hide the whole left column (Cite AND PDF). */
   @media (max-width: 47.99rem) {{
@@ -1050,10 +1075,12 @@ PAGE = """<!DOCTYPE html>
       </p>
     </div>
 
-    <nav class="yearnav" aria-label="Jump to a publication year">
-      {yearnav}
-    </nav>
-    <div id="publist">{publications}</div>
+    <div class="pub-scroll">
+      <nav class="yearnav" aria-label="Jump to a publication year">
+        {yearnav}
+      </nav>
+      <div id="publist">{publications}</div>
+    </div>
   </section>
 
 </main>
@@ -1578,6 +1605,26 @@ PAGE = """<!DOCTYPE html>
       d.open = false;
     }});
   }});
+
+  // Publications live inside a bounded, internally-scrolling box
+  // (.pub-scroll). A menu opened near its bottom edge would otherwise get
+  // clipped by that box's own overflow, so flip it to open upward instead.
+  // Capture phase: the "toggle" event on <details> does not bubble.
+  document.addEventListener("toggle", function (ev) {{
+    var box = ev.target;
+    if (!box.classList || !box.classList.contains("cite-dl")) return;
+    box.classList.remove("open-up");
+    if (!box.open) return;
+    var menu = box.querySelector(".cite-menu");
+    if (!menu) return;
+    var scroller = box.closest(".pub-scroll");
+    var limitBottom = scroller
+      ? scroller.getBoundingClientRect().bottom
+      : window.innerHeight;
+    if (menu.getBoundingClientRect().bottom > limitBottom) {{
+      box.classList.add("open-up");
+    }}
+  }}, true);
 }})();
 
 /* --------------------------------------------------- open-access full text

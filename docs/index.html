@@ -282,11 +282,31 @@
   /* Every section runs the full content width, same as the publication list. */
 
   /* ---- publications ------------------------------------------------------ */
-  /* Plain text links, not buttons. */
+  /* The whole list lives in its own bounded, internally-scrolling box, so
+     browsing decades of publications doesn't mean endlessly scrolling the
+     whole page. The year-jump nav is pinned (sticky) to the top of that box,
+     so it stays visible no matter how far down the list you've scrolled. */
+  .pub-scroll {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;      /* only .yearnav itself scrolls sideways */
+    overscroll-behavior: contain;
+    border: 1px solid var(--rule-2);
+    border-radius: 10px;
+    padding: 0 1.1rem 1rem;
+  }
+
+  /* Plain text links, not buttons. Scrolls sideways on its own if the year
+     list is ever wider than the box (more years added over time), instead
+     of wrapping or clipping. */
   .yearnav {
+    position: sticky; top: 0; z-index: 5;
+    display: block; overflow-x: auto; white-space: nowrap;
     font-size: .875rem; font-variant-numeric: tabular-nums;
     color: var(--faint); line-height: 1.9;
-    margin: 0 0 .35rem;
+    margin: 0 -1.1rem; padding: .85rem 1.1rem .5rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
   }
   .yearnav a { color: var(--link); }
   .yearnav a:hover { color: var(--link-hover); text-decoration: underline; }
@@ -295,11 +315,12 @@
   h3.year {
     font-size: .8125rem; margin: .45rem 0 .35rem;
     padding-bottom: .35rem; border-bottom: 1px solid var(--rule);
-    /* Clears the sticky nav bar, so jumping to a year lands ON the heading
-       rather than scrolling it up under the bar. */
-    scroll-margin-top: 5rem;
+    /* Clears the sticky year-jump bar at the top of .pub-scroll, so jumping
+       to a year lands ON the heading rather than scrolling it up under it. */
+    scroll-margin-top: 3.2rem;
   }
-  /* A little breathing room between the year-jump nav and the first heading. */
+  /* A little breathing room between the sticky year-jump nav and the first
+     heading. */
   .year-block:first-child h3.year { margin-top: .9rem; }
   ul.pubs { list-style: none; margin: 0; padding: 0; }
 
@@ -443,6 +464,9 @@
     border-radius: 8px; padding: .25rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, .12);
   }
+  /* Flipped up by JS when the list lives inside .pub-scroll and opening
+     downward would run the menu past the bottom of that bounded box. */
+  .cite-dl.open-up .cite-menu { top: auto; bottom: 100%; margin-bottom: .35rem; }
   .cite-menu button {
     font: inherit; font-size: .8125rem; text-align: left;
     background: none; border: 0; border-radius: 5px; cursor: pointer;
@@ -463,6 +487,7 @@
   .cite-all summary svg { width: .95rem; height: .95rem; }
   .cite-all .cite-menu { top: 2.4rem; left: auto; right: 0; }  /* open leftwards */
   .cite-all .cite-menu button { min-width: 8.5rem; }
+  .cite-all.open-up .cite-menu { top: auto; bottom: 100%; margin-bottom: .35rem; }
 
   /* Desktop only, like the badges. Hide the whole left column (Cite AND PDF). */
   @media (max-width: 47.99rem) {
@@ -652,10 +677,11 @@
       </p>
     </div>
 
-    <nav class="yearnav" aria-label="Jump to a publication year">
-      <a href="#y2025">2025</a><span class="sep" aria-hidden="true">·</span><a href="#y2024">2024</a><span class="sep" aria-hidden="true">·</span><a href="#y2023">2023</a><span class="sep" aria-hidden="true">·</span><a href="#y2022">2022</a><span class="sep" aria-hidden="true">·</span><a href="#y2021">2021</a><span class="sep" aria-hidden="true">·</span><a href="#y2020">2020</a><span class="sep" aria-hidden="true">·</span><a href="#y2019">2019</a><span class="sep" aria-hidden="true">·</span><a href="#y2018">2018</a><span class="sep" aria-hidden="true">·</span><a href="#y2017">2017</a><span class="sep" aria-hidden="true">·</span><a href="#y2016">2016</a><span class="sep" aria-hidden="true">·</span><a href="#y2015">2015</a><span class="sep" aria-hidden="true">·</span><a href="#y2014">2014</a><span class="sep" aria-hidden="true">·</span><a href="#y2013">2013</a><span class="sep" aria-hidden="true">·</span><a href="#y2012">2012</a><span class="sep" aria-hidden="true">·</span><a href="#y2011">2011</a><span class="sep" aria-hidden="true">·</span><a href="#y2010">2010</a><span class="sep" aria-hidden="true">·</span><a href="#y2008">2008</a><span class="sep" aria-hidden="true">·</span><a href="#y2007">2007</a><span class="sep" aria-hidden="true">·</span><a href="#y2006">2006</a><span class="sep" aria-hidden="true">·</span><a href="#y2005">2005</a>
-    </nav>
-    <div id="publist"><section class="year-block" data-year="2026" aria-labelledby="y2026">
+    <div class="pub-scroll">
+      <nav class="yearnav" aria-label="Jump to a publication year">
+        <a href="#y2025">2025</a><span class="sep" aria-hidden="true">·</span><a href="#y2024">2024</a><span class="sep" aria-hidden="true">·</span><a href="#y2023">2023</a><span class="sep" aria-hidden="true">·</span><a href="#y2022">2022</a><span class="sep" aria-hidden="true">·</span><a href="#y2021">2021</a><span class="sep" aria-hidden="true">·</span><a href="#y2020">2020</a><span class="sep" aria-hidden="true">·</span><a href="#y2019">2019</a><span class="sep" aria-hidden="true">·</span><a href="#y2018">2018</a><span class="sep" aria-hidden="true">·</span><a href="#y2017">2017</a><span class="sep" aria-hidden="true">·</span><a href="#y2016">2016</a><span class="sep" aria-hidden="true">·</span><a href="#y2015">2015</a><span class="sep" aria-hidden="true">·</span><a href="#y2014">2014</a><span class="sep" aria-hidden="true">·</span><a href="#y2013">2013</a><span class="sep" aria-hidden="true">·</span><a href="#y2012">2012</a><span class="sep" aria-hidden="true">·</span><a href="#y2011">2011</a><span class="sep" aria-hidden="true">·</span><a href="#y2010">2010</a><span class="sep" aria-hidden="true">·</span><a href="#y2008">2008</a><span class="sep" aria-hidden="true">·</span><a href="#y2007">2007</a><span class="sep" aria-hidden="true">·</span><a href="#y2006">2006</a><span class="sep" aria-hidden="true">·</span><a href="#y2005">2005</a>
+      </nav>
+      <div id="publist"><section class="year-block" data-year="2026" aria-labelledby="y2026">
 <h3 class="year" id="y2026">2026</h3>
 <ul class="pubs">
 <li class="pub"><span class="cite-col"><details class="cite-dl" data-pmid="42203256"><summary title="Download citation" aria-label="Download citation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 20h15"/></svg><span class="btn-label">Cite</span></summary><div class="cite-menu" role="group" aria-label="Citation format"><button type="button" data-fmt="ris">RIS</button><button type="button" data-fmt="bib">BibTeX</button><button type="button" data-fmt="enw">EndNote</button><button type="button" data-fmt="csl">CSL-JSON</button></div></details><a class="oa-pdf" data-pmid="42203256" href="#" title="Download free full text" aria-label="Download free full text (open access)" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg><span class="btn-label">PDF</span></a></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="http://bmj.com/cgi/content/full/bmj.s922?ijkey=3z82Kucac3R6W0Y&amp;keytype=ref"><strong>Guidance is needed to improve outcome definitions and reduce reporting bias in cohort studies of interventions</strong></a>Ying X, <strong>Mayo-Wilson E</strong> (2026). <em>BMJ</em>, 393:s922. PMID: <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/42203256/">42203256.</a></p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-pmid="42203256" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-pmid="42203256"></span></span></div></li>
@@ -929,6 +955,7 @@ Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, De
 <ul class="pubs">
 <li class="pub"><span class="cite-col"><details class="cite-dl" data-doi="10.1007/s11292-005-1615-1"><summary title="Download citation" aria-label="Download citation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 20h15"/></svg><span class="btn-label">Cite</span></summary><div class="cite-menu" role="group" aria-label="Citation format"><button type="button" data-fmt="ris">RIS</button><button type="button" data-fmt="bib">BibTeX</button><button type="button" data-fmt="enw">EndNote</button><button type="button" data-fmt="csl">CSL-JSON</button></div></details><a class="oa-pdf" data-doi="10.1007/s11292-005-1615-1" href="#" title="Download free full text" aria-label="Download free full text (open access)" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg><span class="btn-label">PDF</span></a></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/article/10.1007/s11292-005-1615-1"><strong>Can electronic monitoring reduce crime for moderate to high risk offenders?</strong></a>Renzema M, <strong>Mayo-Wilson E</strong> (2005). <em>J Exp Criminol</em> 1(2):215-237. DOI: 10.1007/s11292-005-1615-1</p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-doi="10.1007/s11292-005-1615-1" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-doi="10.1007/s11292-005-1615-1"></span></span></div></li>
 </ul></section></div>
+    </div>
   </section>
 
 </main>
@@ -1453,6 +1480,26 @@ Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, De
       d.open = false;
     });
   });
+
+  // Publications live inside a bounded, internally-scrolling box
+  // (.pub-scroll). A menu opened near its bottom edge would otherwise get
+  // clipped by that box's own overflow, so flip it to open upward instead.
+  // Capture phase: the "toggle" event on <details> does not bubble.
+  document.addEventListener("toggle", function (ev) {
+    var box = ev.target;
+    if (!box.classList || !box.classList.contains("cite-dl")) return;
+    box.classList.remove("open-up");
+    if (!box.open) return;
+    var menu = box.querySelector(".cite-menu");
+    if (!menu) return;
+    var scroller = box.closest(".pub-scroll");
+    var limitBottom = scroller
+      ? scroller.getBoundingClientRect().bottom
+      : window.innerHeight;
+    if (menu.getBoundingClientRect().bottom > limitBottom) {
+      box.classList.add("open-up");
+    }
+  }, true);
 })();
 
 /* --------------------------------------------------- open-access full text
