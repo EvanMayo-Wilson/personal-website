@@ -2,7 +2,7 @@
 
 ## Current grants
 
-### Improving results and conclusions about harms in systematic reviews of drugs (AHRQ R01HS029877)
+### Improving results and conclusions about harms in systematic reviews of drugs (AHRQ [R01HS029877](https://reporter.nih.gov/search/ukN8k5pU3kyYQLgQ_hJe5g/projects))
 
 Objective: Examine whether information about safety in systematic reviews is consistent, and whether systematic reviews address safety concerns identified in real-world evidence and drug labels.
 

@@ -2,16 +2,16 @@
 
 ## Current
 
-- Co-Scientific Director for Peer Review of PCORI Research Reports
-(contracted by Origin Editorial)
+- [Co-Scientific Director for Peer Review of PCORI Research Reports
+(contracted by KnowledgeWorks Global Ltd)](https://originreview.org/dnxte_popup/evan-mayo-wilson-mpa-dphil/)
 
-- Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) Executive Committee
+- [Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) Executive Committee](https://www.prisma-statement.org)
 
-- Cochrane Methods Executive
+- [Cochrane Methods Executive](https://www.cochrane.org/about-us/who-we-are/advisory-boards)
 
-- Cochrane Adverse Events Methods Group, Associate Convenor
+- [Cochrane Adverse Events Methods Group, Associate Convenor](https://methods.cochrane.org/adverseeffects/)
 
-- American Psychological Association Open Science and Methodology Expert Panel
+- [American Psychological Association Open Science and Methodology Expert Panel](https://www.apa.org/about/governance/bdcmte/science)
 
 ## Previous
 

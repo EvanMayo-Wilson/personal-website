@@ -34,6 +34,7 @@ SCHOLAR_PROFILE = "https://scholar.google.com/citations?user=gwrtLekAAAAJ&hl=en"
 ORCID = "0000-0001-6126-2459"
 OPENALEX_AUTHOR = "orcid:" + ORCID          # OpenAlex resolves ORCIDs directly
 OPENALEX_WORKS = "https://openalex.org/works?filter=authorships.author.orcid:" + ORCID
+MOBILE_PHOTO = "images/Square_Headshot_Mobile.png"  # pre-cropped-to-face; see .hero-photo-mobile
 
 # Set to your Cloudflare Web Analytics token to enable analytics; "" disables it.
 CLOUDFLARE_ANALYTICS_TOKEN = "bbbbe37fa9a84afa972a08c98b1d942c"
@@ -1075,19 +1076,17 @@ PAGE = """<!DOCTYPE html>
     .mobilenav a {{ color: var(--link); }}
     .mobilenav a:hover {{ color: var(--link-hover); text-decoration: underline; }}
     .mobilenav .sep {{ margin: 0 .35rem; color: var(--rule-2); }}
-    /* Full chest-up photo is desktop-only; mobile gets a small, closely
-       cropped-to-face square instead (see .hero-photo-mobile img below). */
+    /* Full chest-up photo is desktop-only; mobile gets a separate,
+       already-cropped-to-face image instead (images/Square_Headshot_Mobile.png). */
     .hero-photo {{ display: none; }}
     .hero-photo-mobile {{
       display: block; grid-area: photo;
       width: 60px; height: 60px;         /* no taller than the 2-line name */
-      border-radius: 8px; overflow: hidden; position: relative;
+      border-radius: 8px; overflow: hidden;
       background: var(--surface);
     }}
     .hero-photo-mobile img {{
-      position: absolute; max-width: none;
-      width: 240%; height: 240%; left: -72%; top: -18%;
-      object-fit: cover;
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
     }}
     .hero {{
       grid-template-columns: auto 1fr;
@@ -1145,7 +1144,7 @@ PAGE = """<!DOCTYPE html>
       <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
     </div>
     <div class="hero-photo-mobile">
-      <img src="{photo}" alt="{photo_alt}" width="600" height="600">
+      <img src="{mobile_photo}" alt="{photo_alt}" width="1724" height="1724">
     </div>
     <h1>{name}</h1>
     <div class="hero-body">
@@ -2191,6 +2190,7 @@ def main():
     page = PAGE.format(
         name=p["name"],
         photo=p["photo"],
+        mobile_photo=MOBILE_PHOTO,
         photo_alt=p["photo_alt"],
         email=p["email"],
         domain=DOMAIN,

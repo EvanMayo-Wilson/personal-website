@@ -117,17 +117,5 @@
       { "family": "Mayo-Wilson", "given": "E" }
     ],
     "editor": [{ "family": "Roberts", "given": "Albert R." }]
-  },
-
-  "https://www.apa.org/pubs/books/apa-handbook-health-psychology": {
-    "type": "chapter",
-    "title": "Systems of evidence in health psychology",
-    "container-title": "APA Handbook of Health Psychology",
-    "chapter-number": "12",
-    "publisher": "American Psychological Association",
-    "publisher-place": "Washington, DC",
-    "issued": { "date-parts": [[2024]] },
-    "author": [{ "family": "Mayo-Wilson", "given": "E" }],
-    "URL": "https://www.apa.org/pubs/books/apa-handbook-health-psychology"
   }
 }

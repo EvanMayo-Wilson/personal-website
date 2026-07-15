@@ -70,10 +70,9 @@ rejected push.
   regex in `build.py` for one entry — add an override line to
   `content/dois.tsv` instead (format documented at the top of that file).
   This is exactly what it's for.
-- "Also published in" / "was published simultaneously in" items go in a
-  nested markdown list under a `This article was published simultaneously
-  in:` (or `...was also published in:`) line, indented two spaces. Each
-  sub-entry is a **full citation** in exactly the same shape as a top-level
+- Items published in more than one place go in a nested markdown list under
+  a `This article was published simultaneously in:` line, indented two
+  spaces. Each sub-entry is a **full citation** in exactly the same shape as a top-level
   entry (own title link repeating the parent's title, own author list,
   its own journal/volume/pages/PMID-or-DOI) — not an abbreviated
   "*Journal*, vol:pages. PMID: n" fragment. Each sub-entry gets its own
@@ -156,5 +155,9 @@ rejected push.
 
 - **Add a publication:** see "Adding a new paper" above (check for an
   existing in-press/protocol placeholder first).
+- **Add a grant** (`content/research.md`): if the grant can be found on NIH
+  RePORTER, hyperlink the grant number to its RePORTER project page (e.g.
+  `[R01HS029877](https://reporter.nih.gov/search/.../projects)` - search
+  reporter.nih.gov for the grant number to get the right URL).
 - **Update bio/research/etc.:** edit the relevant `content/*.md`, rebuild, push.
 - **Change layout/colors:** edit `build.py` (CSS is in the page template), rebuild.

@@ -66,7 +66,7 @@ Li T, **Mayo-Wilson E**, Shaughnessy D, Qureshi R (2024). *Trials* 25, 403. PMID
 Qureshi R, Naaman K, Quan NG, **Mayo-Wilson E**, Page MJ, Cornellius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. *Ann Intern Med* 177(8):1089-1098. PMID: [39008854](https://pubmed.ncbi.nlm.nih.gov/39008854/).
 
 - [**Chapter 12: Systems of Evidence in Health Psychology. In: Smith T, Anderson NB eds. *APA Handbook of Health Psychology, Volume 1: Foundations and Context of Health Psychology***](https://www.apa.org/pubs/books/apa-handbook-health-psychology)  
-Czajkowski S, Davidson K, Freedland K, **Mayo-Wilson E (order of authorship is alphabetical)**. American Psychological Association: Washington, DC. ISBN: 978-1-4338-3672-5.
+Czajkowski S, Davidson K, Freedland K, **Mayo-Wilson E (order of authorship is alphabetical)**. American Psychological Association: Washington, DC. ISBN: 978-1-4338-3672-5. DOI: [10.1037/0000394-012](https://doi.org/10.1037/0000394-012).
 
 - [**Proposal to develop a clinical practice guideline on emotion regulation: Final report**](https://osf.io/preprints/psyarxiv/g627d)  
 Muran JC, Teachman B, Aldao A, Ehrenreich-May J, Fonagy P, Greenberg L, Gross J, Magnavita J, **Mayo-Wilson E**, McMain S, Soto JA, Bufka L, Kurtzman H, Marzalik J. *PsyArXiv*.
@@ -192,7 +192,7 @@ Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L,
 
 - [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](http://dx.doi.org/10.1016/j.jsams.2021.08.004)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Journal of Science and Medicine in Sport*. 2022 Feb;25(2):192-194. PMID: [34474960](https://pubmed.ncbi.nlm.nih.gov/34474960/).
 
-  This article was also published in:
+  This article was published simultaneously in:
 
   - [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://www.arthroscopyjournal.org/article/S0749-8063(21)00821-5/fulltext)  
 Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Arthroscopy* 37(11):3223-3225. PMID: [34740399](https://pubmed.ncbi.nlm.nih.gov/34740399/).
@@ -297,7 +297,7 @@ Hofmann SG, Barlow DH, Clark DM, Hollon SD, **Mayo-Wilson E**. *Am J Psychiatry*
 
 - [**Are restorative justice conferences effective in reducing repeat offending? Findings from a Campbell systematic review**](https://link.springer.com/article/10.1007/s10940-014-9222-9)Sherman LW, Strang H, **Mayo-Wilson E**, Woods DJ, Ariel B. *J Quant Criminol* 31(1):1-24. [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.5)]
 
-- [**Simultaneous synthesis of treatment effects and mapping to a common scale: an alternative to standardization**](http://onlinelibrary.wiley.com/doi/10.1002/jrsm.1130/abstract)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. DOI: [10.1002/jrsm.1130](https://doi.org/10.1002/jrsm.1130). PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
+- [**Simultaneous synthesis of treatment effects and mapping to a common scale: an alternative to standardization**](http://onlinelibrary.wiley.com/doi/10.1002/jrsm.1130/abstract)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. DOI: 10.1002/jrsm.1130. PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
 
 - [**Development, inter-rater reliability and feasibility of a checklist to assess implementation (Ch-IMP) in systematic reviews: the case of provider-based prevention and treatment programs targeting children and youth**](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-015-0037-7)Cargo M, Stankov I, Thomas J, Saini M, Rogers P, **Mayo-Wilson E**, Hannes K. *BMC Med Res Methodol* 15:73. PMID: [26346461](https://pubmed.ncbi.nlm.nih.gov/26346461/).
 
@@ -344,13 +344,13 @@ Morriss R, Kendall T, Braidwood R, Byng R, Cipriani A, James A, John C, Jones S,
 **Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Am J Public Health* 103(10):1741-1746. PMID: [23947317](https://pubmed.ncbi.nlm.nih.gov/23947317/).
 
   - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://link.springer.com/article/10.1007/s11292-013-9180-5)  
-**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *J Exp Criminol* 9:355-367. DOI: [10.1007/s11292-013-9180-5](https://doi.org/10.1007/s11292-013-9180-5).
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *J Exp Criminol* 9:355-367. DOI: 10.1007/s11292-013-9180-5.
 
   - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://journals.sagepub.com/doi/10.1177/1049731513498118)  
 **Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Res Soc Work Pract* 23:595-602. PMID: [25076832](https://pubmed.ncbi.nlm.nih.gov/25076832/).
 
   - [**Developing a Reporting Guideline for Social and Psychological Intervention Trials**](https://academic.oup.com/bjsw/article/43/5/1024/1636845)  
-**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Brit J Soc Work* 43(5):1024-1039. DOI: [10.1093/bjsw/bct129](https://doi.org/10.1093/bjsw/bct129).
+**Mayo-Wilson E**, Montgomery P, Hopewell S, McDonald G, Moher D, Grant SP. *Brit J Soc Work* 43(5):1024-1039. DOI: 10.1093/bjsw/bct129.
 
 - [**Vitamin A supplementation in Indian children**](https://pubmed.ncbi.nlm.nih.gov/23953382/)  
 **Mayo-Wilson E**, Imdad A, Herzer K, Bhutta ZA. *The Lancet* 382(9892):594. PMID: [23953382](https://pubmed.ncbi.nlm.nih.gov/23953382/).
@@ -390,7 +390,7 @@ Kuipers E, Kendall T, Yesufu-Udechuku A, Slade E, Birchwood M, Brabban A, Cheema
 - [**Police strategies to reduce illegal possession and carrying of firearms: Effects on gun crime**](https://onlinelibrary.wiley.com/doi/pdf/10.4073/csr.2012.11)Koper C, **Mayo-Wilson E**. *Campbell Systematic Reviews*. [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.16)]
 
 - [**Development of a CONSORT extension for interventions in public health and related disciplines**](https://doi.org/10.1016/S0140-6736(13)60370-0)  
-Grant SP, Montgomery P, **Mayo-Wilson E**. *The Lancet* 380:S14. DOI: [10.1016/S0140-6736(13)60370-0](https://doi.org/10.1016/S0140-6736(13)60370-0).
+Grant SP, Montgomery P, **Mayo-Wilson E**. *The Lancet* 380:S14. DOI: 10.1016/S0140-6736(13)60370-0.
 
 ## 2011
 
