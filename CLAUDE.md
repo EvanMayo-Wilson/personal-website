@@ -108,40 +108,44 @@ rejected push.
 
 - **Dimensions + Altmetric** citation/attention donuts (desktop only, hidden at
   zero) via each article's PMID or DOI.
-- **Selection + citation download** (desktop only): each article has a
-  checkbox (`.pub-select`) instead of a per-article Cite button, plus a
-  "Select all" checkbox at the top of that column (`#pub-select-all`). The
-  toolbar's **Download selected citations** button builds RIS / BibTeX /
-  EndNote / CSL-JSON from whichever boxes are checked.
-  - CSL-JSON is looked up in this order: `content/csl-extra.json` (hand-written,
-    for items with no PMID/DOI) → `docs/csl-cache.json` (pre-fetched for every
-    other PMID/DOI by `generate_csl_cache.py` — this is what makes downloads
-    feel instant) → the visitor's browser localStorage (30-day TTL) → a live
-    fetch from NCBI ctxp, falling back to Crossref, which then gets cached.
-    Re-run `python3 generate_csl_cache.py` after adding papers so new entries
-    hit the fast path too (not required — the live-fetch fallback still works
-    without it).
-- **PDF** button per article: open-access full text via Unpaywall. Desktop-only.
-- **Year / Citations sort toggle** (desktop only, `.sort-btn`): "Year" is the
-  normal grouped-by-year view. "Citations" force-loads every Dimensions/
-  Altmetric badge (bypassing their normal lazy-load-near-viewport behaviour),
-  waits for them to render, then flattens the whole list into one sequence
-  sorted by each article's Dimensions total-citations count, then Altmetric
-  score, then year (there's no finer-grained date available client-side); the
-  per-year headings and the year-jump nav are hidden in this mode. Switching
-  back to "Year" restores the original DOM order exactly (each `<li>`
-  remembers its original parent/position from page load).
-- **Author metrics** below the Publications heading: Google Scholar (from
-  `docs/scholar-stats.json`, refreshed by the Action) and OpenAlex (fetched
-  live).
+- **Publications toolbar** (desktop only, above the scroll box): a sort row
+  (Year/Citations, right-aligned to the box border below - `.sort-btn`, active
+  mode filled UNC Carolina Blue) and, underneath, a select row (per-article
+  `.pub-select` checkboxes - open squares that fill blue with a white
+  checkmark when checked - plus "Select all" `#pub-select-all` and the
+  **Download selected citations** button). Each article's checkbox replaces
+  what used to be a per-article Cite button; the PDF button (open-access full
+  text via Unpaywall) is icon-only and sized/aligned to match the checkbox
+  directly above it.
+  - "Citations" mode force-loads every Dimensions/Altmetric badge (bypassing
+    their normal lazy-load-near-viewport behaviour) and ranks the whole list
+    by each article's Dimensions total-citations count, then Altmetric score,
+    then year (no finer-grained date is available client-side); simultaneous-
+    publication sub-entries stay nested under their own parent article, sorted
+    by the parent's citation count, not their own. This precomputes quietly
+    ~1.5s after page load so clicking "Citations" is fast rather than waiting
+    on live badge loads. Switching back to "Year" restores the exact original
+    DOM order (each `<li>` remembers its original parent/position from load).
+  - CSL-JSON for the downloads is looked up in this order: `content/csl-extra.json`
+    (hand-written, for items with no PMID/DOI) → `docs/csl-cache.json`
+    (pre-fetched for every other PMID/DOI by `generate_csl_cache.py` — this is
+    what makes downloads feel instant) → the visitor's browser localStorage
+    (30-day TTL) → a live fetch from NCBI ctxp, falling back to Crossref, which
+    then gets cached. Re-run `python3 generate_csl_cache.py` after adding
+    papers so new entries hit the fast path too (not required — the
+    live-fetch fallback still works without it).
+- **Author metrics** below the Publications heading, one line: Google Scholar
+  (from `docs/scholar-stats.json`, refreshed by the Action) and OpenAlex
+  (fetched live), separated by "|" once both have loaded.
 - **Cloudflare Web Analytics** (token in `build.py`, `CLOUDFLARE_ANALYTICS_TOKEN`).
 - **Mobile** (≤46rem): the topbar (nav links + theme toggle) is hidden
   entirely — mobile always just follows the system light/dark setting — and
-  replaced by a small inline text nav under the profile links. The hero photo
-  is replaced by a small, closely-cropped-to-face square beside the name
-  (see `.hero-photo-mobile` in `build.py`) instead of the full chest-up photo.
-  Citation badges, the selection/sort toolbar, and the publications
-  year-jump/scroll-box are desktop-only throughout.
+  replaced by `.mobilenav`, a small sticky text nav that stays visible while
+  scrolling (not just present once near the top). The hero photo uses a
+  separate, already-cropped-to-face image (`images/Square_Headshot_Mobile.png`,
+  `MOBILE_PHOTO` in `build.py`) instead of the full chest-up photo. Citation
+  badges, the selection/sort toolbar, and the publications year-jump/scroll-box
+  are desktop-only throughout.
 
 ## Domain / hosting notes
 
