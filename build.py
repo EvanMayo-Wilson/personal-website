@@ -1016,9 +1016,10 @@ PAGE = """<!DOCTYPE html>
      (aligned with the box border below it). Desktop only, like the
      checkboxes it controls - see the media query below. */
   .pub-toolbar {{
-    /* Same left/right padding as .pub-scroll below it, so the checkbox
-       column and the sort buttons line up with the list and its border. */
-    padding: 0 1.1rem .6rem;
+    /* "Select all" sits flush with the box border below (no left inset);
+       right padding still matches .pub-scroll's so the sort buttons line up
+       with its right edge. */
+    padding: 0 1.1rem .6rem 0;
     border-bottom: 1px solid var(--rule);
     margin-bottom: .5rem;
     font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
@@ -1827,7 +1828,7 @@ PAGE = """<!DOCTYPE html>
    starts hidden. Resolved lazily, in small batches, cached for 30 days.
 ---------------------------------------------------------------------------- */
 (function () {{
-  var KEY   = "oa-links-v1",
+  var KEY   = "oa-links-v2",   // v2: only ever cache a real url_for_pdf, never a landing page
       TTL   = 30 * 24 * 60 * 60 * 1000,
       GAP   = 200,
       EMAIL = "{email}";
