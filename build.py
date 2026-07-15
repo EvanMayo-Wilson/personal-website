@@ -298,8 +298,8 @@ def oa_button(key: str) -> str:
         return '<span class="oa-empty"></span>'
     return (
         f'<a class="oa-pdf" {key} href="#" '
-        f'title="Download free full text" aria-label="Download free full text (open access)" '
-        f'hidden>{ICON_PDF}<span class="btn-label">PDF</span></a>'
+        f'title="Download free full text (PDF)" aria-label="Download free full text (open access PDF)" '
+        f'hidden>{ICON_PDF}</a>'
     )
 
 
@@ -723,11 +723,14 @@ PAGE = """<!DOCTYPE html>
   .plinks {{ margin-top: auto; padding-top: 1rem; }}
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
-  .author-metrics {{ margin: 0 0 .6rem; display: flex; flex-direction: column; gap: .3rem; }}
-  .metric-row {{
-    margin: 0 0 .2rem; line-height: 1.55;
-    font-size: .9375rem;         /* matches the profile links */
+  /* One line - "Google Scholar: ... | OpenAlex: ..." - matching the profile
+     links' own "A | B | C" style. The "|" (#metrics-sep) only appears once
+     OpenAlex has actually loaded (see the OpenAlex fetch script). */
+  .author-metrics {{
+    margin: 0 0 .9rem; line-height: 1.6;
+    font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
   }}
+  .author-metrics .sep {{ margin: 0 .6rem; color: var(--rule-2); }}
   /* Source name is a hotlink, styled like an article title (bold + blue,
      see .pub-text a) rather than the plain heading-colored label it used
      to be. */
@@ -940,32 +943,36 @@ PAGE = """<!DOCTYPE html>
   }}
 
   /* ---- citation / PDF buttons -------------------------------------------- */
-  /* Left column: "Cite" on top, "PDF" (open-access full text) beneath. */
+  /* Left column: selection checkbox on top, "PDF" (open-access full text,
+     icon-only) beneath - same square footprint, centered, so the two stack
+     in perfect alignment down the page. */
   .cite-col {{
-    display: flex; flex-direction: column; align-items: stretch;
-    gap: .25rem;
+    display: flex; flex-direction: column; align-items: center;
+    gap: .3rem;
   }}
-  /* Shared pill styling for both buttons. */
-  .cite-dl summary, .oa-pdf {{
+  .oa-pdf {{
     display: inline-flex; align-items: center; justify-content: center;
-    gap: .25rem; padding: .22rem .3rem; min-height: 1.55rem;
+    width: 1.5rem; height: 1.5rem;
     border: 1px solid var(--rule-2); border-radius: 6px;
     background: var(--bg); color: var(--muted);
-    font-size: .72rem; font-weight: 600; line-height: 1;
-    cursor: pointer; white-space: nowrap;
+    cursor: pointer;
   }}
-  .cite-dl summary svg, .oa-pdf svg {{ width: .8rem; height: .8rem; flex: none; }}
+  .oa-pdf svg {{ width: .95rem; height: .95rem; flex: none; }}
   .btn-label {{ letter-spacing: .01em; }}
 
-  .oa-pdf:hover {{ color: #1a7a48; border-color: #1a7a48; text-decoration: none; }}
-  :root[data-theme="dark"] .oa-pdf:hover {{ color: #5fce9a; border-color: #3a7a5c; }}
-  @media (prefers-color-scheme: dark) {{
-    :root:not([data-theme="light"]) .oa-pdf:hover {{ color: #5fce9a; border-color: #3a7a5c; }}
-  }}
+  .oa-pdf:hover {{ color: var(--link); border-color: var(--link); }}
   .oa-pdf[hidden], .oa-empty {{ display: none; }}
 
   .cite-dl {{ position: relative; }}
-  .cite-dl summary {{ list-style: none; }}
+  .cite-dl summary {{
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: .35rem; padding: .4rem .7rem; min-height: 1.9rem;
+    border: 1px solid var(--rule-2); border-radius: 6px;
+    background: var(--bg); color: var(--muted);
+    font-size: 1.0625rem; font-weight: 600; line-height: 1;
+    cursor: pointer; white-space: nowrap; list-style: none;
+  }}
+  .cite-dl summary svg {{ width: .95rem; height: .95rem; flex: none; }}
   .cite-dl summary::-webkit-details-marker {{ display: none; }}
   .cite-dl summary::marker {{ content: ""; }}
   .cite-dl summary:hover {{ color: var(--link); border-color: var(--link); }}
@@ -989,58 +996,65 @@ PAGE = """<!DOCTYPE html>
   .cite-menu button:hover {{ background: var(--surface); color: var(--link); }}
   .cite-menu button[disabled] {{ opacity: .55; cursor: default; }}
 
-  /* "Download citations" bulk button, right-justified on the heading line. */
-  .pubhead {{
-    display: flex; align-items: center; gap: .5rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: .5rem; border-bottom: 2px solid var(--accent);
-  }}
-  .pubhead h2 {{ margin: 0; padding: 0; border: 0; }}
+  /* "Download selected citations" bulk button, right-justified on its row -
+     see .select-row. */
   .cite-all {{ margin-left: auto; }}          /* push to the right end */
-  .cite-all summary {{ min-height: 1.9rem; padding: .3rem .6rem; }}
-  .cite-all summary svg {{ width: .95rem; height: .95rem; }}
   .cite-all .cite-menu {{ top: 2.4rem; left: auto; right: 0; }}  /* open leftwards */
   .cite-all .cite-menu button {{ min-width: 8.5rem; }}
   .cite-all.open-up .cite-menu {{ top: auto; bottom: 100%; margin-bottom: .35rem; }}
 
-  /* Toolbar above the scrollable box: per-item select-all + Year/Citations
-     sort toggle. Desktop only, like the checkboxes it controls - see the
-     media query below. Same 3-column grid as li.pub, so the checkbox lines
-     up exactly above every per-article checkbox in the list. */
+  /* Toolbar above the scrollable box: Year/Citations sort (its own row,
+     right-aligned to match the box border below it) then select-all +
+     "Download selected citations" (their own row underneath). Desktop only,
+     like the checkboxes it controls - see the media query below. */
   .pub-toolbar {{
-    display: grid;
-    grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
-    align-items: center; column-gap: 0;
-    padding: .35rem 0 .6rem;
+    display: flex; flex-direction: column; gap: .6rem;
+    padding: 0 0 .6rem;
     border-bottom: 1px solid var(--rule);
     margin-bottom: .5rem;
+    font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
+    color: var(--muted);
   }}
-  .pub-toolbar .cite-col {{ display: flex; justify-content: center; }}
-  .pub-toolbar-mid {{
-    display: flex; align-items: center; justify-content: space-between;
-    padding-left: .9rem; gap: 1rem; flex-wrap: wrap;
-    font-size: .8125rem; color: var(--muted);
-  }}
+  .pub-toolbar-row {{ display: flex; align-items: center; }}
+  .sort-row {{ justify-content: flex-end; }}
+  .select-row {{ gap: .6rem; }}
   .pub-toolbar-label {{ cursor: pointer; }}
-  .sort-toggle {{ display: flex; align-items: center; gap: .4rem; }}
+  .sort-toggle {{ display: flex; align-items: center; gap: .5rem; }}
   .sort-toggle-label {{ color: var(--faint); }}
   .sort-btn {{
-    font: inherit; font-size: .8125rem; font-weight: 600;
+    font: inherit; font-size: 1.0625rem; font-weight: 600;
     background: var(--bg); border: 1px solid var(--rule-2); border-radius: 6px;
-    color: var(--muted); padding: .25rem .6rem; cursor: pointer;
+    color: var(--muted); padding: .3rem .75rem; cursor: pointer;
   }}
   .sort-btn:hover {{ color: var(--text); background: var(--surface); }}
-  .sort-btn[aria-pressed="true"] {{ color: var(--link); border-color: var(--link); }}
-
-  .pub-select {{
-    width: 1.15rem; height: 1.15rem; margin: 0; cursor: pointer;
-    accent-color: var(--link);
+  /* Active sort mode - light UNC Carolina Blue fill, matching the checked
+     checkbox below. */
+  .sort-btn[aria-pressed="true"] {{
+    background: var(--accent); border-color: var(--accent); color: #fff;
   }}
 
-  /* Desktop only, like the badges. Hide the whole left column (Cite AND PDF). */
+  /* Open square when unchecked (not a solid block); UNC Carolina Blue fill
+     with a white checkmark when checked. Same size as the PDF button below
+     it (see .oa-pdf), so the two stay aligned down the column. */
+  .pub-select {{
+    appearance: none; -webkit-appearance: none;
+    width: 1.5rem; height: 1.5rem; margin: 0; flex: none; cursor: pointer;
+    border: 1.5px solid var(--rule-2); border-radius: 4px;
+    background: var(--bg);
+    display: inline-grid; place-content: center;
+  }}
+  .pub-select:hover {{ border-color: var(--accent); }}
+  .pub-select:checked {{ background: var(--accent); border-color: var(--accent); }}
+  .pub-select:checked::before {{
+    content: "";
+    width: .3rem; height: .6rem;
+    border: solid #fff; border-width: 0 .17rem .17rem 0;
+    transform: rotate(40deg) translate(-1px, -1px);
+  }}
+
+  /* Desktop only, like the badges. Hide the whole left column (checkbox AND PDF). */
   @media (max-width: 47.99rem) {{
     .cite-col, .cite-dl, .cite-dl-empty, .pub-toolbar {{ display: none; }}
-    .pubhead {{ display: block; }}
   }}
 
   /* Badges are desktop-only - see the loader script. Reclaim the column so a
@@ -1070,8 +1084,17 @@ PAGE = """<!DOCTYPE html>
     .topbar {{ display: none; }}
     .mobilenav {{
       display: block;
+      position: sticky; top: 0; z-index: 20;
       font-size: .875rem; color: var(--faint);
-      padding: 1rem 0 0;
+      padding: .85rem var(--gutter);
+      margin: 0 calc(-1 * var(--gutter));
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      backdrop-filter: saturate(180%) blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }}
+    @supports not (background: color-mix(in srgb, red 50%, blue)) {{
+      .mobilenav {{ background: var(--bg); }}
     }}
     .mobilenav a {{ color: var(--link); }}
     .mobilenav a:hover {{ color: var(--link-hover); text-decoration: underline; }}
@@ -1175,35 +1198,34 @@ PAGE = """<!DOCTYPE html>
   <script type="application/json" id="csl-extra">{cslextra}</script>
 
   <section id="publications" aria-labelledby="h-publications">
-    <div class="pubhead">
-      <h2 id="h-publications">Publications</h2>
-      <details class="cite-dl cite-all">{citemenu_all}</details>
-    </div>
+    <h2 id="h-publications">Publications</h2>
 
     <!-- Citation summaries. Google Scholar comes from the committed
          scholar-stats.json (refreshed by the scheduled GitHub Action);
-         OpenAlex is fetched live. Each row hides until its data is available.
+         OpenAlex is fetched live. Each hides until its data is available.
          The source name is a hotlink to the profile, styled like an article
          title (see .metric-src). -->
-    <div class="author-metrics">
-      <p class="metric-row" id="gs-row">
+    <p class="author-metrics">
+      <span class="metric-row" id="gs-row">
         <a class="metric-src" href="{scholar}">Google Scholar</a><span class="metric-nums" id="gs-line"></span>
-      </p>
-      <p class="metric-row" id="oa-row" hidden>
+      </span><span class="sep" id="metrics-sep" aria-hidden="true" hidden>|</span><span class="metric-row" id="oa-row" hidden>
         <a class="metric-src" id="oa-profile-pub" href="{openalex_works}">OpenAlex</a><span class="metric-nums" id="stat-line"></span>
-      </p>
-    </div>
+      </span>
+    </p>
 
     <div class="pub-toolbar">
-      <span class="cite-col"><input type="checkbox" id="pub-select-all" aria-label="Select all citations"></span>
-      <span class="pub-toolbar-mid">
-        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
+      <div class="pub-toolbar-row sort-row">
         <span class="sort-toggle" role="group" aria-label="Sort publications by">
           <span class="sort-toggle-label">Sort:</span>
           <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
           <button type="button" class="sort-btn" data-sort="citations" aria-pressed="false">Citations</button>
         </span>
-      </span>
+      </div>
+      <div class="pub-toolbar-row select-row">
+        <span class="cite-col"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
+        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
+        <details class="cite-dl cite-all">{citemenu_all}</details>
+      </div>
     </div>
 
     <div class="pub-scroll">
@@ -1288,6 +1310,8 @@ PAGE = """<!DOCTYPE html>
       }});
     }}
     box.hidden = false;
+    var sep = document.getElementById("metrics-sep");
+    if (sep) sep.hidden = false;
   }}
 
   var store;
@@ -2086,15 +2110,19 @@ PAGE = """<!DOCTYPE html>
   // big ones - that's all the badge itself knows, so it's all we can sort
   // on too) into .__dimensions_Badge_stat_total_citations, alongside the
   // recent-citations stat. A hidden-at-zero badge renders nothing at all.
+  // Scoped to :scope > .metrics (the article's OWN badges, a direct child of
+  // the <li>) so a simultaneous-publication sub-entry's badges - nested
+  // deeper, inside .pub-text - never get mistaken for the parent's.
   function citationCount(li) {{
-    var el = li.querySelector(".__dimensions_Badge_stat_total_citations .__dimensions_Badge_stat_count");
+    var el = li.querySelector(":scope > .metrics .__dimensions_Badge_stat_total_citations .__dimensions_Badge_stat_count");
     return el ? parseAbbrev(el.textContent) : 0;
   }}
 
   // Altmetric encodes its (always exact, never abbreviated) score in the
-  // donut image's own "score=" query parameter.
+  // donut image's own "score=" query parameter. Same :scope > .metrics
+  // reasoning as citationCount above.
   function altmetricScore(li) {{
-    var img = li.querySelector('.altmetric-embed img[src*="badges.altmetric.com"]');
+    var img = li.querySelector(':scope > .metrics .altmetric-embed img[src*="badges.altmetric.com"]');
     if (!img) return 0;
     var m = /[?&]score=([\\d.]+)/.exec(img.src);
     return m ? parseFloat(m[1]) : 0;
@@ -2117,35 +2145,46 @@ PAGE = """<!DOCTYPE html>
     }});
   }}
 
-  function sortByCitations() {{
-    if (window.__loadAllBadges) window.__loadAllBadges();
+  // Sorting by citations needs every badge loaded and rendered first, which
+  // can take a few seconds - too slow to do only when the user clicks. So
+  // this is kicked off once, quietly, shortly after page load (see the
+  // bottom of this file), and the click handler below just reuses whatever
+  // this promise resolves to - instant if it already finished, a short wait
+  // (not a repeated one) if the user is unusually fast.
+  var citationsOrderPromise = null;
+  function getCitationsOrder() {{
+    if (!citationsOrderPromise) {{
+      if (window.__loadAllBadges) window.__loadAllBadges();
+      citationsOrderPromise = waitForBadges(9000).then(function () {{
+        return pubs.slice().sort(function (a, b) {{
+          var ac = citationCount(a), bc = citationCount(b);
+          if (ac !== bc) return bc - ac;
 
-    return waitForBadges(9000).then(function () {{
-      var ranked = pubs.slice().sort(function (a, b) {{
-        var ac = citationCount(a), bc = citationCount(b);
-        if (ac !== bc) return bc - ac;
+          var aa = altmetricScore(a), ba = altmetricScore(b);
+          if (aa !== ba) return ba - aa;
 
-        var aa = altmetricScore(a), ba = altmetricScore(b);
-        if (aa !== ba) return ba - aa;
-
-        return b.__year - a.__year;
+          return b.__year - a.__year;
+        }});
       }});
+    }}
+    return citationsOrderPromise;
+  }}
 
-      if (!flatList) {{
-        flatList = document.createElement("ul");
-        flatList.className = "pubs";
-        flatList.id = "pubs-flat";
-        publist.insertBefore(flatList, publist.firstChild);
-      }}
-      ranked.forEach(function (li) {{ flatList.appendChild(li); }});
+  function applyCitationsOrder(ranked) {{
+    if (!flatList) {{
+      flatList = document.createElement("ul");
+      flatList.className = "pubs";
+      flatList.id = "pubs-flat";
+      publist.insertBefore(flatList, publist.firstChild);
+    }}
+    ranked.forEach(function (li) {{ flatList.appendChild(li); }});
 
-      [].forEach.call(publist.querySelectorAll(".year-block"), function (s) {{
-        s.hidden = true;
-      }});
-      var nav = document.querySelector(".yearnav");
-      if (nav) nav.hidden = true;
-      flatList.hidden = false;
+    [].forEach.call(publist.querySelectorAll(".year-block"), function (s) {{
+      s.hidden = true;
     }});
+    var nav = document.querySelector(".yearnav");
+    if (nav) nav.hidden = true;
+    flatList.hidden = false;
   }}
 
   sortBtns.forEach(function (btn) {{
@@ -2161,12 +2200,18 @@ PAGE = """<!DOCTYPE html>
       var label = btn.textContent;
       btn.disabled = true;
       btn.textContent = "Sorting…";
-      sortByCitations().then(function () {{
+      getCitationsOrder().then(function (ranked) {{
+        applyCitationsOrder(ranked);
         btn.textContent = label;
         btn.disabled = false;
       }});
     }});
   }});
+
+  // Quietly precompute the citations order in the background, well after
+  // the initial page load/paint is out of the way, so switching to
+  // "Citations" is instant by the time anyone actually clicks it.
+  setTimeout(function () {{ getCitationsOrder(); }}, 1500);
 }})();
 </script>
 {analytics}

@@ -3,7 +3,7 @@
 ## 2026
 
 - [**Guidance is needed to improve outcome definitions and reduce reporting bias in cohort studies of interventions**](http://bmj.com/cgi/content/full/bmj.s922?ijkey=3z82Kucac3R6W0Y&keytype=ref)  
-Ying X, **Mayo-Wilson E** (2026). *BMJ*, 393:s922. PMID: [42203256](https://pubmed.ncbi.nlm.nih.gov/42203256/).
+Ying X, **Mayo-Wilson E**. *BMJ*, 393:s922. PMID: [42203256](https://pubmed.ncbi.nlm.nih.gov/42203256/).
 
 - **An automated approach to improve clinical trial registration and identify outcome changes on ClinicalTrials.gov**
 Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *npj Digital Medicine*. In press. [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr)]
@@ -60,7 +60,7 @@ Vorland CJ, Brown AW, Kilicoglu H, Ying X, **Mayo-Wilson E**. *JAMA Netw Open* 7
 Ying X, Vorland CJ, Qureshi R, Brown AW, Kilicoglu H, Saldanha I, Devito NJ, **Mayo-Wilson E**. *MetaArXiv.*
 
 - [**Studying harms of interventions with an equity lens in randomized trials**](https://doi.org/10.1186/s13063-024-08239-x)  
-Li T, **Mayo-Wilson E**, Shaughnessy D, Qureshi R (2024). *Trials* 25, 403. PMID: [38902776](https://pubmed.ncbi.nlm.nih.gov/38902776/).
+Li T, **Mayo-Wilson E**, Shaughnessy D, Qureshi R. *Trials* 25, 403. PMID: [38902776](https://pubmed.ncbi.nlm.nih.gov/38902776/).
 
 - [**Development and evaluation of a framework for identifying and addressing spin for harms in systematic reviews of interventions**](https://annals.org/aim/article/doi/10.7326/M24-0771)  
 Qureshi R, Naaman K, Quan NG, **Mayo-Wilson E**, Page MJ, Cornellius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. *Ann Intern Med* 177(8):1089-1098. PMID: [39008854](https://pubmed.ncbi.nlm.nih.gov/39008854/).
@@ -436,4 +436,4 @@ Koper C, **Mayo-Wilson E**. *J Exp Criminol* 2(2):227-261. DOI: 10.1007/s11292-0
 ## 2005
 
 - [**Can electronic monitoring reduce crime for moderate to high risk offenders?**](https://link.springer.com/article/10.1007/s11292-005-1615-1)  
-Renzema M, **Mayo-Wilson E** (2005). *J Exp Criminol* 1(2):215-237. DOI: 10.1007/s11292-005-1615-1
+Renzema M, **Mayo-Wilson E**. *J Exp Criminol* 1(2):215-237. DOI: 10.1007/s11292-005-1615-1

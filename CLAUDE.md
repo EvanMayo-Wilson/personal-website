@@ -156,8 +156,9 @@ rejected push.
 - **Add a publication:** see "Adding a new paper" above (check for an
   existing in-press/protocol placeholder first).
 - **Add a grant** (`content/research.md`): if the grant can be found on NIH
-  RePORTER, hyperlink the grant number to its RePORTER project page (e.g.
-  `[R01HS029877](https://reporter.nih.gov/search/.../projects)` - search
-  reporter.nih.gov for the grant number to get the right URL).
+  RePORTER, hyperlink the whole `(FUNDER grant-number)` parenthetical to its
+  RePORTER project page - e.g. `[(AHRQ R01HS029877)](https://reporter.nih.gov/search/.../projects)`,
+  not just the grant number alone (too subtle to read as a link inside a bold
+  heading). Search reporter.nih.gov for the grant number to get the URL.
 - **Update bio/research/etc.:** edit the relevant `content/*.md`, rebuild, push.
 - **Change layout/colors:** edit `build.py` (CSS is in the page template), rebuild.
