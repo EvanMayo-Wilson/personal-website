@@ -112,16 +112,19 @@ rejected push.
   zero) via each article's PMID or DOI. Purely visual/on-page - not used for
   sorting (see `docs/pub-stats.json` below).
 - **Publications toolbar** (desktop only, above the scroll box), one row:
-  a PDF-or-placeholder + `.pub-select` checkbox (open square, fills Carolina
-  Blue with a white checkmark when checked) for "Select all", flush with the
-  box's left border below it; then the **Download selected citations**
-  button; then, pushed to the right, the Year/Citations `.sort-btn` toggle
-  (active mode filled Carolina Blue). None of the three buttons have a
-  visible border. Per article, the same shape repeats: PDF button (icon-only,
-  open-access full text) to the left of its `.pub-select` checkbox - both
-  are fixed-size slots (`.oa-empty`/`.cite-dl-empty` placeholders hold the
-  space even when empty) so the column stays aligned regardless of whether a
-  given article has a PDF.
+  the "Select all" `.pub-select` checkbox (open square, fills Carolina Blue
+  with a white checkmark when checked), flush with the box's left border
+  below it (`.cite-col-select-all` - no leading PDF slot here, unlike the
+  per-article rows below); then the **Download selected citations** button;
+  then, pushed to the right, the Year/Citations `.sort-btn` toggle (active
+  mode filled Carolina Blue). None of the three buttons have a visible
+  border. Per article, the same shape repeats: PDF button (icon-only,
+  open-access full text, opens in a new tab via `target="_blank"` - always,
+  regardless of the host's CORS policy, rather than downloading on some
+  hosts and merely opening on others) to the left of its `.pub-select`
+  checkbox - both are fixed-size slots (`.oa-empty`/`.cite-dl-empty`
+  placeholders hold the space even when empty) so the column stays aligned
+  regardless of whether a given article has a PDF.
   - Re-sorting (either direction) scrolls `.pub-scroll` back to the top.
   - "Citations" mode ranks the whole list by `docs/pub-stats.json`'s
     precomputed OpenAlex citation count (falls back to 0, i.e. sorts last,
@@ -142,11 +145,26 @@ rejected push.
     live-fetch fallback still works without it).
 - **`docs/pub-stats.json`**, refreshed daily by `.github/workflows/pub-stats.yml`
   running `generate_pub_stats.py`: for every article with a PMID/DOI, a real
-  open-access PDF link (Unpaywall's `url_for_pdf`, plus verified same-domain
-  fallback patterns for medRxiv/bioRxiv `.full.pdf` and OSF `/download` when
-  Unpaywall's own data is incomplete - never a bare landing page, and never
-  identical to the article's own title-link URL, which would make the button
-  redundant) and an OpenAlex citation count. Both the PDF buttons and "Sort by
+  open-access PDF link and an OpenAlex citation count. PDF resolution tries,
+  in order: Unpaywall's `url_for_pdf`; a same-domain pattern for medRxiv/
+  bioRxiv (`.full.pdf`) and OSF (`/download`); the publisher's own
+  `<meta name="citation_pdf_url">` tag (the same convention Google Scholar
+  reads - catches articles Unpaywall's own record is incomplete for, e.g. a
+  fully-open BMC/Springer article whose Unpaywall entry has no `url_for_pdf`
+  at all); NCBI Bookshelf's own PDF convention for the handful of PMIDs that
+  are book records with no DOI (the NICE guideline monographs). Every
+  candidate is verified by actually requesting its first few bytes and
+  checking for the `%PDF-` magic number before being trusted - several hosts
+  that genuinely serve a PDF send no distinguishing `Content-Type` at all
+  (F1000Research, OSF both serve `application/octet-stream`), while a host
+  blocking a paywalled PDF often serves an HTML page with a plain 200 rather
+  than an error, so neither headers nor status code alone are reliable.
+  Institutional-subscription APIs (Elsevier, Wiley TDM, Scopus, Springer -
+  used by sibling projects on this machine for author-permitted research
+  use) are deliberately not used here: they're gated on personal/UNC
+  credentials and IP-based entitlement, which isn't appropriate for a public
+  site's automated pipeline. A resolved PDF is never identical to the
+  article's own title-link URL - that pairing gets dropped as redundant. Both the PDF buttons and "Sort by
   Citations" read this file first (see `PUB_STATS` in `build.py`'s inline
   script) and only fall back to a live per-article lookup (Unpaywall; nothing
   live for citations) for anything added since the last daily run. An id

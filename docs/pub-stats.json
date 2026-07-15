@@ -46,7 +46,8 @@
 "pdf": "https://f1000research.com/articles/15-626/pdf"
 },
 "doi:10.12688/f1000research.180216.1": {
-"citations": 0
+"citations": 0,
+"pdf": "https://f1000research.com/articles/15-665/pdf"
 },
 "doi:10.17226/26039": {
 "citations": 0
@@ -187,8 +188,12 @@
 "citations": 114,
 "pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
-"pmid:25340235": {},
-"pmid:25577940": {},
+"pmid:25340235": {
+"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
+},
+"pmid:25577940": {
+"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK266258/pdf/Bookshelf_NBK266258.pdf"
+},
 "pmid:25671707": {
 "citations": 110,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
@@ -281,7 +286,9 @@
 "citations": 41,
 "pdf": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-018-1042-6"
 },
-"pmid:29718639": {},
+"pmid:29718639": {
+"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK498655/pdf/Bookshelf_NBK498655.pdf"
+},
 "pmid:30026961": {
 "citations": 16,
 "pdf": "https://pilotfeasibilitystudies.biomedcentral.com/track/pdf/10.1186/s40814-018-0284-6"
@@ -351,7 +358,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11116,
+"citations": 11155,
 "pdf": "https://www.bmj.com/content/bmj/372/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
@@ -535,7 +542,8 @@
 "citations": 0
 },
 "pmid:41723462": {
-"citations": 1
+"citations": 1,
+"pdf": "https://link.springer.com/content/pdf/10.1186/s12916-026-04709-y.pdf"
 },
 "pmid:41802580": {
 "citations": 1

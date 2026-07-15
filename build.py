@@ -293,12 +293,17 @@ def oa_button(key: str) -> str:
     legally free copies (publisher OA, PMC, institutional repositories). Starts
     hidden and stays hidden if no free copy exists - so the icon appearing is
     itself the signal that there is something to read.
+
+    target="_blank" so the click behavior is always the same regardless of
+    whether the host's CORS policy would allow fetching it as a blob - it
+    always opens in a new tab, rather than downloading on some hosts and
+    merely opening on others.
     """
     if not key or "data-csl" in key:
         return '<span class="oa-empty"></span>'
     return (
-        f'<a class="oa-pdf" {key} href="#" '
-        f'title="Download free full text (PDF)" aria-label="Download free full text (open access PDF)" '
+        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer" '
+        f'title="Open free full text (PDF) in a new tab" aria-label="Open free full text (open access PDF) in a new tab" '
         f'hidden>{ICON_PDF}</a>'
     )
 
@@ -951,6 +956,12 @@ PAGE = """<!DOCTYPE html>
     display: flex; flex-direction: row; align-items: center; justify-content: center;
     width: 3.4rem; flex: none; gap: .2rem;
   }}
+  /* The toolbar's "Select all" is the one exception: no PDF slot beside it,
+     so it isn't centered in a fixed-width column like the per-article rows -
+     it just sits flush with the box border below, full stop. */
+  .cite-col-select-all {{
+    width: auto; justify-content: flex-start;
+  }}
   .oa-pdf, .oa-empty {{
     display: inline-flex; align-items: center; justify-content: center;
     width: 1.5rem; height: 1.5rem; flex: none;
@@ -1233,7 +1244,7 @@ PAGE = """<!DOCTYPE html>
 
     <div class="pub-toolbar">
       <div class="pub-toolbar-row">
-        <span class="cite-col"><span class="oa-empty"></span><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
+        <span class="cite-col cite-col-select-all"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
         <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
         <details class="cite-dl cite-all">{citemenu_all}</details>
         <span class="sort-toggle" role="group" aria-label="Sort publications by">
@@ -1872,33 +1883,13 @@ var PUB_STATS = window.fetch
       : "pmid:" + el.dataset.pmid;
   }}
 
-  // Clicking should DOWNLOAD the PDF, not navigate to it. We try to fetch it as
-  // a blob and save it; many OA hosts (PMC, Europe PMC, most repositories) allow
-  // this. If the host blocks cross-origin reads, we fall back to opening it in a
-  // new tab so the click is never dead.
-  document.addEventListener("click", function (ev) {{
-    var a = ev.target.closest && ev.target.closest(".oa-pdf");
-    if (!a || !a.dataset.pdf) return;
-    ev.preventDefault();
-    var url = a.dataset.pdf,
-        name = (a.dataset.doi || a.dataset.pmid || "article")
-                 .replace(/[^\\w.-]+/g, "_") + ".pdf",
-        lbl = a.querySelector(".btn-label"),
-        was = lbl ? lbl.textContent : "";
-    if (lbl) lbl.textContent = "\\u2026";
-    fetch(url).then(function (r) {{
-      if (!r.ok) throw 0; return r.blob();
-    }}).then(function (blob) {{
-      var u = URL.createObjectURL(blob), t = document.createElement("a");
-      t.href = u; t.download = name;
-      document.body.appendChild(t); t.click(); document.body.removeChild(t);
-      setTimeout(function () {{ URL.revokeObjectURL(u); }}, 2000);
-      if (lbl) lbl.textContent = was;
-    }}).catch(function () {{
-      window.open(url, "_blank", "noopener");   // CORS-blocked: open instead
-      if (lbl) lbl.textContent = was;
-    }});
-  }});
+  // No click handler needed - the anchor's own target="_blank" (set server-
+  // side in oa_button()) always opens the PDF in a new tab once show() below
+  // sets its href, consistently regardless of the host's CORS policy. This
+  // used to try to fetch-and-save as a blob, falling back to window.open only
+  // when CORS blocked the fetch - which is exactly why some hosts downloaded
+  // and others merely opened: the CORS behavior differs per host, not the
+  // code. A plain new-tab open is what's consistent everywhere.
 
   function save() {{
     try {{ localStorage.setItem(KEY, JSON.stringify(store)); }} catch (e) {{}}

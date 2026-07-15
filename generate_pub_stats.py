@@ -25,11 +25,35 @@ PDF resolution tries, in order:
      client-side fix this replaces for why that used to be wrong).
   2. A same-domain "smart" pattern for platforms Unpaywall's data is often
      incomplete for (medRxiv/bioRxiv's <article>.full.pdf, OSF's
-     <guid>/download) - only used if a HEAD request confirms it actually
-     serves a PDF, never guessed blindly.
-A resolved PDF identical to the article's own title-link URL is dropped
-entirely (a "PDF" button that lands exactly where the title already does is
-worse than no button).
+     <guid>/download).
+  3. The publisher's own <meta name="citation_pdf_url"> tag on the article's
+     landing page - the same convention Google Scholar uses to find PDFs.
+     Many publishers embed this even when Unpaywall's record doesn't have a
+     url_for_pdf; several others (Elsevier, Wiley, SAGE, JAMA, BMJ, Cochrane)
+     either don't expose it or block a scripted fetch of the landing page
+     entirely (403) - those are left without a button rather than guessed at
+     or scraped around.
+  4. NCBI Bookshelf's own PDF convention (<NBK id>/pdf/Bookshelf_<id>.pdf)
+     for PMIDs whose PubMed record is a book (the NICE guideline monographs -
+     no DOI, so nothing else here applies).
+Every candidate from (2)-(4) is only used once a HEAD request confirms it
+actually serves a PDF - never guessed blindly, since a plausible-looking URL
+serving an HTML interstitial (bot-check pages are common on file-serving
+subdomains, distinct from the article page itself) is exactly the mistake
+this whole file exists to avoid. A resolved PDF identical to the article's
+own title-link URL is dropped entirely (a "PDF" button that lands exactly
+where the title already does is worse than no button).
+
+Not attempted: institutional-subscription APIs (Elsevier, Wiley TDM, Scopus,
+Springer) some sibling projects on this machine use - those are gated on
+Evan's personal/UNC-institutional credentials and IP-based entitlement, which
+isn't appropriate to bake into a public site's automated, publicly-run
+pipeline. Also not attempted: PMC's official OA Web Service - it only covers
+PMC's explicit "OA subset" (a fraction of what's readable on PMC) and returns
+a .tar.gz package rather than a PDF URL, which would mean downloading,
+extracting, and re-hosting a copy of the paper ourselves rather than linking
+to the copy the publisher/repository already hosts - a meaningfully bigger
+step this script doesn't take on its own.
 
 Re-run this daily (see .github/workflows/pub-stats.yml) or the client-side
 live-fetch fallback covers anything not yet baked in.
@@ -70,6 +94,18 @@ MEDRXIV_RE = re.compile(
 OSF_RE = re.compile(
     r"^https?://osf\.io/(?:preprints/[a-z0-9]+/)?([a-z0-9]{4,8})/?$", re.I
 )
+CITATION_PDF_RE = re.compile(
+    r'name=["\']citation_pdf_url["\']\s+content=["\']([^"\']+)["\']', re.I
+)
+
+# A browser-style UA for fetching a publisher's human-facing landing page
+# (looking for the same <meta citation_pdf_url> tag Google Scholar reads) -
+# distinct from UA above, which honestly identifies us to the polite-pool
+# APIs (Unpaywall/OpenAlex/NCBI) that expect and want that. This is a single
+# plain GET of a public page, not evasion of anything - publishers that block
+# it (403) are simply left without a PDF button rather than worked around.
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
 
 def http(url, method="GET", timeout=20):
@@ -78,6 +114,14 @@ def http(url, method="GET", timeout=20):
         headers={"Accept": "application/json", "User-Agent": UA},
     )
     return urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT)
+
+
+def http_html(url, timeout=20):
+    req = urllib.request.Request(
+        url, headers={"Accept": "text/html", "User-Agent": BROWSER_UA},
+    )
+    with urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT) as r:
+        return r.read(300_000).decode("utf-8", errors="ignore")
 
 
 def http_json(url):
@@ -89,32 +133,24 @@ def chunk(seq, n):
     return [seq[i:i + n] for i in range(0, len(seq), n)]
 
 
-def looks_like_pdf(headers, url):
-    ctype = (headers.get("Content-Type") or "").lower()
-    if "pdf" in ctype:
-        return True
-    cdisp = (headers.get("Content-Disposition") or "").lower()
-    if ".pdf" in cdisp:
-        return True
-    # OSF's file server serves octet-stream but embeds the real filename here.
-    meta = headers.get("X-Waterbutler-Metadata")
-    if meta:
-        try:
-            name = json.loads(meta).get("attributes", {}).get("name", "")
-            if name.lower().endswith(".pdf"):
-                return True
-        except (ValueError, AttributeError, TypeError):
-            pass
-    return False
-
-
 def verified_pdf(url):
-    """HEAD-check that a candidate URL actually serves a PDF, not an HTML page."""
+    """
+    Ground-truth check that a candidate URL actually serves a PDF: request
+    just the first few bytes (Range) and look for the "%PDF-" magic number,
+    rather than trusting Content-Type/Content-Disposition - several hosts
+    that genuinely serve a PDF (F1000Research, OSF) send generic
+    application/octet-stream with no distinguishing header at all, while a
+    host blocking access to a paywalled PDF (e.g. non-open-access Springer
+    content) often ignores the Range request and serves an HTML page with a
+    plain 200, which this catches too (no "%PDF-" at the start either way).
+    """
+    req = urllib.request.Request(
+        url, headers={"User-Agent": UA, "Range": "bytes=0-8"},
+    )
     try:
-        with http(url, method="HEAD", timeout=15) as r:
-            clen = int(r.headers.get("Content-Length", "0") or 0)
-            return clen > 1000 and looks_like_pdf(r.headers, url)
-    except (urllib.error.URLError, OSError, ValueError):
+        with urllib.request.urlopen(req, timeout=15, context=SSL_CONTEXT) as r:
+            return r.read(8).startswith(b"%PDF-")
+    except (urllib.error.URLError, OSError):
         return False
 
 
@@ -133,6 +169,36 @@ def smart_pdf(candidate_url):
         if verified_pdf(pdf):
             return pdf
     return ""
+
+
+def citation_pdf_url(landing_url):
+    """
+    The publisher's own <meta name="citation_pdf_url"> tag, if the landing
+    page has one and actually serves a PDF there. Many publishers (Springer/
+    Nature's article pages, among others) embed a plausible-looking tag whose
+    URL then serves an HTML bot-check page instead of the PDF when fetched
+    without a browser session - which is exactly why this is verified via
+    verified_pdf() like every other candidate, not trusted on sight.
+    """
+    if not landing_url:
+        return ""
+    try:
+        html_text = http_html(landing_url)
+    except (urllib.error.URLError, OSError):
+        return ""
+    m = CITATION_PDF_RE.search(html_text)
+    if not m:
+        return ""
+    pdf = htmllib.unescape(m.group(1))
+    return pdf if verified_pdf(pdf) else ""
+
+
+def bookshelf_pdf(nbk_id):
+    """NCBI Bookshelf's own PDF, for book-type PubMed records (no DOI) - e.g.
+    the NICE guideline monographs. Predictable and consistently present for
+    every Bookshelf id, but still verified rather than assumed."""
+    pdf = f"https://www.ncbi.nlm.nih.gov/books/{nbk_id}/pdf/Bookshelf_{nbk_id}.pdf"
+    return pdf if verified_pdf(pdf) else ""
 
 
 def collect_items():
@@ -172,6 +238,9 @@ def collect_items():
 
 
 def pmid_to_doi(pmids):
+    """PMID -> (doi, bookaccession NBK id) - the latter is only ever set for
+    PubMed records with no DOI at all (the NICE guideline monographs, catalogued
+    as books), so it's the fallback identifier for bookshelf_pdf()."""
     out = {}
     for group in chunk(pmids, 100):
         url = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
@@ -184,10 +253,10 @@ def pmid_to_doi(pmids):
         result = (data or {}).get("result", {})
         for p in group:
             ids = (result.get(p) or {}).get("articleids", [])
-            for entry in ids:
-                if entry.get("idtype") == "doi" and entry.get("value"):
-                    out[p] = entry["value"]
-                    break
+            doi = next((e["value"] for e in ids if e.get("idtype") == "doi" and e.get("value")), "")
+            nbk = next((e["value"] for e in ids if e.get("idtype") == "bookaccession" and e.get("value")), "")
+            if doi or nbk:
+                out[p] = (doi, nbk)
     return out
 
 
@@ -220,6 +289,12 @@ def resolve_pdf(doi, title_url):
         # Even with no OA record at all, the title link itself might be a
         # medRxiv/bioRxiv/OSF page with a guessable PDF.
         pdf = smart_pdf(title_url)
+
+    if not pdf:
+        # Last resort: the publisher's own landing page (via Unpaywall's DOI
+        # redirect, since that's the canonical landing page) might advertise
+        # a citation_pdf_url even though Unpaywall's own record has nothing.
+        pdf = citation_pdf_url("https://doi.org/" + urllib.parse.quote(doi, safe="/"))
 
     if pdf and title_url and pdf.rstrip("/") == title_url.rstrip("/"):
         return ""  # identical to the title link - not worth a button
@@ -276,9 +351,12 @@ def main():
     print("Resolving PDF links...")
     pdfs = {}
     for i, (id_, v) in enumerate(items.items(), 1):
-        doi = v["doi"] or p2d.get(v["pmid"], "")
+        doi_nbk = p2d.get(v["pmid"], ("", ""))
+        doi = v["doi"] or doi_nbk[0]
         if not doi:
             candidate = smart_pdf(v["title_url"])
+            if not candidate and doi_nbk[1]:
+                candidate = bookshelf_pdf(doi_nbk[1])
             if candidate and candidate.rstrip("/") != v["title_url"].rstrip("/"):
                 pdfs[id_] = candidate
             continue
