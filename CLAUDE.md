@@ -149,11 +149,23 @@ rejected push.
 
 ## Domain / hosting notes
 
-- Registrar: Tucows via Squarespace. Nameservers: `ns01–04.squarespacedns.com`.
-- DNS records point the apex + `www` at GitHub Pages. Custom domain + HTTPS are
-  set in the repo's Settings → Pages.
-- Do **not** cancel the Squarespace domain registration (renews through 2027);
-  only the website plan was dropped.
+- Registrar: Tucows Domains Inc. (Squarespace's domain product is a Tucows/OpenSRS
+  reseller). Registration is paid through **2027-05-28** - confirmed via
+  `whois evanmayo-wilson.org` on 2026-07-15. Domain status was `ok` (unlocked)
+  as of the same date, with an EPP/auth transfer code already in hand - see
+  [[feedback_domain_transfer]] for the transfer walkthrough given when that
+  came up.
+- **Nameservers are Cloudflare's** (`*.ns.cloudflare.com`), not Squarespace's -
+  confirmed via `dig NS` on 2026-07-15. DNS (apex + `www`) is managed in
+  Cloudflare's dashboard and proxied (orange-cloud) in front of GitHub Pages,
+  not pointed directly at GitHub's IPs. This means a registrar transfer away
+  from Squarespace/Tucows does **not** touch live DNS at all, as long as
+  nameservers aren't changed during the transfer.
+- Custom domain + HTTPS are set in the repo's Settings → Pages (GitHub still
+  needs the apex + `www` configured there regardless of where DNS lives).
+- Do **not** cancel the domain registration - it's active and paid through
+  2027 independent of the Squarespace *website* plan, which was already
+  dropped earlier.
 
 ## Common tasks
 

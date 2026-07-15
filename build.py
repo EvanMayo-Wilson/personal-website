@@ -351,7 +351,7 @@ def nested_badges(frag: str) -> str:
 
         return (
             '<li class="subpub">'
-            + '<span class="cite-col">' + select_checkbox(key) + oa_button(key) + "</span>"
+            + '<span class="cite-col">' + oa_button(key) + select_checkbox(key) + "</span>"
             + '<div class="pub-text">' + inner.rstrip() + "</div>"
             + "".join(badges)
             + close_tag
@@ -422,7 +422,7 @@ def publications_html(years):
 
             out.append(
                 '<li class="pub">'
-                + '<span class="cite-col">' + select_checkbox(key) + oa_button(key) + "</span>"
+                + '<span class="cite-col">' + oa_button(key) + select_checkbox(key) + "</span>"
                 + f'<div class="pub-text">{e}</div>'
                 + "".join(metrics)
                 + "</li>"
@@ -536,7 +536,6 @@ PAGE = """<!DOCTYPE html>
     --muted:     #5b6570;   /*  5.4:1 on white */
     --faint:     #737d88;   /*  4.6:1 on white */
     --heading:   #13294b;   /* UNC Navy */
-    --subhead:   #14568c;   /* UNC blue, darkened only as far as AA requires */
     --link:      #14568c;   /*  6.0:1 on white */
     --link-hover:#0e3f68;
     --rule:      #e2e6eb;
@@ -564,7 +563,6 @@ PAGE = """<!DOCTYPE html>
       --muted:     #a7b2c0;   /*  7.6:1 */
       --faint:     #8b97a6;   /*  5.5:1 */
       --heading:   #ffffff;
-      --subhead:   #4b9cd3;   /* true Carolina Blue - 6.6:1 on the dark bg */
       --link:      #7cbdea;   /*  8.3:1 */
       --link-hover:#a8d5f5;
       --rule:      #26334a;
@@ -581,7 +579,6 @@ PAGE = """<!DOCTYPE html>
     --muted:     #a7b2c0;
     --faint:     #8b97a6;
     --heading:   #ffffff;
-    --subhead:   #4b9cd3;
     --link:      #7cbdea;
     --link-hover:#a8d5f5;
     --rule:      #26334a;
@@ -723,9 +720,10 @@ PAGE = """<!DOCTYPE html>
   .plinks {{ margin-top: auto; padding-top: 1rem; }}
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
-  /* One line - "Google Scholar: ... | OpenAlex: ..." - matching the profile
-     links' own "A | B | C" style. The "|" (#metrics-sep) only appears once
-     OpenAlex has actually loaded (see the OpenAlex fetch script). */
+  /* One line - "Google Scholar: ...   OpenAlex: ..." - gap but no divider
+     glyph. #metrics-sep is empty and just carries the gap; it stays hidden
+     until OpenAlex has actually loaded (see the OpenAlex fetch script), so
+     there's no dangling double-space before then. */
   .author-metrics {{
     margin: 0 0 .9rem; line-height: 1.6;
     font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
@@ -760,11 +758,10 @@ PAGE = """<!DOCTYPE html>
     border-bottom: 2px solid var(--accent);
   }}
   /* Section sub-headings ("Current grants", "Previous support", year headings)
-     carry the UNC blue. In dark mode this becomes true Carolina Blue, which
-     clears AA comfortably against the dark background. */
+     are navy, like every other heading - light blue is reserved for hyperlinks. */
   h3 {{
     font-size: .8125rem; font-weight: 700; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--subhead);
+    text-transform: uppercase; color: var(--heading);
     margin: 1.75rem 0 .75rem;
   }}
   h4 {{ font-size: 1rem; font-weight: 650; color: var(--heading); margin: 1.1rem 0 .25rem; }}
@@ -943,16 +940,22 @@ PAGE = """<!DOCTYPE html>
   }}
 
   /* ---- citation / PDF buttons -------------------------------------------- */
-  /* Left column: selection checkbox on top, "PDF" (open-access full text,
-     icon-only) beneath - same square footprint, centered, so the two stack
-     in perfect alignment down the page. */
+  /* Left column: PDF (open-access full text, icon-only) then the selection
+     checkbox, same square footprint, so both stay in perfect alignment down
+     the page. Every row reserves both slots - .oa-empty (no OA copy is even
+     possible, e.g. a hand-written csl-extra record) and .oa-pdf[hidden]
+     (Unpaywall hasn't resolved yet, or found nothing) both keep their slot's
+     width rather than collapsing, so a checkbox is never pulled out of column
+     just because the article next to it has no PDF button. */
   .cite-col {{
-    display: flex; flex-direction: column; align-items: center;
-    gap: .3rem;
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+    width: 3.4rem; flex: none; gap: .2rem;
+  }}
+  .oa-pdf, .oa-empty {{
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.5rem; height: 1.5rem; flex: none;
   }}
   .oa-pdf {{
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 1.5rem; height: 1.5rem;
     border: 1px solid var(--rule-2); border-radius: 6px;
     background: var(--bg); color: var(--muted);
     cursor: pointer;
@@ -960,14 +963,20 @@ PAGE = """<!DOCTYPE html>
   .oa-pdf svg {{ width: .95rem; height: .95rem; flex: none; }}
   .btn-label {{ letter-spacing: .01em; }}
 
-  .oa-pdf:hover {{ color: var(--link); border-color: var(--link); }}
-  .oa-pdf[hidden], .oa-empty {{ display: none; }}
+  /* Light Carolina Blue fill with a white page icon on hover, matching the
+     checked-checkbox fill just to its right. */
+  .oa-pdf:hover {{ background: var(--accent); border-color: var(--accent); color: #fff; }}
+  /* Still hidden visually until Unpaywall resolves (or forever, if it finds
+     nothing) - but keeps its box in the layout instead of collapsing it, per
+     .oa-pdf's own width/height above. Needs !important to beat the global
+     "[hidden], .hidden" display:none utility rule below. */
+  .oa-pdf[hidden] {{ display: inline-flex !important; visibility: hidden; pointer-events: none; }}
 
   .cite-dl {{ position: relative; }}
   .cite-dl summary {{
     display: inline-flex; align-items: center; justify-content: center;
     gap: .35rem; padding: .4rem .7rem; min-height: 1.9rem;
-    border: 1px solid var(--rule-2); border-radius: 6px;
+    border-radius: 6px;
     background: var(--bg); color: var(--muted);
     font-size: 1.0625rem; font-weight: 600; line-height: 1;
     cursor: pointer; white-space: nowrap; list-style: none;
@@ -975,8 +984,8 @@ PAGE = """<!DOCTYPE html>
   .cite-dl summary svg {{ width: .95rem; height: .95rem; flex: none; }}
   .cite-dl summary::-webkit-details-marker {{ display: none; }}
   .cite-dl summary::marker {{ content: ""; }}
-  .cite-dl summary:hover {{ color: var(--link); border-color: var(--link); }}
-  .cite-dl[open] summary {{ color: var(--link); border-color: var(--link); }}
+  .cite-dl summary:hover {{ color: var(--link); }}
+  .cite-dl[open] summary {{ color: var(--link); }}
 
   .cite-menu {{
     position: absolute; top: 2rem; left: 0; z-index: 15;
@@ -996,52 +1005,57 @@ PAGE = """<!DOCTYPE html>
   .cite-menu button:hover {{ background: var(--surface); color: var(--link); }}
   .cite-menu button[disabled] {{ opacity: .55; cursor: default; }}
 
-  /* "Download selected citations" bulk button, right-justified on its row -
-     see .select-row. */
-  .cite-all {{ margin-left: auto; }}          /* push to the right end */
+  /* "Download selected citations" bulk button, immediately right of the
+     "Select all" label - see .pub-toolbar-row. */
   .cite-all .cite-menu {{ top: 2.4rem; left: auto; right: 0; }}  /* open leftwards */
   .cite-all .cite-menu button {{ min-width: 8.5rem; }}
   .cite-all.open-up .cite-menu {{ top: auto; bottom: 100%; margin-bottom: .35rem; }}
 
-  /* Toolbar above the scrollable box: Year/Citations sort (its own row,
-     right-aligned to match the box border below it) then select-all +
-     "Download selected citations" (their own row underneath). Desktop only,
-     like the checkboxes it controls - see the media query below. */
+  /* Toolbar above the scrollable box, all on one row: select-all + "Download
+     selected citations" on the left, Year/Citations sort pushed to the right
+     (aligned with the box border below it). Desktop only, like the
+     checkboxes it controls - see the media query below. */
   .pub-toolbar {{
-    display: flex; flex-direction: column; gap: .6rem;
-    padding: 0 0 .6rem;
+    /* Same left/right padding as .pub-scroll below it, so the checkbox
+       column and the sort buttons line up with the list and its border. */
+    padding: 0 1.1rem .6rem;
     border-bottom: 1px solid var(--rule);
     margin-bottom: .5rem;
     font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
     color: var(--muted);
   }}
-  .pub-toolbar-row {{ display: flex; align-items: center; }}
-  .sort-row {{ justify-content: flex-end; }}
-  .select-row {{ gap: .6rem; }}
+  .pub-toolbar-row {{ display: flex; align-items: center; gap: .6rem; }}
   .pub-toolbar-label {{ cursor: pointer; }}
-  .sort-toggle {{ display: flex; align-items: center; gap: .5rem; }}
+  .sort-toggle {{ display: flex; align-items: center; gap: .5rem; margin-left: auto; }}
   .sort-toggle-label {{ color: var(--faint); }}
   .sort-btn {{
-    font: inherit; font-size: 1.0625rem; font-weight: 600;
-    background: var(--bg); border: 1px solid var(--rule-2); border-radius: 6px;
-    color: var(--muted); padding: .3rem .75rem; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 1.9rem;
+    font: inherit; font-size: 1.0625rem; font-weight: 600; line-height: 1;
+    background: var(--bg); border: none; border-radius: 6px;
+    color: var(--muted); padding: .4rem .75rem; cursor: pointer;
   }}
   .sort-btn:hover {{ color: var(--text); background: var(--surface); }}
   /* Active sort mode - light UNC Carolina Blue fill, matching the checked
      checkbox below. */
   .sort-btn[aria-pressed="true"] {{
-    background: var(--accent); border-color: var(--accent); color: #fff;
+    background: var(--accent); color: #fff;
   }}
 
   /* Open square when unchecked (not a solid block); UNC Carolina Blue fill
-     with a white checkmark when checked. Same size as the PDF button below
-     it (see .oa-pdf), so the two stay aligned down the column. */
+     with a white checkmark when checked. Same size as the PDF button next to
+     it (see .oa-pdf), so the two stay aligned down the column. An article
+     with no identifier at all (rare - .cite-dl-empty) gets a same-size blank
+     slot instead of a checkbox, so its neighbors don't shift out of column. */
+  .pub-select, .cite-dl-empty {{
+    width: 1.5rem; height: 1.5rem; flex: none;
+    display: inline-grid; place-content: center;
+  }}
   .pub-select {{
     appearance: none; -webkit-appearance: none;
-    width: 1.5rem; height: 1.5rem; margin: 0; flex: none; cursor: pointer;
+    margin: 0; cursor: pointer;
     border: 1.5px solid var(--rule-2); border-radius: 4px;
     background: var(--bg);
-    display: inline-grid; place-content: center;
   }}
   .pub-select:hover {{ border-color: var(--accent); }}
   .pub-select:checked {{ background: var(--accent); border-color: var(--accent); }}
@@ -1120,6 +1134,9 @@ PAGE = """<!DOCTYPE html>
     h1 {{ margin: 0; }}
     li.pub {{ grid-template-columns: minmax(0, 1fr); row-gap: .5rem; }}
     .pub-text {{ padding-left: 0; padding-right: 0; }}
+    /* Only Google Scholar under "Publications" on mobile - OpenAlex is
+       desktop-only extra detail. */
+    #oa-row, #metrics-sep {{ display: none; }}
   }}
 
   /* ---- print --------------------------------------------------------------- */
@@ -1132,13 +1149,13 @@ PAGE = """<!DOCTYPE html>
   }}
 </style>
 </head>
-<body>
+<body id="top">
 
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar">
   <nav class="shell" aria-label="Sections">
-    <a class="navlink" href="#research">Research</a>
+    <a class="navlink" href="#top">Research</a>
     <a class="navlink" href="#teaching">Teaching</a>
     <a class="navlink" href="#service">Service</a>
     <a class="navlink" href="#publications">Publications</a>
@@ -1162,6 +1179,10 @@ PAGE = """<!DOCTYPE html>
 
 <main id="main" class="shell">
 
+  <nav class="mobilenav" aria-label="Sections">
+    <a href="#top">Research</a><span class="sep" aria-hidden="true">·</span><a href="#teaching">Teaching</a><span class="sep" aria-hidden="true">·</span><a href="#service">Service</a><span class="sep" aria-hidden="true">·</span><a href="#publications">Publications</a>
+  </nav>
+
   <div class="hero">
     <div class="hero-photo">
       <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
@@ -1175,10 +1196,6 @@ PAGE = """<!DOCTYPE html>
       <div class="plinks">{links}</div>
     </div>
   </div>
-
-  <nav class="mobilenav" aria-label="Sections">
-    <a href="#research">Research</a><span class="sep" aria-hidden="true">·</span><a href="#teaching">Teaching</a><span class="sep" aria-hidden="true">·</span><a href="#service">Service</a><span class="sep" aria-hidden="true">·</span><a href="#publications">Publications</a>
-  </nav>
 
   <section id="research" aria-labelledby="h-research">
     <h2 id="h-research">Research</h2>
@@ -1208,23 +1225,21 @@ PAGE = """<!DOCTYPE html>
     <p class="author-metrics">
       <span class="metric-row" id="gs-row">
         <a class="metric-src" href="{scholar}">Google Scholar</a><span class="metric-nums" id="gs-line"></span>
-      </span><span class="sep" id="metrics-sep" aria-hidden="true" hidden>|</span><span class="metric-row" id="oa-row" hidden>
+      </span><span class="sep" id="metrics-sep" aria-hidden="true" hidden></span><span class="metric-row" id="oa-row" hidden>
         <a class="metric-src" id="oa-profile-pub" href="{openalex_works}">OpenAlex</a><span class="metric-nums" id="stat-line"></span>
       </span>
     </p>
 
     <div class="pub-toolbar">
-      <div class="pub-toolbar-row sort-row">
+      <div class="pub-toolbar-row">
+        <span class="cite-col"><span class="oa-empty"></span><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
+        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
+        <details class="cite-dl cite-all">{citemenu_all}</details>
         <span class="sort-toggle" role="group" aria-label="Sort publications by">
           <span class="sort-toggle-label">Sort:</span>
           <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
           <button type="button" class="sort-btn" data-sort="citations" aria-pressed="false">Citations</button>
         </span>
-      </div>
-      <div class="pub-toolbar-row select-row">
-        <span class="cite-col"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
-        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
-        <details class="cite-dl cite-all">{citemenu_all}</details>
       </div>
     </div>
 
@@ -1883,13 +1898,25 @@ PAGE = """<!DOCTYPE html>
   // Unpaywall is keyed on DOI only. For PMID-only records we would need an
   // extra hop, so we let the citation-download path warm the cache instead and
   // only resolve the ones we can resolve directly.
+  //
+  // Only url_for_pdf is a direct link to an actual PDF. Falling back to a
+  // location's bare "url" used to send this button to whatever landing page
+  // Unpaywall had on file - for some repositories (e.g. an institutional Pure
+  // profile) that's an HTML page about the article with no PDF on it at all,
+  // which is not what a button labelled "PDF" should do. So: scan every
+  // location (best first, matching Unpaywall's own ranking) and only use one
+  // that actually resolves to a PDF; if none do, the button stays hidden.
   function unpaywall(doi) {{
     return fetch("https://api.unpaywall.org/v2/" + encodeURIComponent(doi) +
                  "?email=" + encodeURIComponent(EMAIL))
       .then(function (r) {{ if (!r.ok) throw 0; return r.json(); }})
       .then(function (d) {{
-        var loc = d && d.best_oa_location;
-        return (loc && (loc.url_for_pdf || loc.url)) || "";
+        if (!d) return "";
+        var locs = [d.best_oa_location].concat(d.oa_locations || []).filter(Boolean);
+        for (var i = 0; i < locs.length; i++) {{
+          if (locs[i].url_for_pdf) return locs[i].url_for_pdf;
+        }}
+        return "";
       }});
   }}
 
@@ -2187,6 +2214,14 @@ PAGE = """<!DOCTYPE html>
     flatList.hidden = false;
   }}
 
+  // Re-sorting jumps back to the top of the list - otherwise whatever
+  // scroll position you were at in the old order points at an unrelated
+  // article in the new one.
+  function scrollListToTop() {{
+    var scroller = publist.closest(".pub-scroll");
+    if (scroller) scroller.scrollTop = 0;
+  }}
+
   sortBtns.forEach(function (btn) {{
     btn.addEventListener("click", function () {{
       if (btn.getAttribute("aria-pressed") === "true") return;
@@ -2194,6 +2229,7 @@ PAGE = """<!DOCTYPE html>
 
       if (btn.dataset.sort === "year") {{
         restoreYearOrder();
+        scrollListToTop();
         return;
       }}
 
@@ -2202,6 +2238,7 @@ PAGE = """<!DOCTYPE html>
       btn.textContent = "Sorting…";
       getCitationsOrder().then(function (ranked) {{
         applyCitationsOrder(ranked);
+        scrollListToTop();
         btn.textContent = label;
         btn.disabled = false;
       }});
