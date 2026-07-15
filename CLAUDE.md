@@ -98,34 +98,40 @@ rejected push.
      the results haven't been published yet.
 2. Place the new entry in the right year and author-position slot (see house
    style above).
-3. `python3 build.py`, then `python3 generate_csl_cache.py` to fetch the new
-   entry's CSL record ahead of time (see that script's docstring) — optional,
-   since the live client-side fetch-and-cache fallback still handles anything
-   missing from the baked cache, but it's what keeps the Cite button instant.
+3. `python3 build.py`, then `python3 generate_csl_cache.py` and
+   `python3 generate_pub_stats.py` to fetch the new entry's CSL record, PDF
+   link, and citation count ahead of time (see each script's docstring) —
+   optional, since both have live client-side fallbacks, but running them is
+   what keeps the Cite button, the PDF button, and "Sort by Citations" instant
+   for the new entry instead of waiting a day for the scheduled Actions.
 4. Commit and push.
 
 ## Features wired up
 
 - **Dimensions + Altmetric** citation/attention donuts (desktop only, hidden at
-  zero) via each article's PMID or DOI.
-- **Publications toolbar** (desktop only, above the scroll box): a sort row
-  (Year/Citations, right-aligned to the box border below - `.sort-btn`, active
-  mode filled UNC Carolina Blue) and, underneath, a select row (per-article
-  `.pub-select` checkboxes - open squares that fill blue with a white
-  checkmark when checked - plus "Select all" `#pub-select-all` and the
-  **Download selected citations** button). Each article's checkbox replaces
-  what used to be a per-article Cite button; the PDF button (open-access full
-  text via Unpaywall) is icon-only and sized/aligned to match the checkbox
-  directly above it.
-  - "Citations" mode force-loads every Dimensions/Altmetric badge (bypassing
-    their normal lazy-load-near-viewport behaviour) and ranks the whole list
-    by each article's Dimensions total-citations count, then Altmetric score,
-    then year (no finer-grained date is available client-side); simultaneous-
-    publication sub-entries stay nested under their own parent article, sorted
-    by the parent's citation count, not their own. This precomputes quietly
-    ~1.5s after page load so clicking "Citations" is fast rather than waiting
-    on live badge loads. Switching back to "Year" restores the exact original
-    DOM order (each `<li>` remembers its original parent/position from load).
+  zero) via each article's PMID or DOI. Purely visual/on-page - not used for
+  sorting (see `docs/pub-stats.json` below).
+- **Publications toolbar** (desktop only, above the scroll box), one row:
+  a PDF-or-placeholder + `.pub-select` checkbox (open square, fills Carolina
+  Blue with a white checkmark when checked) for "Select all", flush with the
+  box's left border below it; then the **Download selected citations**
+  button; then, pushed to the right, the Year/Citations `.sort-btn` toggle
+  (active mode filled Carolina Blue). None of the three buttons have a
+  visible border. Per article, the same shape repeats: PDF button (icon-only,
+  open-access full text) to the left of its `.pub-select` checkbox - both
+  are fixed-size slots (`.oa-empty`/`.cite-dl-empty` placeholders hold the
+  space even when empty) so the column stays aligned regardless of whether a
+  given article has a PDF.
+  - Re-sorting (either direction) scrolls `.pub-scroll` back to the top.
+  - "Citations" mode ranks the whole list by `docs/pub-stats.json`'s
+    precomputed OpenAlex citation count (falls back to 0, i.e. sorts last,
+    for anything added since the file was last refreshed), then year - see
+    `generate_pub_stats.py` below. This used to force-load every Dimensions
+    badge and scrape citation counts back out of the rendered DOM, which is
+    why it was slow; that whole mechanism is gone. Simultaneous-publication
+    sub-entries stay nested under their own parent article, sorted by the
+    parent's count. Switching back to "Year" restores the exact original DOM
+    order (each `<li>` remembers its original parent/position from load).
   - CSL-JSON for the downloads is looked up in this order: `content/csl-extra.json`
     (hand-written, for items with no PMID/DOI) → `docs/csl-cache.json`
     (pre-fetched for every other PMID/DOI by `generate_csl_cache.py` — this is
@@ -134,18 +140,36 @@ rejected push.
     then gets cached. Re-run `python3 generate_csl_cache.py` after adding
     papers so new entries hit the fast path too (not required — the
     live-fetch fallback still works without it).
+- **`docs/pub-stats.json`**, refreshed daily by `.github/workflows/pub-stats.yml`
+  running `generate_pub_stats.py`: for every article with a PMID/DOI, a real
+  open-access PDF link (Unpaywall's `url_for_pdf`, plus verified same-domain
+  fallback patterns for medRxiv/bioRxiv `.full.pdf` and OSF `/download` when
+  Unpaywall's own data is incomplete - never a bare landing page, and never
+  identical to the article's own title-link URL, which would make the button
+  redundant) and an OpenAlex citation count. Both the PDF buttons and "Sort by
+  Citations" read this file first (see `PUB_STATS` in `build.py`'s inline
+  script) and only fall back to a live per-article lookup (Unpaywall; nothing
+  live for citations) for anything added since the last daily run. An id
+  *present* in the file with no `pdf` field means "checked, nothing real
+  exists" - don't confuse that with "not yet checked" (id absent entirely).
+  Re-run `python3 generate_pub_stats.py` after adding papers for the same
+  reason as the CSL cache above.
 - **Author metrics** below the Publications heading, one line: Google Scholar
   (from `docs/scholar-stats.json`, refreshed by the Action) and OpenAlex
-  (fetched live), separated by "|" once both have loaded.
+  (fetched live) - just a gap between them, no separator glyph. OpenAlex is
+  desktop-only; mobile shows only Google Scholar.
 - **Cloudflare Web Analytics** (token in `build.py`, `CLOUDFLARE_ANALYTICS_TOKEN`).
-- **Mobile** (≤46rem): the topbar (nav links + theme toggle) is hidden
-  entirely — mobile always just follows the system light/dark setting — and
-  replaced by `.mobilenav`, a small sticky text nav that stays visible while
-  scrolling (not just present once near the top). The hero photo uses a
-  separate, already-cropped-to-face image (`images/Square_Headshot_Mobile.png`,
-  `MOBILE_PHOTO` in `build.py`) instead of the full chest-up photo. Citation
-  badges, the selection/sort toolbar, and the publications year-jump/scroll-box
-  are desktop-only throughout.
+- **Mobile** (≤46rem): `.mobilenav`, a small sticky text nav, is the first
+  thing in `<main>` (above the hero) and stays visible while scrolling. The
+  hero photo uses a separate, already-cropped-to-face image
+  (`images/Square_Headshot_Mobile.png`, `MOBILE_PHOTO` in `build.py`) instead
+  of the full chest-up photo. Citation badges, the selection/sort toolbar, and
+  the publications year-jump/scroll-box are desktop-only throughout. The
+  desktop `.topbar` is hidden entirely on mobile - always just follows the
+  system light/dark setting, no theme toggle there.
+- **"Research" nav link** (both desktop `.topbar` and mobile `.mobilenav`)
+  goes to the top of the page (`#top`, on `<body>`), not to the Research
+  section.
 
 ## Domain / hosting notes
 

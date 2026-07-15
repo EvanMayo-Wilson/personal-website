@@ -1818,14 +1818,32 @@ PAGE = """<!DOCTYPE html>
   }}, true);
 }})();
 
+/* ------------------------------------------------------ daily-precomputed
+   publication stats (see generate_pub_stats.py) - a real open-access PDF
+   link and an OpenAlex citation count for every article, refreshed once a
+   day by a scheduled GitHub Action. One shared fetch: both the PDF-button
+   script below and the citation-sort script further down read from this
+   same promise instead of each doing their own slow live lookups (Unpaywall
+   per article; force-loading and scraping every Dimensions badge).
+---------------------------------------------------------------------------- */
+var PUB_STATS = window.fetch
+  ? fetch("pub-stats.json", {{ cache: "no-cache" }})
+      .then(function (r) {{ return r.ok ? r.json() : {{}}; }})
+      .catch(function () {{ return {{}}; }})
+  : Promise.resolve({{}});
+
 /* --------------------------------------------------- open-access full text
    Unpaywall indexes only LEGALLY free copies: publisher open access, PubMed
    Central, and author manuscripts in institutional repositories. It is not a
    paywall bypass, and nothing is re-hosted here - the button is a link to the
    copy the publisher or repository already makes free.
 
-   Articles with no free copy simply never show the button, which is why it
-   starts hidden. Resolved lazily, in small batches, cached for 30 days.
+   Every article is checked daily and baked into PUB_STATS (see above) - that
+   answer always wins when present, since it's more current than anything a
+   visitor's browser cached on a previous visit. Only an article PUB_STATS
+   doesn't know about yet (added since the last daily run) falls back to a
+   live, per-visitor Unpaywall lookup, cached in localStorage for 30 days
+   until the next run picks it up.
 ---------------------------------------------------------------------------- */
 (function () {{
   var KEY   = "oa-links-v2",   // v2: only ever cache a real url_for_pdf, never a landing page
@@ -1882,19 +1900,25 @@ PAGE = """<!DOCTYPE html>
     }});
   }});
 
-  // Paint anything already known.
-  var pending = [];
-  nodes.forEach(function (el) {{
-    var rec = store[keyFor(el)];
-    if (fresh(rec)) {{ show(el, rec.url); return; }}
-    pending.push(el);
-  }});
-
-  if (!pending.length) return;
-
   function save() {{
     try {{ localStorage.setItem(KEY, JSON.stringify(store)); }} catch (e) {{}}
   }}
+
+  // PUB_STATS (daily-precomputed - see above) is authoritative when present,
+  // even overriding a still-"fresh" but now-stale localStorage entry from an
+  // earlier visit. Only an id genuinely absent from it (an article added
+  // since the last daily run) falls back to the per-visitor live-fetch path.
+  PUB_STATS.then(function (precomputed) {{
+    var pending = [];
+    nodes.forEach(function (el) {{
+      var k = keyFor(el), pre = precomputed[k];
+      if (pre) {{ if (pre.pdf) show(el, pre.pdf); return; }}
+      var rec = store[k];
+      if (fresh(rec)) {{ show(el, rec.url); return; }}
+      pending.push(el);
+    }});
+    if (pending.length) run(pending); else if (Object.keys(store).length) save();
+  }});
 
   // Unpaywall is keyed on DOI only. For PMID-only records we would need an
   // extra hop, so we let the citation-download path warm the cache instead and
@@ -1938,7 +1962,7 @@ PAGE = """<!DOCTYPE html>
       .catch(function () {{ return {{}}; }});
   }}
 
-  function run() {{
+  function run(pending) {{
     var pmids = pending.filter(function (e) {{ return !e.dataset.doi; }})
                        .map(function (e) {{ return e.dataset.pmid; }});
 
@@ -1976,12 +2000,6 @@ PAGE = """<!DOCTYPE html>
         }});
       }}, Promise.resolve()).then(save);
     }});
-  }}
-
-  if ("requestIdleCallback" in window) {{
-    requestIdleCallback(run, {{ timeout: 4000 }});
-  }} else {{
-    setTimeout(run, 2000);
   }}
 }})();
 
@@ -2049,11 +2067,6 @@ PAGE = """<!DOCTYPE html>
   }}, {{ rootMargin: "400px 0px" }});
 
   io.observe(list);
-
-  // The "Sort by Citations" toggle needs every badge loaded (not just the
-  // ones near the viewport) to know what to sort by - see the sort script
-  // below, which calls this to jump the queue.
-  window.__loadAllBadges = start;
 }})();
 
 /* ------------------------------------------------- select-all + sort toolbar
@@ -2061,12 +2074,12 @@ PAGE = """<!DOCTYPE html>
    the old per-article Cite button, and "Download selected citations" reads
    from whichever are checked.
 
-   Sorting by citations needs a number to sort by, which only exists once the
-   Dimensions/Altmetric badges have rendered - so switching to it force-loads
-   every badge (bypassing the normal lazy-load-near-viewport behaviour) and
-   waits for them to settle before reading each one's count back out of its
-   own rendered DOM (there's no API for this - see badgeNumber/altmetricScore
-   below for exactly where those numbers live in the badge markup).
+   Sorting by citations reads counts straight out of PUB_STATS (see above) -
+   daily-precomputed from OpenAlex, so this is instant rather than needing to
+   force-load every Dimensions badge on the page and scrape its rendered DOM
+   for a number, the way this used to work. An article added since the last
+   daily run (missing from PUB_STATS) just sorts as zero citations until the
+   next run picks it up.
 
    There's no finer-grained publication date available client-side than the
    year each article's .year-block already carries, so "then by date" sorts
@@ -2123,80 +2136,27 @@ PAGE = """<!DOCTYPE html>
     if (flatList) flatList.hidden = true;
   }}
 
-  function parseAbbrev(text) {{
-    var m = /([\\d,]*\\.?\\d+)\\s*([kKmMbB]?)/.exec(text || "");
-    if (!m) return 0;
-    var n = parseFloat(m[1].replace(/,/g, "")) || 0;
-    var suf = m[2].toLowerCase();
-    if (suf === "k") n *= 1e3;
-    else if (suf === "m") n *= 1e6;
-    else if (suf === "b") n *= 1e9;
-    return n;
+  // Same identifier the checkbox/PDF button in this row already carry
+  // (server-rendered via data-pmid/data-doi) - so this keys into PUB_STATS
+  // exactly the same way the PDF-button script does.
+  function statsKeyFor(li) {{
+    var idEl = li.querySelector(":scope > .cite-col [data-pmid], :scope > .cite-col [data-doi]");
+    if (!idEl) return "";
+    return idEl.dataset.pmid ? "pmid:" + idEl.dataset.pmid : "doi:" + idEl.dataset.doi.toLowerCase();
   }}
 
-  // Dimensions renders the exact count (or an abbreviation like "12k" for
-  // big ones - that's all the badge itself knows, so it's all we can sort
-  // on too) into .__dimensions_Badge_stat_total_citations, alongside the
-  // recent-citations stat. A hidden-at-zero badge renders nothing at all.
-  // Scoped to :scope > .metrics (the article's OWN badges, a direct child of
-  // the <li>) so a simultaneous-publication sub-entry's badges - nested
-  // deeper, inside .pub-text - never get mistaken for the parent's.
-  function citationCount(li) {{
-    var el = li.querySelector(":scope > .metrics .__dimensions_Badge_stat_total_citations .__dimensions_Badge_stat_count");
-    return el ? parseAbbrev(el.textContent) : 0;
-  }}
-
-  // Altmetric encodes its (always exact, never abbreviated) score in the
-  // donut image's own "score=" query parameter. Same :scope > .metrics
-  // reasoning as citationCount above.
-  function altmetricScore(li) {{
-    var img = li.querySelector(':scope > .metrics .altmetric-embed img[src*="badges.altmetric.com"]');
-    if (!img) return 0;
-    var m = /[?&]score=([\\d.]+)/.exec(img.src);
-    return m ? parseFloat(m[1]) : 0;
-  }}
-
-  function badgesSettled() {{
-    var dims = publist.querySelectorAll(".__dimensions_badge_embed__");
-    return [].every.call(dims, function (d) {{
-      return d.dataset.dimensionsBadgeInstalled || d.querySelector("svg,img");
+  // Kicked off once, immediately - PUB_STATS is usually already in flight
+  // (or resolved) by the time anyone clicks "Citations", so this is instant
+  // rather than waiting on Dimensions badges to load and render.
+  var citationsOrderPromise = PUB_STATS.then(function (precomputed) {{
+    return pubs.slice().sort(function (a, b) {{
+      var ac = (precomputed[statsKeyFor(a)] || {{}}).citations || 0;
+      var bc = (precomputed[statsKeyFor(b)] || {{}}).citations || 0;
+      if (ac !== bc) return bc - ac;
+      return b.__year - a.__year;
     }});
-  }}
-
-  function waitForBadges(timeoutMs) {{
-    return new Promise(function (resolve) {{
-      var startedAt = Date.now();
-      (function poll() {{
-        if (badgesSettled() || Date.now() - startedAt > timeoutMs) return resolve();
-        setTimeout(poll, 150);
-      }})();
-    }});
-  }}
-
-  // Sorting by citations needs every badge loaded and rendered first, which
-  // can take a few seconds - too slow to do only when the user clicks. So
-  // this is kicked off once, quietly, shortly after page load (see the
-  // bottom of this file), and the click handler below just reuses whatever
-  // this promise resolves to - instant if it already finished, a short wait
-  // (not a repeated one) if the user is unusually fast.
-  var citationsOrderPromise = null;
-  function getCitationsOrder() {{
-    if (!citationsOrderPromise) {{
-      if (window.__loadAllBadges) window.__loadAllBadges();
-      citationsOrderPromise = waitForBadges(9000).then(function () {{
-        return pubs.slice().sort(function (a, b) {{
-          var ac = citationCount(a), bc = citationCount(b);
-          if (ac !== bc) return bc - ac;
-
-          var aa = altmetricScore(a), ba = altmetricScore(b);
-          if (aa !== ba) return ba - aa;
-
-          return b.__year - a.__year;
-        }});
-      }});
-    }}
-    return citationsOrderPromise;
-  }}
+  }});
+  function getCitationsOrder() {{ return citationsOrderPromise; }}
 
   function applyCitationsOrder(ranked) {{
     if (!flatList) {{
@@ -2245,11 +2205,6 @@ PAGE = """<!DOCTYPE html>
       }});
     }});
   }});
-
-  // Quietly precompute the citations order in the background, well after
-  // the initial page load/paint is out of the way, so switching to
-  // "Citations" is instant by the time anyone actually clicks it.
-  setTimeout(function () {{ getCitationsOrder(); }}, 1500);
 }})();
 </script>
 {analytics}
@@ -2339,6 +2294,13 @@ def main():
     csl_cache = OUT / "csl-cache.json"
     if not csl_cache.exists():
         csl_cache.write_text("{}\n", encoding="utf-8")
+
+    # Publication stats (PDF links + citation counts): same idea again -
+    # seed empty once, refreshed by generate_pub_stats.py / the daily Action,
+    # never touched by an ordinary build.
+    pub_stats = OUT / "pub-stats.json"
+    if not pub_stats.exists():
+        pub_stats.write_text("{}\n", encoding="utf-8")
 
     n = sum(len(e) for _, e in years)
     with_pmid = sum(

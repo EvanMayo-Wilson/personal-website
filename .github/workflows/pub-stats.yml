@@ -1,0 +1,38 @@
+name: Update publication stats
+
+# Refreshes docs/pub-stats.json (a real open-access PDF link and an OpenAlex
+# citation count for every publication) once a day. This is what makes the
+# PDF buttons and "Sort by Citations" instant instead of resolving live in
+# each visitor's browser - see generate_pub_stats.py's docstring.
+
+on:
+  schedule:
+    - cron: "20 6 * * *"    # daily, 06:20 UTC (offset from scholar-stats.yml)
+  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write            # allows the job to commit the updated JSON
+
+jobs:
+  pub-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install markdown certifi
+
+      - name: Generate pub-stats.json
+        run: python3 generate_pub_stats.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "pub-stats-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/pub-stats.json
+          git diff --cached --quiet || git commit -m "Update publication stats"
+          git push
