@@ -235,8 +235,8 @@ CITE_FORMATS = [
 
 
 def cite_menu(bulk: bool = False) -> str:
-    label = "Download all citations" if bulk else "Download citation"
-    visible = "Download citations" if bulk else "Cite"
+    label = "Download selected citations" if bulk else "Download citation"
+    visible = "Download selected citations" if bulk else "Cite"
     return (
         '<summary title="{0}" aria-label="{0}">{1}'
         '<span class="btn-label">{3}</span></summary>'
@@ -264,15 +264,17 @@ def ident_attr(pmid: str, doi: str, extra: str = "") -> str:
     return ""
 
 
-def cite_button(key: str) -> str:
+def select_checkbox(key: str) -> str:
     """
-    Download-citation control. A native <details> disclosure, so it opens with
-    the keyboard and needs no JavaScript to work as a menu. If the article has
-    no identifier at all we still emit an empty cell, to keep the column aligned.
+    Selects this citation for the "Download selected citations" button in the
+    Publications toolbar (desktop only - see .pub-select in the CSS and the
+    selection/download JS). Carries the same identifier the old per-article
+    Cite button did. An article with no identifier at all still gets an empty
+    cell, to keep the column aligned.
     """
     if not key:
         return '<span class="cite-dl-empty"></span>'
-    return f'<details class="cite-dl" {key}>{cite_menu()}</details>'
+    return f'<input type="checkbox" class="pub-select" {key} aria-label="Select this citation">'
 
 
 ICON_PDF = (
@@ -348,7 +350,7 @@ def nested_badges(frag: str) -> str:
 
         return (
             '<li class="subpub">'
-            + '<span class="cite-col">' + cite_button(key) + oa_button(key) + "</span>"
+            + '<span class="cite-col">' + select_checkbox(key) + oa_button(key) + "</span>"
             + '<div class="pub-text">' + inner.rstrip() + "</div>"
             + "".join(badges)
             + close_tag
@@ -419,7 +421,7 @@ def publications_html(years):
 
             out.append(
                 '<li class="pub">'
-                + '<span class="cite-col">' + cite_button(key) + oa_button(key) + "</span>"
+                + '<span class="cite-col">' + select_checkbox(key) + oa_button(key) + "</span>"
                 + f'<div class="pub-text">{e}</div>'
                 + "".join(metrics)
                 + "</li>"
@@ -661,6 +663,9 @@ PAGE = """<!DOCTYPE html>
   .navlink:hover {{ color: var(--text); background: var(--surface); text-decoration: none; }}
   .navlink:first-of-type {{ margin-left: calc(-1 * .7rem); }}
   .spacer {{ margin-left: auto; }}
+  /* Mobile-only lightweight section nav (see the media query below); the
+     topbar handles this on desktop instead. */
+  .mobilenav {{ display: none; }}
   #theme {{
     display: inline-flex; align-items: center; justify-content: center;
     width: 2.75rem; height: 2.75rem;           /* 44px touch target */
@@ -701,6 +706,9 @@ PAGE = """<!DOCTYPE html>
     border-radius: 10px; display: block;
     background: var(--surface);
   }}
+  /* Mobile-only tight face crop (see the media query below for sizing).
+     Hidden on desktop, which uses the full chest-up .hero-photo instead. */
+  .hero-photo-mobile {{ display: none; }}
   h1 {{
     grid-area: name;
     font-family: var(--serif); font-weight: 600;
@@ -825,7 +833,7 @@ PAGE = """<!DOCTYPE html>
     grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
     align-items: start; column-gap: 0;
     margin: 0; padding: .6rem 0; border-radius: 8px;
-    font-size: 1rem; line-height: 1.55;   /* publications stay at 16px */
+    font-size: 1rem; line-height: 1.35;   /* publications stay at 16px */
     color: var(--text);           /* authors + journal read as body text */
   }}
 
@@ -994,9 +1002,43 @@ PAGE = """<!DOCTYPE html>
   .cite-all .cite-menu button {{ min-width: 8.5rem; }}
   .cite-all.open-up .cite-menu {{ top: auto; bottom: 100%; margin-bottom: .35rem; }}
 
+  /* Toolbar above the scrollable box: per-item select-all + Year/Citations
+     sort toggle. Desktop only, like the checkboxes it controls - see the
+     media query below. Same 3-column grid as li.pub, so the checkbox lines
+     up exactly above every per-article checkbox in the list. */
+  .pub-toolbar {{
+    display: grid;
+    grid-template-columns: 3.4rem minmax(0, 1fr) 8rem;
+    align-items: center; column-gap: 0;
+    padding: .35rem 0 .6rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: .5rem;
+  }}
+  .pub-toolbar .cite-col {{ display: flex; justify-content: center; }}
+  .pub-toolbar-mid {{
+    display: flex; align-items: center; justify-content: space-between;
+    padding-left: .9rem; gap: 1rem; flex-wrap: wrap;
+    font-size: .8125rem; color: var(--muted);
+  }}
+  .pub-toolbar-label {{ cursor: pointer; }}
+  .sort-toggle {{ display: flex; align-items: center; gap: .4rem; }}
+  .sort-toggle-label {{ color: var(--faint); }}
+  .sort-btn {{
+    font: inherit; font-size: .8125rem; font-weight: 600;
+    background: var(--bg); border: 1px solid var(--rule-2); border-radius: 6px;
+    color: var(--muted); padding: .25rem .6rem; cursor: pointer;
+  }}
+  .sort-btn:hover {{ color: var(--text); background: var(--surface); }}
+  .sort-btn[aria-pressed="true"] {{ color: var(--link); border-color: var(--link); }}
+
+  .pub-select {{
+    width: 1.15rem; height: 1.15rem; margin: 0; cursor: pointer;
+    accent-color: var(--link);
+  }}
+
   /* Desktop only, like the badges. Hide the whole left column (Cite AND PDF). */
   @media (max-width: 47.99rem) {{
-    .cite-col, .cite-dl, .cite-dl-empty {{ display: none; }}
+    .cite-col, .cite-dl, .cite-dl-empty, .pub-toolbar {{ display: none; }}
     .pubhead {{ display: block; }}
   }}
 
@@ -1020,16 +1062,38 @@ PAGE = """<!DOCTYPE html>
 
   /* ---- responsive --------------------------------------------------------- */
   @media (max-width: 46rem) {{
-    /* Nav links and the theme toggle are both gone at this width (see below),
-       leaving nothing in the bar - so the bar itself goes too. Mobile always
-       just follows the system's light/dark setting. */
+    /* The topbar's nav links are hidden and the theme toggle is gone (mobile
+       always just follows the system's light/dark setting), leaving nothing
+       in the bar - so the bar itself goes too. .mobilenav below replaces it
+       with something lighter-weight. */
     .topbar {{ display: none; }}
-    /* No photo on mobile - name and bio run full width. */
+    .mobilenav {{
+      display: block;
+      font-size: .875rem; color: var(--faint);
+      padding: 1rem 0 0;
+    }}
+    .mobilenav a {{ color: var(--link); }}
+    .mobilenav a:hover {{ color: var(--link-hover); text-decoration: underline; }}
+    .mobilenav .sep {{ margin: 0 .35rem; color: var(--rule-2); }}
+    /* Full chest-up photo is desktop-only; mobile gets a small, closely
+       cropped-to-face square instead (see .hero-photo-mobile img below). */
     .hero-photo {{ display: none; }}
+    .hero-photo-mobile {{
+      display: block; grid-area: photo;
+      width: 60px; height: 60px;         /* no taller than the 2-line name */
+      border-radius: 8px; overflow: hidden; position: relative;
+      background: var(--surface);
+    }}
+    .hero-photo-mobile img {{
+      position: absolute; max-width: none;
+      width: 240%; height: 240%; left: -72%; top: -18%;
+      object-fit: cover;
+    }}
     .hero {{
-      grid-template-columns: 1fr;
-      grid-template-areas: "name" "body";
-      row-gap: 1rem;
+      grid-template-columns: auto 1fr;
+      grid-template-areas: "photo name" "body body";
+      align-items: center;
+      row-gap: 1rem; column-gap: .85rem;
     }}
     h1 {{ margin: 0; }}
     li.pub {{ grid-template-columns: minmax(0, 1fr); row-gap: .5rem; }}
@@ -1080,12 +1144,19 @@ PAGE = """<!DOCTYPE html>
     <div class="hero-photo">
       <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
     </div>
+    <div class="hero-photo-mobile">
+      <img src="{photo}" alt="{photo_alt}" width="600" height="600">
+    </div>
     <h1>{name}</h1>
     <div class="hero-body">
       <div class="bio">{bio}</div>
       <div class="plinks">{links}</div>
     </div>
   </div>
+
+  <nav class="mobilenav" aria-label="Sections">
+    <a href="#research">Research</a><span class="sep" aria-hidden="true">·</span><a href="#teaching">Teaching</a><span class="sep" aria-hidden="true">·</span><a href="#service">Service</a><span class="sep" aria-hidden="true">·</span><a href="#publications">Publications</a>
+  </nav>
 
   <section id="research" aria-labelledby="h-research">
     <h2 id="h-research">Research</h2>
@@ -1117,13 +1188,23 @@ PAGE = """<!DOCTYPE html>
          title (see .metric-src). -->
     <div class="author-metrics">
       <p class="metric-row" id="gs-row">
-        <a class="metric-src" href="{scholar}">Google Scholar</a>
-        <span class="metric-nums" id="gs-line"></span>
+        <a class="metric-src" href="{scholar}">Google Scholar</a><span class="metric-nums" id="gs-line"></span>
       </p>
       <p class="metric-row" id="oa-row" hidden>
-        <a class="metric-src" id="oa-profile-pub" href="{openalex_works}">OpenAlex</a>
-        <span class="metric-nums" id="stat-line"></span>
+        <a class="metric-src" id="oa-profile-pub" href="{openalex_works}">OpenAlex</a><span class="metric-nums" id="stat-line"></span>
       </p>
+    </div>
+
+    <div class="pub-toolbar">
+      <span class="cite-col"><input type="checkbox" id="pub-select-all" aria-label="Select all citations"></span>
+      <span class="pub-toolbar-mid">
+        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
+        <span class="sort-toggle" role="group" aria-label="Sort publications by">
+          <span class="sort-toggle-label">Sort:</span>
+          <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
+          <button type="button" class="sort-btn" data-sort="citations" aria-pressed="false">Citations</button>
+        </span>
+      </span>
     </div>
 
     <div class="pub-scroll">
@@ -1341,6 +1422,23 @@ PAGE = """<!DOCTYPE html>
     EXTRA = JSON.parse(document.getElementById("csl-extra").textContent) || {{}};
   }} catch (e) {{}}
 
+  // Pre-fetched CSL for every PMID/DOI in the publications list (see
+  // generate_csl_cache.py). A hit here means zero network round-trips -
+  // this is what makes "Cite" and "Download citations" feel instant instead
+  // of waiting on NCBI/Crossref. Only genuinely new papers (added since the
+  // cache was last generated) fall through to the live fetch below.
+  var PRECACHE = null, precachePromise = null;
+  function loadPrecache() {{
+    if (precachePromise) return precachePromise;
+    precachePromise = (window.fetch
+      ? fetch("csl-cache.json", {{ cache: "force-cache" }})
+          .then(function (r) {{ return r.ok ? r.json() : {{}}; }})
+          .catch(function () {{ return {{}}; }})
+      : Promise.resolve({{}})
+    ).then(function (d) {{ return (PRECACHE = d || {{}}); }});
+    return precachePromise;
+  }}
+
   function idOf(it) {{
     if (it.pmid) return "pmid:" + it.pmid;
     if (it.doi)  return "doi:" + String(it.doi).toLowerCase();
@@ -1392,11 +1490,16 @@ PAGE = """<!DOCTYPE html>
 
   /*  items: [{{pmid, doi}}]  ->  Promise<{{id: cslObject}}>  */
   function getCSL(items, onProgress) {{
+    return loadPrecache().then(function () {{ return getCSLAfterPrecache(items, onProgress); }});
+  }}
+
+  function getCSLAfterPrecache(items, onProgress) {{
     var found = {{}}, need = [];
 
     items.forEach(function (it) {{
       var id = idOf(it);
       if (it.csl && EXTRA[it.csl]) {{ found[id] = EXTRA[it.csl]; return; }}
+      if (PRECACHE[id]) {{ found[id] = PRECACHE[id]; return; }}
       var hit = cacheGet(id);
       if (hit) found[id] = hit; else need.push(it);
     }});
@@ -1576,8 +1679,8 @@ PAGE = """<!DOCTYPE html>
     return records.map(spec.make).join(spec.join || "");
   }}
 
-  function itemsOf(el) {{
-    return [].map.call(el.querySelectorAll(".cite-dl"), function (n) {{
+  function selectedItems() {{
+    return [].map.call(document.querySelectorAll(".pub-select:checked"), function (n) {{
       return {{
         pmid: n.dataset.pmid || "",
         doi:  n.dataset.doi  || "",
@@ -1586,7 +1689,7 @@ PAGE = """<!DOCTYPE html>
     }});
   }}
 
-  /* --- single-article menus ----------------------------------------------- */
+  /* --- "Download selected citations" -------------------------------------- */
 
   document.addEventListener("click", function (ev) {{
     var inMenu = ev.target.closest && ev.target.closest(".cite-dl");
@@ -1602,12 +1705,8 @@ PAGE = """<!DOCTYPE html>
         spec = FORMATS[fmt];
     if (!box || !spec) return;
 
-    var label = btn.textContent, bulk = box.classList.contains("cite-all");
-
-    var items = bulk
-      ? itemsOf(document.getElementById("publist"))
-      : [{{ pmid: box.dataset.pmid || "", doi: box.dataset.doi || "",
-            csl: box.dataset.csl || "" }}];
+    var label = btn.textContent;
+    var items = selectedItems();
 
     // De-duplicate (an article can appear as both parent and sub-entry key).
     var seen = {{}};
@@ -1618,13 +1717,17 @@ PAGE = """<!DOCTYPE html>
       seen[k] = 1;
       return true;
     }});
-    if (!items.length) return;
+    if (!items.length) {{
+      btn.textContent = "Nothing selected";
+      setTimeout(function () {{ btn.textContent = label; }}, 2000);
+      return;
+    }}
 
     btn.disabled = true;
-    btn.textContent = bulk ? "0%" : "…";
+    btn.textContent = "0%";
 
     getCSL(items, function (done, total) {{
-      if (bulk) btn.textContent = Math.round((done / total) * 100) + "%";
+      btn.textContent = Math.round((done / total) * 100) + "%";
     }})
       .then(function (map) {{
         var records = items
@@ -1633,11 +1736,7 @@ PAGE = """<!DOCTYPE html>
 
         if (!records.length) throw new Error("none");
 
-        var name = bulk
-          ? "mayo-wilson-publications." + spec.ext
-          : (bibKey(records[0]) || "citation") + "." + spec.ext;
-
-        save(serialise(fmt, records), name);
+        save(serialise(fmt, records), "mayo-wilson-publications." + spec.ext);
 
         btn.textContent = label;
         btn.disabled = false;
@@ -1899,6 +1998,176 @@ PAGE = """<!DOCTYPE html>
   }}, {{ rootMargin: "400px 0px" }});
 
   io.observe(list);
+
+  // The "Sort by Citations" toggle needs every badge loaded (not just the
+  // ones near the viewport) to know what to sort by - see the sort script
+  // below, which calls this to jump the queue.
+  window.__loadAllBadges = start;
+}})();
+
+/* ------------------------------------------------- select-all + sort toolbar
+   Desktop only (see .pub-toolbar's CSS) - the checkboxes it controls replace
+   the old per-article Cite button, and "Download selected citations" reads
+   from whichever are checked.
+
+   Sorting by citations needs a number to sort by, which only exists once the
+   Dimensions/Altmetric badges have rendered - so switching to it force-loads
+   every badge (bypassing the normal lazy-load-near-viewport behaviour) and
+   waits for them to settle before reading each one's count back out of its
+   own rendered DOM (there's no API for this - see badgeNumber/altmetricScore
+   below for exactly where those numbers live in the badge markup).
+
+   There's no finer-grained publication date available client-side than the
+   year each article's .year-block already carries, so "then by date" sorts
+   by year, and ties within a year keep the original author-position order
+   (Array.prototype.sort is stable) as the finest tie-break.
+---------------------------------------------------------------------------- */
+(function () {{
+  var publist = document.getElementById("publist");
+  var selectAll = document.getElementById("pub-select-all");
+  var sortBtns = [].slice.call(document.querySelectorAll(".sort-btn"));
+  if (!publist || !sortBtns.length) return;
+
+  /* --- select all ---------------------------------------------------------- */
+
+  function boxes() {{ return [].slice.call(publist.querySelectorAll(".pub-select")); }}
+
+  if (selectAll) {{
+    selectAll.addEventListener("change", function () {{
+      boxes().forEach(function (b) {{ b.checked = selectAll.checked; }});
+    }});
+    publist.addEventListener("change", function (ev) {{
+      if (!ev.target.classList.contains("pub-select")) return;
+      var all = boxes();
+      selectAll.checked = all.length > 0 && all.every(function (b) {{ return b.checked; }});
+    }});
+  }}
+
+  /* --- sort ------------------------------------------------------------- */
+
+  var pubs = [].slice.call(publist.querySelectorAll("li.pub"));
+  pubs.forEach(function (li) {{
+    var block = li.closest(".year-block");
+    li.__year = block ? (parseInt(block.dataset.year, 10) || 0) : 0;
+    li.__parent = li.parentNode;
+    li.__next = li.nextElementSibling;
+  }});
+
+  var flatList = null;   // built lazily, the first time "Citations" is used
+
+  function restoreYearOrder() {{
+    // Reverse order matters: a li's recorded __next is only guaranteed to
+    // still be a child of __parent (a requirement of insertBefore) if that
+    // sibling has already been moved back itself - which reverse iteration
+    // guarantees (last item in each parent restores first, so by the time
+    // an earlier item's __next is referenced, it's already back in place).
+    pubs.slice().reverse().forEach(function (li) {{
+      li.__parent.insertBefore(li, li.__next);
+    }});
+    [].forEach.call(publist.querySelectorAll(".year-block"), function (s) {{
+      s.hidden = false;
+    }});
+    var nav = document.querySelector(".yearnav");
+    if (nav) nav.hidden = false;
+    if (flatList) flatList.hidden = true;
+  }}
+
+  function parseAbbrev(text) {{
+    var m = /([\\d,]*\\.?\\d+)\\s*([kKmMbB]?)/.exec(text || "");
+    if (!m) return 0;
+    var n = parseFloat(m[1].replace(/,/g, "")) || 0;
+    var suf = m[2].toLowerCase();
+    if (suf === "k") n *= 1e3;
+    else if (suf === "m") n *= 1e6;
+    else if (suf === "b") n *= 1e9;
+    return n;
+  }}
+
+  // Dimensions renders the exact count (or an abbreviation like "12k" for
+  // big ones - that's all the badge itself knows, so it's all we can sort
+  // on too) into .__dimensions_Badge_stat_total_citations, alongside the
+  // recent-citations stat. A hidden-at-zero badge renders nothing at all.
+  function citationCount(li) {{
+    var el = li.querySelector(".__dimensions_Badge_stat_total_citations .__dimensions_Badge_stat_count");
+    return el ? parseAbbrev(el.textContent) : 0;
+  }}
+
+  // Altmetric encodes its (always exact, never abbreviated) score in the
+  // donut image's own "score=" query parameter.
+  function altmetricScore(li) {{
+    var img = li.querySelector('.altmetric-embed img[src*="badges.altmetric.com"]');
+    if (!img) return 0;
+    var m = /[?&]score=([\\d.]+)/.exec(img.src);
+    return m ? parseFloat(m[1]) : 0;
+  }}
+
+  function badgesSettled() {{
+    var dims = publist.querySelectorAll(".__dimensions_badge_embed__");
+    return [].every.call(dims, function (d) {{
+      return d.dataset.dimensionsBadgeInstalled || d.querySelector("svg,img");
+    }});
+  }}
+
+  function waitForBadges(timeoutMs) {{
+    return new Promise(function (resolve) {{
+      var startedAt = Date.now();
+      (function poll() {{
+        if (badgesSettled() || Date.now() - startedAt > timeoutMs) return resolve();
+        setTimeout(poll, 150);
+      }})();
+    }});
+  }}
+
+  function sortByCitations() {{
+    if (window.__loadAllBadges) window.__loadAllBadges();
+
+    return waitForBadges(9000).then(function () {{
+      var ranked = pubs.slice().sort(function (a, b) {{
+        var ac = citationCount(a), bc = citationCount(b);
+        if (ac !== bc) return bc - ac;
+
+        var aa = altmetricScore(a), ba = altmetricScore(b);
+        if (aa !== ba) return ba - aa;
+
+        return b.__year - a.__year;
+      }});
+
+      if (!flatList) {{
+        flatList = document.createElement("ul");
+        flatList.className = "pubs";
+        flatList.id = "pubs-flat";
+        publist.insertBefore(flatList, publist.firstChild);
+      }}
+      ranked.forEach(function (li) {{ flatList.appendChild(li); }});
+
+      [].forEach.call(publist.querySelectorAll(".year-block"), function (s) {{
+        s.hidden = true;
+      }});
+      var nav = document.querySelector(".yearnav");
+      if (nav) nav.hidden = true;
+      flatList.hidden = false;
+    }});
+  }}
+
+  sortBtns.forEach(function (btn) {{
+    btn.addEventListener("click", function () {{
+      if (btn.getAttribute("aria-pressed") === "true") return;
+      sortBtns.forEach(function (b) {{ b.setAttribute("aria-pressed", String(b === btn)); }});
+
+      if (btn.dataset.sort === "year") {{
+        restoreYearOrder();
+        return;
+      }}
+
+      var label = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Sorting…";
+      sortByCitations().then(function () {{
+        btn.textContent = label;
+        btn.disabled = false;
+      }});
+    }});
+  }});
 }})();
 </script>
 {analytics}
@@ -1980,6 +2249,13 @@ def main():
             '{"citations": 0, "hindex": 0, "i10index": 0, "updated": ""}\n',
             encoding="utf-8",
         )
+
+    # CSL citation cache: same idea - seed an empty file once, but never
+    # overwrite it here. It's refreshed by running generate_csl_cache.py
+    # (see that file's docstring), not by an ordinary build.
+    csl_cache = OUT / "csl-cache.json"
+    if not csl_cache.exists():
+        csl_cache.write_text("{}\n", encoding="utf-8")
 
     n = sum(len(e) for _, e in years)
     with_pmid = sum(

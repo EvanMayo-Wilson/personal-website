@@ -297,7 +297,7 @@ Hofmann SG, Barlow DH, Clark DM, Hollon SD, **Mayo-Wilson E**. *Am J Psychiatry*
 
 - [**Are restorative justice conferences effective in reducing repeat offending? Findings from a Campbell systematic review**](https://link.springer.com/article/10.1007/s10940-014-9222-9)Sherman LW, Strang H, **Mayo-Wilson E**, Woods DJ, Ariel B. *J Quant Criminol* 31(1):1-24. [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.5)]
 
-- [**Simultaneous synthesis of treatment effects and mapping to a common scale: an alternative to standardization**](http://onlinelibrary.wiley.com/doi/10.1002/jrsm.1130/abstract)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. doi: 10.1002/jrsm.1130. PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
+- [**Simultaneous synthesis of treatment effects and mapping to a common scale: an alternative to standardization**](http://onlinelibrary.wiley.com/doi/10.1002/jrsm.1130/abstract)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. DOI: [10.1002/jrsm.1130](https://doi.org/10.1002/jrsm.1130). PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
 
 - [**Development, inter-rater reliability and feasibility of a checklist to assess implementation (Ch-IMP) in systematic reviews: the case of provider-based prevention and treatment programs targeting children and youth**](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-015-0037-7)Cargo M, Stankov I, Thomas J, Saini M, Rogers P, **Mayo-Wilson E**, Hannes K. *BMC Med Res Methodol* 15:73. PMID: [26346461](https://pubmed.ncbi.nlm.nih.gov/26346461/).
 
