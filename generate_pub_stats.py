@@ -36,11 +36,17 @@ PDF resolution tries, in order:
   4. NCBI Bookshelf's own PDF convention (<NBK id>/pdf/Bookshelf_<id>.pdf)
      for PMIDs whose PubMed record is a book (the NICE guideline monographs -
      no DOI, so nothing else here applies).
-Every candidate from (2)-(4) is only used once a HEAD request confirms it
-actually serves a PDF - never guessed blindly, since a plausible-looking URL
-serving an HTML interstitial (bot-check pages are common on file-serving
-subdomains, distinct from the article page itself) is exactly the mistake
-this whole file exists to avoid. A resolved PDF identical to the article's
+  5. The entry's own "[Preprint on X](url)" bracket link, if the published
+     version has no free copy anywhere - tried the same way as the title URL
+     (steps 2-3 above). Several preprint servers host the manuscript as a
+     Word doc rather than a PDF, which the verification step correctly
+     rejects (a "PDF" button should never hand someone a .docx).
+Every candidate from (2)-(5) is only used once its first few bytes are
+confirmed to start with the "%PDF-" magic number (see verified_pdf()) -
+never guessed blindly from headers or a URL's ".pdf" suffix, since several
+hosts that genuinely serve a PDF send no distinguishing Content-Type at all,
+while a host blocking a paywalled PDF often serves an HTML page with a
+plain 200 rather than an error. A resolved PDF identical to the article's
 own title-link URL is dropped entirely (a "PDF" button that lands exactly
 where the title already does is worse than no button).
 
@@ -201,11 +207,19 @@ def bookshelf_pdf(nbk_id):
     return pdf if verified_pdf(pdf) else ""
 
 
+PREPRINT_LINK_RE = re.compile(
+    r'<a\b[^>]*href="([^"]+)"[^>]*>[^<]*preprint[^<]*</a>', re.I
+)
+
+
 def collect_items():
     """
     Every citable record (top-level + sub-entries) with a real PMID or DOI,
-    as {id: {pmid, doi, title_url}}. Records with only a hand-written
-    csl-extra entry are skipped - there's no PMID/DOI to look anything up by.
+    as {id: {pmid, doi, title_url, preprint_url}}. Records with only a
+    hand-written csl-extra entry are skipped - there's no PMID/DOI to look
+    anything up by. preprint_url is the entry's own "[Preprint on X](url)"
+    bracket link, if it has one - a fallback PDF source for articles whose
+    published version has no OA copy (see resolve_pdf()).
     """
     items = {}
 
@@ -213,18 +227,23 @@ def collect_items():
         urls = build.CITE_LINK_RE.findall(entry_html)
         return htmllib.unescape(urls[0]) if urls else ""
 
-    def add(pmid, doi, title_url):
+    def preprint_url_of(entry_html):
+        m = PREPRINT_LINK_RE.search(entry_html)
+        return htmllib.unescape(m.group(1)) if m else ""
+
+    def add(pmid, doi, title_url, preprint_url):
         if not (pmid or doi):
             return
         id_ = "pmid:" + pmid if pmid else "doi:" + doi.lower()
-        items[id_] = {"pmid": pmid, "doi": doi, "title_url": title_url}
+        items[id_] = {"pmid": pmid, "doi": doi, "title_url": title_url,
+                      "preprint_url": preprint_url}
 
     years = build.parse_publications()
     for _year, entries in years:
         for e in entries:
             primary = re.sub(r"<ul>.*?</ul>", "", e, flags=re.S)
             pmid, doi, _extra, _title = build.entry_meta(primary)
-            add(pmid, doi, title_url_of(primary))
+            add(pmid, doi, title_url_of(primary), preprint_url_of(primary))
 
             m = re.search(r"<ul>(.*?)</ul>", e, flags=re.S)
             if not m:
@@ -232,7 +251,7 @@ def collect_items():
             for li in build.NESTED_LI_RE.finditer(m.group(1)):
                 inner = build.title_on_own_line(li.group(2).lstrip())
                 pmid, doi, _extra, _title = build.entry_meta(inner)
-                add(pmid, doi, title_url_of(inner))
+                add(pmid, doi, title_url_of(inner), preprint_url_of(inner))
 
     return items
 
@@ -260,7 +279,7 @@ def pmid_to_doi(pmids):
     return out
 
 
-def resolve_pdf(doi, title_url):
+def resolve_pdf(doi, title_url, preprint_url=""):
     """Best real PDF for this DOI, or "" if none exists / everything found is
     the same page the title already links to."""
     url = "https://api.unpaywall.org/v2/" + urllib.parse.quote(doi, safe="") + \
@@ -295,6 +314,13 @@ def resolve_pdf(doi, title_url):
         # redirect, since that's the canonical landing page) might advertise
         # a citation_pdf_url even though Unpaywall's own record has nothing.
         pdf = citation_pdf_url("https://doi.org/" + urllib.parse.quote(doi, safe="/"))
+
+    if not pdf and preprint_url:
+        # The published version has no free copy anywhere, but the entry's
+        # own "[Preprint on X]" link might. Many preprint servers host the
+        # manuscript as a Word doc rather than a PDF, which verified_pdf()
+        # correctly rejects (a "PDF" button should not hand someone a .docx).
+        pdf = smart_pdf(preprint_url) or citation_pdf_url(preprint_url)
 
     if pdf and title_url and pdf.rstrip("/") == title_url.rstrip("/"):
         return ""  # identical to the title link - not worth a button
@@ -357,10 +383,12 @@ def main():
             candidate = smart_pdf(v["title_url"])
             if not candidate and doi_nbk[1]:
                 candidate = bookshelf_pdf(doi_nbk[1])
+            if not candidate and v["preprint_url"]:
+                candidate = smart_pdf(v["preprint_url"]) or citation_pdf_url(v["preprint_url"])
             if candidate and candidate.rstrip("/") != v["title_url"].rstrip("/"):
                 pdfs[id_] = candidate
             continue
-        pdf = resolve_pdf(doi, v["title_url"])
+        pdf = resolve_pdf(doi, v["title_url"], v["preprint_url"])
         if pdf:
             pdfs[id_] = pdf
         if i % 25 == 0:

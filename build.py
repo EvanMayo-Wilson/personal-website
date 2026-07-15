@@ -237,7 +237,7 @@ CITE_FORMATS = [
 
 def cite_menu(bulk: bool = False) -> str:
     label = "Download selected citations" if bulk else "Download citation"
-    visible = "Download selected citations" if bulk else "Cite"
+    visible = "Download" if bulk else "Cite"
     return (
         '<summary title="{0}" aria-label="{0}">{1}'
         '<span class="btn-label">{3}</span></summary>'
@@ -287,7 +287,43 @@ ICON_PDF = (
 )
 
 
-def oa_button(key: str) -> str:
+TITLE_WORDS_IN_FILENAME = 6
+
+
+def pdf_filename(year: str, entry_html: str, title: str) -> str:
+    """
+    A consistent suggested filename for a PDF download: first author (or
+    "First-author_et_al" when there's more than one), year, first few words
+    of the title. E.g. "Mayo-Wilson_2023_Harms_were_detected_but_not.pdf".
+
+    Browsers only honor an <a download="..."> filename for same-origin/blob
+    resources - for the cross-origin publisher PDFs this site links to, most
+    browsers ignore it and just use whatever name the server sends. This is
+    set anyway (harmless where ignored, useful on any host that does respect
+    it) rather than reintroducing a fetch-as-blob step, which behaved
+    inconsistently depending on each host's CORS policy.
+    """
+    author_segment_m = (re.search(r"</a>(.*?)<em>", entry_html, re.S)
+                         or re.search(r"</strong>(.*?)<em>", entry_html, re.S))
+    authors_text = author_segment_m.group(1) if author_segment_m else ""
+    authors_text = re.sub(r"<[^>]+>", "", authors_text)
+    authors_text = re.sub(r"\([^)]*\)", "", authors_text)
+    authors_text = html.unescape(authors_text).strip(" .,")
+
+    author_tokens = [a.strip() for a in re.split(r",| and ", authors_text) if a.strip()]
+    first_author = author_tokens[0] if author_tokens else ""
+    name_parts = first_author.split()
+    surname = " ".join(name_parts[:-1]) if len(name_parts) > 1 else first_author
+    surname = re.sub(r"[^A-Za-z\-]", "", surname) or "article"
+    suffix = "_et_al" if len(author_tokens) > 1 else ""
+
+    title_words = re.findall(r"[A-Za-z0-9]+", title)[:TITLE_WORDS_IN_FILENAME]
+    title_part = "_".join(title_words) if title_words else "untitled"
+
+    return f"{surname}{suffix}_{year}_{title_part}.pdf"
+
+
+def oa_button(key: str, filename: str = "") -> str:
     """
     Open-access full text. Resolved on demand via Unpaywall, which indexes only
     legally free copies (publisher OA, PMC, institutional repositories). Starts
@@ -301,8 +337,9 @@ def oa_button(key: str) -> str:
     """
     if not key or "data-csl" in key:
         return '<span class="oa-empty"></span>'
+    download_attr = f' download="{html.escape(filename, quote=True)}"' if filename else ""
     return (
-        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer" '
+        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer"{download_attr} '
         f'title="Open free full text (PDF) in a new tab" aria-label="Open free full text (open access PDF) in a new tab" '
         f'hidden>{ICON_PDF}</a>'
     )
@@ -311,7 +348,7 @@ def oa_button(key: str) -> str:
 NESTED_LI_RE = re.compile(r"(<li>)(.*?)(</li>)", re.S)
 
 
-def nested_badges(frag: str) -> str:
+def nested_badges(frag: str, year: str) -> str:
     """
     Some entries carry a sub-list: "This article was published simultaneously
     in: <journal A>, <journal B>". Each of those is a separate indexed article
@@ -335,6 +372,7 @@ def nested_badges(frag: str) -> str:
 
         key = ident_attr(pmid, doi, extra)
         badge_key = ident_attr(pmid, doi, "")   # badges need a real identifier
+        filename = pdf_filename(year, inner, _t)
 
         badges = ['<span class="metrics">']
         for kind in ("dim", "alt"):
@@ -356,7 +394,7 @@ def nested_badges(frag: str) -> str:
 
         return (
             '<li class="subpub">'
-            + '<span class="cite-col">' + oa_button(key) + select_checkbox(key) + "</span>"
+            + '<span class="cite-col">' + oa_button(key, filename) + select_checkbox(key) + "</span>"
             + '<div class="pub-text">' + inner.rstrip() + "</div>"
             + "".join(badges)
             + close_tag
@@ -395,12 +433,13 @@ def publications_html(years):
             pmid, doi, extra, _title = entry_meta(primary)
 
             e = title_on_own_line(e)
-            e = nested_badges(e)
+            e = nested_badges(e, year)
 
             # Two fixed slots, so the donuts line up down the page whether or
             # not either badge has anything to show.
             key = ident_attr(pmid, doi, extra)
             badge_key = ident_attr(pmid, doi, "")
+            filename = pdf_filename(year, primary, _title)
 
             metrics = ['<div class="metrics">']
 
@@ -427,7 +466,7 @@ def publications_html(years):
 
             out.append(
                 '<li class="pub">'
-                + '<span class="cite-col">' + oa_button(key) + select_checkbox(key) + "</span>"
+                + '<span class="cite-col">' + oa_button(key, filename) + select_checkbox(key) + "</span>"
                 + f'<div class="pub-text">{e}</div>'
                 + "".join(metrics)
                 + "</li>"
@@ -989,7 +1028,7 @@ PAGE = """<!DOCTYPE html>
     gap: .35rem; padding: .4rem .7rem; min-height: 1.9rem;
     border-radius: 6px;
     background: var(--bg); color: var(--muted);
-    font-size: 1.0625rem; font-weight: 600; line-height: 1;
+    font-size: 1.0625rem; font-weight: 400; line-height: 1;
     cursor: pointer; white-space: nowrap; list-style: none;
   }}
   .cite-dl summary svg {{ width: .95rem; height: .95rem; flex: none; }}
@@ -1027,10 +1066,10 @@ PAGE = """<!DOCTYPE html>
      (aligned with the box border below it). Desktop only, like the
      checkboxes it controls - see the media query below. */
   .pub-toolbar {{
-    /* "Select all" sits flush with the box border below (no left inset);
-       right padding still matches .pub-scroll's so the sort buttons line up
-       with its right edge. */
-    padding: 0 1.1rem .6rem 0;
+    /* Flush with the box border on both sides - "Select all" on the left,
+       the sort toggle's "Citations" button on the right - full stop, no
+       inset to match anything below. */
+    padding: 0 0 .6rem;
     border-bottom: 1px solid var(--rule);
     margin-bottom: .5rem;
     font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
@@ -1038,12 +1077,23 @@ PAGE = """<!DOCTYPE html>
   }}
   .pub-toolbar-row {{ display: flex; align-items: center; gap: .6rem; }}
   .pub-toolbar-label {{ cursor: pointer; }}
+  .pub-search {{
+    font: inherit; font-size: 1.0625rem; min-height: 1.9rem;
+    width: 14rem; min-width: 0; flex: 0 1 14rem;
+    padding: .3rem .6rem; margin-left: .75rem;
+    border: 1px solid var(--rule-2); border-radius: 6px;
+    background: var(--bg); color: var(--text);
+  }}
+  .pub-search::placeholder {{ color: var(--faint); }}
+  .pub-search:hover {{ border-color: var(--accent); }}
+  /* No native "clear" X in Firefox/older WebKit; harmless where unsupported. */
+  .pub-search::-webkit-search-cancel-button {{ cursor: pointer; }}
   .sort-toggle {{ display: flex; align-items: center; gap: .5rem; margin-left: auto; }}
   .sort-toggle-label {{ color: var(--faint); }}
   .sort-btn {{
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 1.9rem;
-    font: inherit; font-size: 1.0625rem; font-weight: 600; line-height: 1;
+    font: inherit; font-size: 1.0625rem; font-weight: 400; line-height: 1;
     background: var(--bg); border: none; border-radius: 6px;
     color: var(--muted); padding: .4rem .75rem; cursor: pointer;
   }}
@@ -1247,6 +1297,10 @@ PAGE = """<!DOCTYPE html>
         <span class="cite-col cite-col-select-all"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
         <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
         <details class="cite-dl cite-all">{citemenu_all}</details>
+        <input type="search" class="pub-search" id="pub-search"
+               placeholder="Search year, author, title, journal…"
+               aria-label="Search publications (supports AND, OR, NOT, and &quot;quoted phrases&quot;)"
+               autocomplete="off">
         <span class="sort-toggle" role="group" aria-label="Sort publications by">
           <span class="sort-toggle-label">Sort:</span>
           <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
@@ -2108,6 +2162,7 @@ var PUB_STATS = window.fetch
     li.__next = li.nextElementSibling;
   }});
 
+  var applySearch = function () {{}};   // replaced below once the search box is set up
   var flatList = null;   // built lazily, the first time "Citations" is used
 
   function restoreYearOrder() {{
@@ -2136,10 +2191,26 @@ var PUB_STATS = window.fetch
     return idEl.dataset.pmid ? "pmid:" + idEl.dataset.pmid : "doi:" + idEl.dataset.doi.toLowerCase();
   }}
 
+  // "Published simultaneously in" sub-entries sort by their OWN citation
+  // count too (most to fewest), not just wherever they happened to be
+  // written in - same statsKeyFor() lookup, since each carries its own
+  // data-pmid/data-doi exactly like a top-level article does.
+  function sortSubEntries(li, precomputed) {{
+    var list = li.querySelector(":scope > .pub-text > ul");
+    if (!list) return;
+    var subs = [].slice.call(list.querySelectorAll(":scope > li.subpub"));
+    subs.sort(function (a, b) {{
+      var ac = (precomputed[statsKeyFor(a)] || {{}}).citations || 0;
+      var bc = (precomputed[statsKeyFor(b)] || {{}}).citations || 0;
+      return bc - ac;
+    }}).forEach(function (sub) {{ list.appendChild(sub); }});
+  }}
+
   // Kicked off once, immediately - PUB_STATS is usually already in flight
   // (or resolved) by the time anyone clicks "Citations", so this is instant
   // rather than waiting on Dimensions badges to load and render.
   var citationsOrderPromise = PUB_STATS.then(function (precomputed) {{
+    pubs.forEach(function (li) {{ sortSubEntries(li, precomputed); }});
     return pubs.slice().sort(function (a, b) {{
       var ac = (precomputed[statsKeyFor(a)] || {{}}).citations || 0;
       var bc = (precomputed[statsKeyFor(b)] || {{}}).citations || 0;
@@ -2182,6 +2253,7 @@ var PUB_STATS = window.fetch
       if (btn.dataset.sort === "year") {{
         restoreYearOrder();
         scrollListToTop();
+        applySearch();
         return;
       }}
 
@@ -2191,11 +2263,84 @@ var PUB_STATS = window.fetch
       getCitationsOrder().then(function (ranked) {{
         applyCitationsOrder(ranked);
         scrollListToTop();
+        applySearch();
         btn.textContent = label;
         btn.disabled = false;
       }});
     }});
   }});
+
+  /* --- search ------------------------------------------------------------
+     Live-filters by year, author, title, or journal - whatever text is
+     already on the page, plus each article's year (shown only on the
+     section heading, not per-article, but still searchable via the __year
+     already recorded above). A lightweight boolean grammar: bare words are
+     ANDed together, "quoted phrases" match as a unit, NOT (or a leading -)
+     excludes a term, and OR splits into alternative groups - any group
+     fully satisfied is a match. No parentheses/nesting; this is meant to be
+     typed quickly, not a full query language. */
+  var searchInput = document.getElementById("pub-search");
+  if (searchInput) {{
+    function tokenize(str) {{
+      var tokens = [], m, negateNext = false;
+      var re = /"([^"]*)"|(-)?(\\S+)/g;
+      while ((m = re.exec(str))) {{
+        var text = m[1] !== undefined ? m[1] : m[3];
+        if (!text) continue;
+        if (/^AND$/i.test(text)) continue;
+        if (/^NOT$/i.test(text)) {{ negateNext = true; continue; }}
+        tokens.push({{ text: text.toLowerCase(), negate: !!m[2] || negateNext }});
+        negateNext = false;
+      }}
+      return tokens;
+    }}
+
+    function parseQuery(q) {{
+      return q.split(/\\s+OR\\s+/i).map(function (part) {{
+        var must = [], mustNot = [];
+        tokenize(part).forEach(function (t) {{
+          (t.negate ? mustNot : must).push(t.text);
+        }});
+        return {{ must: must, mustNot: mustNot }};
+      }}).filter(function (g) {{ return g.must.length || g.mustNot.length; }});
+    }}
+
+    function searchTextOf(li) {{
+      if (li.__searchText === undefined) {{
+        li.__searchText = (li.textContent + " " + li.__year).toLowerCase();
+      }}
+      return li.__searchText;
+    }}
+
+    applySearch = function () {{
+      var q = searchInput.value.trim();
+      var groups = q ? parseQuery(q) : null;
+
+      pubs.forEach(function (li) {{
+        if (!groups || !groups.length) {{ li.hidden = false; return; }}
+        var text = searchTextOf(li);
+        li.hidden = !groups.some(function (g) {{
+          return g.must.every(function (t) {{ return text.indexOf(t) !== -1; }}) &&
+                 !g.mustNot.some(function (t) {{ return text.indexOf(t) !== -1; }});
+        }});
+      }});
+
+      // Flat (Citations) list stays entirely hidden regardless of search -
+      // only touch year-block visibility while actually showing year-blocks.
+      var yearMode = document.querySelector('.sort-btn[data-sort="year"]')
+        .getAttribute("aria-pressed") === "true";
+      if (yearMode) {{
+        [].forEach.call(publist.querySelectorAll(".year-block"), function (block) {{
+          var anyVisible = [].some.call(block.querySelectorAll("li.pub"), function (li) {{
+            return !li.hidden;
+          }});
+          block.hidden = !anyVisible;
+        }});
+      }}
+    }};
+
+    searchInput.addEventListener("input", applySearch);
+  }}
 }})();
 </script>
 {analytics}
