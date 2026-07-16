@@ -137,20 +137,28 @@ def doi_slug(doi):
 
 def local_paper(doi):
     """
-    "papers/<slug>.pdf" if this DOI has a manually-supplied local copy in
-    docs/papers/, else "". These are articles Evan has personally confirmed
-    are free to redistribute (he supplied the files directly - see the
-    conversation this was set up in) and are hosted directly on this site
-    rather than linked out, since no scriptable copy exists anywhere else
-    for them (many sit behind the same Cloudflare-style bot walls documented
-    above). Only ever used to fill a gap - an article that already resolves
-    a real PDF through the normal chain keeps linking to that original
-    source instead (see main()).
+    (url, ext) for a manually-supplied local copy in docs/papers/ keyed by this
+    DOI's slug, or ("", "") if none. ext is "pdf" normally, or "docx" for the
+    rare case where the only shareable copy Evan has is a Word-doc manuscript
+    (an OSF/preprint that never got a typeset PDF) - same "type": "docx"
+    labeling the preprint-link fallback already produces, just supplied
+    directly. A .pdf is preferred: if both exist for a DOI, the PDF wins.
+
+    These are articles Evan has personally confirmed are free to redistribute
+    (he supplied the files directly) and are hosted directly on this site
+    rather than linked out, since no scriptable copy exists anywhere else for
+    them (many sit behind the same Cloudflare-style bot walls documented
+    above). Only ever used to fill a gap - an article that already resolves a
+    real PDF through the normal chain keeps linking to that original source
+    instead (see main()).
     """
     if not doi:
-        return ""
-    path = LOCAL_PAPERS_DIR / (doi_slug(doi) + ".pdf")
-    return f"papers/{path.name}" if path.is_file() else ""
+        return "", ""
+    for ext in ("pdf", "docx"):
+        path = LOCAL_PAPERS_DIR / (doi_slug(doi) + "." + ext)
+        if path.is_file():
+            return f"papers/{path.name}", ext
+    return "", ""
 
 
 EMAIL = build.CONTACT_EMAIL
@@ -522,9 +530,9 @@ def main():
         doi_nbk = p2d.get(v["pmid"], ("", ""))
         doi = v["doi"] or doi_nbk[0]
 
-        local = local_paper(doi)
+        local, local_ext = local_paper(doi)
         if local:
-            pdfs[id_] = (local, "pdf")
+            pdfs[id_] = (local, local_ext)
             local_count += 1
             continue
 

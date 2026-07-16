@@ -43,7 +43,8 @@
 "pdf": "papers/10_1177_1049731513512374.pdf"
 },
 "doi:10.1177/25152459221149735": {
-"citations": 8
+"citations": 8,
+"pdf": "papers/10_1177_25152459221149735.pdf"
 },
 "doi:10.1177/25152459251375445": {
 "citations": 1,
@@ -65,7 +66,10 @@
 "citations": 9,
 "pdf": "papers/10_17226_27746.pdf"
 },
-"doi:10.17605/osf.io/sm78t": {},
+"doi:10.17605/osf.io/sm78t": {
+"pdf": "papers/10_17605_osf_io_sm78t.docx",
+"type": "docx"
+},
 "doi:10.31219/osf.io/nw7fy_v1": {
 "citations": 0,
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
@@ -75,14 +79,16 @@
 "pdf": "papers/10_31222_osf_io_nmfs6.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/npvwr/download"
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
 "pdf": "papers/10_31222_osf_io_uegmb.pdf"
 },
 "doi:10.31234/osf.io/g627d": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_31234_osf_io_g627d.pdf"
 },
 "doi:10.4073/csr.2012.11": {
 "citations": 41,
@@ -493,7 +499,8 @@
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
-"citations": 21
+"citations": 21,
+"pdf": "papers/10_1098_rsos_221093.pdf"
 },
 "pmid:36994923": {
 "citations": 37,
@@ -511,11 +518,12 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 61,
-"pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
+"citations": 61
 },
 "pmid:37178346": {
-"citations": 13
+"citations": 13,
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 19,
