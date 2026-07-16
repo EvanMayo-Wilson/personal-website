@@ -58,6 +58,18 @@ rejected push.
   from bracketed `[Published protocol]` / `[Preprint]` links. So an in-press
   paper with only a protocol link has **no title link and no download buttons**
   — that's intentional.
+- **The title link always goes to the journal/publisher's own page for the
+  article** (or the monograph/report page for non-journal items) — never to
+  PubMed. PMID gets its own separate hyperlink to PubMed (see below). If you
+  ever find a title linking to PubMed instead of the publisher, that's a
+  mistake to fix, not a style choice.
+- A book chapter or item with no PMID/DOI at all (NICE monographs before they
+  had real PMIDs, NASEM reports, book chapters) gets a hand-written record in
+  `content/csl-extra.json` instead, keyed by its URL (or exact title if it has
+  no link) — that's what feeds its citation-download formats since there's
+  nothing to look up automatically.
+- Every outbound link opens in a new tab automatically (site-wide behavior,
+  not something to add per-link).
 - PMID is written `PMID: [12345678](https://pubmed.ncbi.nlm.nih.gov/12345678/).`
   — number inside the link, period outside. DOI (only when there's no PMID)
   is written `DOI: [10.xxxx/yyyy](https://doi.org/10.xxxx/yyyy).` — same
@@ -94,11 +106,6 @@ rejected push.
   not another when it isn't actually part of an acronym/proper name either
   way — keep it lowercase throughout, matching the existing convention.
 
-A fuller, more example-heavy version of this house style lives in
-`STYLE_GUIDE.md` at the repo root - **gitignored, local-only, draft/pending
-Evan's approval**. Check it if it exists on whatever machine you're running
-on; once approved it's meant to get referenced here as the binding version.
-
 ## Adding a new paper
 
 1. **Check for an existing placeholder first.** In-press/preprint/protocol
@@ -124,14 +131,21 @@ on; once approved it's meant to get referenced here as the binding version.
        trailing bracket to the results entry too, but don't delete the
        protocol's own bullet.
 2. Place the new entry in the right year and author-position slot (see house
-   style above).
-3. `python3 build.py`, then `python3 generate_csl_cache.py` and
+   style above). If it's a simultaneous publication, order its sub-entries by
+   citation count and double-check each sub-entry's own author order
+   independently — it's common for author order to differ between the
+   simultaneously-published versions.
+3. Check the title against the capitalization rule above before committing it
+   — sentence case, acronyms/proper-nouns excepted, capital after any colon.
+4. Confirm the title link goes to the journal/publisher page (never PubMed)
+   and that PMID/DOI are written in the format above.
+5. `python3 build.py`, then `python3 generate_csl_cache.py` and
    `python3 generate_pub_stats.py` to fetch the new entry's CSL record, PDF
    link, and citation count ahead of time (see each script's docstring) —
    optional, since both have live client-side fallbacks, but running them is
    what keeps the Cite button, the PDF button, and "Sort by Citations" instant
    for the new entry instead of waiting a day for the scheduled Actions.
-4. Commit and push.
+6. Commit and push.
 
 ## Features wired up
 
@@ -164,11 +178,14 @@ on; once approved it's meant to get referenced here as the binding version.
     both are fixed-size slots (`.oa-empty`/`.cite-dl-empty` placeholders
     hold the space even when empty) so the column stays aligned regardless
     of whether a given article has a PDF. The suggested download filename
-    (`Author[_et_al]_Year_First_few_title_words.ext`) is set via the
-    anchor's `download=""` attribute at build time (see `pdf_filename()` in
-    `build.py`) but the *extension* isn't known until the client script
-    resolves whether it's a real PDF or (rarely) a Word-doc preprint - see
-    `show()`'s `type` param in the inline script.
+    (`Author[_et_al]_Year_First_few_title_words.ext`, e.g.
+    `Mayo-Wilson_2023_Harms_were_detected.pdf` - honored by browsers only for
+    same-origin resources, so it's a best-effort, not a guarantee, for
+    cross-origin publisher links) is set via the anchor's `download=""`
+    attribute at build time (see `pdf_filename()` in `build.py`) but the
+    *extension* isn't known until the client script resolves whether it's a
+    real PDF or (rarely) a Word-doc preprint - see `show()`'s `type` param in
+    the inline script.
   - Re-sorting (either direction) scrolls `.pub-scroll` back to the top.
   - "Citations" mode ranks the whole list by `docs/pub-stats.json`'s
     precomputed OpenAlex citation count (falls back to 0, i.e. sorts last,

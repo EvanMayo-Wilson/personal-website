@@ -73,13 +73,15 @@ until approved").
    `generate_pub_stats.py` checks this folder first, ahead of every live
    lookup. See `CLAUDE.md`'s `docs/pub-stats.json` bullet for the full
    resolution order.
-6. **`STYLE_GUIDE.md`** (repo root, gitignored, local-only) — a fuller,
-   example-heavy draft of the house style, written for Evan to review.
-   Status: **not yet approved**. It's referenced from `CLAUDE.md` as
-   "gitignored, local-only, draft" — nothing currently enforces it except a
-   Claude session re-reading it. Once Evan approves it, the natural next
-   step is to fold anything it says that `CLAUDE.md` doesn't already say back
-   into `CLAUDE.md` and stop treating it as separate/pending.
+6. **`STYLE_GUIDE.md`** (repo root, gitignored, local-only) was written as a
+   fuller, example-heavy draft of the house style for Evan to review. Evan
+   **approved it** and asked for it to be merged into `CLAUDE.md`; the new
+   details it added (title link must go to publisher not PubMed,
+   `content/csl-extra.json` keying, every link opens a new tab, a concrete
+   filename example, two extra checklist steps) are now folded into
+   `CLAUDE.md`'s house-style/checklist sections, and the standalone file has
+   been deleted (also removed from `.gitignore`, since it no longer exists).
+   There is now one binding style reference, not two.
 7. **`CLAUDE.md` updated** (this session, immediately before this handoff) to
    capture: the title-capitalization rule, the revised protocol-handling rule
    (preprint/registered protocols get folded into the results entry and
@@ -94,9 +96,6 @@ until approved").
 
 - **Commit and push the `CLAUDE.md` changes** — pending as of this handoff,
   see below.
-- **STYLE_GUIDE.md is still awaiting Evan's review/approval.** Don't treat it
-  as binding yet; if he approves it (in full or with edits), fold anything
-  new into `CLAUDE.md` and stop maintaining two documents.
 - Not requested yet, so don't do it unprompted: extending the
   `docs/papers/`-style local-hosting mechanism to any further
   Cloudflare-blocked articles beyond the 60 already added, in case Evan
@@ -140,10 +139,9 @@ actually load the page in a browser.
 
 ```
 Continuing work on evanmayo-wilson.org (/Users/evanmw/Claude/Personal website).
-Read CLAUDE.md first — it has the full house style, feature inventory, and a
+Read CLAUDE.md first — it has the full house style (now the single binding
+reference, merged from the former STYLE_GUIDE.md), feature inventory, and a
 Gotchas section from the last working session. HANDOFF.md has a fuller
-narrative of what was just done if you want more context. STYLE_GUIDE.md
-(gitignored, local) is a fuller draft style doc still awaiting Evan's
-approval — check if it exists on this machine. No open bugs are known at
-handoff time; check with Evan for what's next.
+narrative of what was just done if you want more context. No open bugs are
+known at handoff time; check with Evan for what's next.
 ```
