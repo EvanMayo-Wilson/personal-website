@@ -61,6 +61,17 @@ plain 200 rather than an error. A resolved PDF identical to the article's
 own title-link URL is dropped entirely (a "PDF" button that lands exactly
 where the title already does is worse than no button).
 
+Locally-hosted papers (docs/papers/): checked first, ahead of every live
+lookup above, via local_paper(). Evan supplied these PDFs directly (from his
+own EndNote library) for articles he's personally confirmed are free to
+redistribute - mostly ones with no scriptable-accessible copy anywhere else
+(the same Cloudflare-style bot walls documented below). Keyed by DOI-slug
+filename (see doi_slug()); only ever used to fill a genuine gap - an article
+that already had a real PDF through the normal chain at the time these were
+added keeps linking to that original source instead of a local copy. As a
+same-origin file, the suggested download filename is fully honored by every
+browser here, unlike the cross-origin publisher links above.
+
 Not attempted: institutional-subscription APIs (Elsevier, Wiley TDM, Scopus,
 Springer) some sibling projects on this machine use - those are gated on
 Evan's personal/UNC-institutional credentials and IP-based entitlement, which
@@ -111,6 +122,32 @@ except ImportError:
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "docs" / "pub-stats.json"
+LOCAL_PAPERS_DIR = ROOT / "docs" / "papers"
+
+
+def doi_slug(doi):
+    """DOI -> the filename (minus .pdf) a locally-hosted copy is keyed by -
+    see local_paper()."""
+    return re.sub(r"[^a-z0-9]+", "_", doi.lower()).strip("_")
+
+
+def local_paper(doi):
+    """
+    "papers/<slug>.pdf" if this DOI has a manually-supplied local copy in
+    docs/papers/, else "". These are articles Evan has personally confirmed
+    are free to redistribute (he supplied the files directly - see the
+    conversation this was set up in) and are hosted directly on this site
+    rather than linked out, since no scriptable copy exists anywhere else
+    for them (many sit behind the same Cloudflare-style bot walls documented
+    above). Only ever used to fill a gap - an article that already resolves
+    a real PDF through the normal chain keeps linking to that original
+    source instead (see main()).
+    """
+    if not doi:
+        return ""
+    path = LOCAL_PAPERS_DIR / (doi_slug(doi) + ".pdf")
+    return f"papers/{path.name}" if path.is_file() else ""
+
 
 EMAIL = build.CONTACT_EMAIL
 UA = f"evanmayo-wilson.org pub-stats builder (mailto:{EMAIL})"
@@ -468,9 +505,17 @@ def main():
 
     print("Resolving PDF links...")
     pdfs = {}   # id -> (url, ext) - ext "docx" only ever from a preprint fallback
+    local_count = 0
     for i, (id_, v) in enumerate(items.items(), 1):
         doi_nbk = p2d.get(v["pmid"], ("", ""))
         doi = v["doi"] or doi_nbk[0]
+
+        local = local_paper(doi)
+        if local:
+            pdfs[id_] = (local, "pdf")
+            local_count += 1
+            continue
+
         if not doi:
             candidate, ext = smart_pdf(v["title_url"]), "pdf"
             if not candidate and doi_nbk[1]:
@@ -489,8 +534,13 @@ def main():
             print(f"  {i}/{len(items)}...")
         time.sleep(GAP / 1000)
     docx_count = sum(1 for _u, e in pdfs.values() if e == "docx")
+    extras = []
+    if docx_count:
+        extras.append(f"{docx_count} Word-doc preprints")
+    if local_count:
+        extras.append(f"{local_count} locally-hosted (see docs/papers/)")
     print(f"  found {len(pdfs)}/{len(items)} real full-text links"
-          + (f" ({docx_count} of those are Word-doc preprints)" if docx_count else ""))
+          + (f" ({', '.join(extras)})" if extras else ""))
 
     # Every item gets a record, even an empty one - the client relies on
     # "this id is present at all" to mean "already checked, don't bother

@@ -4,13 +4,16 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 177
+"citations": 177,
+"pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
-"citations": 85
+"citations": 85,
+"pdf": "papers/10_1007_s11292_006_9005_x.pdf"
 },
 "doi:10.1007/s11292-013-9180-5": {
-"citations": 38
+"citations": 38,
+"pdf": "papers/10_1007_s11292_013_9180_5.pdf"
 },
 "doi:10.1016/s0140-6736(13)60370-0": {
 "citations": 9
@@ -19,19 +22,24 @@
 "citations": 0
 },
 "doi:10.1038/s41562-017-0286-z": {
-"citations": 5
+"citations": 5,
+"pdf": "papers/10_1038_s41562_017_0286_z.pdf"
 },
 "doi:10.1093/bjsw/bct129": {
-"citations": 6
+"citations": 6,
+"pdf": "papers/10_1093_bjsw_bct129.pdf"
 },
 "doi:10.1111/j.1756-5391.2011.01129.x": {
-"citations": 18
+"citations": 18,
+"pdf": "papers/10_1111_j_1756_5391_2011_01129_x.pdf"
 },
 "doi:10.1177/1049731511430836": {
-"citations": 84
+"citations": 84,
+"pdf": "papers/10_1177_1049731511430836.pdf"
 },
 "doi:10.1177/1049731513512374": {
-"citations": 19
+"citations": 19,
+"pdf": "papers/10_1177_1049731513512374.pdf"
 },
 "doi:10.1177/25152459221149735": {
 "citations": 8,
@@ -39,7 +47,8 @@
 "type": "docx"
 },
 "doi:10.1177/25152459251375445": {
-"citations": 1
+"citations": 1,
+"pdf": "papers/10_1177_25152459251375445.pdf"
 },
 "doi:10.12688/f1000research.179775.1": {
 "citations": 0,
@@ -50,63 +59,75 @@
 "pdf": "https://f1000research.com/articles/15-665/pdf"
 },
 "doi:10.17226/26039": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_17226_26039.pdf"
 },
 "doi:10.17226/27746": {
-"citations": 9
+"citations": 9,
+"pdf": "papers/10_17226_27746.pdf"
 },
 "doi:10.17605/osf.io/sm78t": {},
 "doi:10.31219/osf.io/nw7fy_v1": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/nmfs6": {
-"citations": 4,
-"pdf": "https://osf.io/nmfs6/download"
+"citations": 4
 },
 "doi:10.31222/osf.io/npvwr": {
 "citations": 0,
 "pdf": "https://osf.io/npvwr/download"
 },
 "doi:10.31222/osf.io/uegmb": {
-"citations": 0,
-"pdf": "https://osf.io/uegmb/download"
+"citations": 0
 },
 "doi:10.31234/osf.io/g627d": {
 "citations": 0,
 "pdf": "https://osf.io/g627d/download"
 },
 "doi:10.4073/csr.2012.11": {
-"citations": 41
+"citations": 41,
+"pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 234
+"citations": 234,
+"pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
-"citations": 15
+"citations": 15,
+"pdf": "papers/10_4073_csr_2014_3.pdf"
 },
 "pmid:17329641": {
-"citations": 66
+"citations": 66,
+"pdf": "papers/10_2105_ajph_2006_094169.pdf"
 },
 "pmid:18254118": {
-"citations": 15
+"citations": 15,
+"pdf": "papers/10_1002_14651858_cd006855_pub2.pdf"
 },
 "pmid:18425973": {
-"citations": 31
+"citations": 31,
+"pdf": "papers/10_1002_14651858_cd006860_pub2.pdf"
 },
 "pmid:18646141": {
-"citations": 15
+"citations": 15,
+"pdf": "papers/10_1002_14651858_cd006277_pub2.pdf"
 },
 "pmid:18646171": {
-"citations": 14
+"citations": 14,
+"pdf": "papers/10_1002_14651858_cd006856_pub2.pdf"
 },
 "pmid:18646172": {
-"citations": 16
+"citations": 16,
+"pdf": "papers/10_1002_14651858_cd006858_pub2.pdf"
 },
 "pmid:18646173": {
-"citations": 16
+"citations": 16,
+"pdf": "papers/10_1002_14651858_cd006859_pub2.pdf"
 },
 "pmid:21154399": {
-"citations": 182
+"citations": 182,
+"pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
 "citations": 349
@@ -119,27 +140,32 @@
 "citations": 435
 },
 "pmid:23697669": {
-"citations": 70
+"citations": 70,
+"pdf": "papers/10_1136_bmj_f2541.pdf"
 },
 "pmid:23734256": {
 "citations": 113,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0065442&type=printable"
 },
 "pmid:23789914": {
-"citations": 16
+"citations": 16,
+"pdf": "papers/10_1111_jcpp_12106.pdf"
 },
 "pmid:23796394": {
-"citations": 6
+"citations": 6,
+"pdf": "papers/10_1111_add_12249.pdf"
 },
 "pmid:23810026": {
-"citations": 95
+"citations": 95,
+"pdf": "papers/10_1016_j_jclinepi_2013_03_006.pdf"
 },
 "pmid:23915044": {
 "citations": 79,
 "pdf": "https://trialsjournal.biomedcentral.com/counter/pdf/10.1186/1745-6215-14-242"
 },
 "pmid:23947317": {
-"citations": 20
+"citations": 20,
+"pdf": "papers/10_2105_ajph_2013_301447.pdf"
 },
 "pmid:23953382": {
 "citations": 9
@@ -149,10 +175,12 @@
 "pdf": "https://implementationscience.biomedcentral.com/counter/pdf/10.1186/1748-5908-8-99"
 },
 "pmid:24018460": {
-"citations": 116
+"citations": 116,
+"pdf": "papers/10_1002_14651858_cd005330_pub4.pdf"
 },
 "pmid:24021509": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_4088_jcp_13lr08420.pdf"
 },
 "pmid:24029534": {
 "citations": 21,
@@ -167,15 +195,19 @@
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089257&type=printable"
 },
 "pmid:24826920": {
-"citations": 183
+"citations": 183,
+"pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
 "citations": 69,
 "pdf": "https://dash.harvard.edu/bitstreams/7312037d-2af9-6bd4-e053-0100007fdf3b/download"
 },
-"pmid:25076832": {},
+"pmid:25076832": {
+"pdf": "papers/10_1177_1049731513498118.pdf"
+},
 "pmid:25254354": {
-"citations": 39
+"citations": 39,
+"pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
 "citations": 114,
@@ -192,20 +224,24 @@
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
 },
 "pmid:25827035": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
 "citations": 299,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
-"citations": 112
+"citations": 112,
+"pdf": "papers/10_1016_j_cpr_2015_04_002.pdf"
 },
 "pmid:26035473": {
-"citations": 21
+"citations": 21,
+"pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2788
+"citations": 2788,
+"pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
 "citations": 25,
@@ -215,10 +251,11 @@
 "citations": 0
 },
 "pmid:26361000": {
-"citations": 694
+"citations": 695
 },
 "pmid:26407814": {
-"citations": 28
+"citations": 28,
+"pdf": "papers/10_1136_bmj_h4169.pdf"
 },
 "pmid:26506554": {
 "citations": 39,
@@ -233,7 +270,8 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:26934268": {
-"citations": 2
+"citations": 2,
+"pdf": "papers/10_1001_jama_2015_17855.pdf"
 },
 "pmid:27262048": {
 "citations": 1
@@ -242,10 +280,12 @@
 "citations": 93
 },
 "pmid:27624441": {
-"citations": 20
+"citations": 20,
+"pdf": "papers/10_1177_1090198116668522.pdf"
 },
 "pmid:28282701": {
-"citations": 489
+"citations": 489,
+"pdf": "papers/10_1002_14651858_cd008524_pub3.pdf"
 },
 "pmid:28529187": {
 "citations": 140
@@ -258,10 +298,12 @@
 "pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 110
+"citations": 111,
+"pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1410
+"citations": 1411,
+"pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
 "citations": 26
@@ -297,7 +339,8 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
-"citations": 237
+"citations": 237,
+"pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
 "citations": 77
@@ -308,50 +351,54 @@
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-019-3581-3"
 },
 "pmid:31657841": {
-"citations": 7
+"citations": 7,
+"pdf": "papers/10_1001_jamainternmed_2019_4710.pdf"
 },
 "pmid:31788792": {
 "citations": 23
 },
 "pmid:33060401": {
-"citations": 18
+"citations": 18,
+"pdf": "papers/10_1097_acm_0000000000003806.pdf"
 },
 "pmid:33258697": {
-"citations": 27
+"citations": 27,
+"pdf": "papers/10_1177_1740774520972687.pdf"
 },
 "pmid:33334836": {
 "citations": 75,
 "pdf": "https://findresearcher.sdu.dk:8443/ws/files/179013296/e040478.full.pdf"
 },
 "pmid:33439718": {
-"citations": 1
+"citations": 1,
+"pdf": "papers/10_2105_ajph_2020_306077.pdf"
 },
 "pmid:33628434": {
 "citations": 13,
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 4994,
+"citations": 4996,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13622,
+"citations": 13624,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11155,
+"citations": 11164,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 97390,
+"citations": 97533,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/149119376/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33789819": {
-"citations": 4156,
+"citations": 4158,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11605,
+"citations": 11616,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -370,28 +417,24 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-021-01284-x.pdf"
 },
 "pmid:34474960": {
-"citations": 4
+"citations": 4,
+"pdf": "papers/10_1016_j_jsams_2021_08_004.pdf"
 },
 "pmid:34678079": {
 "citations": 59
 },
 "pmid:34740399": {
-"citations": 8
+"citations": 8,
+"pdf": "papers/10_1016_j_arthro_2021_09_005.pdf"
 },
 "pmid:34742788": {
-"citations": 66,
-"pdf": "https://osf.io/gukd4/download",
-"type": "docx"
+"citations": 66
 },
 "pmid:34742789": {
-"citations": 46,
-"pdf": "https://osf.io/7g4ez/download",
-"type": "docx"
+"citations": 46
 },
 "pmid:34742790": {
-"citations": 39,
-"pdf": "https://osf.io/3m85q/download",
-"type": "docx"
+"citations": 39
 },
 "pmid:34847946": {
 "citations": 4,
@@ -410,23 +453,28 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-022-01336-w.pdf"
 },
 "pmid:35294044": {
-"citations": 72
+"citations": 72,
+"pdf": "papers/10_1002_14651858_cd008524_pub4.pdf"
 },
 "pmid:35525252": {
-"citations": 18
+"citations": 18,
+"pdf": "papers/10_1016_s2215_0366_22_00041_4.pdf"
 },
 "pmid:35932429": {
 "citations": 9,
 "pdf": "https://sportsmedicine-open.springeropen.com/counter/pdf/10.1186/s40798-022-00496-x"
 },
 "pmid:36065832": {
-"citations": 7
+"citations": 7,
+"pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 714
+"citations": 715,
+"pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 302
+"citations": 303,
+"pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
 "citations": 21,
@@ -434,7 +482,8 @@
 "type": "docx"
 },
 "pmid:36994923": {
-"citations": 37
+"citations": 37,
+"pdf": "papers/10_1002_14651858_cd009384_pub3.pdf"
 },
 "pmid:37043591": {
 "pdf": "https://www.pcori.org/sites/default/files/PCORI-Dickersin038-English-Abstract.pdf"
@@ -444,11 +493,10 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 253,
-"pdf": "https://eprints.whiterose.ac.uk/199829/1/bmj-2022-073725.full.pdf"
+"citations": 255
 },
 "pmid:37100738": {
-"citations": 60,
+"citations": 61,
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
@@ -457,12 +505,11 @@
 "type": "docx"
 },
 "pmid:37562729": {
-"citations": 19
+"citations": 19,
+"pdf": "papers/10_1016_j_jclinepi_2023_08_004.pdf"
 },
 "pmid:37871835": {
-"citations": 9,
-"pdf": "https://osf.io/ej7fp/download",
-"type": "docx"
+"citations": 9
 },
 "pmid:37984978": {
 "citations": 105,
@@ -477,7 +524,8 @@
 "pdf": "https://pure.bond.edu.au/ws/files/225897896/Consensus_Statement_for_Protocols_of_Factorial_Randomized_Trials_Extension_of_the_SPIRIT_2013_Statement.pdf"
 },
 "pmid:38190185": {
-"citations": 18
+"citations": 18,
+"pdf": "papers/10_1001_jamanetworkopen_2023_50688.pdf"
 },
 "pmid:38360805": {
 "citations": 24,
@@ -504,7 +552,8 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
-"citations": 7
+"citations": 7,
+"pdf": "papers/10_7326_m24_0771.pdf"
 },
 "pmid:40021657": {
 "citations": 5,
@@ -514,14 +563,15 @@
 "citations": 3
 },
 "pmid:40780848": {
-"citations": 30
+"citations": 31
 },
 "pmid:41626914": {
 "citations": 8,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E41BD8EC61447E3E559C43AB95F7964A/S1759287925000195a.pdf/div-class-title-weighted-corrected-covered-area-wcca-a-measure-of-informational-overlap-among-reviews-div.pdf"
 },
 "pmid:41641596": {
-"citations": 0
+"citations": 0,
+"pdf": "papers/10_1093_milmed_usaf645.pdf"
 },
 "pmid:41723462": {
 "citations": 1,
