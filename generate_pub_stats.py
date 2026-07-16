@@ -27,7 +27,11 @@ PDF resolution tries, in order:
      says so - its crawler may have found a real PDF there once, but a
      handful of publishers (JAMA confirmed) sit behind a bot challenge that
      blocks a script even at a URL that looks like, and once genuinely was,
-     a direct PDF link.
+     a direct PDF link. When an article has OA copies at more than one
+     location, a publisher-hosted one (Unpaywall's host_type "publisher") is
+     always tried before a repository/university one (host_type
+     "repository") - see the sort in resolve_pdf(). This applies across
+     steps 1-3 below, all of which iterate the same location list.
   2. A same-domain "smart" pattern for platforms Unpaywall's data is often
      incomplete for (medRxiv/bioRxiv's <article>.full.pdf, OSF's
      <guid>/download).
@@ -401,6 +405,14 @@ def resolve_pdf(doi, title_url, preprint_url=""):
     if data:
         locs = [data.get("best_oa_location")] + (data.get("oa_locations") or [])
         locs = [loc for loc in locs if loc]
+        # Prefer a publisher-hosted copy over a repository/university one when
+        # both exist for the same DOI - Unpaywall's own "best" pick sometimes
+        # is a repository copy even when the publisher page is itself open
+        # access, and a green-OA university repository deposit can lag the
+        # publisher's version (embargo-outdated, missing a later correction).
+        # sort() is stable, so within each tier the original (best-first)
+        # order is preserved.
+        locs.sort(key=lambda loc: 0 if loc.get("host_type") == "publisher" else 1)
         for loc in locs:
             # Unpaywall's own crawler may have found a real PDF here once,
             # but that doesn't mean a plain request can still reach it today

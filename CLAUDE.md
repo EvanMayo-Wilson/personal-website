@@ -210,7 +210,12 @@ rejected push.
   in order (see the script's own docstring for full detail): **(0)** a
   manually-supplied local copy in `docs/papers/`, keyed by DOI-slug filename
   (see below) - checked first, ahead of every live lookup; **(1)** Unpaywall's
-  `url_for_pdf`; **(2)** a same-domain pattern for medRxiv/bioRxiv
+  `url_for_pdf` - when an article has open-access copies at more than one
+  location, a **publisher-hosted copy is always tried before a
+  repository/university one** (Unpaywall's `host_type` field), even if
+  Unpaywall's own "best" pick was the repository copy; this ordering applies
+  to steps (1)-(3) here, all of which iterate the same location list;
+  **(2)** a same-domain pattern for medRxiv/bioRxiv
   (`.full.pdf`) and OSF (`/download`); **(3)** the publisher's own
   `<meta name="citation_pdf_url">` tag (the same convention Google Scholar
   reads), tried against every OA location's own page, not just the DOI
@@ -237,13 +242,30 @@ rejected push.
     behind one of these are correctly left without a button.
   - **`docs/papers/`** holds PDFs Evan has personally confirmed are free to
     redistribute (mostly for articles stuck behind the bot walls above, with
-    no other legal route to a working link) - he supplies the file, it gets
-    named `<doi-slug>.pdf` (see `doi_slug()`) and dropped in that folder, and
-    `generate_pub_stats.py` picks it up automatically on the next run. Only
-    ever used to fill a genuine gap - an article that already resolves a
-    real PDF through the normal chain keeps linking to that original source
-    instead. As a same-origin file, its suggested download filename is fully
-    honored by every browser, unlike the cross-origin publisher links above.
+    no other legal route to a working link), named `<doi-slug>.pdf` (see
+    `doi_slug()`) and picked up automatically by `generate_pub_stats.py` on
+    its next run. Only ever used to fill a genuine gap - an article that
+    already resolves a real PDF through the normal chain keeps linking to
+    that original source instead. As a same-origin file, its suggested
+    download filename is fully honored by every browser, unlike the
+    cross-origin publisher links above.
+    - **Source of these files**: Evan's personal EndNote library at
+      `Papers/` (repo root - untracked, gitignored, local-only; not the
+      public site). The library's own attachment storage
+      (`Papers/Evan's Papers.Data/PDF/<id>/<filename>`, indexed by
+      `Papers/Evan's Papers.Data/sdb/sdb.eni`, a SQLite file - `refs` table's
+      `electronic_resource_number` column has the DOI, `file_res` maps
+      `refs_id` → attachment path) is the actual full set he's vetted as
+      shareable - that's what "I added PDFs to an EndNote file" means each
+      time he says it, not any one flat export folder that happened to sit
+      alongside it on a given day. **Match against the whole attachment
+      store, not just whatever folder was used last time** - a session once
+      only used a 76-file flat export folder a sibling project had produced
+      from a subset of the library, missed 25 further genuine gaps that were
+      only attached directly inside the library itself, and had to be
+      corrected in a later session. Match by DOI (case-insensitive), verify
+      each candidate is a real PDF (`%PDF-` magic number) before copying,
+      and only copy for entries with no existing working PDF.
   - Institutional-subscription APIs (Elsevier, Wiley TDM, Scopus, Springer -
     used by sibling projects on this machine for author-permitted research
     use) are deliberately not used here: they're gated on personal/UNC
