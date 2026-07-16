@@ -36,7 +36,9 @@
 "citations": 19
 },
 "doi:10.1177/25152459221149735": {
-"citations": 8
+"citations": 8,
+"pdf": "https://osf.io/9ba3s/download",
+"type": "docx"
 },
 "doi:10.1177/25152459251375445": {
 "citations": 1
@@ -164,7 +166,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
-"citations": 573,
+"citations": 575,
 "pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
@@ -172,7 +174,7 @@
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089257&type=printable"
 },
 "pmid:24826920": {
-"citations": 182,
+"citations": 183,
 "pdf": "https://ora.ox.ac.uk/objects/uuid:0f3e0c78-c83f-4f1d-a8ac-992356da3f01"
 },
 "pmid:24948745": {
@@ -256,7 +258,7 @@
 "citations": 20
 },
 "pmid:28282701": {
-"citations": 488,
+"citations": 489,
 "pdf": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008524.pub3/pdf/full"
 },
 "pmid:28529187": {
@@ -350,11 +352,11 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 4973,
+"citations": 4994,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13596,
+"citations": 13622,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
@@ -366,11 +368,11 @@
 "pdf": "https://www.bmj.com/content/bmj/372/bmj.n71.full.pdf"
 },
 "pmid:33789819": {
-"citations": 4140,
+"citations": 4156,
 "pdf": "http://www.jclinepi.com/article/S0895435621000731/pdf"
 },
 "pmid:33789826": {
-"citations": 11584,
+"citations": 11605,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -400,7 +402,9 @@
 "citations": 8
 },
 "pmid:34742788": {
-"citations": 66
+"citations": 66,
+"pdf": "https://osf.io/gukd4/download",
+"type": "docx"
 },
 "pmid:34742789": {
 "citations": 46,
@@ -471,14 +475,18 @@
 "pdf": "http://www.jclinepi.com/article/S0895435623000902/pdf"
 },
 "pmid:37178346": {
-"citations": 13
+"citations": 13,
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 19,
 "pdf": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10829891/pdf/nihms-1924197.pdf"
 },
 "pmid:37871835": {
-"citations": 9
+"citations": 9,
+"pdf": "https://osf.io/ej7fp/download",
+"type": "docx"
 },
 "pmid:37984978": {
 "citations": 105,

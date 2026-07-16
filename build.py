@@ -292,9 +292,11 @@ TITLE_WORDS_IN_FILENAME = 6
 
 def pdf_filename(year: str, entry_html: str, title: str) -> str:
     """
-    A consistent suggested filename for a PDF download: first author (or
-    "First-author_et_al" when there's more than one), year, first few words
-    of the title. E.g. "Mayo-Wilson_2023_Harms_were_detected_but_not.pdf".
+    A consistent suggested download filename, minus its extension: first
+    author (or "First-author_et_al" when there's more than one), year, first
+    few words of the title. E.g. "Mayo-Wilson_2023_Harms_were_detected_but_not"
+    - the client script appends ".pdf" or ".docx" once it knows which one was
+    actually resolved (see oa_button()).
 
     Browsers only honor an <a download="..."> filename for same-origin/blob
     resources - for the cross-origin publisher PDFs this site links to, most
@@ -303,12 +305,23 @@ def pdf_filename(year: str, entry_html: str, title: str) -> str:
     it) rather than reintroducing a fetch-as-blob step, which behaved
     inconsistently depending on each host's CORS policy.
     """
+    # Usually the author list sits between the title and the italicised
+    # journal name. A few entries (institutional-author reports with no
+    # journal, e.g. a National Academies report) have no <em> at all, so
+    # fall back to everything after the title.
     author_segment_m = (re.search(r"</a>(.*?)<em>", entry_html, re.S)
-                         or re.search(r"</strong>(.*?)<em>", entry_html, re.S))
+                         or re.search(r"</strong>(.*?)<em>", entry_html, re.S)
+                         or re.search(r"</a>(.*)", entry_html, re.S)
+                         or re.search(r"</strong>(.*)", entry_html, re.S))
     authors_text = author_segment_m.group(1) if author_segment_m else ""
     authors_text = re.sub(r"<[^>]+>", "", authors_text)
     authors_text = re.sub(r"\([^)]*\)", "", authors_text)
     authors_text = html.unescape(authors_text).strip(" .,")
+    # An institutional author ("National Academies of Sciences, Engineering,
+    # and Medicine. 2024. Washington, DC: ...") reads as several comma-split
+    # "authors" once the sentence continues past the org name - cut it off
+    # at the first standalone year or "Washington"-style place name instead.
+    authors_text = re.split(r"\b(?:19|20)\d{2}\b|\bWashington\b", authors_text)[0].strip(" .,")
 
     author_tokens = [a.strip() for a in re.split(r",| and ", authors_text) if a.strip()]
     first_author = author_tokens[0] if author_tokens else ""
@@ -320,15 +333,24 @@ def pdf_filename(year: str, entry_html: str, title: str) -> str:
     title_words = re.findall(r"[A-Za-z0-9]+", title)[:TITLE_WORDS_IN_FILENAME]
     title_part = "_".join(title_words) if title_words else "untitled"
 
-    return f"{surname}{suffix}_{year}_{title_part}.pdf"
+    return f"{surname}{suffix}_{year}_{title_part}"
 
 
-def oa_button(key: str, filename: str = "") -> str:
+def oa_button(key: str, filename_base: str = "") -> str:
     """
-    Open-access full text. Resolved on demand via Unpaywall, which indexes only
-    legally free copies (publisher OA, PMC, institutional repositories). Starts
-    hidden and stays hidden if no free copy exists - so the icon appearing is
-    itself the signal that there is something to read.
+    Open-access full text. Resolved on demand from docs/pub-stats.json (or a
+    live per-article fallback for anything added since the last daily run) -
+    which indexes only legally free copies. Starts hidden and stays hidden if
+    no free copy exists - so the icon appearing is itself the signal that
+    there is something to read.
+
+    The suggested download filename is computed here at build time (author,
+    year, title words - see pdf_filename()) but its *extension* isn't known
+    until resolution happens, since the best available copy is occasionally a
+    Word-doc preprint rather than a PDF (see generate_pub_stats.py). So this
+    only carries the extension-less base via data-name; the client script
+    appends ".pdf" or ".docx" and sets the real download attribute once it
+    knows which one it resolved to.
 
     target="_blank" so the click behavior is always the same regardless of
     whether the host's CORS policy would allow fetching it as a blob - it
@@ -337,10 +359,10 @@ def oa_button(key: str, filename: str = "") -> str:
     """
     if not key or "data-csl" in key:
         return '<span class="oa-empty"></span>'
-    download_attr = f' download="{html.escape(filename, quote=True)}"' if filename else ""
+    name_attr = f' data-name="{html.escape(filename_base, quote=True)}"' if filename_base else ""
     return (
-        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer"{download_attr} '
-        f'title="Open free full text (PDF) in a new tab" aria-label="Open free full text (open access PDF) in a new tab" '
+        f'<a class="oa-pdf" {key} href="#" target="_blank" rel="noopener noreferrer"{name_attr} '
+        f'title="Open free full text in a new tab" aria-label="Open free full text in a new tab" '
         f'hidden>{ICON_PDF}</a>'
     )
 
@@ -1075,12 +1097,19 @@ PAGE = """<!DOCTYPE html>
     font-size: 1.0625rem;   /* ~17px floor for this UI text, see CLAUDE.md */
     color: var(--muted);
   }}
-  .pub-toolbar-row {{ display: flex; align-items: center; gap: .6rem; }}
+  /* Three columns - left group, search, right group - so the search box is
+     centered on the row's true midpoint regardless of how wide the left and
+     right groups are, rather than merely sitting in whatever gap is left
+     over between two flex-packed ends. */
+  .pub-toolbar-row {{ display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: .6rem; }}
+  .toolbar-left {{ display: flex; align-items: center; gap: .6rem; }}
+  .toolbar-right {{ display: flex; justify-content: flex-end; }}
   .pub-toolbar-label {{ cursor: pointer; }}
   .pub-search {{
     font: inherit; font-size: 1.0625rem; min-height: 1.9rem;
-    width: 14rem; min-width: 0; flex: 0 1 14rem;
-    padding: .3rem .6rem; margin-left: .75rem;
+    width: 26rem; max-width: 100%; min-width: 0;
+    justify-self: center;
+    padding: .3rem .8rem;
     border: 1px solid var(--rule-2); border-radius: 6px;
     background: var(--bg); color: var(--text);
   }}
@@ -1088,7 +1117,7 @@ PAGE = """<!DOCTYPE html>
   .pub-search:hover {{ border-color: var(--accent); }}
   /* No native "clear" X in Firefox/older WebKit; harmless where unsupported. */
   .pub-search::-webkit-search-cancel-button {{ cursor: pointer; }}
-  .sort-toggle {{ display: flex; align-items: center; gap: .5rem; margin-left: auto; }}
+  .sort-toggle {{ display: flex; align-items: center; gap: .5rem; }}
   .sort-toggle-label {{ color: var(--faint); }}
   .sort-btn {{
     display: inline-flex; align-items: center; justify-content: center;
@@ -1294,18 +1323,22 @@ PAGE = """<!DOCTYPE html>
 
     <div class="pub-toolbar">
       <div class="pub-toolbar-row">
-        <span class="cite-col cite-col-select-all"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
-        <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
-        <details class="cite-dl cite-all">{citemenu_all}</details>
+        <div class="toolbar-left">
+          <span class="cite-col cite-col-select-all"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
+          <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
+          <details class="cite-dl cite-all">{citemenu_all}</details>
+        </div>
         <input type="search" class="pub-search" id="pub-search"
                placeholder="Search year, author, title, journal…"
                aria-label="Search publications (supports AND, OR, NOT, and &quot;quoted phrases&quot;)"
                autocomplete="off">
-        <span class="sort-toggle" role="group" aria-label="Sort publications by">
-          <span class="sort-toggle-label">Sort:</span>
-          <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
-          <button type="button" class="sort-btn" data-sort="citations" aria-pressed="false">Citations</button>
-        </span>
+        <div class="toolbar-right">
+          <span class="sort-toggle" role="group" aria-label="Sort publications by">
+            <span class="sort-toggle-label">Sort:</span>
+            <button type="button" class="sort-btn" data-sort="year" aria-pressed="true">Year</button>
+            <button type="button" class="sort-btn" data-sort="citations" aria-pressed="false">Citations</button>
+          </span>
+        </div>
       </div>
     </div>
 
@@ -1924,10 +1957,21 @@ var PUB_STATS = window.fetch
 
   function fresh(rec) {{ return rec && (Date.now() - rec.ts) < TTL; }}
 
-  function show(el, url) {{
+  function show(el, url, type) {{
     if (!url) return;
     el.href = url;
     el.dataset.pdf = url;
+    // The build-time filename (author/year/title, no extension - see
+    // pdf_filename() in build.py) gets the right extension appended once we
+    // know whether this resolved to a real PDF or a Word-doc preprint (the
+    // only source of a non-PDF "best available" link - see
+    // generate_pub_stats.py). type defaults to "pdf": every live (non-
+    // precomputed) resolution path here only ever finds PDFs.
+    var ext = type || "pdf";
+    if (el.dataset.name) el.setAttribute("download", el.dataset.name + "." + ext);
+    var isWord = ext === "docx";
+    el.title = isWord ? "Open free full text (Word document) in a new tab" : "Open free full text in a new tab";
+    el.setAttribute("aria-label", el.title);
     el.hidden = false;
   }}
 
@@ -1957,9 +2001,9 @@ var PUB_STATS = window.fetch
     var pending = [];
     nodes.forEach(function (el) {{
       var k = keyFor(el), pre = precomputed[k];
-      if (pre) {{ if (pre.pdf) show(el, pre.pdf); return; }}
+      if (pre) {{ if (pre.pdf) show(el, pre.pdf, pre.type); return; }}
       var rec = store[k];
-      if (fresh(rec)) {{ show(el, rec.url); return; }}
+      if (fresh(rec)) {{ show(el, rec.url, rec.type); return; }}
       pending.push(el);
     }});
     if (pending.length) run(pending); else if (Object.keys(store).length) save();

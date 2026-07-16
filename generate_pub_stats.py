@@ -38,10 +38,15 @@ PDF resolution tries, in order:
      no DOI, so nothing else here applies).
   5. The entry's own "[Preprint on X](url)" bracket link, if the published
      version has no free copy anywhere - tried the same way as the title URL
-     (steps 2-3 above). Several preprint servers host the manuscript as a
-     Word doc rather than a PDF, which the verification step correctly
-     rejects (a "PDF" button should never hand someone a .docx).
-Every candidate from (2)-(5) is only used once its first few bytes are
+     (steps 2-3 above), PDF preferred. Only if no PDF turns up anywhere -
+     for the preprint or the published version - is a genuine Word-doc
+     manuscript accepted as "best available" full text instead (see
+     smart_fulltext()/verify_fulltext(); many preprint servers host the
+     author's manuscript as a .docx rather than a PDF). This is the one
+     path that can produce a non-PDF result; docs/pub-stats.json then
+     carries a "type": "docx" alongside that entry's "pdf" url so the
+     client knows to label and name the download correctly.
+Every PDF candidate from (2)-(5) is only used once its first few bytes are
 confirmed to start with the "%PDF-" magic number (see verified_pdf()) -
 never guessed blindly from headers or a URL's ".pdf" suffix, since several
 hosts that genuinely serve a PDF send no distinguishing Content-Type at all,
@@ -177,6 +182,51 @@ def smart_pdf(candidate_url):
     return ""
 
 
+def verify_fulltext(url):
+    """
+    Like verified_pdf(), but also recognizes a genuine Word-doc upload: a
+    .docx file is a zip archive containing a "word/" folder (which a plain
+    .xlsx/.pptx zip wouldn't), distinguishable from the first few KB alone.
+    Returns "pdf", "docx", or "" - never guessed, always checked against the
+    actual bytes. Only used for the preprint-link fallback (see
+    smart_fulltext()); every other resolution path stays PDF-only since a
+    genuine PDF-serving convention (medRxiv, Bookshelf, a real
+    citation_pdf_url) never legitimately turns out to be a Word doc.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-4095"})
+    try:
+        with urllib.request.urlopen(req, timeout=15, context=SSL_CONTEXT) as r:
+            data = r.read(4096)
+    except (urllib.error.URLError, OSError):
+        return ""
+    if data.startswith(b"%PDF-"):
+        return "pdf"
+    if data.startswith(b"PK\x03\x04") and b"word/" in data:
+        return "docx"
+    return ""
+
+
+def smart_fulltext(candidate_url):
+    """
+    Same idea as smart_pdf(), but for the preprint-link fallback specifically:
+    a preprint is "best available" full text even when it's a Word-doc
+    manuscript rather than a PDF, since the published version has no free
+    copy anywhere in that case. Returns (url, ext) or (None, None).
+    """
+    m = MEDRXIV_RE.match(candidate_url)
+    if m:
+        pdf = m.group(1) + ".full.pdf"
+        if verified_pdf(pdf):
+            return pdf, "pdf"
+    m = OSF_RE.match(candidate_url)
+    if m:
+        cand = f"https://osf.io/{m.group(1)}/download"
+        ext = verify_fulltext(cand)
+        if ext:
+            return cand, ext
+    return None, None
+
+
 def citation_pdf_url(landing_url):
     """
     The publisher's own <meta name="citation_pdf_url"> tag, if the landing
@@ -280,8 +330,12 @@ def pmid_to_doi(pmids):
 
 
 def resolve_pdf(doi, title_url, preprint_url=""):
-    """Best real PDF for this DOI, or "" if none exists / everything found is
-    the same page the title already links to."""
+    """
+    Best real full text for this DOI: (url, ext) with ext "pdf" or "docx", or
+    (None, None) if nothing exists / everything found is the same page the
+    title already links to. docx only ever comes from the preprint-link
+    fallback, tried last and only once every PDF-only avenue has failed.
+    """
     url = "https://api.unpaywall.org/v2/" + urllib.parse.quote(doi, safe="") + \
           "?email=" + urllib.parse.quote(EMAIL)
     try:
@@ -315,16 +369,21 @@ def resolve_pdf(doi, title_url, preprint_url=""):
         # a citation_pdf_url even though Unpaywall's own record has nothing.
         pdf = citation_pdf_url("https://doi.org/" + urllib.parse.quote(doi, safe="/"))
 
+    ext = "pdf"
     if not pdf and preprint_url:
         # The published version has no free copy anywhere, but the entry's
-        # own "[Preprint on X]" link might. Many preprint servers host the
-        # manuscript as a Word doc rather than a PDF, which verified_pdf()
-        # correctly rejects (a "PDF" button should not hand someone a .docx).
+        # own "[Preprint on X]" link might - PDF preferred, a Word-doc
+        # manuscript accepted only if no PDF is available anywhere, there
+        # either (see smart_fulltext()).
         pdf = smart_pdf(preprint_url) or citation_pdf_url(preprint_url)
+        if not pdf:
+            cand, cand_ext = smart_fulltext(preprint_url)
+            if cand_ext == "docx":
+                pdf, ext = cand, cand_ext
 
     if pdf and title_url and pdf.rstrip("/") == title_url.rstrip("/"):
-        return ""  # identical to the title link - not worth a button
-    return pdf
+        return None, None  # identical to the title link - not worth a button
+    return (pdf, ext) if pdf else (None, None)
 
 
 def citation_counts(items):
@@ -375,26 +434,30 @@ def main():
     print(f"  got {len(counts)}/{len(items)} counts")
 
     print("Resolving PDF links...")
-    pdfs = {}
+    pdfs = {}   # id -> (url, ext) - ext "docx" only ever from a preprint fallback
     for i, (id_, v) in enumerate(items.items(), 1):
         doi_nbk = p2d.get(v["pmid"], ("", ""))
         doi = v["doi"] or doi_nbk[0]
         if not doi:
-            candidate = smart_pdf(v["title_url"])
+            candidate, ext = smart_pdf(v["title_url"]), "pdf"
             if not candidate and doi_nbk[1]:
                 candidate = bookshelf_pdf(doi_nbk[1])
             if not candidate and v["preprint_url"]:
                 candidate = smart_pdf(v["preprint_url"]) or citation_pdf_url(v["preprint_url"])
+                if not candidate:
+                    candidate, ext = smart_fulltext(v["preprint_url"])
             if candidate and candidate.rstrip("/") != v["title_url"].rstrip("/"):
-                pdfs[id_] = candidate
+                pdfs[id_] = (candidate, ext)
             continue
-        pdf = resolve_pdf(doi, v["title_url"], v["preprint_url"])
+        pdf, ext = resolve_pdf(doi, v["title_url"], v["preprint_url"])
         if pdf:
-            pdfs[id_] = pdf
+            pdfs[id_] = (pdf, ext)
         if i % 25 == 0:
             print(f"  {i}/{len(items)}...")
         time.sleep(GAP / 1000)
-    print(f"  found {len(pdfs)}/{len(items)} real PDF links")
+    docx_count = sum(1 for _u, e in pdfs.values() if e == "docx")
+    print(f"  found {len(pdfs)}/{len(items)} real full-text links"
+          + (f" ({docx_count} of those are Word-doc preprints)" if docx_count else ""))
 
     # Every item gets a record, even an empty one - the client relies on
     # "this id is present at all" to mean "already checked, don't bother
@@ -406,7 +469,10 @@ def main():
         if id_ in counts:
             entry["citations"] = counts[id_]
         if id_ in pdfs:
-            entry["pdf"] = pdfs[id_]
+            url, ext = pdfs[id_]
+            entry["pdf"] = url
+            if ext != "pdf":
+                entry["type"] = ext
         out[id_] = entry
 
     OUT.parent.mkdir(exist_ok=True)
