@@ -22,17 +22,23 @@ loads normally; only the *sort* stopped depending on it.
 
 PDF resolution tries, in order:
   1. Unpaywall's url_for_pdf (never url/url_for_landing_page - see the
-     client-side fix this replaces for why that used to be wrong).
+     client-side fix this replaces for why that used to be wrong). Verified
+     like every other candidate below, not trusted just because Unpaywall
+     says so - its crawler may have found a real PDF there once, but a
+     handful of publishers (JAMA confirmed) sit behind a bot challenge that
+     blocks a script even at a URL that looks like, and once genuinely was,
+     a direct PDF link.
   2. A same-domain "smart" pattern for platforms Unpaywall's data is often
      incomplete for (medRxiv/bioRxiv's <article>.full.pdf, OSF's
      <guid>/download).
   3. The publisher's own <meta name="citation_pdf_url"> tag on the article's
      landing page - the same convention Google Scholar uses to find PDFs.
      Many publishers embed this even when Unpaywall's record doesn't have a
-     url_for_pdf; several others (Elsevier, Wiley, SAGE, JAMA, BMJ, Cochrane)
-     either don't expose it or block a scripted fetch of the landing page
-     entirely (403) - those are left without a button rather than guessed at
-     or scraped around.
+     url_for_pdf; several others (Elsevier, Wiley, SAGE, JAMA, BMJ, Cochrane,
+     and PMC's own website) either don't expose it or sit behind the same
+     kind of bot challenge as (1) - those are left without a button rather
+     than guessed at or scraped around, and deliberately not worked around
+     (see the "Not attempted" note below).
   4. NCBI Bookshelf's own PDF convention (<NBK id>/pdf/Bookshelf_<id>.pdf)
      for PMIDs whose PubMed record is a book (the NICE guideline monographs -
      no DOI, so nothing else here applies).
@@ -64,7 +70,18 @@ PMC's explicit "OA subset" (a fraction of what's readable on PMC) and returns
 a .tar.gz package rather than a PDF URL, which would mean downloading,
 extracting, and re-hosting a copy of the paper ourselves rather than linking
 to the copy the publisher/repository already hosts - a meaningfully bigger
-step this script doesn't take on its own.
+step this script doesn't take on its own. Also not attempted: defeating the
+Cloudflare (or similar) bot challenge that SAGE, JAMA, BMJ, Wiley/Cochrane,
+and PMC's own website all present to a plain script (confirmed directly -
+"Cf-Mitigated: challenge" header, an interactive "Just a moment..." page) -
+building automated tooling to get past that is bot-detection evasion, not
+something this script does even though a real browser passes it invisibly.
+Articles whose only free copy sits behind one of these are correctly left
+without a button. The one legitimate way around it, not yet built: if the
+article carries an open license (CC-BY, CC-BY-NC, etc.) permitting
+redistribution, Evan could open the link himself (any real browser gets
+through) and supply the file for the site to host directly instead of
+linking to the publisher at all.
 
 Re-run this daily (see .github/workflows/pub-stats.yml) or the client-side
 live-fetch fallback covers anything not yet baked in.
@@ -348,7 +365,13 @@ def resolve_pdf(doi, title_url, preprint_url=""):
         locs = [data.get("best_oa_location")] + (data.get("oa_locations") or [])
         locs = [loc for loc in locs if loc]
         for loc in locs:
-            if loc.get("url_for_pdf"):
+            # Unpaywall's own crawler may have found a real PDF here once,
+            # but that doesn't mean a plain request can still reach it today
+            # - some publishers (JAMA among them) sit behind a bot challenge
+            # that blocks a script even at a URL that looks like a direct
+            # PDF link and once genuinely was one. Verified like every other
+            # candidate, never trusted just because Unpaywall says so.
+            if loc.get("url_for_pdf") and verified_pdf(loc["url_for_pdf"]):
                 pdf = loc["url_for_pdf"]
                 break
         if not pdf:
