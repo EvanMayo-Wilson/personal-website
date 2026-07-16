@@ -357,6 +357,16 @@ def resolve_pdf(doi, title_url, preprint_url=""):
                 if candidate:
                     pdf = candidate
                     break
+        if not pdf:
+            # A repository copy (institutional repository, a green-OA
+            # deposit) often has its own citation_pdf_url even when the
+            # publisher's page has none and Unpaywall has no url_for_pdf -
+            # try every location's own page, not just the DOI redirect.
+            for loc in locs:
+                candidate = citation_pdf_url(loc.get("url") or "")
+                if candidate:
+                    pdf = candidate
+                    break
 
     if not pdf:
         # Even with no OA record at all, the title link itself might be a
