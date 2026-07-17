@@ -1,8 +1,38 @@
 # Handoff — evanmayo-wilson.org
 
-_Last updated 2026-07-16. This file is a point-in-time snapshot for picking up
-mid-project; the durable, always-current reference is `CLAUDE.md`. If the two
-ever disagree, trust `CLAUDE.md` and treat this file as stale._
+_This file is a point-in-time snapshot for picking up mid-project; the durable,
+always-current reference is `CLAUDE.md`. If the two ever disagree, trust
+`CLAUDE.md` and treat this file as stale._
+
+## 2026-07-17 update — READ FIRST
+
+Repo is **clean and fully pushed**; HEAD **`6fc8ad3`** (the weekly scholar-stats
+Action's auto-commit sits on top of this session's work). Only intentional
+untracked items remain (`Papers/` staging, `docs/images/Square_Headshot.jpeg`).
+Since the 2026-07-16 wrap below, three things landed (all committed + pushed):
+
+- **Publisher-preferred OA PDFs** (`7c9b7bc`): `generate_pub_stats.py`'s
+  `resolve_pdf()` now tries every Unpaywall OA location with
+  `host_type=publisher` before any `repository` one, so a repository/university
+  copy is no longer chosen over an available publisher copy.
+- **+25 hosted PDFs** (`7c9b7bc`) and **+4 more** (`1e6c972`) in `docs/papers/`,
+  filling articles that had no working PDF button (mostly SAGE/JAMA/BMJ-blocked
+  and a couple of preprints). Key lesson (now in CLAUDE.md): match supplied
+  PDFs against the **whole EndNote attachment store**
+  (`Papers/Evan's Papers.Data/PDF/…`, indexed by `sdb/sdb.eni`), not just a
+  flat export folder — an earlier pass missed 25 gaps by only using the export.
+- **Local `.docx` hosting** (`1e6c972`): `local_paper()` in
+  `generate_pub_stats.py` now also recognizes a `<doi-slug>.docx` (returns
+  `"type": "docx"`, a PDF still wins if both exist) — used for the TOP-statement
+  manuscript, which only exists as a Word doc. Coverage is 151/157 with a real
+  full-text link.
+- **EndNote note:** two supplied files (the TOP statement, the in-press "npj
+  automated approach" paper) have **no reference in the EndNote library** and
+  were left in `Papers/PDFs to attach/` — creating those references was left to
+  Evan (hand-editing EndNote's SQLite DB risks corrupting its search/sort
+  index). The other supplied files were already attached in the library.
+
+Everything below is the prior (2026-07-16) wrap, kept as history.
 
 ## What this project is
 
