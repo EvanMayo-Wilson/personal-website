@@ -139,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2033,
+"citations": 2035,
 "pdf": "https://www.jmir.org/2011/4/e126/PDF"
 },
 "pmid:23335473": {
@@ -195,7 +195,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
-"citations": 575,
+"citations": 577,
 "pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
@@ -260,7 +260,7 @@
 "pdf": "papers/10_1016_s2215_0366_15_00090_5.pdf"
 },
 "pmid:26361000": {
-"citations": 695,
+"citations": 697,
 "pdf": "papers/10_1016_s2215_0366_14_70329_3.pdf"
 },
 "pmid:26407814": {
@@ -315,7 +315,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1411,
+"citations": 1412,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -334,7 +334,7 @@
 "pdf": "https://pilotfeasibilitystudies.biomedcentral.com/track/pdf/10.1186/s40814-018-0284-6"
 },
 "pmid:30060754": {
-"citations": 358,
+"citations": 359,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
@@ -395,19 +395,19 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 4996,
+"citations": 5000,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13624,
+"citations": 13631,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11164,
+"citations": 11173,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 97533,
+"citations": 97691,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/149119376/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33789819": {
@@ -415,7 +415,7 @@
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11616,
+"citations": 11622,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -495,7 +495,7 @@
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 303,
+"citations": 305,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -518,7 +518,8 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 61
+"citations": 62,
+"pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
 "citations": 13,
@@ -538,7 +539,7 @@
 "pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
-"citations": 73,
+"citations": 74,
 "pdf": "https://eprints.soton.ac.uk/486969/1/CONSORT_extension_paper_JAMA_AuthorAcceptedVersion.pdf"
 },
 "pmid:38051535": {
@@ -554,7 +555,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 102,
+"citations": 103,
 "pdf": "https://iris.uniroma1.it/bitstream/11573/1723721/1/1-s2.0-S089543562400177X-main.pdf"
 },
 "pmid:38902776": {
@@ -570,7 +571,7 @@
 "pdf": "https://hqlo.biomedcentral.com/counter/pdf/10.1186/s12955-024-02256-9"
 },
 "pmid:38980635": {
-"citations": 71,
+"citations": 72,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
@@ -590,7 +591,7 @@
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41626914": {
-"citations": 8,
+"citations": 9,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E41BD8EC61447E3E559C43AB95F7964A/S1759287925000195a.pdf/div-class-title-weighted-corrected-covered-area-wcca-a-measure-of-informational-overlap-among-reviews-div.pdf"
 },
 "pmid:41641596": {
