@@ -10,3 +10,7 @@ site-refresh/
 # personal, not part of the website
 ICANN Lookup.pdf
 ordering-preview.html
+# Evan's local EndNote library (source of docs/papers/ PDFs) — never publish it
+Papers/
+# intentionally-untracked headshot variant (Square_Headshot.jpg is the tracked one)
+docs/images/Square_Headshot.jpeg
