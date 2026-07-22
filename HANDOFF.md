@@ -58,10 +58,12 @@ commits to `main`, plus two scheduled Actions that auto-commit
 
 ## Current state
 
-- Branch `main`, clean working tree. Last commit before this handoff:
-  **`065091e`** ("Update Google Scholar stats") — a scheduled-Action auto-commit
-  sitting on top of the last human session's work (`6fc8ad3`).
-- Site builds cleanly: 147 publications across 21 years, 120 with PMIDs.
+- Branch `main` (no session branches — this repo commits direct to `main`),
+  clean working tree. Relocation landed in **`db3e443`**; this handoff's own
+  doc commit sits on top of it (see the resume note for the exact tip).
+- **Verification (no test suite/linter exists):** `python3 build.py` builds
+  cleanly — 147 publications across 21 years, 120 with PMIDs; `py_compile
+  build.py` OK; `git fsck` clean. Date: 2026-07-22.
 - Intentional local-only files (now gitignored): `Papers/` (Evan's EndNote
   library, the source of `docs/papers/` PDFs) and
   `docs/images/Square_Headshot.jpeg`.

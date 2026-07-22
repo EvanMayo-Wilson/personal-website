@@ -318,6 +318,11 @@ rejected push.
 
 ## Gotchas
 
+- **`build.py` restamps the footer "Updated <today>" date on every run**, so a
+  rebuild with no content change still shows a one-line diff in
+  `docs/index.html`. Don't commit that date-only diff (it falsely implies a
+  content update) - `git checkout -- docs/index.html` after an integrity-check
+  rebuild. Only let the date advance when the rebuild accompanies a real change.
 - **Verify every PDF candidate, no exceptions** - including ones that look
   authoritative (Unpaywall's `url_for_pdf` itself was trusted blindly once;
   a real bug, not hypothetical - see `generate_pub_stats.py`'s docstring).
