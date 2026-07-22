@@ -4,7 +4,33 @@ _Point-in-time snapshot for picking up mid-project. The durable, always-current
 reference is `CLAUDE.md`; if the two disagree, trust `CLAUDE.md` and treat this
 as stale._
 
-## 2026-07-22 — workspace move (READ FIRST)
+## 2026-07-22 — post-migration cleanup (READ FIRST)
+
+Second session on this date, after the workspace move below. Deleted files that
+were migration-era leftovers or local junk; **no change to the live site** (none
+of the removed files feed `build.py`). All committed + pushed to `main` in
+**`68d2fd1`**.
+
+- **Removed from the repo (tracked; recoverable from git history):**
+  - `GUIDE.md` — the one-time migration walkthrough (domain lookup, cost,
+    deploy, DNS repoint). Superseded by `CLAUDE.md`, and partly stale (it still
+    described NS1/`*.nsone.net` nameservers; the site is on Cloudflare now).
+  - `squarespace-support-email.md` — an obsolete 14-July support-email draft
+    about a nameserver-propagation snag during the migration; long resolved.
+- **Deleted from disk only (were gitignored — not in any commit):**
+  - `ordering-preview.html` — a 412K one-off preview from the publication-
+    ordering work; not part of the site.
+  - Six `.DS_Store` files and `__pycache__/` — macOS/Python junk, auto-regenerated.
+- **Pruned three dead `.gitignore` entries** for files no longer on disk:
+  `site-classic/`, `site-refresh/`, `ICANN Lookup.pdf`.
+- **`git gc`** — packed 438 loose objects; `.git` shrank 64.7 → 58.4 MiB
+  (modest, since the `docs/papers/` PDFs already in history are compressed).
+- **Kept deliberately** (surfaced, confirmed): `Papers/` (823M EndNote library,
+  gitignored — source of `docs/papers/`), `docs/papers/`, top-level `images/`
+  (build copies it into `docs/images/`), `content/`, `.github/`, the build
+  scripts, `CLAUDE.md`, `HANDOFF.md`.
+
+## 2026-07-22 — workspace move
 
 The repo was **relocated** as part of a workspace reorg:
 
@@ -59,12 +85,13 @@ commits to `main`, plus two scheduled Actions that auto-commit
 ## Current state
 
 - Branch `main` (no session branches — this repo commits direct to `main`),
-  clean working tree. Relocation landed in **`db3e443`**; this handoff's own
-  doc commit sits on top of it (see the resume note for the exact tip).
+  clean working tree. Current tip: **`68d2fd1`** (post-migration cleanup); the
+  workspace move was `db3e443`.
 - **Verification (no test suite/linter exists):** `python3 build.py` builds
-  cleanly — 147 publications across 21 years, 120 with PMIDs; `py_compile
-  build.py` OK; `git fsck` clean. Date: 2026-07-22.
-- Intentional local-only files (now gitignored): `Papers/` (Evan's EndNote
+  cleanly — 147 publications across 21 years, 120 with PMIDs; unchanged by the
+  cleanup (removed files aren't build inputs). Date: 2026-07-22. `.git` was
+  repacked with `git gc` (438 objects, ~58 MiB packed).
+- Intentional local-only files (gitignored): `Papers/` (Evan's EndNote
   library, the source of `docs/papers/` PDFs) and
   `docs/images/Square_Headshot.jpeg`.
 
@@ -113,8 +140,8 @@ Continuing work on evanmayo-wilson.org at ~/Code/personal-website
 
 cd ~/Code/personal-website, run `git pull --rebase` (scheduled Actions
 auto-commit, so main is often ahead), then read CLAUDE.md first — it's the
-single binding house-style + feature reference — and HANDOFF.md for the move
-details. Direct commits to main; no branches. No open site bugs at handoff;
+single binding house-style + feature reference — and HANDOFF.md for the move +
+cleanup notes. Direct commits to main; no branches. No open site bugs at handoff;
 ask Evan what's next. (Larissa's separate site lives at ~/Code/larissa-website
 and is fully handed off there — nothing to do from this repo.)
 ```
