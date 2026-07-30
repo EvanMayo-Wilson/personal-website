@@ -26,6 +26,7 @@
 "citations": 5,
 "pdf": "papers/10_1038_s41562_017_0286_z.pdf"
 },
+"doi:10.1038/s41746-026-03045-y": {},
 "doi:10.1093/bjsw/bct129": {
 "citations": 6,
 "pdf": "papers/10_1093_bjsw_bct129.pdf"
@@ -139,7 +140,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2037,
+"citations": 2038,
 "pdf": "https://www.jmir.org/2011/4/e126/PDF"
 },
 "pmid:23335473": {
@@ -207,7 +208,7 @@
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
-"citations": 69
+"citations": 70
 },
 "pmid:25076832": {
 "pdf": "papers/10_1177_1049731513498118.pdf"
@@ -314,7 +315,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1417,
+"citations": 1420,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -394,19 +395,19 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5030,
+"citations": 5031,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13687,
+"citations": 13690,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11272,
+"citations": 11284,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 98822,
+"citations": 98982,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/149119376/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33789819": {
@@ -414,7 +415,7 @@
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11671,
+"citations": 11677,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -554,7 +555,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 104,
+"citations": 105,
 "pdf": "https://iris.uniroma1.it/bitstream/11573/1723721/1/1-s2.0-S089543562400177X-main.pdf"
 },
 "pmid:38902776": {
