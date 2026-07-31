@@ -852,7 +852,7 @@
         <div class="toolbar-left">
           <span class="cite-col cite-col-select-all"><input type="checkbox" class="pub-select" id="pub-select-all" aria-label="Select all citations"></span>
           <label class="pub-toolbar-label" for="pub-select-all">Select all</label>
-          <details class="cite-dl cite-all"><summary title="Download selected citations" aria-label="Download selected citations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 20h15"/></svg><span class="btn-label">Download</span></summary><div class="cite-menu" role="group" aria-label="Citation format"><button type="button" data-fmt="ris">RIS</button><button type="button" data-fmt="bib">BibTeX</button><button type="button" data-fmt="enw">EndNote</button><button type="button" data-fmt="csl">CSL-JSON</button></div></details>
+          <details class="cite-dl cite-all"><summary title="Download selected citations" aria-label="Download selected citations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 20h15"/></svg><span class="btn-label">Download</span></summary><div class="cite-menu" role="group" aria-label="Citation format"><button type="button" data-fmt="ris">RIS</button><button type="button" data-fmt="bib">BibTeX</button><button type="button" data-fmt="enw">EndNote</button><button type="button" data-fmt="csl">CSL-JSON</button><button type="button" data-fmt="txt">Plain text (AMA)</button></div></details>
         </div>
         <input type="search" class="pub-search" id="pub-search"
                placeholder="Search year, author, title, journal…"
@@ -1139,7 +1139,7 @@
 </main>
 
 <footer class="shell">
-  <span>Updated 29 July 2026</span>
+  <span>Updated 31 July 2026</span>
 </footer>
 
 <script>
@@ -1569,12 +1569,47 @@
 
   function toCSL(d) { return JSON.stringify(d, null, 2) + "\n"; }
 
+  /* AMA 11th edition, as a formatted reference rather than an importable record.
+     Deliberately UNNUMBERED: a numbered list only makes sense in the order a
+     manuscript cites them, and these are exported in the order they were selected. */
+  function amaAuthors(d) {
+    var list = (d.author || []).map(function (a) {
+      if (a.literal) return a.literal;                       // corporate author, as given
+      var fam = a.family || "";
+      // AMA gives initials with no periods and no space: "Mayo-Wilson E", "Smith JA".
+      var ini = (a.given || "").split(/[\s.-]+/).filter(Boolean)
+                  .map(function (t) { return t.charAt(0).toUpperCase(); }).join("");
+      return (fam + (ini ? " " + ini : "")).trim();
+    }).filter(Boolean);
+    if (!list.length) return "";
+    // AMA 11th: list the first three and then "et al" once there are more than six.
+    if (list.length > 6) return list.slice(0, 3).join(", ") + ", et al";
+    return list.join(", ");
+  }
+
+  function toAMA(d) {
+    var out = "", au = amaAuthors(d), t = titleOf(d), j = journal(d), y = year(d);
+    if (au) out += au + ". ";
+    if (t)  out += t.replace(/\.\s*$/, "") + ". ";
+    if (j)  out += j + ". ";
+    if (y) {
+      out += y;
+      if (d.volume) out += ";" + d.volume;
+      if (d.issue)  out += "(" + d.issue + ")";
+      if (d.page)   out += ":" + d.page;
+      out += ".";
+    }
+    if (d.DOI) out += " doi:" + d.DOI;
+    return out.replace(/\s+/g, " ").trim() + "\n";
+  }
+
   var FORMATS = {
     ris: { ext: "ris",  join: "",   make: toRIS,
            wrap: null,  label: "RIS" },
     bib: { ext: "bib",  join: "\n", make: toBIB,  wrap: null,  label: "BibTeX" },
     enw: { ext: "enw",  join: "\r\n", make: toENW, wrap: null, label: "EndNote" },
-    csl: { ext: "json", join: null, make: toCSL,  wrap: "json", label: "CSL-JSON" }
+    csl: { ext: "json", join: null, make: toCSL,  wrap: "json", label: "CSL-JSON" },
+    txt: { ext: "txt",  join: "\n", make: toAMA,  wrap: null,  label: "Plain text (AMA)" }
   };
 
   /* --- download ----------------------------------------------------------- */

@@ -5,7 +5,12 @@ __pycache__/
 
 # personal, not part of the website
 ordering-preview.html
-# Evan's local EndNote library (source of docs/papers/ PDFs) — never publish it
-Papers/
+# Evan's local EndNote library (source of docs/papers/ PDFs) — never publish it.
+# ANCHORED. A bare `Papers/` also matches `docs/papers/`, which is the site's own
+# hosted-PDF directory: the 89 files already there are tracked and served only
+# because .gitignore does not affect files git already knows about, so the pattern
+# was silently blocking every NEW paper from being added and would have shipped a
+# PDF button pointing at a 404.
+/Papers/
 # intentionally-untracked headshot variant (Square_Headshot.jpg is the tracked one)
 docs/images/Square_Headshot.jpeg

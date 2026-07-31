@@ -232,6 +232,7 @@ CITE_FORMATS = [
     ("bib", "BibTeX"),       # LaTeX, Zotero, JabRef
     ("enw", "EndNote"),      # EndNote's own tagged format
     ("csl", "CSL-JSON"),     # Zotero's native format; also pandoc
+    ("txt", "Plain text (AMA)"),  # formatted references to paste, not to import
 ]
 
 
@@ -1783,12 +1784,47 @@ PAGE = """<!DOCTYPE html>
 
   function toCSL(d) {{ return JSON.stringify(d, null, 2) + "\\n"; }}
 
+  /* AMA 11th edition, as a formatted reference rather than an importable record.
+     Deliberately UNNUMBERED: a numbered list only makes sense in the order a
+     manuscript cites them, and these are exported in the order they were selected. */
+  function amaAuthors(d) {{
+    var list = (d.author || []).map(function (a) {{
+      if (a.literal) return a.literal;                       // corporate author, as given
+      var fam = a.family || "";
+      // AMA gives initials with no periods and no space: "Mayo-Wilson E", "Smith JA".
+      var ini = (a.given || "").split(/[\\s.-]+/).filter(Boolean)
+                  .map(function (t) {{ return t.charAt(0).toUpperCase(); }}).join("");
+      return (fam + (ini ? " " + ini : "")).trim();
+    }}).filter(Boolean);
+    if (!list.length) return "";
+    // AMA 11th: list the first three and then "et al" once there are more than six.
+    if (list.length > 6) return list.slice(0, 3).join(", ") + ", et al";
+    return list.join(", ");
+  }}
+
+  function toAMA(d) {{
+    var out = "", au = amaAuthors(d), t = titleOf(d), j = journal(d), y = year(d);
+    if (au) out += au + ". ";
+    if (t)  out += t.replace(/\\.\\s*$/, "") + ". ";
+    if (j)  out += j + ". ";
+    if (y) {{
+      out += y;
+      if (d.volume) out += ";" + d.volume;
+      if (d.issue)  out += "(" + d.issue + ")";
+      if (d.page)   out += ":" + d.page;
+      out += ".";
+    }}
+    if (d.DOI) out += " doi:" + d.DOI;
+    return out.replace(/\\s+/g, " ").trim() + "\\n";
+  }}
+
   var FORMATS = {{
     ris: {{ ext: "ris",  join: "",   make: toRIS,
            wrap: null,  label: "RIS" }},
     bib: {{ ext: "bib",  join: "\\n", make: toBIB,  wrap: null,  label: "BibTeX" }},
     enw: {{ ext: "enw",  join: "\\r\\n", make: toENW, wrap: null, label: "EndNote" }},
-    csl: {{ ext: "json", join: null, make: toCSL,  wrap: "json", label: "CSL-JSON" }}
+    csl: {{ ext: "json", join: null, make: toCSL,  wrap: "json", label: "CSL-JSON" }},
+    txt: {{ ext: "txt",  join: "\\n", make: toAMA,  wrap: null,  label: "Plain text (AMA)" }}
   }};
 
   /* --- download ----------------------------------------------------------- */
