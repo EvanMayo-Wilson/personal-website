@@ -26,7 +26,9 @@
 "citations": 5,
 "pdf": "papers/10_1038_s41562_017_0286_z.pdf"
 },
-"doi:10.1038/s41746-026-03045-y": {},
+"doi:10.1038/s41746-026-03045-y": {
+"citations": 0
+},
 "doi:10.1093/bjsw/bct129": {
 "citations": 6,
 "pdf": "papers/10_1093_bjsw_bct129.pdf"
@@ -218,8 +220,7 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
+"citations": 114
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -311,11 +312,11 @@
 "pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 112,
+"citations": 113,
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1420,
+"citations": 1421,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -349,7 +350,7 @@
 "citations": 3
 },
 "pmid:30565151": {
-"citations": 233,
+"citations": 234,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
@@ -395,19 +396,19 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5031,
+"citations": 5033,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13690,
+"citations": 13696,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11284,
+"citations": 11298,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 98982,
+"citations": 99148,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/149119376/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33789819": {
@@ -415,7 +416,7 @@
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11677,
+"citations": 11684,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -491,7 +492,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 717,
+"citations": 718,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -567,7 +568,7 @@
 "pdf": "https://jpro.springeropen.com/counter/pdf/10.1186/s41687-024-00727-7"
 },
 "pmid:38978063": {
-"citations": 18,
+"citations": 19,
 "pdf": "https://hqlo.biomedcentral.com/counter/pdf/10.1186/s12955-024-02256-9"
 },
 "pmid:38980635": {
@@ -599,7 +600,7 @@
 "pdf": "papers/10_1093_milmed_usaf645.pdf"
 },
 "pmid:41723462": {
-"citations": 1,
+"citations": 2,
 "pdf": "https://link.springer.com/content/pdf/10.1186/s12916-026-04709-y.pdf"
 },
 "pmid:41802580": {
