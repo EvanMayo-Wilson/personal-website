@@ -78,9 +78,6 @@
 "citations": 0,
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
-"doi:10.31222/osf.io/nmfs6": {
-"pdf": "papers/10_31222_osf_io_nmfs6.pdf"
-},
 "doi:10.31222/osf.io/npvwr": {
 "citations": 0,
 "pdf": "https://osf.io/npvwr/download"
@@ -210,7 +207,8 @@
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
-"citations": 70
+"citations": 70,
+"pdf": "https://dash.harvard.edu/bitstreams/7312037d-2af9-6bd4-e053-0100007fdf3b/download"
 },
 "pmid:25076832": {
 "pdf": "papers/10_1177_1049731513498118.pdf"
@@ -618,5 +616,8 @@
 "pmid:42282161": {
 "citations": 0,
 "pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
+},
+"pmid:42557573": {
+"pdf": "papers/10_1186_s41073_026_00223_0.pdf"
 }
 }
