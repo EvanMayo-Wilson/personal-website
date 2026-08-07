@@ -79,7 +79,6 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/nmfs6": {
-"citations": 4,
 "pdf": "papers/10_31222_osf_io_nmfs6.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
@@ -251,7 +250,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2800,
+"citations": 2801,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -341,7 +340,7 @@
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
-"citations": 376,
+"citations": 377,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2735-z"
 },
 "pmid:30223876": {
@@ -398,27 +397,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5047,
+"citations": 5052,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13721,
+"citations": 13729,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11341,
+"citations": 11353,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 99868,
+"citations": 100010,
 "pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
-"citations": 4183,
+"citations": 4186,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11704,
+"citations": 11706,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -521,7 +520,7 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 64,
+"citations": 65,
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
