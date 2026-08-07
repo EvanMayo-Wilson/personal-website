@@ -20,6 +20,9 @@ Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M,
 - [**Descriptive epidemiology of musculoskeletal injuries presenting to an embedded Holistic Health and Fitness (H2F) team in a United States Army Stryker Brigade, October 2021-September 2022**](https://doi.org/10.1093/milmed/usaf645)  
 Naylor JA, Jonsson-Funk M, Ranapurwala S, Canham Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Military Medicine*, Online ahead of print. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
 
+- [**TOP 2025: An update to the Transparency and Openness Promotion Guidelines**](https://link.springer.com/article/10.1186/s41073-026-00223-0)  
+Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz M, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA, the TOP Advisory Board. *Res Integ Peer Rev* 11(1):40. PMID: [42557573](https://pubmed.ncbi.nlm.nih.gov/42557573/). [[Preprint on *MetaArXiv*](https://doi.org/10.31222/osf.io/nmfs6_v4)]
+
 - [**Harm outcomes applicable for most meta-analyses of randomized trials of biomedical interventions: A key concept in clinical epidemiology**](https://www.sciencedirect.com/science/article/pii/S0895435626000934?via%3Dihub)  
 Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**, Simon LS, Kwong J, Williamson PR, Vohra S. *Journal of Clinical Epidemiology* 194: 112218. PMID: [41802580](https://pubmed.ncbi.nlm.nih.gov/41802580/).
 
@@ -44,9 +47,6 @@ Ying X, Freedland K, Powell L, Ehrhardt S, Stuart E, **Mayo-Wilson E**. *BMJ* 39
 - [**Weighted corrected covered area (wCCA): A measure of informational overlap among reviews**](https://doi.org/10.1017/rsm.2025.19)Ying X, Bougioukas KI, Pieper D, **Mayo-Wilson E**. *Res Synth Methods* 16(4):701-708. PMID: [41626914](https://pubmed.ncbi.nlm.nih.gov/41626914/).
 
 - [**Musculoskeletal injury (MSKI) outcome definitions as reported in military population research from 2015-2025: A scoping review protocol**](https://doi.org/10.31219/osf.io/nw7fy_v1)Naylor JA, **Mayo-Wilson E**, Martin CL, Baldwin-SoRelle C, Ranapurwala S, Canham Chervak M, Jonsson-Funk M, Marshall SW. *OSF Preprints*.
-
-- [**TOP 2025: An update to the Transparency and Openness Promotion Guidelines**](https://osf.io/preprints/metaarxiv/nmfs6)  
-Grant SP, Corker KS, Mellor D, Stewart SK, Cashin AG, Lagisz M, **Mayo-Wilson E**, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA. *MetaArXiv.*
 
 - [**SPIRIT-CONSORT-TM: A corpus for assessing transparency of clinical trial protocol and results publications**](https://www.nature.com/articles/s41597-025-04629-1)  
 Jiang L, Vorland CJ, Ying X, Brown AW, Menke JD, Hong G, Lan M, **Mayo-Wilson E**, Kilicoglu H. *Sci Data* 12, 355. PMID: [40021657](https://pubmed.ncbi.nlm.nih.gov/40021657/). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.1101/2025.01.14.25320543v1)]
