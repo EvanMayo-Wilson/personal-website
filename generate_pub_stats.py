@@ -206,6 +206,34 @@ def http_json(url):
         return json.loads(r.read().decode("utf-8"))
 
 
+def http_json_retry(url, attempts=4, base_delay=2.0):
+    """
+    http_json, but backing off and retrying on a rate-limit / transient
+    server error. OpenAlex rate-limits by IP, and a GitHub Actions runner
+    shares its IP with everything else on that host, so a 429 mid-run is
+    routine rather than exceptional - on 2026-08-11 every PMID batch 429'd
+    and the run silently wrote out 126 records with no citation count.
+    Anything other than 429/5xx (a real 404, a malformed filter) raises
+    immediately - retrying that would just be slow.
+    """
+    for attempt in range(attempts):
+        try:
+            return http_json(url)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 and e.code < 500:
+                raise
+            if attempt == attempts - 1:
+                raise
+            delay = base_delay * (2 ** attempt)
+            print(f"  HTTP {e.code}, retrying in {delay:.0f}s"
+                  f" ({attempt + 1}/{attempts - 1})")
+            time.sleep(delay)
+        except (urllib.error.URLError, ValueError):
+            if attempt == attempts - 1:
+                raise
+            time.sleep(base_delay * (2 ** attempt))
+
+
 def chunk(seq, n):
     return [seq[i:i + n] for i in range(0, len(seq), n)]
 
@@ -477,8 +505,18 @@ def resolve_pdf(doi, title_url, preprint_url=""):
 
 
 def citation_counts(items):
-    """id -> OpenAlex cited_by_count, batched by DOI/PMID OR-filters."""
+    """
+    id -> OpenAlex cited_by_count, batched by DOI/PMID OR-filters.
+
+    Returns (counts, unresolved) where `unresolved` is the set of ids whose
+    batch outright failed. That's deliberately narrower than "every id
+    missing from counts": an id in a batch that succeeded but came back with
+    no matching work genuinely has no OpenAlex record (6 of the PMIDs here
+    are like that), whereas an id in a failed batch is simply unknown this
+    run. Only the latter should fall back to the previous run's value.
+    """
     counts = {}
+    unresolved = set()
 
     dois = [(id_, v["doi"]) for id_, v in items.items() if v["doi"]]
     pmids = [(id_, v["pmid"]) for id_, v in items.items() if v["pmid"] and not v["doi"]]
@@ -488,9 +526,11 @@ def citation_counts(items):
             values = "|".join(urllib.parse.quote(v, safe="") for _id, v in group)
             url = f"https://api.openalex.org/works?filter={field}:{values}&per-page=50&mailto={urllib.parse.quote(EMAIL)}"
             try:
-                data = http_json(url)
+                data = http_json_retry(url)
             except (urllib.error.URLError, ValueError) as e:
                 print(f"  OpenAlex {field} batch failed ({e})")
+                unresolved.update(id_ for id_, _v in group)
+                time.sleep(GAP / 1000)
                 continue
             by_value = {}
             for r in data.get("results", []):
@@ -509,7 +549,7 @@ def citation_counts(items):
 
     run(dois, "doi")
     run(pmids, "pmid")
-    return counts
+    return counts, unresolved
 
 
 def main():
@@ -519,9 +559,28 @@ def main():
     pmids_needing_doi = [v["pmid"] for v in items.values() if v["pmid"] and not v["doi"]]
     p2d = pmid_to_doi(pmids_needing_doi) if pmids_needing_doi else {}
 
+    previous = {}
+    if OUT.exists():
+        try:
+            previous = json.loads(OUT.read_text(encoding="utf-8"))
+        except ValueError:
+            pass
+
     print("Fetching citation counts from OpenAlex...")
-    counts = citation_counts(items)
+    counts, unresolved = citation_counts(items)
     print(f"  got {len(counts)}/{len(items)} counts")
+
+    # A batch that failed outright must not silently blank out a count the
+    # last run already established - that turns a transient 429 into a
+    # visible regression on the site, where a missing count sorts as 0.
+    carried = 0
+    for id_ in unresolved:
+        prev = previous.get(id_)
+        if isinstance(prev, dict) and "citations" in prev:
+            counts[id_] = prev["citations"]
+            carried += 1
+    if carried:
+        print(f"  carried forward {carried} counts from the previous run")
 
     print("Resolving PDF links...")
     pdfs = {}   # id -> (url, ext) - ext "docx" only ever from a preprint fallback

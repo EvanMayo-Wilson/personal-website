@@ -279,6 +279,15 @@ rejected push.
     with "not yet checked" (id absent entirely). Re-run
     `python3 generate_pub_stats.py` after adding papers for the same reason
     as the CSL cache above.
+  - **Citation counts are rate-limit-resilient as of 2026-08-11.** OpenAlex
+    rate-limits by IP and an Actions runner shares its IP, so a mid-run 429
+    is routine. `http_json_retry()` backs off (2/4/8s) before giving up, and
+    a batch that still fails carries forward the previous run's counts rather
+    than writing the entry with no `citations` field - a missing count sorts
+    as 0, so a transient 429 used to silently drop ~126 papers to the bottom
+    of "Sort by Citations" until the next day's run. The carry-forward is
+    deliberately scoped to ids whose *batch failed*, not every id missing a
+    count: 6 PMIDs genuinely have no OpenAlex record and must stay blank.
 - **Author metrics** below the Publications heading, one line: Google Scholar
   (from `docs/scholar-stats.json`, refreshed by the Action) and OpenAlex
   (fetched live) - just a gap between them, no separator glyph. OpenAlex is
