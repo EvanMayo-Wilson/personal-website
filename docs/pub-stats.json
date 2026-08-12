@@ -95,7 +95,7 @@
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 242,
+"citations": 248,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
@@ -207,8 +207,7 @@
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
-"citations": 70,
-"pdf": "https://dash.harvard.edu/bitstreams/7312037d-2af9-6bd4-e053-0100007fdf3b/download"
+"citations": 70
 },
 "pmid:25076832": {
 "pdf": "papers/10_1177_1049731513498118.pdf"
@@ -218,7 +217,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -403,11 +403,11 @@
 },
 "pmid:33781993": {
 "citations": 11384,
-"pdf": "https://eprints.whiterose.ac.uk/173314/1/bmj.n160.full.pdf"
+"pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
 "citations": 100543,
-"pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
+"pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
 "citations": 4194,
