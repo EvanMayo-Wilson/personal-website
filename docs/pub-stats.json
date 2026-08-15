@@ -139,7 +139,8 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2053
+"citations": 2053,
+"pdf": "https://www.jmir.org/2011/4/e126/PDF"
 },
 "pmid:23335473": {
 "citations": 435,
@@ -313,7 +314,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1438,
+"citations": 1440,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -393,27 +394,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5074,
+"citations": 5079,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13772,
+"citations": 13776,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11426,
+"citations": 11436,
 "pdf": "https://eprints.whiterose.ac.uk/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 100900,
-"pdf": "https://eprints.whiterose.ac.uk/173303/1/bmj.n71.full.pdf"
+"citations": 101042,
+"pdf": "https://pure.amsterdamumc.nl/ws/files/149119376/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33789819": {
-"citations": 4203,
+"citations": 4205,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11741,
+"citations": 11745,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/216881529/The-prisma-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf"
 },
 "pmid:34078479": {
@@ -489,11 +490,11 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 725,
+"citations": 727,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 311,
+"citations": 312,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -512,7 +513,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 264,
+"citations": 265,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -533,7 +534,8 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 111
+"citations": 111,
+"pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
 "citations": 75,
@@ -544,7 +546,7 @@
 "pdf": "https://pure.bond.edu.au/ws/files/225897896/Consensus_Statement_for_Protocols_of_Factorial_Randomized_Trials_Extension_of_the_SPIRIT_2013_Statement.pdf"
 },
 "pmid:38190185": {
-"citations": 18,
+"citations": 19,
 "pdf": "papers/10_1001_jamanetworkopen_2023_50688.pdf"
 },
 "pmid:38360805": {
@@ -552,7 +554,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 107,
+"citations": 108,
 "pdf": "https://iris.uniroma1.it/bitstream/11573/1723721/1/1-s2.0-S089543562400177X-main.pdf"
 },
 "pmid:38902776": {
@@ -568,7 +570,7 @@
 "pdf": "https://hqlo.biomedcentral.com/counter/pdf/10.1186/s12955-024-02256-9"
 },
 "pmid:38980635": {
-"citations": 76,
+"citations": 77,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
@@ -576,7 +578,7 @@
 "pdf": "papers/10_7326_m24_0771.pdf"
 },
 "pmid:40021657": {
-"citations": 5,
+"citations": 6,
 "pdf": "https://www.nature.com/articles/s41597-025-04629-1.pdf"
 },
 "pmid:40228826": {
