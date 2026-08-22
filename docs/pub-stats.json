@@ -79,8 +79,7 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0,
-"pdf": "https://osf.io/npvwr/download"
+"citations": 0
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
@@ -139,7 +138,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2056,
+"citations": 2058,
 "pdf": "https://www.jmir.org/2011/4/e126/PDF"
 },
 "pmid:23335473": {
@@ -247,7 +246,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2821,
+"citations": 2823,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -302,7 +301,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
-"citations": 114,
+"citations": 115,
 "pdf": "papers/10_1016_j_jclinepi_2017_07_014.pdf"
 },
 "pmid:28870179": {
@@ -323,7 +322,7 @@
 },
 "pmid:29716585": {
 "citations": 41,
-"pdf": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-018-1042-6"
+"pdf": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-018-1042-6"
 },
 "pmid:29718639": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK498655/pdf/Bookshelf_NBK498655.pdf"
@@ -352,7 +351,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
-"citations": 240,
+"citations": 241,
 "pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
@@ -394,27 +393,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5095,
+"citations": 5101,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13793,
+"citations": 13810,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11470,
+"citations": 11493,
 "pdf": "https://eprints.whiterose.ac.uk/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 101531,
-"pdf": "https://eprints.whiterose.ac.uk/173287/1/PIIS0895435621000731.pdf"
+"citations": 101790,
+"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4213,
+"citations": 4219,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11766,
+"citations": 11774,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -490,7 +489,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 727,
+"citations": 728,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -513,7 +512,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 266,
+"citations": 268,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -521,9 +520,7 @@
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
-"citations": 13,
-"pdf": "https://osf.io/f9ptg/download",
-"type": "docx"
+"citations": 13
 },
 "pmid:37562729": {
 "citations": 20,
@@ -534,8 +531,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 113,
-"pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
+"citations": 113
 },
 "pmid:38051324": {
 "citations": 76,
