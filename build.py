@@ -1980,7 +1980,9 @@ var PUB_STATS = window.fetch
    until the next run picks it up.
 ---------------------------------------------------------------------------- */
 (function () {{
-  var KEY   = "oa-links-v2",   // v2: only ever cache a real url_for_pdf, never a landing page
+  var KEY   = "oa-links-v3",   // v3 (2026-08-25): rank locations so a preprint can never win.
+                             // Bumped so v2 entries, cached for up to TTL with the old
+                             // version-blind rule, cannot keep serving a preprint.
       TTL   = 30 * 24 * 60 * 60 * 1000,
       GAP   = 200,
       EMAIL = "{email}";
@@ -2056,6 +2058,37 @@ var PUB_STATS = window.fetch
   // which is not what a button labelled "PDF" should do. So: scan every
   // location (best first, matching Unpaywall's own ranking) and only use one
   // that actually resolves to a PDF; if none do, the button stays hidden.
+  // 2026-08-25: rank by WHERE the PDF lives, NOT by Unpaywall's `version`.
+  //
+  // The old loop took the first location with a url_for_pdf and ignored version
+  // entirely, so when the publisher offered no direct PDF the button could serve
+  // a preprint as though it were the paper.
+  //
+  // But `version` is not trustworthy enough to filter on either: Unpaywall labels
+  // the PMC deposit of a gold-OA BMC article "submittedVersion" when it is in fact
+  // the published article (e.g. 10.1186/s13063-024-08239-x -> PMC11191320,
+  // filename 13063_2024_Article_8239.pdf). Filtering on the field would have
+  // dropped two correct links. So rank by host and URL shape, which are reliable:
+  //
+  //   3  publisher            the typeset version of record
+  //   2  PMC                  for a gold-OA journal this IS the published article
+  //   1  other repository     only when it self-reports publishedVersion
+  //  -1  never                preprint servers, and NIH author manuscripts
+  //
+  // Anything scoring -1 can never be chosen, even if it is the only PDF on offer;
+  // the button then stays hidden, which is correct. A hidden button is honest, a
+  // button labelled PDF that yields a preprint is not.
+  function pdfRank(l) {{
+    var u = (l.url_for_pdf || "").toLowerCase();
+    if (!u) return -1;
+    if (/arxiv\\.org|biorxiv|medrxiv|osf\\.io|preprints\\.org|ssrn\\.|researchsquare|research-square/.test(u)) return -1;
+    if (/nihms/.test(u)) return -1;
+    if (l.host_type === "publisher") return 3;
+    if (/pmc\\.ncbi\\.nlm\\.nih\\.gov/.test(u)) return 2;
+    if (l.version === "publishedVersion") return 1;
+    return -1;
+  }}
+
   function unpaywall(doi) {{
     return fetch("https://api.unpaywall.org/v2/" + encodeURIComponent(doi) +
                  "?email=" + encodeURIComponent(EMAIL))
@@ -2063,10 +2096,12 @@ var PUB_STATS = window.fetch
       .then(function (d) {{
         if (!d) return "";
         var locs = [d.best_oa_location].concat(d.oa_locations || []).filter(Boolean);
+        var best = "", bestRank = 0;
         for (var i = 0; i < locs.length; i++) {{
-          if (locs[i].url_for_pdf) return locs[i].url_for_pdf;
+          var r = pdfRank(locs[i]);
+          if (r > bestRank) {{ bestRank = r; best = locs[i].url_for_pdf; }}
         }}
-        return "";
+        return best;
       }});
   }}
 

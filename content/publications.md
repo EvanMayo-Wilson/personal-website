@@ -18,7 +18,7 @@ Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Ob
 Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Research* 15:626.
 
 - [**Descriptive epidemiology of musculoskeletal injuries presenting to an embedded Holistic Health and Fitness (H2F) team in a United States Army Stryker Brigade, October 2021-September 2022**](https://doi.org/10.1093/milmed/usaf645)  
-Naylor JA, Jonsson-Funk M, Ranapurwala S, Canham Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Military Medicine*, Online ahead of print. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
+Naylor JA, Jonsson Funk M, Ranapurwala SI, Canham Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Military Medicine* 2026;usaf645. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
 
 - [**TOP 2025: An update to the Transparency and Openness Promotion Guidelines**](https://link.springer.com/article/10.1186/s41073-026-00223-0)  
 Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz M, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA, the TOP Advisory Board. *Res Integ Peer Rev* 11(1):40. PMID: [42557573](https://pubmed.ncbi.nlm.nih.gov/42557573/). [[Preprint on *MetaArXiv*](https://doi.org/10.31222/osf.io/nmfs6_v4)]
