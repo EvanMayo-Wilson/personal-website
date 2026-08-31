@@ -397,23 +397,23 @@
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13860,
+"citations": 13862,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11563,
-"pdf": "https://pure.amsterdamumc.nl/ws/files/149119345/Prisma-2020-explanation-and-elaboration-updated-guidance-and-exemplars-for-reporting-systematic-reviews.pdf"
+"citations": 11566,
+"pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
 },
 "pmid:33782057": {
-"citations": 102919,
+"citations": 102961,
 "pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
-"citations": 4239,
+"citations": 4241,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11821,
+"citations": 11823,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -533,8 +533,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 118,
-"pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
+"citations": 118
 },
 "pmid:38051324": {
 "citations": 76,
@@ -612,7 +611,8 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
 },
 "pmid:42557573": {
 "citations": 4,
