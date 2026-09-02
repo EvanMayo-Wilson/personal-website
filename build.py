@@ -51,6 +51,19 @@ def render(name: str) -> str:
     return MD.convert((CONTENT / f"{name}.md").read_text(encoding="utf-8"))
 
 
+def updated_label() -> str:
+    """Footer date, optionally fixed for reproducible validation builds."""
+    raw = os.environ.get("SITE_UPDATED_DATE", "").strip()
+    if raw:
+        try:
+            day = datetime.date.fromisoformat(raw)
+        except ValueError as exc:
+            raise SystemExit("SITE_UPDATED_DATE must use ISO YYYY-MM-DD") from exc
+    else:
+        day = datetime.date.today()
+    return f"{day.day} {day.strftime('%B %Y')}"
+
+
 def demote(html_str: str, by: int = 1) -> str:
     """h2 -> h3 etc, so section <h2> stays the top of each section's outline."""
     def sub(m):
@@ -2503,8 +2516,7 @@ def main():
         yearnav='<span class="sep" aria-hidden="true">·</span>'.join(
             f'<a href="#y{y}">{y}</a>' for y, _ in years
         ),
-        updated=datetime.date.today().strftime("%-d %B %Y")
-                if os.name != "nt" else datetime.date.today().strftime("%d %B %Y"),
+        updated=updated_label(),
         analytics=(ANALYTICS.format(token=CLOUDFLARE_ANALYTICS_TOKEN)
                    if CLOUDFLARE_ANALYTICS_TOKEN else ""),
     )
