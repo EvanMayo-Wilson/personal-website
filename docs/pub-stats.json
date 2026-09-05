@@ -139,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2070
+"citations": 2071
 },
 "pmid:23335473": {
 "citations": 435,
@@ -216,7 +216,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -245,7 +246,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2833,
+"citations": 2834,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -273,7 +274,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-015-0134-z"
 },
 "pmid:26932483": {
-"citations": 146,
+"citations": 147,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:26934268": {
@@ -312,7 +313,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1448,
+"citations": 1449,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -335,7 +336,7 @@
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
-"citations": 380,
+"citations": 381,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2735-z"
 },
 "pmid:30223876": {
@@ -350,7 +351,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
-"citations": 243,
+"citations": 246,
 "pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
@@ -369,7 +370,7 @@
 "pdf": "papers/10_1001_jamainternmed_2019_4710.pdf"
 },
 "pmid:31788792": {
-"citations": 23
+"citations": 24
 },
 "pmid:33060401": {
 "citations": 18,
@@ -392,27 +393,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5148,
+"citations": 5156,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13880,
+"citations": 13888,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11602,
+"citations": 11627,
 "pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
 },
 "pmid:33782057": {
-"citations": 103473,
+"citations": 103778,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4249,
+"citations": 4258,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11836,
+"citations": 11843,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -511,7 +512,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 274,
+"citations": 275,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -568,7 +569,7 @@
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
-"citations": 83,
+"citations": 84,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
