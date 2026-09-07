@@ -79,8 +79,7 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0,
-"pdf": "https://osf.io/npvwr/download"
+"citations": 0
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
@@ -95,7 +94,7 @@
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 248,
+"citations": 251,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
@@ -146,7 +145,7 @@
 "pdf": "papers/10_1136_bmj_f185.pdf"
 },
 "pmid:23697669": {
-"citations": 70,
+"citations": 71,
 "pdf": "papers/10_1136_bmj_f2541.pdf"
 },
 "pmid:23734256": {
@@ -216,7 +215,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -392,27 +392,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5156,
+"citations": 5158,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13888,
+"citations": 13890,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11627,
+"citations": 11629,
 "pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
 },
 "pmid:33782057": {
-"citations": 103778,
-"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
+"citations": 103820,
+"pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
-"citations": 4258,
+"citations": 4261,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11843,
+"citations": 11845,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -568,7 +568,7 @@
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
-"citations": 84,
+"citations": 85,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
