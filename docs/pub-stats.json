@@ -4,7 +4,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 177,
+"citations": 178,
 "pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
@@ -79,7 +79,8 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/npvwr/download"
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
@@ -94,7 +95,7 @@
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 251,
+"citations": 248,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
@@ -138,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2071
+"citations": 2073
 },
 "pmid:23335473": {
 "citations": 435,
@@ -215,8 +216,7 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
+"citations": 114
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -237,7 +237,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
-"citations": 112,
+"citations": 113,
 "pdf": "papers/10_1016_j_cpr_2015_04_002.pdf"
 },
 "pmid:26035473": {
@@ -245,7 +245,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2834,
+"citations": 2836,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -312,7 +312,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1449,
+"citations": 1450,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -346,7 +346,7 @@
 "citations": 3
 },
 "pmid:30565151": {
-"citations": 238,
+"citations": 239,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
@@ -392,27 +392,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5158,
+"citations": 5163,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13890,
+"citations": 13896,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11629,
-"pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
+"citations": 11638,
+"pdf": "https://pure.amsterdamumc.nl/ws/files/149119345/Prisma-2020-explanation-and-elaboration-updated-guidance-and-exemplars-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33782057": {
-"citations": 103820,
+"citations": 103986,
 "pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
-"citations": 4261,
+"citations": 4267,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
-"citations": 11845,
+"citations": 11851,
 "pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
 },
 "pmid:34078479": {
@@ -488,7 +488,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 732,
+"citations": 733,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -568,7 +568,7 @@
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
-"citations": 85,
+"citations": 86,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
@@ -584,7 +584,7 @@
 "pdf": "papers/10_1136_bmj_r494.pdf"
 },
 "pmid:40780848": {
-"citations": 34,
+"citations": 35,
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41626914": {
