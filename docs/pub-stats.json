@@ -139,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2073
+"citations": 2074
 },
 "pmid:23335473": {
 "citations": 435,
@@ -216,8 +216,7 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
+"citations": 114
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -246,7 +245,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2836,
+"citations": 2840,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -297,11 +296,11 @@
 "pdf": "papers/10_1002_14651858_cd008524_pub3.pdf"
 },
 "pmid:28529187": {
-"citations": 141,
+"citations": 142,
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
-"citations": 115,
+"citations": 116,
 "pdf": "papers/10_1016_j_jclinepi_2017_07_014.pdf"
 },
 "pmid:28870179": {
@@ -313,11 +312,11 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1450,
+"citations": 1453,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
-"citations": 27,
+"citations": 28,
 "pdf": "papers/10_1073_pnas_1708273114.pdf"
 },
 "pmid:29716585": {
@@ -355,7 +354,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
-"citations": 77,
+"citations": 78,
 "pdf": "papers/10_1016_j_jclinepi_2019_04_022.pdf"
 },
 "pmid:31055176": {
@@ -397,19 +396,19 @@
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13896,
+"citations": 13906,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
 "citations": 11638,
-"pdf": "https://pure.amsterdamumc.nl/ws/files/149119345/Prisma-2020-explanation-and-elaboration-updated-guidance-and-exemplars-for-reporting-systematic-reviews.pdf"
+"pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
 },
 "pmid:33782057": {
-"citations": 103986,
+"citations": 104334,
 "pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
-"citations": 4267,
+"citations": 4268,
 "pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
 },
 "pmid:33789826": {
@@ -429,7 +428,7 @@
 "pdf": "https://f1000research.com/articles/10-455/v1/pdf"
 },
 "pmid:34357509": {
-"citations": 17,
+"citations": 18,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-021-01284-x.pdf"
 },
 "pmid:34474960": {
@@ -485,7 +484,7 @@
 "pdf": "https://sportsmedicine-open.springeropen.com/counter/pdf/10.1186/s40798-022-00496-x"
 },
 "pmid:36065832": {
-"citations": 7,
+"citations": 8,
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
@@ -612,7 +611,8 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
 },
 "pmid:42557573": {
 "citations": 4,
