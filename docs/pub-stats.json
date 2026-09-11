@@ -216,7 +216,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -515,8 +516,7 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 67,
-"pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
+"citations": 67
 },
 "pmid:37178346": {
 "citations": 13,
@@ -611,8 +611,7 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0,
-"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
+"citations": 0
 },
 "pmid:42557573": {
 "citations": 4,
