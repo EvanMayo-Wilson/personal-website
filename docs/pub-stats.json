@@ -31,7 +31,7 @@
 "pdf": "papers/10_1038_s41746_026_03045_y.pdf"
 },
 "doi:10.1093/bjsw/bct129": {
-"citations": 6,
+"citations": 7,
 "pdf": "papers/10_1093_bjsw_bct129.pdf"
 },
 "doi:10.1111/j.1756-5391.2011.01129.x": {
@@ -139,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2074
+"citations": 2075
 },
 "pmid:23335473": {
 "citations": 435,
@@ -246,7 +246,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2840,
+"citations": 2842,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -313,7 +313,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1453,
+"citations": 1454,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -397,16 +397,16 @@
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13906,
+"citations": 13910,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
 "citations": 11638,
-"pdf": "https://researchmgt.monash.edu/ws/files/336504274/336462247_oa.pdf"
+"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 104334,
-"pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
+"citations": 104483,
+"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
 "citations": 4268,
@@ -429,7 +429,7 @@
 "pdf": "https://f1000research.com/articles/10-455/v1/pdf"
 },
 "pmid:34357509": {
-"citations": 18,
+"citations": 19,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-021-01284-x.pdf"
 },
 "pmid:34474960": {
@@ -473,7 +473,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-022-01336-w.pdf"
 },
 "pmid:35294044": {
-"citations": 73,
+"citations": 74,
 "pdf": "papers/10_1002_14651858_cd008524_pub4.pdf"
 },
 "pmid:35525252": {
@@ -516,7 +516,8 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 67
+"citations": 67,
+"pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
 "citations": 13,
@@ -537,11 +538,11 @@
 },
 "pmid:38051324": {
 "citations": 76,
-"pdf": "https://eprints.soton.ac.uk/486969/1/CONSORT_extension_paper_JAMA_AuthorAcceptedVersion.pdf"
+"pdf": "https://researchonline.lshtm.ac.uk/id/eprint/4671696/1/JAMA23-3692R_Merged_PDF.pdf"
 },
 "pmid:38051535": {
 "citations": 28,
-"pdf": "https://eprints.soton.ac.uk/486816/1/SPIRIT_extension_paper_AuthorVersion.pdf"
+"pdf": "https://pure.bond.edu.au/ws/files/225897896/Consensus_Statement_for_Protocols_of_Factorial_Randomized_Trials_Extension_of_the_SPIRIT_2013_Statement.pdf"
 },
 "pmid:38190185": {
 "citations": 19,
@@ -584,7 +585,7 @@
 "pdf": "papers/10_1136_bmj_r494.pdf"
 },
 "pmid:40780848": {
-"citations": 35,
+"citations": 36,
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41626914": {
@@ -611,7 +612,8 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
 },
 "pmid:42557573": {
 "citations": 4,
