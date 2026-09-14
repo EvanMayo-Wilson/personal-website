@@ -4,7 +4,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 178,
+"citations": 177,
 "pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
@@ -202,7 +202,7 @@
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089257&type=printable"
 },
 "pmid:24826920": {
-"citations": 184,
+"citations": 183,
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
@@ -216,8 +216,7 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
+"citations": 114
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -234,7 +233,8 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 300
+"citations": 300,
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
 "citations": 113,
@@ -245,7 +245,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2842,
+"citations": 2846,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -274,7 +274,7 @@
 },
 "pmid:26932483": {
 "citations": 147,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/74440/1/Psychological_interventions_for_adults_with_bipolar_disorder.pdf"
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:26934268": {
 "citations": 2,
@@ -292,15 +292,15 @@
 "pdf": "papers/10_1177_1090198116668522.pdf"
 },
 "pmid:28282701": {
-"citations": 493,
+"citations": 492,
 "pdf": "papers/10_1002_14651858_cd008524_pub3.pdf"
 },
 "pmid:28529187": {
-"citations": 142,
+"citations": 141,
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
-"citations": 116,
+"citations": 115,
 "pdf": "papers/10_1016_j_jclinepi_2017_07_014.pdf"
 },
 "pmid:28870179": {
@@ -308,7 +308,7 @@
 "pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 113,
+"citations": 112,
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
@@ -346,7 +346,7 @@
 "citations": 3
 },
 "pmid:30565151": {
-"citations": 239,
+"citations": 240,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
@@ -381,7 +381,7 @@
 },
 "pmid:33334836": {
 "citations": 76,
-"pdf": "https://findresearcher.sdu.dk:8443/ws/files/179013296/e040478.full.pdf"
+"pdf": "https://mcgill.scholaris.ca/bitstreams/15b7bf69-8691-4e53-80a2-95c84102110e/download"
 },
 "pmid:33439718": {
 "citations": 1,
@@ -396,7 +396,7 @@
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13910,
+"citations": 13922,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
@@ -404,16 +404,15 @@
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 104483,
+"citations": 104713,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
 "citations": 4268,
-"pdf": "https://pure.bond.edu.au/ws/files/70523781/The_PRISMA_2020_statement_Jour_of_clin_Epid_.pdf"
+"pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11851,
-"pdf": "https://pure.bond.edu.au/ws/files/73563879/The_PRISMA_2020_statement_an_updated_guideline_for_reporting.pdf"
+"citations": 11851
 },
 "pmid:34078479": {
 "citations": 52,
@@ -553,7 +552,7 @@
 },
 "pmid:38849061": {
 "citations": 115,
-"pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
+"pdf": "https://iris.uniroma1.it/bitstream/11573/1723721/1/1-s2.0-S089543562400177X-main.pdf"
 },
 "pmid:38902776": {
 "citations": 7,
