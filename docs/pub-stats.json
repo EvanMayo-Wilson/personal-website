@@ -79,7 +79,8 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/npvwr/download"
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
@@ -138,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2076
+"citations": 2077
 },
 "pmid:23335473": {
 "citations": 435,
@@ -215,7 +216,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
 "pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
@@ -232,7 +234,7 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 300,
+"citations": 301,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
@@ -244,7 +246,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2848,
+"citations": 2851,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -256,7 +258,7 @@
 "pdf": "papers/10_1016_s2215_0366_15_00090_5.pdf"
 },
 "pmid:26361000": {
-"citations": 703,
+"citations": 704,
 "pdf": "papers/10_1016_s2215_0366_14_70329_3.pdf"
 },
 "pmid:26407814": {
@@ -299,7 +301,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
-"citations": 115,
+"citations": 116,
 "pdf": "papers/10_1016_j_jclinepi_2017_07_014.pdf"
 },
 "pmid:28870179": {
@@ -311,7 +313,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1454,
+"citations": 1460,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -330,7 +332,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 359,
+"citations": 360,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
@@ -395,7 +397,7 @@
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13928,
+"citations": 13941,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
@@ -403,7 +405,7 @@
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 104831,
+"citations": 105144,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
@@ -517,7 +519,9 @@
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
-"citations": 13
+"citations": 13,
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 20,
@@ -593,7 +597,7 @@
 },
 "pmid:41723462": {
 "citations": 2,
-"pdf": "https://link.springer.com/content/pdf/10.1186/s12916-026-04709-y.pdf"
+"pdf": "https://pure.bond.edu.au/ws/files/305967725/s12916-026-04709-y.pdf"
 },
 "pmid:41802580": {
 "citations": 1,
