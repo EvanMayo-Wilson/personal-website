@@ -219,12 +219,8 @@
 "citations": 114,
 "pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
-"pmid:25340235": {
-"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK248060/pdf/Bookshelf_NBK248060.pdf"
-},
-"pmid:25577940": {
-"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK266258/pdf/Bookshelf_NBK266258.pdf"
-},
+"pmid:25340235": {},
+"pmid:25577940": {},
 "pmid:25671707": {
 "citations": 111,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
@@ -324,9 +320,7 @@
 "citations": 41,
 "pdf": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-018-1042-6"
 },
-"pmid:29718639": {
-"pdf": "https://www.ncbi.nlm.nih.gov/books/NBK498655/pdf/Bookshelf_NBK498655.pdf"
-},
+"pmid:29718639": {},
 "pmid:30026961": {
 "citations": 16,
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
@@ -611,8 +605,7 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0,
-"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
+"citations": 0
 },
 "pmid:42557573": {
 "citations": 4,
