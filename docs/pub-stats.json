@@ -4,7 +4,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 177,
+"citations": 178,
 "pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
@@ -135,11 +135,11 @@
 "pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
-"citations": 351,
+"citations": 352,
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2079
+"citations": 2082
 },
 "pmid:23335473": {
 "citations": 436,
@@ -190,8 +190,7 @@
 "pdf": "papers/10_4088_jcp_13lr08420.pdf"
 },
 "pmid:24029534": {
-"citations": 21,
-"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
+"citations": 21
 },
 "pmid:24528545": {
 "citations": 583,
@@ -216,7 +215,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {},
 "pmid:25577940": {},
@@ -229,8 +229,7 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 301,
-"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
+"citations": 301
 },
 "pmid:25939032": {
 "citations": 113,
@@ -261,7 +260,7 @@
 "pdf": "papers/10_1136_bmj_h4169.pdf"
 },
 "pmid:26506554": {
-"citations": 39,
+"citations": 40,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0140704&type=printable"
 },
 "pmid:26525044": {
@@ -270,7 +269,7 @@
 },
 "pmid:26932483": {
 "citations": 147,
-"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/74440/1/Psychological_interventions_for_adults_with_bipolar_disorder.pdf"
 },
 "pmid:26934268": {
 "citations": 2,
@@ -308,7 +307,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1465,
+"citations": 1468,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -325,11 +324,11 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 361,
+"citations": 362,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
-"citations": 381,
+"citations": 382,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2735-z"
 },
 "pmid:30223876": {
@@ -386,27 +385,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5163,
+"citations": 5211,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13968,
+"citations": 13977,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11638,
+"citations": 11781,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 105710,
+"citations": 105915,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4268,
+"citations": 4298,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11851
+"citations": 11917
 },
 "pmid:34078479": {
 "citations": 52,
@@ -437,7 +436,7 @@
 "pdf": "papers/10_1016_j_arthro_2021_09_005.pdf"
 },
 "pmid:34742788": {
-"citations": 66,
+"citations": 67,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_023.pdf"
 },
 "pmid:34742789": {
@@ -481,11 +480,11 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 733,
+"citations": 740,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 315,
+"citations": 317,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -504,11 +503,11 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 275,
+"citations": 283,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 67,
+"citations": 69,
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
@@ -525,11 +524,11 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 120,
+"citations": 121,
 "pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
-"citations": 76,
+"citations": 78,
 "pdf": "https://eprints.soton.ac.uk/486969/1/CONSORT_extension_paper_JAMA_AuthorAcceptedVersion.pdf"
 },
 "pmid:38051535": {
@@ -537,7 +536,7 @@
 "pdf": "https://eprints.soton.ac.uk/486816/1/SPIRIT_extension_paper_AuthorVersion.pdf"
 },
 "pmid:38190185": {
-"citations": 19,
+"citations": 20,
 "pdf": "papers/10_1001_jamanetworkopen_2023_50688.pdf"
 },
 "pmid:38360805": {
@@ -545,7 +544,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 115,
+"citations": 117,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
 },
 "pmid:38902776": {
@@ -553,11 +552,11 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s13063-024-08239-x.pdf"
 },
 "pmid:38977535": {
-"citations": 23,
+"citations": 24,
 "pdf": "https://jpro.springeropen.com/counter/pdf/10.1186/s41687-024-00727-7"
 },
 "pmid:38978063": {
-"citations": 19,
+"citations": 20,
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
@@ -577,12 +576,11 @@
 "pdf": "papers/10_1136_bmj_r494.pdf"
 },
 "pmid:40780848": {
-"citations": 40,
+"citations": 41,
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41626914": {
-"citations": 10,
-"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E41BD8EC61447E3E559C43AB95F7964A/S1759287925000195a.pdf/div-class-title-weighted-corrected-covered-area-wcca-a-measure-of-informational-overlap-among-reviews-div.pdf"
+"citations": 10
 },
 "pmid:41641596": {
 "citations": 0,
