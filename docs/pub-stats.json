@@ -139,7 +139,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2082
+"citations": 2083
 },
 "pmid:23335473": {
 "citations": 436,
@@ -190,7 +190,8 @@
 "pdf": "papers/10_4088_jcp_13lr08420.pdf"
 },
 "pmid:24029534": {
-"citations": 21
+"citations": 21,
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
 "citations": 583,
@@ -229,7 +230,8 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 301
+"citations": 301,
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
 "citations": 113,
@@ -269,7 +271,7 @@
 },
 "pmid:26932483": {
 "citations": 147,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/74440/1/Psychological_interventions_for_adults_with_bipolar_disorder.pdf"
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:26934268": {
 "citations": 2,
@@ -385,19 +387,19 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5211,
+"citations": 5213,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13977,
+"citations": 13984,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11781,
+"citations": 11790,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 105915,
+"citations": 106076,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
@@ -405,7 +407,7 @@
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11917
+"citations": 11923
 },
 "pmid:34078479": {
 "citations": 52,
@@ -480,7 +482,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 740,
+"citations": 741,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -528,7 +530,7 @@
 "pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
-"citations": 78,
+"citations": 79,
 "pdf": "https://eprints.soton.ac.uk/486969/1/CONSORT_extension_paper_JAMA_AuthorAcceptedVersion.pdf"
 },
 "pmid:38051535": {
@@ -580,7 +582,8 @@
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41626914": {
-"citations": 10
+"citations": 11,
+"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E41BD8EC61447E3E559C43AB95F7964A/S1759287925000195a.pdf/div-class-title-weighted-corrected-covered-area-wcca-a-measure-of-informational-overlap-among-reviews-div.pdf"
 },
 "pmid:41641596": {
 "citations": 0,
