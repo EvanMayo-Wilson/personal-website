@@ -55,12 +55,10 @@
 "pdf": "papers/10_1177_25152459251375445.pdf"
 },
 "doi:10.12688/f1000research.179775.1": {
-"citations": 0,
-"pdf": "https://f1000research.com/articles/15-626/pdf"
+"citations": 0
 },
 "doi:10.12688/f1000research.180216.1": {
-"citations": 0,
-"pdf": "https://f1000research.com/articles/15-665/pdf"
+"citations": 0
 },
 "doi:10.17226/26039": {
 "citations": 0,
@@ -139,7 +137,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2082
+"citations": 2085
 },
 "pmid:23335473": {
 "citations": 436,
@@ -216,7 +214,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 114
+"citations": 114,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {},
 "pmid:25577940": {},
@@ -308,7 +307,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1470,
+"citations": 1471,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -325,7 +324,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 362,
+"citations": 363,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
@@ -382,23 +381,22 @@
 "pdf": "papers/10_2105_ajph_2020_306077.pdf"
 },
 "pmid:33628434": {
-"citations": 13,
-"pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
+"citations": 13
 },
 "pmid:33780438": {
-"citations": 5215,
+"citations": 5224,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13987,
+"citations": 13997,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11815,
+"citations": 11820,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 106363,
+"citations": 106426,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
@@ -417,8 +415,7 @@
 "pdf": "papers/10_1136_bmjopen_2020_047785.pdf"
 },
 "pmid:34249342": {
-"citations": 5,
-"pdf": "https://f1000research.com/articles/10-455/v1/pdf"
+"citations": 5
 },
 "pmid:34357509": {
 "citations": 19,
