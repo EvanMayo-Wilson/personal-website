@@ -132535,5 +132535,395 @@
 }
 ],
 "article-number": "40"
+},
+"doi:10.31222/osf.io/5wrsm_v2": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+2
+]
+],
+"date-time": "2026-10-02T05:53:19Z",
+"timestamp": 1790920399076,
+"version": "4.1.0"
+},
+"posted": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+],
+"date-time": "2026-09-16T00:00:00Z",
+"timestamp": 1789516800000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>Defining outcomes completely before conducting clinical trials helps to mitigate reporting biases; however, there is limited guidance to help investigators define outcomes completely. We aimed to develop a structured approach for defining trial outcomes completely and consistently.We reviewed literature, developed preliminary rules for defining outcomes, and refined them iteratively. We randomly selected randomized controlled trials (RCTs) on ClinicalTrials.gov that registered before their start dates and posted results by January 4, 2024. The 225 included RCTs evaluated 3,424 outcomes. Two raters independently applied preliminary rules to define each outcome. When raters encountered outcomes they could not define, we refined the rules. We continued this process until no further changes were needed. We discussed and finalized our approach in a consensus meeting.We define an “outcome” as a value for each participant that will be used in analysis to generate study results. A complete outcome definition includes six elements: outcome domain, specific measurement, specific metric, cutoff, variable type, and timepoint. We developed rules for naming specific measurements for both subjective and objective outcomes. We expanded on prior work by developing more comprehensive categories for specific metrics. We introduced \"cutoff\" as a distinct element with three subelements. To clarify the boundary between outcome definitions and statistical methods, we replaced a previously described element, \"method of aggregation,\" with \"variable type,\" which refers to whether the value for each individual is continuous or categorical.Trialists and sponsors could use this approach alongside other guidelines to define outcomes in trial registrations, protocols, and result reports.</p>",
+"DOI": "10.31222/osf.io/5wrsm_v2",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+],
+"date-time": "2026-09-16T18:08:58Z",
+"timestamp": 1789582138000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Guidance for defining outcomes in clinical trials",
+"prefix": "10.31222",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-1713-3788",
+"authenticated-orcid": true,
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-5371-4558",
+"authenticated-orcid": true,
+"given": "Tianjing",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Joanne",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Matthew James",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-8085-6751",
+"authenticated-orcid": true,
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0003-2075-5267",
+"authenticated-orcid": true,
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4225-372X",
+"authenticated-orcid": true,
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1758-8205",
+"authenticated-orcid": true,
+"given": "Andrew William",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-6670-4874",
+"authenticated-orcid": true,
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-8286-1995",
+"authenticated-orcid": true,
+"given": "Nicholas J",
+"family": "DeVito",
+"sequence": "additional",
+"affiliation": [
+{
+"id": [
+{
+"id": "https://ror.org/052gg0110",
+"id-type": "ROR",
+"asserted-by": "publisher"
+}
+],
+"name": "University of Oxford"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2062-3382",
+"authenticated-orcid": true,
+"given": "Ian",
+"family": "Saldanha",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Martin",
+"family": "Offringa",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5152-0108",
+"authenticated-orcid": true,
+"given": "Nancy J.",
+"family": "Butcher",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sirui",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-0476-3385",
+"authenticated-orcid": true,
+"given": "Phi-Yen",
+"family": "Nguyen",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7374-7549",
+"authenticated-orcid": true,
+"given": "Joe D",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3593-9141",
+"authenticated-orcid": true,
+"given": "Veronica Ka Wai",
+"family": "Lai",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": true,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+2
+]
+],
+"date-time": "2026-10-02T05:04:50Z",
+"timestamp": 1790917490000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/5wrsm_v2"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/5wrsm_v2",
+"relation": {
+"is-version-of": [
+{
+"id-type": "doi",
+"id": "10.31222/osf.io/5wrsm_v1",
+"asserted-by": "subject"
+}
+]
+},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+]
+},
+"subtype": "preprint"
 }
 }

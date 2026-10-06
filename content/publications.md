@@ -8,6 +8,9 @@ Ying X, **Mayo-Wilson E**. *BMJ*, 393:s922. PMID: [42203256](https://pubmed.ncbi
 - [**An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov**](https://doi.org/10.1038/s41746-026-03045-y)  
 Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *npj Digital Medicine*. [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr)]
 
+- [**Guidance for defining outcomes in clinical trials**](https://osf.io/preprints/metaarxiv/5wrsm_v2)  
+Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Qureshi R, DeVito NJ, Saldanha IJ, Offringa M, Butcher NJ, Zhang S, Nguyen PY, Menke JD, Lai VKW, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/5wrsm_v2](https://doi.org/10.31222/osf.io/5wrsm_v2).
+
 - [**Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: Study protocol**](https://f1000research.com/articles/15-665)  
 Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaumer-Streit B, Ying X, Kilicoglu H, McKenzie JE. *F1000Research* 15:665.
 

@@ -168,8 +168,10 @@ GAP = 150  # ms between sequential per-item lookups (Unpaywall / HEAD checks)
 MEDRXIV_RE = re.compile(
     r"^(https?://www\.(?:medrxiv|biorxiv)\.org/content/10\.\d{4,9}/[^/?#]+v\d+)/?$"
 )
+# OSF versioned ids ("5wrsm_v2") have no /download of their own - the bare id's
+# /download serves the latest version, so the suffix is matched but dropped.
 OSF_RE = re.compile(
-    r"^https?://osf\.io/(?:preprints/[a-z0-9]+/)?([a-z0-9]{4,8})/?$", re.I
+    r"^https?://osf\.io/(?:preprints/[a-z0-9]+/)?([a-z0-9]{4,8})(?:_v\d+)?/?$", re.I
 )
 CITATION_PDF_RE = re.compile(
     r'name=["\']citation_pdf_url["\']\s+content=["\']([^"\']+)["\']', re.I
