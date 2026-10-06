@@ -130572,5 +130572,1968 @@
 ]
 ]
 }
+},
+"doi:10.1038/s41746-026-03045-y": {
+"indexed": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T17:03:39Z",
+"timestamp": 1785344619257,
+"version": "3.55.0"
+},
+"reference-count": 0,
+"publisher": "Springer Science and Business Media LLC",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T00:00:00Z",
+"timestamp": 1785283200000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T00:00:00Z",
+"timestamp": 1785283200000
+},
+"content-version": "am",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+}
+],
+"funder": [
+{
+"name": "UNC Provost’s AI Acceleration program cloud resource grant"
+},
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "crossref",
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "crossref"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"link.springer.com"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>It is difficult to ensure clinical trial outcomes are defined completely in registrations, and to check outcome changes between registration and posting results. We developed a large language model (LLM)-based approach to evaluate outcome definitions and changes on ClinicalTrials.gov. Our LLM-based approach accurately identified incomplete outcomes in prospective trial registrations (sensitivity, 0.91 [95% confidence interval {CI}, 0.87–0.94]; positive predictive value [PPV], 0.98 [95% CI, 0.97–1.00]). Comparing prospective registrations with posted results, it correctly identified 96.1% of missing and 97.9% of added outcomes. It identified all outcomes with a priority change (e.g., from primary to secondary) and 99.2% without one. Sensitivity and PPV for identifying any outcome change were 0.97 (95% CI, 0.95–0.99) and 0.95 (95% CI, 0.89–0.98), respectively. Estimated costs per trial were $0.13 for o3-mini, $0.30 for GPT-4o, and $1.80 for o1. The accuracy of our approach suggests it could be used to improve registration quality and to detect outcome changes at large scale and at low cost.</jats:p>",
+"DOI": "10.1038/s41746-026-03045-y",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T16:55:02Z",
+"timestamp": 1785344102000
+},
+"update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov",
+"prefix": "10.1038",
+"author": [
+{
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Tianjing",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Andrew W.",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Joe D.",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Nicholas J.",
+"family": "DeVito",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Matthew J.",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Joanne E.",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Ian J.",
+"family": "Saldanha",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sirui",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Nancy J.",
+"family": "Butcher",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Martin",
+"family": "Offringa",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Jamie",
+"family": "Cummins",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "297",
+"published-online": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"container-title": "npj Digital Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://www.nature.com/articles/s41746-026-03045-y",
+"content-type": "text/html",
+"content-version": "vor",
+"intended-application": "text-mining"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T16:55:02Z",
+"timestamp": 1785344102000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://www.nature.com/articles/s41746-026-03045-y"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"references-count": 0,
+"alternative-id": [
+"3045"
+],
+"URL": "http://dx.doi.org/10.1038/s41746-026-03045-y",
+"relation": {},
+"ISSN": [
+"2398-6352"
+],
+"subject": [],
+"container-title-short": "npj Digit. Med.",
+"published": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"assertion": [
+{
+"value": "5 December 2025",
+"order": 1,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "13 July 2026",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "29 July 2026",
+"order": 3,
+"name": "first_online",
+"label": "First Online",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "The authors declare no competing interests.",
+"order": 1,
+"name": "Ethics",
+"label": "Competing interests",
+"group": {
+"name": "EthicsHeading",
+"label": "Ethics"
+}
+}
+]
+},
+"doi:10.1038/s41746-026-03318-6": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+],
+"date-time": "2026-10-06T00:56:15Z",
+"timestamp": 1791248175953,
+"version": "4.1.0"
+},
+"reference-count": 0,
+"publisher": "Springer Science and Business Media LLC",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+],
+"date-time": "2026-10-06T00:00:00Z",
+"timestamp": 1791244800000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+],
+"date-time": "2026-10-06T00:00:00Z",
+"timestamp": 1791244800000
+},
+"content-version": "am",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"link.springer.com"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Randomized controlled trials (RCTs) are central to assessing the benefits and harms of interventions, but incomplete reporting undermines their verifiability and usefulness. Although SPIRIT and CONSORT reporting guidelines promote complete reporting of RCT protocols and results publications, many RCTs remain incompletely reported. Automated manuscript checking could help improve reporting completeness before publication. We previously developed SPIRIT-CONSORT-TM, a corpus of 200 articles (100 protocol-results publication pairs) annotated with 83 checklist items from SPIRIT 2013 and CONSORT 2010, and trained models for item-level assessment. However, checklist items may comprise multiple constituent elements, which prior work did not capture or evaluate. Here, we extend the corpus with element-level annotations (SPIRIT-CONSORT-ELM) and formulate assessment as a machine reading comprehension task operationalized through 119 questions targeting specific reporting elements. Two annotators independently assessed 50 articles (25 pairs), with discrepancies resolved through discussion; one annotator assessed the remaining 150 articles. We then developed an automated pipeline combining PubMedBERT-based evidence retrieval with GPT-5-based question answering. Inter-annotator agreement was high (Gwet’s AC1: 0.782), and the pipeline achieved high performance (F1: 0.822, Gwet’s AC1: 0.796). Component analyses demonstrated the importance of evidence retrieval quality and modest benefits from illustrative in-context examples. SPIRIT-CONSORT-ELM provides a benchmark for fine-grained assessment of RCT reporting completeness, while the automated pipeline establishes a robust baseline and shows potential for supporting authors, reviewers, and editors.</jats:p>",
+"DOI": "10.1038/s41746-026-03318-6",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+],
+"date-time": "2026-10-06T00:34:42Z",
+"timestamp": 1791246882000
+},
+"update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "SPIRIT-CONSORT-ELM: element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting",
+"prefix": "10.1038",
+"author": [
+{
+"ORCID": "https://orcid.org/0009-0004-2764-0697",
+"authenticated-orcid": false,
+"given": "Lan",
+"family": "Jiang",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1713-3788",
+"authenticated-orcid": false,
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1758-8205",
+"authenticated-orcid": false,
+"given": "Andrew W.",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-0237-0406",
+"authenticated-orcid": false,
+"given": "Mengfei",
+"family": "Lan",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0006-0718-6882",
+"authenticated-orcid": false,
+"given": "Wenxuan",
+"family": "Song",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7374-7549",
+"authenticated-orcid": false,
+"given": "Joe D.",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4225-372X",
+"authenticated-orcid": false,
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": false,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": false,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "297",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+]
+},
+"container-title": "npj Digital Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://www.nature.com/articles/s41746-026-03318-6",
+"content-type": "text/html",
+"content-version": "vor",
+"intended-application": "text-mining"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+],
+"date-time": "2026-10-06T00:34:42Z",
+"timestamp": 1791246882000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://www.nature.com/articles/s41746-026-03318-6"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+]
+},
+"references-count": 0,
+"alternative-id": [
+"3318"
+],
+"URL": "http://dx.doi.org/10.1038/s41746-026-03318-6",
+"relation": {},
+"ISSN": [
+"2398-6352"
+],
+"subject": [],
+"container-title-short": "npj Digit. Med.",
+"published": {
+"date-parts": [
+[
+2026,
+10,
+6
+]
+]
+},
+"assertion": [
+{
+"value": "26 May 2026",
+"order": 1,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "16 September 2026",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "6 October 2026",
+"order": 3,
+"name": "first_online",
+"label": "First Online",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "The authors declare no competing interests.",
+"order": 1,
+"name": "Ethics",
+"label": "Competing interests",
+"group": {
+"name": "EthicsHeading",
+"label": "Ethics"
+}
+}
+]
+},
+"pmid:42557573": {
+"indexed": {
+"date-parts": [
+[
+2026,
+9,
+29
+]
+],
+"date-time": "2026-09-29T19:37:10Z",
+"timestamp": 1790710630740,
+"version": "4.1.0"
+},
+"reference-count": 71,
+"publisher": "Springer Science and Business Media LLC",
+"issue": "1",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+],
+"date-time": "2026-08-05T00:00:00Z",
+"timestamp": 1785888000000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+],
+"date-time": "2026-08-05T00:00:00Z",
+"timestamp": 1785888000000
+},
+"content-version": "vor",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+}
+],
+"content-domain": {
+"domain": [
+"link.springer.com"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Transparency and openness are core scientific values that enable independent verification of reported research results. The Transparency and Openness Promotion (TOP) Guidelines, first published in 2015 (TOP 2015), provided a flexible framework for journals to design and implement publication standards promoting these values. Over the past decade, widespread use of TOP 2015 contributed to valuable evidence and feedback for refinement.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Main Text</jats:title>\n                    <jats:p>The TOP Advisory Board undertook a comprehensive update of TOP 2015 that went into effect in 2025 (TOP 2025). The update introduces an explicit conceptual framework clarifying its primary objective: improving the verifiability of empirical research claims. Standards are reorganized into three categories (Research Practices, Verification Practices, and Verification Studies) that resolve conceptual and structural limitations of TOP 2015. Research Practices include seven discrete practices implemented in three ways: Disclosed, Shared and Cited, and Certified. Verification Practices introduce standards for computational reproducibility and results transparency, while Verification Studies enumerate empirical research designs and publication formats that support verification of results. Language now centers on researchers and studies (rather than journals) to facilitate adoption by funders, research organizations, preprint servers, evidence curators, and other interest-holders. These changes promote flexible implementation and contextual tailoring.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>TOP 2025 retains the core strengths of TOP 2015 while addressing feedback from a decade of implementation and advances in open science. Rather than a universal mandate, it provides a shared, adaptable framework to coordinate the design, implementation, and communication of open policies across interest-holders.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1186/s41073-026-00223-0",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+],
+"date-time": "2026-08-05T10:47:25Z",
+"timestamp": 1785926845000
+},
+"update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 2,
+"title": "TOP 2025: An update to the Transparency and Openness Promotion Guidelines",
+"prefix": "10.1186",
+"volume": "11",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-7775-3022",
+"authenticated-orcid": false,
+"given": "Sean",
+"family": "Grant",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7971-1678",
+"authenticated-orcid": false,
+"given": "Katherine S.",
+"family": "Corker",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-3125-5888",
+"authenticated-orcid": false,
+"given": "David",
+"family": "Mellor",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-2152-0091",
+"authenticated-orcid": false,
+"given": "Suzanne L. K.",
+"family": "Stewart",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": false,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4190-7912",
+"authenticated-orcid": false,
+"given": "Aidan G.",
+"family": "Cashin",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-3993-6127",
+"authenticated-orcid": false,
+"given": "Malgorzata",
+"family": "Lagisz",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-2434-4206",
+"authenticated-orcid": false,
+"given": "David",
+"family": "Moher",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6953-0163",
+"authenticated-orcid": false,
+"given": "Daniel",
+"family": "Umpierre",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2358-2440",
+"authenticated-orcid": false,
+"given": "Virginia",
+"family": "Barbour",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-8111-3239",
+"authenticated-orcid": false,
+"given": "Stuart",
+"family": "Buck",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2772-2316",
+"authenticated-orcid": false,
+"given": "Gary S.",
+"family": "Collins",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-9937-435X",
+"authenticated-orcid": false,
+"given": "Haley F.",
+"family": "Hazlett",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-9673-5559",
+"authenticated-orcid": false,
+"given": "Iain",
+"family": "Hrynaszkiewicz",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5323-9205",
+"authenticated-orcid": false,
+"given": "Carole J.",
+"family": "Lee",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-2995-5284",
+"authenticated-orcid": false,
+"given": "Timothy H.",
+"family": "Parker",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-5322-9368",
+"authenticated-orcid": false,
+"given": "Melissa L.",
+"family": "Rethlefsen",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-5941-0838",
+"authenticated-orcid": false,
+"given": "Elaine",
+"family": "Toomey",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6797-5476",
+"authenticated-orcid": false,
+"given": "Brian A.",
+"family": "Nosek",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"name": "the TOP Advisory Board",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "297",
+"published-online": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+]
+},
+"reference": [
+{
+"key": "223_CR1",
+"doi-asserted-by": "publisher",
+"DOI": "10.54677/MNMH8546",
+"volume-title": "“UNESCO recommendation on open science”",
+"author": "UNESCO",
+"year": "2021",
+"unstructured": "UNESCO. “UNESCO recommendation on open science.” UNESCO; 2021. https://doi.org/10.54677/MNMH8546."
+},
+{
+"key": "223_CR2",
+"unstructured": "Open Science by Design: Realizing a Vision for 21st Century Research (National Academies Press, Washington, D.C., 2018; https://www.nap.edu/catalog/25116)."
+},
+{
+"key": "223_CR3",
+"volume-title": "Developing a toolkit for fostering open science practices: proceedings of a workshop",
+"year": "2021",
+"unstructured": "Arrison T, Saunders J, Kameyama E, editors. Developing a toolkit for fostering open science practices: proceedings of a workshop. Washington, D.C.: National Academies Press; 2021."
+},
+{
+"key": "223_CR4",
+"unstructured": "Reproducibility and Replicability in Science (National Academies Press, Washington, D.C., 2019; https://www.nap.edu/catalog/25303)."
+},
+{
+"key": "223_CR5",
+"doi-asserted-by": "publisher",
+"first-page": "1422",
+"DOI": "10.1126/science.aab2374",
+"volume": "348",
+"author": "BA Nosek",
+"year": "2015",
+"unstructured": "Nosek BA, Alter G, Banks GC, Borsboom D, Bowman SD, Breckler SJ, et al. Promoting an open research culture. Science. 2015;348:1422–5.",
+"journal-title": "Science"
+},
+{
+"key": "223_CR6",
+"unstructured": "Center for Science, TOP Guidelines. https://www.cos.io/initiatives/top-guidelines."
+},
+{
+"key": "223_CR7",
+"doi-asserted-by": "publisher",
+"DOI": "10.1098/rsos.221093",
+"volume": "10",
+"author": "K Naaman",
+"year": "2023",
+"unstructured": "Naaman K, Grant S, Kianersi S, Supplee L, Henschel B, Mayo-Wilson E. Exploring enablers and barriers to implementing the Transparency and Openness Promotion Guidelines: a theory-based survey of journal editors. R Soc Open Sci. 2023;10:221093.",
+"journal-title": "R Soc Open Sci"
+},
+{
+"key": "223_CR8",
+"doi-asserted-by": "publisher",
+"unstructured": "L. Dudda, E. Kormann, M. Kozula, N. J. DeVito, T. Klebel, A. P. M. Dewi, R. Spijker, I. Stegeman, V. V. den Eynden, T. Ross-Hellauer, M. Leeflang, Open Science interventions to improve reproducibility and replicability of research: a scoping review preprint. OSF [Preprint] (2024). https://doi.org/10.31222/osf.io/a8rmu.",
+"DOI": "10.31222/osf.io/a8rmu"
+},
+{
+"key": "223_CR9",
+"first-page": "1",
+"volume": "6",
+"author": "S Kianersi",
+"year": "2023",
+"unstructured": "Kianersi S, Grant S, Naaman K, Henschel B, Mellor DT, Apte S, et al. Evaluating implementation of the Transparency and Openness Promotion Guidelines: reliability of instruments to assess journal policies, procedures, and practices. Adv Methods Pract Psychol Sci. 2023;6:1–21.",
+"journal-title": "Adv Methods Pract Psychol Sci"
+},
+{
+"key": "223_CR10",
+"doi-asserted-by": "publisher",
+"first-page": "763",
+"DOI": "10.1080/17437199.2025.2516010",
+"volume": "19",
+"author": "E Toomey",
+"year": "2025",
+"unstructured": "Toomey E, Coyne R, Derksen C, Grant SP, Jones CM, Kijowska M, et al. Adoption of the Transparency and Openness Promotion (TOP) guidelines within health psychology and behavioural medicine journal policies: a cross-sectional study. Health Psychol Rev. 2025;19:763–80.",
+"journal-title": "Health Psychol Rev"
+},
+{
+"key": "223_CR11",
+"doi-asserted-by": "publisher",
+"first-page": "101",
+"DOI": "10.2165/00007256-198908020-00003",
+"volume": "8",
+"author": "HJ Hansford",
+"year": "2022",
+"unstructured": "Hansford HJ, Cashin AG, Bagg MK, Wewege MA, Ferraro MC, Kianersi S, et al. Feasibility of an audit and feedback intervention to facilitate journal policy change towards greater promotion of transparency and openness in sports science research. Sports Med. 2022;8:101.",
+"journal-title": "Sports Med"
+},
+{
+"key": "223_CR12",
+"doi-asserted-by": "publisher",
+"first-page": "9",
+"DOI": "10.1186/s41073-021-00112-8",
+"volume": "6",
+"author": "E Mayo-Wilson",
+"year": "2021",
+"unstructured": "Mayo-Wilson E, Grant S, Supplee L, Kianersi S, Amin A, DeHaven A, et al. Evaluating implementation of the Transparency and Openness Promotion (TOP) guidelines: the TRUST process for rating journal policies, procedures, and practices. Res Integr Peer Rev. 2021;6:9.",
+"journal-title": "Res Integr Peer Rev"
+},
+{
+"key": "223_CR13",
+"doi-asserted-by": "publisher",
+"first-page": "1",
+"DOI": "10.1097/EDE.0000000000001424",
+"volume": "33",
+"author": "TL Lash",
+"year": "2022",
+"unstructured": "Lash TL. Getting over TOP. Epidemiology. 2022;33:1.",
+"journal-title": "Epidemiology"
+},
+{
+"key": "223_CR14",
+"doi-asserted-by": "publisher",
+"unstructured": "C. Vinatier, A. P. M. Dewi, G. Freyermuth, M. Millour, M. Scheidecker, F.-J. Arnault, M. Acher, V. Nachev, T. L. Weissgerber, N. J. DeVito, G. Dumont, G. Gopalakrishna, G. L. B. Lyan, I. Stegeman, M. M. G. Leeflang, F. Naudet, Monitoring of Open Science practices: a survey of 10 major medical journals. medRxiv [Preprint] (2025). https://doi.org/10.1101/2025.11.26.25341061.",
+"DOI": "10.1101/2025.11.26.25341061"
+},
+{
+"key": "223_CR15",
+"doi-asserted-by": "publisher",
+"unstructured": "S. Grant, K. S. Corker, D. T. Mellor, S. L. K. Stewart, A. G. Cashin, M. Lagisz, E. Mayo-Wilson, D. Moher, D. Umpierre, V. Barbour, S. Buck, G. Collins, H. Hazlett, I. Hrynaszkiewicz, C. J. Lee, T. H. Parker, M. L. Rethlefsen, E. Toomey, B. A. Nosek, TOP 2025: An Update to the Transparency and Openness Promotion Guidelines. MetaArXiv nmfs6_v1 [Preprint] (2024). https://doi.org/10.31222/osf.io/nmfs6.",
+"DOI": "10.31222/osf.io/nmfs6"
+},
+{
+"key": "223_CR16",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/09567976231221558",
+"author": "S Vazire",
+"year": "2023",
+"unstructured": "Vazire S. The next chapter for Psychological Science. Psychol Sci. 2023. https://doi.org/10.1177/09567976231221558.",
+"journal-title": "Psychol Sci"
+},
+{
+"key": "223_CR17",
+"doi-asserted-by": "publisher",
+"first-page": "937",
+"DOI": "10.1177/17456916211036654",
+"volume": "17",
+"author": "A Ledgerwood",
+"year": "2022",
+"unstructured": "Ledgerwood A, Hudson STJ, Lewis NA, Maddox KB, Pickett CL, Remedios JD, et al. The pandemic as a portal: reimagining psychological science as truly open and inclusive. Perspect Psychol Sci. 2022;17:937–59.",
+"journal-title": "Perspect Psychol Sci"
+},
+{
+"key": "223_CR18",
+"doi-asserted-by": "publisher",
+"first-page": "2",
+"DOI": "10.1186/s41073-023-00141-5",
+"volume": "9",
+"author": "P Silverstein",
+"year": "2024",
+"unstructured": "Silverstein P, Elman C, Montoya A, McGillivray B, Pennington CR, Harrison CH, et al. A guide for social science journal editors on easing into open science. Res Integr Peer Rev. 2024;9:2.",
+"journal-title": "Res Integr Peer Rev"
+},
+{
+"key": "223_CR19",
+"doi-asserted-by": "publisher",
+"first-page": "2584",
+"DOI": "10.1073/pnas.1708290115",
+"volume": "115",
+"author": "V Stodden",
+"year": "2018",
+"unstructured": "Stodden V, Seiler J, Ma Z. An empirical analysis of journal policy effectiveness for computational reproducibility. Proc Natl Acad Sci U S A. 2018;115:2584–9.",
+"journal-title": "Proc Natl Acad Sci U S A"
+},
+{
+"key": "223_CR20",
+"doi-asserted-by": "publisher",
+"DOI": "10.1098/rsos.220142",
+"volume": "9",
+"author": "TARG Meta-Research Group and Collaborators",
+"year": "2022",
+"unstructured": "TARG Meta-Research Group and Collaborators. Discrepancy review: a feasibility study of a novel peer review intervention to reduce undisclosed discrepancies between registrations and publications. R Soc Open Sci. 2022;9:220142.",
+"journal-title": "R Soc Open Sci"
+},
+{
+"key": "223_CR21",
+"doi-asserted-by": "publisher",
+"unstructured": "The TOP Statement Working Group, Making Science Transparent By Default; Introducing the TOP Statement. OSF Preprints [Preprint] (2018). https://doi.org/10.31219/osf.io/sm78t.",
+"DOI": "10.31219/osf.io/sm78t"
+},
+{
+"key": "223_CR22",
+"doi-asserted-by": "publisher",
+"first-page": "1250",
+"DOI": "10.1056/NEJMe048225",
+"volume": "351",
+"author": "C De Angelis",
+"year": "2004",
+"unstructured": "De Angelis C, Drazen JM, Frizelle FA, Haug C, Hoey J, Horton R, et al. Clinical trial registration: a statement from the International Committee of Medical Journal Editors. N Engl J Med. 2004;351:1250–1.",
+"journal-title": "N Engl J Med"
+},
+{
+"key": "223_CR23",
+"doi-asserted-by": "publisher",
+"first-page": "1631",
+"DOI": "10.1016/S0140-6736(06)68708-4",
+"volume": "367",
+"author": "I Sim",
+"year": "2006",
+"unstructured": "Sim I, Chan A-W, Gülmezoglu AM, Evans T, Pang T. Clinical trial registration: transparency is the watchword. Lancet. 2006;367:1631–3.",
+"journal-title": "Lancet"
+},
+{
+"key": "223_CR24",
+"doi-asserted-by": "publisher",
+"DOI": "10.5334/dsj-2020-043",
+"author": "SR Carroll",
+"year": "2020",
+"unstructured": "Carroll SR, Garba I, Figueroa-Rodríguez OL, Holbrook J, Lovett R, Materechera S, et al. The CARE principles for Indigenous data governance. Data Sci J. 2020. https://doi.org/10.5334/dsj-2020-043.",
+"journal-title": "Data Sci J"
+},
+{
+"key": "223_CR25",
+"doi-asserted-by": "publisher",
+"first-page": "29",
+"DOI": "10.1038/s41562-021-01193-7",
+"volume": "6",
+"author": "CD Chambers",
+"year": "2022",
+"unstructured": "Chambers CD, Tzavella L. The past, present and future of registered reports. Nat Hum Behav. 2022;6:29–42.",
+"journal-title": "Nat Hum Behav"
+},
+{
+"key": "223_CR26",
+"doi-asserted-by": "publisher",
+"first-page": "702",
+"DOI": "10.1177/1745691616658637",
+"volume": "11",
+"author": "S Steegen",
+"year": "2016",
+"unstructured": "Steegen S, Tuerlinckx F, Gelman A, Vanpaemel W. Increasing transparency through a multiverse analysis. Perspect Psychol Sci. 2016;11:702–12.",
+"journal-title": "Perspect Psychol Sci"
+},
+{
+"key": "223_CR27",
+"doi-asserted-by": "publisher",
+"DOI": "10.7554/eLife.72185",
+"volume": "10",
+"author": "B Aczel",
+"year": "2021",
+"unstructured": "Aczel B, Szaszi B, Nilsonne G, van den Akker OR, Albers CJ, van Assen MA, et al. Consensus-based guidance for conducting and reporting multi-analyst studies. eLife. 2021;10:e72185.",
+"journal-title": "eLife"
+},
+{
+"key": "223_CR28",
+"doi-asserted-by": "crossref",
+"unstructured": "R. Silberzahn, E. L. Uhlmann, D. P. Martin, P. Anselmi, F. Aust, E. Awtrey, Š. Bahník, F. Bai, C. Bannard, E. Bonnier, R. Carlsson, F. Cheung, G. Christensen, R. Clay, M. A. Craig, A. Dalla Rosa, L. Dam, M. H. Evans, I. Flores Cervantes, N. Fong, M. Gamez-Djokic, A. Glenz, S. Gordon-McKeon, T. J. Heaton, K. Hederos, M. Heene, A. J. Hofelich Mohr, F. Högden, K. Hui, M. Johannesson, J. Kalodimos, E. Kaszubowski, D. M. Kennedy, R. Lei, T. A. Lindsay, S. Liverani, C. R. Madan, D. Molden, E. Molleman, R. D. Morey, L. B. Mulder, B. R. Nijstad, N. G. Pope, B. Pope, J. M. Prenoveau, F. Rink, E. Robusto, H. Roderique, A. Sandberg, E. Schlüter, F. D. Schönbrodt, M. F. Sherman, S. A. Sommer, K. Sotak, S. Spain, C. Spörlein, T. Stafford, L. Stefanutti, S. Tauber, J. Ullrich, M. Vianello, E.-J. Wagenmakers, M. Witkowiak, S. Yoon, B. A. Nosek, Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results. Advances in Methods and Practices in Psychological Science. 2018;1:337–356.",
+"DOI": "10.1177/2515245917747646"
+},
+{
+"key": "223_CR29",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/1741-7015-8-24",
+"volume": "8",
+"author": "I Simera",
+"year": "2010",
+"unstructured": "Simera I, Moher D, Hirst A, Hoey J, Schulz KF, Altman DG. Transparent and accurate reporting increases reliability, utility, and impact of your research: reporting guidelines and the EQUATOR Network. BMC Med. 2010;8:24.",
+"journal-title": "BMC Med"
+},
+{
+"key": "223_CR30",
+"volume": "8",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"unstructured": "Mayo-Wilson E, Grant S, Corker KS, Moher D. Consistent and precise description of research outputs could improve implementation of open science. Adv Methods Pract Psychol Sci. 2025;8:25152459251375445.",
+"journal-title": "Adv Methods Pract Psychol Sci"
+},
+{
+"key": "223_CR31",
+"doi-asserted-by": "publisher",
+"first-page": "1105",
+"DOI": "10.1177/1745691619858427",
+"volume": "14",
+"author": "DB Rice",
+"year": "2019",
+"unstructured": "Rice DB, Moher D. Curtailing the use of preregistration: a misused term. Perspect Psychol Sci. 2019;14:1105–8.",
+"journal-title": "Perspect Psychol Sci"
+},
+{
+"key": "223_CR32",
+"doi-asserted-by": "publisher",
+"unstructured": "Van den Akker O, Weston S, Campbell L, Chopik B, Damian R, Davis-Kean P, Bakker M. Preregistration of secondary data analysis: A template and tutorial. Meta-psychology. 2021;5:2625. https://doi.org/10.15626/MP.2020.2625.",
+"DOI": "10.15626/MP.2020.2625"
+},
+{
+"key": "223_CR33",
+"doi-asserted-by": "publisher",
+"unstructured": "B. A. Nosek, L. C. Shaw, T. M. Errington, N. Pfeiffer, D. T. Mellor, R. E. B. Iii, A. Rice, D. M. Litherland, Center for Open Science: Strategic Plan. OSF [Preprint] (2017). https://doi.org/10.31219/osf.io/x2w9h.",
+"DOI": "10.31219/osf.io/x2w9h"
+},
+{
+"key": "223_CR34",
+"doi-asserted-by": "publisher",
+"first-page": "1082",
+"DOI": "10.1038/s41467-024-54614-2",
+"volume": "16",
+"author": "Reproducibility and transparency",
+"year": "2025",
+"unstructured": "Reproducibility and transparency. what’s going on and how can we help. Nat Commun. 2025;16:1082.",
+"journal-title": "Nat Commun"
+},
+{
+"key": "223_CR35",
+"doi-asserted-by": "publisher",
+"first-page": "122",
+"DOI": "10.1080/00461520.2021.1902329",
+"volume": "56",
+"author": "D Mellor",
+"year": "2021",
+"unstructured": "Mellor D. Improving norms in research culture to incentivize transparency and rigor. Educ Psychol. 2021;56:122–31.",
+"journal-title": "Educ Psychol"
+},
+{
+"key": "223_CR36",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pbio.2004089",
+"volume": "16",
+"author": "D Moher",
+"year": "2018",
+"unstructured": "Moher D, Naudet F, Cristea IA, Miedema F, Ioannidis JPA, Goodman SN. Assessing scientists for hiring, promotion, and tenure. PLoS Biol. 2018;16:e2004089.",
+"journal-title": "PLoS Biol"
+},
+{
+"key": "223_CR37",
+"doi-asserted-by": "publisher",
+"first-page": "299",
+"DOI": "10.1037/cap0000221",
+"volume": "61",
+"author": "JL Tackett",
+"year": "2020",
+"unstructured": "Tackett JL, Brandes CM, Dworak EM, Shields AN. Bringing the (pre)registration revolution to graduate training. Can Psychol. 2020;61:299–309.",
+"journal-title": "Can Psychol"
+},
+{
+"key": "223_CR38",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pbio.3002715",
+"volume": "22",
+"author": "M Lagisz",
+"year": "2024",
+"unstructured": "Lagisz M, Rutkowska J, Aich U, Ross RM, Santana MS, Wang J, et al. “Best paper” awards lack transparency, inclusivity, and support for Open Science. PLoS Biol. 2024;22:e3002715.",
+"journal-title": "PLoS Biol"
+},
+{
+"key": "223_CR39",
+"doi-asserted-by": "publisher",
+"first-page": "774",
+"DOI": "10.1007/s11121-021-01284-x",
+"volume": "23",
+"author": "E Mayo-Wilson",
+"year": "2022",
+"unstructured": "Mayo-Wilson E, Grant S, Supplee LH. Clearinghouse standards of evidence on the transparency, openness, and reproducibility of intervention evaluations. Prev Sci. 2022;23:774–86.",
+"journal-title": "Prev Sci"
+},
+{
+"key": "223_CR40",
+"doi-asserted-by": "publisher",
+"first-page": "1762",
+"DOI": "10.1038/s41562-025-02260-z",
+"volume": "9",
+"author": "S Rasti",
+"year": "2025",
+"unstructured": "Rasti S, Vaesen K, Lakens D. A systemic approach to better coordination in science. Nat Hum Behav. 2025;9:1762–4.",
+"journal-title": "Nat Hum Behav"
+},
+{
+"key": "223_CR41",
+"unstructured": "D. Mellor, M. Zaringhalam, From Policy to Practice: COS’s Commitment to Applying the Transparency and Openness Promotion (TOP) Guidelines (2025). https://www.cos.io/blog/from-policy-to-practice-coss-commitment-to-applying-the-transparency-and-openness-promotion-top-guidelines."
+},
+{
+"key": "223_CR42",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pbio.3003368",
+"volume": "23",
+"author": "S Curry",
+"year": "2025",
+"unstructured": "Curry S, Mercado-Lara E, Arechavala-Gomeza V, Begley CG, Bernard C, Bernard R, et al. Ending publication bias: A values-based approach to surface null and negative results. PLOS Biology. 2025;23:e3003368.",
+"journal-title": "PLOS Biology"
+},
+{
+"key": "223_CR43",
+"doi-asserted-by": "publisher",
+"first-page": "500",
+"DOI": "10.1002/jrsm.1703",
+"volume": "15",
+"author": "F Bartoš",
+"year": "2024",
+"unstructured": "Bartoš F, Maier M, Wagenmakers E-J, Nippold F, Doucouliagos H, Ioannidis JPA, et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res Synth Methods. 2024;15:500–11.",
+"journal-title": "Res Synth Methods"
+},
+{
+"key": "223_CR44",
+"doi-asserted-by": "publisher",
+"first-page": "49",
+"DOI": "10.1177/0002716202250789",
+"volume": "587",
+"author": "DP Farrington",
+"year": "2003",
+"unstructured": "Farrington DP. Methodological quality standards for evaluation research. Ann Am Acad Polit Soc Sci. 2003;587:49–68.",
+"journal-title": "Ann Am Acad Polit Soc Sci"
+},
+{
+"key": "223_CR45",
+"doi-asserted-by": "publisher",
+"unstructured": "B. A. Nosek, D. Allison, K. H. Jamieson, M. McNutt, A. B. Nielsen, S. M. Wolf, A Framework for Assessing the Trustworthiness of Research Findings. MetaArXiv jw6fz_v1 [Preprint] (2024). https://doi.org/10.31222/osf.io/jw6fz.",
+"DOI": "10.31222/osf.io/jw6fz"
+},
+{
+"key": "223_CR46",
+"doi-asserted-by": "publisher",
+"first-page": "924",
+"DOI": "10.1136/bmj.39489.470347.AD",
+"volume": "336",
+"author": "GH Guyatt",
+"year": "2008",
+"unstructured": "Guyatt GH, Oxman AD, Vist GE, Kunz R, Falck-Ytter Y, Alonso-Coello P, et al. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 2008;336:924–6.",
+"journal-title": "BMJ"
+},
+{
+"key": "223_CR47",
+"doi-asserted-by": "publisher",
+"first-page": "311",
+"DOI": "10.1177/09567976251336246",
+"volume": "36",
+"author": "S Vazire",
+"year": "2025",
+"unstructured": "Vazire S. Why should you trust research published in Psychological Science? Psychol Sci. 2025;36:311–5.",
+"journal-title": "Psychol Sci"
+},
+{
+"key": "223_CR48",
+"doi-asserted-by": "publisher",
+"DOI": "10.1073/pnas.2521917122",
+"volume": "122",
+"author": "K Auspurg",
+"year": "2025",
+"unstructured": "Auspurg K. Robustness is better assessed with a few thoughtful models than with billions of regressions. Proceedings of the National Academy of Sciences. 2025;122:e2521917122.",
+"journal-title": "Proceedings of the National Academy of Sciences"
+},
+{
+"key": "223_CR49",
+"doi-asserted-by": "publisher",
+"DOI": "10.1073/pnas.2404035121",
+"volume": "121",
+"author": "K Auspurg",
+"year": "2024",
+"unstructured": "Auspurg K, Brüderl J. Toward a more credible assessment of the credibility of science by many-analyst studies. Proc Natl Acad Sci U S A. 2024;121:e2404035121.",
+"journal-title": "Proc Natl Acad Sci U S A"
+},
+{
+"key": "223_CR50",
+"doi-asserted-by": "publisher",
+"first-page": "779",
+"DOI": "10.1097/EDE.0000000000000382",
+"volume": "26",
+"author": "TL Lash",
+"year": "2015",
+"unstructured": "Lash TL. Declining the Transparency and Openness Promotion Guidelines. Epidemiology. 2015;26:779.",
+"journal-title": "Epidemiology"
+},
+{
+"key": "223_CR51",
+"doi-asserted-by": "publisher",
+"first-page": "627",
+"DOI": "10.1093/aje/kwx261",
+"volume": "186",
+"author": "TL Lash",
+"year": "2017",
+"unstructured": "Lash TL. The Harm Done to Reproducibility by the Culture of Null Hypothesis Significance Testing. Am J Epidemiol. 2017;186:627–35.",
+"journal-title": "Am J Epidemiol"
+},
+{
+"key": "223_CR52",
+"doi-asserted-by": "publisher",
+"first-page": "175",
+"DOI": "10.1007/s40471-018-0148-x",
+"volume": "5",
+"author": "TL Lash",
+"year": "2018",
+"unstructured": "Lash TL, Collin LJ, Van Dyke ME. The replication crisis in epidemiology: Snowball, Snow Job, or Winter Solstice? Curr Epidemiol Rep. 2018;5:175–83.",
+"journal-title": "Curr Epidemiol Rep"
+},
+{
+"key": "223_CR53",
+"doi-asserted-by": "publisher",
+"first-page": "1359",
+"DOI": "10.1177/0956797611417632",
+"volume": "22",
+"author": "JP Simmons",
+"year": "2011",
+"unstructured": "Simmons JP, Nelson LD, Simonsohn U. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychol Sci. 2011;22:1359–66.",
+"journal-title": "Psychol Sci"
+},
+{
+"key": "223_CR54",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/gigascience/giz053",
+"volume": "8",
+"author": "M Fire",
+"year": "2019",
+"unstructured": "Fire M, Guestrin C. Over-optimization of academic publishing metrics: observing Goodhart’s Law in action. Gigascience. 2019;8:giz053.",
+"journal-title": "Gigascience"
+},
+{
+"key": "223_CR55",
+"doi-asserted-by": "publisher",
+"first-page": "1054",
+"DOI": "10.1001/jama.282.11.1054",
+"volume": "282",
+"author": "P Jüni",
+"year": "1999",
+"unstructured": "Jüni P, Witschi A, Bloch R, Egger M. The Hazards of Scoring the Quality of Clinical Trials for Meta-analysis. JAMA. 1999;282:1054–60.",
+"journal-title": "JAMA"
+},
+{
+"key": "223_CR56",
+"unstructured": "L. Cadwallader, I. Hrynaszkiewicz, P. Sarin, T. Vines, Measuring research data reuse in scholarly publications using generative artificial intelligence: Open Science Indicator development and preliminary results, arXiv.org. 2026. https://arxiv.org/abs/2604.28061v1."
+},
+{
+"key": "223_CR57",
+"doi-asserted-by": "publisher",
+"unstructured": "D. Nüst, S. J. Eglen, CODECHECK: an Open Science initiative for the independent execution of computations underlying research articles during peer review to improve reproducibility. F1000Research [Preprint] (2021). https://doi.org/10.12688/f1000research.51738.2.",
+"DOI": "10.12688/f1000research.51738.2"
+},
+{
+"key": "223_CR58",
+"doi-asserted-by": "publisher",
+"unstructured": "M. Zeng, S. Liu, D. P. Clark, S. McDonald, E. Mayo-Wilson, X. Ying, J. Menke, M. Lan, L. Jiang, K. Ninan, J.-P. Oberste, J. E. McKenzie, H. Kilicoglu, M. J. Page, Artificial intelligence tools for automating assessments of reporting guideline adherence: a protocol for a systematic review. F1000Research [Preprint] (2026). https://doi.org/10.12688/f1000research.179775.1.",
+"DOI": "10.12688/f1000research.179775.1"
+},
+{
+"key": "223_CR59",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pbio.3003152",
+"volume": "23",
+"author": "T Suchak",
+"year": "2025",
+"unstructured": "Suchak T, Aliu AE, Harrison C, Zwiggelaar R, Geifman N, Spick M. Explosion of formulaic research articles, including inappropriate study designs and false discoveries, based on the NHANES US national health database. PLoS Biol. 2025;23:e3003152.",
+"journal-title": "PLoS Biol"
+},
+{
+"key": "223_CR60",
+"doi-asserted-by": "publisher",
+"unstructured": "M. Spick, A. Onoja, C. Harrison, S. Stender, J. Byrne, N. Geifman, Quantifying new threats to health and biomedical literature integrity from rapidly scaled publications and problematic research. medRxiv [Preprint] (2025). https://doi.org/10.1101/2025.07.07.25331008.",
+"DOI": "10.1101/2025.07.07.25331008"
+},
+{
+"key": "223_CR61",
+"doi-asserted-by": "publisher",
+"first-page": "286",
+"DOI": "10.1186/s12944-024-02284-w",
+"volume": "23",
+"author": "S Stender",
+"year": "2024",
+"unstructured": "Stender S, Gellert-Kristensen H, Smith GD. Reclaiming Mendelian randomization from the deluge of papers and misleading findings. Lipids Health Dis. 2024;23:286.",
+"journal-title": "Lipids Health Dis"
+},
+{
+"key": "223_CR62",
+"doi-asserted-by": "publisher",
+"unstructured": "B. Scancar, J. A. Byrne, D. Causeur, A. G. Barnett, Revealing the Paper Mill Iceberg: AI-Based Screening of Cancer Research Publications. bioRxiv [Preprint] (2025). https://doi.org/10.1101/2025.08.29.673016.",
+"DOI": "10.1101/2025.08.29.673016"
+},
+{
+"key": "223_CR63",
+"doi-asserted-by": "publisher",
+"DOI": "10.1098/rsos.251805",
+"volume": "12",
+"author": "B Sabel",
+"year": "2025",
+"unstructured": "Sabel B, Larhammar D. Reformation of science publishing: the Stockholm Declaration. R Soc Open Sci. 2025;12:251805.",
+"journal-title": "R Soc Open Sci"
+},
+{
+"key": "223_CR64",
+"doi-asserted-by": "publisher",
+"first-page": "585",
+"DOI": "10.1038/d41586-025-02557-z",
+"volume": "644",
+"author": "D Garisto",
+"year": "2025",
+"unstructured": "Garisto D. Trump order gives political appointees vast powers over research grants. Nature. 2025;644:585–6.",
+"journal-title": "Nature"
+},
+{
+"key": "223_CR65",
+"doi-asserted-by": "publisher",
+"DOI": "10.1126/science.aeb9857",
+"volume": "390",
+"author": "S Lewandowsky",
+"year": "2025",
+"unstructured": "Lewandowsky S. Trojan gold: new US “standard” is another veiled attack on science. Science. 2025;390:eaeb9857.",
+"journal-title": "Science"
+},
+{
+"key": "223_CR66",
+"doi-asserted-by": "publisher",
+"first-page": "1303",
+"DOI": "10.1038/s41562-025-02248-9",
+"volume": "9",
+"author": "F Fernandez",
+"year": "2025",
+"unstructured": "Fernandez F, Hutchens N. Restrictions on US academic freedom affect science everywhere. Nat Hum Behav. 2025;9:1303–4.",
+"journal-title": "Nat Hum Behav"
+},
+{
+"key": "223_CR67",
+"doi-asserted-by": "publisher",
+"first-page": "667",
+"DOI": "10.1126/science.aea9328",
+"volume": "389",
+"author": "G Goldman",
+"year": "2025",
+"unstructured": "Goldman G, Chenoweth E. Scientists’ role in defending democracy. Science. 2025;389:667–667.",
+"journal-title": "Science"
+},
+{
+"key": "223_CR68",
+"doi-asserted-by": "publisher",
+"first-page": "1305",
+"DOI": "10.1038/s41562-025-02240-3",
+"volume": "9",
+"author": "PH Gleick",
+"year": "2025",
+"unstructured": "Gleick PH. More US scientists must speak out. Nat Hum Behav. 2025;9:1305–6.",
+"journal-title": "Nat Hum Behav"
+},
+{
+"key": "223_CR69",
+"unstructured": "Center for Open Science, COS Statement on “Restoring Gold Standard Science” Executive Order (2025). https://www.cos.io/about/news/cos-statement-on-restoring-gold-standard-science-executive-order."
+},
+{
+"key": "223_CR70",
+"doi-asserted-by": "publisher",
+"first-page": "251",
+"DOI": "10.1017/can.2024.44",
+"volume": "54",
+"author": "C Santana",
+"year": "2024",
+"unstructured": "Santana C. The value of openness in open science. Can J Philos. 2024;54:251–65.",
+"journal-title": "Can J Philos"
+},
+{
+"key": "223_CR71",
+"doi-asserted-by": "publisher",
+"unstructured": "M. Rubin, What is critical metascience and why is it important? PsyArXiv 4tpk8_v2 [Preprint] (2025). https://doi.org/10.31234/osf.io/4tpk8_v2.",
+"DOI": "10.31234/osf.io/4tpk8_v2"
+}
+],
+"container-title": "Research Integrity and Peer Review",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://link.springer.com/content/pdf/10.1186/s41073-026-00223-0.pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://link.springer.com/article/10.1186/s41073-026-00223-0",
+"content-type": "text/html",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://link.springer.com/content/pdf/10.1186/s41073-026-00223-0.pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+],
+"date-time": "2026-08-05T10:47:28Z",
+"timestamp": 1785926848000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://link.springer.com/10.1186/s41073-026-00223-0"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+]
+},
+"references-count": 71,
+"journal-issue": {
+"issue": "1",
+"published-online": {
+"date-parts": [
+[
+2026,
+12
+]
+]
+}
+},
+"alternative-id": [
+"223"
+],
+"URL": "http://dx.doi.org/10.1186/s41073-026-00223-0",
+"relation": {},
+"ISSN": [
+"2058-8615"
+],
+"subject": [],
+"container-title-short": "Res Integr Peer Rev",
+"published": {
+"date-parts": [
+[
+2026,
+8,
+5
+]
+]
+},
+"assertion": [
+{
+"value": "21 March 2026",
+"order": 1,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "23 May 2026",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "5 August 2026",
+"order": 3,
+"name": "first_online",
+"label": "First Online",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "BAN and D. Mellor are employees of the nonprofit Center for Open Science that has a mission to increase openness, integrity, and reproducibility of research. KSC is an employee of ASAPbio, which is a scientist-driven non-profit promoting transparency and innovation in life science communication, and she was previously a paid consultant of the Center for Open Science. VB is editor-in-chief of the Medical Journal of Australia, co-chair of DORA, and a former chair of COPE. CL is on the Board of Directors for Rapid Science and previously served on the Board of Directors for ASAPbio. D. Moher is developing an extension to TOP for academic institutions. EM-W received previous support for research about the TOP Guidelines from Arnold Ventures (formerly the Laura and John Arnold Foundation). THP has led a project that received grant support (from the Laura and John Arnold Foundation and NSF award number DEB - 1548207) to promote the adoption of the TOP guidelines in ecology and evolutionary biology, and has served in leadership positions in SORTEE, an organization devoted to promoting open, reliable, and transparent ecology and evolutionary biology. SG is the Methodological Transparency Editor at Journal of Research on Educational Effectiveness, has received previous support for research about the TOP Guidelines from Arnold Ventures (formerly the Laura and John Arnold Foundation), and has received honoraria in the last three years from the Berkeley Initiative for Transparency in the Social Sciences, Federation of American Scientists, International Initiative for Impact Evaluation, Society for Research on Educational Effectiveness, and University of South Dakota. IH is an employee of PLOS, which publishes open access journals, and is responsible for promoting the adoption of Open Science practices and policies. DU serves as the protocol editor for Systematic Reviews, a journal under Springer Nature. MLR has received funding from the Medical Library Association and the Baltic-American Freedom Foundation to teach about the PRISMA-S reporting guideline, for which she was the lead author, and received the NINDS Rigor Champions Prize for her work promoting research reproducibility. ML serves in leadership positions in SORTEE, an organization devoted to promoting open, reliable, and transparent ecology and evolutionary biology. The remaining authors have nothing to declare.",
+"order": 1,
+"name": "Ethics",
+"label": "Competing interests",
+"group": {
+"name": "EthicsHeading",
+"label": "Declarations"
+}
+}
+],
+"article-number": "40"
 }
 }

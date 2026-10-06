@@ -26,6 +26,9 @@ Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz 
 - [**Harm outcomes applicable for most meta-analyses of randomized trials of biomedical interventions: A key concept in clinical epidemiology**](https://www.sciencedirect.com/science/article/pii/S0895435626000934?via%3Dihub)  
 Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**, Simon LS, Kwong J, Williamson PR, Vohra S. *Journal of Clinical Epidemiology* 194: 112218. PMID: [41802580](https://pubmed.ncbi.nlm.nih.gov/41802580/).
 
+- [**SPIRIT-CONSORT-ELM: Element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting**](https://www.nature.com/articles/s41746-026-03318-6)  
+Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *npj Digital Medicine*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2)]
+
 - [**Evaluating data extraction error by a large language model from randomized controlled trials: A large-scale empirical study**](https://ebm.bmj.com/content/early/2026/04/29/bmjebm-2025-114044.long)  
 Fan S, Chen M, Doi SA, Ye Z, Peng Z, Tian Y, Zhang C, Furuya-Kanamori L, Lin L, **Mayo-Wilson E**, Murad MH, Meng X, Xu C. *BMJ Evidence-Based Medicine*, Online ahead of print. PMID: [42055792](https://pubmed.ncbi.nlm.nih.gov/42055792/).
 
