@@ -86,6 +86,10 @@
 "citations": 0,
 "pdf": "https://osf.io/5wrsm/download"
 },
+"doi:10.31222/osf.io/hkudx_v1": {
+"citations": 0,
+"pdf": "https://osf.io/hkudx/download"
+},
 "doi:10.31222/osf.io/npvwr": {
 "citations": 0,
 "pdf": "https://osf.io/npvwr/download"
@@ -147,7 +151,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2088
+"citations": 2090
 },
 "pmid:23335473": {
 "citations": 453,
@@ -394,27 +398,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5245,
+"citations": 5250,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 14041,
+"citations": 14045,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11901,
+"citations": 11905,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 107591,
+"citations": 107773,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4312,
+"citations": 4314,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11978
+"citations": 11987
 },
 "pmid:34078479": {
 "citations": 52,
@@ -512,7 +516,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 290,
+"citations": 291,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -611,8 +615,7 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0,
-"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
+"citations": 0
 },
 "pmid:42557573": {
 "citations": 6,

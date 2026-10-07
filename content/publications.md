@@ -11,6 +11,9 @@ Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, De
 - [**Guidance for defining outcomes in clinical trials**](https://osf.io/preprints/metaarxiv/5wrsm_v2)  
 Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Qureshi R, DeVito NJ, Saldanha IJ, Offringa M, Butcher NJ, Zhang S, Nguyen PY, Menke JD, Lai VKW, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/5wrsm_v2](https://doi.org/10.31222/osf.io/5wrsm_v2).
 
+- [**Outcome definitions in clinical trial registrations: A cross-sectional study**](https://osf.io/preprints/metaarxiv/hkudx_v1)  
+Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy)]
+
 - [**Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: Study protocol**](https://f1000research.com/articles/15-665)  
 Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaumer-Streit B, Ying X, Kilicoglu H, McKenzie JE. *F1000Research* 15:665.
 
