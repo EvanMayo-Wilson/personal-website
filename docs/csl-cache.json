@@ -133199,5 +133199,435 @@
 ]
 },
 "subtype": "preprint"
+},
+"doi:10.1186/s12916-026-05296-8": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+],
+"date-time": "2026-10-07T08:55:34Z",
+"timestamp": 1791363334296,
+"version": "4.3.1"
+},
+"reference-count": 0,
+"publisher": "Springer Science and Business Media LLC",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+],
+"date-time": "2026-10-07T00:00:00Z",
+"timestamp": 1791331200000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+],
+"date-time": "2026-10-07T00:00:00Z",
+"timestamp": 1791331200000
+},
+"content-version": "am",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/501100001809",
+"name": "National Natural Science Foundation of China",
+"doi-asserted-by": "publisher",
+"award": [
+"72574229"
+],
+"award-info": [
+{
+"award-number": [
+"72574229"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/501100001809",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"name": "Shanghai Oriental Talents Program",
+"award": [
+"QNWS2025088"
+],
+"award-info": [
+{
+"award-number": [
+"QNWS2025088"
+]
+}
+]
+},
+{
+"DOI": "10.13039/501100014137",
+"name": "Shanghai Shenkang Hospital Development Center",
+"doi-asserted-by": "publisher",
+"award": [
+"SHDC12025626"
+],
+"award-info": [
+{
+"award-number": [
+"SHDC12025626"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/501100014137",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"link.springer.com"
+],
+"crossmark-restriction": false
+},
+"DOI": "10.1186/s12916-026-05296-8",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+],
+"date-time": "2026-10-07T08:45:29Z",
+"timestamp": 1791362729000
+},
+"update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Time-to-expiration for evidence bodies of medication harms (TIME): survival analysis from a retrospective cohort",
+"prefix": "10.1186",
+"author": [
+{
+"given": "Xinyi",
+"family": "Wang",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Luis",
+"family": "Furuya-Kanamori",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Suhail A.",
+"family": "Doi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Zhichun",
+"family": "Gu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-9109-2307",
+"authenticated-orcid": false,
+"given": "Yoon",
+"family": "Loke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sheyu",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-3562-9816",
+"authenticated-orcid": false,
+"given": "Lifeng",
+"family": "Lin",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-8987-5211",
+"authenticated-orcid": false,
+"given": "Su",
+"family": "Golder",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-0932-598X",
+"authenticated-orcid": false,
+"given": "Haitao",
+"family": "Chu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sunita",
+"family": "Vohra",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Xitong",
+"family": "Guo",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Chang",
+"family": "Xu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "297",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+]
+},
+"container-title": "BMC Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://link.springer.com/article/10.1186/s12916-026-05296-8",
+"content-type": "text/html",
+"content-version": "vor",
+"intended-application": "text-mining"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+],
+"date-time": "2026-10-07T08:45:30Z",
+"timestamp": 1791362730000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://link.springer.com/10.1186/s12916-026-05296-8"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+]
+},
+"references-count": 0,
+"alternative-id": [
+"5296"
+],
+"URL": "http://dx.doi.org/10.1186/s12916-026-05296-8",
+"relation": {},
+"ISSN": [
+"1741-7015"
+],
+"subject": [],
+"container-title-short": "BMC Med",
+"published": {
+"date-parts": [
+[
+2026,
+10,
+7
+]
+]
+},
+"assertion": [
+{
+"value": "8 February 2026",
+"order": 1,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "29 September 2026",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "7 October 2026",
+"order": 3,
+"name": "first_online",
+"label": "First Online",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "Not applicable.",
+"order": 1,
+"name": "Ethics",
+"label": "Ethics approval and consent to participate",
+"group": {
+"name": "EthicsHeading",
+"label": "Declarations"
+}
+},
+{
+"value": "Not applicable.",
+"order": 2,
+"name": "Ethics",
+"label": "Consent for publication",
+"group": {
+"name": "EthicsHeading",
+"label": "Declarations"
+}
+},
+{
+"value": "The authors declare no competing interests.",
+"order": 3,
+"name": "Ethics",
+"label": "Competing interests",
+"group": {
+"name": "EthicsHeading",
+"label": "Declarations"
+}
+}
+]
 }
 }

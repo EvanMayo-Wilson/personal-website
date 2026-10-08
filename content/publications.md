@@ -32,6 +32,9 @@ Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz 
 - [**Harm outcomes applicable for most meta-analyses of randomized trials of biomedical interventions: A key concept in clinical epidemiology**](https://www.sciencedirect.com/science/article/pii/S0895435626000934?via%3Dihub)  
 Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**, Simon LS, Kwong J, Williamson PR, Vohra S. *Journal of Clinical Epidemiology* 194: 112218. PMID: [41802580](https://pubmed.ncbi.nlm.nih.gov/41802580/).
 
+- [**Time-to-expiration for evidence bodies of medication harms (TIME): Survival analysis from a retrospective cohort**](https://link.springer.com/article/10.1186/s12916-026-05296-8)  
+Wang X, Furuya-Kanamori L, Doi SA, Gu Z, Loke Y, Li S, **Mayo-Wilson E**, Lin L, Golder S, Chu H, Vohra S, Guo X, Xu C. *BMC Medicine*. DOI: [10.1186/s12916-026-05296-8](https://doi.org/10.1186/s12916-026-05296-8).
+
 - [**SPIRIT-CONSORT-ELM: Element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting**](https://www.nature.com/articles/s41746-026-03318-6)  
 Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *npj Digital Medicine*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2)]
 
