@@ -1,6 +1,6 @@
 {
 "doi:10.1007/s10940-014-9222-9": {
-"citations": 230,
+"citations": 231,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
@@ -110,7 +110,7 @@
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 249,
+"citations": 250,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
@@ -150,7 +150,7 @@
 "pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
-"citations": 345,
+"citations": 346,
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
@@ -249,7 +249,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/95BEF17E32C066256A17D70DA0EB8EBC/S0007125000278690a.pdf/div-class-title-interventions-to-improve-the-experience-of-caring-for-people-with-severe-mental-illness-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:25939032": {
-"citations": 113,
+"citations": 114,
 "pdf": "papers/10_1016_j_cpr_2015_04_002.pdf"
 },
 "pmid:26035473": {
@@ -257,7 +257,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2750,
+"citations": 2748,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -320,11 +320,11 @@
 "pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 109,
+"citations": 110,
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1449,
+"citations": 1450,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -341,7 +341,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 328,
+"citations": 329,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
@@ -402,27 +402,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5103,
+"citations": 5106,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13760,
+"citations": 13759,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11533,
+"citations": 11537,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 105088,
+"citations": 105244,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4189,
+"citations": 4194,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11605
+"citations": 11609
 },
 "pmid:34078479": {
 "citations": 49,
@@ -481,7 +481,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11121-022-01336-w.pdf"
 },
 "pmid:35294044": {
-"citations": 75,
+"citations": 76,
 "pdf": "papers/10_1002_14651858_cd008524_pub4.pdf"
 },
 "pmid:35525252": {
@@ -501,7 +501,7 @@
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 289,
+"citations": 290,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -520,7 +520,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 270,
+"citations": 271,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -552,7 +552,7 @@
 "pdf": "https://eprints.soton.ac.uk/486816/1/SPIRIT_extension_paper_AuthorVersion.pdf"
 },
 "pmid:38190185": {
-"citations": 21,
+"citations": 22,
 "pdf": "papers/10_1001_jamanetworkopen_2023_50688.pdf"
 },
 "pmid:38360805": {
@@ -619,7 +619,8 @@
 "pdf": "papers/10_1136_bmj_s922.pdf"
 },
 "pmid:42282161": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
 },
 "pmid:42557573": {
 "citations": 6,
