@@ -37,3 +37,18 @@ date on a real content update.
 - Keep `CLAUDE.md` during Claude/Codex coexistence.
 - Stage explicit paths; never sweep unrelated GitHub Action changes into a
   commit.
+
+## Scheduled Scholar statistics
+
+- The only scheduled writer of `docs/scholar-stats.json` is a launchd job on
+  Evan's Mac Mini, `org.evanmayo-wilson.scholar-stats`
+  (`~/Library/LaunchAgents/org.evanmayo-wilson.scholar-stats.plist`): daily at
+  07:30 it runs `generate_scholar_stats.py --push`, which updates the file on
+  GitHub's `main` through `gh api`, only when a number changed, guarded by the
+  file's sha. Its log is `~/Library/Logs/scholar-stats.log`.
+- Do not create a Codex or Claude scheduled task for these statistics, or give
+  `.github/workflows/scholar-stats.yml` a schedule again: either would be a
+  second writer. The workflow is manual-only because Google Scholar blocks
+  GitHub's runners.
+- A one-off refresh from any of Evan's Macs:
+  `python3 generate_scholar_stats.py --push`.

@@ -295,7 +295,9 @@ pull causes a rejected push.
   - `docs/scholar-stats.json` is written by `generate_scholar_stats.py` (one
     plain fetch of the profile page, stdlib only). Google Scholar blocks
     GitHub's runners (HTTP 403), so the daily refresh is a **launchd job on
-    Evan's Mac Mini** running `generate_scholar_stats.py --push`, which
+    Evan's Mac Mini** (`org.evanmayo-wilson.scholar-stats`, daily 07:30, log
+    `~/Library/Logs/scholar-stats.log`; set up 2026-10-10) running
+    `generate_scholar_stats.py --push`, which
     updates the file on GitHub's `main` via `gh api` without touching any
     local checkout. `.github/workflows/scholar-stats.yml` is manual-only
     (`workflow_dispatch`) - no schedule, so no daily failure emails. If the
