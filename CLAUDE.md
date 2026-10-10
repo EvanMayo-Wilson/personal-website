@@ -37,10 +37,10 @@ git commit -m "…"
 git push
 ```
 
-**Always `git pull --rebase` before pushing.** Scheduled GitHub Actions
-(`scholar-stats.yml`, `pub-stats.yml`) commit `docs/*-stats.json` daily, so
-the remote is often one commit ahead. Skipping the pull causes a rejected
-push.
+**Always `git pull --rebase` before pushing.** Scheduled jobs commit
+`docs/pub-stats.json` (GitHub Action) and `docs/scholar-stats.json` (Mac Mini
+launchd job) daily, so the remote is often one commit ahead. Skipping the
+pull causes a rejected push.
 
 ## Publications: house style (important)
 
@@ -293,12 +293,15 @@ push.
   between them, no separator glyph. OpenAlex is desktop-only; mobile shows
   only Google Scholar.
   - `docs/scholar-stats.json` is written by `generate_scholar_stats.py` (one
-    plain fetch of the profile page, stdlib only), run daily by
-    `.github/workflows/scholar-stats.yml`. Scholar sometimes CAPTCHA-blocks
-    GitHub's runners; the script then fails fast and leaves the file alone.
-    From Evan's Mac (residential IP) it works reliably, so if the site's
-    count looks stale, run `python3 generate_scholar_stats.py`, commit,
-    push. History: the Action used the `scholarly` package until 2026-10;
+    plain fetch of the profile page, stdlib only). Google Scholar blocks
+    GitHub's runners (HTTP 403), so the daily refresh is a **launchd job on
+    Evan's Mac Mini** running `generate_scholar_stats.py --push`, which
+    updates the file on GitHub's `main` via `gh api` without touching any
+    local checkout. `.github/workflows/scholar-stats.yml` is manual-only
+    (`workflow_dispatch`) - no schedule, so no daily failure emails. If the
+    site's count looks stale, check that job first; a one-off fix from any
+    of Evan's Macs is `python3 generate_scholar_stats.py --push`.
+    History: the Action used the `scholarly` package until 2026-10;
     it was blocked Aug-Sep 2026, then crashed outright from 2026-09-14
     (bibtexparser 2.x removed a module it imports), and the browser-based
     Claude scheduled task that had been backfilling was disabled 2026-08-19 -

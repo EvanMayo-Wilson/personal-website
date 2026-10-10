@@ -1,17 +1,13 @@
 name: Update Google Scholar stats
 
-# Refreshes docs/scholar-stats.json from your Google Scholar profile via
-# generate_scholar_stats.py (one plain page fetch, no third-party scraper).
-# Runs daily and can be triggered by hand.
-#
-# NOTE: Google Scholar has no API and sometimes blocks GitHub's runners with a
-# CAPTCHA. When that happens the job fails within seconds and the last good
-# numbers stay on the site; the next day's run tries again.
+# Manual-only fallback for refreshing docs/scholar-stats.json via
+# generate_scholar_stats.py. Not scheduled: Google Scholar blocks GitHub's
+# runners (HTTP 403 / CAPTCHA), so the daily refresh runs instead from a
+# launchd job on Evan's Mac Mini (`generate_scholar_stats.py --push`).
+# If a manual run is blocked it fails within seconds and changes nothing.
 
 on:
-  schedule:
-    - cron: "40 6 * * *"     # daily, 06:40 UTC (offset from pub-stats.yml)
-  workflow_dispatch: {}       # lets you run it manually from the Actions tab
+  workflow_dispatch: {}       # run by hand from the Actions tab
 
 permissions:
   contents: write             # allows the job to commit the updated JSON

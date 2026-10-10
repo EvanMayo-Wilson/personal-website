@@ -17,14 +17,22 @@ The file is only rewritten when a number changes ("updated" = date of the
 last change), and the write is atomic (temp file + rename), so a killed run
 never leaves a half-written file.
 
-Usage: python3 generate_scholar_stats.py
+Usage:
+  python3 generate_scholar_stats.py          # update the local file
+  python3 generate_scholar_stats.py --push   # update the file on GitHub's
+      main branch directly (via `gh api`), leaving the local checkout alone -
+      what the daily launchd job on Evan's Mac Mini runs, since Scholar
+      blocks GitHub's own runners. The file's blob sha guards the write, so
+      a concurrent commit makes it fail (retry next run) rather than clobber.
 """
+import base64
 import datetime
 import html
 import json
 import os
 import re
 import ssl
+import subprocess
 import sys
 import tempfile
 import urllib.request
@@ -32,6 +40,7 @@ from pathlib import Path
 
 PROFILE = "https://scholar.google.com/citations?user=gwrtLekAAAAJ&hl=en"
 OUT = Path(__file__).resolve().parent / "docs" / "scholar-stats.json"
+REMOTE = "repos/EvanMayo-Wilson/personal-website/contents/docs/scholar-stats.json"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 
@@ -67,23 +76,41 @@ def fetch_stats():
     return stats
 
 
+def gh_api(*args):
+    return json.loads(subprocess.run(["gh", "api", *args], check=True,
+                                     capture_output=True, text=True).stdout)
+
+
 def main():
+    push = "--push" in sys.argv[1:]
     try:
         new = fetch_stats()
     except Exception as e:
         print(f"Google Scholar fetch failed: {e}", file=sys.stderr)
         return 1
-    try:
-        old = json.loads(OUT.read_text(encoding="utf-8"))
-    except (OSError, ValueError):
-        old = {}
+    if push:   # errors propagate: never write blind to the live site
+        remote = gh_api(f"{REMOTE}?ref=main")
+        old = json.loads(base64.b64decode(remote["content"]))
+    else:
+        try:
+            old = json.loads(OUT.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            old = {}
     if all(old.get(k) == v for k, v in new.items()):
         print("unchanged", new)
         return 0
     new["updated"] = datetime.date.today().isoformat()
+    text = json.dumps(new) + "\n"
+    if push:
+        gh_api("-X", "PUT", REMOTE,
+               "-f", "message=Update Google Scholar stats",
+               "-f", "content=" + base64.b64encode(text.encode()).decode(),
+               "-f", "sha=" + remote["sha"], "-f", "branch=main")
+        print("pushed", new)
+        return 0
     fd, tmp = tempfile.mkstemp(dir=OUT.parent, prefix=".scholar-stats.")
     with os.fdopen(fd, "w", encoding="utf-8") as f:
-        f.write(json.dumps(new) + "\n")
+        f.write(text)
     os.replace(tmp, OUT)
     print("wrote", new)
     return 0
