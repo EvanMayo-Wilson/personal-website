@@ -86,13 +86,16 @@
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
 "doi:10.31222/osf.io/5wrsm_v2": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/5wrsm/download"
 },
 "doi:10.31222/osf.io/hkudx_v1": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/hkudx/download"
 },
 "doi:10.31222/osf.io/npvwr": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/npvwr/download"
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
@@ -206,7 +209,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
-"citations": 558,
+"citations": 559,
 "pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
@@ -399,23 +402,23 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5118,
+"citations": 5120,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13797,
+"citations": 13801,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11581,
+"citations": 11586,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 106116,
+"citations": 106184,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4202,
+"citations": 4205,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
@@ -494,7 +497,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 708,
+"citations": 709,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -525,7 +528,9 @@
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
-"citations": 12
+"citations": 12,
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 18,
@@ -556,7 +561,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 120,
+"citations": 121,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
 },
 "pmid:38902776": {
