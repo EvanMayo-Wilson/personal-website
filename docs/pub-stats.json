@@ -300,8 +300,7 @@
 },
 "pmid:27281372": {
 "citations": 90,
-"pdf": "papers/10_1037_ccp0000115.docx",
-"type": "docx"
+"pdf": "papers/10_1037_ccp0000115.pdf"
 },
 "pmid:27624441": {
 "citations": 17,
@@ -357,7 +356,8 @@
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2888-9"
 },
 "pmid:30284892": {
-"citations": 3
+"citations": 3,
+"pdf": "papers/10_1037_amp0000370.pdf"
 },
 "pmid:30565151": {
 "citations": 220,
@@ -383,7 +383,8 @@
 "pdf": "papers/10_1001_jamainternmed_2019_4710.pdf"
 },
 "pmid:31788792": {
-"citations": 24
+"citations": 24,
+"pdf": "papers/10_1111_eci_13190.pdf"
 },
 "pmid:33060401": {
 "citations": 15,
@@ -618,7 +619,8 @@
 "pdf": "papers/10_1016_j_jclinepi_2026_112218.pdf"
 },
 "pmid:42055792": {
-"citations": 1
+"citations": 1,
+"pdf": "papers/10_1136_bmjebm_2025_114044.pdf"
 },
 "pmid:42203256": {
 "citations": 0,
