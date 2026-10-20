@@ -299,7 +299,9 @@
 "pdf": "papers/10_1016_s2215_0366_16_30098_0.pdf"
 },
 "pmid:27281372": {
-"citations": 90
+"citations": 90,
+"pdf": "papers/10_1037_ccp0000115.docx",
+"type": "docx"
 },
 "pmid:27624441": {
 "citations": 17,
@@ -631,6 +633,7 @@
 "pdf": "papers/10_1186_s41073_026_00223_0.pdf"
 },
 "pmid:42612062": {
-"citations": 1
+"citations": 1,
+"pdf": "papers/10_2196_104210.pdf"
 }
 }
