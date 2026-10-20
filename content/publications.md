@@ -14,6 +14,9 @@ Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Q
 - [**Outcome definitions in clinical trial registrations: A cross-sectional study**](https://osf.io/preprints/metaarxiv/hkudx_v1)  
 Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy)]
 
+- [**PRISMA-trAIce: A name without endorsement**](https://ai.jmir.org/2026/1/e104210)  
+Moher D, Page MJ, McKenzie JE, Takwoingi Y, **Mayo-Wilson E**. *JMIR AI* 5:e104210. PMID: [42612062](https://pubmed.ncbi.nlm.nih.gov/42612062/).
+
 - [**Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: Study protocol**](https://f1000research.com/articles/15-665)  
 Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaumer-Streit B, Ying X, Kilicoglu H, McKenzie JE. *F1000Research* 15:665.
 

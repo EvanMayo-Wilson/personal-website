@@ -133629,5 +133629,204 @@
 }
 }
 ]
+},
+"pmid:42612062": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+1
+]
+],
+"date-time": "2026-10-01T01:57:43Z",
+"timestamp": 1790819863440,
+"version": "4.1.0"
+},
+"reference-count": 4,
+"publisher": "JMIR Publications Inc.",
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"DOI": "10.2196/104210",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+8,
+18
+]
+],
+"date-time": "2026-08-18T18:40:56Z",
+"timestamp": 1787078456000
+},
+"page": "e104210-e104210",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "PRISMA-trAIce: A Name Without Endorsement",
+"prefix": "10.2196",
+"volume": "5",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0003-2434-4206",
+"authenticated-orcid": false,
+"given": "David",
+"family": "Moher",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4242-7526",
+"authenticated-orcid": false,
+"given": "Matthew",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3534-1641",
+"authenticated-orcid": false,
+"given": "Joanne",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5828-9746",
+"authenticated-orcid": false,
+"given": "Yemisi",
+"family": "Takwoingi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": false,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "1010",
+"published-online": {
+"date-parts": [
+[
+2026,
+8,
+18
+]
+]
+},
+"reference": [
+{
+"key": "R1",
+"doi-asserted-by": "publisher",
+"DOI": "10.2196/80247",
+"article-title": "Transparent reporting of AI in systematic literature reviews: development of the PRISMA-trAIce checklist",
+"volume": "4",
+"author": "Holst",
+"journal-title": "JMIR AI"
+},
+{
+"key": "R2",
+"unstructured": "PRISMA extensions. PRISMA. URL: https://www.prisma-statement.org/extensions [Accessed 13-08-2026]"
+},
+{
+"key": "R3",
+"unstructured": "Criteria for approving new PRISMA extensions. PRISMA. URL: https://www.prisma-statement.org/criteria-new-extension [Accessed 13-08-2026]"
+},
+{
+"issue": "2",
+"key": "R4",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pmed.1000217",
+"article-title": "Guidance for developers of health research reporting guidelines",
+"volume": "7",
+"author": "Moher",
+"journal-title": "PLoS Med"
+}
+],
+"container-title": "JMIR AI",
+"original-title": [],
+"language": "en",
+"deposited": {
+"date-parts": [
+[
+2026,
+8,
+18
+]
+],
+"date-time": "2026-08-18T18:40:57Z",
+"timestamp": 1787078457000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://ai.jmir.org/2026/1/e104210"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+8,
+18
+]
+]
+},
+"references-count": 4,
+"URL": "http://dx.doi.org/10.2196/104210",
+"relation": {},
+"ISSN": [
+"2817-1705"
+],
+"subject": [],
+"container-title-short": "JMIR AI",
+"published": {
+"date-parts": [
+[
+2026,
+8,
+18
+]
+]
+},
+"article-number": "v5i2e104210"
 }
 }
