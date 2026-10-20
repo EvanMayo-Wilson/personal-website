@@ -14525,678 +14525,6 @@
 ],
 "article-number": "112218"
 },
-"pmid:42055792": {
-"indexed": {
-"date-parts": [
-[
-2026,
-5,
-3
-]
-],
-"date-time": "2026-05-03T01:56:36Z",
-"timestamp": 1777773396691,
-"version": "3.51.4"
-},
-"reference-count": 37,
-"publisher": "BMJ",
-"funder": [
-{
-"name": "hefei comprehensive national science",
-"award": [
-"JKS2022021"
-],
-"award-info": [
-{
-"award-number": [
-"JKS2022021"
-]
-}
-]
-}
-],
-"content-domain": {
-"domain": [
-"bmj.com"
-],
-"crossmark-restriction": true
-},
-"accepted": {
-"date-parts": [
-[
-2026,
-4,
-11
-]
-]
-},
-"abstract": "<jats:sec>\n                    <jats:title>Objective</jats:title>\n                    <jats:p>To examine the potential errors of a general large language model (LLM) (ie, Claude 3.5 Sonnet) on data extraction from randomised controlled trials (RCTs).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design and setting</jats:title>\n                    <jats:p>An empirical study comparing Claude 3.5 Sonnet extractions against a human-performed verification dataset. The extraction tasks for Claude 3.5 Sonnet were based solely on original RCT portable document format (PDF) files. For PDFs that could not be directly extracted by Claude 3.5 Sonnet, optical character recognition was employed to convert them into text format before extraction.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Participants</jats:title>\n                    <jats:p>A random sample of 664 trials was selected from a well-established trial bank and a final data pool was established based on rigorous manual cross-checking as a reference standard.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Data sources</jats:title>\n                    <jats:p>PubMed, EMBASE, Scopus, Web of Science (all databases) and the Cochrane Central Register of Controlled Trials (CENTRAL) up to February 2023.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Eligibility criteria for selecting studies</jats:title>\n                    <jats:p>RCTs on children involving medication and adverse events.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Main outcome measures</jats:title>\n                    <jats:p>Claude 3.5 Sonnet was applied to extract the basic information (eg, trial design, population information and source of funding) and adverse outcomes (ie, name of adverse events, number of events). Claude 3.5 Sonnet outputs were compared against the final data pool and all errors were recorded. Results are presented as error rates and with 95% CI, estimated using a generalised linear mixed model.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>For the 664 trials, a total of 23 069 data cells were extracted via Claude 3.5 Sonnet, with 10 624 for basic information and 12 445 for adverse outcomes. The overall error rate for data extraction was 6.6% (95% CI 5.4% to 8.2%), with 5.7% (95% CI 5.2% to 6.1%) in basic information and 7.6% (95% CI 4.9% to 11.8%) in adverse outcomes. When stratified the 1542 total errors by error types, misallocation (assigning data to incorrect fields; 57.1%, 881/1542) and missed or omitted data (incomplete extraction of available data; 23.2%, 357/1542) accounted for the two most frequent errors, with misallocation occurring more in basic information (53.3%, 470/881), while missed or omitted data occurred more in adverse outcomes (96.1%, 343/357). Post hoc analysis examining the association between trial reporting quality (assessed using Consolidated Standards of Reporting Trials (CONSORT) 2025 and LLM data extraction error rates indicated that higher CONSORT adherence was associated with lower extraction error rates.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The data extraction error of Claude was relatively low, but it alerts LLM applications in evidence synthesis. Detailed checking for LLM outputs should be the primary consideration for evidence synthesisers.</jats:p>\n                  </jats:sec>",
-"DOI": "10.1136/bmjebm-2025-114044",
-"type": "journal-article",
-"created": {
-"date-parts": [
-[
-2026,
-4,
-29
-]
-],
-"date-time": "2026-04-29T17:20:16Z",
-"timestamp": 1777483216000
-},
-"page": "bmjebm-2025-114044",
-"update-policy": "https://doi.org/10.1136/crossmarkpolicy",
-"source": "Crossref",
-"is-referenced-by-count": 0,
-"title": "Evaluating data extraction error by a large language model from randomised controlled trials: a large-scale empirical study",
-"prefix": "10.1136",
-"author": [
-{
-"ORCID": "https://orcid.org/0009-0008-2588-8401",
-"authenticated-orcid": false,
-"given": "Shiqi",
-"family": "Fan",
-"sequence": "first",
-"affiliation": [
-{
-"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Ming",
-"family": "Chen",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "School of Medicine, Shihezi University, Shihezi, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"ORCID": "https://orcid.org/0000-0002-2630-2125",
-"authenticated-orcid": false,
-"given": "Suhail A",
-"family": "Doi",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Department of Population Medicine, Qatar University, Doha, Qatar"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Zhangnan",
-"family": "Ye",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "The First School of Clinical Medicine, Anhui Medical University, Hefei, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Zhen",
-"family": "Peng",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "School of Public Health, Anhui Medical University, Hefei, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"ORCID": "https://orcid.org/0009-0003-9829-8975",
-"authenticated-orcid": false,
-"given": "Yuan",
-"family": "Tian",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Chengzhi",
-"family": "Zhang",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Department of Information Management, Nanjing University of Science and Technology, Nanjing, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Luis",
-"family": "Furuya-Kanamori",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "The University of Queensland, Saint Lucia, Queensland, Australia"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"ORCID": "https://orcid.org/0000-0002-3562-9816",
-"authenticated-orcid": false,
-"given": "Lifeng",
-"family": "Lin",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Department of Epidemiology and Biostatistics, The University of Arizona Mel and Enid Zuckerman College of Public Health, Tucson, Arizona, USA"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Evan",
-"family": "Mayo-Wilson",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Department of Epidemiology, UNC Gillings School of Global Public Health, Chapel Hill, North Carolina, USA"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"ORCID": "https://orcid.org/0000-0001-5502-5975",
-"authenticated-orcid": false,
-"given": "Mohammad Hassan",
-"family": "Murad",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Preventive Medicine, Mayo Clinic Minnesota, Rochester, Minnesota, USA"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"given": "Xiuhong",
-"family": "Meng",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "School of Public Health, Anhui Medical University, Hefei, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-},
-{
-"ORCID": "https://orcid.org/0000-0002-2627-1250",
-"authenticated-orcid": false,
-"given": "Chang",
-"family": "Xu",
-"sequence": "additional",
-"affiliation": [
-{
-"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
-},
-{
-"name": "School of Public Health, Center for Big Data and Population Health of IHM, Anhui Medical University, Hefei, Anhui, China"
-}
-],
-"role": [
-{
-"role": "author",
-"vocabulary": "crossref"
-}
-]
-}
-],
-"member": "239",
-"published-online": {
-"date-parts": [
-[
-2026,
-4,
-29
-]
-]
-},
-"reference": [
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.1",
-"doi-asserted-by": "crossref",
-"DOI": "10.1136/bmj-2021-069155",
-"article-title": "Validity of data extraction in evidence synthesis practice of adverse events: reproducibility study",
-"volume": "377",
-"author": "Xu",
-"year": "2022",
-"journal-title": "BMJ"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.2",
-"doi-asserted-by": "crossref",
-"unstructured": "Li T , Higgins JPT , Deeks JJ . Chapter 5: collecting data. In: Cochrane Handbook for Systematic Reviews of Interventions Version 6.5. Cochrane, 2019. Available: https://training.cochrane.org/handbook/current/chapter-05",
-"DOI": "10.1002/9781119536604.ch5"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.3",
-"doi-asserted-by": "crossref",
-"first-page": "603",
-"DOI": "10.1093/postmj/qgae195",
-"article-title": "Effects of double data extraction on errors in evidence synthesis: a crossover, multicenter, investigator-blinded, randomized controlled trial",
-"volume": "101",
-"author": "Tang",
-"year": "2025",
-"journal-title": "Postgrad Med J"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.4",
-"doi-asserted-by": "crossref",
-"first-page": "611",
-"DOI": "10.1038/s41562-024-01847-2",
-"article-title": "How to write effective prompts for large language models",
-"volume": "8",
-"author": "Lin",
-"year": "2024",
-"journal-title": "Nat Hum Behav"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.5",
-"doi-asserted-by": "crossref",
-"first-page": "576",
-"DOI": "10.1002/jrsm.1710",
-"article-title": "Data extraction for evidence synthesis using a large language model: A proof‐of‐concept study",
-"volume": "15",
-"author": "Gartlehner",
-"year": "2024",
-"journal-title": "Res Synth Methods"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.6",
-"doi-asserted-by": "crossref",
-"first-page": "818",
-"DOI": "10.1002/jrsm.1732",
-"article-title": "Performance of two large language models for data extraction in evidence synthesis",
-"volume": "15",
-"author": "Konet",
-"year": "2024",
-"journal-title": "Res Synth Methods"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.7",
-"doi-asserted-by": "crossref",
-"unstructured": "Mahmoudi H , Chang D , Lee H , et al . A critical assessment of large language models for systematic reviews: utilizing ChatGPT for complex data extraction. SSRN 2024.",
-"DOI": "10.2139/ssrn.4797024"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.8",
-"doi-asserted-by": "publisher",
-"DOI": "10.1136/bmjebm-2024-113199"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.9",
-"doi-asserted-by": "publisher",
-"DOI": "10.7326/annals-25-00739"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.10",
-"doi-asserted-by": "crossref",
-"DOI": "10.1186/s12916-026-04709-y",
-"article-title": "The Trial Bank initiative to promote trustworthy living evidence for medication safety (PROMISE) of children: design and pilot validation",
-"volume": "24",
-"author": "Xu",
-"year": "2026",
-"journal-title": "BMC Med"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.11",
-"doi-asserted-by": "crossref",
-"first-page": "3283",
-"DOI": "10.1038/s41591-025-03953-8",
-"article-title": "The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence",
-"volume": "31",
-"author": "Sounderajah",
-"year": "2025",
-"journal-title": "Nat Med"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.12",
-"unstructured": "Fan S . Data from: evaluating data extraction error by a large language model from randomized controlled trials. Open Science Framework; 2026."
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.13",
-"doi-asserted-by": "publisher",
-"DOI": "10.1016/j.jaad.2014.01.905"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.14",
-"doi-asserted-by": "crossref",
-"first-page": "269",
-"DOI": "10.1016/j.egja.2016.05.001",
-"article-title": "Methylene blue compared to norepinephrine in the management of vasoplegic syndrome in pediatric patients after cardiopulmonary bypass: a randomized controlled study",
-"volume": "32",
-"author": "Abdelazim",
-"year": "2016",
-"journal-title": "Egyptian Journal of Anaesthesia"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.15",
-"doi-asserted-by": "crossref",
-"first-page": "243",
-"DOI": "10.1016/j.egja.2012.05.005",
-"article-title": "Effect of oral dextromethorphan versus oral ketamine on sevoflurane related emergence agitation in children undergoing adenotonsillectomy",
-"volume": "28",
-"author": "Abdelmawgoud",
-"year": "2012",
-"journal-title": "Egyptian Journal of Anaesthesia"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.16",
-"doi-asserted-by": "crossref",
-"first-page": "367",
-"DOI": "10.1007/s00405-012-2119-z",
-"article-title": "Antibiotics do not reduce post-tonsillectomy morbidity in children",
-"volume": "270",
-"author": "Al-Layla",
-"year": "2013",
-"journal-title": "Eur Arch Otorhinolaryngol"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.17",
-"doi-asserted-by": "publisher",
-"DOI": "10.1136/adc.2007.116079"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.18",
-"first-page": "2731",
-"article-title": "Assessment of Interleukin-6 in Young Swimmers Suffering from Myofascial Pain Syndrome Using Lidocaine Phonophoresis: A Randomized Controlled Trial",
-"volume": "11",
-"author": "Abo-EL-Roos",
-"year": "2020",
-"journal-title": "Int J Res Pharm Sci"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.19",
-"doi-asserted-by": "publisher",
-"DOI": "10.1128/AAC.01317-13"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.20",
-"doi-asserted-by": "publisher",
-"DOI": "10.1352/0047-6765(2001)039<0259:DBPCTO>2.0.CO;2"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.21",
-"doi-asserted-by": "publisher",
-"DOI": "10.1093/cid/ciu1166"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.22",
-"doi-asserted-by": "crossref",
-"first-page": "250",
-"DOI": "10.1097/WOX.0b013e3181f68d92",
-"article-title": "Comparison of Effectiveness between Beclomethasone Dipropionate and Fluticasone Propionate in Treatment of Children with Moderate Asthma",
-"volume": "3",
-"author": "Ahmadiafshar",
-"year": "2010",
-"journal-title": "World Allergy Organ J"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.23",
-"doi-asserted-by": "crossref",
-"DOI": "10.1136/bmj.i157",
-"article-title": "PRISMA harms checklist: improving harms reporting in systematic reviews",
-"volume": "352",
-"author": "Zorzela",
-"year": "2016",
-"journal-title": "BMJ"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.24",
-"first-page": "752",
-"article-title": "Prevention of anesthesia-induced injection pain of propofol in pediatric anesthesia",
-"volume": "33",
-"author": "Cheng",
-"year": "2017",
-"journal-title": "Pak J Med Sci"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.25",
-"doi-asserted-by": "publisher",
-"DOI": "10.1002/hep.510240309"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.26",
-"doi-asserted-by": "crossref",
-"first-page": "1081",
-"DOI": "10.1111/j.1365-2125.2012.04459.x",
-"article-title": "Pharmacokinetic comparison of inhaled fixed combination vs. the free combination of beclomethasone and formoterol pMDIs in asthmatic children",
-"volume": "75",
-"author": "Chawes",
-"year": "2013",
-"journal-title": "Br J Clin Pharmacol"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.27",
-"doi-asserted-by": "publisher",
-"DOI": "10.1016/j.ijporl.2012.06.016"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.28",
-"doi-asserted-by": "crossref",
-"first-page": "389",
-"DOI": "10.1097/00006454-199006000-00004",
-"article-title": "Gamma-globulin treatment of recurrent acute otitis media in children",
-"volume": "9",
-"author": "Jørgensen",
-"year": "1990",
-"journal-title": "Pediatr Infect Dis J"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.29",
-"doi-asserted-by": "crossref",
-"first-page": "101",
-"DOI": "10.1214/ss/1009213286",
-"article-title": "Interval Estimation for a Binomial Proportion",
-"volume": "16",
-"author": "Brown",
-"year": "2001",
-"journal-title": "Statist Sci"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.30",
-"doi-asserted-by": "crossref",
-"DOI": "10.1136/bmj-2024-081123",
-"article-title": "CONSORT 2025 statement: updated guideline for reporting randomised trials",
-"volume": "389",
-"author": "Hopewell",
-"year": "2025",
-"journal-title": "BMJ"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.31",
-"doi-asserted-by": "publisher",
-"DOI": "10.1136/bmjebm-2024-113066"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.32",
-"doi-asserted-by": "crossref",
-"DOI": "10.1136/bmjopen-2018-024537",
-"article-title": "Analysis and reporting of adverse events in randomised controlled trials: a review",
-"volume": "9",
-"author": "Phillips",
-"year": "2019",
-"journal-title": "BMJ Open"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.33",
-"doi-asserted-by": "crossref",
-"DOI": "10.1136/bmj.r494",
-"article-title": "Complete reporting of clinical trials requires more than journal articles",
-"volume": "389",
-"author": "Mayo-Wilson",
-"year": "2025",
-"journal-title": "BMJ"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.34",
-"doi-asserted-by": "crossref",
-"unstructured": "Grant S , Corker KS , Mellor D , et al . TOP 2025: an update to the transparency and openness promotion guidelines. 2025. Available: https://osf.io/preprints/metaarxiv/nmfs6_v3",
-"DOI": "10.31222/osf.io/nmfs6_v2"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.35",
-"doi-asserted-by": "crossref",
-"DOI": "10.1002/cesm.70036",
-"article-title": "Using Artificial Intelligence Tools as Second Reviewers for Data Extraction in Systematic Reviews: A Performance Comparison of Two AI Tools Against Human Reviewers",
-"volume": "3",
-"author": "Helms Andersen",
-"year": "2025",
-"journal-title": "Cochrane Evidence Synthesis and Methods"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.36",
-"doi-asserted-by": "crossref",
-"unstructured": "Peng Z , Fan S , Tian Y , et al . Comparing the accuracy of AI-assisted data extraction versus human double extraction in evidence synthesis: a randomised controlled trial protocol. BMJ Open 2025;15.",
-"DOI": "10.1136/bmjopen-2025-106546"
-},
-{
-"key": "2026042910201167000_bmjebm-2025-114044v1.37",
-"doi-asserted-by": "crossref",
-"first-page": "102192",
-"DOI": "10.1016/j.smrv.2025.102192",
-"article-title": "Accuracy of large language models in data extraction from randomized controlled trials in sleep medicine: A proof-of-concept study",
-"volume": "84",
-"author": "Peng",
-"year": "2025",
-"journal-title": "Sleep Med Rev"
-}
-],
-"container-title": "BMJ Evidence-Based Medicine",
-"original-title": [],
-"language": "en",
-"link": [
-{
-"URL": "https://syndication.highwire.org/content/doi/10.1136/bmjebm-2025-114044",
-"content-type": "unspecified",
-"content-version": "vor",
-"intended-application": "similarity-checking"
-}
-],
-"deposited": {
-"date-parts": [
-[
-2026,
-4,
-29
-]
-],
-"date-time": "2026-04-29T17:20:53Z",
-"timestamp": 1777483253000
-},
-"score": 1,
-"resource": {
-"primary": {
-"URL": "https://ebm.bmj.com/lookup/doi/10.1136/bmjebm-2025-114044"
-}
-},
-"subtitle": [],
-"short-title": [],
-"issued": {
-"date-parts": [
-[
-2026,
-4,
-29
-]
-]
-},
-"references-count": 37,
-"alternative-id": [
-"10.1136/bmjebm-2025-114044"
-],
-"URL": "http://dx.doi.org/10.1136/bmjebm-2025-114044",
-"relation": {},
-"ISSN": [
-"2515-446X",
-"2515-4478"
-],
-"subject": [],
-"container-title-short": "BMJ EBM",
-"published": {
-"date-parts": [
-[
-2026,
-4,
-29
-]
-]
-}
-},
 "pmid:41723462": {
 "indexed": {
 "date-parts": [
@@ -133828,5 +133156,711 @@
 ]
 },
 "article-number": "v5i2e104210"
+},
+"pmid:42055792": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+20
+]
+],
+"date-time": "2026-10-20T02:13:06Z",
+"timestamp": 1792462386364,
+"version": "4.5.0"
+},
+"reference-count": 37,
+"publisher": "BMJ",
+"issue": "5",
+"funder": [
+{
+"name": "hefei comprehensive national science",
+"award": [
+"JKS2022021"
+],
+"award-info": [
+{
+"award-number": [
+"JKS2022021"
+]
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"bmj.com"
+],
+"crossmark-restriction": true
+},
+"accepted": {
+"date-parts": [
+[
+2026,
+4,
+11
+]
+]
+},
+"published-print": {
+"date-parts": [
+[
+2026,
+10
+]
+]
+},
+"abstract": "<jats:sec>\n                    <jats:title>Objective</jats:title>\n                    <jats:p>To examine the potential errors of a general large language model (LLM) (ie, Claude 3.5 Sonnet) on data extraction from randomised controlled trials (RCTs).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design and setting</jats:title>\n                    <jats:p>An empirical study comparing Claude 3.5 Sonnet extractions against a human-performed verification dataset. The extraction tasks for Claude 3.5 Sonnet were based solely on original RCT portable document format (PDF) files. For PDFs that could not be directly extracted by Claude 3.5 Sonnet, optical character recognition was employed to convert them into text format before extraction.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Participants</jats:title>\n                    <jats:p>A random sample of 664 trials was selected from a well-established trial bank and a final data pool was established based on rigorous manual cross-checking as a reference standard.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Data sources</jats:title>\n                    <jats:p>PubMed, EMBASE, Scopus, Web of Science (all databases) and the Cochrane Central Register of Controlled Trials (CENTRAL) up to February 2023.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Eligibility criteria for selecting studies</jats:title>\n                    <jats:p>RCTs on children involving medication and adverse events.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Main outcome measures</jats:title>\n                    <jats:p>Claude 3.5 Sonnet was applied to extract the basic information (eg, trial design, population information and source of funding) and adverse outcomes (ie, name of adverse events, number of events). Claude 3.5 Sonnet outputs were compared against the final data pool and all errors were recorded. Results are presented as error rates and with 95% CI, estimated using a generalised linear mixed model.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>For the 664 trials, a total of 23 069 data cells were extracted via Claude 3.5 Sonnet, with 10 624 for basic information and 12 445 for adverse outcomes. The overall error rate for data extraction was 6.6% (95% CI 5.4% to 8.2%), with 5.7% (95% CI 5.2% to 6.1%) in basic information and 7.6% (95% CI 4.9% to 11.8%) in adverse outcomes. When stratified the 1542 total errors by error types, misallocation (assigning data to incorrect fields; 57.1%, 881/1542) and missed or omitted data (incomplete extraction of available data; 23.2%, 357/1542) accounted for the two most frequent errors, with misallocation occurring more in basic information (53.3%, 470/881), while missed or omitted data occurred more in adverse outcomes (96.1%, 343/357). Post hoc analysis examining the association between trial reporting quality (assessed using Consolidated Standards of Reporting Trials (CONSORT) 2025 and LLM data extraction error rates indicated that higher CONSORT adherence was associated with lower extraction error rates.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The data extraction error of Claude was relatively low, but it alerts LLM applications in evidence synthesis. Detailed checking for LLM outputs should be the primary consideration for evidence synthesisers.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1136/bmjebm-2025-114044",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+4,
+29
+]
+],
+"date-time": "2026-04-29T17:20:16Z",
+"timestamp": 1777483216000
+},
+"page": "324-331",
+"update-policy": "https://doi.org/10.1136/crossmarkpolicy",
+"source": "Crossref",
+"is-referenced-by-count": 3,
+"title": "Evaluating data extraction error by a large language model from randomised controlled trials: a large-scale empirical study",
+"prefix": "10.1136",
+"volume": "31",
+"author": [
+{
+"ORCID": "https://orcid.org/0009-0008-2588-8401",
+"authenticated-orcid": false,
+"given": "Shiqi",
+"family": "Fan",
+"sequence": "first",
+"affiliation": [
+{
+"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Ming",
+"family": "Chen",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Medicine, Shihezi University, Shihezi, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2630-2125",
+"authenticated-orcid": false,
+"given": "Suhail A",
+"family": "Doi",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Population Medicine, Qatar University, Doha, Qatar"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Zhangnan",
+"family": "Ye",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The First School of Clinical Medicine, Anhui Medical University, Hefei, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Zhen",
+"family": "Peng",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health, Anhui Medical University, Hefei, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0003-9829-8975",
+"authenticated-orcid": false,
+"given": "Yuan",
+"family": "Tian",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Chengzhi",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Information Management, Nanjing University of Science and Technology, Nanjing, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Luis",
+"family": "Furuya-Kanamori",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The University of Queensland, Saint Lucia, Queensland, Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-3562-9816",
+"authenticated-orcid": false,
+"given": "Lifeng",
+"family": "Lin",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology and Biostatistics, The University of Arizona Mel and Enid Zuckerman College of Public Health, Tucson, Arizona, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, UNC Gillings School of Global Public Health, Chapel Hill, North Carolina, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-5502-5975",
+"authenticated-orcid": false,
+"given": "Mohammad Hassan",
+"family": "Murad",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Preventive Medicine, Mayo Clinic Minnesota, Rochester, Minnesota, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Xiuhong",
+"family": "Meng",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health, Anhui Medical University, Hefei, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2627-1250",
+"authenticated-orcid": false,
+"given": "Chang",
+"family": "Xu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Proof of Concept Center, Shanghai Eastern Hepatobiliary Surgery Hospital, Shanghai, China"
+},
+{
+"name": "School of Public Health, Center for Big Data and Population Health of IHM, Anhui Medical University, Hefei, Anhui, China"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "239",
+"published-online": {
+"date-parts": [
+[
+2026,
+4,
+29
+]
+]
+},
+"reference": [
+{
+"key": "2026092102101444000_31.5.324.1",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2021-069155",
+"article-title": "Validity of data extraction in evidence synthesis practice of adverse events: reproducibility study",
+"volume": "377",
+"author": "Xu",
+"year": "2022",
+"journal-title": "BMJ"
+},
+{
+"key": "2026092102101444000_31.5.324.2",
+"doi-asserted-by": "crossref",
+"unstructured": "Li T , Higgins JPT , Deeks JJ . Chapter 5: collecting data. In: Cochrane Handbook for Systematic Reviews of Interventions Version 6.5. Cochrane, 2019. Available: https://training.cochrane.org/handbook/current/chapter-05",
+"DOI": "10.1002/9781119536604.ch5"
+},
+{
+"key": "2026092102101444000_31.5.324.3",
+"doi-asserted-by": "crossref",
+"first-page": "603",
+"DOI": "10.1093/postmj/qgae195",
+"article-title": "Effects of double data extraction on errors in evidence synthesis: a crossover, multicenter, investigator-blinded, randomized controlled trial",
+"volume": "101",
+"author": "Tang",
+"year": "2025",
+"journal-title": "Postgrad Med J"
+},
+{
+"key": "2026092102101444000_31.5.324.4",
+"doi-asserted-by": "crossref",
+"first-page": "611",
+"DOI": "10.1038/s41562-024-01847-2",
+"article-title": "How to write effective prompts for large language models",
+"volume": "8",
+"author": "Lin",
+"year": "2024",
+"journal-title": "Nat Hum Behav"
+},
+{
+"key": "2026092102101444000_31.5.324.5",
+"doi-asserted-by": "crossref",
+"first-page": "576",
+"DOI": "10.1002/jrsm.1710",
+"article-title": "Data extraction for evidence synthesis using a large language model: A proof‐of‐concept study",
+"volume": "15",
+"author": "Gartlehner",
+"year": "2024",
+"journal-title": "Res Synth Methods"
+},
+{
+"key": "2026092102101444000_31.5.324.6",
+"doi-asserted-by": "crossref",
+"first-page": "818",
+"DOI": "10.1002/jrsm.1732",
+"article-title": "Performance of two large language models for data extraction in evidence synthesis",
+"volume": "15",
+"author": "Konet",
+"year": "2024",
+"journal-title": "Res Synth Methods"
+},
+{
+"key": "2026092102101444000_31.5.324.7",
+"doi-asserted-by": "crossref",
+"unstructured": "Mahmoudi H , Chang D , Lee H , et al . A critical assessment of large language models for systematic reviews: utilizing ChatGPT for complex data extraction. SSRN 2024.",
+"DOI": "10.2139/ssrn.4797024"
+},
+{
+"key": "2026092102101444000_31.5.324.8",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjebm-2024-113199"
+},
+{
+"key": "2026092102101444000_31.5.324.9",
+"doi-asserted-by": "publisher",
+"DOI": "10.7326/annals-25-00739"
+},
+{
+"key": "2026092102101444000_31.5.324.10",
+"doi-asserted-by": "crossref",
+"DOI": "10.1186/s12916-026-04709-y",
+"article-title": "The Trial Bank initiative to promote trustworthy living evidence for medication safety (PROMISE) of children: design and pilot validation",
+"volume": "24",
+"author": "Xu",
+"year": "2026",
+"journal-title": "BMC Med"
+},
+{
+"key": "2026092102101444000_31.5.324.11",
+"doi-asserted-by": "crossref",
+"first-page": "3283",
+"DOI": "10.1038/s41591-025-03953-8",
+"article-title": "The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence",
+"volume": "31",
+"author": "Sounderajah",
+"year": "2025",
+"journal-title": "Nat Med"
+},
+{
+"key": "2026092102101444000_31.5.324.12",
+"doi-asserted-by": "crossref",
+"unstructured": "Fan S . Data from: evaluating data extraction error by a large language model from randomized controlled trials. Open Science Framework; 2026.",
+"DOI": "10.1136/bmjebm-2025-114044"
+},
+{
+"key": "2026092102101444000_31.5.324.13",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jaad.2014.01.905"
+},
+{
+"key": "2026092102101444000_31.5.324.14",
+"doi-asserted-by": "crossref",
+"first-page": "269",
+"DOI": "10.1016/j.egja.2016.05.001",
+"article-title": "Methylene blue compared to norepinephrine in the management of vasoplegic syndrome in pediatric patients after cardiopulmonary bypass: a randomized controlled study",
+"volume": "32",
+"author": "Abdelazim",
+"year": "2016",
+"journal-title": "Egyptian Journal of Anaesthesia"
+},
+{
+"key": "2026092102101444000_31.5.324.15",
+"doi-asserted-by": "crossref",
+"first-page": "243",
+"DOI": "10.1016/j.egja.2012.05.005",
+"article-title": "Effect of oral dextromethorphan versus oral ketamine on sevoflurane related emergence agitation in children undergoing adenotonsillectomy",
+"volume": "28",
+"author": "Abdelmawgoud",
+"year": "2012",
+"journal-title": "Egyptian Journal of Anaesthesia"
+},
+{
+"key": "2026092102101444000_31.5.324.16",
+"doi-asserted-by": "crossref",
+"first-page": "367",
+"DOI": "10.1007/s00405-012-2119-z",
+"article-title": "Antibiotics do not reduce post-tonsillectomy morbidity in children",
+"volume": "270",
+"author": "Al-Layla",
+"year": "2013",
+"journal-title": "Eur Arch Otorhinolaryngol"
+},
+{
+"key": "2026092102101444000_31.5.324.17",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/adc.2007.116079"
+},
+{
+"key": "2026092102101444000_31.5.324.18",
+"first-page": "2731",
+"article-title": "Assessment of Interleukin-6 in Young Swimmers Suffering from Myofascial Pain Syndrome Using Lidocaine Phonophoresis: A Randomized Controlled Trial",
+"volume": "11",
+"author": "Abo-EL-Roos",
+"year": "2020",
+"journal-title": "Int J Res Pharm Sci"
+},
+{
+"key": "2026092102101444000_31.5.324.19",
+"doi-asserted-by": "publisher",
+"DOI": "10.1128/AAC.01317-13"
+},
+{
+"key": "2026092102101444000_31.5.324.20",
+"doi-asserted-by": "publisher",
+"DOI": "10.1352/0047-6765(2001)039<0259:DBPCTO>2.0.CO;2"
+},
+{
+"key": "2026092102101444000_31.5.324.21",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/cid/ciu1166"
+},
+{
+"key": "2026092102101444000_31.5.324.22",
+"doi-asserted-by": "crossref",
+"first-page": "250",
+"DOI": "10.1097/WOX.0b013e3181f68d92",
+"article-title": "Comparison of Effectiveness between Beclomethasone Dipropionate and Fluticasone Propionate in Treatment of Children with Moderate Asthma",
+"volume": "3",
+"author": "Ahmadiafshar",
+"year": "2010",
+"journal-title": "World Allergy Organ J"
+},
+{
+"key": "2026092102101444000_31.5.324.23",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj.i157",
+"article-title": "PRISMA harms checklist: improving harms reporting in systematic reviews",
+"volume": "352",
+"author": "Zorzela",
+"year": "2016",
+"journal-title": "BMJ"
+},
+{
+"key": "2026092102101444000_31.5.324.24",
+"doi-asserted-by": "crossref",
+"first-page": "752",
+"DOI": "10.12669/pjms.333.12026",
+"article-title": "Prevention of anesthesia-induced injection pain of propofol in pediatric anesthesia",
+"volume": "33",
+"author": "Cheng",
+"year": "2017",
+"journal-title": "Pak J Med Sci"
+},
+{
+"key": "2026092102101444000_31.5.324.25",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/hep.510240309"
+},
+{
+"key": "2026092102101444000_31.5.324.26",
+"doi-asserted-by": "crossref",
+"first-page": "1081",
+"DOI": "10.1111/j.1365-2125.2012.04459.x",
+"article-title": "Pharmacokinetic comparison of inhaled fixed combination vs. the free combination of beclomethasone and formoterol pMDIs in asthmatic children",
+"volume": "75",
+"author": "Chawes",
+"year": "2013",
+"journal-title": "Br J Clin Pharmacol"
+},
+{
+"key": "2026092102101444000_31.5.324.27",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ijporl.2012.06.016"
+},
+{
+"key": "2026092102101444000_31.5.324.28",
+"doi-asserted-by": "crossref",
+"first-page": "389",
+"DOI": "10.1097/00006454-199006000-00004",
+"article-title": "Gamma-globulin treatment of recurrent acute otitis media in children",
+"volume": "9",
+"author": "Jørgensen",
+"year": "1990",
+"journal-title": "Pediatr Infect Dis J"
+},
+{
+"key": "2026092102101444000_31.5.324.29",
+"doi-asserted-by": "crossref",
+"first-page": "101",
+"DOI": "10.1214/ss/1009213286",
+"article-title": "Interval Estimation for a Binomial Proportion",
+"volume": "16",
+"author": "Brown",
+"year": "2001",
+"journal-title": "Statist Sci"
+},
+{
+"key": "2026092102101444000_31.5.324.30",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2024-081123",
+"article-title": "CONSORT 2025 statement: updated guideline for reporting randomised trials",
+"volume": "389",
+"author": "Hopewell",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"key": "2026092102101444000_31.5.324.31",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjebm-2024-113066"
+},
+{
+"key": "2026092102101444000_31.5.324.32",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmjopen-2018-024537",
+"article-title": "Analysis and reporting of adverse events in randomised controlled trials: a review",
+"volume": "9",
+"author": "Phillips",
+"year": "2019",
+"journal-title": "BMJ Open"
+},
+{
+"key": "2026092102101444000_31.5.324.33",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj.r494",
+"article-title": "Complete reporting of clinical trials requires more than journal articles",
+"volume": "389",
+"author": "Mayo-Wilson",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"key": "2026092102101444000_31.5.324.34",
+"doi-asserted-by": "crossref",
+"unstructured": "Grant S , Corker KS , Mellor D , et al . TOP 2025: an update to the transparency and openness promotion guidelines. 2025. Available: https://osf.io/preprints/metaarxiv/nmfs6_v3",
+"DOI": "10.31222/osf.io/nmfs6_v2"
+},
+{
+"key": "2026092102101444000_31.5.324.35",
+"doi-asserted-by": "crossref",
+"DOI": "10.1002/cesm.70036",
+"article-title": "Using Artificial Intelligence Tools as Second Reviewers for Data Extraction in Systematic Reviews: A Performance Comparison of Two AI Tools Against Human Reviewers",
+"volume": "3",
+"author": "Helms Andersen",
+"year": "2025",
+"journal-title": "Cochrane Evidence Synthesis and Methods"
+},
+{
+"key": "2026092102101444000_31.5.324.36",
+"doi-asserted-by": "crossref",
+"unstructured": "Peng Z , Fan S , Tian Y , et al . Comparing the accuracy of AI-assisted data extraction versus human double extraction in evidence synthesis: a randomised controlled trial protocol. BMJ Open 2025;15.",
+"DOI": "10.1136/bmjopen-2025-106546"
+},
+{
+"key": "2026092102101444000_31.5.324.37",
+"doi-asserted-by": "crossref",
+"first-page": "102192",
+"DOI": "10.1016/j.smrv.2025.102192",
+"article-title": "Accuracy of large language models in data extraction from randomized controlled trials in sleep medicine: A proof-of-concept study",
+"volume": "84",
+"author": "Peng",
+"year": "2025",
+"journal-title": "Sleep Med Rev"
+}
+],
+"container-title": "BMJ Evidence-Based Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://syndication.highwire.org/content/doi/10.1136/bmjebm-2025-114044",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+9,
+21
+]
+],
+"date-time": "2026-09-21T09:11:26Z",
+"timestamp": 1789981886000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://ebm.bmj.com/lookup/doi/10.1136/bmjebm-2025-114044"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+4,
+29
+]
+]
+},
+"references-count": 37,
+"journal-issue": {
+"issue": "5",
+"published-online": {
+"date-parts": [
+[
+2026,
+9,
+21
+]
+]
+},
+"published-print": {
+"date-parts": [
+[
+2026,
+10
+]
+]
+}
+},
+"alternative-id": [
+"10.1136/bmjebm-2025-114044"
+],
+"URL": "http://dx.doi.org/10.1136/bmjebm-2025-114044",
+"relation": {},
+"ISSN": [
+"2515-446X",
+"2515-4478"
+],
+"subject": [],
+"container-title-short": "BMJ EBM",
+"published": {
+"date-parts": [
+[
+2026,
+4,
+29
+]
+]
+}
 }
 }

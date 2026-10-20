@@ -42,7 +42,7 @@ Wang X, Furuya-Kanamori L, Doi SA, Gu Z, Loke Y, Li S, **Mayo-Wilson E**, Lin L,
 Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *npj Digital Medicine*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2)]
 
 - [**Evaluating data extraction error by a large language model from randomized controlled trials: A large-scale empirical study**](https://ebm.bmj.com/content/early/2026/04/29/bmjebm-2025-114044.long)  
-Fan S, Chen M, Doi SA, Ye Z, Peng Z, Tian Y, Zhang C, Furuya-Kanamori L, Lin L, **Mayo-Wilson E**, Murad MH, Meng X, Xu C. *BMJ Evidence-Based Medicine*, Online ahead of print. PMID: [42055792](https://pubmed.ncbi.nlm.nih.gov/42055792/).
+Fan S, Chen M, Doi SA, Ye Z, Peng Z, Tian Y, Zhang C, Furuya-Kanamori L, Lin L, **Mayo-Wilson E**, Murad MH, Meng X, Xu C. *BMJ Evidence-Based Medicine* 31(5):324-331. PMID: [42055792](https://pubmed.ncbi.nlm.nih.gov/42055792/).
 
 - [**The Trial Bank Initiative To Promote Trustworthy Living Evidence for Medication Safety (PROMISE) of Children: Design and Pilot Validation**](https://link.springer.com/article/10.1186/s12916-026-04709-y)  
 Xu C, Doi SA, Furuya-Kanamori L, Wang Y, Tang L, Tian Y, Fan S, Peng Z, Gu Z, Lin H, **Mayo-Wilson E**, Lin L, Chu H, Murad MH, Yu T, Li S, Chen Y, Golder S, Loke Y, Clark J, Glasziou P, Vohra S, Liu H, Network PCR. *BMC Medicine*, 24(1):181. PMID: [41723462](https://pubmed.ncbi.nlm.nih.gov/41723462/).
