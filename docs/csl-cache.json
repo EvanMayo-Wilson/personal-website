@@ -133862,5 +133862,1057 @@
 ]
 ]
 }
+},
+"doi:10.1371/journal.pmed.1005275": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T18:39:40Z",
+"timestamp": 1792607980488,
+"version": "4.5.0"
+},
+"reference-count": 45,
+"publisher": "Public Library of Science (PLoS)",
+"issue": "10",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T00:00:00Z",
+"timestamp": 1792540800000
+},
+"content-version": "am",
+"delay-in-days": 0,
+"URL": "http://creativecommons.org/licenses/by/4.0/"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/100000092",
+"name": "U.S. National Library of Medicine",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000092",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100007890",
+"name": "University of North Carolina at Chapel Hill",
+"doi-asserted-by": "publisher",
+"award": [
+"UNC Provost’s AI Acceleration program cloud resource grant"
+],
+"award-info": [
+{
+"award-number": [
+"UNC Provost’s AI Acceleration program cloud resource grant"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100007890",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"www.plosmedicine.org"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:sec id=\"sec001\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>Defining outcomes completely before conducting clinical trials helps to mitigate concerns about reporting biases; however, there is limited guidance to help investigators define outcomes completely.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec002\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>Building on a previous framework, we developed guidance for defining trial outcomes completely and consistently. We reviewed literature, developed preliminary guidance, and refined guidance iteratively through pilot testing. We randomly selected 225 randomized controlled trials (RCTs) from ClinicalTrials.gov, which evaluated 3,424 outcomes. Two raters followed a structured approach to define each outcome. When raters encountered outcomes they could not define, we refined our guidance. We continued this process until no further changes were needed. We finalized the guidance through multiple drafts and discussions among authors.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec003\">\n                    <jats:title>Findings</jats:title>\n                    <jats:p>In clinical trials, a completely defined outcome includes six elements: outcome domain, specific measurement, specific metric, cutoff (if applicable), variable type, and time point. We developed guidance for naming specific measurements for both subjective and objective outcomes. We expanded on prior work by describing more comprehensive categories for specific metrics. To be consistent with the estimand framework, we replaced “method of aggregation” with two distinct elements that describe values in individuals (rather than summary measures): “variable type” and “cutoff.” We further defined “cutoff” with three sub-elements, and we defined “variable type” as whether the value for each individual is continuous or categorical.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec004\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Trialists and sponsors could use this framework and guidance to define outcomes in trial registrations, protocols, and results reports. When all six elements are specified, readers can better determine whether reported outcomes were prespecified and whether different trials assessed the same outcomes.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1371/journal.pmed.1005275",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T17:53:47Z",
+"timestamp": 1792605227000
+},
+"page": "e1005275",
+"update-policy": "https://doi.org/10.1371/journal.pmed.corrections_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Guidance for defining outcomes in clinical trials",
+"prefix": "10.1371",
+"volume": "23",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-1713-3788",
+"authenticated-orcid": true,
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "first",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Tianjing",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Colorado Anschutz Medical Campus",
+"place": [
+"Aurora, Colorado, United States of America"
+],
+"department": [
+"Department of Ophthalmology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3534-1641",
+"authenticated-orcid": true,
+"given": "Joanne E.",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4242-7526",
+"authenticated-orcid": true,
+"given": "Matthew J.",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-8085-6751",
+"authenticated-orcid": true,
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0003-2075-5267",
+"authenticated-orcid": true,
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4225-372X",
+"authenticated-orcid": true,
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Indiana University School of Public Health-Bloomington",
+"place": [
+"Bloomington, Indiana, United States of America"
+],
+"department": [
+"Department of Epidemiology and Biostatistics"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1758-8205",
+"authenticated-orcid": true,
+"given": "Andrew W.",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Arkansas for Medical Sciences",
+"place": [
+"Little Rock, Arkansas, United States of America"
+],
+"department": [
+"Department of Biostatistics"
+]
+},
+{
+"name": "Arkansas Children’s Research Institute",
+"place": [
+"Little Rock, Arkansas, United States of America"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-6670-4874",
+"authenticated-orcid": true,
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Colorado Anschutz Medical Campus",
+"place": [
+"Aurora, Colorado, United States of America"
+],
+"department": [
+"Department of Ophthalmology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-8286-1995",
+"authenticated-orcid": true,
+"given": "Nicholas J.",
+"family": "DeVito",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Oxford",
+"place": [
+"Oxford, United Kingdom"
+],
+"department": [
+"Nuffield Department of Primary Care Health Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2062-3382",
+"authenticated-orcid": true,
+"given": "Ian J.",
+"family": "Saldanha",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Johns Hopkins Bloomberg School of Public Health",
+"place": [
+"Baltimore, Maryland, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4402-5299",
+"authenticated-orcid": true,
+"given": "Martin",
+"family": "Offringa",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5152-0108",
+"authenticated-orcid": true,
+"given": "Nancy J.",
+"family": "Butcher",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+},
+{
+"name": "University of Toronto",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Department of Psychiatry"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0002-8410-436X",
+"authenticated-orcid": true,
+"given": "Sirui",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health, Brown University",
+"place": [
+"Providence, Rhode Island, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-0476-3385",
+"authenticated-orcid": true,
+"given": "Phi-Yen",
+"family": "Nguyen",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7374-7549",
+"authenticated-orcid": true,
+"given": "Joe",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Illinois Urbana-Champaign",
+"place": [
+"Champaign, Illinois, United States of America"
+],
+"department": [
+"School of Information Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3593-9141",
+"authenticated-orcid": true,
+"given": "Veronica Ka Wai",
+"family": "Lai",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": true,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Illinois Urbana-Champaign",
+"place": [
+"Champaign, Illinois, United States of America"
+],
+"department": [
+"School of Information Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "340",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+},
+"reference": [
+{
+"issue": "20",
+"key": "pmed.1005275.ref001",
+"doi-asserted-by": "crossref",
+"first-page": "1998",
+"DOI": "10.1056/NEJMsr1611785",
+"article-title": "Trial reporting in ClinicalTrials.gov - the final rule",
+"volume": "375",
+"author": "DA Zarin",
+"year": "2016",
+"journal-title": "N Engl J Med"
+},
+{
+"issue": "183",
+"key": "pmed.1005275.ref002",
+"first-page": "64981",
+"article-title": "Clinical trials registration and results information submission. Final rule",
+"volume": "81",
+"author": "National Institutes of Health, Department of Health and Human Services.",
+"year": "2016",
+"journal-title": "Federal Register. Sect. 42 CFR Part 11"
+},
+{
+"key": "pmed.1005275.ref003",
+"unstructured": "Regulation (EU) No 536/2014 of the European Parliament and of the Council of 16 April 2014 on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC. Official Journal of the European Union; 2014. pp. 1–76. Available from: https://eur-lex.europa.eu/eli/reg/2014/536/oj"
+},
+{
+"issue": "13",
+"key": "pmed.1005275.ref004",
+"doi-asserted-by": "crossref",
+"first-page": "1353",
+"DOI": "10.1001/jama.2016.14668",
+"article-title": "Toward a new era of trust and transparency in clinical trials",
+"volume": "316",
+"author": "KL Hudson",
+"year": "2016",
+"journal-title": "JAMA"
+},
+{
+"key": "pmed.1005275.ref005",
+"unstructured": "World Health Organization. Joint statement on public disclosure of results from clinical trials. Geneva, Switzerland: World Health Organization; 2017. Available from: https://cdn.who.int/media/docs/default-source/clinical-trials/ictrp-jointstatement-2017.pdf"
+},
+{
+"issue": "12",
+"key": "pmed.1005275.ref006",
+"doi-asserted-by": "crossref",
+"first-page": "1250",
+"DOI": "10.1056/NEJMe048225",
+"article-title": "Clinical trial registration: a statement from the International Committee of Medical Journal Editors",
+"volume": "351",
+"author": "C De Angelis",
+"year": "2004",
+"journal-title": "N Engl J Med"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref007",
+"doi-asserted-by": "crossref",
+"first-page": "3",
+"DOI": "10.1037/amp0000191",
+"article-title": "Journal article reporting standards for quantitative research in psychology: The APA Publications and Communications Board task force report",
+"volume": "73",
+"author": "M Appelbaum",
+"year": "2018",
+"journal-title": "Am Psychol"
+},
+{
+"key": "pmed.1005275.ref008",
+"unstructured": "International Committee of Medical Journal Editors. Recommendations for the Conduct, reporting, editing, and publication of scholarly work in medical journals. 2026. Available from: https://www.icmje.org/icmje-recommendations.pdf"
+},
+{
+"key": "pmed.1005275.ref009",
+"unstructured": "World Health Organization. International Standards for Clinical Trial Registries – version 3.0. Geneva, Switzerland: World Health Organization; 2018. Available from: https://iris.who.int/handle/10665/274994"
+},
+{
+"key": "pmed.1005275.ref010",
+"article-title": "An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov",
+"author": "X Ying",
+"year": "2026",
+"journal-title": "NPJ Digit Med"
+},
+{
+"key": "pmed.1005275.ref011",
+"article-title": "Outcome definitions in clinical trial registrations: a cross-sectional study.",
+"author": "K Ninan",
+"year": "2026",
+"journal-title": "MetaArXiv"
+},
+{
+"key": "pmed.1005275.ref012",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj.s922",
+"article-title": "Outcome reporting in cohort studies of interventions",
+"volume": "393",
+"author": "X Ying",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"issue": "2",
+"key": "pmed.1005275.ref013",
+"doi-asserted-by": "crossref",
+"first-page": "263",
+"DOI": "10.1177/1740774520972082",
+"article-title": "Lack of harmonization of coronavirus disease ordinal scales",
+"volume": "18",
+"author": "DA Zarin",
+"year": "2021",
+"journal-title": "Clin Trials"
+},
+{
+"key": "pmed.1005275.ref014",
+"doi-asserted-by": "crossref",
+"first-page": "852",
+"DOI": "10.1056/NEJMsa1012065",
+"article-title": "The ClinicalTrials.gov results database — update and key issues",
+"volume": "364",
+"author": "DA Zarin",
+"year": "2011",
+"journal-title": "N Engl J Med"
+},
+{
+"key": "pmed.1005275.ref015",
+"unstructured": "National Library of Medicine US. Protocol registration quality control review criteria. ClinicalTrials.gov. 2024 [Cited 2026 August 2]. Available from: https://clinicaltrials.gov/submit-studies/prs-help/protocol-registration-quality-control-review-criteria"
+},
+{
+"issue": "4",
+"key": "pmed.1005275.ref016",
+"doi-asserted-by": "crossref",
+"DOI": "10.1371/journal.pmed.1004587",
+"article-title": "CONSORT 2025 statement: updated guideline for reporting randomised trials",
+"volume": "22",
+"author": "S Hopewell",
+"year": "2025",
+"journal-title": "PLoS Med"
+},
+{
+"key": "pmed.1005275.ref017",
+"article-title": "CONSORT 2025 explanation and elaboration: updated guideline for reporting randomised trials",
+"volume": "389",
+"author": "S Hopewell",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "4",
+"key": "pmed.1005275.ref018",
+"article-title": "SPIRIT 2025 statement: updated guideline for protocols of randomised trials",
+"volume": "22",
+"author": "A-W Chan",
+"year": "2025",
+"journal-title": "PLoS Med"
+},
+{
+"key": "pmed.1005275.ref019",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2024-081660",
+"article-title": "SPIRIT 2025 explanation and elaboration: updated guideline for protocols of randomised trials",
+"volume": "389",
+"author": "A Hróbjartsson",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "23",
+"key": "pmed.1005275.ref020",
+"doi-asserted-by": "crossref",
+"first-page": "2345",
+"DOI": "10.1001/jama.2022.21243",
+"article-title": "Guidelines for reporting outcomes in trial protocols: the SPIRIT-Outcomes 2022 extension",
+"volume": "328",
+"author": "NJ Butcher",
+"year": "2022",
+"journal-title": "JAMA"
+},
+{
+"issue": "22",
+"key": "pmed.1005275.ref021",
+"doi-asserted-by": "crossref",
+"first-page": "2252",
+"DOI": "10.1001/jama.2022.21022",
+"article-title": "Guidelines for reporting outcomes in trial reports: the CONSORT-Outcomes 2022 extension",
+"volume": "328",
+"author": "NJ Butcher",
+"year": "2022",
+"journal-title": "JAMA"
+},
+{
+"key": "pmed.1005275.ref022",
+"doi-asserted-by": "crossref",
+"first-page": "383",
+"DOI": "10.1056/NEJMsr1601330",
+"article-title": "Update on trial registration 11 years after the ICMJE policy was established",
+"volume": "376",
+"author": "DA Zarin",
+"year": "2017",
+"journal-title": "N Engl J Med"
+},
+{
+"key": "pmed.1005275.ref023",
+"unstructured": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use. ICH harmonised guideline. Addendum on estimands and sensitivity analysis in clinical trials to the guideline on statistical principles for clinical trials E9(R1). 2019. Available from: https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+},
+{
+"key": "pmed.1005275.ref024",
+"article-title": "The estimands framework: a primer on the ICH E9(R1) addendum",
+"volume": "384",
+"author": "BC Kahan",
+"year": "2024",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref025",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2025-089050",
+"article-title": "CRT-estimands framework: consensus based extension of the ICH E9(R1) addendum for cluster randomised trials",
+"volume": "393",
+"author": "BC Kahan",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref026",
+"article-title": "GPT’s performance in identifying outcome changes on ClinicalTrials.gov.",
+"author": "X Ying",
+"year": "2024",
+"journal-title": "MetaArXiv"
+},
+{
+"issue": "10",
+"key": "pmed.1005275.ref027",
+"doi-asserted-by": "crossref",
+"DOI": "10.1371/journal.pone.0109400",
+"article-title": "Outcomes in Cochrane systematic reviews addressing four common eye conditions: an evaluation of completeness and comparability",
+"volume": "9",
+"author": "IJ Saldanha",
+"year": "2014",
+"journal-title": "PLoS One"
+},
+{
+"key": "pmed.1005275.ref028",
+"unstructured": "Food and Drug Administration (US). Clinical trial endpoints for the approval of cancer drugs and biologics: guidance for industry. Silver Spring, MD: Oncology Center of Excellence, Center for Drug Evaluation and Research, Center for Biologics Evaluation and Research; 2018. Available from: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+},
+{
+"key": "pmed.1005275.ref029",
+"volume-title": "Clinical trials: a methodologic perspective",
+"author": "S Piantadosi",
+"year": "2017",
+"edition": "3"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref030",
+"doi-asserted-by": "crossref",
+"first-page": "2",
+"DOI": "10.1002/jrsm.1277",
+"article-title": "Practical guidance for using multiple data sources in systematic reviews and meta-analyses (with examples from the MUDS study)",
+"volume": "9",
+"author": "MUDS investigators",
+"year": "2018",
+"journal-title": "Res Synth Methods"
+},
+{
+"key": "pmed.1005275.ref031",
+"doi-asserted-by": "crossref",
+"first-page": "84",
+"DOI": "10.1016/j.jclinepi.2017.12.020",
+"article-title": "A taxonomy has been developed for outcomes in medical research to help improve knowledge discovery",
+"volume": "96",
+"author": "S Dodd",
+"year": "2018",
+"journal-title": "J Clin Epidemiol"
+},
+{
+"issue": "6",
+"key": "pmed.1005275.ref032",
+"doi-asserted-by": "crossref",
+"first-page": "473",
+"DOI": "10.1097/00005650-199206000-00002",
+"article-title": "The MOS 36-item short-form health survey (SF-36). I. Conceptual framework and item selection",
+"volume": "30",
+"author": "Jr Ware JE",
+"year": "1992",
+"journal-title": "Med Care"
+},
+{
+"issue": "3",
+"key": "pmed.1005275.ref033",
+"doi-asserted-by": "crossref",
+"first-page": "199",
+"DOI": "10.1016/0168-8510(90)90421-9",
+"article-title": "EuroQol—a new facility for the measurement of health-related quality of life",
+"volume": "16",
+"author": "Group EuroQol",
+"year": "1990",
+"journal-title": "Health Policy"
+},
+{
+"issue": "5",
+"key": "pmed.1005275.ref034",
+"doi-asserted-by": "crossref",
+"first-page": "365",
+"DOI": "10.1093/jnci/85.5.365",
+"article-title": "The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology",
+"volume": "85",
+"author": "NK Aaronson",
+"year": "1993",
+"journal-title": "J Natl Cancer Inst"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref035",
+"doi-asserted-by": "crossref",
+"first-page": "40",
+"DOI": "10.1186/s41073-026-00223-0",
+"article-title": "TOP 2025: an update to the transparency and openness promotion guidelines",
+"volume": "11",
+"author": "S Grant",
+"year": "2026",
+"journal-title": "Res Integr Peer Rev"
+},
+{
+"issue": "7549",
+"key": "pmed.1005275.ref036",
+"doi-asserted-by": "crossref",
+"first-page": "1080",
+"DOI": "10.1136/bmj.332.7549.1080",
+"article-title": "The cost of dichotomising continuous variables",
+"volume": "332",
+"author": "DG Altman",
+"year": "2006",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref037",
+"unstructured": "National Library of Medicine US. Results quality control review criteria. ClinicalTrials.gov. 2026 [Cited 2026 August 2]. Available from: https://clinicaltrials.gov/submit-studies/prs-help/results-quality-control-review-criteria#outcome-measure-module"
+},
+{
+"key": "pmed.1005275.ref038",
+"unstructured": "National Library of Medicine US. Protocol registration data element definitions for interventional and observational studies. ClinicalTrials.gov. 2026 [Cited 2026 August 2]. Available from: https://clinicaltrials.gov/policy/protocol-definitions"
+},
+{
+"key": "pmed.1005275.ref039",
+"unstructured": "National Library of Medicine US. How to Submit Your Results. ClinicalTrials.gov. 2026 [Cited 2026 August 2]. Available from: https://clinicaltrials.gov/submit-studies/prs-help/how-submit-results"
+},
+{
+"key": "pmed.1005275.ref040",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2025-087975",
+"article-title": "Outcome switching in cohort studies of interventions: meta-epidemiological study",
+"volume": "393",
+"author": "Z Song",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref041",
+"first-page": "823",
+"article-title": "Food and Drug Administration Amendments Act of 2007. United States Statutes at Large. Sect. 801, Pub",
+"year": "2007",
+"journal-title": "L"
+},
+{
+"key": "pmed.1005275.ref042",
+"unstructured": "European Medicines Agency. Appendix, on disclosure rules, to the functional specifications for the EU portal and EU database to be audited. Amsterdam, Netherlands: European Medicines Agency; 2015. Available from: https://www.ema.europa.eu/en/documents/other/appendix-disclosure-rules-functional-specifications-eu-portal-eu-database-be-audited_en.pdf"
+},
+{
+"key": "pmed.1005275.ref043",
+"article-title": "Consistent and precise description of research outputs could improve implementation of open science",
+"volume": "8",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"journal-title": "Adv Methods Pract Psychol Sci"
+},
+{
+"key": "pmed.1005275.ref044",
+"article-title": "Complete reporting of clinical trials requires more than journal articles",
+"volume": "389",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref045",
+"doi-asserted-by": "crossref",
+"first-page": "60",
+"DOI": "10.1186/s12916-018-1042-6",
+"article-title": "Clinical trial registration and reporting: a survey of academic organizations in the United States",
+"volume": "16",
+"author": "E Mayo-Wilson",
+"year": "2018",
+"journal-title": "BMC Med"
+}
+],
+"container-title": "PLOS Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://dx.plos.org/10.1371/journal.pmed.1005275",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T17:53:58Z",
+"timestamp": 1792605238000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://dx.plos.org/10.1371/journal.pmed.1005275"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+},
+"references-count": 45,
+"journal-issue": {
+"issue": "10",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+}
+},
+"URL": "http://dx.doi.org/10.1371/journal.pmed.1005275",
+"relation": {},
+"ISSN": [
+"1549-1676"
+],
+"subject": [],
+"container-title-short": "PLoS Med",
+"published": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+}
 }
 }
