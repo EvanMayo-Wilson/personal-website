@@ -10,7 +10,7 @@
   "Lee Aiyegbusi O": "Aiyegbusi OL"
  },
  "titles": {
-  "_note": "PMID -> exact site title, where the site keeps a form PubMed does not use. 26113702: PubMed prefixes the Science section label 'SCIENTIFIC STANDARDS.' 29718639/25577940/25340235: NICE full guidelines keep the full-guideline document title; NCBI Bookshelf uses NICE's short title (open question for Evan, 2026-10-27).",
+  "_note": "PMID -> exact site title, where the site keeps a form PubMed does not use. 26113702: PubMed prefixes the Science section label 'SCIENTIFIC STANDARDS.' 29718639/25577940/25340235: NICE full guidelines keep the full-guideline document title; NCBI Bookshelf uses NICE's short title (Evan decided to keep these, 2026-10-27).",
   "26113702": "Promoting an open research culture",
   "29718639": "Bipolar disorder: The assessment and management of bipolar disorder in adults, children and young people in primary and secondary care",
   "25577940": "Social anxiety disorder: The NICE guideline on the recognition, assessment and treatment of social anxiety disorder",
