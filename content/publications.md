@@ -293,7 +293,7 @@ Dickersin K, **Mayo-Wilson E**, Li T. *Patient-Centered Outcomes Research Instit
 
 - [**Improving transparency and reproducibility through registration: The status of intervention trials published in clinical psychology journals**](https://doi.org/10.1037/ccp0000115)Cybulski L, **Mayo-Wilson E**, Grant S. *J Consult Clin Psychol* 84(9):753-767. PMID: [27281372](https://pubmed.ncbi.nlm.nih.gov/27281372/). [[Supplemental Data](https://supp.apa.org/psycarticles/supplemental/ccp0000115/ccp0000115_supp.html)]
 
-- [**Psychological interventions for adults with bipolar disorder: A systematic review and meta-analysis**](https://doi.org/10.1192/bjp.bp.114.157123)Oud M, **Mayo-Wilson E**, Braidwood R, Schulte P, Jones SH, Morriss R, Kupka R, Cuijpers P, Kendall T. *Br J Psychiatry* 208(3):213-222. PMID: [26932483](https://pubmed.ncbi.nlm.nih.gov/26932483/).
+- [**Psychological interventions for adults with bipolar disorder: Systematic review and meta-analysis**](https://doi.org/10.1192/bjp.bp.114.157123)Oud M, **Mayo-Wilson E**, Braidwood R, Schulte P, Jones SH, Morriss R, Kupka R, Cuijpers P, Kendall T. *Br J Psychiatry* 208(3):213-222. PMID: [26932483](https://pubmed.ncbi.nlm.nih.gov/26932483/).
 
 - [**NICE guidance: Why not clozapine for treatment-refractory bipolar disorder? - Authors' reply**](https://doi.org/10.1016/S2215-0366(16)30098-0)  
 Morriss R, **Mayo-Wilson E**, Kendall T. *Lancet Psychiatry* 3(6):503. PMID: [27262048](https://pubmed.ncbi.nlm.nih.gov/27262048/).
@@ -317,17 +317,17 @@ Grant SP, **Mayo-Wilson E**, Montgomery P. *JAMA* 315(9):943. PMID: [26934268](h
 - [**Treatments for social anxiety disorder: Considerations regarding psychodynamic therapy findings**](https://doi.org/10.1176/appi.ajp.2015.14101347)  
 Hofmann SG, Barlow DH, Clark DM, Hollon SD, **Mayo-Wilson E**. *Am J Psychiatry* 172(4):393. PMID: [25827035](https://pubmed.ncbi.nlm.nih.gov/25827035/).
 
-- [**Can non-pharmacological interventions prevent relapse in adults who have recovered from depression? A systematic review and meta-analysis of randomized controlled trials**](https://doi.org/10.1016/j.cpr.2015.04.002)Clarke K, **Mayo-Wilson E**, Kenny J, Pilling S. *Clin Psychol Rev* 39:58-70. PMID: [25939032](https://pubmed.ncbi.nlm.nih.gov/25939032/).
+- [**Can non-pharmacological interventions prevent relapse in adults who have recovered from depression? A systematic review and meta-analysis of randomised controlled trials**](https://doi.org/10.1016/j.cpr.2015.04.002)Clarke K, **Mayo-Wilson E**, Kenny J, Pilling S. *Clin Psychol Rev* 39:58-70. PMID: [25939032](https://pubmed.ncbi.nlm.nih.gov/25939032/).
 
 - [**The cost effectiveness of psychological and pharmacological interventions for social anxiety disorder: A model-based economic analysis**](https://doi.org/10.1371/journal.pone.0140704)Mavranezouli I, **Mayo-Wilson E**, Dias S, Kew K, Clark DM, Ades AE, Pilling S. *PLoS One* 10(10):e0140704. PMID: [26506554](https://pubmed.ncbi.nlm.nih.gov/26506554/).
 
-- [**Efficacy and safety of pharmacological and psychological interventions for the treatment of psychosis and schizophrenia in children and young people: Systematic review and meta-analysis**](https://doi.org/10.1371/journal.pone.0117166)Stafford MR, **Mayo-Wilson E**, Loucas CE, James A, Hollis C, Birchwood M, Kendall T. *PLoS One* 10(2):e0117166. PMID: [25671707](https://pubmed.ncbi.nlm.nih.gov/25671707/).
+- [**Efficacy and safety of pharmacological and psychological interventions for the treatment of psychosis and schizophrenia in children, adolescents and young adults: A systematic review and meta-analysis**](https://doi.org/10.1371/journal.pone.0117166)Stafford MR, **Mayo-Wilson E**, Loucas CE, James A, Hollis C, Birchwood M, Kendall T. *PLoS One* 10(2):e0117166. PMID: [25671707](https://pubmed.ncbi.nlm.nih.gov/25671707/).
 
 - [**Interventions to improve the experience of caring for people with severe mental illness: Systematic review and meta-analysis**](https://doi.org/10.1192/bjp.bp.114.147561)Yesufu-Udechuku A, Harrison B, **Mayo-Wilson E**, Young N, Woodhams P, Shiers D, Kuipers E, Kendall T. *Br J Psychiatry* 206(4):268-274. PMID: [25833867](https://pubmed.ncbi.nlm.nih.gov/25833867/).
 
 - [**Are restorative justice conferences effective in reducing repeat offending? Findings from a Campbell systematic review**](https://doi.org/10.1007/s10940-014-9222-9)Sherman LW, Strang H, **Mayo-Wilson E**, Woods DJ, Ariel B. *J Quant Criminol* 31(1):1-24. DOI: [10.1007/s10940-014-9222-9](https://doi.org/10.1007/s10940-014-9222-9). [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.5)]
 
-- [**Simultaneous synthesis of treatment effects and mapping to a common scale: An alternative to standardization**](https://doi.org/10.1002/jrsm.1130)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
+- [**Simultaneous synthesis of treatment effects and mapping to a common scale: An alternative to standardisation**](https://doi.org/10.1002/jrsm.1130)Ades AE, Lu G, Dias S, **Mayo-Wilson E**, Kounali D. *Res Synth Methods* 6(1):96-107. PMID: [26035473](https://pubmed.ncbi.nlm.nih.gov/26035473/).
 
 - [**Development, inter-rater reliability and feasibility of a checklist to assess implementation (Ch-IMP) in systematic reviews: The case of provider-based prevention and treatment programs targeting children and youth**](https://doi.org/10.1186/s12874-015-0037-7)Cargo M, Stankov I, Thomas J, Saini M, Rogers P, **Mayo-Wilson E**, Hannes K. *BMC Med Res Methodol* 15:73. PMID: [26346461](https://pubmed.ncbi.nlm.nih.gov/26346461/).
 
@@ -405,7 +405,7 @@ Gardner F, **Mayo-Wilson E**, Montgomery P, Hopewell S, Macdonald G, Moher D, Gr
 - [**Restorative justice conferencing (RJC) using face-to-face meetings of offenders and victims: Effects on offender recidivism and victim satisfaction**](https://doi.org/10.4073/csr.2013.12)  
 Strang H, Sherman LW, **Mayo-Wilson E**, Woods DJ, Ariel B. *Campbell Syst Rev* 9(1). DOI: [10.4073/csr.2013.12](https://doi.org/10.4073/csr.2013.12). [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.5)]
 
-- [**Early interventions to prevent psychosis: A systematic review and meta-analysis**](https://doi.org/10.1136/bmj.f185)Stafford MR, Jackson H, **Mayo-Wilson E**, Morrison AP, Kendall T. *BMJ* 346:f185. PMID: [23335473](https://pubmed.ncbi.nlm.nih.gov/23335473/).
+- [**Early interventions to prevent psychosis: Systematic review and meta-analysis**](https://doi.org/10.1136/bmj.f185)Stafford MR, Jackson H, **Mayo-Wilson E**, Morrison AP, Kendall T. *BMJ* 346:f185. PMID: [23335473](https://pubmed.ncbi.nlm.nih.gov/23335473/).
 
 - [**Social anxiety disorder: The NICE guideline on the recognition, assessment and treatment of social anxiety disorder**](https://www.nice.org.uk/guidance/cg159/evidence)  
 Clark DM, Pilling S, **Mayo-Wilson E**, Mavranezouli I, Afghan S, Anigbogu B, Armstrong P, Bennett M, Cartwright-Hatton S, Creswell C, Dix M, Hanlon N, Kew K, Leggett K, Malizia A, Roberts J, Satrettin K, Smith M, Stephens G, Stopa L, Stockton S, Taylor C, Whittington C. *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London. PMID: [25577940](https://pubmed.ncbi.nlm.nih.gov/25577940/).
@@ -424,7 +424,7 @@ Grant SP, Montgomery P, **Mayo-Wilson E**. *Lancet* 380:S14. DOI: [10.1016/S0140
 
 ## 2011
 
-- [**Vitamin A supplements for preventing mortality, illness and blindness in children under 5: A systematic review and meta-analysis**](https://doi.org/10.1136/bmj.d5094)**Mayo-Wilson E**, Imdad A, Herzer K, Yakoob MY, Bhutta ZA. *BMJ* 343:d5094. PMID: [21868478](https://pubmed.ncbi.nlm.nih.gov/21868478/). [Published protocol]
+- [**Vitamin A supplements for preventing mortality, illness, and blindness in children aged under 5: Systematic review and meta-analysis**](https://doi.org/10.1136/bmj.d5094)**Mayo-Wilson E**, Imdad A, Herzer K, Yakoob MY, Bhutta ZA. *BMJ* 343:d5094. PMID: [21868478](https://pubmed.ncbi.nlm.nih.gov/21868478/). [Published protocol]
 
 - [**Vitamin A supplementation for preventing morbidity and mortality in children from 6 months to 5 years of age**](https://doi.org/10.1111/j.1756-5391.2011.01129.x)**Mayo-Wilson E**, Imdad A, Herzer K, Yakoob MY, Bhutta ZA. *J Evid Based Med* 4(2):141. DOI: [10.1111/j.1756-5391.2011.01129.x](https://doi.org/10.1111/j.1756-5391.2011.01129.x). [Published protocol]
 

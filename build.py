@@ -16,6 +16,8 @@ import html
 import os
 import re
 import shutil
+import subprocess
+import sys
 import urllib.parse
 from pathlib import Path
 
@@ -2572,6 +2574,11 @@ def main():
     print(f"Built {n} publications across {len(years)} years "
           f"({with_pmid} with PMIDs -> badges).")
     print(f"  {OUT / 'index.html'}")
+
+    # House-style lint on every build (offline, about a second). It warns
+    # rather than failing the build; before committing a publication change,
+    # run `python3 check_publications.py --online` and fix every ERROR.
+    subprocess.run([sys.executable, str(ROOT / "check_publications.py"), "--quiet"])
 
 
 if __name__ == "__main__":

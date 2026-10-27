@@ -47,7 +47,7 @@ pull causes a rejected push.
 - Within each year, entries are ordered by Evan's author position:
   **first author, then last author, then 2nd author, 3rd author, …**
 - Each entry: `- [**Title**](article-url)` then a newline, then
-  `Authors. *Journal* vol:pages. PMID: [n](pubmed-url).`  Bold **Mayo-Wilson E**.
+  `Authors. *Journal* vol(issue):pages. PMID: [n](pubmed-url).`  Bold **Mayo-Wilson E**.
   A blank line separates entries. The line break between title and authors
   can be a real markdown hard break (title line ending in two trailing
   spaces) or just a bare newline/no separator at all — `build.py` renders the
@@ -58,11 +58,29 @@ pull causes a rejected push.
   from bracketed `[Published protocol]` / `[Preprint]` links. So an in-press
   paper with only a protocol link has **no title link and no download buttons**
   — that's intentional.
-- **The title link always goes to the journal/publisher's own page for the
-  article** (or the monograph/report page for non-journal items) — never to
-  PubMed. PMID gets its own separate hyperlink to PubMed (see below). If you
-  ever find a title linking to PubMed instead of the publisher, that's a
-  mistake to fix, not a style choice.
+- **The title link is `https://doi.org/<DOI>` whenever the item has a DOI**
+  (Evan, 2026-10-27). That resolves to the journal/publisher's own page,
+  never breaks when a publisher redesigns, and carries no share tokens.
+  Items with no DOI link the publisher's or monograph's page (the NICE
+  guidelines link `nice.org.uk/guidance/<cg>/evidence`), never a PDF and
+  never PubMed. PMID gets its own separate hyperlink to PubMed (see below).
+- **Accuracy rules (Evan, 2026-10-27; enforced by `check_publications.py`):**
+  - **Title** = the exact published title (publisher's spelling, e.g.
+    "randomised" in BMJ titles, full subtitles); only the case is changed to
+    sentence case.
+  - **Authors** = PubMed's list, spelling and initials (fuller initials on the
+    site are fine). The exception is compound surnames, which follow the
+    author's own form (Jonsson Funk M, Canham-Chervak M, McAdams-DeMarco M,
+    Svetina Valdivia D, Görg C, Toupin April K). Every such deviation is
+    listed in `content/citation-exceptions.json`.
+  - **Journal** = the NLM abbreviation (PubMed's `source`, e.g. *J Clin
+    Epidemiol*, *PLoS Med*, *NPJ Digit Med*), one form per journal.
+  - **Citation** = `vol(issue):pages` from PubMed, full page ranges with a
+    hyphen; Cochrane reviews use `issue:CDnnnnnn`. No year inside the citation.
+  - **Year section** = the year of the issue. A simultaneous-publication group
+    files under its earliest issue year.
+  - A deliberate deviation from PubMed goes in `content/citation-exceptions.json`
+    with its reason, so the weekly check never re-flags a settled call.
 - A book chapter or item with no PMID/DOI at all (NICE monographs before they
   had real PMIDs, NASEM reports, book chapters) gets a hand-written record in
   `content/csl-extra.json` instead, keyed by its URL (or exact title if it has
@@ -76,9 +94,9 @@ pull causes a rejected push.
   shape, and always capitalized "DOI", always hyperlinked to `doi.org`, even
   though the citation/badge code can technically read a DOI out of plain
   prose text as a fallback.
-- If a DOI can't be read cleanly out of the article's own URL (e.g. the URL
-  has a trailing `?journalCode=...` query string or a trailing `/full`
-  path segment after the real DOI), **don't** try to fix the extraction
+- With doi.org title links this is rarely needed now: only a PMID-less DOI
+  containing parentheses, such as Lancet supplements, needs an override. If
+  a DOI can't be read cleanly out of the article's own URL, **don't** try to fix the extraction
   regex in `build.py` for one entry — add an override line to
   `content/dois.tsv` instead (format documented at the top of that file).
   This is exactly what it's for.
@@ -137,15 +155,26 @@ pull causes a rejected push.
    simultaneously-published versions.
 3. Check the title against the capitalization rule above before committing it
    — sentence case, acronyms/proper-nouns excepted, capital after any colon.
-4. Confirm the title link goes to the journal/publisher page (never PubMed)
-   and that PMID/DOI are written in the format above.
-5. `python3 build.py`, then `python3 generate_csl_cache.py` and
+4. Confirm the title link is `https://doi.org/<DOI>` (never PubMed) and that
+   PMID/DOI are written in the format above.
+5. **Run `python3 check_publications.py --online` and fix every ERROR**
+   before committing. It compares every entry with PubMed and Crossref
+   (title, authors, journal, volume/issue/pages, DOI, missing PMIDs) and lints
+   the house style. `build.py` runs the offline half on every build. If the
+   checker is wrong about an entry, record the exception in
+   `content/citation-exceptions.json` rather than ignoring the error.
+6. `python3 build.py`, then `python3 generate_csl_cache.py` and
    `python3 generate_pub_stats.py` to fetch the new entry's CSL record, PDF
    link, and citation count ahead of time (see each script's docstring) —
    optional, since both have live client-side fallbacks, but running them is
    what keeps the Cite button, the PDF button, and "Sort by Citations" instant
    for the new entry instead of waiting a day for the scheduled Actions.
-6. Commit and push.
+7. Commit and push.
+
+The weekly Friday publication-record check (scheduled task
+`publication-record-weekly`, procedure in Drive
+`cv-and-biosketch/bibliography-review/PROCEDURE.md`) runs the same checker
+online and proposes changes; it never edits the site itself.
 
 ## Features wired up
 
