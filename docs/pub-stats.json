@@ -4,7 +4,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 178,
+"citations": 179,
 "pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
@@ -70,17 +70,9 @@
 "citations": 0,
 "pdf": "https://f1000research.com/articles/15-665/pdf"
 },
-"doi:10.1371/journal.pmed.1005275": {
-"citations": 0,
-"pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275&type=printable"
-},
 "doi:10.17226/26039": {
 "citations": 0,
 "pdf": "papers/10_17226_26039.pdf"
-},
-"doi:10.17226/27746": {
-"citations": 9,
-"pdf": "papers/10_17226_27746.pdf"
 },
 "doi:10.17605/osf.io/sm78t": {
 "pdf": "papers/10_17605_osf_io_sm78t.docx",
@@ -90,17 +82,32 @@
 "citations": 0,
 "pdf": "papers/10_31219_osf_io_nw7fy_v1.pdf"
 },
+"doi:10.31222/osf.io/72mc6": {
+"citations": 0,
+"pdf": "https://osf.io/72mc6/download"
+},
+"doi:10.31222/osf.io/7b9qj": {
+"citations": 0
+},
 "doi:10.31222/osf.io/hkudx_v1": {
 "citations": 0,
 "pdf": "https://osf.io/hkudx/download"
 },
-"doi:10.31222/osf.io/npvwr": {
+"doi:10.31222/osf.io/nra5v": {
 "citations": 0,
-"pdf": "https://osf.io/npvwr/download"
+"pdf": "https://osf.io/nra5v/download"
 },
 "doi:10.31222/osf.io/uegmb": {
 "citations": 0,
 "pdf": "papers/10_31222_osf_io_uegmb.pdf"
+},
+"doi:10.31222/osf.io/ydnt7_v1": {
+"citations": 0,
+"pdf": "https://osf.io/ydnt7/download"
+},
+"doi:10.31222/osf.io/yph8c_v1": {
+"citations": 0,
+"pdf": "https://osf.io/yph8c/download"
 },
 "doi:10.31234/osf.io/g627d": {
 "citations": 0,
@@ -111,12 +118,16 @@
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 252,
+"citations": 253,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
 "citations": 15,
 "pdf": "papers/10_4073_csr_2014_3.pdf"
+},
+"doi:10.64898/2026.08.04.26359616": {
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/08/06/2026.08.04.26359616.full.pdf"
 },
 "pmid:17329641": {
 "citations": 66,
@@ -147,15 +158,15 @@
 "pdf": "papers/10_1002_14651858_cd006859_pub2.pdf"
 },
 "pmid:21154399": {
-"citations": 180,
+"citations": 179,
 "pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
-"citations": 346,
+"citations": 345,
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 1856,
+"citations": 1858,
 "pdf": "papers/10_2196_jmir_1923.pdf"
 },
 "pmid:23335473": {
@@ -211,7 +222,7 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
-"citations": 559,
+"citations": 558,
 "pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
@@ -248,7 +259,7 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 293,
+"citations": 294,
 "pdf": "papers/10_1192_bjp_bp_114_147561.pdf"
 },
 "pmid:25939032": {
@@ -260,7 +271,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2684,
+"citations": 2689,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -300,7 +311,7 @@
 "pdf": "papers/10_1016_s2215_0366_16_30098_0.pdf"
 },
 "pmid:27281372": {
-"citations": 90,
+"citations": 91,
 "pdf": "papers/10_1037_ccp0000115.pdf"
 },
 "pmid:27624441": {
@@ -408,27 +419,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5135,
+"citations": 5138,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 13842,
+"citations": 13848,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 11656,
+"citations": 11674,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 107186,
+"citations": 107606,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4223,
+"citations": 4231,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 11665,
+"citations": 11681,
 "pdf": "papers/10_1016_j_ijsu_2021_105906.pdf"
 },
 "pmid:34078479": {
@@ -460,15 +471,15 @@
 "pdf": "papers/10_1016_j_arthro_2021_09_005.pdf"
 },
 "pmid:34742788": {
-"citations": 62,
+"citations": 63,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_023.pdf"
 },
 "pmid:34742789": {
-"citations": 33,
+"citations": 34,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_024.pdf"
 },
 "pmid:34742790": {
-"citations": 30,
+"citations": 31,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_025.pdf"
 },
 "pmid:34847946": {
@@ -504,11 +515,11 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 714,
+"citations": 716,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 287,
+"citations": 288,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -527,7 +538,7 @@
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 275,
+"citations": 280,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -540,23 +551,23 @@
 "type": "docx"
 },
 "pmid:37562729": {
-"citations": 18,
+"citations": 19,
 "pdf": "papers/10_1016_j_jclinepi_2023_08_004.pdf"
 },
 "pmid:37871835": {
-"citations": 9,
+"citations": 10,
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 133,
+"citations": 134,
 "pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
-"citations": 81,
+"citations": 83,
 "pdf": "https://eprints.soton.ac.uk/486969/1/CONSORT_extension_paper_JAMA_AuthorAcceptedVersion.pdf"
 },
 "pmid:38051535": {
-"citations": 29,
+"citations": 30,
 "pdf": "https://eprints.soton.ac.uk/486816/1/SPIRIT_extension_paper_AuthorVersion.pdf"
 },
 "pmid:38190185": {
@@ -568,11 +579,11 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 122,
+"citations": 123,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
 },
 "pmid:38902776": {
-"citations": 6,
+"citations": 7,
 "pdf": "https://link.springer.com/content/pdf/10.1186/s13063-024-08239-x.pdf"
 },
 "pmid:38977535": {
@@ -580,16 +591,19 @@
 "pdf": "https://jpro.springeropen.com/counter/pdf/10.1186/s41687-024-00727-7"
 },
 "pmid:38978063": {
-"citations": 19,
+"citations": 21,
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
-"citations": 89,
+"citations": 91,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
-"citations": 10,
+"citations": 11,
 "pdf": "papers/10_7326_m24_0771.pdf"
+},
+"pmid:39312602": {
+"pdf": "papers/10_17226_27746.pdf"
 },
 "pmid:40021657": {
 "citations": 6,
@@ -603,8 +617,12 @@
 "citations": 47,
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
+"pmid:41573527": {
+"citations": 2,
+"pdf": "https://researchonline.gcu.ac.uk/ws/files/108772041/108077949.pdf"
+},
 "pmid:41626914": {
-"citations": 12,
+"citations": 13,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E41BD8EC61447E3E559C43AB95F7964A/S1759287925000195a.pdf/div-class-title-weighted-corrected-covered-area-wcca-a-measure-of-informational-overlap-among-reviews-div.pdf"
 },
 "pmid:41641596": {
@@ -629,7 +647,7 @@
 },
 "pmid:42282161": {
 "citations": 0,
-"pdf": "https://www.medrxiv.org/content/10.64898/2026.06.03.26354854v1.full.pdf"
+"pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/09/05/2026.06.03.26354854.full.pdf"
 },
 "pmid:42557573": {
 "citations": 8,
@@ -638,5 +656,9 @@
 "pmid:42612062": {
 "citations": 1,
 "pdf": "papers/10_2196_104210.pdf"
+},
+"pmid:42905861": {
+"citations": 0,
+"pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275&type=printable"
 }
 }
