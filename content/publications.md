@@ -12,7 +12,7 @@ Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, De
 Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Qureshi R, DeVito NJ, Saldanha IJ, Offringa M, Butcher NJ, Zhang S, Nguyen PY, Menke JD, Lai VKW, Kilicoglu H, **Mayo-Wilson E**. *PLoS Med* 23(10):e1005275. PMID: [42905861](https://pubmed.ncbi.nlm.nih.gov/42905861/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/5wrsm_v2)]
 
 - [**Outcome definitions in clinical trial registrations: A cross-sectional study**](https://doi.org/10.31222/osf.io/hkudx_v1)  
-Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy)]
+Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). Accepted at *JAMA Netw Open*. [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy)]
 
 - [**PRISMA-trAIce: A name without endorsement**](https://doi.org/10.2196/104210)  
 Moher D, Page MJ, McKenzie JE, Takwoingi Y, **Mayo-Wilson E**. *JMIR AI* 5:e104210. PMID: [42612062](https://pubmed.ncbi.nlm.nih.gov/42612062/).
@@ -177,6 +177,8 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
 - [**Open and transparent sports science research: The role of journals to move the field forward**](https://doi.org/10.1007/s00167-022-06893-9)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Knee Surg Sports Traumatol Arthrosc* 30(11):3599-3601. PMID: [35092443](https://pubmed.ncbi.nlm.nih.gov/35092443/).
 
+- [**Letter report on review of Department of Veterans Affairs monograph on the economic impact and cost effectiveness of service dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26353)National Academies of Sciences, Engineering, and Medicine. Washington DC: The National Academies Press. DOI: [10.17226/26353](https://doi.org/10.17226/26353).
+
 ## 2021
 
 - [**Peer review reduces spin in PCORI research reports**](https://doi.org/10.1186/s41073-021-00119-1)**Mayo-Wilson E**, Phillips ML, Connor AE, Vander Ley KJ, Naaman K, Helfand M. *Res Integr Peer Rev* 6(1):16. PMID: [34847946](https://pubmed.ncbi.nlm.nih.gov/34847946/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/xknhp/); [OSF archive includes data and research materials](https://osf.io/fh7cz/)]
@@ -240,6 +242,9 @@ Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **T
 - [**Reporting of methodological studies in health research: A protocol for the development of the MethodologIcal STudy reportIng Checklist (MISTIC)**](https://doi.org/10.1136/bmjopen-2020-040478)Lawson DO, Puljak L, Pieper D, Schandelmaier S, Collins GS, Brignardello-Petersen R, Moher D, Tugwell P, Welch VA, Samaan Z, Thombs BD, Nørskov AK, Jakobsen JC, Allison DB, **Mayo-Wilson E**, Young T, Chan AW, Briel M, Guyatt GH, Thabane L, Mbuagbaw L. *BMJ Open* 10(12):e040478. PMID: [33334836](https://pubmed.ncbi.nlm.nih.gov/33334836/).
 
 ## 2019
+
+- [**Transparent reporting: Registrations, protocols, and final reports. In: Cooper H, Hedges LV, Valentine JC, eds. *The Handbook of Research Synthesis and Meta-Analysis*. 3rd ed**](https://doi.org/10.7758/9781610448864.24)  
+**Mayo-Wilson E**, Grant SP. Russell Sage Foundation: New York. pp. 471-488. ISBN: 978-0-87154-005-8. DOI: [10.7758/9781610448864.24](https://doi.org/10.7758/9781610448864.24).
 
 - [**Harms are assessed inconsistently and reported inadequately Part 2: Nonsystematic adverse events**](https://doi.org/10.1016/j.jclinepi.2019.04.020)**Mayo-Wilson E**, Fusco N, Li T, Hong H, Canner JK, Dickersin K, for the MUDS investigators. *J Clin Epidemiol* 113:11-19. PMID: [31055176](https://pubmed.ncbi.nlm.nih.gov/31055176/). [[Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z); [Dryad archive includes data and code](https://doi.org/10.5061/dryad.mp26fb1)]
 
