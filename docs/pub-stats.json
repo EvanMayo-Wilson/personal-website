@@ -74,6 +74,9 @@
 "citations": 0,
 "pdf": "papers/10_17226_26039.pdf"
 },
+"doi:10.17226/26353": {
+"citations": 1
+},
 "doi:10.17605/osf.io/sm78t": {
 "pdf": "papers/10_17605_osf_io_sm78t.docx",
 "type": "docx"
@@ -128,6 +131,9 @@
 "doi:10.64898/2026.08.04.26359616": {
 "citations": 0,
 "pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/08/06/2026.08.04.26359616.full.pdf"
+},
+"doi:10.7758/9781610448864.24": {
+"citations": 5
 },
 "pmid:17329641": {
 "citations": 66,
@@ -245,7 +251,8 @@
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 112
+"citations": 112,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {},
 "pmid:25577940": {},
@@ -427,11 +434,11 @@
 },
 "pmid:33781993": {
 "citations": 11685,
-"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
+"pdf": "https://pure.amsterdamumc.nl/ws/files/149119345/Prisma-2020-explanation-and-elaboration-updated-guidance-and-exemplars-for-reporting-systematic-reviews.pdf"
 },
 "pmid:33782057": {
 "citations": 107770,
-"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
+"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173324/1/s13643_021_01626_4.pdf"
 },
 "pmid:33789819": {
 "citations": 4235,
@@ -541,8 +548,7 @@
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
-"citations": 67,
-"pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
+"citations": 67
 },
 "pmid:37178346": {
 "citations": 12,
