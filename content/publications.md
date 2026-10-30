@@ -23,8 +23,8 @@ Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaume
 - [**The PRISMA family of reporting guidelines for systematic reviews: Initiatives to better support development and implementation, and future challenges and opportunities**](https://doi.org/10.31222/osf.io/ydnt7_v1)  
 McKenzie JE, **Mayo-Wilson E**, Brennan SE, Hamilton DG, Takwoingi Y, Moher D, Page MJ. *MetaArXiv*. DOI: [10.31222/osf.io/ydnt7_v1](https://doi.org/10.31222/osf.io/ydnt7_v1).
 
-- [**Study design indexing in transition: A focused comparison of manual NLM indexing vs. transformer-based automated models**](https://doi.org/10.64898/2026.06.03.26354854)  
-Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *medRxiv*. PMID: [42282161](https://pubmed.ncbi.nlm.nih.gov/42282161/).
+- [**Study design indexing in transition: A focused comparison of manual NLM indexing versus transformer-based automated models**](https://doi.org/10.1093/jamiaopen/ooag197)  
+Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *JAMIA Open* 9(5):ooag197. PMID: [42960168](https://pubmed.ncbi.nlm.nih.gov/42960168/). [[Preprint on medRxiv](https://doi.org/10.64898/2026.06.03.26354854)]
 
 - [**Artificial intelligence tools for automating assessments of reporting guideline adherence: A protocol for a systematic review**](https://doi.org/10.12688/f1000research.179775.1)  
 Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.1](https://doi.org/10.12688/f1000research.179775.1).

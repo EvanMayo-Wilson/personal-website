@@ -134914,5 +134914,6277 @@
 ]
 ]
 }
+},
+"doi:10.31222/osf.io/ydnt7_v1": {
+"indexed": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+],
+"date-time": "2026-08-10T13:28:48Z",
+"timestamp": 1786368528124,
+"version": "build-2736575974"
+},
+"posted": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+],
+"date-time": "2026-08-10T00:00:00Z",
+"timestamp": 1786320000000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>Incomplete and inaccurate reporting of research can prevent research from being used. Reporting guidelines aim to circumvent this by providing recommendations that support researchers in writing complete and accurate accounts of their work. While reporting guidelines have many benefits, challenges exist for both developers and users. In this article, we outline initiatives implemented to address challenges within the PRISMA (Preferred Reporting Items for Systematic reviews and Meta-Analyses) family of guidelines and highlight opportunities for future work.</p>",
+"DOI": "10.31222/osf.io/ydnt7_v1",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+],
+"date-time": "2026-08-10T12:36:22Z",
+"timestamp": 1786365382000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "The PRISMA family of reporting guidelines for systematic reviews: initiatives to better support development and implementation, and future challenges and opportunities",
+"prefix": "10.31222",
+"author": [
+{
+"given": "Joanne",
+"family": "McKenzie",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sue E",
+"family": "Brennan",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Daniel George",
+"family": "Hamilton",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5828-9746",
+"authenticated-orcid": true,
+"given": "Yemisi",
+"family": "Takwoingi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-2434-4206",
+"authenticated-orcid": true,
+"given": "David",
+"family": "Moher",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Matthew James",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+],
+"date-time": "2026-08-10T12:36:22Z",
+"timestamp": 1786365382000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/ydnt7_v1"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/ydnt7_v1",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2026,
+8,
+10
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.31222/osf.io/yph8c_v1": {
+"indexed": {
+"date-parts": [
+[
+2026,
+7,
+9
+]
+],
+"date-time": "2026-07-09T00:15:06Z",
+"timestamp": 1783556106600,
+"version": "3.55.0"
+},
+"posted": {
+"date-parts": [
+[
+2026,
+4,
+28
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+4,
+28
+]
+],
+"date-time": "2026-04-28T00:00:00Z",
+"timestamp": 1777334400000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>Background: Trustworthy scientific evidence can guide clinical practice and health policy. A range of terms, including methodological quality, rigor, confidence, internal validity, risk of bias, reproducibility, transparency, and statistical validity, have been used to refer to overlapping but distinct aspects of a study’s trustworthiness. Ambiguous language describing related concepts complicates human evaluation and poses challenges for the development of automated methods for assessing scientific evidence. Recent advances in natural language processing (NLP) and artificial intelligence (AI) have enabled large-scale analyses of biomedical literature, including automated detection of constructs related to trustworthiness. Objective: This scoping review aims to examine how studies developing or applying automated methods operationalize and assess constructs related to trustworthiness in biomedical literature.Methods: We will search PubMed, IEEE Xplore, ACM Digital Library, and ACL Anthology, with no restrictions on language or publication types. We will limit the search to articles published after 2000. We will include studies that evaluate computational methods and tools to assess biomedical publications for constructs related to trustworthiness. Two authors will independently screen records and extract data. We will extract study characteristics, method/tool and dataset details, how trustworthiness-related constructs are operationalized for automated assessment, and evaluation outcomes, including agreement metrics, performance metrics, and utility indicators. We will report and synthesize the findings using structured tables, visualizations, and qualitative analyses. Discussion: This scoping review will provide a comprehensive synthesis of datasets and computational tools for assessing constructs related to trustworthiness of biomedical studies, offering stakeholders a clear overview of existing approaches, highlighting commonalities and differences across the literature, and identifying priorities for future research.</p>",
+"DOI": "10.31222/osf.io/yph8c_v1",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2026,
+4,
+28
+]
+],
+"date-time": "2026-04-28T21:14:07Z",
+"timestamp": 1777410847000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Automated assessment of the trustworthiness of biomedical publications: a protocol for a scoping review",
+"prefix": "10.31222",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0003-3275-8871",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Guerra",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7374-7549",
+"authenticated-orcid": true,
+"given": "Joe D",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-1795-5930",
+"authenticated-orcid": true,
+"given": "César",
+"family": "Bernabé",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1713-3788",
+"authenticated-orcid": true,
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4225-372X",
+"authenticated-orcid": true,
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1758-8205",
+"authenticated-orcid": true,
+"given": "Andrew William",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-6670-4874",
+"authenticated-orcid": true,
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": true,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2026,
+7,
+8
+]
+],
+"date-time": "2026-07-08T23:22:10Z",
+"timestamp": 1783552930000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/yph8c_v1"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+4,
+28
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/yph8c_v1",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2026,
+4,
+28
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.64898/2026.08.04.26359616": {
+"institution": [
+{
+"name": "medRxiv"
+}
+],
+"indexed": {
+"date-parts": [
+[
+2026,
+8,
+8
+]
+],
+"date-time": "2026-08-08T11:44:04Z",
+"timestamp": 1786189444335,
+"version": "build-2736575974"
+},
+"posted": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+]
+},
+"group-title": "Health Informatics",
+"reference-count": 23,
+"publisher": "openRxiv",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+],
+"date-time": "2026-08-06T00:00:00Z",
+"timestamp": 1785974400000
+},
+"content-version": "vor",
+"delay-in-days": 0,
+"URL": "http://creativecommons.org/licenses/by/4.0/"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"accepted": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+]
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                <jats:sec>\n                  <jats:title>Background</jats:title>\n                  <jats:p>\n                    Clinical trials conducted in Germany are registered across multiple registries, including the German Clinical Trials Register (DRKS),\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://ClinicalTrials.gov\">ClinicalTrials.gov</jats:ext-link>\n                    , the EU Clinical Trials Register (EUCTR), and, since 2023, the Clinical Trials Information System (CTIS). These registries record health conditions using different classification systems and terminologies, including ICD-10-GM, MeSH, MedDRA, and free text, making cross-registry analyses difficult. We developed and evaluated a pipeline for harmonizing trial condition descriptions to WHO ICD-10 and compared its performance with that of a large language model (LLM) and to health conditions coded by humans.\n                  </jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Methods</jats:title>\n                  <jats:p>We developed a four-stage, registry-aware mapping pipeline consisting of: (i) condition mention extraction and normalization; (ii) classification of ICD-mappable versus non-mappable mentions; (iii) ontology-based candidate generation using UMLS links between MeSH, MedDRA, ICD-10-GM, and WHO ICD-10; and (iv) SapBERT-based semantic retrieval with hybrid confidence scoring. A second variant additionally applied cross-encoder reranking of the top candidate codes. A stratified sample of 500 condition mentions was manually coded to create an expert reference standard. GPT-4o was evaluated in parallel using the same structured decision framework as the human reviewers. Performance was assessed using accuracy, precision, F1 score, and Cohen’s k at the three-character, block, and chapter levels of ICD-10.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>The pipeline was applied to 23,061 clinical trials and identified 39,512 ICD-mappable condition mentions, of which 72.4% received a high-confidence assignment. Against 390 expert-coded mentions, the baseline pipeline achieved 49.0% accuracy at the three-character ICD-10 level (k = 0.487), increasing to 58.7% at the chapter level (k = 0.561). The cross-encoder method produced small but consistent improvements across all evaluation levels. Candidate-recall analysis showed that the correct code was present in the retrieved candidate set in only 73.7% of cases. The LLM substantially outperformed both pipeline variants, achieving 96.7% accuracy and near-perfect agreement with expert coding (k = 0.966) at the three-character level. The LLM also assigned clinically plausible codes to 82.4% of rejected mentions, 62.8% of Tier-3 exclusions, and 92.3% of review-band mentions.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Conclusion</jats:title>\n                  <jats:p>Automated harmonization of clinical trial condition data across heterogeneous registries is feasible and supports the use of a common ICD-10 framework for cross-registry analyses. The LLMs achieved high agreement with expert coding, and performed better than the deterministic ontology and embedding pipeline, which achieved moderate agreement. These findings indicate that LLMs can support analyses of the distribution of health conditions investigated in clinical trials in Germany.They are a promising tool for classification of other non-standardised trial characteristics in registries.</jats:p>\n                </jats:sec>",
+"DOI": "10.64898/2026.08.04.26359616",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+],
+"date-time": "2026-08-06T20:10:15Z",
+"timestamp": 1786047015000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Towards understanding the disease landscape of clinical trials in Germany: Ontology and embedding-based pipelines versus Large Language Models for ICD-10 Harmonization",
+"prefix": "10.64898",
+"author": [
+{
+"given": "Rodrigue",
+"family": "Ndabashinze",
+"sequence": "first",
+"affiliation": [
+{
+"name": "Department of Child and Adolescent Psychiatry, University Medical Centre Rostock, Rostock, Germany German Center for Child and Adolescent Health (DZKJ), Partner Site Greifswald/Rostock, Rostock, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Delwen",
+"family": "Franzen",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Berlin Institute of Health at Charité, Universitätsmedizin Berlin, QUEST Center for Responsible Research, Berlin, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Emilia",
+"family": "Kozuch",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Child and Adolescent Psychiatry, University Medical Centre Rostock, Rostock, Germany German Center for Child and Adolescent Health (DZKJ), Partner Site Greifswald/Rostock, Rostock, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Jannik",
+"family": "Aagerup",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Child and Adolescent Psychiatry, University Medical Centre Rostock, Rostock, Germany German Center for Child and Adolescent Health (DZKJ), Partner Site Greifswald/Rostock, Rostock, Germany"
+},
+{
+"name": "NHMRC Clinical Trials Centre, University of Sydney, Camperdown, NSW, Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Anne",
+"family": "Fink",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Child and Adolescent Psychiatry, University Medical Centre Rostock, Rostock, Germany German Center for Child and Adolescent Health (DZKJ), Partner Site Greifswald/Rostock, Rostock, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Yerunkar Suresh",
+"family": "Samruddhi",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Berlin Institute of Health at Charité, Universitätsmedizin Berlin, QUEST Center for Responsible Research, Berlin, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Kylie",
+"family": "Hunter",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "NHMRC Clinical Trials Centre, University of Sydney, Camperdown, NSW, Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, School of Global Public Health, University of North Carolina Gillings, Chapel Hill, NC, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, School of Global Public Health, University of North Carolina Gillings, Chapel Hill, NC, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences, University of Illinois, Urbana-Champaign, Champaign, IL, USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Susanne Gabriele",
+"family": "Schorr",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Berlin Institute of Health at Charité, Universitätsmedizin Berlin, QUEST Center for Responsible Research, Berlin, Germany"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Anna Lene",
+"family": "Seidler",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Child and Adolescent Psychiatry, University Medical Centre Rostock, Rostock, Germany German Center for Child and Adolescent Health (DZKJ), Partner Site Greifswald/Rostock, Rostock, Germany"
+},
+{
+"name": "NHMRC Clinical Trials Centre, University of Sydney, Camperdown, NSW, Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "54368",
+"reference": [
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1007/s10654-021-00761-5"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.2",
+"unstructured": "Federal Institute for Drugs and Medical Devices (BfArM). German Clinical Trials Register (DRKS)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.3",
+"first-page": "317",
+"article-title": "Regulation (EU) No 536/2014 on clinical trials on medicinal products for human use: an overview",
+"volume": "50",
+"year": "2014",
+"journal-title": "Ann. Ist. Super. Sanita"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.4",
+"unstructured": "Medizinprodukte (BfArM), B. für A. und. ICD-10-GM: German Modification of the International Statistical Classification of Diseases. https://www.bfarm.de/EN/Code-systems/Classifications/ICD/ICD-10-GM/_node.html (2026)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.5",
+"unstructured": "EU Clinical Trials Register. https://www.clinicaltrialsregister.eu/ctr-search/search (2026)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.6",
+"unstructured": "ClinicalTrials.gov. https://www.clinicaltrials.gov/ (2026)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.7",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12911-020-1085-4"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.8",
+"doi-asserted-by": "crossref",
+"first-page": "103187",
+"DOI": "10.1016/j.artmed.2025.103187",
+"article-title": "Deep learning for automatic ICD coding: Review, opportunities and challenges",
+"volume": "168",
+"year": "2025",
+"journal-title": "Artif. Intell. Med"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.9",
+"doi-asserted-by": "crossref",
+"unstructured": "Gu, Y. et al. Domain-Specific Language Model Pretraining for Biomedical Natural Language Processing. ACM Trans Comput Healthc. 3, (2021).",
+"DOI": "10.1145/3458754"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.10",
+"doi-asserted-by": "crossref",
+"unstructured": "Liu, F. , Shareghi, E. , Meng, Z. , Basaldella, M. & Collier, N. Self-Alignment Pretraining for Biomedical Entity Representations. in North American Chapter of the Association for Computational Linguistics (2020).",
+"DOI": "10.18653/v1/2021.naacl-main.334"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.11",
+"first-page": "1234",
+"article-title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining",
+"volume": "36",
+"year": "2020",
+"journal-title": "Bioinforma. Oxf. Engl"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.12",
+"doi-asserted-by": "crossref",
+"first-page": "104444",
+"DOI": "10.1016/j.jbi.2023.104444",
+"article-title": "Effective matching of patients to clinical trials using entity extraction and neural re-ranking",
+"volume": "144",
+"year": "2023",
+"journal-title": "J. Biomed. Inform"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.13",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/bioinformatics/btt474"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.14",
+"doi-asserted-by": "publisher",
+"DOI": "10.1101/2025.07.30.25330916"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.15",
+"unstructured": "Seidler, Anna L. , et al. The Landscape of Clinical Trials in Germany. https://osf.io/r8ehq/overview (2024)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.16",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2025-105173"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.17",
+"unstructured": "UMLS Metathesaurus: MRSTY (Semantic Types). https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/ (2026)."
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.18",
+"first-page": "535",
+"article-title": "Billion-scale similarity search with GPUs. IEEE Trans",
+"volume": "7",
+"year": "2019",
+"journal-title": "Big Data"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.19",
+"doi-asserted-by": "publisher",
+"DOI": "10.2307/2529310"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.20",
+"doi-asserted-by": "crossref",
+"unstructured": "Akkhawatthanakun, K. et al. Integrating Agentic Artificial Intelligence to Automate International Classification of Diseases, Tenth Revision, Medical Coding. Informatics 13, (2026).",
+"DOI": "10.3390/informatics13030039"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.21",
+"doi-asserted-by": "crossref",
+"unstructured": "Vassileva, S. , Koychev, I. K. & Boytcheva, S. Using LLMs for Multilingual Clinical Entity Linking to ICD-10. in 1304–1308 (2025).",
+"DOI": "10.26615/978-954-452-098-4-151"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.22",
+"doi-asserted-by": "crossref",
+"first-page": "ooag017",
+"DOI": "10.1093/jamiaopen/ooag017",
+"article-title": "Large language models as medical code selectors: a benchmark using the International Classification of Primary Care",
+"volume": "9",
+"year": "2026",
+"journal-title": "JAMIA Open"
+},
+{
+"key": "2026080804150584000_2026.08.04.26359616v1.23",
+"unstructured": "Gan, Y. et al. Enhancing LLM Medical Coding with Structured External Knowledge. ArXiv Prepr. ArXiv260527377 (2026)."
+}
+],
+"container-title": [],
+"original-title": [],
+"link": [
+{
+"URL": "https://syndication.highwire.org/content/doi/10.64898/2026.08.04.26359616",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+8,
+8
+]
+],
+"date-time": "2026-08-08T11:15:16Z",
+"timestamp": 1786187716000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "http://medrxiv.org/lookup/doi/10.64898/2026.08.04.26359616"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+]
+},
+"references-count": 23,
+"URL": "http://dx.doi.org/10.64898/2026.08.04.26359616",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2026,
+8,
+6
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.31222/osf.io/nra5v": {
+"indexed": {
+"date-parts": [
+[
+2025,
+12,
+2
+]
+],
+"date-time": "2025-12-02T23:02:17Z",
+"timestamp": 1764716537640,
+"version": "3.46.0"
+},
+"posted": {
+"date-parts": [
+[
+2023,
+8,
+22
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2023,
+8,
+22
+]
+],
+"date-time": "2023-08-22T00:00:00Z",
+"timestamp": 1692662400000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>The credibility of What Works Clearinghouse study and effectiveness ratings are threatened by the prevalence of questionable research practices (e.g., selective non-reporting of results) in the bodies of evidence that the Clearinghouse reviews. Internationally accepted standards for reporting and interpreting the results of systematic reviews of evidence—including the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) and Grading of Recommendations Assessment, Development and Evaluation (GRADE)—recommend that reviews take steps to mitigate bias associated with these questionable research practices. To mitigate the effects of these questionable research practices, we propose that WWC adopt procedures and standards related to transparent, open, and reproducible research practices promoted by the Institute for Education Sciences (IES).</p>",
+"DOI": "10.31222/osf.io/nra5v",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2023,
+8,
+23
+]
+],
+"date-time": "2023-08-23T05:51:32Z",
+"timestamp": 1692769892000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Adding Standards and Procedures to the What Works Clearinghouse Handbook  on the Transparency, Openness, and Reproducibility of Effectiveness Research  on Education Practices, Products, Programs, and Policies",
+"prefix": "10.31222",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-7775-3022",
+"authenticated-orcid": true,
+"given": "Sean",
+"family": "Grant",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Lauren",
+"family": "Supplee",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2025,
+12,
+2
+]
+],
+"date-time": "2025-12-02T22:59:41Z",
+"timestamp": 1764716381000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/nra5v_v1"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2023,
+8,
+22
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/nra5v",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2023,
+8,
+22
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.17226/26353": {
+"indexed": {
+"date-parts": [
+[
+2025,
+12,
+9
+]
+],
+"date-time": "2025-12-09T15:44:20Z",
+"timestamp": 1765295060647,
+"version": "3.46.0"
+},
+"publisher-location": "Washington, D.C.",
+"reference-count": 0,
+"publisher": "National Academies Press",
+"isbn-type": [
+{
+"type": "print",
+"value": "9780309269780"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"published-print": {
+"date-parts": [
+[
+2022,
+2,
+1
+]
+]
+},
+"DOI": "10.17226/26353",
+"type": "edited-book",
+"created": {
+"date-parts": [
+[
+2022,
+2,
+1
+]
+],
+"date-time": "2022-02-01T11:59:02Z",
+"timestamp": 1643716742000
+},
+"source": "Crossref",
+"is-referenced-by-count": 1,
+"title": "Letter Report on Review of Department of Veterans Affairs Monograph on the Economic Impact and Cost Effectiveness of Service Dogs on Veterans with Post Traumatic Stress Disorder",
+"prefix": "10.17226",
+"author": [
+{
+"name": "Committee on the Review of Department of Veterans Affairs Monograph on the Economic Impact and Cost Effectiveness of Service Dogs on Veterans with Post Traumatic Stress Disorder",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"name": "Institute for Laboratory Animal Research",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"name": "Division on Earth and Life Studies",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"name": "National Academies of Sciences, Engineering, and Medicine",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "6987",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2025,
+12,
+9
+]
+],
+"date-time": "2025-12-09T15:23:11Z",
+"timestamp": 1765293791000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://www.nationalacademies.org/publications/26353"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2022,
+2,
+1
+]
+]
+},
+"ISBN": [
+"9780309269780"
+],
+"references-count": 0,
+"URL": "http://dx.doi.org/10.17226/26353",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2022,
+2,
+1
+]
+]
+}
+},
+"doi:10.31222/osf.io/7b9qj": {
+"indexed": {
+"date-parts": [
+[
+2025,
+11,
+18
+]
+],
+"date-time": "2025-11-18T23:02:18Z",
+"timestamp": 1763506938935,
+"version": "3.45.0"
+},
+"posted": {
+"date-parts": [
+[
+2021,
+6,
+1
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2021,
+6,
+1
+]
+],
+"date-time": "2021-06-01T00:00:00Z",
+"timestamp": 1622505600000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>Questionable research practices threaten the credibility of HomVEE designations for “evidence-based early childhood home visiting service delivery models”. Internationally accepted standards for reporting and interpreting the results of reviews—including the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) and Grading of Recommendations Assessment, Development and Evaluation (GRADE)—recommend that reviews take steps to mitigate bias associated with selective non-reporting of results and other questionable research practices. Moreover, Department of Health and Human Services (HHS) policies require that contractors and grantees engage in transparent and open sciences practices. We propose that HomVEE adopt standards to mitigate the effects of questionable research practices, which would be consistent with international guidelines and with complementary HHS policies and procedures.</p>",
+"DOI": "10.31222/osf.io/7b9qj",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2021,
+6,
+1
+]
+],
+"date-time": "2021-06-01T14:13:43Z",
+"timestamp": 1622556823000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Adding Procedures and Standards to the HomVEE Review Handbook on the Transparency, Openness, and Reproducibility of Research on Home Visiting Models",
+"prefix": "10.31222",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-7775-3022",
+"authenticated-orcid": true,
+"given": "Sean",
+"family": "Grant",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Lauren",
+"family": "Supplee",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2025,
+11,
+18
+]
+],
+"date-time": "2025-11-18T22:57:55Z",
+"timestamp": 1763506675000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/7b9qj_v1"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2021,
+6,
+1
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/7b9qj",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2021,
+6,
+1
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.31222/osf.io/72mc6": {
+"indexed": {
+"date-parts": [
+[
+2025,
+12,
+1
+]
+],
+"date-time": "2025-12-01T19:27:22Z",
+"timestamp": 1764617242681,
+"version": "3.46.0"
+},
+"posted": {
+"date-parts": [
+[
+2021,
+8,
+16
+]
+]
+},
+"group-title": "MetaArXiv",
+"reference-count": 0,
+"publisher": "Center for Open Science",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2021,
+8,
+16
+]
+],
+"date-time": "2021-08-16T00:00:00Z",
+"timestamp": 1629072000000
+},
+"content-version": "unspecified",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"abstract": "<p>The credibility of Prevention Services Clearinghouse designations of programs and services as “promising,” “supported,” and “well supported” are threatened by the prevalence of questionable research practices (e.g., selective non-reporting of results) in the bodies of evidence that the Clearinghouse reviews. Internationally accepted standards for reporting and interpreting the results of systematic reviews of evidence—including the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) and Grading of Recommendations Assessment, Development and Evaluation (GRADE)—recommend that reviews take steps to mitigate bias associated with these questionable research practices. Moreover, Department of Health and Human Services (HHS) policies require that contractors and grantees engage in transparent, open, and reproducible research. We propose that the Clearinghouse adopt standards to mitigate the effects of these questionable research practices, which would be consistent with international guidelines and with complementary HHS policies and procedures.</p>",
+"DOI": "10.31222/osf.io/72mc6",
+"type": "posted-content",
+"created": {
+"date-parts": [
+[
+2021,
+8,
+16
+]
+],
+"date-time": "2021-08-16T11:28:01Z",
+"timestamp": 1629113281000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Adding Standards and Procedures to the Prevention Services Clearinghouse Handbook on the Transparency, Openness, and Reproducibility of Research on Programs and Services to Enhance Support for Children and Families and Prevent Foster Care Placements",
+"prefix": "10.31222",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-7775-3022",
+"authenticated-orcid": true,
+"given": "Sean",
+"family": "Grant",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Lauren",
+"family": "Supplee",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "15934",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2025,
+12,
+1
+]
+],
+"date-time": "2025-12-01T18:41:21Z",
+"timestamp": 1764614481000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://osf.io/72mc6_v1"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2021,
+8,
+16
+]
+]
+},
+"references-count": 0,
+"URL": "http://dx.doi.org/10.31222/osf.io/72mc6",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2021,
+8,
+16
+]
+]
+},
+"subtype": "preprint"
+},
+"doi:10.7758/9781610448864.24": {
+"indexed": {
+"date-parts": [
+[
+2026,
+3,
+6
+]
+],
+"date-time": "2026-03-06T01:08:05Z",
+"timestamp": 1772759285017,
+"version": "3.50.1"
+},
+"reference-count": 0,
+"publisher": "Russell Sage Foundation",
+"isbn-type": [
+{
+"value": "9781610448864",
+"type": "electronic"
+},
+{
+"value": "9780871540058",
+"type": "print"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"published-print": {
+"date-parts": [
+[
+2019,
+6,
+14
+]
+]
+},
+"DOI": "10.7758/9781610448864.24",
+"type": "book-chapter",
+"created": {
+"date-parts": [
+[
+2019,
+6,
+14
+]
+],
+"date-time": "2019-06-14T20:28:28Z",
+"timestamp": 1560544108000
+},
+"page": "471-488",
+"source": "Crossref",
+"is-referenced-by-count": 6,
+"title": "TRANSPARENT REPORTING:",
+"prefix": "10.7758",
+"author": [
+{
+"given": "EVAN",
+"family": "MAYO-WILSON",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "SEAN",
+"family": "GRANT",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "4512",
+"container-title": "The Handbook of Research Synthesis and Meta-Analysis",
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2019,
+6,
+14
+]
+],
+"date-time": "2019-06-14T20:28:49Z",
+"timestamp": 1560544129000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "http://www.jstor.org/stable/10.7758/9781610448864.24"
+}
+},
+"subtitle": [
+"REGISTRATIONS, PROTOCOLS, AND FINAL REPORTS"
+],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2019,
+6,
+14
+]
+]
+},
+"ISBN": [
+"9781610448864",
+"9780871540058"
+],
+"references-count": 0,
+"URL": "http://dx.doi.org/10.7758/9781610448864.24",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2019,
+6,
+14
+]
+]
+}
+},
+"pmid:42905861": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T18:37:25Z",
+"timestamp": 1793299045407,
+"version": "4.5.0"
+},
+"update-to": [
+{
+"DOI": "10.1371/journal.pmed.1005275",
+"type": "new_version",
+"label": "New version",
+"source": "publisher",
+"updated": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T00:00:00Z",
+"timestamp": 1793232000000
+}
+}
+],
+"reference-count": 45,
+"publisher": "Public Library of Science (PLoS)",
+"issue": "10",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T00:00:00Z",
+"timestamp": 1792540800000
+},
+"content-version": "vor",
+"delay-in-days": 0,
+"URL": "http://creativecommons.org/licenses/by/4.0/"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/100000092",
+"name": "U.S. National Library of Medicine",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014079"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014079"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000092",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100007890",
+"name": "University of North Carolina at Chapel Hill",
+"doi-asserted-by": "publisher",
+"award": [
+"UNC Provost’s AI Acceleration program cloud resource grant"
+],
+"award-info": [
+{
+"award-number": [
+"UNC Provost’s AI Acceleration program cloud resource grant"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100007890",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"www.plosmedicine.org"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:sec id=\"sec001\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>Defining outcomes completely before conducting clinical trials helps to mitigate concerns about reporting biases; however, there is limited guidance to help investigators define outcomes completely.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec002\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>Building on a previous framework, we developed guidance for defining trial outcomes completely and consistently. We reviewed literature, developed preliminary guidance, and refined guidance iteratively through pilot testing. We randomly selected 225 randomized controlled trials (RCTs) from ClinicalTrials.gov, which evaluated 3,424 outcomes. Two raters followed a structured approach to define each outcome. When raters encountered outcomes they could not define, we refined our guidance. We continued this process until no further changes were needed. We finalized the guidance through multiple drafts and discussions among authors.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec003\">\n                    <jats:title>Findings</jats:title>\n                    <jats:p>In clinical trials, a completely defined outcome includes six elements: outcome domain, specific measurement, specific metric, cutoff (if applicable), variable type, and time point. We developed guidance for naming specific measurements for both subjective and objective outcomes. We expanded on prior work by describing more comprehensive categories for specific metrics. To be consistent with the estimand framework, we replaced “method of aggregation” with two distinct elements that describe values in individuals (rather than summary measures): “variable type” and “cutoff.” We further defined “cutoff” with three sub-elements, and we defined “variable type” as whether the value for each individual is continuous or categorical.</jats:p>\n                  </jats:sec>\n                  <jats:sec id=\"sec004\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Trialists and sponsors could use this framework and guidance to define outcomes in trial registrations, protocols, and results reports. When all six elements are defined, readers can better determine whether reported outcomes were prespecified and whether different trials assessed the same outcomes.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1371/journal.pmed.1005275",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+],
+"date-time": "2026-10-21T17:53:47Z",
+"timestamp": 1792605227000
+},
+"page": "e1005275",
+"update-policy": "https://doi.org/10.1371/journal.pmed.corrections_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Guidance for defining outcomes in clinical trials",
+"prefix": "10.1371",
+"volume": "23",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-1713-3788",
+"authenticated-orcid": true,
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "first",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Tianjing",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Colorado Anschutz Medical Campus",
+"place": [
+"Aurora, Colorado, United States of America"
+],
+"department": [
+"Department of Ophthalmology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3534-1641",
+"authenticated-orcid": true,
+"given": "Joanne E.",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4242-7526",
+"authenticated-orcid": true,
+"given": "Matthew J.",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-8085-6751",
+"authenticated-orcid": true,
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0003-2075-5267",
+"authenticated-orcid": true,
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-4225-372X",
+"authenticated-orcid": true,
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Indiana University School of Public Health-Bloomington",
+"place": [
+"Bloomington, Indiana, United States of America"
+],
+"department": [
+"Department of Epidemiology and Biostatistics"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-1758-8205",
+"authenticated-orcid": true,
+"given": "Andrew W.",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Arkansas for Medical Sciences",
+"place": [
+"Little Rock, Arkansas, United States of America"
+],
+"department": [
+"Department of Biostatistics"
+]
+},
+{
+"name": "Arkansas Children’s Research Institute",
+"place": [
+"Little Rock, Arkansas, United States of America"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-6670-4874",
+"authenticated-orcid": true,
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Colorado Anschutz Medical Campus",
+"place": [
+"Aurora, Colorado, United States of America"
+],
+"department": [
+"Department of Ophthalmology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-8286-1995",
+"authenticated-orcid": true,
+"given": "Nicholas J.",
+"family": "DeVito",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Oxford",
+"place": [
+"Oxford, United Kingdom"
+],
+"department": [
+"Nuffield Department of Primary Care Health Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-2062-3382",
+"authenticated-orcid": true,
+"given": "Ian J.",
+"family": "Saldanha",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Johns Hopkins Bloomberg School of Public Health",
+"place": [
+"Baltimore, Maryland, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4402-5299",
+"authenticated-orcid": true,
+"given": "Martin",
+"family": "Offringa",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5152-0108",
+"authenticated-orcid": true,
+"given": "Nancy J.",
+"family": "Butcher",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+},
+{
+"name": "University of Toronto",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Department of Psychiatry"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0002-8410-436X",
+"authenticated-orcid": true,
+"given": "Sirui",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health, Brown University",
+"place": [
+"Providence, Rhode Island, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-0476-3385",
+"authenticated-orcid": true,
+"given": "Phi-Yen",
+"family": "Nguyen",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Public Health and Preventive Medicine, Monash University",
+"place": [
+"Melbourne, Victoria, Australia"
+],
+"department": [
+"Methods in Evidence Synthesis Unit"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-7374-7549",
+"authenticated-orcid": true,
+"given": "Joe",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Illinois Urbana-Champaign",
+"place": [
+"Champaign, Illinois, United States of America"
+],
+"department": [
+"School of Information Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3593-9141",
+"authenticated-orcid": true,
+"given": "Veronica Ka Wai",
+"family": "Lai",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "The Hospital for Sick Children Research Institute",
+"place": [
+"Toronto, Ontario, Canada"
+],
+"department": [
+"Child Health Evaluative Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": true,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Illinois Urbana-Champaign",
+"place": [
+"Champaign, Illinois, United States of America"
+],
+"department": [
+"School of Information Sciences"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0001-6126-2459",
+"authenticated-orcid": true,
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina Gillings School of Global Public Health",
+"place": [
+"Chapel Hill, North Carolina, United States of America"
+],
+"department": [
+"Department of Epidemiology"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "340",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+},
+"reference": [
+{
+"issue": "20",
+"key": "pmed.1005275.ref001",
+"doi-asserted-by": "crossref",
+"first-page": "1998",
+"DOI": "10.1056/NEJMsr1611785",
+"article-title": "Trial reporting in ClinicalTrials.gov - the final rule",
+"volume": "375",
+"author": "DA Zarin",
+"year": "2016",
+"journal-title": "N Engl J Med"
+},
+{
+"issue": "183",
+"key": "pmed.1005275.ref002",
+"first-page": "64981",
+"article-title": "Clinical trials registration and results information submission. Final rule",
+"volume": "81",
+"author": "National Institutes of Health, Department of Health and Human Services.",
+"year": "2016",
+"journal-title": "Federal Register. Sect. 42 CFR Part 11"
+},
+{
+"key": "pmed.1005275.ref003",
+"first-page": "1",
+"year": "2014"
+},
+{
+"issue": "13",
+"key": "pmed.1005275.ref004",
+"doi-asserted-by": "crossref",
+"first-page": "1353",
+"DOI": "10.1001/jama.2016.14668",
+"article-title": "Toward a new era of trust and transparency in clinical trials",
+"volume": "316",
+"author": "KL Hudson",
+"year": "2016",
+"journal-title": "JAMA"
+},
+{
+"key": "pmed.1005275.ref005",
+"author": "World Health Organization",
+"year": "2017"
+},
+{
+"issue": "12",
+"key": "pmed.1005275.ref006",
+"doi-asserted-by": "crossref",
+"first-page": "1250",
+"DOI": "10.1056/NEJMe048225",
+"article-title": "Clinical trial registration: a statement from the International Committee of Medical Journal Editors",
+"volume": "351",
+"author": "C De Angelis",
+"year": "2004",
+"journal-title": "N Engl J Med"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref007",
+"doi-asserted-by": "crossref",
+"first-page": "3",
+"DOI": "10.1037/amp0000191",
+"article-title": "Journal article reporting standards for quantitative research in psychology: The APA Publications and Communications Board task force report",
+"volume": "73",
+"author": "M Appelbaum",
+"year": "2018",
+"journal-title": "Am Psychol"
+},
+{
+"key": "pmed.1005275.ref008",
+"author": "International Committee of Medical Journal Editors.",
+"year": "2026"
+},
+{
+"key": "pmed.1005275.ref009",
+"author": "World Health Organization.",
+"year": "2018"
+},
+{
+"key": "pmed.1005275.ref010",
+"article-title": "An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov",
+"author": "X Ying",
+"year": "2026",
+"journal-title": "NPJ Digit Med"
+},
+{
+"key": "pmed.1005275.ref011",
+"article-title": "Outcome definitions in clinical trial registrations: a cross-sectional study.",
+"author": "K Ninan",
+"year": "2026",
+"journal-title": "MetaArXiv"
+},
+{
+"key": "pmed.1005275.ref012",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj.s922",
+"article-title": "Outcome reporting in cohort studies of interventions",
+"volume": "393",
+"author": "X Ying",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"issue": "2",
+"key": "pmed.1005275.ref013",
+"doi-asserted-by": "crossref",
+"first-page": "263",
+"DOI": "10.1177/1740774520972082",
+"article-title": "Lack of harmonization of coronavirus disease ordinal scales",
+"volume": "18",
+"author": "DA Zarin",
+"year": "2021",
+"journal-title": "Clin Trials"
+},
+{
+"key": "pmed.1005275.ref014",
+"doi-asserted-by": "crossref",
+"first-page": "852",
+"DOI": "10.1056/NEJMsa1012065",
+"article-title": "The ClinicalTrials.gov results database — update and key issues",
+"volume": "364",
+"author": "DA Zarin",
+"year": "2011",
+"journal-title": "N Engl J Med"
+},
+{
+"key": "pmed.1005275.ref015",
+"author": "National Library of Medicine US.",
+"year": "2024"
+},
+{
+"issue": "4",
+"key": "pmed.1005275.ref016",
+"doi-asserted-by": "crossref",
+"DOI": "10.1371/journal.pmed.1004587",
+"article-title": "CONSORT 2025 statement: updated guideline for reporting randomised trials",
+"volume": "22",
+"author": "S Hopewell",
+"year": "2025",
+"journal-title": "PLoS Med"
+},
+{
+"key": "pmed.1005275.ref017",
+"article-title": "CONSORT 2025 explanation and elaboration: updated guideline for reporting randomised trials",
+"volume": "389",
+"author": "S Hopewell",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "4",
+"key": "pmed.1005275.ref018",
+"article-title": "SPIRIT 2025 statement: updated guideline for protocols of randomised trials",
+"volume": "22",
+"author": "A-W Chan",
+"year": "2025",
+"journal-title": "PLoS Med"
+},
+{
+"key": "pmed.1005275.ref019",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2024-081660",
+"article-title": "SPIRIT 2025 explanation and elaboration: updated guideline for protocols of randomised trials",
+"volume": "389",
+"author": "A Hróbjartsson",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "23",
+"key": "pmed.1005275.ref020",
+"doi-asserted-by": "crossref",
+"first-page": "2345",
+"DOI": "10.1001/jama.2022.21243",
+"article-title": "Guidelines for reporting outcomes in trial protocols: the SPIRIT-Outcomes 2022 extension",
+"volume": "328",
+"author": "NJ Butcher",
+"year": "2022",
+"journal-title": "JAMA"
+},
+{
+"issue": "22",
+"key": "pmed.1005275.ref021",
+"doi-asserted-by": "crossref",
+"first-page": "2252",
+"DOI": "10.1001/jama.2022.21022",
+"article-title": "Guidelines for reporting outcomes in trial reports: the CONSORT-Outcomes 2022 extension",
+"volume": "328",
+"author": "NJ Butcher",
+"year": "2022",
+"journal-title": "JAMA"
+},
+{
+"key": "pmed.1005275.ref022",
+"doi-asserted-by": "crossref",
+"first-page": "383",
+"DOI": "10.1056/NEJMsr1601330",
+"article-title": "Update on trial registration 11 years after the ICMJE policy was established",
+"volume": "376",
+"author": "DA Zarin",
+"year": "2017",
+"journal-title": "N Engl J Med"
+},
+{
+"key": "pmed.1005275.ref023",
+"author": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use.",
+"year": "2019"
+},
+{
+"key": "pmed.1005275.ref024",
+"article-title": "The estimands framework: a primer on the ICH E9(R1) addendum",
+"volume": "384",
+"author": "BC Kahan",
+"year": "2024",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref025",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2025-089050",
+"article-title": "CRT-estimands framework: consensus based extension of the ICH E9(R1) addendum for cluster randomised trials",
+"volume": "393",
+"author": "BC Kahan",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref026",
+"article-title": "GPT’s performance in identifying outcome changes on ClinicalTrials.gov.",
+"author": "X Ying",
+"year": "2024",
+"journal-title": "MetaArXiv"
+},
+{
+"issue": "10",
+"key": "pmed.1005275.ref027",
+"doi-asserted-by": "crossref",
+"DOI": "10.1371/journal.pone.0109400",
+"article-title": "Outcomes in Cochrane systematic reviews addressing four common eye conditions: an evaluation of completeness and comparability",
+"volume": "9",
+"author": "IJ Saldanha",
+"year": "2014",
+"journal-title": "PLoS One"
+},
+{
+"key": "pmed.1005275.ref028",
+"author": "Food and Drug Administration (US).",
+"year": "2018"
+},
+{
+"key": "pmed.1005275.ref029",
+"volume-title": "Clinical trials: a methodologic perspective",
+"author": "S Piantadosi",
+"year": "2017",
+"edition": "3"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref030",
+"doi-asserted-by": "crossref",
+"first-page": "2",
+"DOI": "10.1002/jrsm.1277",
+"article-title": "Practical guidance for using multiple data sources in systematic reviews and meta-analyses (with examples from the MUDS study)",
+"volume": "9",
+"author": "MUDS investigators",
+"year": "2018",
+"journal-title": "Res Synth Methods"
+},
+{
+"key": "pmed.1005275.ref031",
+"doi-asserted-by": "crossref",
+"first-page": "84",
+"DOI": "10.1016/j.jclinepi.2017.12.020",
+"article-title": "A taxonomy has been developed for outcomes in medical research to help improve knowledge discovery",
+"volume": "96",
+"author": "S Dodd",
+"year": "2018",
+"journal-title": "J Clin Epidemiol"
+},
+{
+"issue": "6",
+"key": "pmed.1005275.ref032",
+"doi-asserted-by": "crossref",
+"first-page": "473",
+"DOI": "10.1097/00005650-199206000-00002",
+"article-title": "The MOS 36-item short-form health survey (SF-36). I. Conceptual framework and item selection",
+"volume": "30",
+"author": "Jr Ware JE",
+"year": "1992",
+"journal-title": "Med Care"
+},
+{
+"issue": "3",
+"key": "pmed.1005275.ref033",
+"doi-asserted-by": "crossref",
+"first-page": "199",
+"DOI": "10.1016/0168-8510(90)90421-9",
+"article-title": "EuroQol—a new facility for the measurement of health-related quality of life",
+"volume": "16",
+"author": "Group EuroQol",
+"year": "1990",
+"journal-title": "Health Policy"
+},
+{
+"issue": "5",
+"key": "pmed.1005275.ref034",
+"doi-asserted-by": "crossref",
+"first-page": "365",
+"DOI": "10.1093/jnci/85.5.365",
+"article-title": "The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology",
+"volume": "85",
+"author": "NK Aaronson",
+"year": "1993",
+"journal-title": "J Natl Cancer Inst"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref035",
+"doi-asserted-by": "crossref",
+"first-page": "40",
+"DOI": "10.1186/s41073-026-00223-0",
+"article-title": "TOP 2025: an update to the transparency and openness promotion guidelines",
+"volume": "11",
+"author": "S Grant",
+"year": "2026",
+"journal-title": "Res Integr Peer Rev"
+},
+{
+"issue": "7549",
+"key": "pmed.1005275.ref036",
+"doi-asserted-by": "crossref",
+"first-page": "1080",
+"DOI": "10.1136/bmj.332.7549.1080",
+"article-title": "The cost of dichotomising continuous variables",
+"volume": "332",
+"author": "DG Altman",
+"year": "2006",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref037",
+"author": "National Library of Medicine US."
+},
+{
+"key": "pmed.1005275.ref038",
+"author": "National Library of Medicine US."
+},
+{
+"key": "pmed.1005275.ref039",
+"author": "US National Library of Medicine"
+},
+{
+"key": "pmed.1005275.ref040",
+"doi-asserted-by": "crossref",
+"DOI": "10.1136/bmj-2025-087975",
+"article-title": "Outcome switching in cohort studies of interventions: meta-epidemiological study",
+"volume": "393",
+"author": "Z Song",
+"year": "2026",
+"journal-title": "BMJ"
+},
+{
+"key": "pmed.1005275.ref041",
+"first-page": "823",
+"article-title": "Food and Drug Administration Amendments Act of 2007. United States Statutes at Large. Sect. 801, Pub",
+"year": "2007",
+"journal-title": "L"
+},
+{
+"key": "pmed.1005275.ref042",
+"author": "European Medicines Agency.",
+"year": "2015"
+},
+{
+"key": "pmed.1005275.ref043",
+"article-title": "Consistent and precise description of research outputs could improve implementation of open science",
+"volume": "8",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"journal-title": "Adv Methods Pract Psychol Sci"
+},
+{
+"key": "pmed.1005275.ref044",
+"article-title": "Complete reporting of clinical trials requires more than journal articles",
+"volume": "389",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"journal-title": "BMJ"
+},
+{
+"issue": "1",
+"key": "pmed.1005275.ref045",
+"doi-asserted-by": "crossref",
+"first-page": "60",
+"DOI": "10.1186/s12916-018-1042-6",
+"article-title": "Clinical trial registration and reporting: a survey of academic organizations in the United States",
+"volume": "16",
+"author": "E Mayo-Wilson",
+"year": "2018",
+"journal-title": "BMC Med"
+}
+],
+"updated-by": [
+{
+"DOI": "10.1371/journal.pmed.1005275",
+"type": "new_version",
+"label": "New version",
+"source": "publisher",
+"updated": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T00:00:00Z",
+"timestamp": 1793232000000
+}
+}
+],
+"container-title": "PLOS Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://dx.plos.org/10.1371/journal.pmed.1005275",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T18:04:52Z",
+"timestamp": 1793297092000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://dx.plos.org/10.1371/journal.pmed.1005275"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+},
+"references-count": 45,
+"journal-issue": {
+"issue": "10",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+}
+},
+"URL": "http://dx.doi.org/10.1371/journal.pmed.1005275",
+"relation": {},
+"ISSN": [
+"1549-1676"
+],
+"subject": [],
+"container-title-short": "PLoS Med",
+"published": {
+"date-parts": [
+[
+2026,
+10,
+21
+]
+]
+}
+},
+"pmid:42960168": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T17:32:54Z",
+"timestamp": 1793295174171,
+"version": "4.5.0"
+},
+"reference-count": 23,
+"publisher": "Oxford University Press (OUP)",
+"issue": "5",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T00:00:00Z",
+"timestamp": 1793232000000
+},
+"content-version": "vor",
+"delay-in-days": 50,
+"URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/100000002",
+"name": "National Institutes of Health",
+"doi-asserted-by": "publisher",
+"id": [
+{
+"id": "10.13039/100000002",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100000092",
+"name": "National Library of Medicine",
+"doi-asserted-by": "publisher",
+"award": [
+"R01LM014292"
+],
+"award-info": [
+{
+"award-number": [
+"R01LM014292"
+]
+}
+],
+"id": [
+{
+"id": "10.13039/100000092",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"published-print": {
+"date-parts": [
+[
+2026,
+9,
+9
+]
+]
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Objectives</jats:title>\n                    <jats:p>We sought to evaluate the accuracy and suitability of a transformer-based model (TM) for indexing clinical study designs, in comparison to National Library of Medicine (NLM) indexing.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Materials and methods</jats:title>\n                    <jats:p>For 2016 (manual NLM) and 2025 (automated NLM) published articles, we conducted a limited evaluation of the TM model, with articles that received the most confident predictions, with which NLM assignments disagreed. Ground truth was established through independent dual annotation for 4 prominent study designs: cohort, case-control, cross-sectional, and case report.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>For 3 designs (case-control, case report, and cross-sectional), the articles having the top 100 predictive TM scores (when NLM failed to assign that design) were judged to exhibit that design in the great majority (86%-100%) of cases. Conversely, the articles having the lowest 100 predictive TM scores (when NLM did assign the study design) exhibited the design only in relatively few (0%-21%) of cases. The most confident predictions of the TM model were highly accurate and not redundant with automated NLM indexing; the exception was cohort studies articles, in which both TM and NLM labels showed high error rates of both omission and commission.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Discussion</jats:title>\n                    <jats:p>TM may have value for identifying articles exhibiting study designs, which is important for clinical decision-making and evidence syntheses.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>NLM’s cohort studies indexing is unreliable as a gold standard for building automated systems, warranting efforts to create a new manually annotated corpus.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1093/jamiaopen/ooag197",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T16:38:18Z",
+"timestamp": 1793291898000
+},
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Study design indexing in transition: a focused comparison of manual NLM indexing versus transformer-based automated models",
+"prefix": "10.1093",
+"volume": "9",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0003-0657-7700",
+"authenticated-orcid": false,
+"given": "Puranjani",
+"family": "Das",
+"sequence": "first",
+"affiliation": [
+{
+"name": "School of Information Sciences, University of Illinois at Urbana-Champaign , Champaign, IL 61820,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5098-5667",
+"authenticated-orcid": false,
+"given": "Jodi",
+"family": "Schneider",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Information School, University of Wisconsin-Madison , Madison, WI 53706,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, University of North Carolina , Chapel Hill, NC 27514,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3987-9393",
+"authenticated-orcid": false,
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences, University of Illinois at Urbana-Champaign , Champaign, IL 61820,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Joe D",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences, University of Illinois at Urbana-Champaign , Champaign, IL 61820,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Dongin",
+"family": "Nam",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences, University of Illinois at Urbana-Champaign , Champaign, IL 61820,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, University of North Carolina , Chapel Hill, NC 27514,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, University of North Carolina , Chapel Hill, NC 27514,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Ang Michael",
+"family": "Troy",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Psychiatry, University of Illinois at Chicago , Chicago, IL 60612,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology, University of North Carolina , Chapel Hill, NC 27514,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Arthur W",
+"family": "Holt",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Psychiatry, University of Illinois at Chicago , Chicago, IL 60612,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-1079-3406",
+"authenticated-orcid": false,
+"given": "Neil R",
+"family": "Smalheiser",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Psychiatry, University of Illinois at Chicago , Chicago, IL 60612,",
+"place": [
+"United States"
+]
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "286",
+"published-online": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+]
+},
+"reference": [
+{
+"key": "2026102912381451300_ooag197-B1"
+},
+{
+"key": "2026102912381451300_ooag197-B2",
+"doi-asserted-by": "publisher",
+"first-page": "baag039",
+"DOI": "10.1093/database/baag039",
+"article-title": "Goals and strategies for the indexing of publication types and study designs",
+"volume": "2026",
+"author": "Smalheiser",
+"year": "2026",
+"journal-title": "Database (Oxford)."
+},
+{
+"key": "2026102912381451300_ooag197-B3",
+"doi-asserted-by": "publisher",
+"DOI": "10.1101/2021.07.13.21260468",
+"article-title": "Fifty ways to tag your PubTypes: multi-tagger, a set of probabilistic publication type and study design taggers to support biomedical indexing and evidence-based medicine",
+"author": "Cohen",
+"year": "2021",
+"journal-title": "medRxiv"
+},
+{
+"key": "2026102912381451300_ooag197-B4",
+"doi-asserted-by": "publisher",
+"first-page": "707",
+"DOI": "10.1093/jamia/ocu025",
+"article-title": "Automated confidence ranked classification of randomized controlled trial articles: an aid to evidence-based medicine",
+"volume": "22",
+"author": "Cohen",
+"year": "2015",
+"journal-title": "J Am Med Inform Assoc"
+},
+{
+"key": "2026102912381451300_ooag197-B5",
+"first-page": "818",
+"article-title": "Publication type tagging using transformer models and multi-label classification",
+"volume": "2024",
+"author": "Menke",
+"year": "2024",
+"journal-title": "AMIA Annu Symp Proc. 2025"
+},
+{
+"key": "2026102912381451300_ooag197-B6",
+"doi-asserted-by": "publisher",
+"first-page": "ooac015",
+"DOI": "10.1093/jamiaopen/ooac015",
+"article-title": "Evaluation of publication type tagging as a strategy to screen randomized controlled trial articles in preparing systematic reviews",
+"volume": "5",
+"author": "Schneider",
+"year": "2022",
+"journal-title": "JAMIA Open"
+},
+{
+"key": "2026102912381451300_ooag197-B7",
+"first-page": "e5",
+"article-title": "MEDLINE 2022 initiative: transition to automated indexing",
+"volume": "443",
+"author": "U.S. National Library of Medicine",
+"year": "2021",
+"journal-title": "US NLM Tech Bull"
+},
+{
+"key": "2026102912381451300_ooag197-B8",
+"first-page": "e4",
+"article-title": "MTIX: the next-generation algorithm for automated indexing of MEDLINE",
+"volume": "457",
+"author": "U.S. National Library of Medicine",
+"year": "2024",
+"journal-title": "US NLM Tech Bull"
+},
+{
+"key": "2026102912381451300_ooag197-B9",
+"doi-asserted-by": "publisher",
+"author": "Cid",
+"year": "2025",
+"DOI": "10.48550/arXiv.2506.03321"
+},
+{
+"key": "2026102912381451300_ooag197-B10",
+"doi-asserted-by": "publisher",
+"first-page": "502",
+"DOI": "10.1186/s12859-018-2534-2",
+"article-title": "Biomedical semantic indexing by deep neural network with multi-task learning",
+"volume": "19",
+"author": "Du",
+"year": "2018",
+"journal-title": "BMC Bioinformatics"
+},
+{
+"key": "2026102912381451300_ooag197-B11",
+"doi-asserted-by": "publisher",
+"first-page": "15",
+"DOI": "10.1186/s13326-017-0123-3",
+"article-title": "MeSH now: automatic MeSH indexing at PubMed scale via learning to rank",
+"volume": "8",
+"author": "Mao",
+"year": "2017",
+"journal-title": "J Biomed Semantics"
+},
+{
+"key": "2026102912381451300_ooag197-B12",
+"doi-asserted-by": "publisher",
+"first-page": "i70",
+"DOI": "10.1093/bioinformatics/btw294",
+"article-title": "DeepMeSH: deep semantic representation for improving large-scale MeSH indexing",
+"volume": "32",
+"author": "Peng",
+"year": "2016",
+"journal-title": "Bioinformatics"
+},
+{
+"key": "2026102912381451300_ooag197-B13",
+"doi-asserted-by": "crossref",
+"first-page": "581",
+"DOI": "10.1007/978-3-030-43887-6_53",
+"volume-title": "Machine Learning and Knowledge Discovery in Databases",
+"author": "Rae",
+"year": "2020"
+},
+{
+"key": "2026102912381451300_ooag197-B14",
+"first-page": "5473",
+"volume-title": "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+"author": "Wang",
+"year": "2022"
+},
+{
+"key": "2026102912381451300_ooag197-B15",
+"doi-asserted-by": "crossref",
+"first-page": "2941",
+"DOI": "10.18653/v1/2022.acl-long.210",
+"volume-title": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+"author": "Wang",
+"year": "2022"
+},
+{
+"key": "2026102912381451300_ooag197-B16",
+"doi-asserted-by": "publisher",
+"first-page": "39",
+"DOI": "10.5195/jmla.2025.1936",
+"article-title": "Algorithmic indexing in MEDLINE frequently overlooks important concepts and may compromise literature search results",
+"volume": "113",
+"author": "Amar-Zifkin",
+"year": "2025",
+"journal-title": "J Med Libr Assoc"
+},
+{
+"key": "2026102912381451300_ooag197-B17",
+"doi-asserted-by": "publisher",
+"first-page": "8",
+"DOI": "10.1186/s13326-017-0113-5",
+"article-title": "12 Years on – is the NLM medical text indexer still useful and relevant?",
+"volume": "8",
+"author": "Mork",
+"year": "2017",
+"journal-title": "J Biomed Semantics"
+},
+{
+"key": "2026102912381451300_ooag197-B18",
+"doi-asserted-by": "crossref",
+"first-page": "5548",
+"DOI": "10.18653/v1/2023.emnlp-main.338",
+"volume-title": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+"author": "Singh",
+"year": "2023"
+},
+{
+"key": "2026102912381451300_ooag197-B19",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12874-026-02861-w"
+},
+{
+"key": "2026102912381451300_ooag197-B20",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12874-026-02861-w",
+"article-title": "Creating an indexing scheme for case series articles",
+"volume": "26.",
+"author": "Shahidehpour",
+"year": "2026",
+"journal-title": "BMC Med Res Methodol"
+},
+{
+"key": "2026102912381451300_ooag197-B21"
+},
+{
+"key": "2026102912381451300_ooag197-B22",
+"author": "U.S. National Library of Medicine"
+},
+{
+"key": "2026102912381451300_ooag197-B23",
+"doi-asserted-by": "publisher",
+"author": "Das",
+"year": "2026",
+"DOI": "10.13012/B2IDB-8307201_V1"
+}
+],
+"container-title": "JAMIA Open",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://academic.oup.com/jamiaopen/article-pdf/9/5/ooag197/72590173/ooag197.pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "syndication"
+},
+{
+"URL": "https://academic.oup.com/jamiaopen/article-pdf/9/5/ooag197/72590173/ooag197.pdf",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+10,
+29
+]
+],
+"date-time": "2026-10-29T16:38:21Z",
+"timestamp": 1793291901000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://academic.oup.com/jamiaopen/article/doi/10.1093/jamiaopen/ooag197/9004669"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+9,
+9
+]
+]
+},
+"references-count": 23,
+"journal-issue": {
+"issue": "5",
+"published-print": {
+"date-parts": [
+[
+2026,
+9,
+9
+]
+]
+}
+},
+"URL": "http://dx.doi.org/10.1093/jamiaopen/ooag197",
+"relation": {},
+"ISSN": [
+"2574-2531"
+],
+"subject": [],
+"published-other": {
+"date-parts": [
+[
+2026,
+10
+]
+]
+},
+"published": {
+"date-parts": [
+[
+2026,
+9,
+9
+]
+]
+},
+"article-number": "ooag197"
+},
+"pmid:41573527": {
+"indexed": {
+"date-parts": [
+[
+2026,
+6,
+4
+]
+],
+"date-time": "2026-06-04T17:56:48Z",
+"timestamp": 1780595808545,
+"version": "3.54.1"
+},
+"reference-count": 353,
+"publisher": "Wiley",
+"issue": "1",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+1,
+15
+]
+],
+"date-time": "2026-01-15T00:00:00Z",
+"timestamp": 1768435200000
+},
+"content-version": "vor",
+"delay-in-days": 14,
+"URL": "http://creativecommons.org/licenses/by/4.0/"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+1,
+1
+]
+],
+"date-time": "2026-01-01T00:00:00Z",
+"timestamp": 1767225600000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+}
+],
+"content-domain": {
+"domain": [
+"onlinelibrary.wiley.com"
+],
+"crossmark-restriction": true
+},
+"published-print": {
+"date-parts": [
+[
+2026,
+1
+]
+]
+},
+"abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:sec>\n                    <jats:title>Introduction</jats:title>\n                    <jats:p>Engaging interest‐holders in health care evidence syntheses may make evidence syntheses more relevant, useful, and accessible. However, the best way(s) to engage interest‐holders within the evidence synthesis process remain unknown. A previous scoping review collated 291 publications that reported interest‐holder engagement in evidence syntheses, but conclusions were limited due to poor reporting. In the present scoping review, our aim was to identify and collate up‐to‐date publications focussed on interest‐holder engagement in healthcare evidence syntheses, describe reported methods of engagement, and compare the results with those from the previous review.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We updated a scoping review, following JBI guidance, using a pre‐published protocol that defined all key terminology in this field. We systematically searched five electronic databases (MEDLINE, CINAHL, EMBASE, PsycInfo, and SCOPUS). Searches were conducted from January 2016 to February 2024. Records were imported into Covidence and screened by pairs of independent reviewers, including any publications that reported engagement of interest‐holders in evidence syntheses. We extracted and coded key data relating to the evidence synthesis topic and ACTIVE framework domains (who was engaged, when, and in what way). Two reviewers independently made a judgment of the comprehensiveness of the description of methods of engagement, using a “traffic‐light” system, coding evidence syntheses with comprehensive descriptions as “green,” brief or partial descriptions as “amber,” and those with few details as “red”; disagreements were resolved through discussion. Additional detailed data relating to the engagement methods were extracted from “green” evidence syntheses. Any disagreements were resolved through discussion. Data were synthesized within tables, and narrative summaries were written to provide an overview of key methods of engaging interest‐holders within the identified evidence syntheses.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>\n                      We identified 302 publications published since the previous review. Most (272/302, 90%) reported interest‐holder engagement in a single evidence synthesis; of these, 74% (200/272) engaged patients and/or their carers, while 17% (46/272) engaged other interest‐holders only, and the remainder (26/272, 9.6%) was unclear. Over three‐quarters of the evidence syntheses were conducted either in the United Kingdom, United States, Canada, or Australia (215/272, 79%). Most often (113/272, 42%), interest‐holders were engaged at both the initial (scope and question setting)\n                      <jats:italic>and</jats:italic>\n                      final (interpretation of results) review stages (referred to as a “top and tail” approach). Nineteen percent (51/272) were judged to provide a comprehensive (“green”) description of one or more method(s) or approach(es) to engagement in an evidence synthesis, enabling detailed data extraction and description. Most: engaged patients/public members and other interest‐holder groups (30/51, 59%); used a “closed” recruitment strategy (30/51, 59%); engaged interest‐holders during the stage of interpretation of findings (39/51, 76%); had at least one interest‐holder as a co‐author (27/51, 52%). Interest‐holders generally attended meetings at which no formal methods of engagement were used. It was common to engage interest‐holders in multiple activities throughout the review process.\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Discussion/Conclusion</jats:title>\n                    <jats:p>Our international team from the MuSE consortium has updated a previous scoping review, compiling the latest evidence on interest‐holder engagement in evidence syntheses. We collated 302 publications and described the methods of interest‐holder engagement reported in 51 evidence syntheses that we judged provided the most comprehensive information. Interest‐holders have been involved at all stages of the process, using a wide range of engagement approaches, but with no clear patterns linked to the type or focus of evidence syntheses. Most commonly, patients/public and professional interest‐holders were both engaged, but around one‐quarter of our examples only engaged patients/public members, and a small number only engaged professional interest‐holders. We identified some distinct engagement strategies and have used these to inform a potential decision tool to support the selection of engagement strategies. We propose recommendations in relation to the conduct and reporting of interest‐holder engagement in evidence syntheses and future research to advance this field.</jats:p>\n                  </jats:sec>",
+"DOI": "10.1002/cesm.70066",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+1,
+16
+]
+],
+"date-time": "2026-01-16T05:49:56Z",
+"timestamp": 1768542596000
+},
+"update-policy": "https://doi.org/10.1002/crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 2,
+"title": "Methods of Engaging Interest‐Holders in Healthcare Evidence Syntheses: A Scoping Review",
+"prefix": "10.1002",
+"volume": "4",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0003-4941-7985",
+"authenticated-orcid": false,
+"given": "Alex",
+"family": "Todhunter‐Brown",
+"sequence": "first",
+"affiliation": [
+{
+"name": "School of Health &amp; Life Sciences Glasgow Caledonian University Glasgow UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-5824-584X",
+"authenticated-orcid": false,
+"given": "Jennifer",
+"family": "Petkovic",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Bruyère Health Research Institute University of Ottawa Ottawa Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Christine",
+"family": "Chang",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "MuSE Consortium member Chevy Chase Maryland USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-9958-3714",
+"authenticated-orcid": false,
+"given": "Ursula",
+"family": "Griebler",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department for Evidence‐based Medicine and Evaluation University for Continuing Education Krems Krems Austria"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Ailish",
+"family": "Hannigan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Medicine University of Limerick Limerick Ireland"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Jennifer",
+"family": "Hilgart",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Evidence Production and Methods Directorate Cochrane UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Basharat",
+"family": "Hussain",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Medicine University of Nottingham Nottingham UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Janet",
+"family": "Jull",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Health Sciences University of Carleton Ottawa Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Christina",
+"family": "Koscher‐Kien",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department for Evidence‐based Medicine and Evaluation University for Continuing Education Krems Krems Austria"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Dominic",
+"family": "Ledinger",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department for Evidence‐based Medicine and Evaluation University for Continuing Education Krems Krems Austria"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Barbara",
+"family": "Nussbaumer‐Streit",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department for Evidence‐based Medicine and Evaluation University for Continuing Education Krems Krems Austria"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Oyekola",
+"family": "Oloyede",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Medicine Sefako Makgatho Health Sciences University Pretoria South Africa"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Eve",
+"family": "Tomlinson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Population Health Sciences, Bristol Medical School University of Bristol Bristol UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Shoba",
+"family": "Dawson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Sheffield Centre for Health and Related Research University of Sheffield Sheffield UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Omar",
+"family": "Dewidar",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Bruyère Health Research Institute University of Ottawa Ottawa Ontario Canada"
+},
+{
+"name": "Temerty Faculty of Medicine University of Toronto Toronto Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Sean",
+"family": "Grant",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "College of Education University of Oregon Eugene Oregon USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Lyubov",
+"family": "Lytvyn",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "McMaster University Hamilton Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Thomas W.",
+"family": "Concannon",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "RAND Boston Massachusetts USA"
+},
+{
+"name": "Tufts University School of Medicine Boston Massachusetts USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Leonila",
+"family": "Dans",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of the Philippines Manila Philippines"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Denny",
+"family": "John",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Faculty of Life and Allied Health Sciences MS Ramaiah University of Applied Sciences Bangalore India"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Zoe",
+"family": "Jordan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Joanna Briggs Institute (JBI), Faculty of Health and Medical Sciences University of Adelaide Adelaide South Australia Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo‐Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology UNC Gillings School of Global Public Health Chapel Hill North Carolina USA"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Chris",
+"family": "McCutcheon",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Ottawa Hospital Research Institute Ottawa Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Francesco",
+"family": "Nonino",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Unit of Epidemiology and Statistics IRCCS Istituto delle Scienze Neurologiche di Bologna Bologna Italy"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Danielle",
+"family": "Pollock",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Health Evidence Synthesis, Recommendations and Impact, School of Public Health, Faculty of Health and Medical Sciences University of Adelaide Adelaide South Australia Australia"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Karine Toupin",
+"family": "April",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Rehabilitation Sciences, Faculty of Heath Sciences University of Ottawa Ottawa Ontario Canada"
+},
+{
+"name": "Department of Pediatrics Faculty of Medicine University of Ottawa Ottawa Ontario Canada"
+},
+{
+"name": "Children's Hospital of Eastern Ontario Research Institute Ottawa Ontario Canada"
+},
+{
+"name": "Institut du savoir Montfort Ottawa Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Pauline",
+"family": "Campbell",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Health &amp; Life Sciences Glasgow Caledonian University Glasgow UK"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4336-3501",
+"authenticated-orcid": false,
+"given": "Joanne",
+"family": "Khabsa",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "American University of Beirut Beirut Lebanon"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Olivia",
+"family": "Magwood",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Bruyère Health Research Institute University of Ottawa Ottawa Ontario Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Vivian",
+"family": "Welch",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Bruyère Health Research Institute University of Ottawa Ottawa Ontario Canada"
+},
+{
+"name": "School of Epidemiology and Public Health University of Ottawa Ontario Ottawa Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Peter",
+"family": "Tugwell",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Bruyère Health Research Institute University of Ottawa Ottawa Ontario Canada"
+},
+{
+"name": "School of Epidemiology and Public Health University of Ottawa Ontario Ottawa Canada"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "311",
+"published-online": {
+"date-parts": [
+[
+2026,
+1,
+15
+]
+]
+},
+"reference": [
+{
+"key": "e_1_2_15_2_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2022.07.008"
+},
+{
+"key": "e_1_2_15_3_1",
+"volume-title": "Evidence Synthesis for Health Policy and Systems: A Methods Guide",
+"author": "Langlois E. V. D. K.",
+"year": "2018"
+},
+{
+"key": "e_1_2_15_4_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.11124/JBIES-21-00483"
+},
+{
+"key": "e_1_2_15_5_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/cesm.70057"
+},
+{
+"key": "e_1_2_15_6_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/1355819619841647"
+},
+{
+"key": "e_1_2_15_7_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/cesm.70007"
+},
+{
+"key": "e_1_2_15_8_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-023-02279-1"
+},
+{
+"key": "e_1_2_15_9_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1007/s11606-012-2037-1"
+},
+{
+"key": "e_1_2_15_10_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13191"
+},
+{
+"key": "e_1_2_15_11_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2012-001220"
+},
+{
+"key": "e_1_2_15_12_1",
+"unstructured": "E.Cottrell E.Whitlock E.Kato et al. AHRQ Methods for Effective Health Care. Defining the Benefits of Stakeholder Engagement in Systematic Reviews(Agency for Healthcare Research and Quality (US) 2014)."
+},
+{
+"key": "e_1_2_15_13_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-018-0852-0"
+},
+{
+"key": "e_1_2_15_14_1",
+"unstructured": "NIHR UK Standards for Public Involvement in Research (2019)."
+},
+{
+"key": "e_1_2_15_15_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.12688/f1000research.15162.1"
+},
+{
+"key": "e_1_2_15_16_1",
+"article-title": "Methods of Engaging People in Evidence Syntheses: A Scoping Review (Protocol). MuSE – Evidence Synthesis",
+"author": "Todhunter‐Brown A.",
+"journal-title": "Open Science Framework"
+},
+{
+"key": "e_1_2_15_17_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-017-0060-4"
+},
+{
+"key": "e_1_2_15_18_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.46658/JBIMES-20-12"
+},
+{
+"key": "e_1_2_15_19_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.46658/JBIMES-24-09"
+},
+{
+"key": "e_1_2_15_20_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.7326/M18-0850"
+},
+{
+"key": "e_1_2_15_21_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmj.j3453"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_22_1",
+"article-title": "Reducing Uncertainties About the Effects of Chemoradiotherapy for Cervical Cancer: Individual Patient Data Meta‐Analysis",
+"volume": "2010",
+"author": "Chemoradiotherapy for Cervical Cancer Meta‐analysis Collaboration (CCCMAC)",
+"year": "2010",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"key": "e_1_2_15_23_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/2046-4053-1-23"
+},
+{
+"key": "e_1_2_15_24_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/14651858.CD009257.pub2"
+},
+{
+"key": "e_1_2_15_25_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/14651858.CD004753.pub4"
+},
+{
+"key": "e_1_2_15_26_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2013.08.005"
+},
+{
+"key": "e_1_2_15_27_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/XEB.0000000000000050"
+},
+{
+"key": "e_1_2_15_28_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12877-016-0196-3"
+},
+{
+"key": "e_1_2_15_29_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0276883"
+},
+{
+"key": "e_1_2_15_30_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2021-051241"
+},
+{
+"key": "e_1_2_15_31_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/jrsm.1459"
+},
+{
+"key": "e_1_2_15_32_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.auec.2018.12.001"
+},
+{
+"key": "e_1_2_15_33_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/S0140-6736(23)02075-5"
+},
+{
+"key": "e_1_2_15_34_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12913-023-09033-2"
+},
+{
+"key": "e_1_2_15_35_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13787"
+},
+{
+"key": "e_1_2_15_36_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jpainsymman.2018.09.008"
+},
+{
+"key": "e_1_2_15_37_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.14740/jocmr2643w"
+},
+{
+"issue": "2",
+"key": "e_1_2_15_38_1",
+"first-page": "358",
+"article-title": "Recovery, Relapse, and Episodes of Default in the Management of Acute Malnutrition in Children in Humanitarian Emergencies: A Systematic Review",
+"volume": "71",
+"author": "Akparibo R.",
+"year": "2017",
+"journal-title": "Annals of Nutrition and Metabolism"
+},
+{
+"key": "e_1_2_15_39_1",
+"volume-title": "Synthesis for Health Services and Policy: Case Studies in the Scoping of Reviews",
+"author": "Anderson R.",
+"year": "2021"
+},
+{
+"key": "e_1_2_15_40_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ijrobp.2020.08.050"
+},
+{
+"key": "e_1_2_15_41_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-020-00190-w"
+},
+{
+"key": "e_1_2_15_42_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1017/S0266462322000587"
+},
+{
+"key": "e_1_2_15_43_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jval.2019.11.007"
+},
+{
+"key": "e_1_2_15_44_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-017-0904-7"
+},
+{
+"key": "e_1_2_15_45_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/ageing/afv201"
+},
+{
+"key": "e_1_2_15_46_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1155/2023/6953134"
+},
+{
+"key": "e_1_2_15_47_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/ijpp/riad021.032"
+},
+{
+"key": "e_1_2_15_48_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13506"
+},
+{
+"key": "e_1_2_15_49_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/1355819618811866"
+},
+{
+"key": "e_1_2_15_50_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s41687-023-00659-8"
+},
+{
+"key": "e_1_2_15_51_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12874-018-0560-4"
+},
+{
+"key": "e_1_2_15_52_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pmed.1004139"
+},
+{
+"key": "e_1_2_15_53_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/pm/pnab236"
+},
+{
+"key": "e_1_2_15_54_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2016.69.4836"
+},
+{
+"key": "e_1_2_15_55_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.5858/arpa.2016-0331-CP"
+},
+{
+"key": "e_1_2_15_56_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/ajcp/aqw206"
+},
+{
+"key": "e_1_2_15_57_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.5858/arpa.2016-0331-CP"
+},
+{
+"key": "e_1_2_15_58_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13948"
+},
+{
+"key": "e_1_2_15_59_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph182312669"
+},
+{
+"issue": "3",
+"key": "e_1_2_15_60_1",
+"first-page": "898",
+"article-title": "Staggered Steps: Determining the Impact of Multiple Sclerosis (MS) on Lower Limb Health Through Scoping Review and Public and Patient Involvement",
+"volume": "28",
+"author": "Baumgartner A.",
+"year": "2022",
+"journal-title": "Multiple Sclerosis Journal"
+},
+{
+"key": "e_1_2_15_61_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.21.02538"
+},
+{
+"key": "e_1_2_15_62_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-016-0032-0"
+},
+{
+"key": "e_1_2_15_63_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3389/fpsyt.2021.763005"
+},
+{
+"key": "e_1_2_15_64_1",
+"doi-asserted-by": "crossref",
+"unstructured": "W. L.Bennett S.Pitts H.Aboumatar et al. Strategies for Patient Family and Caregiver EngagementReport No. 20‐EHC017 (Agency for Healthcare Research and Quality 2020).",
+"DOI": "10.23970/AHRQEPCTB36"
+},
+{
+"key": "e_1_2_15_65_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ypmed.2022.107412"
+},
+{
+"key": "e_1_2_15_66_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/pgfar04120"
+},
+{
+"key": "e_1_2_15_67_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/ajr.12549"
+},
+{
+"key": "e_1_2_15_68_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13279"
+},
+{
+"key": "e_1_2_15_69_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13940"
+},
+{
+"key": "e_1_2_15_70_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.5858/arpa.2021-0295-CP"
+},
+{
+"key": "e_1_2_15_71_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.2147/COPD.S238680"
+},
+{
+"key": "e_1_2_15_72_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/obr.13505"
+},
+{
+"key": "e_1_2_15_73_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.zefq.2017.07.005"
+},
+{
+"key": "e_1_2_15_74_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/thoraxjnl-2017-210939"
+},
+{
+"key": "e_1_2_15_75_1",
+"doi-asserted-by": "crossref",
+"unstructured": "F.Bunn C.Goodman B.Russell et al. Supporting Shared Decision‐Making for Older People With Multiple Health And Social Care Needs: A Realist Synthesis (2018).",
+"DOI": "10.1186/s12877-018-0853-9"
+},
+{
+"key": "e_1_2_15_76_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12877-018-0995-9"
+},
+{
+"key": "e_1_2_15_77_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.21.01392"
+},
+{
+"issue": "2",
+"key": "e_1_2_15_78_1",
+"article-title": "Theory and Practical Guidance for Effective De‐implementation of Practices Across Health and Care Services: A Realist Synthesis",
+"volume": "9",
+"author": "Burton C. R.",
+"year": "2021",
+"journal-title": "Health and Social Care Delivery Research"
+},
+{
+"key": "e_1_2_15_79_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1017/S1049023X23001516"
+},
+{
+"key": "e_1_2_15_80_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/jan.15265"
+},
+{
+"key": "e_1_2_15_81_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12904-023-01230-4"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_82_1",
+"first-page": "96",
+"article-title": "Public Perceptions of Advance Care Planning: A Scoping Review Including Online Resources and Public Consultation",
+"volume": "35",
+"author": "Canny A.",
+"year": "2021",
+"journal-title": "Palliative Medicine"
+},
+{
+"key": "e_1_2_15_83_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/bjsw/bcac209"
+},
+{
+"key": "e_1_2_15_84_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13615"
+},
+{
+"key": "e_1_2_15_85_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/annrheumdis-2023-eular.5474"
+},
+{
+"issue": "2",
+"key": "e_1_2_15_86_1",
+"first-page": "ii40",
+"article-title": "Living With Foot and Ankle Disorders in Rheumatic and Musculoskeletal Diseases: A Thematic Synthesis of Qualitative Studies to Inform the Work of the Outcome Measures in Rheumatology (OMERACT) Foot and Ankle Working Group",
+"volume": "62",
+"author": "Chapman L. S.",
+"year": "2023",
+"journal-title": "Rheumatology (United Kingdom)"
+},
+{
+"key": "e_1_2_15_87_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/02687038.2022.2039588"
+},
+{
+"key": "e_1_2_15_88_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/inm.13204"
+},
+{
+"key": "e_1_2_15_89_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13437"
+},
+{
+"key": "e_1_2_15_90_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/cam4.6200"
+},
+{
+"key": "e_1_2_15_91_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/jrsm.1407"
+},
+{
+"key": "e_1_2_15_92_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph18041452"
+},
+{
+"key": "e_1_2_15_93_1",
+"doi-asserted-by": "crossref",
+"unstructured": "D. H.CornmanandC. M.White Discerning the Perception and Impact of Patients Involved in Evidence‐based Practice Center Key Informant InterviewsReport No. 17‐EHC032‐EF (Agency for Healthcare Research and Quality 2017).",
+"DOI": "10.23970/AHRQEPCWHITEPAPER1"
+},
+{
+"key": "e_1_2_15_94_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13845"
+},
+{
+"key": "e_1_2_15_95_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12875-023-02188-1"
+},
+{
+"key": "e_1_2_15_96_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0257540"
+},
+{
+"key": "e_1_2_15_97_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/heapol/czad078"
+},
+{
+"issue": "11",
+"key": "e_1_2_15_98_1",
+"article-title": "The Provision of Services in the UK for UK Armed Forces Veterans With PTSD: A Rapid Evidence Synthesis",
+"volume": "6",
+"author": "Dalton J.",
+"year": "2018",
+"journal-title": "Health and Social Care Delivery Research"
+},
+{
+"key": "e_1_2_15_99_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12913-019-4802-x"
+},
+{
+"key": "e_1_2_15_100_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/medu.13492"
+},
+{
+"key": "e_1_2_15_101_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3389/phrs.2023.1605189"
+},
+{
+"key": "e_1_2_15_102_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12885-017-3813-4"
+},
+{
+"key": "e_1_2_15_103_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/BVCF6192"
+},
+{
+"key": "e_1_2_15_104_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12913-018-3090-1"
+},
+{
+"key": "e_1_2_15_105_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13679"
+},
+{
+"key": "e_1_2_15_106_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2018.78.8604"
+},
+{
+"key": "e_1_2_15_107_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.20.02510"
+},
+{
+"key": "e_1_2_15_108_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.dialog.2022.100028"
+},
+{
+"key": "e_1_2_15_109_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2022.07.007"
+},
+{
+"key": "e_1_2_15_110_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/15586898211037412"
+},
+{
+"key": "e_1_2_15_111_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.18176/jiaci.0149"
+},
+{
+"key": "e_1_2_15_112_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1001/jamaoto.2016.2981"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_113_1",
+"article-title": "A Scoping Review to Enable Shared Decision Making Regarding Diagnostic Imaging for Renal Colic",
+"volume": "26",
+"author": "Doty E.",
+"year": "2019",
+"journal-title": "Academic Emergency Medicine"
+},
+{
+"key": "e_1_2_15_114_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0207012"
+},
+{
+"key": "e_1_2_15_115_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13750-017-0101-3"
+},
+{
+"key": "e_1_2_15_116_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jand.2017.08.005"
+},
+{
+"key": "e_1_2_15_117_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-021-01743-0"
+},
+{
+"key": "e_1_2_15_118_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13822"
+},
+{
+"key": "e_1_2_15_119_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.21.02647"
+},
+{
+"key": "e_1_2_15_120_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12961-018-0325-x"
+},
+{
+"key": "e_1_2_15_121_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13544"
+},
+{
+"key": "e_1_2_15_122_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12879-023-08603-3"
+},
+{
+"key": "e_1_2_15_123_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.5858/arpa.2020-0723-CP"
+},
+{
+"key": "e_1_2_15_124_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13788"
+},
+{
+"key": "e_1_2_15_125_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2020-039699"
+},
+{
+"key": "e_1_2_15_126_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjebm-2021-111804"
+},
+{
+"key": "e_1_2_15_127_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/02646196221112800"
+},
+{
+"issue": "101619905",
+"key": "e_1_2_15_128_1",
+"first-page": "7420",
+"article-title": "How International Health System Austerity Responses to the 2008 Financial Crisis Impacted Health System and Workforce Resilience – A Realist Review",
+"volume": "12",
+"author": "Fleming P.",
+"year": "2023",
+"journal-title": "International Journal of Health Policy and Management"
+},
+{
+"key": "e_1_2_15_129_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/09602011.2023.2273580"
+},
+{
+"key": "e_1_2_15_130_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3389/fped.2023.1195691"
+},
+{
+"key": "e_1_2_15_131_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0259533"
+},
+{
+"key": "e_1_2_15_132_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1044/2016_JSLHR-S-16-0022"
+},
+{
+"key": "e_1_2_15_133_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjqs-2021-014529"
+},
+{
+"key": "e_1_2_15_134_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2023-076186"
+},
+{
+"key": "e_1_2_15_135_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjebm-2022-112070"
+},
+{
+"key": "e_1_2_15_136_1",
+"doi-asserted-by": "crossref",
+"unstructured": "A.Garsa J. K.Jang S.Baxi et al. Radiation Therapy for Brain MetastasesReport No. AHRQ 21‐EHC021 (Agency for Healthcare Research and Quality 2021).",
+"DOI": "10.23970/AHRQEPCCER242"
+},
+{
+"key": "e_1_2_15_137_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/03080226231219106"
+},
+{
+"key": "e_1_2_15_138_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13167"
+},
+{
+"key": "e_1_2_15_139_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/17483107.2021.1892840"
+},
+{
+"key": "e_1_2_15_140_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jamda.2022.01.076"
+},
+{
+"key": "e_1_2_15_141_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/acem.14360"
+},
+{
+"key": "e_1_2_15_142_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/jocn.16570"
+},
+{
+"key": "e_1_2_15_143_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/MLR.0000000000001174"
+},
+{
+"key": "e_1_2_15_144_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.22.00519"
+},
+{
+"key": "e_1_2_15_145_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2018.79.2697"
+},
+{
+"key": "e_1_2_15_146_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12913-016-1493-4"
+},
+{
+"key": "e_1_2_15_147_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/hta21420"
+},
+{
+"key": "e_1_2_15_148_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2018-026551"
+},
+{
+"key": "e_1_2_15_149_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.20.02672"
+},
+{
+"key": "e_1_2_15_150_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/jan.15480"
+},
+{
+"key": "e_1_2_15_151_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3233/WOR-172577"
+},
+{
+"issue": "10",
+"key": "e_1_2_15_152_1",
+"first-page": "243",
+"article-title": "A Scoping Review of Lyme Disease Research Relevant to Public Health",
+"volume": "44",
+"author": "Greig J. D.",
+"year": "2018",
+"journal-title": "Canada Communicable Disease Report = Releve des maladies transmissibles au Canada"
+},
+{
+"key": "e_1_2_15_153_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13750-017-0089-8"
+},
+{
+"key": "e_1_2_15_154_1",
+"doi-asserted-by": "crossref",
+"unstructured": "N.Hallett R.Dickinson E.Eneje andG. L.Dickens “Adverse Mental Health Inpatient Experiences: Qualitative Systematic Review of International Literature and Development of a Conceptual Framework ” preprint medRxiv October 20 2023 https://doi.org/10.1101/2023.10.20.23297217.",
+"DOI": "10.1101/2023.10.20.23297217"
+},
+{
+"key": "e_1_2_15_155_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2023-075093"
+},
+{
+"key": "e_1_2_15_156_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hsc.13576"
+},
+{
+"key": "e_1_2_15_157_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2016-015257"
+},
+{
+"key": "e_1_2_15_158_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/ULTI9178"
+},
+{
+"key": "e_1_2_15_159_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/cid/ciab557"
+},
+{
+"key": "e_1_2_15_160_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/07334648211028692"
+},
+{
+"key": "e_1_2_15_161_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/14713012211012606"
+},
+{
+"key": "e_1_2_15_162_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jval.2020.01.019"
+},
+{
+"key": "e_1_2_15_163_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ijnurstu.2021.103905"
+},
+{
+"key": "e_1_2_15_164_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/1748-5908-5-12"
+},
+{
+"issue": "100909747",
+"key": "e_1_2_15_165_1",
+"article-title": "Interventions for Perceptual Disorders Following Stroke",
+"volume": "11",
+"author": "Hazelton C.",
+"year": "2022",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"key": "e_1_2_15_166_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12961-023-01062-x"
+},
+{
+"key": "e_1_2_15_167_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-023-02272-8"
+},
+{
+"key": "e_1_2_15_168_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/MLR.0000000000001175"
+},
+{
+"key": "e_1_2_15_169_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.22.01063"
+},
+{
+"issue": "2",
+"key": "e_1_2_15_170_1",
+"first-page": "242",
+"article-title": "Best‐Practice Guideline on the Prevention of Abuse and Neglect of Older Adults",
+"volume": "35",
+"author": "Hirst S. P.",
+"year": "2016",
+"journal-title": "Canadian Journal on Aging/La Revue canadienne du vieillissement"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_171_1",
+"article-title": "Rapid Realist Review: How Stared Decision Making Approaches and Patient Aids Influence Treatment Decisions for Patients With Advanced (Non‐Curative) Cancer?",
+"volume": "13",
+"author": "Holland‐Hart D.",
+"year": "2023",
+"journal-title": "BMJ Supportive and Palliative Care"
+},
+{
+"key": "e_1_2_15_172_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3399/BJGPO.2022.0061"
+},
+{
+"key": "e_1_2_15_173_1",
+"first-page": "40",
+"article-title": "A Realist Review of Medication Optimisation of Community Dwelling Service Users With Serious Mental Illness",
+"volume": "34",
+"author": "Howe J.",
+"year": "2023",
+"journal-title": "medRxiv"
+},
+{
+"key": "e_1_2_15_174_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph20031895"
+},
+{
+"key": "e_1_2_15_175_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hsc.12839"
+},
+{
+"key": "e_1_2_15_176_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.12458"
+},
+{
+"key": "e_1_2_15_177_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph182413395"
+},
+{
+"key": "e_1_2_15_178_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.apmr.2021.05.005"
+},
+{
+"key": "e_1_2_15_179_1",
+"doi-asserted-by": "crossref",
+"DOI": "10.1192/bjo.2022.202",
+"article-title": "Service User Involvement in Recovery‐Oriented Care Planning: A Realist Synthesis",
+"volume": "8",
+"author": "John T.",
+"year": "2023",
+"journal-title": "BJPsych Open"
+},
+{
+"key": "e_1_2_15_180_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1017/S0266462322000733"
+},
+{
+"key": "e_1_2_15_181_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13727"
+},
+{
+"key": "e_1_2_15_182_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/0272989X20978208"
+},
+{
+"key": "e_1_2_15_183_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-023-00448-z"
+},
+{
+"key": "e_1_2_15_184_1",
+"article-title": "When Should Systematic Reviews Be Replicated and When Is It Wasteful: A Checklist and Framework",
+"volume": "27",
+"author": "Karunananthan S.",
+"year": "2022",
+"journal-title": "BMJ Evidence‐Based Medicine"
+},
+{
+"key": "e_1_2_15_185_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.5858/arpa.2020-0794-CP"
+},
+{
+"key": "e_1_2_15_186_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/00207640231189424"
+},
+{
+"key": "e_1_2_15_187_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.pec.2021.03.010"
+},
+{
+"key": "e_1_2_15_188_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13594"
+},
+{
+"key": "e_1_2_15_189_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.childyouth.2020.105454"
+},
+{
+"key": "e_1_2_15_190_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jaac.2021.09.146"
+},
+{
+"key": "e_1_2_15_191_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/ajcp/aqaa191"
+},
+{
+"key": "e_1_2_15_192_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/ajh.24777"
+},
+{
+"key": "e_1_2_15_193_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13750-017-0104-0"
+},
+{
+"key": "e_1_2_15_194_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13750-017-0098-7"
+},
+{
+"key": "e_1_2_15_195_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jpainsymman.2018.12.002"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_196_1",
+"first-page": "12",
+"article-title": "The WCRF/AICR Third Expert Report and the Updated Cancer Prevention Recommendations",
+"volume": "11",
+"author": "Leitzmann M.",
+"year": "2018",
+"journal-title": "Obesity Facts"
+},
+{
+"key": "e_1_2_15_197_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/medicina57111165"
+},
+{
+"key": "e_1_2_15_198_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/annrheumdis-2021-eular.900"
+},
+{
+"key": "e_1_2_15_199_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/pubmed/fdv093"
+},
+{
+"key": "e_1_2_15_200_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/09638288.2021.1922518"
+},
+{
+"key": "e_1_2_15_201_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0214678"
+},
+{
+"key": "e_1_2_15_202_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2022-070953"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_203_1",
+"first-page": "A84",
+"article-title": "Understanding Why GPs Are Leaving General Practice – A Systematic Review of Qualitative Research",
+"volume": "71",
+"author": "Long L.",
+"year": "2017",
+"journal-title": "Journal of Epidemiology and Community Health"
+},
+{
+"key": "e_1_2_15_204_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.20.01399"
+},
+{
+"key": "e_1_2_15_205_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/PTS.0000000000000775"
+},
+{
+"key": "e_1_2_15_206_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2020-047102"
+},
+{
+"issue": "7",
+"key": "e_1_2_15_207_1",
+"first-page": "P1170",
+"article-title": "Improving the Experience of Care for People With Dementia in Hospital: Synthesis of Qualitative and Quantitative Evidence",
+"volume": "15",
+"author": "Lourida I.",
+"year": "2019",
+"journal-title": "Alzheimer's and Dementia"
+},
+{
+"key": "e_1_2_15_208_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/10810730.2022.2134523"
+},
+{
+"key": "e_1_2_15_209_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-023-03102-3"
+},
+{
+"key": "e_1_2_15_210_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ejso.2019.11.520"
+},
+{
+"key": "e_1_2_15_211_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2021-050043"
+},
+{
+"key": "e_1_2_15_212_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12961-019-0504-4"
+},
+{
+"key": "e_1_2_15_213_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.numecd.2022.03.007"
+},
+{
+"key": "e_1_2_15_214_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/1471301218816250"
+},
+{
+"key": "e_1_2_15_215_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.2217/cer-2019-0047"
+},
+{
+"key": "e_1_2_15_216_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13470"
+},
+{
+"key": "e_1_2_15_217_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13650"
+},
+{
+"key": "e_1_2_15_218_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13272"
+},
+{
+"key": "e_1_2_15_219_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-019-0994-8"
+},
+{
+"key": "e_1_2_15_220_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/openhrt-2023-002438"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_221_1",
+"first-page": "A4890",
+"article-title": "Home Health Care or Hospitalization for Adults With Chronic Respiratory Diseases and Post‐COVID Syndrome: A Systematic Review",
+"volume": "207",
+"author": "Mendonca K. P.",
+"year": "2023",
+"journal-title": "American Journal of Respiratory and Critical Care Medicine"
+},
+{
+"key": "e_1_2_15_222_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.2105/AJPH.2021.306252"
+},
+{
+"issue": "3",
+"key": "e_1_2_15_223_1",
+"article-title": "Consumers' and Health Providers' Views and Perceptions of Partnering to Improve Health Services Design, Delivery and Evaluation: A Co‐Produced Qualitative Evidence Synthesis",
+"volume": "2023",
+"author": "Merner B.",
+"year": "2023",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"key": "e_1_2_15_224_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/CCM.0000000000003870"
+},
+{
+"key": "e_1_2_15_225_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/KPLT1423"
+},
+{
+"key": "e_1_2_15_226_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0290653"
+},
+{
+"key": "e_1_2_15_227_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/17589983231219595"
+},
+{
+"key": "e_1_2_15_228_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/14927713.2020.1760121"
+},
+{
+"key": "e_1_2_15_229_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hsc.12540"
+},
+{
+"key": "e_1_2_15_230_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13568"
+},
+{
+"key": "e_1_2_15_231_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/nu12072144"
+},
+{
+"key": "e_1_2_15_232_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/cam4.3110"
+},
+{
+"key": "e_1_2_15_233_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-016-0049-4"
+},
+{
+"key": "e_1_2_15_234_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1192/bjpo.bp.116.003616"
+},
+{
+"key": "e_1_2_15_235_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.socscimed.2022.114898"
+},
+{
+"key": "e_1_2_15_236_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2020-047789"
+},
+{
+"key": "e_1_2_15_237_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/emermed-2022-212514"
+},
+{
+"key": "e_1_2_15_238_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/cl2.1284"
+},
+{
+"key": "e_1_2_15_239_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/PEC.0000000000001037"
+},
+{
+"key": "e_1_2_15_240_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1007/s11121-023-01531-3"
+},
+{
+"key": "e_1_2_15_241_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12888-023-05158-0"
+},
+{
+"key": "e_1_2_15_242_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hae.13279"
+},
+{
+"key": "e_1_2_15_243_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.12865"
+},
+{
+"key": "e_1_2_15_244_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2022.11.021"
+},
+{
+"key": "e_1_2_15_245_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/jts.22520"
+},
+{
+"key": "e_1_2_15_246_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13640"
+},
+{
+"key": "e_1_2_15_247_1",
+"doi-asserted-by": "crossref",
+"unstructured": "N.Oravec R. C.Arora B.Bjorklund et al. eds. Patient and Caregiver Preferences and Prioritized Outcomes for Cardiac Surgery: A Scoping Review and Consultation Workshop (2023).",
+"DOI": "10.1016/j.jtcvs.2021.11.052"
+},
+{
+"key": "e_1_2_15_248_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.euf.2016.06.018"
+},
+{
+"key": "e_1_2_15_249_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pone.0274634"
+},
+{
+"key": "e_1_2_15_250_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjgh-2020-004729"
+},
+{
+"key": "e_1_2_15_251_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12889-022-13875-6"
+},
+{
+"key": "e_1_2_15_252_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.pec.2018.06.017"
+},
+{
+"key": "e_1_2_15_253_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-023-02323-0"
+},
+{
+"key": "e_1_2_15_254_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/CEH.0000000000000534"
+},
+{
+"key": "e_1_2_15_255_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.11124/JBIES-21-00416"
+},
+{
+"key": "e_1_2_15_256_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13729"
+},
+{
+"issue": "11",
+"key": "e_1_2_15_257_1",
+"article-title": "Remediation Programmes for Practising Doctors to Restore Patient Safety: The RESTORE Realist Review",
+"volume": "9",
+"author": "Price T.",
+"year": "2021",
+"journal-title": "Health and Social Care Delivery Research"
+},
+{
+"key": "e_1_2_15_258_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/medu.14528"
+},
+{
+"key": "e_1_2_15_259_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/pbc.29854"
+},
+{
+"key": "e_1_2_15_260_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2018.79.2713"
+},
+{
+"issue": "8",
+"key": "e_1_2_15_261_1",
+"first-page": "559",
+"article-title": "Chronic Disease Prevention and Management Programs in Primary Care: Realist Synthesis of 6 Programs in Quebec",
+"volume": "65",
+"author": "Ramond‐Roquin A.",
+"year": "2019",
+"journal-title": "Canadian Family Physician Medecin de famille canadien"
+},
+{
+"key": "e_1_2_15_262_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.22.00868"
+},
+{
+"key": "e_1_2_15_263_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3310/AAFO2475"
+},
+{
+"key": "e_1_2_15_264_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1177/0706743719846108"
+},
+{
+"issue": "63",
+"key": "e_1_2_15_265_1",
+"article-title": "Patient and Public Involvement and Application of the Behaviour Change Wheel to Promote Physical Activity Following Pulmonary Rehabilitation in COPD: An Intervention Development Study",
+"volume": "54",
+"author": "Robinson H.",
+"year": "2019",
+"journal-title": "European Respiratory Journal"
+},
+{
+"key": "e_1_2_15_266_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2016.67.1487"
+},
+{
+"issue": "12",
+"key": "e_1_2_15_267_1",
+"article-title": "Improving Skills and Care Standards in the Support Workforce for Older People: A Realist Synthesis of Workforce Development Interventions",
+"volume": "4",
+"author": "Rycroft‐Malone J.",
+"year": "2016",
+"journal-title": "Health and Social Care Delivery Research"
+},
+{
+"key": "e_1_2_15_268_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1046/j.1523-536X.2001.00133.x"
+},
+{
+"issue": "3",
+"key": "e_1_2_15_269_1",
+"first-page": "269",
+"article-title": "Engaging Knowledge Users With Mental Health Experience in a Mixed‐Methods Systematic Review of Post‐Secondary Students With Psychosis: Reflections and Lessons Learned From a Master's Thesis",
+"volume": "11",
+"author": "Sanderson V.",
+"year": "2022",
+"journal-title": "International Journal of Health Policy and Management"
+},
+{
+"key": "e_1_2_15_270_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2017.76.1734"
+},
+{
+"key": "e_1_2_15_271_1",
+"doi-asserted-by": "crossref",
+"unstructured": "M.Schlief K. R. K.Saunders R.Appleton et al. “What Works for Whom With Telemental Health? A Rapid Realist Review ” preprint medRxiv May 2 2022 https://doi.org/10.1101/2022.04.29.22274367.",
+"DOI": "10.1101/2022.03.21.22272706"
+},
+{
+"key": "e_1_2_15_272_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2018.05.016"
+},
+{
+"key": "e_1_2_15_273_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.20.00866"
+},
+{
+"issue": "5",
+"key": "e_1_2_15_274_1",
+"article-title": "What Works in Implementing a Frail Older Person's Pathway? A Rapid Realist Review of the Literature",
+"volume": "47",
+"author": "She E. N.",
+"year": "2018",
+"journal-title": "Age and Ageing"
+},
+{
+"key": "e_1_2_15_275_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.12490"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_276_1",
+"first-page": "22",
+"article-title": "Evidence Synthesis of Factors Affecting Family Carers' Psychological Wellbeing",
+"volume": "35",
+"author": "Shield T.",
+"year": "2021",
+"journal-title": "Palliative Medicine"
+},
+{
+"key": "e_1_2_15_277_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-019-1338-1"
+},
+{
+"key": "e_1_2_15_278_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3399/BJGPO.2023.0022"
+},
+{
+"key": "e_1_2_15_279_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12889-022-14580-0"
+},
+{
+"key": "e_1_2_15_280_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/gps.4652"
+},
+{
+"key": "e_1_2_15_281_1",
+"doi-asserted-by": "crossref",
+"unstructured": "C.Snyder C. T.Yuan R. F.Wilson et al. Models of Care That Include Primary Care for Adult Survivors of Childhood Cancer: A Realist Review (2022).",
+"DOI": "10.23970/AHRQEPCREALISTMODELSOFCARE"
+},
+{
+"key": "e_1_2_15_282_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.2018.78.9636"
+},
+{
+"key": "e_1_2_15_283_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2019.05.015"
+},
+{
+"key": "e_1_2_15_284_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/gps.5568"
+},
+{
+"key": "e_1_2_15_285_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/heapro/dax083"
+},
+{
+"key": "e_1_2_15_286_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1097/MLR.0000000000001180"
+},
+{
+"issue": "33",
+"key": "e_1_2_15_287_1",
+"first-page": "143",
+"article-title": "Evaluating Susceptibility to Pancreatic Cancer: ASCO Provisional Clinical Opinion",
+"volume": "36",
+"author": "Stoffel E. M.",
+"year": "2018",
+"journal-title": "Journal of Clinical Oncology"
+},
+{
+"key": "e_1_2_15_288_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.18.01489"
+},
+{
+"key": "e_1_2_15_289_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12961-020-00604-x"
+},
+{
+"key": "e_1_2_15_290_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12961-019-0444-z"
+},
+{
+"key": "e_1_2_15_291_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.wombi.2024.01.002"
+},
+{
+"key": "e_1_2_15_292_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/09638288.2021.1924881"
+},
+{
+"key": "e_1_2_15_293_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.18.00374"
+},
+{
+"key": "e_1_2_15_294_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13739"
+},
+{
+"key": "e_1_2_15_295_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph182211932"
+},
+{
+"key": "e_1_2_15_296_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/ageing/afz061.10"
+},
+{
+"issue": "9",
+"key": "e_1_2_15_297_1",
+"first-page": "CD012337",
+"article-title": "Conservative Interventions for Treating Urinary Incontinence in Women: An Overview of Cochrane Systematic Reviews",
+"volume": "9",
+"author": "Todhunter‐Brown A.",
+"year": "2022",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"key": "e_1_2_15_298_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12960-016-0155-2"
+},
+{
+"key": "e_1_2_15_299_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12939-023-01864-z"
+},
+{
+"key": "e_1_2_15_300_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13012-018-0717-x"
+},
+{
+"key": "e_1_2_15_301_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.12917"
+},
+{
+"key": "e_1_2_15_302_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-022-02475-1"
+},
+{
+"key": "e_1_2_15_303_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13012-017-0669-6"
+},
+{
+"key": "e_1_2_15_304_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.4081/reumatismo.2020.1268"
+},
+{
+"key": "e_1_2_15_305_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjgh-2022-009605"
+},
+{
+"issue": "5",
+"key": "e_1_2_15_306_1",
+"doi-asserted-by": "crossref",
+"DOI": "10.1371/journal.pone.0251142",
+"article-title": "Assessment of Body Composition in Spinal Cord Injury: A Scoping Review",
+"volume": "16",
+"author": "Scheer J. W.",
+"year": "2021",
+"journal-title": "PLoS One"
+},
+{
+"key": "e_1_2_15_307_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13829"
+},
+{
+"key": "e_1_2_15_308_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.ijnurstu.2022.104382"
+},
+{
+"key": "e_1_2_15_309_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.12951"
+},
+{
+"key": "e_1_2_15_310_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-023-02966-9"
+},
+{
+"issue": "1",
+"key": "e_1_2_15_311_1",
+"article-title": "Adherence to Aspirin in Pregnancy: A Co‐Produced Systematic Review and Meta‐Ethnography",
+"volume": "77",
+"author": "Vinogradov R.",
+"year": "2023",
+"journal-title": "Journal of Epidemiology and Community Health"
+},
+{
+"key": "e_1_2_15_312_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1200/JCO.19.01472"
+},
+{
+"key": "e_1_2_15_313_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/cdoe.12564"
+},
+{
+"key": "e_1_2_15_314_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13078"
+},
+{
+"key": "e_1_2_15_315_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12245-022-00438-0"
+},
+{
+"key": "e_1_2_15_316_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.3390/ijerph192214851"
+},
+{
+"issue": "101690863",
+"key": "e_1_2_15_317_1",
+"doi-asserted-by": "crossref",
+"DOI": "10.1177/2055207621996870",
+"article-title": "The Use of Social Media as a Tool for Stakeholder Engagement in Health Service Design and Quality Improvement: A Scoping Review",
+"volume": "7",
+"author": "Walsh L.",
+"year": "2021",
+"journal-title": "Digital Health"
+},
+{
+"key": "e_1_2_15_318_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/cch.13022"
+},
+{
+"key": "e_1_2_15_319_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/jgc4.1436"
+},
+{
+"key": "e_1_2_15_320_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13980"
+},
+{
+"key": "e_1_2_15_321_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1080/09638288.2022.2127932"
+},
+{
+"issue": "2",
+"key": "e_1_2_15_322_1",
+"first-page": "ii70",
+"article-title": "Barriers and Facilitators to Lifestyle Change in People Living With Gout: A Scoping Review of Qualitative Studies",
+"volume": "62",
+"author": "Watson L.",
+"year": "2023",
+"journal-title": "Rheumatology (United Kingdom)"
+},
+{
+"issue": "21",
+"key": "e_1_2_15_323_1",
+"article-title": "Using Patient Experience Data to Support Improvements in Inpatient Mental Health Care: The EURIPIDES Multimethod Study",
+"volume": "8",
+"author": "Weich S.",
+"year": "2020",
+"journal-title": "Health and Social Care Delivery Research"
+},
+{
+"key": "e_1_2_15_324_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13340"
+},
+{
+"key": "e_1_2_15_325_1",
+"doi-asserted-by": "crossref",
+"unstructured": "M.Westby S.Ijaz J.Savovic et al. “Rapid Realist Review of Virtual Wards for People With Frailty ” preprint medRxiv April 24 2023 https://doi.org/10.1101/2023.04.18.23288729.",
+"DOI": "10.1101/2023.04.18.23288729"
+},
+{
+"key": "e_1_2_15_326_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13786"
+},
+{
+"key": "e_1_2_15_327_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmjopen-2016-011964"
+},
+{
+"key": "e_1_2_15_328_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.apmr.2016.09.104"
+},
+{
+"key": "e_1_2_15_329_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bjsports-2023-107598"
+},
+{
+"key": "e_1_2_15_330_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-023-00531-5"
+},
+{
+"key": "e_1_2_15_331_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/jocn.16819"
+},
+{
+"key": "e_1_2_15_332_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12911-022-02007-0"
+},
+{
+"key": "e_1_2_15_333_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-021-00299-6"
+},
+{
+"key": "e_1_2_15_334_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/S0140-6736(23)02075-5"
+},
+{
+"key": "e_1_2_15_335_1",
+"unstructured": "WHO International Classification of Diseases Eleventh Revision (ICD‐11)(World Health Organisation (WHO) 2019/2021)."
+},
+{
+"key": "e_1_2_15_336_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1007/s11606-012-2037-1"
+},
+{
+"key": "e_1_2_15_337_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1377/hlthaff.19.3.236"
+},
+{
+"key": "e_1_2_15_338_1",
+"unstructured": "SCPOR Patient‐Oriented Research Level of Engagement Tool [PORLET] (Saskatchewan Centre for Patient‐Oriented Research (SCPOR) 2019) https://www.scpor.ca/porlet."
+},
+{
+"key": "e_1_2_15_339_1",
+"unstructured": "CIHR Canadian Institutes of Health Research (CIHR): Strategy for Patient‐Oriented Research (SPOR) – Patient Engagement (2014)."
+},
+{
+"key": "e_1_2_15_340_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-020-00188-4"
+},
+{
+"key": "e_1_2_15_341_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-016-0643-1"
+},
+{
+"key": "e_1_2_15_342_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1093/intqhc/mzm042"
+},
+{
+"key": "e_1_2_15_343_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1111/hex.13470"
+},
+{
+"key": "e_1_2_15_344_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmj.r647"
+},
+{
+"key": "e_1_2_15_345_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1136/bmj-2024-082697"
+},
+{
+"key": "e_1_2_15_346_1",
+"unstructured": "NIHR Reporting Patient and Public involvement(National Institute for Health and Care Research [NIHR] 2024) https://www.journalslibrary.nihr.ac.uk/information-for-authors/manuscript-preparation/reporting-patient-and-public-involvement."
+},
+{
+"key": "e_1_2_15_347_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-024-00601-2"
+},
+{
+"key": "e_1_2_15_348_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13643-016-0379-1"
+},
+{
+"key": "e_1_2_15_349_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1016/j.jclinepi.2024.111574"
+},
+{
+"key": "e_1_2_15_350_1",
+"unstructured": "Cochrane Cochrane Framework for Engagement and Involvement of Patients Carers and the Public (2022) https://www.cochrane.org/about-us/news/cochrane-framework-engagement-and-involvement-patients-carers-and-public."
+},
+{
+"key": "e_1_2_15_351_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1371/journal.pmed.1003583"
+},
+{
+"key": "e_1_2_15_352_1",
+"unstructured": "PRISMA PRISMA Extensions (2025) https://www.prisma-statement.org/extensions."
+},
+{
+"key": "e_1_2_15_353_1",
+"unstructured": "(NISO) NISO CRediT Taxonomy (Contributor Roles Taxonomy) (2022)."
+},
+{
+"key": "e_1_2_15_354_1",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s40900-023-00433-6"
+}
+],
+"container-title": "Cochrane Evidence Synthesis and Methods",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cesm.70066",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/cesm.70066",
+"content-type": "application/xml",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cesm.70066",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+2,
+17
+]
+],
+"date-time": "2026-02-17T13:29:51Z",
+"timestamp": 1771334991000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://onlinelibrary.wiley.com/doi/10.1002/cesm.70066"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+1
+]
+]
+},
+"references-count": 353,
+"journal-issue": {
+"issue": "1",
+"published-print": {
+"date-parts": [
+[
+2026,
+1
+]
+]
+}
+},
+"alternative-id": [
+"10.1002/cesm.70066"
+],
+"URL": "http://dx.doi.org/10.1002/cesm.70066",
+"relation": {
+"has-review": [
+{
+"id-type": "doi",
+"id": "10.1002/CESM.70066/v1/decision1",
+"asserted-by": "object"
+},
+{
+"id-type": "doi",
+"id": "10.1002/CESM.70066/v1/review2",
+"asserted-by": "object"
+},
+{
+"id-type": "doi",
+"id": "10.1002/CESM.70066/v1/review1",
+"asserted-by": "object"
+},
+{
+"id-type": "doi",
+"id": "10.1002/CESM.70066/v2/response1",
+"asserted-by": "object"
+},
+{
+"id-type": "doi",
+"id": "10.1002/CESM.70066/v2/decision1",
+"asserted-by": "object"
+}
+]
+},
+"ISSN": [
+"2832-9023",
+"2832-9023"
+],
+"subject": [],
+"container-title-short": "Cochrane Evidence Synthesis and Methods",
+"published": {
+"date-parts": [
+[
+2026,
+1
+]
+]
+},
+"assertion": [
+{
+"value": "2025-06-18",
+"order": 0,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "publication_history",
+"label": "Publication History"
+}
+},
+{
+"value": "2025-12-15",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "publication_history",
+"label": "Publication History"
+}
+},
+{
+"value": "2026-01-15",
+"order": 3,
+"name": "published",
+"label": "Published",
+"group": {
+"name": "publication_history",
+"label": "Publication History"
+}
+}
+],
+"article-number": "e70066"
+},
+"pmid:39312602": {
+"indexed": {
+"date-parts": [
+[
+2026,
+9,
+1
+]
+],
+"date-time": "2026-09-01T14:58:17Z",
+"timestamp": 1788274697759,
+"version": "build-2803163510"
+},
+"publisher-location": "Washington, D.C.",
+"reference-count": 0,
+"publisher": "National Academies Press",
+"isbn-type": [
+{
+"value": "9780309718325",
+"type": "print"
+}
+],
+"content-domain": {
+"domain": [],
+"crossmark-restriction": false
+},
+"published-print": {
+"date-parts": [
+[
+2024,
+8,
+16
+]
+]
+},
+"DOI": "10.17226/27746",
+"type": "edited-book",
+"created": {
+"date-parts": [
+[
+2024,
+4,
+16
+]
+],
+"date-time": "2024-04-16T11:15:42Z",
+"timestamp": 1713266142000
+},
+"source": "Crossref",
+"is-referenced-by-count": 4,
+"title": "Evidence Review of the Adverse Effects of COVID-19 Vaccination and Intramuscular Vaccine Administration",
+"prefix": "10.17226",
+"author": [
+{
+"name": "Committee to Review Relevant Literature Regarding Adverse Events Associated with Vaccines",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"name": "Board on Population Health and Public Health Practice",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"name": "Health and Medicine Division",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"name": "National Academies of Sciences, Engineering, and Medicine",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "6987",
+"container-title": [],
+"original-title": [],
+"deposited": {
+"date-parts": [
+[
+2025,
+12,
+9
+]
+],
+"date-time": "2025-12-09T15:23:19Z",
+"timestamp": 1765293799000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://www.nationalacademies.org/publications/27746"
+}
+},
+"subtitle": [],
+"editor": [
+{
+"given": "Anne R.",
+"family": "Bass",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "editor"
+}
+]
+},
+{
+"given": "Kathleen",
+"family": "Stratton",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "editor"
+}
+]
+},
+{
+"given": "Ogan K.",
+"family": "Kumova",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "editor"
+}
+]
+},
+{
+"given": "Dara",
+"family": "Rosenberg",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "editor"
+}
+]
+}
+],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2024,
+8,
+16
+]
+]
+},
+"ISBN": [
+"9780309718325"
+],
+"references-count": 0,
+"URL": "http://dx.doi.org/10.17226/27746",
+"relation": {},
+"subject": [],
+"published": {
+"date-parts": [
+[
+2024,
+8,
+16
+]
+]
+}
 }
 }
