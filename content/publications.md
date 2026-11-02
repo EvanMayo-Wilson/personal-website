@@ -268,6 +268,9 @@ Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **T
 
 - [**Standards for design and measurement would make clinical research reproducible and usable**](https://doi.org/10.1073/pnas.1708273114)Dickersin K, **Mayo-Wilson E**. *Proc Natl Acad Sci U S A* 115(11):2590-2594. PMID: [29531086](https://pubmed.ncbi.nlm.nih.gov/29531086/).
 
+- [**The benefits and challenges of using multiple sources of information about clinical trials**](https://doi.org/10.25302/3.2018.ME.13035785)  
+Dickersin K, **Mayo-Wilson E**, Li T. *Patient-Centered Outcomes Research Institute* (peer reviewed final research report). PMID: [37043591](https://pubmed.ncbi.nlm.nih.gov/37043591/). [[Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z)]
+
 - [**CONSORT-SPI 2018 explanation and elaboration: Guidance for reporting social and psychological intervention trials**](https://doi.org/10.1186/s13063-018-2735-z)Grant SP, **Mayo-Wilson E**, Montgomery P, Macdonald G, Michie S, Hopewell S, Moher D on behalf of the CONSORT–SPI Group. *Trials* 19(1):406. PMID: [30060763](https://pubmed.ncbi.nlm.nih.gov/30060763/). [[Published protocol](https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-8-99); [ReShare archive includes data](http://reshare.ukdataservice.ac.uk/851981/)]
 
 - [**Caveat emptor: The combined effects of multiplicity and selective reporting**](https://doi.org/10.1186/s13063-018-2888-9)Li T, **Mayo-Wilson E**, Fusco N, Hong H, Dickersin K. *Trials* 19(1):497. PMID: [30223876](https://pubmed.ncbi.nlm.nih.gov/30223876/).
@@ -288,9 +291,6 @@ Appelbaum M, Cooper H, Kline RB, **Mayo-Wilson E**, Nezu AM, Rao SM. *Am Psychol
 - [**Multiple outcomes and analyses in clinical trials create challenges for interpretation and research synthesis**](https://doi.org/10.1016/j.jclinepi.2017.05.007)**Mayo-Wilson E**, Fusco N, Li T, Hong H, Canner JK, Dickersin K, for the MUDS Investigators. *J Clin Epidemiol* 86:39-50. PMID: [28529187](https://pubmed.ncbi.nlm.nih.gov/28529187/). [[Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z); [Dryad archive includes data and code](https://doi.org/10.5061/dryad.mp26fb1)]
 
 - [**The quality of systematic reviews about interventions for refractive error can be improved: A review of systematic reviews**](https://doi.org/10.1186/s12886-017-0561-9)**Mayo-Wilson E**, Ng SM, Chuck RS, Li T. *BMC Ophthalmol* 17(1):164. PMID: [28870179](https://pubmed.ncbi.nlm.nih.gov/28870179/). [Data included in [Additional file 1](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM1_ESM.docx), [Additional file 2](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM2_ESM.pdf), [Additional file 3](https://static-content.springer.com/esm/art%3A10.1186%2Fs12886-017-0561-9/MediaObjects/12886_2017_561_MOESM3_ESM.xlsx)]
-
-- [**The benefits and challenges of using multiple sources of information about clinical trials**](https://doi.org/10.25302/3.2018.ME.13035785)  
-Dickersin K, **Mayo-Wilson E**, Li T. *Patient-Centered Outcomes Research Institute* (peer reviewed final research report). PMID: [37043591](https://pubmed.ncbi.nlm.nih.gov/37043591/). [[Published protocol](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-015-0134-z)]
 
 - [**Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age**](https://doi.org/10.1002/14651858.CD008524.pub3)Imdad A, **Mayo-Wilson E**, Herzer K, Bhutta ZA. *Cochrane Database Syst Rev* 3:CD008524. PMID: [28282701](https://pubmed.ncbi.nlm.nih.gov/28282701/). [[Published protocol](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008524/full)]
 
