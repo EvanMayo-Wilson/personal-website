@@ -199,7 +199,7 @@ def offline(entries, exc, rep):
             rep.add("ERROR", e, "author punctuation (period after initials, or comma between surname and initials)")
         if "&" in a and "In " not in a:
             rep.add("ERROR", e, "“&” in author list")
-        if "Mayo-Wilson E" not in a and "(contributor)" not in a and "National Academies" not in a:
+        if e["journal"] and "Mayo-Wilson E" not in a and "(contributor)" not in a:
             rep.add("WARN", e, "Mayo-Wilson E not found in author list")
         if re.search(r"Mayo-W[A-Z]|\*\*Mayo-Wilson E[.,]\*\*", r):
             rep.add("ERROR", e, "Mayo-Wilson E misspelled or punctuation inside the bold")
