@@ -4,6 +4,31 @@ _Point-in-time snapshot for picking up mid-project. The durable, always-current
 reference is `CLAUDE.md`; if the two disagree, trust `CLAUDE.md` and treat this
 as stale._
 
+## 2026-11-04 — refresh from the 27 Oct–4 Nov work (READ FIRST)
+
+Doc-only refresh; no site change. Everything below is committed on `main`; tip at writing was
+`6d12490` (run `git log -1` for the current one). The daily stats commits are noise.
+
+- **Publications (27–30 Oct):** accuracy and style pass against PubMed/Crossref, six preprints
+  added (`719d310`); Handbook of Research Synthesis chapter (2019) and the NASEM 2022 letter report
+  added, Ninan 2026 noted as accepted at JAMA Netw Open (`6aad8ad`); Das 2026 published, JAMIA Open
+  9(5):ooag197, PMID 42960168, medRxiv preprint kept as a bracket link (`c886f33`).
+- **2 Nov:** MUDS PCORI report (PMID 37043591) moved from 2017 to 2018, its issue year (`3b9d5aa`).
+- **4 Nov:** Teaching page course code EDIP 720 -> EPID 702, on Evan's approval (`0cb6b83`).
+- **New checker:** `check_publications.py` (PubMed/Crossref accuracy plus house-style lint);
+  `--online` compares with PubMed. Deliberate deviations go in `content/citation-exceptions.json`
+  (NICE titles kept by Evan's decision, `489bee4`). The rules are in `CLAUDE.md` "Accuracy rules".
+- **Privacy page** for the AI Drive Retention OAuth app: noindex and unlinked (`cde8270`).
+- **Scholar stats:** the Mac Mini launchd job is the only scheduled writer; the Action is
+  manual-only (`40faaaa`, `a5add83`). Details in `CLAUDE.md`.
+- **Check at writing:** `python3 build.py` builds cleanly (159 publications, 21 years, 124 with
+  PMIDs); `check_publications.py` offline: 173 entries, 0 errors, 7 warnings (not triaged here).
+- **Still open:** update the Ninan 2026 entry once its JAMA Netw Open citation appears. The July
+  items below (PDFs for Cloudflare-blocked articles; EndNote references for the TOP statement and
+  the npj paper) are unchanged.
+
+---
+
 ## 2026-07-22 — post-migration cleanup (READ FIRST)
 
 Second session on this date, after the workspace move below. Deleted files that
