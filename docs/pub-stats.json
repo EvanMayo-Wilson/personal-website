@@ -172,7 +172,7 @@
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 1846,
+"citations": 1848,
 "pdf": "papers/10_2196_jmir_1923.pdf"
 },
 "pmid:23335473": {
@@ -277,7 +277,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2722,
+"citations": 2724,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -345,7 +345,7 @@
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1514,
+"citations": 1518,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -362,7 +362,7 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 332,
+"citations": 333,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
@@ -378,7 +378,7 @@
 "pdf": "papers/10_1037_amp0000370.pdf"
 },
 "pmid:30565151": {
-"citations": 217,
+"citations": 218,
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
@@ -425,27 +425,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5447,
+"citations": 5448,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 14549,
+"citations": 14564,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 12395,
+"citations": 12409,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 118965,
+"citations": 119202,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
 },
 "pmid:33789819": {
-"citations": 4421,
+"citations": 4422,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 12005,
+"citations": 12012,
 "pdf": "papers/10_1016_j_ijsu_2021_105906.pdf"
 },
 "pmid:34078479": {
@@ -521,11 +521,11 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 742,
+"citations": 744,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 289,
+"citations": 290,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
@@ -565,10 +565,11 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 140
+"citations": 140,
+"pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
-"citations": 86,
+"citations": 87,
 "pdf": "https://researchonline.lshtm.ac.uk/id/eprint/4671696/1/JAMA23-3692R_Merged_PDF.pdf"
 },
 "pmid:38051535": {
