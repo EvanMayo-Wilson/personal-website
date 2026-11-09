@@ -26,8 +26,8 @@ McKenzie JE, **Mayo-Wilson E**, Brennan SE, Hamilton DG, Takwoingi Y, Moher D, P
 - [**Study design indexing in transition: A focused comparison of manual NLM indexing versus transformer-based automated models**](https://doi.org/10.1093/jamiaopen/ooag197)  
 Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *JAMIA Open* 9(5):ooag197. PMID: [42960168](https://pubmed.ncbi.nlm.nih.gov/42960168/). [[Preprint on medRxiv](https://doi.org/10.64898/2026.06.03.26354854)]
 
-- [**Artificial intelligence tools for automating assessments of reporting guideline adherence: A protocol for a systematic review**](https://doi.org/10.12688/f1000research.179775.1)  
-Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.1](https://doi.org/10.12688/f1000research.179775.1).
+- [**Artificial intelligence tools for automating assessments of reporting guideline adherence: A protocol for a systematic review**](https://doi.org/10.12688/f1000research.179775.2)  
+Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.2](https://doi.org/10.12688/f1000research.179775.2).
 
 - [**Descriptive epidemiology of musculoskeletal injuries presenting to an embedded Holistic Health and Fitness (H2F) team in a United States Army Stryker Brigade, October 2021-September 2022**](https://doi.org/10.1093/milmed/usaf645)  
 Naylor JA, Jonsson Funk M, Ranapurwala SI, Canham-Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Mil Med* 191(9-10):e2057-e2065. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
@@ -352,6 +352,9 @@ Hofmann SG, Barlow DH, Clark DM, Hollon SD, **Mayo-Wilson E**. *Am J Psychiatry*
 
 - [**Centre-based day care for children younger than five years of age in low- and middle-income countries**](https://doi.org/10.1002/14651858.CD010543.pub2)  
 Brown TW, van Urk FC, Waller R, **Mayo-Wilson E**. *Cochrane Database Syst Rev* 9:CD010543. PMID: [25254354](https://pubmed.ncbi.nlm.nih.gov/25254354/). [[Published protocol](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010543/full)]
+
+- [**Centre-based day care for children younger than five years of age in high-income countries**](https://doi.org/10.1002/14651858.CD010544.pub2)  
+van Urk FC, Brown TW, Waller R, **Mayo-Wilson E**. *Cochrane Database Syst Rev* 9:CD010544. PMID: [25247266](https://pubmed.ncbi.nlm.nih.gov/25247266/). [[Published protocol](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010544/full)]
 
 - [**Home visits for prevention of impairment and death in older adults: A systematic review**](https://doi.org/10.4073/csr.2014.3)Grant SP, Parsons A, Burton J, Montgomery P, Underhill K, **Mayo-Wilson E**. *Campbell Syst Rev* 10(1). DOI: [10.4073/csr.2014.3](https://doi.org/10.4073/csr.2014.3). [[Published protocol](https://onlinelibrary.wiley.com/doi/10.1002/CL2.26)]
 
