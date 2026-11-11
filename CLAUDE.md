@@ -8,7 +8,7 @@ It replaced a paid Squarespace site.
 
 - **All content lives in `content/*.md`** — never edit the HTML directly.
   - `content/profile.md` — name, photo, header profile links, email
-  - `content/bio.md` — the two-sentence bio
+  - `content/bio.md` — the bio: the middle-length bioblurb in first person (Evan, 2026-11-11; source cv-and-biosketch Bioblurb)
   - `content/research.md`, `teaching.md`, `service.md`
   - `content/publications.md` — every publication, grouped by `## YEAR`
   - `content/dois.tsv` — DOI overrides for articles whose DOI isn't in the URL
