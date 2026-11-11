@@ -86,6 +86,7 @@ pull causes a rejected push.
   `content/csl-extra.json` instead, keyed by its URL (or exact title if it has
   no link) — that's what feeds its citation-download formats since there's
   nothing to look up automatically.
+- **CV** (Evan, 2026-11-11): `docs/cv.pdf` is the LibreOffice PDF of cv-and-biosketch's clean `CV public_<date>.docx`; the nav "CV" links go to `docs/cv/index.html`, a self-hosted PDF.js viewer (vendored `docs/vendor/pdfjs-dist-4.10.38/`, Apache-2.0, npm tarball integrity-checked; no build step) that opens every link inside the CV in a new tab. build.py does not generate either; leave them in place.
 - Every outbound link opens in a new tab automatically (site-wide behavior,
   not something to add per-link).
 - PMID is written `PMID: [12345678](https://pubmed.ncbi.nlm.nih.gov/12345678/).`

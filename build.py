@@ -1266,7 +1266,7 @@ PAGE = """<!DOCTYPE html>
     <a class="navlink" href="#teaching">Teaching</a>
     <a class="navlink" href="#service">Service</a>
     <a class="navlink" href="#publications">Publications</a>
-    <a class="navlink" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="navlink" href="cv/" target="_blank" rel="noopener">CV</a>
     <span class="spacer"></span>
     <button id="theme" type="button" aria-pressed="false"
             aria-label="Switch to dark theme" title="Switch theme">
@@ -1288,7 +1288,7 @@ PAGE = """<!DOCTYPE html>
 <main id="main" class="shell">
 
   <nav class="mobilenav" aria-label="Sections">
-    <a href="#top">Research</a><span class="sep" aria-hidden="true">·</span><a href="#teaching">Teaching</a><span class="sep" aria-hidden="true">·</span><a href="#service">Service</a><span class="sep" aria-hidden="true">·</span><a href="#publications">Publications</a><span class="sep" aria-hidden="true">·</span><a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="#top">Research</a><span class="sep" aria-hidden="true">·</span><a href="#teaching">Teaching</a><span class="sep" aria-hidden="true">·</span><a href="#service">Service</a><span class="sep" aria-hidden="true">·</span><a href="#publications">Publications</a><span class="sep" aria-hidden="true">·</span><a href="cv/" target="_blank" rel="noopener">CV</a>
   </nav>
 
   <div class="hero">

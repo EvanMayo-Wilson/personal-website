@@ -177,8 +177,6 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
 - [**Open and transparent sports science research: The role of journals to move the field forward**](https://doi.org/10.1007/s00167-022-06893-9)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Knee Surg Sports Traumatol Arthrosc* 30(11):3599-3601. PMID: [35092443](https://pubmed.ncbi.nlm.nih.gov/35092443/).
 
-- [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://doi.org/10.1016/j.jsams.2021.08.004)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *J Sci Med Sport* 25(2):192-194. PMID: [34474960](https://pubmed.ncbi.nlm.nih.gov/34474960/).
-
 - [**Letter report on review of Department of Veterans Affairs monograph on the economic impact and cost effectiveness of service dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26353)National Academies of Sciences, Engineering, and Medicine. Washington, DC: The National Academies Press. DOI: [10.17226/26353](https://doi.org/10.17226/26353).
 
 ## 2021
@@ -224,7 +222,11 @@ Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L,
 
 - [**Letter report on review of Department of Veterans Affairs monograph on potential therapeutic effects of service and emotional support dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26039)National Academies of Sciences, Engineering, and Medicine. Washington, DC: The National Academies Press. DOI: [10.17226/26039](https://doi.org/10.17226/26039).
 
-- [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://doi.org/10.1016/j.arthro.2021.09.005)  
+- [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://doi.org/10.1016/j.jsams.2021.08.004)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *J Sci Med Sport* 25(2):192-194. PMID: [34474960](https://pubmed.ncbi.nlm.nih.gov/34474960/).
+
+  This article was published simultaneously in:
+
+  - [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://doi.org/10.1016/j.arthro.2021.09.005)  
 Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Arthroscopy* 37(11):3223-3225. PMID: [34740399](https://pubmed.ncbi.nlm.nih.gov/34740399/).
 
 ## 2020
