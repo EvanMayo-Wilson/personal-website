@@ -13,6 +13,16 @@
 
 - [American Psychological Association Open Science and Methodology Expert Panel](https://www.apa.org/about/governance/bdcmte/science)
 
+- JBI Evidence Synthesis Taxonomy Initiative Executive Committee
+
+- MRC-NIHR Trials Methodology Research Partnership (TMRP) Adverse Events in Clinical Trials Working Group
+
+- Summer Institute on Randomized Behavioral Clinical Trials Steering Committee
+
+- Cochrane Evidence Synthesis and Methods, Editorial Board Member
+
+- Journal of Clinical Epidemiology, Editorial Board Member
+
 ## Previous
 
 - National Academies of Sciences, Engineering, and Medicine (NASEM) committees
@@ -23,7 +33,7 @@
 
     * Review of Department of Veterans Affairs monograph (No. 1) on potential effects of service and emotional support dogs on post-traumatic stress disorder (therapeutic effects)
 
-- Transparency and Openness Promotion (TOP) Guidelines Advisory Panel
+- Transparency and Openness Promotion (TOP) Guidelines Advisory Committee
 
 - American Psychological Association (APA) Advisory Steering Committee for Development of Clinical Practice Guidelines
 

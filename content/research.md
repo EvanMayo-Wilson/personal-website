@@ -12,7 +12,7 @@ Objective: Develop automated methods to identify methods described in reports of
 
 ## Previous support
 
-- Agency for Health Care Research and Quality (AHRQ)
+- Agency for Healthcare Research and Quality (AHRQ)
 - Arnold Ventures (Laura and John Arnold Foundation)
 - Economic and Social Research Council, UK (ESRC)
 - National Institute for Health and Care Excellence, UK (NICE)

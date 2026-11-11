@@ -177,7 +177,7 @@ Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psych
 
 - [**Open and transparent sports science research: The role of journals to move the field forward**](https://doi.org/10.1007/s00167-022-06893-9)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *Knee Surg Sports Traumatol Arthrosc* 30(11):3599-3601. PMID: [35092443](https://pubmed.ncbi.nlm.nih.gov/35092443/).
 
-- [**Letter report on review of Department of Veterans Affairs monograph on the economic impact and cost effectiveness of service dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26353)National Academies of Sciences, Engineering, and Medicine. Washington DC: The National Academies Press. DOI: [10.17226/26353](https://doi.org/10.17226/26353).
+- [**Letter report on review of Department of Veterans Affairs monograph on the economic impact and cost effectiveness of service dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26353)National Academies of Sciences, Engineering, and Medicine. Washington, DC: The National Academies Press. DOI: [10.17226/26353](https://doi.org/10.17226/26353).
 
 ## 2021
 
@@ -220,7 +220,7 @@ Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L,
 
 - [**PRISMA 2020 explanation and elaboration: Updated guidance and exemplars for reporting systematic reviews**](https://doi.org/10.1136/bmj.n160)Page MJ, Moher D, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, **Mayo-Wilson E**, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, McKenzie JE. *BMJ* 372:n160. PMID: [33781993](https://pubmed.ncbi.nlm.nih.gov/33781993/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/gwdhk/)]
 
-- [**Letter report on review of Department of Veterans Affairs monograph on potential therapeutic effects of service and emotional support dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26039)National Academies of Sciences, Engineering, and Medicine. Washington DC: The National Academies Press. DOI: [10.17226/26039](https://doi.org/10.17226/26039).
+- [**Letter report on review of Department of Veterans Affairs monograph on potential therapeutic effects of service and emotional support dogs on veterans with post traumatic stress disorder**](https://doi.org/10.17226/26039)National Academies of Sciences, Engineering, and Medicine. Washington, DC: The National Academies Press. DOI: [10.17226/26039](https://doi.org/10.17226/26039).
 
 - [**Evaluation of journal policies to increase promotion of transparency and openness in sport science research**](https://doi.org/10.1016/j.jsams.2021.08.004)Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **TOP Sport Science Collaborators (contributor)**. *J Sci Med Sport* 25(2):192-194. PMID: [34474960](https://pubmed.ncbi.nlm.nih.gov/34474960/).
 
@@ -282,7 +282,7 @@ Dickersin K, **Mayo-Wilson E**, Li T. *Patient-Centered Outcomes Research Instit
 - [**Intent of reporting standards: Reply to Rossiter (2018)**](https://doi.org/10.1037/amp0000370)  
 Appelbaum M, Cooper H, Kline RB, **Mayo-Wilson E**, Nezu AM, Rao SM. *Am Psychol* 73(7):932. PMID: [30284892](https://pubmed.ncbi.nlm.nih.gov/30284892/).
 
-- [**Making science transparent by default: Introducing the TOP statement**](https://doi.org/10.17605/OSF.IO/SM78T)Aalbersberg I, Appleyard T, Brookhart S, Carpenter T, Clarke M, Curry S, Dahl J, DeHaven A, Eich E, Franko M, Freedman L, Graf C, Grant S, Hanson B, Joseph H, Kiermer V, Kramer B, Kraut A, Karn RK, Lee C, MacFarlane A, Martone M, **Mayo-Wilson E (order of authorship is alphabetical)**, McNutt M, McPhail M, Mellor D, Moher D, Mudditt A, Nosek B, Orland B, Parker T, Parsons M, Patterson M, Santos S, Shore C, Simons D, Spellman B, Spies J, Spitzer M, Stodden V, Swaminathan S, Sweet D, Tsui A, Vazire S. *OSF Preprints*. DOI: [10.17605/OSF.IO/SM78T](https://doi.org/10.17605/OSF.IO/SM78T).
+- [**Making science transparent by default; introducing the TOP statement**](https://doi.org/10.17605/OSF.IO/SM78T)Aalbersberg I, Appleyard T, Brookhart S, Carpenter T, Clarke M, Curry S, Dahl J, DeHaven A, Eich E, Franko M, Freedman L, Graf C, Grant S, Hanson B, Joseph H, Kiermer V, Kramer B, Kraut A, Karn RK, Lee C, MacFarlane A, Martone M, **Mayo-Wilson E (order of authorship is alphabetical)**, McNutt M, McPhail M, Mellor D, Moher D, Mudditt A, Nosek B, Orland B, Parker T, Parsons M, Patterson M, Santos S, Shore C, Simons D, Spellman B, Spies J, Spitzer M, Stodden V, Swaminathan S, Sweet D, Tsui A, Vazire S. *OSF Preprints*. DOI: [10.17605/OSF.IO/SM78T](https://doi.org/10.17605/OSF.IO/SM78T).
 
 ## 2017
 
@@ -365,6 +365,9 @@ van Urk FC, Brown TW, Waller R, **Mayo-Wilson E**. *Cochrane Database Syst Rev* 
 - [**Bipolar disorder: The assessment and management of bipolar disorder in adults, children and young people in primary and secondary care**](https://www.nice.org.uk/guidance/cg185/evidence)  
 Morriss R, Kendall T, Braidwood R, Byng R, Cipriani A, James A, John C, Jones S, Legett K, Marcus E, Mavranezouli I, **Mayo-Wilson E**, McDougall T, Meyer T, Paton C, Stockton S, Schwannauer M, Swinden D, Taylor C, Westhead R, Whittington C, Wilson F. *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London. PMID: [29718639](https://pubmed.ncbi.nlm.nih.gov/29718639/).
 
+- [**Psychosis and schizophrenia in adults: The NICE guideline on the treatment and management of psychosis and schizophrenia in adults**](https://www.nice.org.uk/guidance/cg178/evidence)  
+Kuipers E, Kendall T, Yesufu-Udechuku A, Slade E, Birchwood M, Brabban A, Cheema N, Green D, Harrison B, Iqbal Z, Johnson S, Marshall M, **Mayo-Wilson E**, Mitchell J, Morrison T, Moulin M, Shiers D, Stockton S, Taylor C, Travis C, Waddingham R, Woodhams P, Young N. *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London. PMID: [25340235](https://pubmed.ncbi.nlm.nih.gov/25340235/).
+
 ## 2013
 
 - [**Media-delivered cognitive behavioural therapy and behavioural therapy (self-help) for anxiety disorders in adults**](https://doi.org/10.1002/14651858.CD005330.pub4)  
@@ -417,9 +420,6 @@ Strang H, Sherman LW, **Mayo-Wilson E**, Woods DJ, Ariel B. *Campbell Syst Rev* 
 
 - [**Social anxiety disorder: The NICE guideline on the recognition, assessment and treatment of social anxiety disorder**](https://www.nice.org.uk/guidance/cg159/evidence)  
 Clark DM, Pilling S, **Mayo-Wilson E**, Mavranezouli I, Afghan S, Anigbogu B, Armstrong P, Bennett M, Cartwright-Hatton S, Creswell C, Dix M, Hanlon N, Kew K, Leggett K, Malizia A, Roberts J, Satrettin K, Smith M, Stephens G, Stopa L, Stockton S, Taylor C, Whittington C. *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London. PMID: [25577940](https://pubmed.ncbi.nlm.nih.gov/25577940/).
-
-- [**Psychosis and schizophrenia in adults: The NICE guideline on the treatment and management of psychosis and schizophrenia in adults**](https://www.nice.org.uk/guidance/cg178/evidence)  
-Kuipers E, Kendall T, Yesufu-Udechuku A, Slade E, Birchwood M, Brabban A, Cheema N, Green D, Harrison B, Iqbal Z, Johnson S, Marshall M, **Mayo-Wilson E**, Mitchell J, Morrison T, Moulin M, Shiers D, Stockton S, Taylor C, Travis C, Waddingham R, Woodhams P, Young N. *National Collaborating Centre for Mental Health*. Royal College of Psychiatrists: London. PMID: [25340235](https://pubmed.ncbi.nlm.nih.gov/25340235/).
 
 ## 2012
 

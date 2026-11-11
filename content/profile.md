@@ -1,4 +1,4 @@
-# Evan Mayo-Wilson, MPA, DPhil
+# Evan Mayo-Wilson, DPhil, MPA
 
 ![Evan Mayo-Wilson](images/Square_Headshot.jpg)
 
