@@ -89,6 +89,9 @@ Li T, **Mayo-Wilson E**, Shaughnessy D, Qureshi R. *Trials* 25(1):403. PMID: [38
 - [**Development and evaluation of a framework for identifying and addressing spin for harms in systematic reviews of interventions**](https://doi.org/10.7326/M24-0771)  
 Qureshi R, Naaman K, Quan NG, **Mayo-Wilson E**, Page MJ, Cornelius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. *Ann Intern Med* 177(8):1089-1098. PMID: [39008854](https://pubmed.ncbi.nlm.nih.gov/39008854/).
 
+- [**Protocol for the development of the preferred reporting items for systematic reviews and meta-analysis of prognostic factor studies (PRISMA-PF) checklist**](https://osf.io/qxke2)  
+Damen JAA, Snell KIE, Archer LA, Dhiman P, Trivella M, **Mayo-Wilson E**, Reitsma JB, Riley RD, Collins GS, Hooft L, Moons KGM. *OSF*.
+
 - [**Proposal to develop a clinical practice guideline on emotion regulation: Final report**](https://doi.org/10.31234/osf.io/g627d)  
 Muran JC, Teachman B, Aldao A, Ehrenreich-May J, Fonagy P, Greenberg L, Gross J, Magnavita J, **Mayo-Wilson E**, McMain S, Soto JA, Bufka L, Halfond R, Kurtzman H, Marzalik J. *PsyArXiv*. DOI: [10.31234/osf.io/g627d](https://doi.org/10.31234/osf.io/g627d).
 
