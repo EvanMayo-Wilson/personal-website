@@ -33,11 +33,11 @@
   <a class="title" href="../">Evan Mayo-Wilson</a>
   <button id="zoomOut" type="button" aria-label="Zoom out">−</button>
   <button id="zoomIn" type="button" aria-label="Zoom in">+</button>
-  <a href="../cv.pdf" download="Mayo-Wilson_CV.pdf">Download PDF</a>
+  <a href="../cv.pdf?v=bd9892f2a6" download="Mayo-Wilson_CV.pdf">Download PDF</a>
 </header>
 <div id="viewerContainer" tabindex="0" role="region" aria-label="CV">
   <div id="viewer" class="pdfViewer"></div>
-  <p id="status" role="status" aria-live="polite">Loading CV… If it does not appear, <a href="../cv.pdf">open the PDF</a>.</p>
+  <p id="status" role="status" aria-live="polite">Loading CV… If it does not appear, <a href="../cv.pdf?v=bd9892f2a6">open the PDF</a>.</p>
 </div>
 <script type="module">
   // Self-hosted PDF.js viewer (pdfjs-dist 4.10.38, Apache-2.0; see ../vendor/pdfjs-dist-4.10.38/LICENSE).
@@ -54,12 +54,12 @@
   linkService.setViewer(viewer);
   eventBus.on("pagesinit", () => { viewer.currentScaleValue = window.innerWidth < 700 ? "page-width" : "auto"; });
   try {
-    const doc = await pdfjsLib.getDocument({ url: "../cv.pdf" }).promise;
+    const doc = await pdfjsLib.getDocument({ url: "../cv.pdf?v=bd9892f2a6" }).promise;
     document.getElementById("status").remove();
     viewer.setDocument(doc); linkService.setDocument(doc, null);
   } catch (e) {
     document.getElementById("status").textContent = "The CV could not be displayed here. ";
-    const a = document.createElement("a"); a.href = "../cv.pdf"; a.textContent = "Open the PDF";
+    const a = document.createElement("a"); a.href = "../cv.pdf?v=bd9892f2a6"; a.textContent = "Open the PDF";
     document.getElementById("status").append(a);
   }
   const step = f => { viewer.currentScale = Math.min(4, Math.max(0.4, viewer.currentScale * f)); };
