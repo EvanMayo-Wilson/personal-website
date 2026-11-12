@@ -170,7 +170,15 @@ pull causes a rejected push.
    optional, since both have live client-side fallbacks, but running them is
    what keeps the Cite button, the PDF button, and "Sort by Citations" instant
    for the new entry instead of waiting a day for the scheduled Actions.
-7. Commit and push.
+   **Run them; they are not optional** (Evan, 2026-11-12).
+7. **Check the new entry has a PDF button.** If not, find a legal free copy
+   (preprint bracket link, OSF/repository file, or `docs/papers/` from his
+   EndNote library, below). An entry with no PMID/DOI is a
+   `content/csl-extra.json` record and never gets a PDF from the resolver:
+   put its direct PDF URL under that file's `"_pdf"` map (build.py renders
+   it; `check_publications.py --online` verifies it is a real PDF).
+8. Add any data, code or materials links as trailing bracket links.
+9. Commit and push.
 
 The weekly Friday publication-record check (scheduled task
 `publication-record-weekly`, procedure in Drive

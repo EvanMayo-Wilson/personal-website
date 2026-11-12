@@ -13,15 +13,7 @@
 
 - [American Psychological Association Open Science and Methodology Expert Panel](https://www.apa.org/about/governance/bdcmte/science)
 
-- JBI Evidence Synthesis Taxonomy Initiative Executive Committee
-
-- MRC-NIHR Trials Methodology Research Partnership (TMRP) Adverse Events in Clinical Trials Working Group
-
-- Summer Institute on Randomized Behavioral Clinical Trials Steering Committee
-
-- Cochrane Evidence Synthesis and Methods, Editorial Board Member
-
-- Journal of Clinical Epidemiology, Editorial Board Member
+- [Summer Institute on Randomized Behavioral Clinical Trials](https://web.cvent.com/event/19906c19-dcf2-4bcf-812d-3531301d6f8d/summary) Steering Committee
 
 ## Previous
 

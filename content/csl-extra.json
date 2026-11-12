@@ -8,8 +8,15 @@
     "exact title if the entry has no link at all.",
     "",
     "These records feed the RIS / BibTeX / EndNote / CSL-JSON downloads directly;",
-    "they are embedded in the page, so no network request is made for them."
+    "they are embedded in the page, so no network request is made for them.",
+    "",
+    "\"_pdf\" maps a record key to a direct full-text PDF URL, shown as the PDF",
+    "button (build.py checks each returns a real PDF before trusting it)."
   ],
+
+  "_pdf": {
+    "https://osf.io/qxke2": "https://osf.io/download/qxke2/"
+  },
 
   "https://global.oup.com/academic/product/social-workers-desk-reference-9780199329649?cc=us&lang=en&q=Social%20Workers%E2%80%99%20Desk%20Reference%20third%20edition": {
     "type": "chapter",

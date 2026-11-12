@@ -294,6 +294,24 @@ def online(entries, exc, rep):
         time.sleep(0.35)
 
 
+def check_extra_pdfs(rep):
+    """Every content/csl-extra.json "_pdf" URL must still return a real PDF."""
+    path = PUBS.parent / "csl-extra.json"
+    if not path.exists():
+        return
+    for key, url in json.loads(path.read_text(encoding="utf-8")).get("_pdf", {}).items():
+        e = {"line": 0, "year": "", "title": key}
+        try:
+            req = urllib.request.Request(url, headers={**UA, "Range": "bytes=0-7"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                head = r.read(8)
+        except Exception as ex:  # noqa: BLE001
+            rep.add("ERROR", e, f"csl-extra _pdf unreachable: {url} ({ex})")
+            continue
+        if not head.startswith(b"%PDF-"):
+            rep.add("ERROR", e, f"csl-extra _pdf is not a PDF: {url}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--online", action="store_true", help="also compare with PubMed/Crossref (network)")
@@ -310,6 +328,7 @@ def main():
     offline(entries, exc, rep)
     if a.online:
         online(entries, exc, rep)
+        check_extra_pdfs(rep)
     for it in sorted(rep.items, key=lambda x: (x["level"] != "ERROR", x["line"])):
         if a.quiet and it["level"] != "ERROR":
             continue

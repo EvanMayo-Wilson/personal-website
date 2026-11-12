@@ -248,8 +248,9 @@
   .plinks { padding-top: 1rem; }
   /* Under the photo: one link per line, no separators. */
   .plinks a { white-space: nowrap; }
-  .plinks .plink { font-size: .875rem; line-height: 1.45; margin: 0 0 .45rem; }
-  .plinks .sep-list { display: flex; flex-direction: column; gap: .1rem; }
+  .plinks .plink { font-size: .875rem; line-height: 1.45; margin: 0 0 .3rem; }
+  .plinks .sep-list { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; }
+  .plinks a { display: block; width: fit-content; }
   .plinks .sep-list .sep { display: none; }
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
@@ -678,6 +679,7 @@
     .plinks { grid-area: links; padding-top: 0; }
     /* Full width on phones: back to one "A | B | C | D" line. */
     .plinks .sep-list { display: inline; }
+    .plinks a { display: inline; }
     .plinks .sep-list .sep { display: inline; }
     .hero-photo-mobile {
       display: block; grid-area: photo;
@@ -760,7 +762,7 @@
     <h1>Evan Mayo-Wilson, DPhil, MPA</h1>
     <div class="hero-body">
       <div class="bio"><p>I am an Associate Professor in the Department of Epidemiology at the UNC Gillings School of Global Public Health.</p>
-<p>My research focuses on the benefits and harms of health interventions, artificial intelligence to assess and improve clinical trials and systematic reviews, and reporting standards that increase research transparency and openness. I am a principal investigator on two R01s, from the National Library of Medicine (NLM) and the Agency for Healthcare Research and Quality (AHRQ), that use artificial intelligence to extract and compare the methods and results of intervention research. I also serve as Co-Scientific Director for peer review of Patient-Centered Outcomes Research Institute (PCORI) Final Research Reports. I am a member of the Cochrane Methods Executive, Associate Convenor of the Cochrane Adverse Events Methods Group, and member of the American Psychological Association Open Science and Methodology Expert Panel. I have authored multiple guidelines for reporting clinical trials and systematic reviews, and I am one of five members of the PRISMA Executive, which is responsible for maintaining guidelines for reporting systematic reviews. In 2025, Nature ranked PRISMA 2020, which I co-authored, among the 25 most-cited papers of the twenty-first century.</p></div>
+<p>My research focuses on the benefits and harms of health interventions, artificial intelligence to assess and improve clinical trials and systematic reviews, and reporting standards that increase research transparency and openness. I am a principal investigator on studies that use artificial intelligence to extract and compare the methods and results of intervention research. I also serve as Co-Scientific Director for peer review of Patient-Centered Outcomes Research Institute (PCORI) Final Research Reports. I am a member of the Cochrane Methods Executive, Associate Convenor of the Cochrane Adverse Events Methods Group, and member of the American Psychological Association Open Science and Methodology Expert Panel. I have authored multiple guidelines for reporting clinical trials and systematic reviews, and I am one of five members of the PRISMA Executive, which is responsible for maintaining guidelines for reporting systematic reviews. In 2025, Nature ranked PRISMA 2020 among the 25 most-cited papers of the twenty-first century.</p></div>
     </div>
   </div>
 
@@ -787,7 +789,7 @@
   <section id="teaching" aria-labelledby="h-teaching">
     <h2 id="h-teaching">Teaching</h2>
     <p>I advise PhD students in epidemiology. I welcome students interested in the program to <a href="mailto:evan.mayo-wilson@unc.edu">email me</a>.</p>
-<p>I teach Systematic Review (EPID 702) in the Spring semester. In the Fall semester, I teach the Pharmacoepidemiology Seminar (EPID 893) and am a small group instructor for Epidemiologic Research Methods (EPID 726). I also teach at the <a target="_blank" rel="noopener noreferrer" href="https://web.cvent.com/event/cde55e9e-75c3-4714-930f-2adb5b9011f2/summary">Summer Institute on Randomized Behavioral Clinical Trials</a> (sponsored by NIH).</p>
+<p>I teach Systematic Review (EPID 702) in the Spring semester. In the Fall semester, I teach the Pharmacoepidemiology Seminar (EPID 893) and am a small group instructor for Epidemiologic Research Methods (EPID 726). I also teach at the <a target="_blank" rel="noopener noreferrer" href="https://web.cvent.com/event/19906c19-dcf2-4bcf-812d-3531301d6f8d/summary">Summer Institute on Randomized Behavioral Clinical Trials</a> (sponsored by NIH).</p>
   </section>
 
   <section id="service" aria-labelledby="h-service">
@@ -811,19 +813,7 @@
 <p><a target="_blank" rel="noopener noreferrer" href="https://www.apa.org/about/governance/bdcmte/science">American Psychological Association Open Science and Methodology Expert Panel</a></p>
 </li>
 <li>
-<p>JBI Evidence Synthesis Taxonomy Initiative Executive Committee</p>
-</li>
-<li>
-<p>MRC-NIHR Trials Methodology Research Partnership (TMRP) Adverse Events in Clinical Trials Working Group</p>
-</li>
-<li>
-<p>Summer Institute on Randomized Behavioral Clinical Trials Steering Committee</p>
-</li>
-<li>
-<p>Cochrane Evidence Synthesis and Methods, Editorial Board Member</p>
-</li>
-<li>
-<p>Journal of Clinical Epidemiology, Editorial Board Member</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://web.cvent.com/event/19906c19-dcf2-4bcf-812d-3531301d6f8d/summary">Summer Institute on Randomized Behavioral Clinical Trials</a> Steering Committee</p>
 </li>
 </ul>
 <h3>Previous</h3>
@@ -940,7 +930,7 @@
 <li class="pub"><span class="cite-col"><a class="oa-pdf" data-pmid="38190185" href="#" target="_blank" rel="noopener noreferrer" data-name="Vorland_et_al_2024_Publication_of_results_of_registered_trials" title="Open free full text in a new tab" aria-label="Open free full text in a new tab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-pmid="38190185" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1001/jamanetworkopen.2023.50688"><strong>Publication of results of registered trials with published study protocols, 2011-2022</strong></a>Vorland CJ, Brown AW, Kilicoglu H, Ying X, <strong>Mayo-Wilson E</strong>. <em>JAMA Netw Open</em> 7(1):e2350688. PMID: <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38190185/">38190185</a>. [<a target="_blank" rel="noopener noreferrer" href="https://osf.io/rkq3n/">OSF archive includes data and code</a>]</p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-pmid="38190185" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-pmid="38190185"></span></span></div></li>
 <li class="pub"><span class="cite-col"><a class="oa-pdf" data-pmid="38902776" href="#" target="_blank" rel="noopener noreferrer" data-name="Li_et_al_2024_Studying_harms_of_interventions_with_an" title="Open free full text in a new tab" aria-label="Open free full text in a new tab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-pmid="38902776" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1186/s13063-024-08239-x"><strong>Studying harms of interventions with an equity lens in randomized trials</strong></a>Li T, <strong>Mayo-Wilson E</strong>, Shaughnessy D, Qureshi R. <em>Trials</em> 25(1):403. PMID: <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38902776/">38902776</a>.</p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-pmid="38902776" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-pmid="38902776"></span></span></div></li>
 <li class="pub"><span class="cite-col"><a class="oa-pdf" data-pmid="39008854" href="#" target="_blank" rel="noopener noreferrer" data-name="Qureshi_et_al_2024_Development_and_evaluation_of_a_framework" title="Open free full text in a new tab" aria-label="Open free full text in a new tab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-pmid="39008854" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.7326/M24-0771"><strong>Development and evaluation of a framework for identifying and addressing spin for harms in systematic reviews of interventions</strong></a>Qureshi R, Naaman K, Quan NG, <strong>Mayo-Wilson E</strong>, Page MJ, Cornelius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. <em>Ann Intern Med</em> 177(8):1089-1098. PMID: <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39008854/">39008854</a>.</p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-pmid="39008854" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-pmid="39008854"></span></span></div></li>
-<li class="pub"><span class="cite-col"><span class="oa-empty"></span><input type="checkbox" class="pub-select" data-csl="https://osf.io/qxke2" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://osf.io/qxke2"><strong>Protocol for the development of the preferred reporting items for systematic reviews and meta-analysis of prognostic factor studies (PRISMA-PF) checklist</strong></a>Damen JAA, Snell KIE, Archer LA, Dhiman P, Trivella M, <strong>Mayo-Wilson E</strong>, Reitsma JB, Riley RD, Collins GS, Hooft L, Moons KGM. <em>OSF</em>.</p></div><div class="metrics"><span class="slot"></span><span class="slot"></span></div></li>
+<li class="pub"><span class="cite-col"><a class="oa-pdf oa-static" href="https://osf.io/download/qxke2/" target="_blank" rel="noopener noreferrer" title="Open free full text in a new tab" aria-label="Open free full text in a new tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-csl="https://osf.io/qxke2" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://osf.io/qxke2"><strong>Protocol for the development of the preferred reporting items for systematic reviews and meta-analysis of prognostic factor studies (PRISMA-PF) checklist</strong></a>Damen JAA, Snell KIE, Archer LA, Dhiman P, Trivella M, <strong>Mayo-Wilson E</strong>, Reitsma JB, Riley RD, Collins GS, Hooft L, Moons KGM. <em>OSF</em>.</p></div><div class="metrics"><span class="slot"></span><span class="slot"></span></div></li>
 <li class="pub"><span class="cite-col"><a class="oa-pdf" data-doi="10.31234/osf.io/g627d" href="#" target="_blank" rel="noopener noreferrer" data-name="Muran_et_al_2024_Proposal_to_develop_a_clinical_practice" title="Open free full text in a new tab" aria-label="Open free full text in a new tab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-doi="10.31234/osf.io/g627d" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.31234/osf.io/g627d"><strong>Proposal to develop a clinical practice guideline on emotion regulation: Final report</strong></a>Muran JC, Teachman B, Aldao A, Ehrenreich-May J, Fonagy P, Greenberg L, Gross J, Magnavita J, <strong>Mayo-Wilson E</strong>, McMain S, Soto JA, Bufka L, Halfond R, Kurtzman H, Marzalik J. <em>PsyArXiv</em>. DOI: <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.31234/osf.io/g627d">10.31234/osf.io/g627d</a>.</p></div><div class="metrics"><span class="slot"><span class="__dimensions_badge_embed__ dim-lazy" data-doi="10.31234/osf.io/g627d" data-style="small_circle" data-legend="hover" data-hide-zero-citations="true"></span></span><span class="slot"><span class="altmetric-lazy" data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank" data-doi="10.31234/osf.io/g627d"></span></span></div></li>
 <li class="pub"><span class="cite-col"><a class="oa-pdf" data-pmid="38849061" href="#" target="_blank" rel="noopener noreferrer" data-name="Elsman_et_al_2024_Guideline_for_reporting_systematic_reviews_of" title="Open free full text in a new tab" aria-label="Open free full text in a new tab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></a><input type="checkbox" class="pub-select" data-pmid="38849061" aria-label="Select this citation"></span><div class="pub-text"><p><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jclinepi.2024.111422"><strong>Guideline for reporting systematic reviews of outcome measurement instruments (OMIs): PRISMA-COSMIN for OMIs 2024</strong></a>Elsman EBM, Mokkink LB, Terwee CB, Beaton D, Gagnier JJ, Tricco AC, Baba A, Butcher NJ, Smith M, Hofstetter C, Aiyegbusi OL, Berardi A, Farmer J, Haywood KL, Krause KR, Markham S, <strong>Mayo-Wilson E</strong>, Mehdipour A, Ricketts J, Szatmari P, Touma Z, Moher D, Offringa M. <em>J Clin Epidemiol</em> 173:111422. PMID: <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38849061/">38849061</a>.</p>
 <p>This article was published simultaneously in:</p>
@@ -1181,7 +1171,7 @@
 </main>
 
 <footer class="shell">
-  <span>Updated 11 November 2026</span>
+  <span>Updated 12 November 2026</span>
 </footer>
 
 <script>
@@ -1814,7 +1804,7 @@ var PUB_STATS = window.fetch
       GAP   = 200,
       EMAIL = "evan.mayo-wilson@unc.edu";
 
-  var nodes = [].slice.call(document.querySelectorAll(".oa-pdf"));
+  var nodes = [].slice.call(document.querySelectorAll(".oa-pdf:not(.oa-static)"));
   if (!nodes.length || !window.fetch) return;
 
   var store = {};

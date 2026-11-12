@@ -178,6 +178,23 @@ def load_csl_extra():
 CSL_EXTRA = load_csl_extra()
 
 
+def load_pdf_extra():
+    """
+    content/csl-extra.json "_pdf": {record key: direct full-text URL} for
+    hand-written records (no PMID/DOI), which generate_pub_stats.py cannot
+    resolve. Each URL must return a real PDF (`check_publications.py --online`
+    checks the %PDF- magic number). Kept out of the CSL records so citation exports are
+    unchanged.
+    """
+    path = CONTENT / "csl-extra.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8")).get("_pdf", {})
+
+
+PDF_EXTRA = load_pdf_extra()
+
+
 def entry_meta(entry_html: str):
     """
     Return (pmid, doi, extra_key, title).
@@ -373,6 +390,15 @@ def oa_button(key: str, filename_base: str = "") -> str:
     always opens in a new tab, rather than downloading on some hosts and
     merely opening on others.
     """
+    if key and "data-csl" in key:
+        m = re.search(r'data-csl="([^"]*)"', key)
+        pdf = PDF_EXTRA.get(html.unescape(m.group(1))) if m else None
+        if pdf:
+            return (
+                f'<a class="oa-pdf oa-static" href="{html.escape(pdf, quote=True)}" target="_blank" '
+                f'rel="noopener noreferrer" title="Open free full text in a new tab" '
+                f'aria-label="Open free full text in a new tab">{ICON_PDF}</a>'
+            )
     if not key or "data-csl" in key:
         return '<span class="oa-empty"></span>'
     name_attr = f' data-name="{html.escape(filename_base, quote=True)}"' if filename_base else ""
@@ -802,8 +828,9 @@ PAGE = """<!DOCTYPE html>
   .plinks {{ padding-top: 1rem; }}
   /* Under the photo: one link per line, no separators. */
   .plinks a {{ white-space: nowrap; }}
-  .plinks .plink {{ font-size: .875rem; line-height: 1.45; margin: 0 0 .45rem; }}
-  .plinks .sep-list {{ display: flex; flex-direction: column; gap: .1rem; }}
+  .plinks .plink {{ font-size: .875rem; line-height: 1.45; margin: 0 0 .3rem; }}
+  .plinks .sep-list {{ display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; }}
+  .plinks a {{ display: block; width: fit-content; }}
   .plinks .sep-list .sep {{ display: none; }}
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
@@ -1232,6 +1259,7 @@ PAGE = """<!DOCTYPE html>
     .plinks {{ grid-area: links; padding-top: 0; }}
     /* Full width on phones: back to one "A | B | C | D" line. */
     .plinks .sep-list {{ display: inline; }}
+    .plinks a {{ display: inline; }}
     .plinks .sep-list .sep {{ display: inline; }}
     .hero-photo-mobile {{
       display: block; grid-area: photo;
@@ -2015,7 +2043,7 @@ var PUB_STATS = window.fetch
       GAP   = 200,
       EMAIL = "{email}";
 
-  var nodes = [].slice.call(document.querySelectorAll(".oa-pdf"));
+  var nodes = [].slice.call(document.querySelectorAll(".oa-pdf:not(.oa-static)"));
   if (!nodes.length || !window.fetch) return;
 
   var store = {{}};
