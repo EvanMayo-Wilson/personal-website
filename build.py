@@ -530,11 +530,7 @@ def profile_links_html(p):
         return ""
     first = p["links"][0]
     rest = p["links"][1:]
-    # Under the photo the UNC name wraps; break it only before "at Chapel Hill".
-    first_label = first[0].replace(
-        "University of North Carolina-Chapel Hill",
-        'University of North Carolina <span class="nw">at Chapel Hill</span>')
-    lines = [f'<a href="{first[1]}">{first_label}</a>']
+    lines = [f'<a href="{first[1]}">{first[0]}</a>']
     if rest:
         def anchor(t, u):
             # Tag the OpenAlex link so its href upgrades to the canonical author
@@ -805,7 +801,7 @@ PAGE = """<!DOCTYPE html>
   .bio p {{ margin: 0 0 .7rem; }}
   .plinks {{ padding-top: 1rem; }}
   /* Under the photo: one link per line, no separators. */
-  .plinks .nw, .plinks a[href^="mailto:"] {{ white-space: nowrap; }}
+  .plinks a {{ white-space: nowrap; }}
   .plinks .plink {{ font-size: .875rem; line-height: 1.45; margin: 0 0 .45rem; }}
   .plinks .sep-list {{ display: flex; flex-direction: column; gap: .1rem; }}
   .plinks .sep-list .sep {{ display: none; }}
