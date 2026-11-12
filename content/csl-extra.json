@@ -14,9 +14,7 @@
     "button (build.py checks each returns a real PDF before trusting it)."
   ],
 
-  "_pdf": {
-    "https://osf.io/qxke2": "https://osf.io/download/qxke2/"
-  },
+  "_pdf": {},
 
   "https://global.oup.com/academic/product/social-workers-desk-reference-9780199329649?cc=us&lang=en&q=Social%20Workers%E2%80%99%20Desk%20Reference%20third%20edition": {
     "type": "chapter",
@@ -53,67 +51,5 @@
       { "family": "Mayo-Wilson", "given": "E" }
     ],
     "editor": [{ "family": "Roberts", "given": "Albert R." }]
-  },
-
-  "https://osf.io/qxke2": {
-    "type": "report",
-    "title": "Protocol for the development of the Preferred Reporting Items for Systematic Reviews and Meta-Analysis of Prognostic Factor Studies (PRISMA-PF) checklist",
-    "publisher": "OSF",
-    "URL": "https://osf.io/qxke2",
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          5,
-          16
-        ]
-      ]
-    },
-    "author": [
-      {
-        "family": "Damen",
-        "given": "JAA"
-      },
-      {
-        "family": "Snell",
-        "given": "KIE"
-      },
-      {
-        "family": "Archer",
-        "given": "LA"
-      },
-      {
-        "family": "Dhiman",
-        "given": "P"
-      },
-      {
-        "family": "Trivella",
-        "given": "M"
-      },
-      {
-        "family": "Mayo-Wilson",
-        "given": "E"
-      },
-      {
-        "family": "Reitsma",
-        "given": "JB"
-      },
-      {
-        "family": "Riley",
-        "given": "RD"
-      },
-      {
-        "family": "Collins",
-        "given": "GS"
-      },
-      {
-        "family": "Hooft",
-        "given": "L"
-      },
-      {
-        "family": "Moons",
-        "given": "KGM"
-      }
-    ]
   }
 }

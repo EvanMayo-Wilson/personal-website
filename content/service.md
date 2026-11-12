@@ -13,8 +13,6 @@
 
 - [American Psychological Association Open Science and Methodology Expert Panel](https://www.apa.org/about/governance/bdcmte/science)
 
-- [Summer Institute on Randomized Behavioral Clinical Trials](https://web.cvent.com/event/19906c19-dcf2-4bcf-812d-3531301d6f8d/summary) Steering Committee
-
 ## Previous
 
 - National Academies of Sciences, Engineering, and Medicine (NASEM) committees
