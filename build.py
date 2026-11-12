@@ -530,7 +530,9 @@ def profile_links_html(p):
         return ""
     first = p["links"][0]
     rest = p["links"][1:]
-    lines = [f'<a href="{first[1]}">{first[0]}</a>']
+    # Keep "Carolina-Chapel Hill" together when the narrow photo column wraps.
+    first_label = first[0].replace("-Chapel Hill", "\u2011Chapel\u00a0Hill")
+    lines = [f'<a href="{first[1]}">{first_label}</a>']
     if rest:
         def anchor(t, u):
             # Tag the OpenAlex link so its href upgrades to the canonical author
@@ -773,16 +775,16 @@ PAGE = """<!DOCTYPE html>
   .hero {{
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    grid-template-areas: "photo name" "photo body";
-    align-items: stretch;
+    grid-template-areas: "side name" "side body";
+    align-items: start;
     column-gap: clamp(1.5rem, 4vw, 2.75rem);
     padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(1rem, 2vw, 1.5rem);
   }}
-  .hero-photo {{ grid-area: photo; width: clamp(150px, 20vw, 260px); }}
-  /* Photo spans exactly the height of the text column: top of image aligns
-     with top of the name, bottom aligns with the bottom of the last line. */
+  /* Left column: square photo with the profile links under it (Evan,
+     2026-11-11), so the photo keeps its shape however long the bio is. */
+  .hero-side {{ grid-area: side; width: clamp(150px, 20vw, 260px); }}
   .hero-photo img {{
-    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+    width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
     border-radius: 10px; display: block;
     background: var(--surface);
   }}
@@ -796,10 +798,13 @@ PAGE = """<!DOCTYPE html>
     letter-spacing: -.01em; color: var(--heading);
     margin: 0 0 .85rem;
   }}
-  .hero-body {{ grid-area: body; min-width: 0; display: flex; flex-direction: column; }}
+  .hero-body {{ grid-area: body; min-width: 0; }}
   .bio {{ font-size: 1.0625rem; color: var(--text); }}
   .bio p {{ margin: 0 0 .7rem; }}
-  .plinks {{ margin-top: auto; padding-top: 1rem; }}
+  .plinks {{ padding-top: 1rem; }}
+  .plinks a {{ white-space: nowrap; }}
+  .plinks .sep-list {{ display: inline-flex; flex-wrap: wrap; }}
+  .plinks p.plink:first-child a {{ white-space: normal; }}
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
   /* One line - "Google Scholar: ...   OpenAlex: ..." - gap but no divider
@@ -1223,6 +1228,8 @@ PAGE = """<!DOCTYPE html>
     /* Full chest-up photo is desktop-only; mobile gets a separate,
        already-cropped-to-face image instead (images/Square_Headshot_Mobile.png). */
     .hero-photo {{ display: none; }}
+    .hero-side {{ display: contents; }}
+    .plinks {{ grid-area: links; padding-top: 0; }}
     .hero-photo-mobile {{
       display: block; grid-area: photo;
       width: 60px; height: 60px;         /* no taller than the 2-line name */
@@ -1234,7 +1241,7 @@ PAGE = """<!DOCTYPE html>
     }}
     .hero {{
       grid-template-columns: auto 1fr;
-      grid-template-areas: "photo name" "body body";
+      grid-template-areas: "photo name" "body body" "links links";
       align-items: center;
       row-gap: 1rem; column-gap: .85rem;
     }}
@@ -1292,8 +1299,11 @@ PAGE = """<!DOCTYPE html>
   </nav>
 
   <div class="hero">
-    <div class="hero-photo">
-      <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
+    <div class="hero-side">
+      <div class="hero-photo">
+        <img src="{photo}" alt="{photo_alt}" width="600" height="600" fetchpriority="high">
+      </div>
+      <div class="plinks">{links}</div>
     </div>
     <div class="hero-photo-mobile">
       <img src="{mobile_photo}" alt="{photo_alt}" width="1724" height="1724">
@@ -1301,7 +1311,6 @@ PAGE = """<!DOCTYPE html>
     <h1>{name}</h1>
     <div class="hero-body">
       <div class="bio">{bio}</div>
-      <div class="plinks">{links}</div>
     </div>
   </div>
 

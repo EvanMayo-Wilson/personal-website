@@ -219,16 +219,16 @@
   .hero {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    grid-template-areas: "photo name" "photo body";
-    align-items: stretch;
+    grid-template-areas: "side name" "side body";
+    align-items: start;
     column-gap: clamp(1.5rem, 4vw, 2.75rem);
     padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(1rem, 2vw, 1.5rem);
   }
-  .hero-photo { grid-area: photo; width: clamp(150px, 20vw, 260px); }
-  /* Photo spans exactly the height of the text column: top of image aligns
-     with top of the name, bottom aligns with the bottom of the last line. */
+  /* Left column: square photo with the profile links under it (Evan,
+     2026-11-11), so the photo keeps its shape however long the bio is. */
+  .hero-side { grid-area: side; width: clamp(150px, 20vw, 260px); }
   .hero-photo img {
-    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+    width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
     border-radius: 10px; display: block;
     background: var(--surface);
   }
@@ -242,10 +242,13 @@
     letter-spacing: -.01em; color: var(--heading);
     margin: 0 0 .85rem;
   }
-  .hero-body { grid-area: body; min-width: 0; display: flex; flex-direction: column; }
+  .hero-body { grid-area: body; min-width: 0; }
   .bio { font-size: 1.0625rem; color: var(--text); }
   .bio p { margin: 0 0 .7rem; }
-  .plinks { margin-top: auto; padding-top: 1rem; }
+  .plinks { padding-top: 1rem; }
+  .plinks a { white-space: nowrap; }
+  .plinks .sep-list { display: inline-flex; flex-wrap: wrap; }
+  .plinks p.plink:first-child a { white-space: normal; }
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
   /* One line - "Google Scholar: ...   OpenAlex: ..." - gap but no divider
@@ -669,6 +672,8 @@
     /* Full chest-up photo is desktop-only; mobile gets a separate,
        already-cropped-to-face image instead (images/Square_Headshot_Mobile.png). */
     .hero-photo { display: none; }
+    .hero-side { display: contents; }
+    .plinks { grid-area: links; padding-top: 0; }
     .hero-photo-mobile {
       display: block; grid-area: photo;
       width: 60px; height: 60px;         /* no taller than the 2-line name */
@@ -680,7 +685,7 @@
     }
     .hero {
       grid-template-columns: auto 1fr;
-      grid-template-areas: "photo name" "body body";
+      grid-template-areas: "photo name" "body body" "links links";
       align-items: center;
       row-gap: 1rem; column-gap: .85rem;
     }
@@ -738,8 +743,11 @@
   </nav>
 
   <div class="hero">
-    <div class="hero-photo">
-      <img src="images/Square_Headshot.jpg" alt="Evan Mayo-Wilson" width="600" height="600" fetchpriority="high">
+    <div class="hero-side">
+      <div class="hero-photo">
+        <img src="images/Square_Headshot.jpg" alt="Evan Mayo-Wilson" width="600" height="600" fetchpriority="high">
+      </div>
+      <div class="plinks"><p class="plink"><a target="_blank" rel="noopener noreferrer" href="https://sph.unc.edu/adv_profile/evan-mayo-wilson/">University of North Carolina‑Chapel Hill</a></p><p class="plink"><span class="sep-list"><a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=gwrtLekAAAAJ&amp;hl=en">Google Scholar</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" id="oa-profile" href="https://openalex.org/works?filter=authorships.author.orcid:0000-0001-6126-2459">OpenAlex</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-6126-2459">ORCID</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/myncbi/1x7EldN5gnwAH/bibliography/public/">PubMed</a></span></p><p class="plink"><a href="mailto:evan.mayo-wilson@unc.edu">evan.mayo-wilson@unc.edu</a></p></div>
     </div>
     <div class="hero-photo-mobile">
       <img src="images/Square_Headshot_Mobile.png" alt="Evan Mayo-Wilson" width="1724" height="1724">
@@ -748,7 +756,6 @@
     <div class="hero-body">
       <div class="bio"><p>I am an Associate Professor in the Department of Epidemiology at the UNC Gillings School of Global Public Health.</p>
 <p>My research focuses on the benefits and harms of health interventions, artificial intelligence to assess and improve clinical trials and systematic reviews, and reporting standards that increase research transparency and openness. I am a principal investigator on two R01s, from the National Library of Medicine (NLM) and the Agency for Healthcare Research and Quality (AHRQ), that use artificial intelligence to extract and compare the methods and results of intervention research. I also serve as Co-Scientific Director for peer review of Patient-Centered Outcomes Research Institute (PCORI) Final Research Reports. I am a member of the Cochrane Methods Executive, Associate Convenor of the Cochrane Adverse Events Methods Group, and member of the American Psychological Association Open Science and Methodology Expert Panel. I have authored multiple guidelines for reporting clinical trials and systematic reviews, and I am one of five members of the PRISMA Executive, which is responsible for maintaining guidelines for reporting systematic reviews. In 2025, Nature ranked PRISMA 2020, which I co-authored, among the 25 most-cited papers of the twenty-first century.</p></div>
-      <div class="plinks"><p class="plink"><a target="_blank" rel="noopener noreferrer" href="https://sph.unc.edu/adv_profile/evan-mayo-wilson/">University of North Carolina-Chapel Hill</a></p><p class="plink"><span class="sep-list"><a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=gwrtLekAAAAJ&amp;hl=en">Google Scholar</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" id="oa-profile" href="https://openalex.org/works?filter=authorships.author.orcid:0000-0001-6126-2459">OpenAlex</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-6126-2459">ORCID</a><span class="sep" aria-hidden="true">|</span><a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/myncbi/1x7EldN5gnwAH/bibliography/public/">PubMed</a></span></p><p class="plink"><a href="mailto:evan.mayo-wilson@unc.edu">evan.mayo-wilson@unc.edu</a></p></div>
     </div>
   </div>
 
