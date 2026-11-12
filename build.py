@@ -530,8 +530,10 @@ def profile_links_html(p):
         return ""
     first = p["links"][0]
     rest = p["links"][1:]
-    # Keep "Carolina-Chapel Hill" together when the narrow photo column wraps.
-    first_label = first[0].replace("-Chapel Hill", "\u2011Chapel\u00a0Hill")
+    # Under the photo the UNC name wraps; break it only before "at Chapel Hill".
+    first_label = first[0].replace(
+        "University of North Carolina-Chapel Hill",
+        'University of North Carolina <span class="nw">at Chapel Hill</span>')
     lines = [f'<a href="{first[1]}">{first_label}</a>']
     if rest:
         def anchor(t, u):
@@ -782,7 +784,7 @@ PAGE = """<!DOCTYPE html>
   }}
   /* Left column: square photo with the profile links under it (Evan,
      2026-11-11), so the photo keeps its shape however long the bio is. */
-  .hero-side {{ grid-area: side; width: clamp(150px, 20vw, 260px); }}
+  .hero-side {{ grid-area: side; width: clamp(190px, 20vw, 260px); }}
   .hero-photo img {{
     width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
     border-radius: 10px; display: block;
@@ -802,9 +804,11 @@ PAGE = """<!DOCTYPE html>
   .bio {{ font-size: 1.0625rem; color: var(--text); }}
   .bio p {{ margin: 0 0 .7rem; }}
   .plinks {{ padding-top: 1rem; }}
-  .plinks a {{ white-space: nowrap; }}
-  .plinks .sep-list {{ display: inline-flex; flex-wrap: wrap; }}
-  .plinks p.plink:first-child a {{ white-space: normal; }}
+  /* Under the photo: one link per line, no separators. */
+  .plinks .nw, .plinks a[href^="mailto:"] {{ white-space: nowrap; }}
+  .plinks .plink {{ font-size: .875rem; line-height: 1.45; margin: 0 0 .45rem; }}
+  .plinks .sep-list {{ display: flex; flex-direction: column; gap: .1rem; }}
+  .plinks .sep-list .sep {{ display: none; }}
 
   /* ---- author-level metrics (Google Scholar + OpenAlex) ------------------ */
   /* One line - "Google Scholar: ...   OpenAlex: ..." - gap but no divider
@@ -1230,6 +1234,9 @@ PAGE = """<!DOCTYPE html>
     .hero-photo {{ display: none; }}
     .hero-side {{ display: contents; }}
     .plinks {{ grid-area: links; padding-top: 0; }}
+    /* Full width on phones: back to one "A | B | C | D" line. */
+    .plinks .sep-list {{ display: inline; }}
+    .plinks .sep-list .sep {{ display: inline; }}
     .hero-photo-mobile {{
       display: block; grid-area: photo;
       width: 60px; height: 60px;         /* no taller than the 2-line name */
@@ -1241,7 +1248,7 @@ PAGE = """<!DOCTYPE html>
     }}
     .hero {{
       grid-template-columns: auto 1fr;
-      grid-template-areas: "photo name" "body body" "links links";
+      grid-template-areas: "photo name" "links links" "body body";
       align-items: center;
       row-gap: 1rem; column-gap: .85rem;
     }}
