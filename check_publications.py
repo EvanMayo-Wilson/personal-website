@@ -95,7 +95,7 @@ def parse():
         dt = DOI_TEXT_RE.search(rest)
         e["doi_text"] = dt.group(1) if dt else ""
         e["doi"] = e["url"][len("https://doi.org/"):] if e["url"].startswith("https://doi.org/") else e["doi_text"]
-        body = re.split(r"\s\[\[|\s\[(?=Published protocol\]|Data |GitHub )", rest.strip())[0]
+        body = re.split(r"\s\[\[|\s\[(?=Published protocol\]|Data |GitHub |Online supplement)", rest.strip())[0]
         e["body"] = body
         jm = JOURNAL_RE.search(body)
         e["journal"] = jm.group(1).strip() if jm else ""

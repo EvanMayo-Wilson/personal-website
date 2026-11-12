@@ -24,7 +24,7 @@ Page MJ, **Mayo-Wilson E**, Zeng M, Clark DPQ, Hamilton DG, Nguyen PY, Nussbaume
 McKenzie JE, **Mayo-Wilson E**, Brennan SE, Hamilton DG, Takwoingi Y, Moher D, Page MJ. *MetaArXiv*. DOI: [10.31222/osf.io/ydnt7_v1](https://doi.org/10.31222/osf.io/ydnt7_v1).
 
 - [**Study design indexing in transition: A focused comparison of manual NLM indexing versus transformer-based automated models**](https://doi.org/10.1093/jamiaopen/ooag197)  
-Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *JAMIA Open* 9(5):ooag197. PMID: [42960168](https://pubmed.ncbi.nlm.nih.gov/42960168/). [[Preprint on medRxiv](https://doi.org/10.64898/2026.06.03.26354854)]
+Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *JAMIA Open* 9(5):ooag197. PMID: [42960168](https://pubmed.ncbi.nlm.nih.gov/42960168/). [[Preprint on medRxiv](https://doi.org/10.64898/2026.06.03.26354854); [Protocol on OSF](https://osf.io/mbqsc/); [Data on Illinois Data Bank](https://databank.illinois.edu/datasets/IDB-8307201)]
 
 - [**Artificial intelligence tools for automating assessments of reporting guideline adherence: A protocol for a systematic review**](https://doi.org/10.12688/f1000research.179775.2)  
 Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.2](https://doi.org/10.12688/f1000research.179775.2).
@@ -33,7 +33,7 @@ Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M,
 Naylor JA, Jonsson Funk M, Ranapurwala SI, Canham-Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Mil Med* 191(9-10):e2057-e2065. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
 
 - [**TOP 2025: An update to the Transparency and Openness Promotion Guidelines**](https://doi.org/10.1186/s41073-026-00223-0)  
-Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz M, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA, TOP Advisory Board. *Res Integr Peer Rev* 11(1):40. PMID: [42557573](https://pubmed.ncbi.nlm.nih.gov/42557573/). [[Preprint on MetaArXiv](https://doi.org/10.31222/osf.io/nmfs6_v4)]
+Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz M, Moher D, Umpierre D, Barbour V, Buck S, Collins GS, Hazlett HF, Hrynaszkiewicz I, Lee CJ, Parker TH, Rethlefsen ML, Toomey E, Nosek BA, TOP Advisory Board. *Res Integr Peer Rev* 11(1):40. PMID: [42557573](https://pubmed.ncbi.nlm.nih.gov/42557573/). [[Preprint on MetaArXiv](https://doi.org/10.31222/osf.io/nmfs6_v4); [OSF archive includes research materials](https://osf.io/ews92/)]
 
 - [**Harm outcomes applicable for most meta-analyses of randomized trials of biomedical interventions: A key concept in clinical epidemiology**](https://doi.org/10.1016/j.jclinepi.2026.112218)  
 Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**, Simon LS, Kwong J, Williamson PR, Vohra S. *J Clin Epidemiol* 194:112218. PMID: [41802580](https://pubmed.ncbi.nlm.nih.gov/41802580/).
@@ -42,22 +42,22 @@ Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**,
 Wang X, Furuya-Kanamori L, Doi SA, Gu Z, Loke Y, Li S, **Mayo-Wilson E**, Lin L, Golder S, Chu H, Vohra S, Guo X, Xu C. *BMC Med*. DOI: [10.1186/s12916-026-05296-8](https://doi.org/10.1186/s12916-026-05296-8).
 
 - [**SPIRIT-CONSORT-ELM: Element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting**](https://doi.org/10.1038/s41746-026-03318-6)  
-Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *NPJ Digit Med*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2)]
+Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *NPJ Digit Med*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2); [OSF archive includes data and code](https://osf.io/kznx4/)]
 
 - [**Automated assessment of the trustworthiness of biomedical publications: A protocol for a scoping review**](https://doi.org/10.31222/osf.io/yph8c_v1)  
 Guerra E, Menke JD, Bernabé C, Ying X, Vorland CJ, Brown AW, Qureshi R, **Mayo-Wilson E**, Kilicoglu H. *MetaArXiv*. DOI: [10.31222/osf.io/yph8c_v1](https://doi.org/10.31222/osf.io/yph8c_v1).
 
 - [**Towards understanding the disease landscape of clinical trials in Germany: Ontology and embedding-based pipelines versus large language models for ICD-10 harmonization**](https://doi.org/10.64898/2026.08.04.26359616)  
-Ndabashinze R, Franzen D, Kozuch E, Aagerup J, Fink A, Samruddhi YS, Hunter K, **Mayo-Wilson E**, Ying X, Kilicoglu H, Schorr SG, Seidler AL. *medRxiv*. DOI: [10.64898/2026.08.04.26359616](https://doi.org/10.64898/2026.08.04.26359616).
+Ndabashinze R, Franzen D, Kozuch E, Aagerup J, Fink A, Samruddhi YS, Hunter K, **Mayo-Wilson E**, Ying X, Kilicoglu H, Schorr SG, Seidler AL. *medRxiv*. DOI: [10.64898/2026.08.04.26359616](https://doi.org/10.64898/2026.08.04.26359616). [[Protocol on OSF](https://osf.io/mkn67/)]
 
 - [**Evaluating data extraction error by a large language model from randomised controlled trials: A large-scale empirical study**](https://doi.org/10.1136/bmjebm-2025-114044)  
 Fan S, Chen M, Doi SA, Ye Z, Peng Z, Tian Y, Zhang C, Furuya-Kanamori L, Lin L, **Mayo-Wilson E**, Murad MH, Meng X, Xu C. *BMJ Evid Based Med* 31(5):324-331. PMID: [42055792](https://pubmed.ncbi.nlm.nih.gov/42055792/).
 
 - [**The Trial Bank initiative to promote trustworthy living evidence for medication safety (PROMISE) of children: Design and pilot validation**](https://doi.org/10.1186/s12916-026-04709-y)  
-Xu C, Doi SA, Vohra S, Furuya-Kanamori L, Wang Y, Tang L, Tian Y, Fan S, Peng Z, **Mayo-Wilson E**, Lin L, Chu H, Murad MH, Yu T, Li S, Chen Y, Golder S, Loke Y, Clark J, Glasziou P, Du L, Lin H, Gu Z, PROMISE Collaborative Research Network. *BMC Med* 24(1):181. PMID: [41723462](https://pubmed.ncbi.nlm.nih.gov/41723462/).
+Xu C, Doi SA, Vohra S, Furuya-Kanamori L, Wang Y, Tang L, Tian Y, Fan S, Peng Z, **Mayo-Wilson E**, Lin L, Chu H, Murad MH, Yu T, Li S, Chen Y, Golder S, Loke Y, Clark J, Glasziou P, Du L, Lin H, Gu Z, PROMISE Collaborative Research Network. *BMC Med* 24(1):181. PMID: [41723462](https://pubmed.ncbi.nlm.nih.gov/41723462/). [[OSF archive includes data](https://osf.io/up7ag/)]
 
 - [**Methods of engaging interest-holders in healthcare evidence syntheses: A scoping review**](https://doi.org/10.1002/cesm.70066)  
-Todhunter-Brown A, Petkovic J, Chang C, Griebler U, Hannigan A, Hilgart J, Hussain B, Jull J, Koscher-Kien C, Ledinger D, Nussbaumer-Streit B, Oloyede O, Tomlinson E, Dawson S, Dewidar O, Grant S, Lytvyn L, Concannon TW, Dans L, John D, Jordan Z, **Mayo-Wilson E**, McCutcheon C, Nonino F, Pollock D, Toupin April K, Campbell P, Khabsa J, Magwood O, Welch V, Tugwell P. *Cochrane Evid Synth Methods* 4(1):e70066. PMID: [41573527](https://pubmed.ncbi.nlm.nih.gov/41573527/).
+Todhunter-Brown A, Petkovic J, Chang C, Griebler U, Hannigan A, Hilgart J, Hussain B, Jull J, Koscher-Kien C, Ledinger D, Nussbaumer-Streit B, Oloyede O, Tomlinson E, Dawson S, Dewidar O, Grant S, Lytvyn L, Concannon TW, Dans L, John D, Jordan Z, **Mayo-Wilson E**, McCutcheon C, Nonino F, Pollock D, Toupin April K, Campbell P, Khabsa J, Magwood O, Welch V, Tugwell P. *Cochrane Evid Synth Methods* 4(1):e70066. PMID: [41573527](https://pubmed.ncbi.nlm.nih.gov/41573527/). [[Protocol on OSF](https://osf.io/8t6jn/)]
 
 ## 2025
 
@@ -76,7 +76,7 @@ Czajkowski S, Davidson K, Freedland K, **Mayo-Wilson E (order of authorship is a
 - [**Musculoskeletal injury (MSKI) outcome definitions as reported in military population research from 2015-2025: A scoping review protocol**](https://doi.org/10.31219/osf.io/nw7fy_v1)Naylor JA, **Mayo-Wilson E**, Martin CL, Baldwin-SoRelle C, Ranapurwala S, Canham-Chervak M, Jonsson Funk M, Marshall SW. *OSF Preprints*. DOI: [10.31219/osf.io/nw7fy_v1](https://doi.org/10.31219/osf.io/nw7fy_v1).
 
 - [**SPIRIT-CONSORT-TM: A corpus for assessing transparency of clinical trial protocol and results publications**](https://doi.org/10.1038/s41597-025-04629-1)  
-Jiang L, Vorland CJ, Ying X, Brown AW, Menke JD, Hong G, Lan M, **Mayo-Wilson E**, Kilicoglu H. *Sci Data* 12(1):355. PMID: [40021657](https://pubmed.ncbi.nlm.nih.gov/40021657/). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.1101/2025.01.14.25320543v1)]
+Jiang L, Vorland CJ, Ying X, Brown AW, Menke JD, Hong G, Lan M, **Mayo-Wilson E**, Kilicoglu H. *Sci Data* 12(1):355. PMID: [40021657](https://pubmed.ncbi.nlm.nih.gov/40021657/). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.1101/2025.01.14.25320543v1); [OSF archive includes data](https://osf.io/8rg4h/); [GitHub includes code](https://github.com/ScienceNLP-Lab/RCT-Transparency/tree/main/SPIRIT-CONSORT-TM)]
 
 ## 2024
 
@@ -87,7 +87,7 @@ Vorland CJ, Brown AW, Kilicoglu H, Ying X, **Mayo-Wilson E**. *JAMA Netw Open* 7
 Li T, **Mayo-Wilson E**, Shaughnessy D, Qureshi R. *Trials* 25(1):403. PMID: [38902776](https://pubmed.ncbi.nlm.nih.gov/38902776/).
 
 - [**Development and evaluation of a framework for identifying and addressing spin for harms in systematic reviews of interventions**](https://doi.org/10.7326/M24-0771)  
-Qureshi R, Naaman K, Quan NG, **Mayo-Wilson E**, Page MJ, Cornelius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. *Ann Intern Med* 177(8):1089-1098. PMID: [39008854](https://pubmed.ncbi.nlm.nih.gov/39008854/).
+Qureshi R, Naaman K, Quan NG, **Mayo-Wilson E**, Page MJ, Cornelius V, Chou R, Boutron I, Golder S, Bero L, Doshi P, Vassar M, Meursinge Reynders R, Li T. *Ann Intern Med* 177(8):1089-1098. PMID: [39008854](https://pubmed.ncbi.nlm.nih.gov/39008854/). [Online supplements include [protocol](https://www.acpjournals.org/doi/suppl/10.7326/M24-0771/suppl_file/m24-0771_supplement-studyprotocol.pdf) and [research materials](https://www.acpjournals.org/doi/suppl/10.7326/M24-0771/suppl_file/m24-0771_supplement.pdf)]
 
 
 - [**Proposal to develop a clinical practice guideline on emotion regulation: Final report**](https://doi.org/10.31234/osf.io/g627d)  
@@ -163,7 +163,7 @@ Kahan BC, Hall SS, Beller EM, Birchenall M, Elbourne D, Juszczak E, Little P, Fl
 
 - [**Harms in systematic reviews Paper 1: An introduction to research on harms**](https://doi.org/10.1016/j.jclinepi.2021.10.023)Qureshi R, **Mayo-Wilson E**, Li T. *J Clin Epidemiol* 143:186-196. PMID: [34742788](https://pubmed.ncbi.nlm.nih.gov/34742788/). [[Preprint on OSF Preprints](https://osf.io/gukd4/)]
 
-- [**Comparing the value of data visualization methods for communicating harms in clinical trials**](https://doi.org/10.1093/epirev/mxac005)Qureshi R, Chen X, Görg C, **Mayo-Wilson E**, Dickinson S, Golzarri-Arroyo L, Hong H, Phillips R, Cornelius V, McAdams-DeMarco M, Guallar E, Li T. *Epidemiol Rev* 44(1):55-66. PMID: [36065832](https://pubmed.ncbi.nlm.nih.gov/36065832/).
+- [**Comparing the value of data visualization methods for communicating harms in clinical trials**](https://doi.org/10.1093/epirev/mxac005)Qureshi R, Chen X, Görg C, **Mayo-Wilson E**, Dickinson S, Golzarri-Arroyo L, Hong H, Phillips R, Cornelius V, McAdams-DeMarco M, Guallar E, Li T. *Epidemiol Rev* 44(1):55-66. PMID: [36065832](https://pubmed.ncbi.nlm.nih.gov/36065832/). [[Online supplement includes code and research materials](https://doi.org/10.1093/epirev/mxac005); [GitHub includes code](https://github.com/rquresh/HarmsVisualization)]
 
 - [**Designing clinically useful psychopharmacological trials: Challenges and ways forward**](https://doi.org/10.1016/S2215-0366(22)00041-4)  
 Chevance A, Ravaud P, Cornelius V, **Mayo-Wilson E**, Furukawa TA. *Lancet Psychiatry* 9(7):584-594. PMID: [35525252](https://pubmed.ncbi.nlm.nih.gov/35525252/).
@@ -240,7 +240,7 @@ Hansford HJ, Cashin AG, Wewege MA, Ferraro MC, McAuley JH, Jones MD, and the **T
 
 - [**Mapping outcome reporting bias in published non-pharmacological randomized trials: A protocol for a cross-sectional study**](https://doi.org/10.31222/osf.io/uegmb)Helal L, da Costa GG, de Lucena CP, Luizeti BO, Frecci GW, Gonçalves LS, Nascimento DP, Rice D, **Mayo-Wilson E**, Hoffmann T. *MetaArXiv*. DOI: [10.31222/osf.io/uegmb](https://doi.org/10.31222/osf.io/uegmb).
 
-- [**Reporting of methodological studies in health research: A protocol for the development of the MethodologIcal STudy reportIng Checklist (MISTIC)**](https://doi.org/10.1136/bmjopen-2020-040478)Lawson DO, Puljak L, Pieper D, Schandelmaier S, Collins GS, Brignardello-Petersen R, Moher D, Tugwell P, Welch VA, Samaan Z, Thombs BD, Nørskov AK, Jakobsen JC, Allison DB, **Mayo-Wilson E**, Young T, Chan AW, Briel M, Guyatt GH, Thabane L, Mbuagbaw L. *BMJ Open* 10(12):e040478. PMID: [33334836](https://pubmed.ncbi.nlm.nih.gov/33334836/).
+- [**Reporting of methodological studies in health research: A protocol for the development of the MethodologIcal STudy reportIng Checklist (MISTIC)**](https://doi.org/10.1136/bmjopen-2020-040478)Lawson DO, Puljak L, Pieper D, Schandelmaier S, Collins GS, Brignardello-Petersen R, Moher D, Tugwell P, Welch VA, Samaan Z, Thombs BD, Nørskov AK, Jakobsen JC, Allison DB, **Mayo-Wilson E**, Young T, Chan AW, Briel M, Guyatt GH, Thabane L, Mbuagbaw L. *BMJ Open* 10(12):e040478. PMID: [33334836](https://pubmed.ncbi.nlm.nih.gov/33334836/). [[Protocol on OSF](https://osf.io/9hgbq/)]
 
 ## 2019
 
@@ -297,7 +297,7 @@ Appelbaum M, Cooper H, Kline RB, **Mayo-Wilson E**, Nezu AM, Rao SM. *Am Psychol
 
 ## 2016
 
-- [**Improving transparency and reproducibility through registration: The status of intervention trials published in clinical psychology journals**](https://doi.org/10.1037/ccp0000115)Cybulski L, **Mayo-Wilson E**, Grant S. *J Consult Clin Psychol* 84(9):753-767. PMID: [27281372](https://pubmed.ncbi.nlm.nih.gov/27281372/). [[Supplemental Data](https://supp.apa.org/psycarticles/supplemental/ccp0000115/ccp0000115_supp.html)]
+- [**Improving transparency and reproducibility through registration: The status of intervention trials published in clinical psychology journals**](https://doi.org/10.1037/ccp0000115)Cybulski L, **Mayo-Wilson E**, Grant S. *J Consult Clin Psychol* 84(9):753-767. PMID: [27281372](https://pubmed.ncbi.nlm.nih.gov/27281372/). [[Supplemental Data](https://supp.apa.org/psycarticles/supplemental/ccp0000115/ccp0000115_supp.html); [OSF archive includes data and research materials](https://osf.io/qnmpw/)]
 
 - [**Psychological interventions for adults with bipolar disorder: Systematic review and meta-analysis**](https://doi.org/10.1192/bjp.bp.114.157123)Oud M, **Mayo-Wilson E**, Braidwood R, Schulte P, Jones SH, Morriss R, Kupka R, Cuijpers P, Kendall T. *Br J Psychiatry* 208(3):213-222. PMID: [26932483](https://pubmed.ncbi.nlm.nih.gov/26932483/).
 
@@ -337,7 +337,7 @@ Hofmann SG, Barlow DH, Clark DM, Hollon SD, **Mayo-Wilson E**. *Am J Psychiatry*
 
 - [**Development, inter-rater reliability and feasibility of a checklist to assess implementation (Ch-IMP) in systematic reviews: The case of provider-based prevention and treatment programs targeting children and youth**](https://doi.org/10.1186/s12874-015-0037-7)Cargo M, Stankov I, Thomas J, Saini M, Rogers P, **Mayo-Wilson E**, Hannes K. *BMC Med Res Methodol* 15:73. PMID: [26346461](https://pubmed.ncbi.nlm.nih.gov/26346461/).
 
-- [**Promoting an open research culture**](https://doi.org/10.1126/science.aab2374)Nosek BA, Alter G, Banks GC, Borsboom D, Bowman SD, Breckler SJ, Buck S, Chambers CD, Chin G, Christensen G, Contestabile M, Dafoe A, Eich E, Freese J, Glennerster R, Goroff D, Green DP, Hesse B, Humphreys M, Ishiyama J, Karlan D, Kraut A, Lupia A, Mabry PL, Madon TA, Malhotra N, **Mayo-Wilson E (order of authorship is alphabetical after the first author)**, McNutt M, Miguel E, Paluck EL, Simonsohn U, Soderberg C, Spellman BA, Turitto J, VandenBos G, Vazire S, Wagenmakers EJ, Wilson RK, Yarkoni T. *Science* 348(6242):1422-1425. PMID: [26113702](https://pubmed.ncbi.nlm.nih.gov/26113702/).
+- [**Promoting an open research culture**](https://doi.org/10.1126/science.aab2374)Nosek BA, Alter G, Banks GC, Borsboom D, Bowman SD, Breckler SJ, Buck S, Chambers CD, Chin G, Christensen G, Contestabile M, Dafoe A, Eich E, Freese J, Glennerster R, Goroff D, Green DP, Hesse B, Humphreys M, Ishiyama J, Karlan D, Kraut A, Lupia A, Mabry PL, Madon TA, Malhotra N, **Mayo-Wilson E (order of authorship is alphabetical after the first author)**, McNutt M, Miguel E, Paluck EL, Simonsohn U, Soderberg C, Spellman BA, Turitto J, VandenBos G, Vazire S, Wagenmakers EJ, Wilson RK, Yarkoni T. *Science* 348(6242):1422-1425. PMID: [26113702](https://pubmed.ncbi.nlm.nih.gov/26113702/). [[OSF archive includes research materials](https://osf.io/9f6gx/)]
 
 ## 2014
 
