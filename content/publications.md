@@ -12,7 +12,7 @@ Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, De
 Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Qureshi R, DeVito NJ, Saldanha IJ, Offringa M, Butcher NJ, Zhang S, Nguyen PY, Menke JD, Lai VKW, Kilicoglu H, **Mayo-Wilson E**. *PLoS Med* 23(10):e1005275. PMID: [42905861](https://pubmed.ncbi.nlm.nih.gov/42905861/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/5wrsm_v2)]
 
 - [**Outcome definitions in clinical trial registrations: A cross-sectional study**](https://doi.org/10.31222/osf.io/hkudx_v1)  
-Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). Accepted at *JAMA Netw Open*. [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy)]
+Ninan K, Oberste JP, Ying X, DeVito NJ, Li T, Blanco D, Grana C, Boutron I, Baldwin-SoRelle C, Kilicoglu H, **Mayo-Wilson E**. *MetaArXiv*. DOI: [10.31222/osf.io/hkudx_v1](https://doi.org/10.31222/osf.io/hkudx_v1). Accepted at *JAMA Netw Open*. [[Protocol on OSF](https://osf.io/rzfyd/files/3rnjy); [OSF archive includes data and code](https://osf.io/rzfyd/)]
 
 - [**PRISMA-trAIce: A name without endorsement**](https://doi.org/10.2196/104210)  
 Moher D, Page MJ, McKenzie JE, Takwoingi Y, **Mayo-Wilson E**. *JMIR AI* 5:e104210. PMID: [42612062](https://pubmed.ncbi.nlm.nih.gov/42612062/).
@@ -27,7 +27,7 @@ McKenzie JE, **Mayo-Wilson E**, Brennan SE, Hamilton DG, Takwoingi Y, Moher D, P
 Das P, Schneider J, **Mayo-Wilson E**, Kilicoglu H, Menke JD, Nam D, Ninan K, Oberste JP, Troy AM, Ying X, Holt AW, Smalheiser NR. *JAMIA Open* 9(5):ooag197. PMID: [42960168](https://pubmed.ncbi.nlm.nih.gov/42960168/). [[Preprint on medRxiv](https://doi.org/10.64898/2026.06.03.26354854); [Protocol on OSF](https://osf.io/mbqsc/); [Data on Illinois Data Bank](https://databank.illinois.edu/datasets/IDB-8307201)]
 
 - [**Artificial intelligence tools for automating assessments of reporting guideline adherence: A protocol for a systematic review**](https://doi.org/10.12688/f1000research.179775.2)  
-Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.2](https://doi.org/10.12688/f1000research.179775.2).
+Zeng M, Liu S, Clark DPQ, McDonald S, **Mayo-Wilson E**, Ying X, Menke J, Lan M, Jiang L, Ninan K, Oberste JP, McKenzie JE, Kilicoglu H, Page MJ. *F1000Res* 15:626. DOI: [10.12688/f1000research.179775.2](https://doi.org/10.12688/f1000research.179775.2). [[Zenodo archive includes research materials](https://doi.org/10.5281/zenodo.21910380)]
 
 - [**Descriptive epidemiology of musculoskeletal injuries presenting to an embedded Holistic Health and Fitness (H2F) team in a United States Army Stryker Brigade, October 2021-September 2022**](https://doi.org/10.1093/milmed/usaf645)  
 Naylor JA, Jonsson Funk M, Ranapurwala SI, Canham-Chervak M, **Mayo-Wilson E**, Bruno MK, Olivarez CV, Marshall SW. *Mil Med* 191(9-10):e2057-e2065. PMID: [41641596](https://pubmed.ncbi.nlm.nih.gov/41641596/).
