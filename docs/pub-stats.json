@@ -93,7 +93,8 @@
 "citations": 0
 },
 "doi:10.31222/osf.io/hkudx_v1": {
-"citations": 1
+"citations": 1,
+"pdf": "https://osf.io/hkudx/download"
 },
 "doi:10.31222/osf.io/nra5v": {
 "citations": 0,
@@ -108,7 +109,8 @@
 "pdf": "https://osf.io/ydnt7/download"
 },
 "doi:10.31222/osf.io/yph8c_v1": {
-"citations": 0
+"citations": 0,
+"pdf": "https://osf.io/yph8c/download"
 },
 "doi:10.31234/osf.io/g627d": {
 "citations": 1,
@@ -127,7 +129,8 @@
 "pdf": "papers/10_4073_csr_2014_3.pdf"
 },
 "doi:10.64898/2026.08.04.26359616": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/08/06/2026.08.04.26359616.full.pdf"
 },
 "doi:10.7758/9781610448864.24": {
 "citations": 6
@@ -438,7 +441,7 @@
 },
 "pmid:33782057": {
 "citations": 144209,
-"pdf": "https://eprints.whiterose.ac.uk/id/eprint/173287/1/PIIS0895435621000731.pdf"
+"pdf": "https://osf.io/v7gm2/download"
 },
 "pmid:33789819": {
 "citations": 4746,
@@ -552,7 +555,9 @@
 "pdf": "https://eprints.whiterose.ac.uk/204010/1/CONSORT%20Harms%20%28JCE%29.pdf"
 },
 "pmid:37178346": {
-"citations": 20
+"citations": 20,
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 20,
