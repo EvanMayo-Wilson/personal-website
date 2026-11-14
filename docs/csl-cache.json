@@ -141186,5 +141186,2208 @@
 ]
 ]
 }
+},
+"doi:10.12688/f1000research.179775.2": {
+"indexed": {
+"date-parts": [
+[
+2026,
+10,
+23
+]
+],
+"date-time": "2026-10-23T20:46:12Z",
+"timestamp": 1792788372725,
+"version": "4.5.0"
+},
+"update-to": [
+{
+"DOI": "10.12688/f1000research.179775.1",
+"type": "new_version",
+"label": "New version",
+"source": "publisher",
+"updated": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+],
+"date-time": "2026-08-22T00:00:00Z",
+"timestamp": 1787356800000
+}
+}
+],
+"reference-count": 26,
+"publisher": "F1000 Research Ltd",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+],
+"date-time": "2026-08-22T00:00:00Z",
+"timestamp": 1787356800000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0/"
+}
+],
+"funder": [
+{
+"name": "National Health and Medical Research Council Investigator Grant",
+"award": [
+"GNT2009612"
+],
+"award-info": [
+{
+"award-number": [
+"GNT2009612"
+]
+}
+],
+"id": [
+{
+"id": "https://ror.org/011kf5r70",
+"id-type": "ROR",
+"asserted-by": "crossref"
+}
+]
+},
+{
+"name": "Monash University Early Career Research Excellence Program (ECREP) grant",
+"id": [
+{
+"id": "https://ror.org/02bfwt286",
+"id-type": "ROR",
+"asserted-by": "crossref"
+}
+]
+},
+{
+"name": "National Health and Medical Research Council Investigator Grant",
+"award": [
+"GNT2033917"
+],
+"award-info": [
+{
+"award-number": [
+"GNT2033917"
+]
+}
+],
+"id": [
+{
+"id": "https://ror.org/011kf5r70",
+"id-type": "ROR",
+"asserted-by": "crossref"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"f1000research.com"
+],
+"crossmark-restriction": false
+},
+"abstract": "<ns4:p>Background Complete reporting of health-related research is necessary for users to understand, appraise, and apply research results appropriately. Reporting guidelines have been developed to support complete reporting. However, assessments of reporting guideline adherence remain inconsistent, time-consuming, and difficult to scale. Artificial intelligence (AI) tools, such as traditional natural language processing models and large language models, might provide a potential solution. While numerous AI tools have been developed, no comprehensive synthesis has been undertaken to investigate what they assess, how they are implemented and perform, and their potential utility. Objective This systematic review aims to synthesise the characteristics and findings of studies evaluating AI tools developed to assist or automate assessments of reporting guideline adherence. Methods We will search MEDLINE, Embase, Scopus, Europe PMC, ACM Digital Library, IEEE Xplore, arXiv and Cochrane Colloquium Abstracts, with no restrictions on date, language, or publication type. We will include studies that evaluate AI tools to assess adherence of health-related papers to any reporting guidelines. Two authors will independently screen records, extract data and assess risk of bias. We will extract study characteristics, AI tool details, how reporting guidelines are operationalised for AI assessment, AI implementation details, comparison details, and evaluation outcomes including agreement metrics, classification performance metrics, utility indicators, and tool reliability. We will present and summarise results through structured tables and plots, stratified by reporting guideline and AI tool type. Discussion This systematic review will provide a comprehensive synthesis of AI tools developed to automate assessments of reporting guideline adherence. It will provide interest holders with insights into what AI tools have been used, their implementation approaches, which AI tool types perform well, and any improvements that can be made to AI tools automating assessments of reporting guideline adherence in the future.</ns4:p>",
+"DOI": "10.12688/f1000research.179775.2",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+],
+"date-time": "2026-08-22T09:34:06Z",
+"timestamp": 1787391246000
+},
+"page": "626",
+"update-policy": "https://doi.org/10.12688/f1000research.crossmark-policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "Artificial intelligence tools for automating assessments of reporting guideline adherence: a protocol for a systematic review",
+"prefix": "10.12688",
+"volume": "15",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0001-7294-2599",
+"authenticated-orcid": false,
+"given": "Minyan",
+"family": "Zeng",
+"sequence": "first",
+"affiliation": [
+{
+"name": "Methods in Evidence Synthesis Unit Melbourne Victoria Monash University School of Public Health and Preventive Medicine"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0006-9382-1538",
+"authenticated-orcid": false,
+"given": "Shiwei",
+"family": "Liu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences Champaign University of Illinois Urbana-Champaign"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "David PQ",
+"family": "Clark",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Methods in Evidence Synthesis Unit Melbourne Victoria Monash University School of Public Health and Preventive Medicine"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-2832-5205",
+"authenticated-orcid": false,
+"given": "Steve",
+"family": "McDonald",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Methods in Evidence Synthesis Unit Melbourne Victoria Monash University School of Public Health and Preventive Medicine"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology Chapel Hill University of North Carolina Gillings School of Global Public Health"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology Chapel Hill University of North Carolina Gillings School of Global Public Health"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Joe",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences Champaign University of Illinois Urbana-Champaign"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Mengfei",
+"family": "Lan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences Champaign University of Illinois Urbana-Champaign"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Lan",
+"family": "Jiang",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences Champaign University of Illinois Urbana-Champaign"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology Chapel Hill University of North Carolina Gillings School of Global Public Health"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0009-0003-2075-5267",
+"authenticated-orcid": false,
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Department of Epidemiology Chapel Hill University of North Carolina Gillings School of Global Public Health"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0003-3534-1641",
+"authenticated-orcid": false,
+"given": "Joanne E",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Methods in Evidence Synthesis Unit Melbourne Victoria Monash University School of Public Health and Preventive Medicine"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "School of Information Sciences Champaign University of Illinois Urbana-Champaign"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"ORCID": "https://orcid.org/0000-0002-4242-7526",
+"authenticated-orcid": false,
+"given": "Matthew J",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Methods in Evidence Synthesis Unit Melbourne Victoria Monash University School of Public Health and Preventive Medicine"
+}
+],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "2560",
+"published-online": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+]
+},
+"reference": [
+{
+"key": "ref2",
+"doi-asserted-by": "crossref",
+"first-page": "n71",
+"DOI": "10.1136/bmj.n71",
+"article-title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews.",
+"volume": "372",
+"author": "M Page",
+"year": "2021",
+"journal-title": "BMJ."
+},
+{
+"key": "ref3",
+"doi-asserted-by": "publisher",
+"first-page": "e081123",
+"DOI": "10.1136/bmj-2024-081123",
+"article-title": "CONSORT 2025 statement: updated guideline for reporting randomised trials.",
+"volume": "389",
+"author": "S Hopewell",
+"year": "2025",
+"journal-title": "BMJ."
+},
+{
+"key": "ref4",
+"doi-asserted-by": "crossref",
+"first-page": "148-158",
+"DOI": "10.1002/bjs.9736",
+"article-title": "Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement.",
+"volume": "102",
+"author": "G Collins",
+"year": "2015",
+"journal-title": "J Br Surg."
+},
+{
+"key": "ref5",
+"doi-asserted-by": "publisher",
+"first-page": "1453-1457",
+"DOI": "10.1016/S0140-6736(07)61602-X",
+"article-title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies.",
+"volume": "370",
+"author": "E Von Elm",
+"year": "2007",
+"journal-title": "The Lancet."
+},
+{
+"key": "ref6",
+"doi-asserted-by": "publisher",
+"first-page": "826-832",
+"DOI": "10.1148/radiol.2015151516",
+"article-title": "STARD 2015: an updated list of essential items for reporting diagnostic accuracy studies.",
+"volume": "277",
+"author": "P Bossuyt",
+"year": "2015",
+"journal-title": "Radiology."
+},
+{
+"key": "ref7",
+"doi-asserted-by": "crossref",
+"first-page": "112133",
+"DOI": "10.1016/j.jclinepi.2026.112133",
+"article-title": "Evaluation of tools used to assess adherence to PRISMA 2020 reveals inconsistent methods and poor tool implementability: part I of a systematic review.",
+"author": "D Hamilton",
+"year": "2026",
+"journal-title": "J Clin Epidemiol."
+},
+{
+"key": "ref8",
+"doi-asserted-by": "publisher",
+"first-page": "225-234",
+"DOI": "10.1016/j.jclinepi.2023.05.017",
+"article-title": "Methods and results of studies on reporting guideline adherence are poorly reported: a meta-research study.",
+"volume": "159",
+"author": "T Dal Santo",
+"year": "2023",
+"journal-title": "J Clin Epidemiol."
+},
+{
+"key": "ref9",
+"doi-asserted-by": "publisher",
+"first-page": "e12074",
+"DOI": "10.1002/cesm.12074",
+"article-title": "Adherence to PRISMA 2020 statement assessed through the expanded checklist in systematic reviews of interventions: A meta-epidemiological study.",
+"volume": "2",
+"author": "D Ivaldi",
+"year": "2024",
+"journal-title": "Cochrane Evidence Synthesis and Methods."
+},
+{
+"key": "ref10",
+"first-page": "MR000030",
+"article-title": "Consolidated standards of reporting trials (CONSORT) and the completeness of reporting of randomised controlled trials (RCTs) published in medical journals.",
+"volume": "11",
+"author": "L Turner",
+"year": "2012",
+"journal-title": "Cochrane Database Syst Rev."
+},
+{
+"key": "ref11",
+"doi-asserted-by": "publisher",
+"first-page": "111533",
+"DOI": "10.1016/j.jclinepi.2024.111533",
+"article-title": "Benchmarking Human–AI collaboration for common evidence appraisal tools.",
+"volume": "175",
+"author": "T Woelfle",
+"year": "2024",
+"journal-title": "J Clin Epidemiol."
+},
+{
+"key": "ref12",
+"doi-asserted-by": "publisher",
+"first-page": "e2014661",
+"DOI": "10.1001/jamanetworkopen.2020.14661",
+"article-title": "Development and Validation of a Natural Language Processing Tool to Generate the CONSORT Reporting Checklist for Randomized Clinical Trials.",
+"volume": "3",
+"author": "F Wang",
+"year": "2020",
+"journal-title": "JAMA Netw Open."
+},
+{
+"key": "ref13",
+"doi-asserted-by": "publisher",
+"first-page": "355",
+"DOI": "10.1038/s41597-025-04629-1",
+"article-title": "SPIRIT-CONSORT-TM: a corpus for assessing transparency of clinical trial protocol and results publications.",
+"volume": "12",
+"author": "L Jiang",
+"year": "2025",
+"journal-title": "Scientific Data."
+},
+{
+"key": "ref14",
+"doi-asserted-by": "publisher",
+"first-page": "1930-1940",
+"DOI": "10.1038/s41591-023-02448-8",
+"article-title": "Large language models in medicine.",
+"volume": "29",
+"author": "A Thirunavukarasu",
+"year": "2023",
+"journal-title": "Nature medicine."
+},
+{
+"key": "ref15",
+"doi-asserted-by": "publisher",
+"first-page": "e088735",
+"DOI": "10.1136/bmjopen-2024-088735",
+"article-title": "GPT for RCTs? Using AI to determine adherence to clinical trial reporting guidelines.",
+"volume": "15",
+"author": "J Wrightson",
+"year": "2025",
+"journal-title": "BMJ Open."
+},
+{
+"key": "ref16",
+"first-page": "2025.04. 18.25326076",
+"article-title": "AutoReporter: Development of an artificial intelligence tool for automated assessment of research reporting guideline adherence.",
+"author": "D Chen",
+"year": "2025",
+"journal-title": "medRxiv."
+},
+{
+"key": "ref17",
+"doi-asserted-by": "publisher",
+"first-page": "80",
+"DOI": "10.1007/s10916-025-02212-0",
+"article-title": "Large Language Models and the Analyses of Adherence to Reporting Guidelines in Systematic Reviews and Overviews of Reviews (PRISMA 2020 and PRIOR).",
+"volume": "49",
+"author": "D Forero",
+"year": "2025",
+"journal-title": "Journal of Medical Systems."
+},
+{
+"key": "ref18",
+"article-title": "Does prompt formatting have any impact on llm performance?.",
+"author": "J He",
+"year": "2024",
+"journal-title": "arXiv preprint arXiv:241110541."
+},
+{
+"key": "ref19",
+"doi-asserted-by": "publisher",
+"first-page": "1",
+"DOI": "10.1186/2046-4053-4-1",
+"article-title": "Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.",
+"volume": "4",
+"author": "D Moher",
+"year": "2015",
+"journal-title": "Syst Rev."
+},
+{
+"key": "ref21",
+"doi-asserted-by": "publisher",
+"first-page": "e2529418",
+"DOI": "10.1001/jamanetworkopen.2025.29418",
+"article-title": "Large Language Model Analysis of Reporting Quality of Randomized Clinical Trial Articles: A Systematic Review.",
+"volume": "8",
+"author": "A Srinivasan",
+"year": "2025",
+"journal-title": "JAMA Network Open."
+},
+{
+"key": "ref22",
+"doi-asserted-by": "publisher",
+"first-page": "10323",
+"DOI": "10.3390/app142210323",
+"article-title": "Automated Assessment of Reporting Completeness in Orthodontic Research Using LLMs: An Observational Study.",
+"volume": "14",
+"author": "F Alharbi",
+"year": "2024",
+"journal-title": "Applied Sciences."
+},
+{
+"key": "ref23",
+"article-title": "Large language models for automated PRISMA 2020 adherence checking.",
+"author": "Y Kataoka",
+"year": "2025",
+"journal-title": "arXiv preprint arXiv:251116707."
+},
+{
+"key": "ref24",
+"article-title": "Evaluating the Ability of Large Language Models to Identify Adherence to CONSORT Reporting Guidelines in Randomized Controlled Trials: A Methodological Evaluation Study.",
+"author": "Z He",
+"year": "2025",
+"journal-title": "arXiv preprint arXiv:251113107."
+},
+{
+"key": "ref25",
+"doi-asserted-by": "publisher",
+"DOI": "10.5281/zenodo.21910380",
+"article-title": "Artificial intelligence tools for automating assessments of reporting guideline adherence: a protocol for a systematic review.",
+"author": "M Zeng",
+"year": "2026",
+"journal-title": "OSF."
+},
+{
+"key": "ref26",
+"doi-asserted-by": "publisher",
+"first-page": "377-381",
+"DOI": "10.1016/j.jbi.2008.08.010",
+"article-title": "Research electronic data capture (REDCap) - a metadata-driven methodology and workflow process for providing translational research informatics support.",
+"volume": "42",
+"author": "P Harris",
+"year": "2009",
+"journal-title": "Journal of Biomedical Informatics."
+},
+{
+"key": "ref27",
+"doi-asserted-by": "publisher",
+"first-page": "e082505",
+"DOI": "10.1136/bmj-2024-082505",
+"article-title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods.",
+"volume": "388",
+"author": "K Moons",
+"year": "2025",
+"journal-title": "BMJ."
+},
+{
+"key": "ref28",
+"article-title": "Artificial Intelligence tools for Risk of Bias assessment in systematic reviews (AI4RoB): a protocol for a living systematic review.",
+"author": "L Albarqouni",
+"year": "2025",
+"journal-title": "OSF."
+}
+],
+"container-title": "F1000Research",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://f1000research.com/articles/15-626/v2/xml",
+"content-type": "application/xml",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://f1000research.com/articles/15-626/v2/pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://f1000research.com/articles/15-626/v2/iparadigms",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+9,
+16
+]
+],
+"date-time": "2026-09-16T10:14:09Z",
+"timestamp": 1789553649000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://f1000research.com/articles/15-626/v2"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+]
+},
+"references-count": 26,
+"URL": "http://dx.doi.org/10.12688/f1000research.179775.2",
+"relation": {
+"has-version": [
+{
+"id-type": "doi",
+"id": "10.12688/f1000research.179775.1",
+"asserted-by": "subject"
+}
+],
+"has-review": [
+{
+"id-type": "doi",
+"id": "10.5256/f1000research.204085.r513554",
+"asserted-by": "subject"
+},
+{
+"id-type": "doi",
+"id": "10.5256/f1000research.204085.r513555",
+"asserted-by": "subject"
+},
+{
+"id-type": "doi",
+"id": "10.5256/f1000research.204085.r513554",
+"asserted-by": "object"
+},
+{
+"id-type": "doi",
+"id": "10.5256/f1000research.204085.r513555",
+"asserted-by": "object"
+}
+]
+},
+"ISSN": [
+"2046-1402"
+],
+"subject": [],
+"container-title-short": "F1000Res",
+"published": {
+"date-parts": [
+[
+2026,
+8,
+22
+]
+]
+},
+"assertion": [
+{
+"value": "Approved with reservations, Approved",
+"URL": "https://f1000research.com/articles/15-626/v2#article-reports",
+"order": 0,
+"name": "referee-status",
+"label": "Referee status",
+"group": {
+"name": "current-referee-status",
+"label": "Current Referee Status"
+}
+},
+{
+"value": "10.5256/f1000research.204085.r513554, Mbonigaba Celestin, Brainae University, Delaware, 24 Aug 2026, version 2, 1 approved, 1 approved with reservations",
+"URL": "https://f1000research.com/articles/15-626/v2#referee-response-513554",
+"order": 0,
+"name": "referee-response-513554",
+"label": "Referee Report",
+"group": {
+"name": "article-reports",
+"label": "Article Reports"
+}
+},
+{
+"value": "10.5256/f1000research.204085.r513555, Manuel Marques-Cruz, University of Porto, Porto, Porto District, 16 Sep 2026, version 2, 1 approved, 1 approved with reservations",
+"URL": "https://f1000research.com/articles/15-626/v2#referee-response-513555",
+"order": 1,
+"name": "referee-response-513555",
+"label": "Referee Report",
+"group": {
+"name": "article-reports",
+"label": "Article Reports"
+}
+},
+{
+"value": "This research was supported by a Monash University Early Career Research Excellence Program (ECREP) grant. MJP is supported by a National Health and Medical Research Council Investigator Grant (GNT2033917). JEM is supported by a National Health and Medical Research Council Investigator Grant (GNT2009612). The funders had no role in the study design, decision to publish, or preparation of the manuscript. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.",
+"order": 2,
+"name": "grant-information",
+"label": "Grant Information"
+},
+{
+"value": "This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+"order": 0,
+"name": "copyright-info",
+"label": "Copyright"
+}
+]
+},
+"pmid:43008839": {
+"indexed": {
+"date-parts": [
+[
+2026,
+11,
+11
+]
+],
+"date-time": "2026-11-11T00:30:55Z",
+"timestamp": 1794357055388,
+"version": "4.9.0"
+},
+"reference-count": 0,
+"publisher": "Elsevier BV",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://www.elsevier.com/legal/tdmrep-license"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "stm-asf",
+"delay-in-days": 0,
+"URL": "https://doi.org/10.15223/policy-017"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "stm-asf",
+"delay-in-days": 0,
+"URL": "https://doi.org/10.15223/policy-037"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "stm-asf",
+"delay-in-days": 0,
+"URL": "https://doi.org/10.15223/policy-012"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "stm-asf",
+"delay-in-days": 0,
+"URL": "https://doi.org/10.15223/policy-029"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+1
+]
+],
+"date-time": "2026-11-01T00:00:00Z",
+"timestamp": 1793491200000
+},
+"content-version": "stm-asf",
+"delay-in-days": 0,
+"URL": "https://doi.org/10.15223/policy-004"
+}
+],
+"funder": [
+{
+"DOI": "10.13039/501100001665",
+"name": "French National Research Agency",
+"doi-asserted-by": "publisher",
+"id": [
+{
+"id": "10.13039/501100001665",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/100018694",
+"name": "Marie Skłodowska-Curie Actions",
+"doi-asserted-by": "publisher",
+"id": [
+{
+"id": "10.13039/100018694",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+},
+{
+"DOI": "10.13039/501100004488",
+"name": "Croatian Science Foundation",
+"doi-asserted-by": "publisher",
+"id": [
+{
+"id": "10.13039/501100004488",
+"id-type": "DOI",
+"asserted-by": "publisher"
+}
+]
+}
+],
+"content-domain": {
+"domain": [
+"clinicalkey.com",
+"clinicalkey.com.au",
+"clinicalkey.es",
+"clinicalkey.fr",
+"clinicalkey.jp",
+"jclinepi.com",
+"elsevier.com",
+"sciencedirect.com"
+],
+"crossmark-restriction": true
+},
+"published-print": {
+"date-parts": [
+[
+2026,
+11
+]
+]
+},
+"DOI": "10.1016/j.jclinepi.2026.112584",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+11,
+11
+]
+],
+"date-time": "2026-11-11T00:12:40Z",
+"timestamp": 1794355960000
+},
+"page": "112584",
+"update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "A call for action: ICMJE should require mandatory prospective registration of systematic reviews",
+"prefix": "10.1016",
+"author": [
+{
+"ORCID": "https://orcid.org/0000-0002-8467-6061",
+"authenticated-orcid": false,
+"given": "Livia",
+"family": "Puljak",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Zachary",
+"family": "Munn",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Dawid",
+"family": "Pieper",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Ana",
+"family": "Marušić",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Gary S.",
+"family": "Collins",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Florian",
+"family": "Naudet",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Lotty",
+"family": "Hooft",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Kim",
+"family": "van der Braak",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+},
+{
+"given": "Hans",
+"family": "Lund",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"vocabulary": "crossref",
+"role": "author"
+}
+]
+}
+],
+"member": "78",
+"container-title": "Journal of Clinical Epidemiology",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://api.elsevier.com/content/article/PII:S0895435626004609?httpAccept=text/xml",
+"content-type": "text/xml",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://api.elsevier.com/content/article/PII:S0895435626004609?httpAccept=text/plain",
+"content-type": "text/plain",
+"content-version": "vor",
+"intended-application": "text-mining"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+11,
+11
+]
+],
+"date-time": "2026-11-11T00:12:41Z",
+"timestamp": 1794355961000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0895435626004609"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+11
+]
+]
+},
+"references-count": 0,
+"alternative-id": [
+"S0895435626004609"
+],
+"URL": "http://dx.doi.org/10.1016/j.jclinepi.2026.112584",
+"relation": {},
+"ISSN": [
+"0895-4356"
+],
+"subject": [],
+"container-title-short": "Journal of Clinical Epidemiology",
+"published": {
+"date-parts": [
+[
+2026,
+11
+]
+]
+},
+"assertion": [
+{
+"value": "Elsevier",
+"name": "publisher",
+"label": "This article is maintained by"
+},
+{
+"value": "A call for action: ICMJE should require mandatory prospective registration of systematic reviews",
+"name": "articletitle",
+"label": "Article Title"
+},
+{
+"value": "Journal of Clinical Epidemiology",
+"name": "journaltitle",
+"label": "Journal Title"
+},
+{
+"value": "https://doi.org/10.1016/j.jclinepi.2026.112584",
+"name": "articlelink",
+"label": "CrossRef DOI link to publisher maintained version"
+},
+{
+"value": "article",
+"name": "content_type",
+"label": "Content Type"
+},
+{
+"value": "© 2026 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+"name": "copyright",
+"label": "Copyright"
+}
+],
+"article-number": "112584"
+},
+"pmid:25247266": {
+"indexed": {
+"date-parts": [
+[
+2026,
+2,
+7
+]
+],
+"date-time": "2026-02-07T05:33:35Z",
+"timestamp": 1770442415760,
+"version": "3.49.0"
+},
+"update-to": [
+{
+"DOI": "10.1002/14651858.cd010544",
+"type": "new_version",
+"label": "New version",
+"source": "publisher",
+"updated": {
+"date-parts": [
+[
+2014,
+9,
+23
+]
+],
+"date-time": "2014-09-23T00:00:00Z",
+"timestamp": 1411430400000
+}
+}
+],
+"reference-count": 79,
+"publisher": "Wiley",
+"issue": "9",
+"content-domain": {
+"domain": [
+"wiley.com",
+"cochranelibrary.com"
+],
+"crossmark-restriction": true
+},
+"DOI": "10.1002/14651858.cd010544.pub2",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2014,
+9,
+23
+]
+],
+"date-time": "2014-09-23T17:41:58Z",
+"timestamp": 1411494118000
+},
+"update-policy": "https://doi.org/10.1002/crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 3,
+"title": "Centre-based day care for children younger than five years of age in high-income countries",
+"prefix": "10.1002",
+"volume": "2014",
+"author": [
+{
+"given": "Felix C",
+"family": "van Urk",
+"sequence": "first",
+"affiliation": [
+{
+"name": "University of Oxford; Centre for Evidence-Based Intervention, Department of Social Policy and Intervention; 32 Wellington Square Oxford Oxfordshire UK OX1 2ER"
+}
+],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Taylor W",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of North Carolina at Chapel Hill; Department of Sociology; 155 Hamilton Hall CB #3210 Chapel HIll North Carolina USA 27510"
+}
+],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Rebecca",
+"family": "Waller",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "University of Michigan; Department of Psychology; 503 Church Street Ann Arbor Michigan USA 48109"
+}
+],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [
+{
+"name": "Johns Hopkins University Bloomberg School of Public Health; Department of Epidemiology; 615 North Wolfe Street Baltimore Maryland USA 21205"
+}
+],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "311",
+"published-online": {
+"date-parts": [
+[
+2014,
+9,
+23
+]
+]
+},
+"reference": [
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0001|cit1",
+"doi-asserted-by": "crossref",
+"first-page": "287",
+"DOI": "10.1111/j.1365-2214.2006.00606.x",
+"article-title": "Out-of-home day care for families living in a disadvantaged area of London: economic evaluation alongside a RCT",
+"volume": "32",
+"author": "Mujica Mota",
+"year": "2006",
+"journal-title": "Child: Care, Health & Development"
+},
+{
+"issue": "6",
+"key": "10.1002/14651858.CD010544.pub2-BIB0002|cit2",
+"doi-asserted-by": "crossref",
+"first-page": "691",
+"DOI": "10.1111/j.1365-2214.2004.00481.x",
+"article-title": "The impact of day care on socially disadvantaged families: an example of the use of process evaluation within a randomized controlled trial",
+"volume": "30",
+"author": "Toroyan",
+"year": "2004",
+"journal-title": "Child: Care, Health and Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0003|cit3",
+"doi-asserted-by": "crossref",
+"first-page": "906",
+"DOI": "10.1136/bmj.327.7420.906",
+"article-title": "Effectiveness of out-of-home day care for disadvantaged families: randomised controlled trial",
+"volume": "327",
+"author": "Toroyan",
+"year": "2003",
+"journal-title": "BMJ"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0004|cit4",
+"doi-asserted-by": "crossref",
+"first-page": "131",
+"DOI": "10.1080/08856250500055578",
+"article-title": "Mathematical thinking intervention programmes for preschool children with normal and lower number sense",
+"volume": "20",
+"author": "Aunio",
+"year": "2005",
+"journal-title": "European Journal of Special Needs Education"
+},
+{
+"issue": "5",
+"key": "10.1002/14651858.CD010544.pub2-BIB0005|cit5",
+"doi-asserted-by": "crossref",
+"first-page": "615",
+"DOI": "10.1177/0193841X8400800502",
+"article-title": "The effects of early education on children's competence in elementary school",
+"volume": "8",
+"author": "Bronson",
+"year": "1984",
+"journal-title": "Evaluation Review"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0006|cit6",
+"doi-asserted-by": "crossref",
+"first-page": "238",
+"DOI": "10.1006/pmed.1998.0282",
+"article-title": "The effectiveness of early intervention: examining risk factors and pathways to enhanced development",
+"volume": "27",
+"author": "Berlin",
+"year": "1998",
+"journal-title": "Preventive Medicine"
+},
+{
+"issue": "6",
+"key": "10.1002/14651858.CD010544.pub2-BIB0007|cit7",
+"doi-asserted-by": "crossref",
+"first-page": "924",
+"DOI": "10.2105/AJPH.84.6.924",
+"article-title": "The effects of early education intervention on maternal employment, public assistance, and health insurance: the infant health and development program",
+"volume": "84",
+"author": "Brooks-Gunn",
+"year": "1994",
+"journal-title": "American Journal of Public Health"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0008|cit8",
+"doi-asserted-by": "crossref",
+"first-page": "213",
+"DOI": "10.1016/j.ecresq.2007.12.001",
+"article-title": "Differential exposure to early childhood education services and mother-toddler interaction",
+"volume": "23",
+"author": "Klebanov",
+"year": "2008",
+"journal-title": "Early Childhood Research Quarterly"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0009|cit9",
+"doi-asserted-by": "crossref",
+"first-page": "158",
+"DOI": "10.1086/426721",
+"article-title": "Effects of experimental center-based child care on developmental outcomes of young children in poverty",
+"volume": "79",
+"author": "Lee",
+"year": "2005",
+"journal-title": "Social Service Review"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0010|cit10",
+"doi-asserted-by": "crossref",
+"first-page": "101",
+"DOI": "10.1016/j.appdev.2007.12.007",
+"article-title": "Long-term maternal effects of early childhood intervention: findings from the Infant Health and Development Program (IHDP)",
+"volume": "29",
+"author": "Martin",
+"year": "2008",
+"journal-title": "Journal of Applied Developmental Psychology"
+},
+{
+"issue": "17",
+"key": "10.1002/14651858.CD010544.pub2-BIB0011|cit11",
+"doi-asserted-by": "crossref",
+"first-page": "2212",
+"DOI": "10.1001/jama.1991.03460170066035",
+"article-title": "Health care use among young children in day care: results in a randomized trial of early intervention",
+"volume": "265",
+"author": "McCormick",
+"year": "1991",
+"journal-title": "JAMA"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0012|cit12",
+"doi-asserted-by": "crossref",
+"first-page": "63",
+"DOI": "10.2307/584284",
+"article-title": "Disadvantaged single teenage mothers and their children: consequences of free educational day care",
+"volume": "35",
+"author": "Campbell",
+"year": "1986",
+"journal-title": "Family Relations"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0013|cit13",
+"doi-asserted-by": "crossref",
+"first-page": "231",
+"DOI": "10.1037/0012-1649.37.2.231",
+"article-title": "The development of cognitive and academic abilities: growth curves from an early childhood educational experiment",
+"volume": "37",
+"author": "Campbell",
+"year": "2001",
+"journal-title": "Developmental Psychology"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0014|cit14",
+"doi-asserted-by": "crossref",
+"first-page": "684",
+"DOI": "10.2307/1131410",
+"article-title": "Effects of early intervention on intellectual and academic achievement: a follow-up study of children from low-income families",
+"volume": "65",
+"author": "Campbell",
+"year": "1994",
+"journal-title": "Child Development"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0015|cit15",
+"doi-asserted-by": "crossref",
+"first-page": "503",
+"DOI": "10.1177/016502549401700307",
+"article-title": "The effects of daycare intervention in the preschool years on the narrative skills of poverty children in kindergarten",
+"volume": "17",
+"author": "Feagans",
+"year": "1994",
+"journal-title": "International Journal of Behavioral Development"
+},
+{
+"issue": "7",
+"key": "10.1002/14651858.CD010544.pub2-BIB0016|cit16",
+"doi-asserted-by": "crossref",
+"first-page": "844",
+"DOI": "10.2105/AJPH.80.7.844",
+"article-title": "The prevention of intellectual impairment in children of impoverished families: findings of a randomized trial of educational day care",
+"volume": "80",
+"author": "Martin",
+"year": "1990",
+"journal-title": "American Journal of Public Health"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0017|cit17",
+"doi-asserted-by": "crossref",
+"first-page": "746",
+"DOI": "10.1111/j.1467-8624.2007.01030.x",
+"article-title": "Depressive symptoms in young adults: the influences of the early home environment and early educational child care",
+"volume": "78",
+"author": "McLaughlin",
+"year": "2007",
+"journal-title": "Child Development"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0018|cit18",
+"doi-asserted-by": "crossref",
+"first-page": "410",
+"DOI": "10.1111/j.1467-8624.2009.01403.x",
+"article-title": "Early educational intervention, early cumulative risk, and the early home environment as predictors of young adult outcomes within a high-risk sample",
+"volume": "81",
+"author": "Pungello",
+"year": "2010",
+"journal-title": "Child Development"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0019|cit19",
+"doi-asserted-by": "crossref",
+"first-page": "385",
+"DOI": "10.1207/S15326942DN1603_22",
+"article-title": "Early intervention: successful pathways to improving intellectual development",
+"volume": "16",
+"author": "Ramey",
+"year": "1999",
+"journal-title": "Developmental Neuropsychology"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0020|cit20",
+"doi-asserted-by": "crossref",
+"first-page": "526",
+"DOI": "10.3109/13682829809179480",
+"article-title": "Evaluation of a nursery based language intervention in a socially disadvantaged area",
+"volume": "33 Suppl 1",
+"author": "Cooper",
+"year": "1998",
+"journal-title": "International Journal of Language and Communication Disorders"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0021|cit21",
+"first-page": "377",
+"article-title": "The IDS Program: an experiment in early and sustained enrichment",
+"volume-title": "As the Twig Is Bent... Lasting Effects of Preschool Programs",
+"author": "Deutsch",
+"year": "1983"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0022|cit22",
+"first-page": "74",
+"article-title": "A brief synopsis of an initial enrichment program in early childhood",
+"volume-title": "A Report on Longitudinal Evaluations of Preschool Programs. Vol. 1",
+"author": "Deutsch",
+"year": "1974"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0023|cit23",
+"volume-title": "An Evaluation of the Effectiveness of an Enriched Curriculum in Overcoming the Consequences of Environmental Deprivation",
+"author": "Deutsch",
+"year": "1971"
+},
+{
+"issue": "4",
+"key": "10.1002/14651858.CD010544.pub2-BIB0024|cit24",
+"doi-asserted-by": "crossref",
+"first-page": "393",
+"DOI": "10.1007/BF00911216",
+"article-title": "Long-term effects of early enrichment: a 20-year perspective on persistence and change",
+"volume": "13",
+"author": "Jordan",
+"year": "1985",
+"journal-title": "American Journal of Community Psychology"
+},
+{
+"issue": "5",
+"key": "10.1002/14651858.CD010544.pub2-BIB0025|cit25",
+"doi-asserted-by": "crossref",
+"first-page": "616",
+"DOI": "10.1080/13682820802276658",
+"article-title": "Evaluation of speech and language therapy interventions for pre-school children with specific language impairment: a comparison of outcomes following a specialist intensive, nursery-based and no intervention",
+"volume": "44",
+"author": "Gallagher",
+"year": "2009",
+"journal-title": "International Journal of Language and Communication Disorders"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0026|cit26",
+"volume-title": "The Milwaukee Project: Early intervention as a Technique to Prevent Mental Retardation",
+"author": "Garber",
+"year": "1973"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0027|cit27",
+"volume-title": "The Milwaukee Project: Preventing Mental Retardation in Children at Risk",
+"author": "Garber",
+"year": "1988"
+},
+{
+"issue": "4",
+"key": "10.1002/14651858.CD010544.pub2-BIB0028|cit28",
+"doi-asserted-by": "crossref",
+"first-page": "909",
+"DOI": "10.2307/1127321",
+"article-title": "The Early Training Project: a seventh-year report",
+"volume": "41",
+"author": "Gray",
+"year": "1970",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0029|cit29",
+"volume-title": "From Three to Twenty: The Early Training Project in Longitudinal Perspective",
+"author": "Gray",
+"year": "1981"
+},
+{
+"issue": "6",
+"key": "10.1002/14651858.CD010544.pub2-BIB0030|cit30",
+"doi-asserted-by": "crossref",
+"first-page": "885",
+"DOI": "10.1037/0012-1649.41.6.885",
+"article-title": "The effectiveness of early head start for 3-year-old children and their parents: lessons for policy and programs",
+"volume": "41",
+"author": "Love",
+"year": "2005",
+"journal-title": "Developmental Psychology"
+},
+{
+"issue": "2-3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0031|cit31",
+"first-page": "1",
+"article-title": "Lasting effects of early education: a report from the Consortium for Longitudinal Studies",
+"volume": "47",
+"author": "Lazar",
+"year": "1982",
+"journal-title": "Monographs of the Society for Research in Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0032|cit32",
+"first-page": "201",
+"article-title": "The Harlem Study: effects by type of training, age of training, and social class",
+"volume-title": "As the Twig Is Bent... Lasting Effects of Preschool Programs",
+"author": "Palmer",
+"year": "1983"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0033|cit33",
+"doi-asserted-by": "crossref",
+"first-page": "445",
+"DOI": "10.3102/00028312022003445",
+"article-title": "Preschool intervention, school success and delinquency in a high-risk sample of youth",
+"volume": "22",
+"author": "Farnworth",
+"year": "1985",
+"journal-title": "American Educational Research Journal"
+},
+{
+"issue": "8",
+"key": "10.1002/14651858.CD010544.pub2-BIB0034|cit34",
+"doi-asserted-by": "crossref",
+"first-page": "1431",
+"DOI": "10.2105/AJPH.2008.148353",
+"article-title": "Effects of a prekindergarten educational intervention on adult health: 37-year follow-up results of a randomized controlled trial",
+"volume": "99",
+"author": "Muennig",
+"year": "2009",
+"journal-title": "American Journal of Public Health"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0035|cit35",
+"volume-title": "Significant Benefits: The High/Scope Perry Preschool Study Through Age 27",
+"author": "Schweinhart",
+"year": "1993"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0036|cit36",
+"doi-asserted-by": "crossref",
+"first-page": "15",
+"DOI": "10.1016/0885-2006(86)90005-0",
+"article-title": "Consequences of three preschool curriculum models through age 15",
+"volume": "1",
+"author": "Schweinhart",
+"year": "1986",
+"journal-title": "Early Childhood Research Quarterly"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0037|cit37",
+"doi-asserted-by": "crossref",
+"first-page": "12",
+"DOI": "10.1177/027112148500500203",
+"article-title": "Project CARE: a comparison of two early intervention strategies to prevent retarded development",
+"volume": "5",
+"author": "Ramey",
+"year": "1985",
+"journal-title": "Topics in Early Childhood Special Education"
+},
+{
+"issue": "6",
+"key": "10.1002/14651858.CD010544.pub2-BIB0038|cit38",
+"doi-asserted-by": "crossref",
+"first-page": "1682",
+"DOI": "10.2307/1130831",
+"article-title": "A longitudinal study of two early intervention strategies: Project CARE",
+"volume": "61",
+"author": "Wasik",
+"year": "1990",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0039|cit39",
+"volume-title": "Patterns of Attachment: A Psychological Study of the Strange Situation",
+"author": "Ainsworth",
+"year": "1978"
+},
+{
+"issue": "4",
+"key": "10.1002/14651858.CD010544.pub2-BIB0040|cit40",
+"doi-asserted-by": "crossref",
+"first-page": "771",
+"DOI": "10.1046/j.0038-4941.2003.08404002.x",
+"article-title": "Child care policy reform and the employment of single mothers",
+"volume": "84",
+"author": "Bainbridge",
+"year": "2003",
+"journal-title": "Social Science Quarterly"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0041|cit41",
+"doi-asserted-by": "crossref",
+"first-page": "193",
+"DOI": "10.1007/BF03172724",
+"article-title": "The relationship between infant day care and socio-emotional development with French children aged 3-4 years",
+"volume": "11",
+"author": "Balleyguier",
+"year": "1996",
+"journal-title": "European Journal of Psychology of Education"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0042|cit42",
+"doi-asserted-by": "crossref",
+"first-page": "235",
+"DOI": "10.1016/0885-2006(88)90003-8",
+"article-title": "The \"effects\" of infant day care reconsidered",
+"volume": "3",
+"author": "Belsky",
+"year": "1988",
+"journal-title": "Early Childhood Research Quarterly"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0043|cit43",
+"doi-asserted-by": "crossref",
+"first-page": "681",
+"DOI": "10.1111/j.1467-8624.2007.01021.x",
+"article-title": "Are there long-term effects of early child care?",
+"volume": "78",
+"author": "Belsky",
+"year": "2007",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0044|cit44",
+"doi-asserted-by": "crossref",
+"unstructured": "Borenstein M Hedges L Higgins J Rothstein H Comprehensive Meta-analysis 2005",
+"DOI": "10.1002/0471667196.ess3051.pub2"
+},
+{
+"issue": "4",
+"key": "10.1002/14651858.CD010544.pub2-BIB0045|cit45",
+"doi-asserted-by": "crossref",
+"first-page": "1052",
+"DOI": "10.1111/1467-8624.00457",
+"article-title": "Maternal employment and child cognitive outcomes in the first three years of life: the NICHD study of early child care",
+"volume": "73",
+"author": "Brooks-Gunn",
+"year": "2002",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0046|cit46",
+"article-title": "Centre-based day care for children under five in low- and middle-income countries",
+"author": "Brown",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0047|cit47",
+"doi-asserted-by": "crossref",
+"first-page": "140",
+"DOI": "10.1016/j.ecresq.2009.11.001",
+"article-title": "How does early childhood care and education affect cognitive development? An international review of the effects of early interventions for children from different social backgrounds",
+"volume": "25",
+"author": "Burger",
+"year": "2010",
+"journal-title": "Early Childhood Research Quarterly"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0048|cit48",
+"doi-asserted-by": "crossref",
+"first-page": "579",
+"DOI": "10.1177/016146811011200303",
+"article-title": "Meta-analysis of the effects of early education interventions on cognitive and social development",
+"volume": "112",
+"author": "Camilli",
+"year": "2010",
+"journal-title": "Teachers College Record"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0049|cit49",
+"doi-asserted-by": "crossref",
+"first-page": "231",
+"DOI": "10.1037/0012-1649.37.2.231",
+"article-title": "The development of cognitive and academic abilities: growth curves from an early childhood educational experiment",
+"volume": "37",
+"author": "Campbell",
+"year": "2001",
+"journal-title": "Developmental Psychology"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0050|cit50",
+"unstructured": "Capizzano J Main R Many young children spend long hours in child care www.urban.org/publications/311154.html"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0051|cit51",
+"volume-title": "A Snapshot of Early Childhood Development in Australia - AEDI National Report 2009",
+"author": "Centre for Community Child Health",
+"year": "2009"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0052|cit52",
+"first-page": "21",
+"article-title": "Predicting child development from child care forms and features: the Chicago Study",
+"volume-title": "Quality In Child Care: What Does Research Tell Us?",
+"author": "Clarke-Stewart",
+"year": "1987"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0053|cit53",
+"volume-title": "Children at Home and in Day Care",
+"author": "Clarke-Stewart",
+"year": "1994"
+},
+{
+"issue": "5",
+"key": "10.1002/14651858.CD010544.pub2-BIB0054|cit54",
+"doi-asserted-by": "crossref",
+"first-page": "1329",
+"DOI": "10.1111/j.1467-8624.2009.01336.x",
+"article-title": "Does higher quality child care promote low-income children’s math and reading achievement in middle childhood?",
+"volume": "80",
+"author": "Dearing",
+"year": "2009",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0055|cit55",
+"volume-title": "The Incomplete Revolution: Adapting to Women’s New Roles",
+"author": "Esping-Andersen",
+"year": "2009"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0056|cit56",
+"doi-asserted-by": "crossref",
+"first-page": "307",
+"DOI": "10.1257/000282802760015748",
+"article-title": "Public schooling for young children and maternal labor supply",
+"volume": "92",
+"author": "Gelbach",
+"year": "2002",
+"journal-title": "American Economic Review"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0057|cit57",
+"doi-asserted-by": "crossref",
+"first-page": "9",
+"DOI": "10.1521/scpq.16.1.9.19163",
+"article-title": "Early childhood education: a meta-analytic affirmation of the short and- long-term benefits of educational opportunity",
+"volume": "16",
+"author": "Gorey",
+"year": "2001",
+"journal-title": "School Psychology Quarterly"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0058|cit58",
+"volume-title": "The Abilities of Babies: A Study in Mental Measurement",
+"author": "Griffiths",
+"year": "1954"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0059|cit59",
+"unstructured": "Higgins JPT Green S (editors) Cochrane Handbook for Systematic Reviews of Interventions Version 5.1.0 [updated March 2011]. The Cochrane Collaboration, 2011 www.cochrane-handbook.org"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0060|cit60",
+"first-page": "950",
+"article-title": "Non-parental child care: context, concepts, correlates, and consequences",
+"volume-title": "Handbook of Child Psychology: Child Psychology in Practice",
+"volume": "4",
+"author": "Lamb",
+"year": "2006"
+},
+{
+"issue": "2-3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0061|cit61",
+"first-page": "1",
+"article-title": "Lasting effects of early education: a report from the Consortium for Longitudinal Studies",
+"volume": "47",
+"author": "Lazar",
+"year": "1982",
+"journal-title": "Monographs of the Society for Research in Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0062|cit62",
+"article-title": "Chapter 6: Searching for studies",
+"volume-title": "Cochrane Handbook for Systematic Reviews of Interventions",
+"author": "Lefebvre",
+"year": "2011"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0063|cit63",
+"volume-title": "A Literature Review of the Impact of Early Years Provision upon Young Children, with Emphasis Given to Children from Disadvantaged Backgrounds. Report to the Controller and Auditor General",
+"author": "Melhuish",
+"year": "2004"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0064|cit64",
+"doi-asserted-by": "crossref",
+"first-page": "537",
+"DOI": "10.3102/00028312042003537",
+"article-title": "Early child care and children’s development in the primary grades: follow-up results from the NICHD study of early child care",
+"volume": "42",
+"author": "NICHD Early Child Care Research Network",
+"year": "2005",
+"journal-title": "American Educational Research Journal"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0065|cit65",
+"doi-asserted-by": "crossref",
+"first-page": "99",
+"DOI": "10.1037/0003-066X.61.2.99",
+"article-title": "Child-care effect sizes for the NICHD study of early child care and youth development",
+"volume": "61",
+"author": "NICHD Early Child Care Research Network",
+"year": "2006",
+"journal-title": "American Psychologist"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0066|cit66",
+"unstructured": "Organization for Economic Co-operation and Development (OECD) Family size and composition http://www.oecd.org/social/soc/oecdfamilydatabase.htm"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0067|cit67",
+"first-page": "471",
+"article-title": "Child care and early development",
+"volume-title": "Handbook of Early Child Development",
+"author": "Philips",
+"year": "2006"
+},
+{
+"issue": "2",
+"key": "10.1002/14651858.CD010544.pub2-BIB0068|cit68",
+"doi-asserted-by": "crossref",
+"first-page": "346",
+"DOI": "10.1111/j.1467-8624.2004.00676.x",
+"article-title": "Placing emotional self-regulation in sociocultural and socioeconomic contexts",
+"volume": "75",
+"author": "Raver",
+"year": "2004",
+"journal-title": "Child Development"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0069|cit69",
+"unstructured": "The Nordic Cochrane Centre, The Cochrane Collaboration Review Manager (RevMan) 2012"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0070|cit70",
+"doi-asserted-by": "crossref",
+"first-page": "12",
+"DOI": "10.1037/h0078960",
+"article-title": "The role of day care quality in the prediction of children's vocabulary",
+"volume": "23",
+"author": "Schliecker",
+"year": "1991",
+"journal-title": "Canadian Journal of Behavioral Science"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0071|cit71",
+"volume-title": "Significant Benefits: The High/Scope Perry Preschool Study Through Age 27",
+"author": "Schweinhart",
+"year": "1993"
+},
+{
+"issue": "6045",
+"key": "10.1002/14651858.CD010544.pub2-BIB0072|cit72",
+"doi-asserted-by": "crossref",
+"first-page": "982",
+"DOI": "10.1126/science.1206014",
+"article-title": "Protecting brains, not simply stimulating minds",
+"volume": "333",
+"author": "Shonkoff",
+"year": "2011",
+"journal-title": "Science"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0073|cit73",
+"volume-title": "Childcare and Early Years Survey of Parents, 2009",
+"author": "Smith",
+"year": "2010"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0074|cit74",
+"unstructured": "Smyke AT Zeanah CH Disturbances of attachment interview Unpublished data. http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/CHI/A/00004583-920020800-00014.doc, 1999"
+},
+{
+"issue": "1",
+"key": "10.1002/14651858.CD010544.pub2-BIB0075|cit75",
+"doi-asserted-by": "crossref",
+"first-page": "1",
+"DOI": "10.1017/S0954579499001923",
+"article-title": "Implications of attachment theory for developmental psychopathology",
+"volume": "11",
+"author": "Sroufe",
+"year": "1999",
+"journal-title": "Development and Psychopathology"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0076|cit76",
+"volume-title": "Child Care Quality: Does it Matter and Does it Need to be Improved? [PhD thesis]",
+"author": "Vandell",
+"year": "2002"
+},
+{
+"key": "10.1002/14651858.CD010544.pub2-BIB0077|cit77",
+"unstructured": "World Bank World development indicators http://data.worldbank.org/data-catalog/world-development-indicators"
+},
+{
+"issue": "3",
+"key": "10.1002/14651858.CD010544.pub2-BIB0078|cit78",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/14651858.CD000564",
+"article-title": "Day care for pre-school children",
+"author": "Zoritch",
+"year": "2000",
+"journal-title": "Cochrane Database of Systematic Reviews"
+},
+{
+"issue": "5",
+"key": "10.1002/14651858.CD010544.pub2-BIB0079|cit79",
+"doi-asserted-by": "publisher",
+"DOI": "10.1002/14651858.CD010544",
+"article-title": "Centre-based day care for children under five in high-income countries",
+"author": "Urk",
+"year": "2013",
+"journal-title": "Cochrane Database of Systematic Reviews"
+}
+],
+"container-title": "Cochrane Database of Systematic Reviews",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "http://onlinelibrary.wiley.com/wol1/doi/10.1002/14651858.CD010544.pub2/fullpdf",
+"content-type": "unspecified",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2024,
+6,
+2
+]
+],
+"date-time": "2024-06-02T21:25:17Z",
+"timestamp": 1717363517000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "http://doi.wiley.com/10.1002/14651858.CD010544.pub2"
+}
+},
+"subtitle": [],
+"editor": [
+{
+"name": "Cochrane Developmental, Psychosocial and Learning Problems Group",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "editor",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2014,
+9,
+23
+]
+]
+},
+"references-count": 79,
+"journal-issue": {
+"issue": "9",
+"published-online": {
+"date-parts": [
+[
+2014,
+9
+]
+]
+}
+},
+"URL": "http://dx.doi.org/10.1002/14651858.CD010544.pub2",
+"relation": {},
+"ISSN": [
+"1465-1858"
+],
+"subject": [],
+"published": {
+"date-parts": [
+[
+2014,
+9,
+23
+]
+]
+}
 }
 }

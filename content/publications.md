@@ -38,6 +38,9 @@ Grant S, Corker KS, Mellor D, Stewart SLK, **Mayo-Wilson E**, Cashin AG, Lagisz 
 - [**Harm outcomes applicable for most meta-analyses of randomized trials of biomedical interventions: A key concept in clinical epidemiology**](https://doi.org/10.1016/j.jclinepi.2026.112218)  
 Christensen R, Berthelsen DB, Tugwell P, Golder S, Qureshi R, **Mayo-Wilson E**, Simon LS, Kwong J, Williamson PR, Vohra S. *J Clin Epidemiol* 194:112218. PMID: [41802580](https://pubmed.ncbi.nlm.nih.gov/41802580/).
 
+- [**A call for action: ICMJE should require mandatory prospective registration of systematic reviews**](https://doi.org/10.1016/j.jclinepi.2026.112584)  
+Puljak L, Munn Z, Pieper D, Marušić A, Collins GS, Naudet F, **Mayo-Wilson E**, Hooft L, van der Braak K, Lund H. *J Clin Epidemiol*:112584. PMID: [43008839](https://pubmed.ncbi.nlm.nih.gov/43008839/).
+
 - [**Time-to-expiration for evidence bodies of medication harms (TIME): Survival analysis from a retrospective cohort**](https://doi.org/10.1186/s12916-026-05296-8)  
 Wang X, Furuya-Kanamori L, Doi SA, Gu Z, Loke Y, Li S, **Mayo-Wilson E**, Lin L, Golder S, Chu H, Vohra S, Guo X, Xu C. *BMC Med*. DOI: [10.1186/s12916-026-05296-8](https://doi.org/10.1186/s12916-026-05296-8).
 
