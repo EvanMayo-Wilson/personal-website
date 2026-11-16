@@ -75,7 +75,7 @@
 "pdf": "papers/10_17226_26039.pdf"
 },
 "doi:10.17226/26353": {
-"citations": 1
+"citations": 2
 },
 "doi:10.17605/osf.io/sm78t": {
 "pdf": "papers/10_17605_osf_io_sm78t.docx",
@@ -129,7 +129,8 @@
 "pdf": "papers/10_4073_csr_2014_3.pdf"
 },
 "doi:10.64898/2026.08.04.26359616": {
-"citations": 0
+"citations": 0,
+"pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/08/06/2026.08.04.26359616.full.pdf"
 },
 "doi:10.7758/9781610448864.24": {
 "citations": 6
@@ -163,15 +164,15 @@
 "pdf": "papers/10_1002_14651858_cd006859_pub2.pdf"
 },
 "pmid:21154399": {
-"citations": 210,
+"citations": 211,
 "pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
-"citations": 357,
+"citations": 358,
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 1991,
+"citations": 2007,
 "pdf": "papers/10_2196_jmir_1923.pdf"
 },
 "pmid:23335473": {
@@ -179,7 +180,7 @@
 "pdf": "papers/10_1136_bmj_f185.pdf"
 },
 "pmid:23697669": {
-"citations": 83,
+"citations": 84,
 "pdf": "papers/10_1136_bmj_f2541.pdf"
 },
 "pmid:23734256": {
@@ -215,7 +216,7 @@
 "pdf": "https://implementationscience.biomedcentral.com/counter/pdf/10.1186/1748-5908-8-99"
 },
 "pmid:24018460": {
-"citations": 120,
+"citations": 121,
 "pdf": "papers/10_1002_14651858_cd005330_pub4.pdf"
 },
 "pmid:24021509": {
@@ -227,19 +228,19 @@
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/32AC4481B546BF29B23EA4D85B2252DB/S0007125000053034a.pdf/div-class-title-developing-a-reporting-guideline-for-social-and-psychological-intervention-trials-div.pdf"
 },
 "pmid:24528545": {
-"citations": 616,
+"citations": 618,
 "pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
-"citations": 147,
+"citations": 148,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089257&type=printable"
 },
 "pmid:24826920": {
-"citations": 192,
+"citations": 193,
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
-"citations": 76,
+"citations": 78,
 "pdf": "papers/10_1136_bmjopen_2013_004647.pdf"
 },
 "pmid:25076832": {
@@ -249,17 +250,16 @@
 "citations": 14
 },
 "pmid:25254354": {
-"citations": 46,
+"citations": 49,
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 117,
-"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
+"citations": 117
 },
 "pmid:25340235": {},
 "pmid:25577940": {},
 "pmid:25671707": {
-"citations": 119,
+"citations": 122,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
 },
 "pmid:25827035": {
@@ -267,7 +267,7 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 320,
+"citations": 321,
 "pdf": "papers/10_1192_bjp_bp_114_147561.pdf"
 },
 "pmid:25939032": {
@@ -279,7 +279,7 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 2964,
+"citations": 2980,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
@@ -291,7 +291,7 @@
 "pdf": "papers/10_1016_s2215_0366_15_00090_5.pdf"
 },
 "pmid:26361000": {
-"citations": 741,
+"citations": 745,
 "pdf": "papers/10_1016_s2215_0366_14_70329_3.pdf"
 },
 "pmid:26407814": {
@@ -299,7 +299,7 @@
 "pdf": "papers/10_1136_bmj_h4169.pdf"
 },
 "pmid:26506554": {
-"citations": 49,
+"citations": 50,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0140704&type=printable"
 },
 "pmid:26525044": {
@@ -331,7 +331,7 @@
 "pdf": "papers/10_1002_14651858_cd008524_pub3.pdf"
 },
 "pmid:28529187": {
-"citations": 132,
+"citations": 133,
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
@@ -343,11 +343,11 @@
 "pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 136,
+"citations": 137,
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1767,
+"citations": 1776,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -364,11 +364,11 @@
 "pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 353,
+"citations": 354,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
-"citations": 385,
+"citations": 387,
 "pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2735-z"
 },
 "pmid:30223876": {
@@ -384,11 +384,11 @@
 "pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
-"citations": 225,
+"citations": 226,
 "pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
-"citations": 66,
+"citations": 67,
 "pdf": "papers/10_1016_j_jclinepi_2019_04_022.pdf"
 },
 "pmid:31055176": {
@@ -411,7 +411,7 @@
 "pdf": "papers/10_1097_acm_0000000000003806.pdf"
 },
 "pmid:33258697": {
-"citations": 29,
+"citations": 30,
 "pdf": "papers/10_1177_1740774520972687.pdf"
 },
 "pmid:33334836": {
@@ -427,27 +427,27 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 5967,
+"citations": 6016,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 17417,
+"citations": 17514,
 "pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 14509,
+"citations": 14598,
 "pdf": "https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf"
 },
 "pmid:33782057": {
-"citations": 144919,
+"citations": 145884,
 "pdf": "https://osf.io/v7gm2/download"
 },
 "pmid:33789819": {
-"citations": 4757,
+"citations": 4788,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 12775,
+"citations": 12876,
 "pdf": "papers/10_1016_j_ijsu_2021_105906.pdf"
 },
 "pmid:34078479": {
@@ -479,15 +479,15 @@
 "pdf": "papers/10_1016_j_arthro_2021_09_005.pdf"
 },
 "pmid:34742788": {
-"citations": 67,
+"citations": 69,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_023.pdf"
 },
 "pmid:34742789": {
-"citations": 37,
+"citations": 39,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_024.pdf"
 },
 "pmid:34742790": {
-"citations": 33,
+"citations": 35,
 "pdf": "papers/10_1016_j_jclinepi_2021_10_025.pdf"
 },
 "pmid:34847946": {
@@ -523,7 +523,7 @@
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 793,
+"citations": 796,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
@@ -579,7 +579,7 @@
 "pdf": "https://discovery.ucl.ac.uk/id/eprint/10184715/1/kahan_2023_cs_230008_1701192493.64075.pdf"
 },
 "pmid:38190185": {
-"citations": 22,
+"citations": 27,
 "pdf": "papers/10_1001_jamanetworkopen_2023_50688.pdf"
 },
 "pmid:38360805": {
@@ -587,7 +587,7 @@
 "pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 152,
+"citations": 153,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
 },
 "pmid:38902776": {
@@ -646,7 +646,7 @@
 "pdf": "papers/10_1016_j_jclinepi_2026_112218.pdf"
 },
 "pmid:42055792": {
-"citations": 4,
+"citations": 5,
 "pdf": "papers/10_1136_bmjebm_2025_114044.pdf"
 },
 "pmid:42203256": {
