@@ -346,6 +346,7 @@ online and proposes changes; it never edits the site itself.
     (bibtexparser 2.x removed a module it imports), and the browser-based
     Claude scheduled task that had been backfilling was disabled 2026-08-19 -
     so the site sat at the 2026-08-28 count until 2026-10-10.
+- **Year-nav scroll-spy** (Evan, 2026-11-16): every year whose publications are on screen inside `.pub-scroll` is underlined in `.yearnav` (`a.in-view`, second inline script in `build.py`).
 - **Cloudflare Web Analytics** (token in `build.py`, `CLOUDFLARE_ANALYTICS_TOKEN`).
 - **Mobile** (≤46rem): `.mobilenav`, a small sticky text nav, is the first
   thing in `<main>` (above the hero) and stays visible while scrolling. The

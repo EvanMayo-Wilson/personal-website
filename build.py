@@ -914,6 +914,10 @@ PAGE = """<!DOCTYPE html>
   .yearnav a {{ color: var(--link); }}
   .yearnav a:hover {{ color: var(--link-hover); text-decoration: underline; }}
   .yearnav .sep {{ margin: 0 .3rem; color: var(--rule-2); }}
+  /* Scroll-spy: the years whose publications are on screen in the box are
+     underlined (set by the script after the main one). */
+  .yearnav a.in-view {{ text-decoration: underline; text-underline-offset: .2em;
+    text-decoration-thickness: 2px; }}
 
   h3.year {{
     font-size: .8125rem; margin: .45rem 0 .35rem;
@@ -2512,6 +2516,48 @@ var PUB_STATS = window.fetch
 
     searchInput.addEventListener("input", applySearch);
   }}
+}})();
+</script>
+<script>
+// Scroll-spy for the year-jump nav: underline every year whose publications
+// are currently visible inside .pub-scroll. Desktop only (the nav is hidden
+// on mobile, so the work is skipped there).
+(function () {{
+  var scroller = document.querySelector(".pub-scroll");
+  var nav = document.querySelector(".yearnav");
+  if (!scroller || !nav) return;
+  var links = {{}};
+  [].forEach.call(nav.querySelectorAll("a[href^='#y']"), function (a) {{
+    links[a.getAttribute("href").slice(2)] = a;
+  }});
+  var blocks = [].slice.call(scroller.querySelectorAll(".year-block"));
+  var pending = false;
+  function update() {{
+    pending = false;
+    if (nav.hidden || nav.offsetParent === null) return;
+    var box = scroller.getBoundingClientRect();
+    var top = Math.max(box.top, nav.getBoundingClientRect().bottom);
+    var bottom = Math.min(box.bottom, window.innerHeight);
+    blocks.forEach(function (b) {{
+      var a = links[b.dataset.year];
+      if (!a) return;
+      var r = b.getBoundingClientRect();
+      var on = !b.hidden && r.bottom > top + 1 && r.top < bottom - 1;
+      a.classList.toggle("in-view", on);
+      if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    }});
+  }}
+  function schedule() {{
+    if (!pending) {{ pending = true; requestAnimationFrame(update); }}
+  }}
+  scroller.addEventListener("scroll", schedule, {{ passive: true }});
+  window.addEventListener("scroll", schedule, {{ passive: true }});
+  window.addEventListener("resize", schedule);
+  // Search filtering and Year/Citations re-sorting hide or show blocks.
+  new MutationObserver(schedule).observe(scroller, {{
+    subtree: true, attributes: true, attributeFilter: ["hidden"]
+  }});
+  update();
 }})();
 </script>
 {analytics}
