@@ -14,3 +14,4 @@ ordering-preview.html
 /Papers/
 # intentionally-untracked headshot variant (Square_Headshot.jpg is the tracked one)
 docs/images/Square_Headshot.jpeg
+.analytics/
