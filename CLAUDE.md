@@ -347,6 +347,7 @@ online and proposes changes; it never edits the site itself.
     Claude scheduled task that had been backfilling was disabled 2026-08-19 -
     so the site sat at the 2026-08-28 count until 2026-10-10.
 - **Year-nav scroll-spy** (Evan, 2026-11-16): every year whose publications are on screen inside `.pub-scroll` is underlined in `.yearnav` (`a.in-view`, second inline script in `build.py`).
+- **Viewing stats** (Evan, 2026-11-16): `fetch_web_analytics.py` reads Cloudflare zone analytics (token in Keychain `cloudflare-analytics-token`, never in this public repo) and feeds the private pinned claude.ai dashboard "Website Viewing Stats" (https://claude.ai/artifact/8kmmuNGYc2Wx11GtWBixMi) via the weekday 2:30pm scheduled task `website-viewing-stats`. Visits = header-photo loads (`images/Square_Headshot*`) by non-bot user agents, so **renaming or removing that photo breaks the visit count** - update `GROUPS` in the script with it. History lives in gitignored `.analytics/history.json`; Cloudflare's free plan keeps request detail only ~1 month.
 - **Cloudflare Web Analytics** (token in `build.py`, `CLOUDFLARE_ANALYTICS_TOKEN`).
 - **Mobile** (≤46rem): `.mobilenav`, a small sticky text nav, is the first
   thing in `<main>` (above the hero) and stays visible while scrolling. The
