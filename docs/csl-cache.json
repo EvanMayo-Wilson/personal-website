@@ -143389,5 +143389,941 @@
 ]
 ]
 }
+},
+"pmid:43045732": {
+"indexed": {
+"date-parts": [
+[
+2026,
+11,
+18
+]
+],
+"date-time": "2026-11-18T01:16:16Z",
+"timestamp": 1794964576660,
+"version": "4.9.1"
+},
+"reference-count": 58,
+"publisher": "Springer Science and Business Media LLC",
+"issue": "1",
+"license": [
+{
+"start": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T00:00:00Z",
+"timestamp": 1785283200000
+},
+"content-version": "tdm",
+"delay-in-days": 0,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+},
+{
+"start": {
+"date-parts": [
+[
+2026,
+11,
+18
+]
+],
+"date-time": "2026-11-18T00:00:00Z",
+"timestamp": 1794960000000
+},
+"content-version": "vor",
+"delay-in-days": 112,
+"URL": "https://creativecommons.org/licenses/by/4.0"
+}
+],
+"funder": [
+{
+"name": "UNC Provost’s AI Acceleration program cloud resource grant"
+},
+{
+"name": "National Institutes of Health"
+}
+],
+"content-domain": {
+"domain": [
+"link.springer.com"
+],
+"crossmark-restriction": false
+},
+"abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>It is difficult to ensure clinical trial outcomes are defined completely in registrations, and to check outcome changes between registration and posting results. We developed a large language model (LLM)-based approach to evaluate outcome definitions and changes on ClinicalTrials.gov. Our LLM-based approach accurately identified incomplete outcomes in prospective trial registrations (sensitivity, 0.91 [95% confidence interval {CI}, 0.87–0.94]; positive predictive value [PPV], 0.98 [95% CI, 0.97–1.00]). Comparing prospective registrations with posted results, it correctly identified 96.1% of missing and 97.9% of added outcomes. It identified all outcomes with a priority change (e.g., from primary to secondary) and 99.2% without one. Sensitivity and PPV for identifying any outcome change were 0.97 (95% CI, 0.95–0.99) and 0.95 (95% CI, 0.89–0.98), respectively. Estimated costs per trial were $0.13 for o3-mini, $0.30 for GPT-4o, and $1.80 for o1. The accuracy of our approach suggests it could be used to improve registration quality and to detect outcome changes at large scale and at low cost.</jats:p>",
+"DOI": "10.1038/s41746-026-03045-y",
+"type": "journal-article",
+"created": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+],
+"date-time": "2026-07-29T16:55:02Z",
+"timestamp": 1785344102000
+},
+"update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+"source": "Crossref",
+"is-referenced-by-count": 0,
+"title": "An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov",
+"prefix": "10.1038",
+"volume": "9",
+"author": [
+{
+"given": "Xiangji",
+"family": "Ying",
+"sequence": "first",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Kiran",
+"family": "Ninan",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Jean-Pierre",
+"family": "Oberste",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Colby J.",
+"family": "Vorland",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Tianjing",
+"family": "Li",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Andrew W.",
+"family": "Brown",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Joe D.",
+"family": "Menke",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Riaz",
+"family": "Qureshi",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Nicholas J.",
+"family": "DeVito",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Matthew J.",
+"family": "Page",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Joanne E.",
+"family": "McKenzie",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Ian J.",
+"family": "Saldanha",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Sirui",
+"family": "Zhang",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Nancy J.",
+"family": "Butcher",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Martin",
+"family": "Offringa",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Jamie",
+"family": "Cummins",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Halil",
+"family": "Kilicoglu",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+}
+]
+},
+{
+"given": "Evan",
+"family": "Mayo-Wilson",
+"sequence": "additional",
+"affiliation": [],
+"role": [
+{
+"role": "author",
+"vocabulary": "crossref"
+},
+{
+"role": "corresponding-author",
+"vocabulary": "crossref"
+}
+]
+}
+],
+"member": "297",
+"published-online": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"reference": [
+{
+"key": "3045_CR1",
+"doi-asserted-by": "crossref",
+"unstructured": "World Medical Association. World Medical Association Declaration of Helsinki: ethical principles for medical research involving human participants. JAMA 333, 71–74 (2025).",
+"DOI": "10.1001/jama.2024.21972"
+},
+{
+"key": "3045_CR2",
+"unstructured": "110th Congress of the United States of America. Food and Drug Administration Amendments Act (FDAAA) of 2007. Public Law 110–85, 121 Stat. 823 (2007)."
+},
+{
+"key": "3045_CR3",
+"unstructured": "105th Congress of the United States of America. Food and Drug Administration Modernization Act of 1997. Public Law 105-115, 111 Stat. 2296 (1997)."
+},
+{
+"key": "3045_CR4",
+"unstructured": "European Parliament & Council of the European Union. Regulation (EU) No 536/2014 of the European Parliament and of the Council of 16 April 2014 on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC. Off. J. Eur. Union L158, 1–76 (2014)."
+},
+{
+"key": "3045_CR5",
+"unstructured": "Health Canada. Guidance on the Registration of Clinical Trials and Public Disclosure of Results. https://www.canada.ca/en/health-canada/programs/consultation-registration-clinical-trials-public-disclosure-results-new-guidance-public-search-portal/overview.html. (2023)."
+},
+{
+"key": "3045_CR6",
+"unstructured": "National Institutes of Health. NIH Policy on Dissemination of NIH-Funded Clinical Trial Information. Fed Regist. 81, 64922-64928. (2016)."
+},
+{
+"key": "3045_CR7",
+"doi-asserted-by": "publisher",
+"first-page": "1998",
+"DOI": "10.1056/NEJMsr1611785",
+"volume": "375",
+"author": "DA Zarin",
+"year": "2016",
+"unstructured": "Zarin, D. A., Tse, T., Williams, R. J. & Carr, S. Trial Reporting in ClinicalTrials.gov — The Final Rule. N. Engl. J. Med. 375, 1998–2004 (2016).",
+"journal-title": "N. Engl. J. Med."
+},
+{
+"key": "3045_CR8",
+"doi-asserted-by": "publisher",
+"first-page": "e3081",
+"DOI": "10.1371/journal.pone.0003081",
+"volume": "3",
+"author": "K Dwan",
+"year": "2008",
+"unstructured": "Dwan, K. et al. Systematic review of the empirical evidence of study publication bias and outcome reporting bias. PLOS ONE 3, e3081 (2008).",
+"journal-title": "PLOS ONE"
+},
+{
+"key": "3045_CR9",
+"doi-asserted-by": "publisher",
+"first-page": "e66844",
+"DOI": "10.1371/journal.pone.0066844",
+"volume": "8",
+"author": "K Dwan",
+"year": "2013",
+"unstructured": "Dwan, K., Gamble, C., Williamson, P. R. & Kirkham, J. J. Systematic review of the empirical evidence of study publication bias and outcome reporting bias - an updated review. PloS One 8, e66844 (2013).",
+"journal-title": "PloS One"
+},
+{
+"key": "3045_CR10",
+"doi-asserted-by": "publisher",
+"first-page": "e1001666",
+"DOI": "10.1371/journal.pmed.1001666",
+"volume": "11",
+"author": "K Dwan",
+"year": "2014",
+"unstructured": "Dwan, K. et al. Evidence for the selective reporting of analyses and discrepancies in clinical trials: a systematic review of cohort studies of clinical trials. PLoS Med 11, e1001666 (2014).",
+"journal-title": "PLoS Med"
+},
+{
+"key": "3045_CR11",
+"doi-asserted-by": "publisher",
+"first-page": "e087975",
+"DOI": "10.1136/bmj-2025-087975",
+"volume": "393",
+"author": "Z Song",
+"year": "2026",
+"unstructured": "Song, Z. et al. Outcome switching in cohort studies of interventions: meta-epidemiological study. BMJ 393, e087975 (2026).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR12",
+"doi-asserted-by": "publisher",
+"first-page": "2457",
+"DOI": "10.1001/jama.291.20.2457",
+"volume": "291",
+"author": "AW Chan",
+"year": "2004",
+"unstructured": "Chan, A. W., Hróbjartsson, A., Haahr, M. T., Gøtzsche, P. C. & Altman, D. G. Empirical evidence for selective reporting of outcomes in randomized trials: comparison of protocols to published articles. JAMA 291, 2457–2465 (2004).",
+"journal-title": "JAMA"
+},
+{
+"key": "3045_CR13",
+"doi-asserted-by": "publisher",
+"first-page": "977",
+"DOI": "10.1001/jama.2009.1242",
+"volume": "302",
+"author": "S Mathieu",
+"year": "2009",
+"unstructured": "Mathieu, S., Boutron, I., Moher, D., Altman, D. G. & Ravaud, P. Comparison of registered and published primary outcomes in randomized controlled trials. JAMA 302, 977–984 (2009).",
+"journal-title": "JAMA"
+},
+{
+"key": "3045_CR14",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-015-0520-3",
+"volume": "13",
+"author": "CW Jones",
+"year": "2015",
+"unstructured": "Jones, C. W., Keil, L. G., Holland, W. C., Caughey, M. C. & Platts-Mills, T. F. Comparison of registered and published outcomes in randomized controlled trials: a systematic review. BMC Med 13, 282 (2015).",
+"journal-title": "BMC Med"
+},
+{
+"key": "3045_CR15",
+"unstructured": "Goldacre, B. et al. The COMPare Trials Project. www.COMPare-trials.org (2016)."
+},
+{
+"key": "3045_CR16",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13063-019-3173-2",
+"volume": "20",
+"author": "B Goldacre",
+"year": "2019",
+"unstructured": "Goldacre, B. et al. COMPare: a prospective cohort study correcting and monitoring 58 misreported trials in real time. Trials 20, 118 (2019).",
+"journal-title": "Trials"
+},
+{
+"key": "3045_CR17",
+"doi-asserted-by": "publisher",
+"first-page": "e197242",
+"DOI": "10.1001/jamanetworkopen.2019.7242",
+"volume": "2",
+"author": "T Chen",
+"year": "2019",
+"unstructured": "Chen, T. et al. Comparison of clinical trial changes in primary outcome and reported intervention effect size between trial registration and publication. JAMA Netw. Open 2, e197242 (2019).",
+"journal-title": "JAMA Netw. Open"
+},
+{
+"key": "3045_CR18",
+"doi-asserted-by": "publisher",
+"first-page": "779",
+"DOI": "10.1001/jamainternmed.2022.1551",
+"volume": "182",
+"author": "HJ Lamberink",
+"year": "2022",
+"unstructured": "Lamberink, H. J. et al. Clinical trial registration patterns and changes in primary outcomes of randomized clinical trials from 2002 to 2017. JAMA Intern Med 182, 779–782 (2022).",
+"journal-title": "JAMA Intern Med"
+},
+{
+"key": "3045_CR19",
+"doi-asserted-by": "publisher",
+"first-page": "e1004306",
+"DOI": "10.1371/journal.pmed.1004306",
+"volume": "20",
+"author": "M Holst",
+"year": "2023",
+"unstructured": "Holst, M. et al. Frequency of multiple changes to prespecified primary outcomes of clinical trials completed between 2009 and 2017 in German university medical centers: A meta-research study. PLOS Med 20, e1004306 (2023).",
+"journal-title": "PLOS Med"
+},
+{
+"key": "3045_CR20",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s13063-017-2395-4",
+"volume": "19",
+"author": "S Hopewell",
+"year": "2018",
+"unstructured": "Hopewell, S. et al. Influence of peer review on the reporting of primary outcome(s) and statistical analyses of randomised trials. Trials 19, 30 (2018).",
+"journal-title": "Trials"
+},
+{
+"key": "3045_CR21",
+"doi-asserted-by": "publisher",
+"first-page": "s922",
+"DOI": "10.1136/bmj.s922",
+"volume": "393",
+"author": "X Ying",
+"year": "2026",
+"unstructured": "Ying, X. & Mayo-Wilson, E. Outcome reporting in cohort studies of interventions. BMJ 393, s922 (2026).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR22",
+"unstructured": "Center for Drug Evaluation and Research. E9(R1) Statistical Principles for Clinical Trials: Addendum: Estimands and Sensitivity Analysis in Clinical Trials. Department of Health and Human Services, Food and Drug Administration. (2021)."
+},
+{
+"key": "3045_CR23",
+"doi-asserted-by": "publisher",
+"first-page": "e076316",
+"DOI": "10.1136/bmj-2023-076316",
+"volume": "384",
+"author": "BC Kahan",
+"year": "2024",
+"unstructured": "Kahan, B. C., Hindley, J., Edwards, M., Cro, S. & Morris, T. P. The estimands framework: a primer on the ICH E9(R1) addendum. BMJ 384, e076316 (2024).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR24",
+"doi-asserted-by": "publisher",
+"first-page": "852",
+"DOI": "10.1056/NEJMsa1012065",
+"volume": "364",
+"author": "DA Zarin",
+"year": "2011",
+"unstructured": "Zarin, D. A., Tse, T., Williams, R. J., Califf, R. M. & Ide, N. C. The ClinicalTrials.gov Results Database — Update and Key Issues. N. Engl. J. Med 364, 852–860 (2011).",
+"journal-title": "N. Engl. J. Med"
+},
+{
+"key": "3045_CR25",
+"doi-asserted-by": "publisher",
+"first-page": "e081477",
+"DOI": "10.1136/bmj-2024-081477",
+"volume": "389",
+"author": "AW Chan",
+"year": "2025",
+"unstructured": "Chan, A. W. et al. SPIRIT 2025 statement: updated guideline for protocols of randomised trials. BMJ 389, e081477 (2025).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR26",
+"doi-asserted-by": "publisher",
+"first-page": "e081660",
+"DOI": "10.1136/bmj-2024-081660",
+"volume": "389",
+"author": "A Hróbjartsson",
+"year": "2025",
+"unstructured": "Hróbjartsson, A. et al. SPIRIT 2025 explanation and elaboration: updated guideline for protocols of randomised trials. BMJ 389, e081660 (2025).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR27",
+"doi-asserted-by": "publisher",
+"first-page": "e081123",
+"DOI": "10.1136/bmj-2024-081123",
+"volume": "389",
+"author": "S Hopewell",
+"year": "2025",
+"unstructured": "Hopewell, S. et al. CONSORT 2025 statement: updated guideline for reporting randomised trials. BMJ 389, e081123 (2025).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR28",
+"doi-asserted-by": "publisher",
+"first-page": "e081124",
+"DOI": "10.1136/bmj-2024-081124",
+"volume": "389",
+"author": "S Hopewell",
+"year": "2025",
+"unstructured": "Hopewell, S. et al. CONSORT 2025 explanation and elaboration: updated guideline for reporting randomised trials. BMJ 389, e081124 (2025).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR29",
+"doi-asserted-by": "crossref",
+"unstructured": "Ying, X. et al. Guidance for defining outcomes in clinical trials. MetaArXiv. Preprint at https://osf.io/preprints/metaarxiv/5wrsm_v1/ (2026).",
+"DOI": "10.31222/osf.io/5wrsm_v2"
+},
+{
+"key": "3045_CR30",
+"doi-asserted-by": "publisher",
+"first-page": "753",
+"DOI": "10.1037/ccp0000115",
+"volume": "84",
+"author": "L Cybulski",
+"year": "2016",
+"unstructured": "Cybulski, L., Mayo-Wilson, E. & Grant, S. Improving transparency and reproducibility through registration: The status of intervention trials published in clinical psychology journals. J. Consult Clin. Psychol 84, 753–767 (2016).",
+"journal-title": "J. Consult Clin. Psychol"
+},
+{
+"key": "3045_CR31",
+"doi-asserted-by": "publisher",
+"DOI": "10.1186/s12916-018-1042-6",
+"volume": "16",
+"author": "E Mayo-Wilson",
+"year": "2018",
+"unstructured": "Mayo-Wilson, E. et al. Clinical trial registration and reporting: a survey of academic organizations in the United States. BMC Med. 16, 60 (2018).",
+"journal-title": "BMC Med."
+},
+{
+"key": "3045_CR32",
+"doi-asserted-by": "publisher",
+"first-page": "k1452",
+"DOI": "10.1136/bmj.k1452",
+"volume": "361",
+"author": "T Tse",
+"year": "2018",
+"unstructured": "Tse, T., Fain, K. M. & Zarin, D. A. How to avoid common problems when using ClinicalTrials.gov in research: 10 issues to consider. BMJ 361, k1452 (2018).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR33",
+"doi-asserted-by": "publisher",
+"first-page": "317",
+"DOI": "10.1001/jamainternmed.2019.4710",
+"volume": "180",
+"author": "A Keyes",
+"year": "2020",
+"unstructured": "Keyes, A. et al. Time from submission of Johns Hopkins University trial results to posting on ClinicalTrials.gov. JAMA Intern. Med 180, 317–319 (2020).",
+"journal-title": "JAMA Intern. Med"
+},
+{
+"key": "3045_CR34",
+"doi-asserted-by": "publisher",
+"first-page": "e59910",
+"DOI": "10.1371/journal.pone.0059910",
+"volume": "8",
+"author": "S Mathieu",
+"year": "2013",
+"unstructured": "Mathieu, S., Chan, A. W. & Ravaud, P. Use of trial register information during the peer review process. PloS One 8, e59910 (2013).",
+"journal-title": "PloS One"
+},
+{
+"key": "3045_CR35",
+"doi-asserted-by": "publisher",
+"unstructured": "Savović J. et al. Evaluation of the Cochrane Collaboration’s tool for assessing the risk of bias in randomized trials: focus groups, online survey, proposed recommendations and their implementation. Syst. Rev. 3, https://doi.org/10.1186/2046-4053-3-37 (2014).",
+"DOI": "10.1186/2046-4053-3-37"
+},
+{
+"key": "3045_CR36",
+"doi-asserted-by": "publisher",
+"first-page": "e076754",
+"DOI": "10.1136/bmj-2023-076754",
+"volume": "383",
+"author": "MJ Page",
+"year": "2023",
+"unstructured": "Page, M. J. et al. ROB-ME: a tool for assessing risk of bias due to missing evidence in systematic reviews with meta-analysis. BMJ 383, e076754 (2023).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR37",
+"doi-asserted-by": "publisher",
+"first-page": "26",
+"DOI": "10.1016/j.jclinepi.2015.07.007",
+"volume": "70",
+"author": "S Pranic",
+"year": "2016",
+"unstructured": "Pranic, S. & Marusic, A. Changes to registration elements and results in a cohort of Clinicaltrials.gov trials were not reflected in published articles. J. Clin. Epidemiol 70, 26–37 (2016).",
+"journal-title": "J. Clin. Epidemiol"
+},
+{
+"key": "3045_CR38",
+"doi-asserted-by": "publisher",
+"first-page": "l4898",
+"DOI": "10.1136/bmj.l4898",
+"volume": "366",
+"author": "JAC Sterne",
+"year": "2019",
+"unstructured": "Sterne, J. A. C. et al. RoB 2: a revised tool for assessing risk of bias in randomised trials. BMJ 366, l4898 (2019).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR39",
+"unstructured": "Center for Devices and Radiological Health. Changes or Modifications During the Conduct of a Clinical Investigation; Final Guidance for Industry and CDRH Staff. https://www.fda.gov/regulatory-information/search-fda-guidance-documents/changes-or-modifications-during-conduct-clinical-investigation-final-guidance-industry-and-cdrh (2001)."
+},
+{
+"key": "3045_CR40",
+"unstructured": "European Commission. Clinical Trials Regulation (EU) No 536/2014: Questions & Answers, Version 7.2. https://health.ec.europa.eu/document/download/bd165522-8acf-433a-9ab1-d7dceae58112_en?filename=regulation5362014_qa_en.pdf (2026)."
+},
+{
+"key": "3045_CR41",
+"unstructured": "U.S. Department of Health and Human Services. Clinical Trials Registration and Results Information Submission. Final rule. Fed Regist. 81, 64982-65157. (2016)."
+},
+{
+"key": "3045_CR42",
+"unstructured": "International Committee of Medical Journal Editors. Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals (Updated January 2026). https://www.icmje.org/icmje-recommendations.pdf (2026)"
+},
+{
+"key": "3045_CR43",
+"first-page": "251524592513754",
+"volume": "8",
+"author": "E Mayo-Wilson",
+"year": "2025",
+"unstructured": "Mayo-Wilson, E., Grant, S., Corker, K. S. & Moher, D. Consistent and precise description of research outputs could improve implementation of open science. Adv. Methods Pr. Psychol. Sci. 8, 25152459251375445 (2025).",
+"journal-title": "Adv. Methods Pr. Psychol. Sci."
+},
+{
+"key": "3045_CR44",
+"doi-asserted-by": "publisher",
+"first-page": "157",
+"DOI": "10.1162/tacl_a_00638",
+"volume": "12",
+"author": "NF Liu",
+"year": "2024",
+"unstructured": "Liu, N. F. et al. Lost in the middle: how language models use long contexts. Trans. Assoc. Comput. Linguist. 12, 157–173 (2024).",
+"journal-title": "Trans. Assoc. Comput. Linguist."
+},
+{
+"key": "3045_CR45",
+"unstructured": "World Health Organization. Primary registries in the WHO registry network. https://www.who.int/tools/clinical-trials-registry-platform/network/primary-registries"
+},
+{
+"key": "3045_CR46",
+"unstructured": "International Committee of Medical Journal Editors. Clinical Trials. https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/clinical-trial-registration.html"
+},
+{
+"key": "3045_CR47",
+"doi-asserted-by": "publisher",
+"unstructured": "Mayo-Wilson, E. & Dickersin, K. Challenges stemming from NIH’s extended registration and reporting requirements. Nat. Hum. Behav. 2, 97, https://doi.org/10.1038/s41562-017-0286-z (2018).",
+"DOI": "10.1038/s41562-017-0286-z"
+},
+{
+"key": "3045_CR48",
+"doi-asserted-by": "crossref",
+"unstructured": "Ying, X. et al. GPT’s Performance in Identifying Outcome Changes on ClinicalTrials.gov. MetaArXiv. Preprint at https://ideas.repec.org//p/osf/metaar/npvwr.html (2024).",
+"DOI": "10.31222/osf.io/npvwr"
+},
+{
+"key": "3045_CR49",
+"doi-asserted-by": "publisher",
+"first-page": "h5527",
+"DOI": "10.1136/bmj.h5527",
+"volume": "351",
+"author": "PM Bossuyt",
+"year": "2015",
+"unstructured": "Bossuyt, P. M. et al. STARD 2015: an updated list of essential items for reporting diagnostic accuracy studies. BMJ 351, h5527 (2015).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR50",
+"doi-asserted-by": "publisher",
+"first-page": "361",
+"DOI": "10.1016/S0140-6736(19)33220-9",
+"volume": "395",
+"author": "NJ DeVito",
+"year": "2020",
+"unstructured": "DeVito, N. J., Bacon, S. & Goldacre, B. Compliance with legal requirement to report clinical trial results on ClinicalTrials.gov: a cohort study. Lancet 395, 361–369 (2020).",
+"journal-title": "Lancet"
+},
+{
+"key": "3045_CR51",
+"doi-asserted-by": "publisher",
+"unstructured": "Wei, J. et al. Chain-of-thought prompting elicits reasoning in large language models. Preprint at https://doi.org/10.48550/arXiv.2201.11903 (2022).",
+"DOI": "10.48550/arXiv.2201.11903"
+},
+{
+"key": "3045_CR52",
+"first-page": "43",
+"volume": "8",
+"author": "SS Choi",
+"year": "2010",
+"unstructured": "Choi, S. S., Cha, S. H. & Tappert, C. C. A survey of binary similarity and distance measures. J. Syst. Cybern. Inf. 8, 43–48 (2010).",
+"journal-title": "J. Syst. Cybern. Inf."
+},
+{
+"key": "3045_CR53",
+"doi-asserted-by": "publisher",
+"unstructured": "Wongpakaran, N. et al. A comparison of Cohen’s Kappa and Gwet’s AC1 when calculating inter-rater reliability coefficients: a study conducted with personality disorder samples. BMC Med. Res. Methodol. 13, https://doi.org/10.1186/1471-2288-13-61 (2010).",
+"DOI": "10.1186/1471-2288-13-61"
+},
+{
+"key": "3045_CR54",
+"doi-asserted-by": "publisher",
+"first-page": "29",
+"DOI": "10.1348/000711006X126600",
+"volume": "61",
+"author": "KL Gwet",
+"year": "2008",
+"unstructured": "Gwet, K. L. Computing inter-rater reliability and its variance in the presence of high agreement. Br. J. Math. Stat. Psychol. 61, 29–48 (2008).",
+"journal-title": "Br. J. Math. Stat. Psychol."
+},
+{
+"key": "3045_CR55",
+"doi-asserted-by": "publisher",
+"first-page": "e089050",
+"DOI": "10.1136/bmj-2025-089050",
+"volume": "393",
+"author": "BC Kahan",
+"year": "2026",
+"unstructured": "Kahan, B. C. et al. CRT-Estimands Framework: consensus-based extension of the ICH E9(R1) addendum for cluster randomised trials. BMJ 393, e089050 (2026).",
+"journal-title": "BMJ"
+},
+{
+"key": "3045_CR56",
+"doi-asserted-by": "crossref",
+"unstructured": "Zhou, X., Obuchowski, N. A., McClish, D. K. Estimation and Hypothesis Testing in a Single Sample. In: Statistical Methods in Diagnostic Medicine. John Wiley & Sons, Ltd; 2011:103-164.",
+"DOI": "10.1002/9780470906514.ch4"
+},
+{
+"key": "3045_CR57",
+"doi-asserted-by": "publisher",
+"first-page": "107",
+"DOI": "10.1093/ije/dyac131",
+"volume": "52",
+"author": "BC Kahan",
+"year": "2023",
+"unstructured": "Kahan, B. C., Li, F., Copas, A. J. & Harhay, M. O. Estimands in cluster-randomized trials: choosing analyses that answer the right question. Int J. Epidemiol 52, 107–118 (2023).",
+"journal-title": "Int J. Epidemiol"
+},
+{
+"key": "3045_CR58",
+"unstructured": "U.S. National Library of Medicine. Protocol Registration Quality Control Review Criteria. https://clinicaltrials.gov/submit-studies/prs-help/protocol-registration-quality-control-review-criteria"
+}
+],
+"container-title": "npj Digital Medicine",
+"original-title": [],
+"language": "en",
+"link": [
+{
+"URL": "https://www.nature.com/articles/s41746-026-03045-y",
+"content-type": "text/html",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://www.nature.com/articles/s41746-026-03045-y.pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "text-mining"
+},
+{
+"URL": "https://www.nature.com/articles/s41746-026-03045-y.pdf",
+"content-type": "application/pdf",
+"content-version": "vor",
+"intended-application": "similarity-checking"
+}
+],
+"deposited": {
+"date-parts": [
+[
+2026,
+11,
+18
+]
+],
+"date-time": "2026-11-18T00:31:11Z",
+"timestamp": 1794961871000
+},
+"score": 1,
+"resource": {
+"primary": {
+"URL": "https://www.nature.com/articles/s41746-026-03045-y"
+}
+},
+"subtitle": [],
+"short-title": [],
+"issued": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"references-count": 58,
+"journal-issue": {
+"issue": "1",
+"published-online": {
+"date-parts": [
+[
+2026,
+12
+]
+]
+}
+},
+"alternative-id": [
+"3045"
+],
+"URL": "http://dx.doi.org/10.1038/s41746-026-03045-y",
+"relation": {},
+"ISSN": [
+"2398-6352"
+],
+"subject": [],
+"container-title-short": "npj Digit. Med.",
+"published": {
+"date-parts": [
+[
+2026,
+7,
+29
+]
+]
+},
+"assertion": [
+{
+"value": "5 December 2025",
+"order": 1,
+"name": "received",
+"label": "Received",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "13 July 2026",
+"order": 2,
+"name": "accepted",
+"label": "Accepted",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "29 July 2026",
+"order": 3,
+"name": "first_online",
+"label": "First Online",
+"group": {
+"name": "ArticleHistory",
+"label": "Article History"
+}
+},
+{
+"value": "The authors declare no competing interests.",
+"order": 1,
+"name": "Ethics",
+"label": "Competing interests",
+"group": {
+"name": "EthicsHeading",
+"label": "Ethics"
+}
+}
+],
+"article-number": "905"
 }
 }

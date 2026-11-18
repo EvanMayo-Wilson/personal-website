@@ -6,7 +6,7 @@
 Ying X, **Mayo-Wilson E**. *BMJ* 393:s922. PMID: [42203256](https://pubmed.ncbi.nlm.nih.gov/42203256/).
 
 - [**An automated approach to improve clinical trial registration and to identify outcome changes on ClinicalTrials.gov**](https://doi.org/10.1038/s41746-026-03045-y)  
-Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *NPJ Digit Med*. DOI: [10.1038/s41746-026-03045-y](https://doi.org/10.1038/s41746-026-03045-y). [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr)]
+Ying X, Ninan K, Oberste JP, Vorland CJ, Li T, Brown AW, Menke JD, Qureshi R, DeVito NJ, Page MJ, McKenzie JE, Saldanha IJ, Zhang S, Butcher NJ, Offringa M, Cummins J, Kilicoglu H, **Mayo-Wilson E**. *NPJ Digit Med* 9(1):905. PMID: [43045732](https://pubmed.ncbi.nlm.nih.gov/43045732/). [[Protocol on MetaArXiv](https://osf.io/preprints/metaarxiv/npvwr); [OSF archive includes data and code](https://osf.io/2tyh3/); [Zenodo archive includes code](https://doi.org/10.5281/zenodo.24344065)]
 
 - [**Guidance for defining outcomes in clinical trials**](https://doi.org/10.1371/journal.pmed.1005275)  
 Ying X, Li T, McKenzie JE, Page MJ, Ninan K, Oberste JP, Vorland CJ, Brown AW, Qureshi R, DeVito NJ, Saldanha IJ, Offringa M, Butcher NJ, Zhang S, Nguyen PY, Menke JD, Lai VKW, Kilicoglu H, **Mayo-Wilson E**. *PLoS Med* 23(10):e1005275. PMID: [42905861](https://pubmed.ncbi.nlm.nih.gov/42905861/). [[Preprint on MetaArXiv](https://osf.io/preprints/metaarxiv/5wrsm_v2)]
