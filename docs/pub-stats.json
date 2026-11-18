@@ -71,7 +71,8 @@
 "pdf": "papers/10_17226_26039.pdf"
 },
 "doi:10.17226/26353": {
-"citations": 2
+"citations": 2,
+"pdf": "papers/10_17226_26353.pdf"
 },
 "doi:10.17605/osf.io/sm78t": {
 "pdf": "papers/10_17605_osf_io_sm78t.docx",
@@ -444,7 +445,7 @@
 },
 "pmid:33782057": {
 "citations": 159295,
-"pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
+"pdf": "https://osf.io/v7gm2/download"
 },
 "pmid:33789819": {
 "citations": 5079,
