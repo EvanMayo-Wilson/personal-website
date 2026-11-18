@@ -26,10 +26,6 @@
 "citations": 4,
 "pdf": "papers/10_1038_s41562_017_0286_z.pdf"
 },
-"doi:10.1038/s41746-026-03045-y": {
-"citations": 1,
-"pdf": "papers/10_1038_s41746_026_03045_y.pdf"
-},
 "doi:10.1038/s41746-026-03318-6": {
 "citations": 1,
 "pdf": "https://www.nature.com/articles/s41746-026-03318-6_reference.pdf"
@@ -671,5 +667,8 @@
 },
 "pmid:43008839": {
 "citations": 0
+},
+"pmid:43045732": {
+"pdf": "papers/10_1038_s41746_026_03045_y.pdf"
 }
 }
