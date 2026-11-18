@@ -258,7 +258,7 @@ online and proposes changes; it never edits the site itself.
   `<meta name="citation_pdf_url">` tag (the same convention Google Scholar
   reads), tried against every OA location's own page, not just the DOI
   redirect; **(4)** NCBI Bookshelf's own PDF convention for book-type PMIDs
-  with no DOI (the NICE guideline monographs); **(5)** the entry's own
+  with no DOI (the NICE guideline monographs) - Bookshelf is behind PMC's bot wall, so the NICE evidence page's own full-guideline PDF link is tried next (2026-11-18); **(5)** the entry's own
   `[Preprint on X]` bracket link, PDF preferred, falling back to a genuine
   Word-doc manuscript (`"type": "docx"` in the JSON) only if no PDF exists
   anywhere. **Every candidate from (1)-(5) is verified** by requesting its

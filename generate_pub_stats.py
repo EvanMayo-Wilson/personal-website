@@ -45,7 +45,9 @@ PDF resolution tries, in order:
      (see the "Not attempted" note below).
   4. NCBI Bookshelf's own PDF convention (<NBK id>/pdf/Bookshelf_<id>.pdf)
      for PMIDs whose PubMed record is a book (the NICE guideline monographs -
-     no DOI, so nothing else here applies).
+     no DOI, so nothing else here applies). Bookshelf is behind PMC's bot
+     challenge, so for those the NICE evidence page's own full-guideline PDF
+     link is tried next (nice_full_guideline_pdf()).
   5. The entry's own "[Preprint on X](url)" bracket link, if the published
      version has no free copy anywhere - tried the same way as the title URL
      (steps 2-3 above), PDF preferred. Only if no PDF turns up anywhere -
@@ -353,6 +355,29 @@ def bookshelf_pdf(nbk_id):
     return pdf if verified_pdf(pdf) else ""
 
 
+NICE_FULL_GUIDELINE_RE = re.compile(
+    r'href="(/guidance/cg\d+/evidence/full-guideline-pdf-\d+)"', re.I
+)
+
+
+def nice_full_guideline_pdf(title_url):
+    """NICE's own full-guideline PDF, linked from the guideline's evidence page
+    (the title link of each NICE monograph entry). Used when NCBI Bookshelf's
+    copy is unreachable - Bookshelf sits behind PMC's bot challenge (checked
+    2026-11-18), while nice.org.uk serves the PDF to a plain request. Verified
+    like every other candidate."""
+    if "nice.org.uk/guidance/" not in (title_url or ""):
+        return ""
+    try:
+        m = NICE_FULL_GUIDELINE_RE.search(http_html(title_url))
+    except (urllib.error.URLError, OSError):
+        return ""
+    if not m:
+        return ""
+    pdf = "https://www.nice.org.uk" + m.group(1)
+    return pdf if verified_pdf(pdf) else ""
+
+
 PREPRINT_LINK_RE = re.compile(
     r'<a\b[^>]*href="([^"]+)"[^>]*>[^<]*preprint[^<]*</a>', re.I
 )
@@ -601,6 +626,8 @@ def main():
             candidate, ext = smart_pdf(v["title_url"]), "pdf"
             if not candidate and doi_nbk[1]:
                 candidate = bookshelf_pdf(doi_nbk[1])
+            if not candidate:
+                candidate = nice_full_guideline_pdf(v["title_url"])
             if not candidate and v["preprint_url"]:
                 candidate = smart_pdf(v["preprint_url"]) or citation_pdf_url(v["preprint_url"])
                 if not candidate:

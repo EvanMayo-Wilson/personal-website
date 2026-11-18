@@ -254,8 +254,12 @@
 "citations": 128,
 "pdf": "https://cdr.lib.unc.edu/downloads/zg64tx52k"
 },
-"pmid:25340235": {},
-"pmid:25577940": {},
+"pmid:25340235": {
+"pdf": "https://www.nice.org.uk/guidance/cg178/evidence/full-guideline-pdf-490503565"
+},
+"pmid:25577940": {
+"pdf": "https://www.nice.org.uk/guidance/cg159/evidence/full-guideline-pdf-189895069"
+},
 "pmid:25671707": {
 "citations": 131,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
@@ -356,7 +360,9 @@
 "citations": 43,
 "pdf": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-018-1042-6"
 },
-"pmid:29718639": {},
+"pmid:29718639": {
+"pdf": "https://www.nice.org.uk/guidance/cg185/evidence/full-guideline-pdf-4840895629"
+},
 "pmid:30026961": {
 "citations": 14,
 "pdf": "https://cdr.lib.unc.edu/downloads/5138jr59n"
@@ -438,7 +444,7 @@
 },
 "pmid:33782057": {
 "citations": 159295,
-"pdf": "https://osf.io/v7gm2/download"
+"pdf": "https://pure.bond.edu.au/ws/files/70523698/The_PRISMA_2020_statement.pdf"
 },
 "pmid:33789819": {
 "citations": 5079,
