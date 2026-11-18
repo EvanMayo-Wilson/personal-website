@@ -4,6 +4,25 @@ _Point-in-time snapshot for picking up mid-project. The durable, always-current
 reference is `CLAUDE.md`; if the two disagree, trust `CLAUDE.md` and treat this
 as stale._
 
+## 2026-11-18 — Desk sweep: PDFs, checker, EndNote, profiles (READ FIRST)
+
+Session "personal-website: outstanding Desk work" (Opus 5.5). Re-derive status with the commands, not this text.
+
+- **Ninan 2026:** still not on PubMed or Crossref as a JAMA Netw Open article (checked 2026-11-18;
+  `curl -s "https://api.crossref.org/works?query.author=Ninan&query.bibliographic=outcome+definitions+registrations&filter=from-pub-date:2026-09-01&rows=5"`).
+  Entry unchanged; this is the one open site item (Desk `personal-website` claude_next).
+- **Checker:** `python3 check_publications.py` and `--online`: 175 entries, 0 errors, 0 warnings. The 7
+  offline warnings of 11-04 were cleared by `6a1ae93` and later fixes.
+- **EndNote (Desk `pw-endnote`, done):** TOP 2025 and the npj automated-approach paper are in both Drive
+  libraries with PDFs since the 2026-10-20 rebuild, and both have site PDF buttons. The repo's local
+  `Papers/` library is the old July copy; the live libraries are under `~/My Drive/Endnote/`.
+- **PDF buttons (`bbd7a4d`, `d9a9dd7`, `5e4efbc`):** CD010544 links the UNC CDR copy; the 3 NICE
+  monographs link NICE's own full-guideline PDF (`nice_full_guideline_pdf()`; Bookshelf is bot-walled);
+  the NASEM 2022 letter report is hosted in `docs/papers/` (Evan's approval). Still none (no legal copy):
+  Puljak 2026 (Elsevier closed), the APA and Russell Sage chapters, the HomVEE MetaArXiv preprint (OSF
+  serves only a .docx). If the daily Action can't reach nice.org.uk the NICE buttons will drop: check
+  `python3 -c "import json;print(json.load(open('docs/pub-stats.json'))['pmid:29718639'])"`.
+
 ## 2026-11-04 — refresh from the 27 Oct–4 Nov work (READ FIRST)
 
 Doc-only refresh; no site change. Everything below is committed on `main`; tip at writing was
