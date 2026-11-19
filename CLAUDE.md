@@ -177,7 +177,12 @@ pull causes a rejected push.
    `content/csl-extra.json` record and never gets a PDF from the resolver:
    put its direct PDF URL under that file's `"_pdf"` map (build.py renders
    it; `check_publications.py --online` verifies it is a real PDF).
-8. Add any data, code or materials links as trailing bracket links.
+8. Add any data, code or materials links as trailing bracket links. They render as
+   open-science badges under the citation (Evan, 2026-11-19; `open_science_badges` in
+   build.py): the link text decides the badge (protocol, preprint, data, code,
+   materials; one badge per archive, e.g. "Data & code"), and becomes the hover text.
+   A link that names none of these stays as bracketed text. For a short badge with
+   longer hover wording, give the link a title: `[short](url "longer wording")`.
 9. Commit and push.
 
 The weekly Friday publication-record check (scheduled task

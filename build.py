@@ -482,8 +482,119 @@ def title_on_own_line(frag: str) -> str:
     )
 
 
+# --- Open-science badges (Evan, 2026-11-19: icon set A, labelled badges under
+# the citation, one badge per archive) --------------------------------------
+# The trailing bracket group after a citation - "[Published protocol; Preprint
+# on MetaArXiv; OSF archive includes data and code]" - becomes a row of
+# labelled badges under the citation. Links that are not a protocol, preprint,
+# data, code or materials (e.g. "Updates previous version") stay as text.
+# Symbols for protocol, data and materials are Academicons 1.9.5
+# (preregistered, open-data, open-materials; SIL Open Font Licence 1.1), which
+# follow the Center for Open Science badges. Preprint and code are drawn here to
+# match the site's other line icons.
+OS_SYMBOLS = {
+    "protocol": ("0 0 512 512", 'fill="currentColor"', 'm 255.96701,7.9999992 c -14.42056,0 -28.9134,3.1667198 -39.84197,9.5105508 L 69.402174,102.20596 c -21.954611,12.67476 -39.899208,43.75438 -39.899208,69.08441 v 169.41924 c 0,25.33653 17.944597,56.42568 39.899208,69.0939 L 216.12504,494.51788 C 227.05361,500.84232 241.54645,504 255.96701,504 c 14.48556,0 28.97013,-3.15768 39.89917,-9.48212 l 146.7224,-84.71437 c 21.92213,-12.66822 39.90845,-43.75737 39.90845,-69.0939 V 171.29037 c 0,-25.33003 -17.98632,-56.40965 -39.90845,-69.08441 L 295.86618,17.51055 C 284.93714,11.166719 270.45257,7.9999992 255.96701,7.9999992 Z M 355.1558,152.37339 c 4.22726,0 8.45019,1.60138 11.65118,4.81215 l 17.84669,17.82761 c 6.402,6.42793 6.402,16.93826 0,23.3597 L 228.22149,354.82393 c -6.46654,6.41499 -16.93871,6.41499 -23.34074,0 l -68.94211,-68.91386 c -6.40202,-6.41497 -5.044,-18.2773 0,-23.34073 l 17.85586,-17.82761 c 6.40202,-6.42793 16.9387,-6.42793 23.34073,0 l 27.74552,27.72655 c 6.40203,6.415 16.8742,6.415 23.34074,0 L 343.45702,157.18554 c 3.23307,-3.21072 7.47102,-4.81215 11.69878,-4.81215 z'),
+    "data": ("0 0 512 512", 'fill="currentColor"', 'M 255.99349,8.0446377 C 223.80996,6.8710755 198.88846,29.106812 171.90108,43.078975 135.19601,64.83668 97.398702,84.909644 61.424592,107.79531 c -23.529448,19.12486 -34.340913,49.89944 -31.869027,79.61823 0.136467,52.69231 -0.273926,105.39637 0.206898,158.08127 3.046554,31.90013 25.166618,58.97257 53.630746,72.31691 45.693451,26.22554 91.119371,52.93874 136.981251,78.85735 29.15402,13.29373 63.66608,7.7032 89.45702,-10.28262 45.55933,-26.46403 91.40188,-52.46098 136.78286,-79.21917 26.10444,-18.58601 38.49713,-51.27731 35.81722,-82.60095 -0.13644,-52.69193 0.27402,-105.39561 -0.20674,-158.08014 C 479.17554,134.58854 457.05921,107.51038 428.59249,94.170602 382.89744,67.950466 337.46312,41.255709 291.60404,15.334368 280.50454,10.177688 268.1747,8.0789301 255.99349,8.0446377 Z M 227.29819,140.73479 c 19.13338,0 38.26677,0 57.40015,0 0,76.83994 0,153.67988 0,230.51981 -19.13338,0 -38.26677,0 -57.40015,0 0,-76.83993 0,-153.67987 0,-230.51981 z m 72.23096,50.17436 c 19.12396,0 38.2479,0 57.37188,0 0,60.11515 0,120.2303 0,180.34545 -19.12398,0 -38.24792,0 -57.37188,0 0,-60.11515 0,-120.2303 0,-180.34545 z m -144.45251,94.07924 c 19.13025,0 38.26049,0 57.39074,0 0,28.7554 0,57.51081 0,86.26621 -19.13025,0 -38.26049,0 -57.39074,0 0,-28.7554 0,-57.51081 0,-86.26621 z'),
+    "materials": ("0 0 512 512", 'fill="currentColor"', 'm 255.99051,7.9999992 c -14.45957,0 -28.91558,3.1667158 -39.88958,9.5105468 L 69.397238,102.20596 C 47.455739,114.88072 29.50769,145.96034 29.50769,171.29036 v 169.41925 c 0,25.33653 17.948049,56.42568 39.889548,69.0939 l 146.703692,84.71437 c 10.974,6.32444 25.4365,9.48212 39.88958,9.48212 14.46596,0 28.92849,-3.15768 39.88953,-9.48212 l 146.72261,-84.71437 c 21.9352,-12.66822 39.88966,-43.75737 39.88966,-69.0939 V 171.29036 c 0,-25.33002 -17.95446,-56.40964 -39.88966,-69.0844 L 295.88952,17.510546 c -10.974,-6.343831 -25.43305,-9.5105468 -39.89901,-9.5105468 z m -58.05822,145.7374608 58.06766,22.86711 58.09612,-22.86711 100.07901,40.79892 -58.06755,22.85762 V 317.49208 L 255.99995,358.27204 155.90196,317.49208 V 217.394 L 97.815363,194.53638 Z M 155.90196,217.394 255.99995,258.16451 356.10753,217.394 255.99995,176.60457 Z'),
+    "preprint": ("0 0 24 24", 'fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"',
+                 '<path d="M12 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v3"/><path d="M14 3v5h5"/>'
+                 '<circle cx="17" cy="17" r="4"/><path d="M17 15.2V17l1.2 1"/>'),
+    "code": ("0 0 24 24", 'fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"',
+             '<path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/><path d="m13.5 4.5-3 15"/>'),
+}
+
+
+def os_sprite() -> str:
+    syms = "".join(
+        f'<symbol id="os-{k}" viewBox="{vb}" {attrs}>'
+        + (body if body.startswith("<") else f'<path d="{body}"/>')
+        + "</symbol>"
+        for k, (vb, attrs, body) in OS_SYMBOLS.items()
+    )
+    return f'<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">{syms}</svg>'
+
+
+OS_GROUP_RE = re.compile(r"\s*\[([^\[\]]*<a\b[^\[\]]*)\](?=\s*</p>)")
+OS_A_RE = re.compile(r"<a\b[^>]*>(.*?)</a>", re.S)
+OS_ORDER = ["protocol", "preprint", "data", "code", "materials"]
+
+
+def _os_kinds(text: str):
+    t = html.unescape(re.sub(r"<[^>]+>", "", text)).lower()
+    found = set()
+    if "protocol" in t:
+        found.add("protocol")
+    if "preprint" in t:
+        found.add("preprint")
+    if re.search(r"\bdata\b", t):
+        found.add("data")
+    if re.search(r"\bcode\b", t):
+        found.add("code")
+    if "material" in t:
+        found.add("materials")
+    return found
+
+
+def _os_plain(s: str) -> str:
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", "", s)).split())
+
+
+def open_science_badges(frag: str) -> str:
+    """Turn the citation's trailing bracket group into a badge row (see above)."""
+    m = OS_GROUP_RE.search(frag)
+    if not m:
+        return frag
+    badges, leftover = [], []
+    for seg in re.split(r";\s*(?![^<]*</a>)", m.group(1)):
+        links = list(OS_A_RE.finditer(seg))
+        if not links:
+            continue
+        prefix = seg[: links[0].start()]
+        for a in links:
+            kinds = _os_kinds(a.group(1)) or _os_kinds(prefix)
+            if not kinds:
+                leftover.append(a.group(0))
+                continue
+            data_kinds = [k for k in ("data", "code", "materials") if k in kinds]
+            kind = ("protocol" if "protocol" in kinds else "preprint" if "preprint" in kinds
+                    else data_kinds[0])
+            label = " & ".join(k.capitalize() if i == 0 else k for i, k in enumerate(data_kinds)) \
+                if kind not in ("protocol", "preprint") else kind.capitalize()
+            # A link title in the markdown, [short](url "longer wording"), is
+            # the hover text's wording; otherwise the link text is.
+            t_m = re.search(r'title="([^"]*)"', a.group(0))
+            words = t_m.group(1) if t_m else a.group(1)
+            tip = _os_plain(prefix + words) if prefix.strip() else _os_plain(words)
+            badges.append({"kind": kind, "label": label, "tip": tip,
+                           "a": a.group(0), "text": _os_plain(a.group(1))})
+    if not badges:
+        return frag
+    labels = [b["label"] for b in badges]
+    for b in badges:  # two badges with the same label: add each one's own link text
+        if labels.count(b["label"]) > 1:
+            if _os_kinds(b["text"]):
+                b["label"] = b["text"][:1].upper() + b["text"][1:]
+            else:
+                b["label"] = f'{b["label"]} ({b["text"]})'
+    badges.sort(key=lambda b: OS_ORDER.index(b["kind"]))
+    row = []
+    for b in badges:
+        href = re.search(r'href="([^"]+)"', b["a"]).group(1)
+        tip = html.escape(html.unescape(b["tip"]), quote=True)
+        row.append(
+            f'<a class="os-badge os-{b["kind"]}" href="{href}" title="{tip}">'
+            f'<svg aria-hidden="true" focusable="false"><use href="#os-{b["kind"]}"/></svg>'
+            f'<span>{html.escape(b["label"])}</span></a>'
+        )
+    keep = f' [{"; ".join(leftover)}]' if leftover else ""
+    frag = frag[: m.start()] + keep + frag[m.end():]
+    end = frag.index("</p>", m.start() + len(keep)) + len("</p>")
+    return frag[:end] + '<div class="os-badges">' + "".join(row) + "</div>" + frag[end:]
+
+
+
 def publications_html(years):
-    out = []
+    out = [os_sprite()]
     for year, entries in years:
         out.append(f'<section class="year-block" data-year="{year}" '
                    f'aria-labelledby="y{year}">')
@@ -497,6 +608,7 @@ def publications_html(years):
             pmid, doi, extra, _title = entry_meta(primary)
 
             e = title_on_own_line(e)
+            e = open_science_badges(e)
             e = nested_badges(e, year)
 
             # Two fixed slots, so the donuts line up down the page whether or
@@ -970,6 +1082,13 @@ PAGE = """<!DOCTYPE html>
   .pub-text ul {{ padding-left: 1.1rem; }}
   .pub-text ul li {{ margin-bottom: .2rem; }}
   .pub-text strong {{ font-weight: 650; }}
+  .os-badges {{ display: flex; flex-wrap: wrap; gap: .35rem .45rem; margin-top: .45rem; }}
+  .os-badge {{ display: inline-flex; align-items: center; gap: .35rem; padding: .2rem .6rem .2rem .45rem;
+    border: 1px solid var(--rule-2); border-radius: 999px; background: var(--surface);
+    font-size: .8rem; line-height: 1.25; color: var(--link); text-decoration: none; }}
+  .os-badge:hover, .os-badge:focus-visible {{ border-color: var(--link); }}
+  .os-badge:hover span {{ text-decoration: underline; }}
+  .os-badge svg {{ width: 15px; height: 15px; flex: none; }}
   .pub-text em {{ color: inherit; }}
   /* Every hyperlink in a citation - title, PMID, protocol - is blue. */
   .pub-text a {{ color: var(--link); text-decoration: none; }}
