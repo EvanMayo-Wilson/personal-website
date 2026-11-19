@@ -770,9 +770,9 @@ PAGE = """<!DOCTYPE html>
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
     --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-    /* Width grows with the window: 1180px (the old fixed width) up to 1480px on
-       large monitors (Evan, 2026-11-19). */
-    --maxw: clamp(1180px, 84vw, 1480px);
+    /* Width grows with the window: 1180px (the old fixed width) up to 1640px on
+       large monitors (Evan, 2026-11-19; 1480px looked a little narrow). */
+    --maxw: clamp(1180px, 86vw, 1640px);
     --gutter: clamp(1.125rem, 4vw, 3rem);
   }}
 
