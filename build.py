@@ -770,7 +770,9 @@ PAGE = """<!DOCTYPE html>
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
     --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-    --maxw: 1180px;
+    /* Width grows with the window: 1180px (the old fixed width) up to 1480px on
+       large monitors (Evan, 2026-11-19). */
+    --maxw: clamp(1180px, 84vw, 1480px);
     --gutter: clamp(1.125rem, 4vw, 3rem);
   }}
 
@@ -814,7 +816,10 @@ PAGE = """<!DOCTYPE html>
 
   *, *::before, *::after {{ box-sizing: border-box; }}
 
-  html {{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }}
+  html {{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%;
+    /* Type grows a little above 1440px wide (16px -> 18px by ~2350px), so lines
+       stay a readable length as the column widens. Media queries are unaffected. */
+    font-size: clamp(100%, calc(100% + (100vw - 1440px) * 0.0022), 112.5%); }}
   @media (prefers-reduced-motion: reduce) {{
     html {{ scroll-behavior: auto; }}
     *, *::before, *::after {{
@@ -918,7 +923,7 @@ PAGE = """<!DOCTYPE html>
   }}
   /* Left column: square photo with the profile links under it (Evan,
      2026-11-11), so the photo keeps its shape however long the bio is. */
-  .hero-side {{ grid-area: side; width: clamp(190px, 20vw, 260px); }}
+  .hero-side {{ grid-area: side; width: clamp(190px, 20vw, 290px); }}
   .hero-photo img {{
     width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
     border-radius: 10px; display: block;
