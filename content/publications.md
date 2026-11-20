@@ -47,6 +47,9 @@ Wang X, Furuya-Kanamori L, Doi SA, Gu Z, Loke Y, Li S, **Mayo-Wilson E**, Lin L,
 - [**SPIRIT-CONSORT-ELM: Element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting**](https://doi.org/10.1038/s41746-026-03318-6)  
 Jiang L, Ying X, Brown AW, Lan M, Song W, Menke JD, Vorland CJ, **Mayo-Wilson E**, Kilicoglu H. *NPJ Digit Med*. DOI: [10.1038/s41746-026-03318-6](https://doi.org/10.1038/s41746-026-03318-6). [[Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.06.26354746v2); [OSF archive includes data and code](https://osf.io/kznx4/)]
 
+- [**Embedding a systematic review or meta-analysis in a randomized controlled trial article: A meta-research protocol**](https://doi.org/10.17605/OSF.IO/AKFVU)  
+Goodarzi H, Pachanov A, Kugler CM, Briel M, Puljak L, Bala MM, Clarke M, **Mayo-Wilson E**, Munn Z, Pacheco RL, Nørgaard B, Klugar M, Lund H, Pieper D. *OSF Registries*. DOI: [10.17605/OSF.IO/AKFVU](https://doi.org/10.17605/OSF.IO/AKFVU).
+
 - [**Automated assessment of the trustworthiness of biomedical publications: A protocol for a scoping review**](https://doi.org/10.31222/osf.io/yph8c_v1)  
 Guerra E, Menke JD, Bernabé C, Ying X, Vorland CJ, Brown AW, Qureshi R, **Mayo-Wilson E**, Kilicoglu H. *MetaArXiv*. DOI: [10.31222/osf.io/yph8c_v1](https://doi.org/10.31222/osf.io/yph8c_v1).
 
