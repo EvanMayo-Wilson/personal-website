@@ -1,9 +1,10 @@
 {
 "doi:10.1007/s10940-014-9222-9": {
-"citations": 304
+"citations": 308,
+"pdf": "https://link.springer.com/content/pdf/10.1007/s10940-014-9222-9.pdf"
 },
 "doi:10.1007/s11292-005-1615-1": {
-"citations": 236,
+"citations": 245,
 "pdf": "papers/10_1007_s11292_005_1615_1.pdf"
 },
 "doi:10.1007/s11292-006-9005-x": {
@@ -27,22 +28,22 @@
 },
 "doi:10.1038/s41746-026-03318-6": {
 "citations": 1,
-"pdf": "https://www.medrxiv.org/content/medrxiv/early/2026/06/15/2026.06.06.26354746.full.pdf"
+"pdf": "https://www.nature.com/articles/s41746-026-03318-6_reference.pdf"
 },
 "doi:10.1093/bjsw/bct129": {
 "citations": 9,
 "pdf": "papers/10_1093_bjsw_bct129.pdf"
 },
 "doi:10.1111/j.1756-5391.2011.01129.x": {
-"citations": 23,
+"citations": 24,
 "pdf": "papers/10_1111_j_1756_5391_2011_01129_x.pdf"
 },
 "doi:10.1177/1049731511430836": {
-"citations": 129,
+"citations": 131,
 "pdf": "papers/10_1177_1049731511430836.pdf"
 },
 "doi:10.1177/1049731513512374": {
-"citations": 21,
+"citations": 22,
 "pdf": "papers/10_1177_1049731513512374.pdf"
 },
 "doi:10.1177/25152459221149735": {
@@ -50,7 +51,7 @@
 "pdf": "papers/10_1177_25152459221149735.pdf"
 },
 "doi:10.1177/25152459251375445": {
-"citations": 5,
+"citations": 6,
 "pdf": "papers/10_1177_25152459251375445.pdf"
 },
 "doi:10.1186/s12916-026-05296-8": {
@@ -116,11 +117,11 @@
 "pdf": "papers/10_31234_osf_io_g627d.pdf"
 },
 "doi:10.4073/csr.2012.11": {
-"citations": 50,
+"citations": 52,
 "pdf": "papers/10_4073_csr_2012_11.pdf"
 },
 "doi:10.4073/csr.2013.12": {
-"citations": 343,
+"citations": 348,
 "pdf": "papers/10_4073_csr_2013_12.pdf"
 },
 "doi:10.4073/csr.2014.3": {
@@ -143,39 +144,39 @@
 "pdf": "papers/10_1002_14651858_cd006855_pub2.pdf"
 },
 "pmid:18425973": {
-"citations": 35,
+"citations": 41,
 "pdf": "papers/10_1002_14651858_cd006860_pub2.pdf"
 },
 "pmid:18646141": {
-"citations": 17,
+"citations": 20,
 "pdf": "papers/10_1002_14651858_cd006277_pub2.pdf"
 },
 "pmid:18646171": {
-"citations": 18,
+"citations": 21,
 "pdf": "papers/10_1002_14651858_cd006856_pub2.pdf"
 },
 "pmid:18646172": {
-"citations": 18,
+"citations": 20,
 "pdf": "papers/10_1002_14651858_cd006858_pub2.pdf"
 },
 "pmid:18646173": {
-"citations": 17,
+"citations": 20,
 "pdf": "papers/10_1002_14651858_cd006859_pub2.pdf"
 },
 "pmid:21154399": {
-"citations": 235,
+"citations": 248,
 "pdf": "papers/10_1002_14651858_cd008524_pub2.pdf"
 },
 "pmid:21868478": {
-"citations": 397,
+"citations": 403,
 "pdf": "papers/10_1136_bmj_d5094.pdf"
 },
 "pmid:22209829": {
-"citations": 2090,
+"citations": 2098,
 "pdf": "papers/10_2196_jmir_1923.pdf"
 },
 "pmid:23335473": {
-"citations": 526,
+"citations": 532,
 "pdf": "papers/10_1136_bmj_f185.pdf"
 },
 "pmid:23697669": {
@@ -183,7 +184,7 @@
 "pdf": "papers/10_1136_bmj_f2541.pdf"
 },
 "pmid:23734256": {
-"citations": 121,
+"citations": 122,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0065442&type=printable"
 },
 "pmid:23789914": {
@@ -195,11 +196,12 @@
 "pdf": "papers/10_1111_add_12249.pdf"
 },
 "pmid:23810026": {
-"citations": 106,
+"citations": 107,
 "pdf": "papers/10_1016_j_jclinepi_2013_03_006.pdf"
 },
 "pmid:23915044": {
-"citations": 85
+"citations": 85,
+"pdf": "https://trialsjournal.biomedcentral.com/counter/pdf/10.1186/1745-6215-14-242"
 },
 "pmid:23947317": {
 "citations": 20,
@@ -211,7 +213,7 @@
 },
 "pmid:24004579": {
 "citations": 124,
-"pdf": "https://cdr.lib.unc.edu/downloads/5138jr60d"
+"pdf": "https://implementationscience.biomedcentral.com/counter/pdf/10.1186/1748-5908-8-99"
 },
 "pmid:24018460": {
 "citations": 138,
@@ -227,14 +229,14 @@
 },
 "pmid:24528545": {
 "citations": 675,
-"pdf": "http://cdr.lib.unc.edu/downloads/np193m90s"
+"pdf": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/1471-244X-14-39"
 },
 "pmid:24622676": {
-"citations": 163,
-"pdf": "https://cdr.lib.unc.edu/downloads/8623j8096"
+"citations": 164,
+"pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089257&type=printable"
 },
 "pmid:24826920": {
-"citations": 220,
+"citations": 222,
 "pdf": "papers/10_1002_14651858_cd009384_pub2.pdf"
 },
 "pmid:24948745": {
@@ -245,25 +247,26 @@
 "pdf": "papers/10_1177_1049731513498118.pdf"
 },
 "pmid:25247266": {
-"citations": 15,
-"pdf": "https://cdr.lib.unc.edu/downloads/3x816z100"
+"citations": 16
 },
 "pmid:25254354": {
-"citations": 54,
+"citations": 55,
 "pdf": "papers/10_1002_14651858_cd010543_pub2.pdf"
 },
 "pmid:25258392": {
-"citations": 128,
-"pdf": "https://cdr.lib.unc.edu/downloads/zg64tx52k"
+"citations": 129,
+"pdf": "https://eprints.lancs.ac.uk/id/eprint/72622/1/bmj.g5673.full.pdf"
 },
 "pmid:25340235": {
+"citations": 0,
 "pdf": "https://www.nice.org.uk/guidance/cg178/evidence/full-guideline-pdf-490503565"
 },
 "pmid:25577940": {
+"citations": 0,
 "pdf": "https://www.nice.org.uk/guidance/cg159/evidence/full-guideline-pdf-189895069"
 },
 "pmid:25671707": {
-"citations": 132,
+"citations": 134,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0117166&type=printable"
 },
 "pmid:25827035": {
@@ -271,11 +274,11 @@
 "pdf": "papers/10_1176_appi_ajp_2015_14101347.pdf"
 },
 "pmid:25833867": {
-"citations": 352,
+"citations": 356,
 "pdf": "papers/10_1192_bjp_bp_114_147561.pdf"
 },
 "pmid:25939032": {
-"citations": 135,
+"citations": 138,
 "pdf": "papers/10_1016_j_cpr_2015_04_002.pdf"
 },
 "pmid:26035473": {
@@ -283,19 +286,19 @@
 "pdf": "papers/10_1002_jrsm_1130.pdf"
 },
 "pmid:26113702": {
-"citations": 3270,
+"citations": 3303,
 "pdf": "papers/10_1126_science_aab2374.pdf"
 },
 "pmid:26346461": {
-"citations": 30,
-"pdf": "https://lirias.kuleuven.be/retrieve/d8b7768e-d72a-43fd-840a-61ce7e7b1587"
+"citations": 31,
+"pdf": "https://bmcmedresmethodol.biomedcentral.com/counter/pdf/10.1186/s12874-015-0037-7"
 },
 "pmid:26360072": {
 "citations": 0,
 "pdf": "papers/10_1016_s2215_0366_15_00090_5.pdf"
 },
 "pmid:26361000": {
-"citations": 796,
+"citations": 801,
 "pdf": "papers/10_1016_s2215_0366_14_70329_3.pdf"
 },
 "pmid:26407814": {
@@ -303,15 +306,15 @@
 "pdf": "papers/10_1136_bmj_h4169.pdf"
 },
 "pmid:26506554": {
-"citations": 56,
+"citations": 58,
 "pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0140704&type=printable"
 },
 "pmid:26525044": {
 "citations": 17,
-"pdf": "http://cdr.lib.unc.edu/downloads/b85160555"
+"pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-015-0134-z"
 },
 "pmid:26932483": {
-"citations": 172,
+"citations": 174,
 "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8979D04EB2C9BD59EF04BD3DBF8A3EFA/S000712500027935Xa.pdf/div-class-title-psychological-interventions-for-adults-with-bipolar-disorder-systematic-review-and-meta-analysis-div.pdf"
 },
 "pmid:26934268": {
@@ -331,27 +334,27 @@
 "pdf": "papers/10_1177_1090198116668522.pdf"
 },
 "pmid:28282701": {
-"citations": 613,
+"citations": 615,
 "pdf": "papers/10_1002_14651858_cd008524_pub3.pdf"
 },
 "pmid:28529187": {
-"citations": 142,
+"citations": 143,
 "pdf": "papers/10_1016_j_jclinepi_2017_05_007.pdf"
 },
 "pmid:28842290": {
-"citations": 111,
+"citations": 112,
 "pdf": "papers/10_1016_j_jclinepi_2017_07_014.pdf"
 },
 "pmid:28870179": {
 "citations": 28,
-"pdf": "https://cdr.lib.unc.edu/downloads/5999nd96j"
+"pdf": "https://bmcophthalmol.biomedcentral.com/track/pdf/10.1186/s12886-017-0561-9"
 },
 "pmid:29057573": {
-"citations": 156,
+"citations": 157,
 "pdf": "papers/10_1002_jrsm_1277.pdf"
 },
 "pmid:29345484": {
-"citations": 1903,
+"citations": 1916,
 "pdf": "papers/10_1037_amp0000191.pdf"
 },
 "pmid:29531086": {
@@ -360,36 +363,38 @@
 },
 "pmid:29716585": {
 "citations": 43,
-"pdf": "https://cdr.lib.unc.edu/downloads/4j03d9644"
+"pdf": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-018-1042-6"
 },
 "pmid:29718639": {
+"citations": 0,
 "pdf": "https://www.nice.org.uk/guidance/cg185/evidence/full-guideline-pdf-4840895629"
 },
 "pmid:30026961": {
 "citations": 14,
-"pdf": "https://cdr.lib.unc.edu/downloads/5138jr59n"
+"pdf": "https://link.springer.com/content/pdf/10.1186/s40814-018-0284-6.pdf"
 },
 "pmid:30060754": {
-"citations": 363,
-"pdf": "https://ora.ox.ac.uk/objects/uuid:4e3a303a-eb1d-41fe-9c99-e9cc33c2c24c/files/m162ca55facaf8a3148702fdb88d26a21"
+"citations": 365,
+"pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2733-1"
 },
 "pmid:30060763": {
-"citations": 406,
-"pdf": "https://ora.ox.ac.uk/objects/uuid:acd9fcd2-89d0-42d5-b94c-62cb767af216/files/m8eaf78acf9d6fe2b61b3f5188d241b06"
+"citations": 411,
+"pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2735-z"
 },
 "pmid:30223876": {
 "citations": 21,
-"pdf": "https://cdr.lib.unc.edu/downloads/6108vn94w"
+"pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-018-2888-9"
 },
 "pmid:30284892": {
 "citations": 3,
 "pdf": "papers/10_1037_amp0000370.pdf"
 },
 "pmid:30565151": {
-"citations": 251
+"citations": 253,
+"pdf": "https://link.springer.com/content/pdf/10.1007/s11606-018-4738-6.pdf"
 },
 "pmid:30826377": {
-"citations": 231,
+"citations": 232,
 "pdf": "papers/10_1016_j_jclinepi_2019_02_011.pdf"
 },
 "pmid:31055175": {
@@ -401,7 +406,7 @@
 },
 "pmid:31488200": {
 "citations": 40,
-"pdf": "https://www.researchsquare.com/article/rs-268/v2.pdf?c=1631840346000"
+"pdf": "https://trialsjournal.biomedcentral.com/track/pdf/10.1186/s13063-019-3581-3"
 },
 "pmid:31657841": {
 "citations": 8,
@@ -421,7 +426,7 @@
 },
 "pmid:33334836": {
 "citations": 73,
-"pdf": "https://cdr.lib.unc.edu/downloads/ns064h634"
+"pdf": "https://mcgill.scholaris.ca/bitstreams/15b7bf69-8691-4e53-80a2-95c84102110e/download"
 },
 "pmid:33439718": {
 "citations": 1,
@@ -432,33 +437,32 @@
 "pdf": "https://f1000research.com/articles/9-1235/v1/pdf"
 },
 "pmid:33780438": {
-"citations": 6568,
+"citations": 6611,
 "pdf": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable"
 },
 "pmid:33781348": {
-"citations": 18918,
-"pdf": "https://pure.bond.edu.au/ws/files/70523715/The_PRISMA_2020_statement_Syst_rev_.pdf"
+"citations": 19039,
+"pdf": "https://systematicreviewsjournal.biomedcentral.com/track/pdf/10.1186/s13643-021-01626-4"
 },
 "pmid:33781993": {
-"citations": 16130,
+"citations": 16259,
 "pdf": "https://pure.bond.edu.au/ws/files/70523618/PRISMA_2020_explanation_and_elaboration.pdf"
 },
 "pmid:33782057": {
-"citations": 160277,
+"citations": 161386,
 "pdf": "https://osf.io/v7gm2/download"
 },
 "pmid:33789819": {
-"citations": 5096,
+"citations": 5122,
 "pdf": "https://findresearcher.sdu.dk/ws/files/183281604/PIIS0895435621000731.pdf"
 },
 "pmid:33789826": {
-"citations": 14044,
+"citations": 14249,
 "pdf": "papers/10_1016_j_ijsu_2021_105906.pdf"
 },
 "pmid:34078479": {
-"citations": 58,
-"pdf": "https://osf.io/b3wju/download",
-"type": "docx"
+"citations": 59,
+"pdf": "https://researchintegrityjournal.biomedcentral.com/track/pdf/10.1186/s41073-021-00112-8"
 },
 "pmid:34193496": {
 "citations": 4,
@@ -470,7 +474,7 @@
 },
 "pmid:34357509": {
 "citations": 27,
-"pdf": "https://scholarworks.indianapolis.iu.edu/bitstreams/75a037f3-76f8-4779-ae19-974df87f45c1/download"
+"pdf": "https://link.springer.com/content/pdf/10.1007/s11121-021-01284-x.pdf"
 },
 "pmid:34474960": {
 "citations": 4,
@@ -498,20 +502,22 @@
 },
 "pmid:34847946": {
 "citations": 4,
-"pdf": "https://osf.io/xknhp/download"
+"pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-021-00119-1"
 },
 "pmid:35092443": {
-"citations": 14
+"citations": 15,
+"pdf": "https://link.springer.com/content/pdf/10.1007/s00167-022-06893-9.pdf"
 },
 "pmid:35171463": {
-"citations": 3
+"citations": 3,
+"pdf": "https://link.springer.com/content/pdf/10.1007/s11121-022-01354-8.pdf"
 },
 "pmid:35175501": {
-"citations": 46,
-"pdf": "https://ora.ox.ac.uk/objects/uuid:dd23645e-11d9-40f0-930e-294a3a9822e3/files/rpc289m580"
+"citations": 47,
+"pdf": "https://link.springer.com/content/pdf/10.1007/s11121-022-01336-w.pdf"
 },
 "pmid:35294044": {
-"citations": 161,
+"citations": 163,
 "pdf": "papers/10_1002_14651858_cd008524_pub4.pdf"
 },
 "pmid:35525252": {
@@ -520,37 +526,38 @@
 },
 "pmid:35932429": {
 "citations": 14,
-"pdf": "https://scholarworks.indianapolis.iu.edu/bitstreams/2a97fd46-6e76-484c-8dd3-eec45283a551/download"
+"pdf": "https://sportsmedicine-open.springeropen.com/counter/pdf/10.1186/s40798-022-00496-x"
 },
 "pmid:36065832": {
 "citations": 12,
 "pdf": "papers/10_1093_epirev_mxac005.pdf"
 },
 "pmid:36511921": {
-"citations": 842,
+"citations": 853,
 "pdf": "papers/10_1001_jama_2022_21022.pdf"
 },
 "pmid:36512367": {
-"citations": 317,
+"citations": 319,
 "pdf": "papers/10_1001_jama_2022_21243.pdf"
 },
 "pmid:36756061": {
-"citations": 30,
+"citations": 31,
 "pdf": "papers/10_1098_rsos_221093.pdf"
 },
 "pmid:36994923": {
-"citations": 59,
+"citations": 60,
 "pdf": "papers/10_1002_14651858_cd009384_pub3.pdf"
 },
 "pmid:37043591": {
+"citations": 1,
 "pdf": "https://www.pcori.org/sites/default/files/PCORI-Dickersin038-English-Abstract.pdf"
 },
 "pmid:37061724": {
 "citations": 11,
-"pdf": "http://cdr.lib.unc.edu/downloads/9306t9744"
+"pdf": "https://systematicreviewsjournal.biomedcentral.com/counter/pdf/10.1186/s13643-023-02234-0"
 },
 "pmid:37094878": {
-"citations": 340,
+"citations": 342,
 "pdf": "papers/10_1136_bmj_2022_073725.pdf"
 },
 "pmid:37100738": {
@@ -559,7 +566,8 @@
 },
 "pmid:37178346": {
 "citations": 22,
-"pdf": "https://cdr.lib.unc.edu/downloads/8k71p0364"
+"pdf": "https://osf.io/f9ptg/download",
+"type": "docx"
 },
 "pmid:37562729": {
 "citations": 21,
@@ -570,16 +578,16 @@
 "pdf": "papers/10_1016_j_jclinepi_2023_10_014.pdf"
 },
 "pmid:37984978": {
-"citations": 169,
+"citations": 170,
 "pdf": "https://pure.manchester.ac.uk/ws/files/281987601/ROB_ME.pdf"
 },
 "pmid:38051324": {
 "citations": 100,
-"pdf": "https://ora.ox.ac.uk/objects/uuid:e8b8b07a-3f2a-4416-8f72-9c90e4f15dcf/files/rkw52j981n"
+"pdf": "https://researchonline.lshtm.ac.uk/id/eprint/4671696/1/JAMA23-3692R_Merged_PDF.pdf"
 },
 "pmid:38051535": {
 "citations": 35,
-"pdf": "https://ora.ox.ac.uk/objects/uuid:5835c5ea-16f1-41a6-b7cb-cbd9aa9a529e/files/sxs55mf200"
+"pdf": "https://discovery.ucl.ac.uk/id/eprint/10184715/1/kahan_2023_cs_230008_1701192493.64075.pdf"
 },
 "pmid:38190185": {
 "citations": 27,
@@ -587,32 +595,34 @@
 },
 "pmid:38360805": {
 "citations": 29,
-"pdf": "https://jyx.jyu.fi/bitstreams/77c2cbda-a41e-4713-bc09-bea1106d79f9/download"
+"pdf": "https://researchintegrityjournal.biomedcentral.com/counter/pdf/10.1186/s41073-023-00141-5"
 },
 "pmid:38849061": {
-"citations": 166,
+"citations": 167,
 "pdf": "https://pure.amsterdamumc.nl/ws/files/150635067/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
 },
 "pmid:38902776": {
-"citations": 9
+"citations": 9,
+"pdf": "https://link.springer.com/content/pdf/10.1186/s13063-024-08239-x.pdf"
 },
 "pmid:38977535": {
-"citations": 30,
-"pdf": "https://pure.amsterdamumc.nl/ws/files/143292891/Guideline-for-reporting-systematic-reviews-of-outcome-measurement-instruments-omis.pdf"
+"citations": 31,
+"pdf": "https://jpro.springeropen.com/counter/pdf/10.1186/s41687-024-00727-7"
 },
 "pmid:38978063": {
-"citations": 38,
+"citations": 39,
 "pdf": "https://pure-oai.bham.ac.uk/ws/files/231820974/ElsmanEBM2024Guideline.pdf"
 },
 "pmid:38980635": {
 "citations": 111,
-"pdf": "https://wrap.warwick.ac.uk/id/eprint/186621/1/s11136-024-03634-y.pdf"
+"pdf": "https://link.springer.com/content/pdf/10.1007/s11136-024-03634-y.pdf"
 },
 "pmid:39008854": {
 "citations": 14,
 "pdf": "papers/10_7326_m24_0771.pdf"
 },
 "pmid:39312602": {
+"citations": 23,
 "pdf": "papers/10_17226_27746.pdf"
 },
 "pmid:40021657": {
@@ -624,11 +634,11 @@
 "pdf": "papers/10_1136_bmj_r494.pdf"
 },
 "pmid:40780848": {
-"citations": 76,
+"citations": 77,
 "pdf": "papers/10_1136_bmj_2024_083405.pdf"
 },
 "pmid:41573527": {
-"citations": 6,
+"citations": 7,
 "pdf": "https://researchonline.gcu.ac.uk/ws/files/108772041/108077949.pdf"
 },
 "pmid:41626914": {
@@ -675,7 +685,7 @@
 "citations": 0
 },
 "pmid:43045732": {
-"citations": 1,
+"citations": 2,
 "pdf": "papers/10_1038_s41746_026_03045_y.pdf"
 }
 }
