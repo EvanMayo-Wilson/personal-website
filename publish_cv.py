@@ -1,7 +1,7 @@
 """Put an approved public CV on the site: docs/cv.pdf plus a cache-busting version in docs/cv/index.html.
 
 Usage: python3.14 publish_cv.py [path/to/CV public_YYYYMMDD.docx] [--push]
-Default source: the newest "CV public_<date>.docx" in ~/My Drive/CV/ (cv-and-biosketch's approved clean export).
+Default source: the newest "CV public_<date>.docx" in ~/My Drive/AI/Complete/CV/ (cv-and-biosketch's approved clean export).
 --push commits docs/cv.pdf and docs/cv/index.html (only those) and pushes main.
 
 Why the version stamp (Evan, 2026-11-12: "Whenever I approve a public CV, I want it to replace the old version on the
@@ -17,8 +17,8 @@ args = [a for a in sys.argv[1:] if a != "--push"]; push = "--push" in sys.argv[1
 if args:
     src = args[0]
 else:
-    cands = sorted(glob.glob(os.path.expanduser("~/My Drive/CV/CV public_[0-9]*.docx")))
-    assert cands, "no CV public_<date>.docx in ~/My Drive/CV"
+    cands = sorted(glob.glob(os.path.expanduser("~/My Drive/AI/Complete/CV/CV public_[0-9]*.docx")))
+    assert cands, "no CV public_<date>.docx in ~/My Drive/AI/Complete/CV"
     src = cands[-1]
 assert os.path.basename(src).startswith("CV public_"), f"not a public CV: {src}"
 tmp = tempfile.mkdtemp(prefix="publish-cv-")
