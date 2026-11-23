@@ -60,6 +60,7 @@ import sys
 import tempfile
 import urllib.error
 import urllib.request
+import zlib
 from collections import defaultdict
 from pathlib import Path
 
@@ -173,19 +174,27 @@ def geo_db(kind):
         if not path.exists():
             req = urllib.request.Request(GEO_URL.format(kind=kind, month=f"{month:%Y-%m}"),
                                          headers={"User-Agent": "website-stats/1.0"})
+            tmp = GEO_CACHE / f".partial-{kind}-{os.getpid()}"
             try:
-                with urllib.request.urlopen(req, timeout=300) as resp, \
-                        tempfile.NamedTemporaryFile(dir=GEO_CACHE, delete=False) as f:
+                with urllib.request.urlopen(req, timeout=300) as resp, open(tmp, "wb") as f:
+                    want = int(resp.headers.get("Content-Length") or 0)
                     while chunk := resp.read(1 << 20):
                         f.write(chunk)
-                os.replace(f.name, path)
+                if want and tmp.stat().st_size != want:
+                    raise OSError(f"DB-IP {kind} download cut short ({tmp.stat().st_size} of {want} bytes)")
+                with gzip.open(tmp, "rb") as g:   # whole file must decompress before it is cached
+                    while g.read(1 << 22):
+                        pass
+                os.replace(tmp, path)
             except urllib.error.HTTPError as e:
                 if e.code == 404:
                     continue   # this month's file isn't published yet
                 raise
-        for old in GEO_CACHE.glob(f"dbip-{kind}-lite-*.csv.gz"):
-            if old != path:
-                old.unlink()
+            finally:
+                tmp.unlink(missing_ok=True)
+        for old in [*GEO_CACHE.glob(f"dbip-{kind}-lite-*.csv.gz"), *GEO_CACHE.glob(".partial-*")]:
+            if old != path and (old.name.startswith("dbip") or old.stat().st_mtime < dt.datetime.now().timestamp() - 86400):
+                old.unlink(missing_ok=True)
         return path
     raise OSError(f"no DB-IP {kind} file for this month or last")
 
@@ -235,8 +244,10 @@ def add_geo(days):
         city = lookup(geo_db("city"), ips) if ips else {}
         asn = lookup(geo_db("asn"), ips) if ips else {}
         ok = True
-    except (OSError, urllib.error.URLError, ValueError, csv.Error) as e:
-        print(f"note: region/city/network lookup skipped ({e})")
+    except (OSError, EOFError, zlib.error, urllib.error.URLError, ValueError, csv.Error) as e:
+        print(f"note: region/city/network lookup skipped ({type(e).__name__}: {e})")
+        for bad in GEO_CACHE.glob("dbip-*-lite-*.csv.gz"):   # a corrupt cached file would fail all month
+            bad.unlink(missing_ok=True)
         ok = False
     for d in days:
         pairs = d.pop("_ips", {})
@@ -339,7 +350,9 @@ def main():
         day = (today - dt.timedelta(days=k)).isoformat()
         if day in history and "places" not in history[day]:
             d = fetch_day(token, zone, dt.date.fromisoformat(day))
-            if add_geo([d]) and d["visits"]:   # Cloudflare has dropped the detail of older days
+            # Cloudflare samples, then drops, older days' detail: keep it only if the
+            # re-fetch reproduces the stored country counts exactly.
+            if add_geo([d]) and d["visits"] and d["countries"] == history[day].get("countries"):
                 history[day]["places"], history[day]["networks"] = d["places"], d["networks"]
                 write_json(HISTORY, dict(sorted(history.items())))
 
@@ -399,7 +412,8 @@ def main():
         gap = n - sum(nets[c].values())
         if gap > 0:
             crow.append(row(f"{c}|n|{NO_DETAIL}", "network", gap, c, network=NO_DETAIL))
-    located = sum(n for d in w28 for regs in d.get("places", {}).values() for t in regs.values() for n in t.values())
+    located = sum(n for d in w28 for regs in d.get("places", {}).values()
+                  for reg, t in regs.items() if reg != "Unknown" for n in t.values())
     first_geo = min((day for day in dates if history[day].get("places")), default="")
     write_json(out / "countries.json", {"meta": [
         {"label": "Window (UTC)", "value": f"{lo} to {dates[-1]}"},
