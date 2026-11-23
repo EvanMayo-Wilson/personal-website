@@ -4,6 +4,20 @@ _Point-in-time snapshot for picking up mid-project. The durable, always-current
 reference is `CLAUDE.md`; if the two disagree, trust `CLAUDE.md` and treat this
 as stale._
 
+## 2026-11-23 — Viewing stats: where visitors are (state/region → city, network)
+
+Session "machine-config: traffic page geo drill-down" (cli:d0b09725), Desk step `prompt-p-mwsdi87u`.
+- `fetch_web_analytics.py` (`fb73dea`, review fixes `e1a3504`): photo-load `clientIP`s looked up locally in
+  DB-IP Lite (CC BY 4.0) → `places`/`networks` per day in `.analytics/history.json` (Mac mini); IPs never written.
+  `countries.json` rows now carry `key`/`level` (country, region, city, network). The scheduled task needs no change.
+- Dashboard https://claude.ai/artifact/8kmmuNGYc2Wx11GtWBixMi: "Where visitors are" expandable table, notes
+  bullet with DB-IP attribution. Detail from 2026-11-02 only; earlier visits show as "No location detail".
+- Free plan refuses `clientASNDescription`, referrer and region fields; counties exist in no free source.
+- Not pushed (public repo): check with `git status -sb`; see Desk `mc-push-publish-cv-path`.
+- Finding, not acted on: many "visits" come from data-centre networks (Amazon/Ashburn, Google LLC, EGIHosting, M247),
+  so the visit count includes automated browsers; Fastly/Cloudflare are probably iCloud Private Relay users.
+  See them by expanding United States → Networks on the dashboard.
+
 ## 2026-11-18 — Desk sweep: PDFs, checker, EndNote, profiles (READ FIRST)
 
 Session "personal-website: outstanding Desk work" (Opus 5.5). Re-derive status with the commands, not this text.
