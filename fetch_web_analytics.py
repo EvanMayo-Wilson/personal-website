@@ -11,6 +11,12 @@ browsers, so the counts are built to resist that:
               browser fetches when it shows the page and HTML-only bots and
               scanners don't. GitHub Pages lets browsers cache it for 10
               minutes, so this is close to "visits" rather than page views.
+              Loads from data-centre networks (DATA_CENTRE below: cloud and
+              web-hosting companies, which are almost always automated
+              browsers) are counted apart as dataCentreVisits, from the days
+              that have network detail (2026-11-02 on). Fastly, Cloudflare and
+              Akamai are not on the list: their addresses are mostly iCloud
+              Private Relay users.
   CV opens    loads of the CV viewer page (/cv/).
   PDF downloads  requests for /papers/*.pdf. Requests whose user agent names
               a bot or script (BOT_UA) are counted apart; bots posing as
@@ -74,6 +80,23 @@ SUB_N = 10   # regions / cities / networks listed under one parent before "Other
 NO_DETAIL = "No location detail"   # visits whose request detail Cloudflare had already dropped
 GEO_CACHE = Path.home() / "Library" / "Caches" / "evanmayo-wilson-analytics"
 GEO_URL = "https://download.db-ip.com/free/dbip-{kind}-lite-{month}.csv.gz"
+
+# Networks (DB-IP organisation names) that are data centres, not people: cloud and
+# web hosts. Anchored whole-name matches, so "Google Fiber Inc." (a home ISP) is
+# not caught by "Google LLC". Fastly, Cloudflare and Akamai Technologies are
+# deliberately absent (iCloud Private Relay egress). To add a network, add a
+# pattern here and run with --regeo-days 31 to redo the stored days.
+DATA_CENTRE = re.compile(
+    r"^(Amazon\.com, Inc\.|Amazon Technologies Inc\.|Amazon Data Services.*|Google LLC|"
+    r"Microsoft Corporation|Oracle Corporation|DigitalOcean.*|Linode.*|Akamai Connected Cloud.*|"
+    r"The Constant Company, LLC|Choopa.*|Vultr.*|OVH.*|Hetzner Online GmbH|Contabo.*|Leaseweb.*|"
+    r"Datacamp Limited|M247.*|EGIHosting|CustodianDC.*|HostRoyale.*|firstcolo GmbH|Timeweb.*|"
+    r"Alibaba.*|Tencent.*|Zenlayer.*|Packet Host.*|Equinix.*|"
+    r".*\b(IDC|hosting|datacenter|data center|cloud)\b.*)$", re.I)
+
+
+def is_data_centre(net):
+    return bool(DATA_CENTRE.match(net or ""))
 
 # A user agent that is empty, bare, a script library or names a crawler.
 BOT_UA = re.compile(
@@ -256,12 +279,14 @@ def add_geo(days):
         places, nets = {}, {}
         for (country, ip), n in pairs.items():
             c = city.get(ip)   # ip_start, ip_end, continent, country, stateprov, city, lat, lon
-            region, town = (c[4] or "Unknown", c[5] or "Unknown") if c and c[3] == country else ("Unknown", "Unknown")
-            r = places.setdefault(country, {}).setdefault(region, {})
-            r[town] = r.get(town, 0) + n
             a = asn.get(ip)    # ip_start, ip_end, asn, organisation
             net = (a[3] or f"AS{a[2]}") if a else "Unknown network"
             nets.setdefault(country, {})[net] = nets.get(country, {}).get(net, 0) + n
+            if is_data_centre(net):
+                continue   # not a visitor: kept in networks only, left out of places
+            region, town = (c[4] or "Unknown", c[5] or "Unknown") if c and c[3] == country else ("Unknown", "Unknown")
+            r = places.setdefault(country, {}).setdefault(region, {})
+            r[town] = r.get(town, 0) + n
         d["places"], d["networks"] = places, nets
     return ok
 
@@ -294,6 +319,17 @@ def write_json(path, obj):
     os.replace(tmp, path)
 
 
+def dc_by_country(d):
+    """{country: data-centre visits} for a day, from its stored networks."""
+    return {c: n for c, nn in d.get("networks", {}).items()
+            if (n := sum(v for k, v in nn.items() if is_data_centre(k)))}
+
+
+def people(d):
+    """The day's visits less data-centre visits (days without network detail: all)."""
+    return d["visits"] - sum(dc_by_country(d).values())
+
+
 def summed(days, field):
     tot = defaultdict(int)
     for d in days:
@@ -324,6 +360,10 @@ def main():
     ap.add_argument("--geo-days", type=int, default=0,
                     help="also add regions/cities/networks to stored days this far back that "
                          "lack them, changing nothing else on those days")
+    ap.add_argument("--regeo-days", type=int, default=0,
+                    help="redo regions/cities/networks of stored days this far back (after "
+                         "DATA_CENTRE changes); a day is replaced only if the re-fetch "
+                         "reproduces its stored country counts exactly")
     args = ap.parse_args()
     out = Path(args.out_dir)
     token = keychain("cloudflare-analytics-token")
@@ -356,6 +396,16 @@ def main():
                 history[day]["places"], history[day]["networks"] = d["places"], d["networks"]
                 write_json(HISTORY, dict(sorted(history.items())))
 
+    for k in range(args.regeo_days, 0, -1):
+        day = (today - dt.timedelta(days=k)).isoformat()
+        if day in history and "places" in history[day]:
+            d = fetch_day(token, zone, dt.date.fromisoformat(day))
+            if add_geo([d]) and d["visits"] and d["countries"] == history[day].get("countries"):
+                history[day]["places"], history[day]["networks"] = d["places"], d["networks"]
+                write_json(HISTORY, dict(sorted(history.items())))
+            else:
+                print(f"note: {day} not redone (Cloudflare detail changed or lookup failed)")
+
     dates = sorted(history)
     last = dt.date.fromisoformat(dates[-1])
 
@@ -370,7 +420,7 @@ def main():
              "type": "code", "lang": "python"}]
 
     write_json(out / "daily.json", {"meta": meta, "rows": [
-        {"date": d, "visits": h["visits"], "cvOpens": h["cv"], "pdfDownloads": h["pdf"],
+        {"date": d, "visits": people(h), "dataCentreVisits": h["visits"] - people(h), "cvOpens": h["cv"], "pdfDownloads": h["pdf"],
          "botPdfDownloads": h["botPdf"]} for d, h in sorted(history.items())]})
 
     titles = paper_titles()
@@ -388,13 +438,17 @@ def main():
     for d in w28:
         for c, nn in d.get("networks", {}).items():
             for name, n in nn.items():
-                nets[c][name] += n
+                if not is_data_centre(name):
+                    nets[c][name] += n
         for c, regs in d.get("places", {}).items():
             for reg, cities in regs.items():
                 for town, n in cities.items():
                     places[c][reg][town] += n
     crow = []
-    for c, n in sorted(summed(w28, "countries").items(), key=lambda kv: -kv[1])[:TOP_N]:
+    cnt, dcc = summed(w28, "countries"), summed([{"x": dc_by_country(d)} for d in w28], "x")
+    for c, n in sorted(((c, v - dcc.get(c, 0)) for c, v in cnt.items()), key=lambda kv: -kv[1])[:TOP_N]:
+        if n <= 0:
+            continue
         crow.append(row(c, "country", n, c))
         regs = sorted(places[c].items(), key=lambda kv: (-sum(kv[1].values()), kv[0]))
         for reg, towns in top_and_other(regs, SUB_N, "Other regions", lambda v: sum(v.values())):
@@ -417,14 +471,15 @@ def main():
     first_geo = min((day for day in dates if history[day].get("places")), default="")
     write_json(out / "countries.json", {"meta": [
         {"label": "Window (UTC)", "value": f"{lo} to {dates[-1]}"},
-        {"label": "Visits with region, city and network detail", "value": f"{located} of {sum(d['visits'] for d in w28)}"},
+        {"label": "Visits with region, city and network detail", "value": f"{located} of {sum(people(d) for d in w28)}"},
+        {"label": "Data-centre visits left out (28 days)", "value": str(sum(dcc.values()))},
         {"label": "Detail since (UTC)", "value": first_geo},
         {"label": "IP geolocation", "value": "IP Geolocation by DB-IP (https://db-ip.com), Lite edition, CC BY 4.0"},
     ] + meta, "rows": crow})
 
     w7 = window(7)
     print(f"{len(dates)} days tracked ({dates[0]}..{dates[-1]}); last 7 days: "
-          f"{sum(d['visits'] for d in w7)} visits, {sum(d['cv'] for d in w7)} CV opens, "
+          f"{sum(people(d) for d in w7)} visits (+{sum(d['visits'] - people(d) for d in w7)} from data centres, not counted), {sum(d['cv'] for d in w7)} CV opens, "
           f"{sum(d['pdf'] for d in w7)} PDF downloads (+{sum(d['botPdf'] for d in w7)} by flagged bots); "
           f"{len(rows)} papers downloaded")
 

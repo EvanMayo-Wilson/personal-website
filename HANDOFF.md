@@ -4,6 +4,13 @@ _Point-in-time snapshot for picking up mid-project. The durable, always-current
 reference is `CLAUDE.md`; if the two disagree, trust `CLAUDE.md` and treat this
 as stale._
 
+## 2026-11-24 — Viewing stats: data-centre visits shown apart
+
+Desk step `pw-datacentre-visits`. `fetch_web_analytics.py`: `DATA_CENTRE` network regex; `daily.json` has `dataCentreVisits`, `visits` excludes it (from 2026-11-02); countries/places exclude it; `--regeo-days N` redoes stored days.
+- Last 7 days (17-23 Nov): 57 visits before, 44 after (13 data-centre). 28-day data-centre total: 42.
+- Dashboard: page (KPI line, tooltip, notes bullets) and new daily/countries files published; page not seen rendering (no open tab).
+- Pre-change history backup: `.analytics/history.pre-dc.json` (gitignored). Not pushed.
+
 ## 2026-11-23 — Viewing stats: where visitors are (state/region → city, network)
 
 Session "machine-config: traffic page geo drill-down" (cli:d0b09725), Desk step `prompt-p-mwsdi87u`.
